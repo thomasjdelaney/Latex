@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Modelling fluorescence of calcium indicators}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Fluorescent calcium indicators}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Modelling}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Calcium dynamics}{5}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}The model}{5}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Results so far and future developments}{6}{subsection.2.3}
+\contentsline {section}{\numberline {3}Modelling the responses of populations of neurons}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Developments in modelling of this kind}{7}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Maximum entropy models}{7}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Other types of models}{11}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Plans for future research}{13}{subsection.3.2}

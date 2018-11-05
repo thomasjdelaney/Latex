@@ -1,0 +1,97 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Bartol et al 2015: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section*{Computational reconstitution of spine calcium transients from individual proteins}
+\subsection*{Thomas M. Bartol, Daniel X. Keller, Justin P. Kinney, Chandrajit L. Bajaj, Kristen M. Harris, Terrence J. Sejnowski, Mary B. Kennedy}
+
+\subsubsection*{Abstract}
+	A stochastic model which simulates Ca$^{2+}$ transients in spines from principal molecular components was built using MCell. Kinetic models were taken from \textit{in vitro} studies for nine different proteins. Voltage changes were modelled in NEURON. The simulation worked, demonstrating that the \textit{in vitro} data can be used for \textit{in vivo} modelling.
+	
+\subsubsection*{Methods}
+	MCell was used for the simulation. It allows for spatial modelling of the molecules as well as binding/unbinding and molecule pumps.
+	
+\subsubsection*{Geometry}
+	A section of neuropil was modelled as a $6 \times 6 \times \times 5 \mu m$ cuboid. This was based on images of actual hippocampal neuropil taken by electron micrographs.
+	
+\subsubsection*{Stimuli}
+	Two types of stimulus were used. One simulating an EPSP caused by glutamate release. One a backpropagating action potential, caused by an injection of current into the axon hillock.
+	
+\subsubsection*{Source of Ca$^{2+}$ Influx}
+	The following sources of Ca$^{2+}$ influx were simulated:
+	\begin{description}
+		\item[Glutamate receptors] AMPA receptors and NMDA receptors were placed on the postsynaptic membranes overlying the post-synaptic dendrites. Certain densities per micro metre were used to decide how many receptors to place.
+		\item[Voltage Dependent Calcium Channels] The biggest source of Ca$^{2+}$ influx in the simulation. Things considered here were the density of VDCC, which is not well known, the different types of channel, L, R, and T, and the activation and deactivaton dynamics of each type of channel. 
+		\item[Glutamate transporters] 
+	\end{description}	
+
+\subsubsection*{Cytosolic Ca$^{2+}$ Binding Proteins}
+	The following binding proteins were simulated within the cell cytoplasm:
+	\begin{description}
+		\item[Immobile cytosolic Ca$^{2+}$-binding proteins] The molar concentration used was $78.8 \mu M$ with a K\_D of $2.0 \mu M$. The concentration of this type of buffer has estimates from $10 \mu M$ to $100 \mu M$.
+		\item[calbindin] A concentration of $45 \mu M$ was used, the concentration here is debatable. A model for calbindin binding with Ca$^{2+}$ was created for the simulation.
+		\item[Fluorescent Ca$^{2+}$ indicators] The appropriate concentrations and association/dissociation rates were used for Fluo-4 and GB1.
+	\end{description}
+	
+\subsubsection*{Removal of Ca$^{2+}$ from the Cytosol}
+	The Ca$^{2+}$ was removed from the spine cytosol using the following mechanisms:
+	\begin{description}
+		\item[Na$^{+}$/Ca$^{2+}$ exchangers (NCX)] These have a low affinity for calcium, but have a very high turnover rate. 
+		\item[Plasma membrane Ca$^{2+}$ ATPases (PMCAs)] Modelled the same way as NCXs, but with a higher affinity for Ca$^{2+}$.
+		\item[Smooth endoplasmic reticulum Ca$^{2+}$ ATPases (SERCAs)] There was a model created for this also.
+	\end{description}
+
+\subsubsection*{Boundary Conditions}
+	The steady state Ca$^{2+}$ concentration used was $100 nM$. A leak current of Ca$^{2+}$ into the cell was also permitted. 
+
+\end{document}

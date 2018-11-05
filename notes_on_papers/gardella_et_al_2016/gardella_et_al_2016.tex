@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Gardella et al 2016: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+\section*{A tractable method for describing complex couplings between neurons and population rate}
+\subsection*{Christophe Gardella, Olivier Marre, Thierry Mora}
+\subsubsection*{Abstract}
+	Recent studies (Okun) show that each cell in a population is influenced by the population rate. Here, the authors build a model of population activity that reproduces the firing rates, the population rate distribution, and the linear coupling between them. The model is tractable, and easy to train even on a normal laptop. Some cells had a preffered population rate, at which they were most likely to fire. The linear model could not account for these features, so the authors developed a more general, but still tractable, model that could account for these non-linear dependencies. 
+
+\subsubsection*{Introduction}
+	The model is derived using the maximum entropy principle. Re-iterates the finding that some neurons are tuned to a certain population rate.
+	
+\subsubsection*{Materials and Methods}
+	Three models are defined. The \textit{minimal model}, which reproduces the firing rates and the population rate distribution, the \textit{linear-coupling model}, which reproduces the same as the minimal model and the linear correlation between the population rate and the firing rate for each neuron, the \textit{complete-coupling model}, which reproduces the joint probability between the individual responses and the population rate, i.e. $P(\sigma_i, K)$, for $i = 1, \dots, N$. 
+
+\subsubsection*{Model Solutions}
+	The solution parameters to each model can take the form $h_{iK}$ for $i = 1, \dots, 0$ and $K = 0, \dots, N$. For the minimal model, the $h_{iK}$ are constrained to take the form $h_{iK} = \alpha_i + \beta_K$. For the linear-coupling model, $h_{iK} = \alpha_i + \beta_K + \gamma_i K$. For the complete-coupling model, there are no constraints on $h_{iK}$.
+	
+\subsubsection*{Regularization}
+	$P(K)$ and $P(\sigma_i | K)$ were regularized using pseudocounts equal to their average values under an independent distribution.
+	
+\subsubsection*{Quality of the model}
+	The quality of the model was tested using a goodness of fit index quantifying the amount of correlations predicted by the model, the improvement in mean log likelihood in comparison to the minimal model, and the multi-information. 
+	
+\subsubsection*{Results}
+	The goodness of fit index for the linear coupling model and the complete-coupling model were very similar. The improvement in log-likelihood was more significant. According to the multi-information the linear coupling model could account for 65\% and 53\% of correlations in populations of 10 and 20 neurons respectively. The complete-coupling model could account for 68\% and 56\%. (Not as good as the pairwise maximum entropy model in Schneidman 2006, 90\%!)
+
+\end{document}

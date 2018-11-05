@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Calcium Imaging}{}% 1
+\BOOKMARK [1][-]{section.2}{Results}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The model}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Spike Inference}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Perturbation analysis}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Perturbing indicator concentration}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Perturbing immobile endogeneous buffer concentration}{subsection.2.3}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Perturbing indicator binding and unbinding rates}{subsection.2.3}% 8
+\BOOKMARK [2][-]{subsection.2.4}{Varying spike rate for different cell types}{section.2}% 9

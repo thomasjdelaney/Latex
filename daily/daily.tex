@@ -1,0 +1,464 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Daily Summaries}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+	\section*{Daily Activities}
+
+	\begin{description}
+	\item[19/09/2016 - 15/11/2016] During this time I read most of the papers mentioned in Cian's model paper describing different models of neuronal networks. I also attempted to model some of Mike Ashby's data, but we only had data for one point in time. So analysing changes in internal representation was not possible. I also worked on a Kaggle challenge to predict epileptic seizures. I also started working on a project to model the fluoresence created by calcium indicators.
+
+	\item[16/11/2016] Read about piecewise-deterministic Markov processes (PDMPs), mostly mathematical definitions and concepts. The main point ot take away is: In order to solve the system, we get the jump times for poisson process, and we solve the ODE for the periods in between the jump times. We change the values of the ODE variables according the jumps of the poisson process. So, solve the ODE for the interval $t = [0, T_{1^{st} jump})$, then apply the variable changes, then solve the ODE for the interval $t = [T_{1^{st} jump}, T_{2^{nd} jump})$, and so on.
+
+	\item[17/11/2016] Worked on understanding the \texttt{julia} implementation of a PDMP solver.
+
+	\item[18/11/2016] Attempted to write a functioning PDMP in \texttt{julia}. Having problems with concentrations going negative.
+
+	\item[21/11/2016] Meeting with Cian. Recalculated the number of molcules of buffer and free calcium. Use of these numbers in \texttt{julia} results in an error from the Sundials ODE solver. Learning what a `stiff' ODE is may help. Trying other solvers shouldn't be too difficult. Need to read about this `true jump method'.
+
+	\item[22/11/2016] Read about Ramain Veltz's method for solving the PDMPs. Didn't learn much, the problem is with the ODE solver. The \texttt{julia} API to cvode is not working. Need to try out different ones, or find one that works.
+
+	\item[23/11/2016] Increased the relative tolerance to $10^{-6}$ from $10^{-7}$. The \texttt{Sundials.cvode} ODE solver works with those values. Need to make the model stable with a calcium influx and outflux around a baseline. Introducing spikes and bursts of spikes seems very possible.
+
+	\item[24/11/2016] Good progress today. Managed to model a single spike and a burst of spikes using Julia. Emailed Cian. Need to hear from him. Maybe do some epilepsy tomorrow.
+
+	\item[25/11/2016] Tidied up the \texttt{calcium\_dynamics.jl} script. Implemented command line parameters. Need to find a way to keep the previous number of BCa$^*$ and use it to calculate the jump.
+
+	\item[26/11/2016] Ensured that the jump in the continuous variable  associated with the change in the discrete variable was being implemented properly.
+
+	\item[27/11/2016] No work. Raspberry Pi instead. Can't ssh between the pi and my laptop. I'm blaming eduroam.
+
+	\item[28/11/2016] Meeting with Cian and Mike today, need a list of questions for Mike. Mike lent me a book. It contains useful information, and formulas for analysis. Implementing this info could be useful if possible. The main takeaway from the meeting was that I should introduce the endogenous buffer, as this will change the dynamics of the system quite significantly. Read more tomorrow, and start thinking about the implementation of the endogenous buffer.
+
+	\item[29/11/2016] Used Thomas Griffith's thesis to get numbers for the endogeneous buffer. Started writing code to implement endogeneous buffer. Guessed at the forward/backward rates for Oregon Green BAPTA.
+
+	\item[30/11/2016] Added the code for the endogeneous buffer. Causes the rates to go negative immediately. All the figures need to be in the same dimensions. Currently putting all the figures in molecules per litre units. This causes concentrations to be massive, and rates to be tiny.
+
+	\item[01/12/2016] Rates going negative was caused by a typo. I am concerned that my numbers are not all in the same dimensions. Try to per litre, and uM dimensions again without the typos, and if they don't work, get in touch with Cian about this issue. Apart from that, including the endogeneous buffer doesn't make much difference.
+
+	\item[02/12/2016] Using per litre rates causes the time steps used in solving the ODE to become very small. This means that cvode gives up on solving altogether. I still think my dimensions are incorrect though. I have emailed Cian about this matter. I should read the Sejnowski paper in the meantime. Also, Thom Griffith modeled fixed buffer, I may need to model free endogenous buffer.
+
+	\item[05/12/2016] My dimensions are definitely incorrect. I need to find a way to convert from molar concentration to molecules reliably. Then use that to convert all rates to per molecule rates. They hopefully the numbers will be runnable.
+
+	\item[06/12/2016] Converted all parameters to molecules, or per molecule per second. After some messing, the simulation still runs, and looks reasonable. Need to read the Sejnowski paper, and read other papers, and prepare for whatever it is that I'm suppose to write for early next year. I've emailed Cian, but he is very busy right now with his new daughter. May be a few days before he gets back to me.
+
+	\item[07/12/2016] Read some of Sejnowski, discovered the forward and backward rates for OGB1. After some struggling, implemented the new numbers.
+
+	\item[08/12/2016] Tomorrow I need to continue to read Sejnowski. The actions of the various substances within the cell should be explained and this should be useful.
+
+	\item[09/12/2016] Read some of the Sejnowski paper. Contains some useful information about: ATPases, smooth endoplasmic reticula, ion exchangers, mobile, immobile, and fluorescent buffers, voltage dependent calcium channel types, etc., etc.
+
+	\item[12/12/2016] Read all the best bits of the Sejnowski paper on simulating Ca$^{2+}$ transients in post-synaptic dendrites. Has information on immobile Ca$^{2+}$ buffer molecules. Will probably need to introduce this, but should ask Mike about how these buffers work. Will read the Ganmor paper on reliable interaction model for neuronal ensemble responses.
+
+	\item[13/12/2016] Read some Ganmor paper sounds interesting. Will read more tomorrow. Need to email Mike.
+
+	\item[14/12/2016] Read the rest of the Ganmor (reliable interactions model) paper. It sounded like quite a good model that could be useful for some situations. Emailed Mike about immobile Ca$^{2+}$ buffer. Need to add the immobile Ca$^{2+}$ to my own model.
+
+	\item[15/12/2016] Added code for the immobile buffer. Perhaps may not be correct. Need to consider the requirement that calcium buffered by the immobile buffer cannot be pumped out of the cell. Also, remember that Mike said that calcium pumps act more like immobile buffers. The buffer the molecules first, and then pump them out at a slower rate.
+
+	\item[16/12/2016] Started reading the generalised linear model for population response analysis. Need to email Cian on Monday to see if we have a meeting.
+
+	\item[19/12/2016] Finished reading about the generalised linear model (Pillow et al 2008). Easy to understand and implement, but overall not the most useful model that exists. Started reading about the population coupling model (Okun et al 2015).
+
+	\item[20/12/2016] Continue reading about the population coupling model. Meeting with Cian, must ask about the Calcium deconvolution project. What should the next step be? Took a lot from Cian's meeting. A choice of things to do. Printed out some papers to read.
+
+	\item[09/01/2017] Didn't do anything at all over the break. Invigilation this morning. Today I will find out what is required for the BNA `Festival of Neuroscience' poster competition, and email Cian with any questions on the matter. Other things to do include altering the order of variable in the Calcium Deconvolution julia script, and looking back on what Cian and I discussed before Christmas.
+
+	Tomorrow I need to look into adding noise to the calcium deconvolution script, that can be varied in amplitude. And respond to whatever Cian thinks about the email I sent to him today.
+
+	\item[10/01/2017] Funding form. Couldn't finish the funding form, need input from Gina Stuart. Wrote a first draft of the abstract and sent it to Cian.
+
+	Tomorrow need to check that the order of parameters doesn't matter, and need to add noise in some way.
+
+	\item[11/01/2017] Wrote an updated draft of the poster abstract. Wrote a draft of the abstract for my overall project, requested by the university. Sent both to Cian. Tomorrow, need to begin writing code again. Possibly need to register for the conference tomorrow, submit the abstract the next day.
+
+	\item[12/01/2017 - 17/01/2017] Wrote and submitted the poster abstract. Was sick all weekend. Changed the calcium deconvolution script to accept parameters in normal units (Molar concentration, and seconds). Included the functionality to introduce noise. Introducing noise messes everything up, causes [Ca$^{2+}$] to go negative. Had a look at the spike finder data, the GCaMP6s looks pretty rubbish as an indicator. Currently writing a deterministic version of the model, will introduce noise as part of a model of the photon collection process.
+
+	\item[18/01/2017]Continued with developing the deterministic model. Meeting with Cian cancelled again. Simulation appears to be working ok. Need to introduce a model of the photon collection process, this would be the noisy part.
+
+	\item[19/01/2017] Refactored the calcium dynamics code, looks nice now. Need to decide how to model the noise in the collection process. The number of photons released in each time step will be some proportion of the [BCa$^*$] concentration. The number of photons collected by the theoretical collector will be some fraction of that. How do I characterise the stochasticity of this process? Poisson process, with the rate equal to some proportion of the [BCa$^*$].
+
+	\item[20/01/2017] Didn't have a meeting with Cian. Adding the stochasticity using a Gaussian distribution looks OK. Need to compare to actual data. Need to do Okinawa. Need to claim payment for invigilation.
+
+	\item[23/01/2017] Is the spike finder data always from somata, or always from dendrites, or both? Made some progress on taking in files to define spike trains.
+
+	\item[24/01/2017] After meeting with Cian, I need to write a draft of the Okinawa application. I also need to analyse the power spectrum of the spike train, noise, and the overall fluorescence trace. From that it should be possible to subtract the spike train and noise power spectra from the overall spectra to get a spectrum for the GCaMP6s component of the overall spectrum. This could be used to tune input parameter. But, the model is not working well right now anyway, so I need to fix it.
+
+	\item[25/01/2017] Have written a draft of some of the Okinawa school application. Need to think of a project to do, and expand the section on personal motivation. Also need to find out how to measure the power spectrum in julia.
+
+	\item[26/01/2017] Finished writing the application to the OCNC. Sent the draft off to Cian.
+
+	\item[27/01/2017] Wrote a \texttt{getPowerSpectrum} function for julia. On Monday, must start doing the analysis that Cian suggested, preferably get something calculated before our meeting in the evening.
+
+	\item[30/01/2017] Meeting with Cian, rewrote some of the OCNC application. Need to again rewrite the OCNC application. Need to pay attention to the claims I make about the RI model. In particular, is it maximum entropy, and will my plan actually create a normalisable probability distribution?
+
+	\item[31/01/2017] Updated the personal motivations part of the application. The Ganmor paper is not maximum entropy after all. I need to think of a new project to do in the OCNC.
+
+	\item[01/02/2017] Ganmor paper may or may not be maximum entropy, it's not clear.
+
+	\item[02/02/2017] Emailed Elad Schneidman about the Reliable interaction model. It's NOT a maximum entropy model, but could form the basis of one. Also read Okun's paper on population coupling. Population coupling could be a very useful property in any model.
+
+	\item[03/02/2017] Sent edited OCNC application to Cian. Cian returned with comments. Made some progress on the power spectrum analysis.
+
+	\item[04/02/2017] Edited the OCNC application again, and submitted.
+
+	\item[06/02/2017] Created some power spectrum images. Made a start on the presentation.
+
+	\item[07/02/2017] Continuing with the presentation. Made some progress at least.
+
+	\item[08/02/2017] Presentation. Still.
+
+	\item[09/02/2017] Actually did the presentation. Went OK. Tomorrow, I need to find out what a spectrogram is, I also need to read the population model equivalent over the weekend.
+
+	\item[10/02/2017] Need to read Gardella over the weekend.
+
+	\item[13/02/2017] Read Gardella over the weekend and today. Fairly clear about the contents of the paper itself, but need to look at whether or not this model and Cian's model are equivalent before the meeting on Thursday.
+
+	\item[14/02/2017] Summarised Gardella's paper, compared to Cian's paper. They said that there is a one-to-one correspondence between their parameters $h_{iK}$ and Cian's parameters, which is correct. There are differences in the training however.
+
+	\item[15/02/2017] Went to the Enterprising Research Talks. One was very good, another was good, two were ok, one was very bad.
+
+	\item[16/02/2017] Made some spectrograms, they look quite good now, although I'm skeptical about how useful they are tbh. The meeting with Nick was very good. Cian mentioned that lower dimensional models of the brain makes sense because the brain itself is unlikely to see all possible patterns a number of times and therefore is not using all possible correlations. Improving one of the models by introducing a temporal variable sounds promising to me, because the data is highly temporaly correlated anyway, but the efforts of making a maximum entropy model that includes temporal correlations ran into the curse of dimensionality. The following things were mentioned: restricted Boltzmann machines, semi-restricted Boltzmann machines, HMM. All that.
+
+	\item[17/02/2017] Sent the spectrograms to Cian, he thought they weren't very informative. I agree.
+
+	\item[20/02/2017] Printed out some docs in order to get reimbursed for the BNA registration. Had meeting with Cian. Need to concentrate on writing the report for the review. Needs to be done before next Monday. Need a draft to be finished by Thursday night ideally.
+
+	\item[21/02/2017 - 26/02/2017] Doing the six month review report.
+
+	\item[27/02/2017] Read K\"{o}ster et al (2014), it is the \textit{Restricted Boltzmann Machine} paper. Nothing special in there. The hidden units introduce loads of parameters potentially.
+
+	\item[28/02/2017] Finished reading K\"{o}ster et al (2014), had a meeting with Nick Whiteley about a paper that looks pretty good. It describes a model that could be used to model population tracking and temporal correlations. Need to read the paper and discuss it with Cian.
+
+	\item[01/03/2017] Started reading the Shimazaki paper. Made some progress, need an example of the EM algorithm to figure out how it works in practise. Continue reading tomorrow.
+
+	\item[02/03/2017] Continued reading the Shimazaki paper. Need to finish before the next meeting with Cian. Seems like a very good paper at the moment.
+
+	\item[03/03/2017] Still reading the paper, it's a long one.
+
+	\item[04/03/2017 - 12/03/2017] Finished reading most of the paper. Discussed it with Cian. He hadn't read most of it. Fixed the calcium fluorescence model, and fiddled around with the parameters until it looked correct. At the moment, it looks quite good for one trace at least. Need to check more traces really. Some of the parameter settings may not be correct, and the simulation may look nice by coincidence.
+
+	\item[13/03/2017] Emailed Shimazaki, got code from him. Had long meeting with Cian about finishing the calcium fluorescence project. I have some kind of road map towards the end now. Need to follow it and get as much done as possible before the poster. Tomorrow, I need to find a smoothing algorithm, and implement it in my simulation.
+
+	\item[14/03/2017] Implemented the smoothing function. Re-factored the Spike-finder and Calcium Deconvolution projects.
+
+	\item[15/03/2017] Added some of the spike-finder functions to the calcium project. Used them to analyse the power spectrum of the modelled fluorescence.
+
+	\item[16/03/2017] Applied a zscore to the real and modelled fluorescence traces before calculating and comparing the power. More comparable. Emailed Philipp Berens about the drop off $> 30$Hz. Need to learn how to implement and optimize an objective function in \texttt{julia}.
+
+	\item[17/03/2017] Looked into the JuMP modelling package for Julia. Seems to be just what I'm looking for.
+
+	\item[20/03/2017] Had a meeting with Cian. Need to get JuMP working for modelling the Calcium Deconvolution project. Also need to do the Cajal summer school application.
+
+	\item[21/03/2017] Modelling with JuMP is not simple. It seems like all the model variables need to be in the one scope, which is not helpful at all. Look further into it tomorrow, and start on the Cajal application.
+
+	\item[22/03/2017] Struggled with JuMP all day, didn't make an progress. Don't think it will work.
+
+	\item[23/03/2017] JuMP won't work, but PyCall combined with Scipy.optimize might work. Probably should have used python from the start tbh.
+
+	\item[24/03/2017 - 26/03/2017] Trying to optimize the parameters of the model.
+
+	\item[27/03/2017] Had a meeting with Cian. Need to smoothen the power spectra, start making the poster. Make a proper to do list. Also submitted application for Cajal Lisbon summer school today.
+
+	\item[28/03/2017] Found a way to train two of the parameters. Keep getting a CVode failure when trying to train any of the other parameters. Don't know what to do about that.
+
+	\item[29/03/2017 - 02/04/2017] Working on the BNA poster. Some strange results from varying the fluorescent indicator concentration. Basically, varying the concentration doesn't do anything. Also started making the poster itself. Using beamerposter, it's quite good.
+
+	\item[03/04/2017] Made some progress with the peturbation experiments. Started to implement the deconvolution algorithm. Gives out probabilities, need to decide threshold somehow.
+
+	\item[04/04/2017 - 24/04/2017] Used a kNN classifier to convert probabilities into a spike train. It worked reasonably well. Made the poster. Presented it. The conference was good. There were good talks. Spent last week on the Jentropy package, hoping to add documentation and release today. Meeting with Cian tomorrow.
+
+	\item[25/04/2017 - 01/05/2017] Changed the Calcium deconvolution code, now using Molars instead of molecules. Still trying to optimise the free parameters. Will then test the effect of varying the concentration. Also got the state-space analysis model running in MATLAB
+
+	\item[02/05/2017] Got the state-space analysis model up and running well. Also refreshed the model theory. Will try to get the model running in Python, then find some other data and try to get it working on that.
+
+	\item[03/05/2017] Got the state-space log linear model up and running in Python. Tomorrow will run through it line by line to see what is being calculated and understand how everything is working.
+
+	\item[04/05/2017 - 09/05/2017] Ran through Shimazaki line by line. Learned a lot about how the whole thing worked, but still not really clear. Got the $l_0$ spike inference model running. Wrote some code to run the model.
+
+	\item[10/05/2017] Wrote a script to run the $l_0$ spike inference model on the spike-finder data. It's killing my laptop. Waiting for IT to install R on my desktop.
+
+	\item[11/05/2017] Got the $l_0$ model to run on my laptop using a smaller file. The $\lambda$ parameter makes a big difference in the number of spikes predicted. For dataset number $8$ $\lambda = 10$ works well. This may need to be learned for each dataset though, which is a limiting factor for applications of the spike inference model.
+
+	\item[12/05/2017] Made some good progress reading Shimazaki's model again. I'm getting to grips with the optimization process quite well, although some parts are still a bit fuzzy. Need to explain the whole thing to Cian on Monday. Tomorrow I need to look up the \textit{fixed-interval smoothing algorithm} for a Gaussian state and observation equation.
+
+	\item[15/05/2017] Had a meeting with Cian. Need to separate the release and capture rate in to noise and capture rate. Use binomial distribution for the distribution of collected/uncollected photons. Profile the Shimazaki code. There's some problem with the baseline dynamics, need to investigate and prioritise.
+
+	\item[16/05/2017 - 17/05/2017] Model is really really not working now. I might consider going back to molecules instead of molars.
+
+	\item[17/05/2017] Went back to molecules. Without the bug that I have fixed, the model runs much much better, and it optimises well.
+
+	\item[18/05/2017 - 25/05/2017] Edited the photon capture modelling process to use a binomial distribution. The variance is much lower than it needs to be, but the whole process makes more sense. Created simulated traces for the 8\upperth dataset.
+
+	\item[26/05/2017] Need to run the $l_0$ spike inference on the simulated traces, and compare the results to the inference from the actual traces (which was really bad). For the future I need to find out why the Paninski algorithm works so badly on simulated traces. I also have to prepare for the journal club next week.
+
+	\item[27/05/2017] Currently running the $l_0$ inference on the simulated traces. The bad precision of the other inference algorithm may have been down to comparing different traces with one another. Need to look back at how I built the files involved.
+
+	\item[29/05/2017] Compared the performance of the $l_0$ spike inference algorithm when applied to spike-finder data and modelled fluorescence traces. Again, the algorithm performs better on actual data than on modelled data. But, this algorithm performs much worse than the Paninski algorithm.
+
+	\item[30/05/2017] Had a meeting with Cian. To do:
+	\begin{itemize}
+		\item Create figures showing the fluorescence trace with spikes and predicted spikes, and the simulated fluorescence trace with spikes and predicted spikes. Do this for both the Paninski algorithm and the $l_0$ algorithm for dataset number 8
+		\item The monkey data is sampled at a frequency of $1$Hz. Therefore the time bins are $1$ms. This makes observing correlations unlikely. So process the data so that it uses larger time bins. Do for $5$, $10$, and $20$ms bins and see if there's any difference.
+	\end{itemize}
+
+	\item[31/05/2017] Did the Journal club. Only three people showed, other than myself and Cian. Also ran the sub-state log linear model using different time bins. Using a bigger time bin gives more correlations, which is nice.
+
+	\item[01/06/2017 - 02/06/2017] Came in very late. TO DO:
+	\begin{itemize}
+		\item Organise the trip to Cardiff. Early Career neuroscientist.
+		\item Calcium Deconvolution: Check the conversion functions still make sense.
+		\item Email Nick asking to meet up and discuss the model and how it could be improved. Have a suggestion to hand.
+		\item Calcium Deconvolution: Make the figures comparing spike inference methods. Refactor code if necessary.
+	\end{itemize}
+
+	\item[05/06/2017] At the Early Career Neuroscientist Day in Cardiff.
+
+	\item[06/06/2017] Checked the conversion functions. There was a scaling issue, and a question about the definition of a Molar was raised. Eliminating the scaling issue caused the variance to be increased relative to the mean. That's a good thing.
+
+	\item[07/06/2017] Had a meeting with Nick, we discussed what our aims are and where we should look into the implementation of the model.
+
+	\item[08/06/2017] Got a script running for simulating a fluorescence trace for each spike train in a given spike finder data set. Investigated the implementation of the Newton Raphson method in the State Space Log Linear model. It looks like they calculate $\eta_t$ using $theta_t$ every time. That means that they need to calculate products of matrices, the size of which scale with the number of neurons, and the order or correlations. This is what disables the scaling of the model.
+
+	\item[09/06/2017] Had a meeting with Nick. He is looking into some improvements to the model. Wrote a summary email. Profiled the State Space log linear model and sent a summary to Nick and Cian.
+
+	\item[12/06/2017] Came in very late. TODO:
+	\begin{itemize}
+		\item Email Nick to organise meeting.
+		\item Write script to run inference algos on fluorescence traces.
+		\item Make the figures comparing inferred spikes with actual.
+	\end{itemize}
+
+	\item[13/06/2017] Had the meeting with Nick. Shimazaki has already been on a paper that solves the problem. Need to run the two codes side by side and have a look at the differences.
+
+	\item[14/06/2017] Made some progress implementing the approximate state space log linear model. Found some apparent bugs.
+
+	\item[15/06/2017] Went to the 'Data Intensive research workshop' in the morning. In the afternoon, found out that the code was only designed for pairwise models. Using higher orders causes the code to break down.
+
+	\item[16/06/2017] Ran the exact and approximate models side by side, using $N=2$, and $O=2$. Definitely found differences between the two. The exact model contains more information entropy and the time series of the entropy seems to reflect the make-up of the stimulus.
+
+	\item[17/06/2017] Prepared all the necessary files for comparing traces and spike inference.
+
+	\item[18/06/2017] Made all the figures.
+
+	\item[19/06/2017] Sent the figures off to Cian. Had a meeting with Cian. Cian will try to catch up on the work that Nick and I did while he was on holidays. I need to remake the figures under a few different scenarios. First of all, I need to fix the scaling issue with converting from molar concentration to molecules.
+
+	\item[20/06/2017] Prepared the files for more comparisons, with the scaling issue fixed. Also started writing the Hourly paid teaching application.
+
+	\item[21/06/2017] Sent some more comparisons to Cian. Started doing yet more comparisons. Also applied for hourly paid teaching.
+
+	\item[22/06/2017 - 30/06/2017] Applied for hourly paid teaching, applied for Janelia. Scaled spikefinder data and sent the results to Paninski. The changes in performance are at least partly down to the KNN algorithm.
+
+	\item[03/07/2017] Had a meeting with Cian. Need to sort out what the story is with the effect of scaling on performance of the Paninski algorithm. Cian suggests calculating the false positive rate, and false negative rate at each increment of an incrementally increasing threshold of spike or no spike. Needs to be performed in matlab. Could be annoying.
+
+	\item[04/07/2017] Prepared the figures for Cian showing the performance of the algorithm with different thresholds. See what he has to say about that.
+
+	\item[05/07/2017] Prepared another figure, aggregating over all the false positive/false negative rates, showing the mean and standard error. I think I have forgotten what the point of this is.
+
+	\item[06/07/2017] Used a threshold to predict spikes instead of knn. It performs much worse, but it's more realistic on the other hand. Anyway I suggested to Cian that this madness must end.
+
+	\item[07/07/2017] Need to have a read of the original paninski paper to find out what the last output field is actually supposed to be. I'll see if I can think of some reasonable way to convert this vector into a spike train after that.
+
+	\item[09/07/2017] Emailed Pnevmatikakis about the Paninski algorithm. I want to know what the 'sp' return variable is actually supposed to be. Hopefully he will respond.
+
+	\item[10/07/2017] Printed out a paper by Pnevmatikakis. Hasn't replied so far.
+
+	\item[17/07/2017] Arrived back from holiday. Actually need to read the paper I mentioned in my last entry.
+
+	\item[18/07/2017 - 26/07/2017] Got a reply from Pnevmatikakis. He said that the algorithm wasn't really designed for inferring spike trains. So I gave up on that algorithm. Since then I have look implementing other algorithms and seeing how the optimisation is going. Tomorrow I need to read a bit of a paper about a new algorithm, and play around with the examples for that algorithm. Hopefully, I can actually implement this one properly.
+
+	\item[27/07/2017] Make a program that optimises the five free parameters of the model before running the model. Run that on all of the traces in dataset eight. Make figures showing the power spectrum for each trace. See what Cian thinks of that.
+
+  \item[28/07/2017] Finish making the program described above. Run it. Send figures to Cian. Practise with the OASIS spike inference algorithm.
+
+  \item[31/07/2017] Had a meeting with Cian. It was good. Almost finished with the optimisation. Need to put the optimisation figures on the Google drive. Need to make a figure of the rms path as the number of iterations increases. Need to make notes on what I have done in this project. Hopefully a paper can be written on it. Need to email the Deneux guy.
+
+  \item[01/08/2017] Tomorrow I need to continue with learning about the OASIS algorithm. Hopefully I can implement it soon. Its seems somewhat simple. I should also redo the optimisation with slightly different starting points.
+
+  \item[02/08/2017 - 03/08/2017] I had the flu for these days.
+
+  \item[04/08/2017] Tomorrow, I have to attempt to get the OASIS algorithm running on the spike-finder data. The examples in the github repo are not very helpful. The quality of the coding is poor in the examples, but good in the actual code.
+
+  \item[05/08/2017] Had another look at the OASIS algorithm. I should apply it the same way as it is applied in example number 5. Vary the minimum amount of non-zero activity within each time-bin until we get a reasonable number of spikes. In order to infer the actual spikes, do the same thresholding as in example number 5.
+
+  \item[06/08/2017] Wrote a good script for the OASIS algorithm. Made figures and saved traces and spike trains. Need to move the figures into the google drive. Tell Cian they're there. Tell Cian to have a look at them, and the other figures before our meeting tomorrow. Also need to do some classification analysis on the results of this algorithm.
+
+  \item[07/08/2017] Made the classification analysis for the OASIS algorithm. Need to implement some kind of window in the classification analysis. Need to finish of the work on applying a positive window to the classification analysis.
+
+  \item[08/08/2017] Finished implementing the window. The OASIS algorithm performs better on the modelled data than on the actual data now. Apply the window to the Lzero data next.
+
+  \item[09/08/2017] The Lzero data was also improved by using the window. The algorithm performs better on the modelled traces than on the actual fluorescence traces, when evaluated using the window. Need to apply the methodology that I applied to the OASIS algorithm to the paninski algorithm and see how that goes. This will require writing some matlab.
+
+  \item[10/08/2017] The Paninski algorithm now behaves as expected after performing analysis using an 'optimised threshold' and the two frame window. Tomorrow, I should investigate to verify that everything is actually working the way I think it is (too good to be true). Next week I will have to move on to peturbation, or something. Will also be meeting Nick, and maybe Mike as well.
+
+  \item[11/08/2017] I investigated the results. I'm happy enough that they are genuine. This is good. I will now write a new project for doing the peturbation analysis.
+
+  \item[14/08/2017] Made some progress with the peturbation analysis code. Doing it in a slightly different way. Should work well, I hope.
+
+  \item[15/08/2017] The only problem with the code so far is saving down the results. I'm trying to save them all down in the one hdf5 file, but it's not cooperating. Saving as a mat file may be a better option.
+
+  \item[16/08/2017] Got the hdf5 save down working well. The problem was with over writing the data that I had already written. Just need to write the python to make the figures now.
+
+  \item[17/08/2017 - 22/08/2017] Had a meeting with Cian. Had a look at the perturbation figures. They're quite good. Need to make more figures for perturbing different parameters. Currently working on taking the perturbed modelled fluorescence traces, inferring spike trains from them, and evaluating the quality of the inference.
+
+  \item[23/08/2017 - 27/08/2017] Managed to evaluate the difference in spike inference quality with perturbed fluorescence indicator concentration. Need to make the labels a bit clearer. But also need to get the lzero algorithm working better.
+
+  \item[28/08/2017 - 30/08/2017] Got the Lzero algorithm working well. It goes slowly, but it goes well. Still need clearer labels, although I can control that really. Need to figure out a way of perturbing the optimised parameters. Should graph the values of the optimised params.
+
+  \item[31/08/2017 - 01/09/2017] Re-registered. Wrote a lot of code for making boxplots of the fluorescence model parameters' optimised values.
+
+  \item[02/09/2017 - 10/09/2017] On holiday. When I come back, I need to look at the discrepancy between lzero performance. The perturbed values are worse than the values from the model, even though they should be similar.
+
+  \item[11/09/2017 - 12/09/2017] Made the figure comparing the optimised parameters pairwise. Not sure what to make of it. Need to investigate the lzero performance tomorrow.
+
+  \item[13/09/2017 - 15/09/2017] Investigating the Lzero performance currently. It still doesn't behave like the other algorithms. It's difficult to tell why. Need to make more graphs, take more measurements.
+
+  \item[16/09/2017 - 19/09/2017] Had a meeting with Cian. He's ok with Lzero performing differently to the other algorithms. It's just not a very good algorithm. Need to do the following:
+      \begin{itemize}
+        \item Make a graph showing the difference in number of spikes predicted, actual vs predicted, with different colours for different perturbation values.
+        \item Calculate the spike triggered average concentrations of each of the buffers in the model
+        \item Measure the time constants of all the concentrations.
+        \item Change the optimised parameter pairwise comparison graph, so that all of the axes start at zero.
+      \end{itemize}
+
+  \item[20/09/2017] Changed the optimised parameter graphs. Made a good start on the number of spikes difference graphs.
+
+  \item[21/09/2017 - 22/09/2017] Made the spike count comparison graphs. Also managed to delete all of my h5 files. I will have to remake those overnight.
+
+  \item[23/09/2017 - 27/09/2017] Remade all the h5 files quite quickly. Also created some figures using PyPlot and Seaborn in julia. Installed julia v0.6. Measured all the spike induced averages of the traces. Now need to measure the time constants.
+
+  \item[28/09/2017 - 30/09/2017] Wrote a script for measuring spike induced changes, and time constants, each of the buffer traces has two time constants, one fast and one slow. The excited indicator bound calcium has an inverse logarithmic increase followed by an exponential decay. Need to ask Cian if the spike induced change measurement is correct, and what he wants from the time constants. I also need to start writing up this work as a chapter for my thesis.
+
+  \item[02/10/2017] Did not have meeting with Cian. Need to convert time constants and spike induced changes into more sensible units. Need to start writing. Writing this the top priority for tomorrow.
+
+  \item[03/10/2017 - 15/10/2017] Started writing the thesis chapter on the fluorescence model. It's going well so far. Also wrote a function for converting from molecules to molar concentration. Need to get started on running the perturbation analysis with optimisation.
+
+  \item[16/10/2017] Edited the Perturbation analysis process to run the analysis with optimisation. The optimisation is the slow part, and it is running. The analysis is not running, there is some bug. But that can be fixed in the future. Need to keep going with writing the chapter. Start with including the smoothed power spectrum. Then move on to the spike inference methods.
+
+  \item[17/10/2017 - 20/10/2017] Continued to write up the thesis chapter. Currently running the optimised perturbation analysis. Need to start writing about the perturbation analysis next week. Good talk today from a man from Google Deepmind. Should have spoken further.
+
+  \item[23/10/2017] Need to write up the methods and analysis on the perturbation analysis. The start on the presentation. The perturbation analysis with optimisation mostly worked.
+
+  \item[24/10/2017 - 03/11/2017] Prepared and presented the presentation. Had a useful meeting with both Mike and Cian, with follow up work to do. Started work on further perturbation, but the results are strange. Need to investigate the calcium dynamics/fluorescence traces produced by the perturbation process. The most likely explanation is a coding error on my part.
+
+  \item[04/11/2017 - 07/11/2017] Found a bug in the perturbation with optimisation bash script. Fixed the bug, now re-running all of the analysis. Need to see if I can write some of the discussion. Should revise the introduction part also. The analysis will take an age to run.
+
+  \item[08/11/2017] Continued with redoing the analysis. It takes a while. Re-wrote some of the introduction to the thesis chapter. Meeting with Cian tomorrow.
+
+  \item[09/11/2017 - 16/11/2017] Meeting went very badly. Cian suggested changing the model to remove some of the parameters. Got started on that. Presented a paper to the O'Donnell group. Wrote a draft application for COSYNE. Tomorrow I need to create some traces with the new model using a very large value for the calcium rate. See if that makes any difference.
+
+  \item[17/11/2017 - 20/11/2017] Making the calcium rate very large did make some difference. Need to change the objective function, and make more traces. Wrote a submission for COSYNE, need to submit that this evening.
+
+  \item[21/11/2017 - 11/12/2017] Managed to the new model working well. I have changed the objective function to include the difference between the two traces. I have re-made almost all analysis. Still running the Lzero spike inference on the perturbation. Need to make new dynamics comparisons and trace comparisons for the perturbation data. Need to have a go at making an RNN to infer spikes.
+
+  \item[12/12/2017 - 13/12/2017] Many other people have made combinations of RNNs and CNNs to solve the spike inference problem. All of these solutions require tensorflow and a GPU however. After much messing around I have managed to get the `MLspike' spike inference algorithm working. Although it doesn't perform very well. It's better than Lzero.
+
+  \item[14/12/2017 - 17/12/2017] Managed to get MLSpike working well enough to include in the results. Had to update my version of Julia due to Sundials (I think). Took all day on the 15th but got it working. Need to analyse the perturbation without optimisation results. On the spike inference performance figures make sure the Y-axis is between 0 and 1. Read about the false discovery rate and Tukey's test. These may be good ways to compare the infernce performance at perturbed values.
+
+  \item[18/12/2017] Managed to do the perturbation without optimisation. Results are not that different from the optimised version. Also changed the spike inference y-axis range.
+
+  \item[18/12/2017 - 16/01/2018] Need to put the perturbation spike inference quality section in the document. Also  need to Add the table of sources and values for fixed parameters, seriously. Need to register for COSYNE.
+
+	\item[17/01/2018 - 22/01/2018] Registered for COSYNE, booked flights and most of the accommodation. Changed the perturbed fluorescence figure to see all of the traces individually. Problem with the lower perturbed values. Still need to add table of sources and values for parameters.
+
+	\item[23/01/2018] Meeting with Cian. Need to measure the signal to noise ratio for each perturbed value. Must measure the change induced by a spike averaged over 100 samples. Must also make the fluorescence model into a single repository. Need to move unit conversion from modelling to model.
+
+	\item[24/01/2018 - 26/01/2018] Wrote a script for measuring SNR. Put it in the chapter. Made the fluorescence model into a single repository. Moved unit conversion as well. Need to put in a table of sources and whatnot. Also need to perturb another parameter.
+
+	\item[26/01/2018 - 29/01/2018] Started perturbing the immobile buffer. Still running. Need to edit the perturbation code to accept two parameters to perturbed at the same time.
+
+	\item[30/01/2018] Finished off putting in the table of fixed parameters. Chapter is almost finished now. Still need to edit the fluorescence\_training script to accept two parameters.
+
+	\item[31/01/2018] Need to edit the fluorescence\_training script still. But the priority is the Okinawa application.
+
+	\item[01/02/2018] Have an idea of the Okinawa application. Preparing for the workshop tomorrow at the moment.
+
+	\item[02/02/2018] Sent a draft of the application to Cian. Waiting for a reply now. Need to get back to the parameter perturbation over the weekend. Still need to rewrite \texttt{fluorescence\_training.jl}.
+
+	\item[05/02/2018 - 09/02/2018] Did the analysis on the immobile buffer concentration perturbation. Nice result. Also edited the training/perturbation process to accept more than one parameter at a time, currently running. Need to ask Cian about an alternative to reporting p-values.
+
+	\item[12/02/2018] Did the analysis on the binding/unbinding rates, results were fine. Need to start editing the poster.
+
+	\item[13/02/2018] Edited the poster. Sent to Cian. Some major changes to the layout may be necessary in order to fit everything in there.
+
+	\item[14/02/2018] Changing the poster quite a bit now. Five columns, much wider. Should be able to fit more things. Try not to put in too much text, mostly results.
+
+	\item[15/02/2018] Edited the title of the poster. Mostly did HPT work.
+
+	\item[16/02/2018] Made some small progress with the poster. Subcaption environment breaks the compilation.
+
+	\item[17/02/2018] Did a little bit on the cosyne poster.
+
+        \item[18/02/2018 - 21/03/2018] Made the COSYNE poster and went to COSYNE. The conference was very good. The talks were interesting on the whole. Some were very particularly good. The poster session went well. People were interested in the model and how it could be useful for them. Some people took my email address etc. Since I got back, I added more to the calcium fluorescence thesis chapter. I also had a review meeting with Conor that went quite well. I had a meeting with both Cian and Mike about the thesis chapter and turning it into a paper. They both think that what I have written is fine as a thesis chapter. But it needs a little more to work as a paper. In particular something that makes it more interesting to the field. For example, comparing two different types of cells, or comparing two different types of indicator.
+
+        \item[22/03/2018] Need to do some HPT. Also need to think about what to add to the chapter to make it into a paper. Also need to see what I can download from the Allen Institute's brain data. Looking for V4 data in the mouse brain.
+
+        \item[23/03/2018] Did the HPT. Tried to install the allensdk, but can't manage it. Asked IT to do it instead. Need to have a look at the references sent by Mike.
+
+        \item[26/03/2018] Read some of the references sent over by Mike. Emailed Mike and Cian. Going to make a new project for simulating spike trains. 
+
+        \item[27/03/2018 - 17/04/2018] Simulated spike trains with different mean firing rates. Work on finishing then fluorescence modelling paper is ongoing with Mike and Cian. Had a meeting with Nick and Cian. Re-read the Kolazyck paper on the statistical modelling for hierarchical systems. Sent my thoughts on the paper to Cian and Nick. Started looking for a placement, attended a meeting, have more meetings in the upcoming days.
+        
+        \item[18/04/2018] Start on the paper as outlined by Cian. Start with figures. Attend meeting in Adarga.
+
+        \item[19/04/2018 - 26/04/2018] Attending meetings at Adarga and CheckRisk. Will be applying with both of these companies. Need to email CheckRisk soon, and Adarga also. Made the figures for Cian. He suggested changes. Start on those tomorrow evening. Also received data from Mike/Anna Simpson, started work on modelling fluorescence traces for that.
+
+        \item[27/04/2018 - 16/05/2018] Spent a lot of time on the applications for CheckRisk and Adarga. Now submitted. Remade the figures for Cian, they look more like what would be seen in a paper now. Need to ask Cian about what the next step is on the paper. Did the analysis for Mike/Anna Simpson. Only acknowledging one spike per bin may be a problem. Currently working on loading in Neuropixels data, and applying the heirarchical model to this data.
+
+        \item[17/05/2018 - 06/06/2018] Re-did the analysis for Mike, worked out quite well. Mike was happy with it anyway. I redid the figures for the paper. Cian was happy with most of them, but a few still need to be redone. The application with CheckRisk was accepted, I will start on the 25th of June. Must tell Cian about that. Wrote a julia script to do most of the same analysis as is in the MATLAB script that goes with the Neuropixels data.
+
+        \item[07/06/2018 - 08/06/2018] Wrote a julia script to count the spikes for each cell, and created a csv holding all the necessary data. Need to fit the hierarchical model to the data. Sent the figures to Mike. He said he would discuss the paper with Cian.Also need to update the figures.
+
+        \item[09/06/2018 - 14/06/2018] Used statistical tests to see if the cells are more Poisson or more Gaussian. More of them are Gaussian, but most of them are neither. Need to write some functions to do the parameter transformation. Also still need to edit the paper figures. But Cian and Mike have not looked at them yet. Starting placement the week after next.
+
+        \item[15/06/2018 - 22/06/2018] Wrote the fuctions for the parameter transformations. Also wrote some functions to get the model distributions. There may be a problem with the model. Need to re-read the paper and make sure I understand. Placement is supposed to start soon. 
+
+\end{description}
+\end{document}

@@ -1,0 +1,162 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Dictionary}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+ \thispagestyle{plain}
+ \section*{Dictionary}
+ \begin{description}
+ \item[Akaike information criterion] This is a measure of the relative quality of statistical models, given a set of observed data.
+ 	\begin{align*}
+ 	AIC = 2k - 2\log \hat{L}
+ 	\end{align*}
+ 	where $k$ is the number of free parameters estimated in the model, and $\hat{L}$ is the maximised value of the likelihood function of the model $P(X|\hat{\theta}, M)$. The preferred model will be the one with the minimum AIC value.
+
+ \item[Astrocyte] Start shaped glial cells in the brain and spinal cord. They can signal to neurons through calcium dependent release of glutamate.
+
+  \item[ATPase] ATPases are a class of enzyme which acts as a catalyst in the reaction ATP $\rightarrow$ ADP $+$ PO$^{3-}_4$ (phosphate ion). The energy produced from this chemical reaction is the main source of energy for intracell activity.
+
+ \item[autoregressive-model] A model of a stochastic variable, the value of which depends on the value from previous iterations. For example, $AR(p)$ denotes an autoregressive model of order $p$.
+ 	\begin{align*}
+ 	X_t = c + \sum_{i=1}^p \phi_i X_{t-i} + \epsilon_t
+ 	\end{align*}
+
+  \item[channel capacity] Let random variables $X$, and $Y$ be the input and output of a communications channel. Then $p_{Y|X}(y|x)$ is the conditional probability defined by the channel itself. Then the choice of $p_{X}(x)$, the marginal distribution, defines the joint distribution $p_{X,Y}(x,y)$. This in turn defines the mutual information $I(X;Y)$. The capacity of this channel is the maximum mutual information, maximised over the choice of $p_{X}(x)$.
+  \begin{align}
+  C &= \sup_{p_{X}(x)} I(X;Y)
+  \end{align}
+
+  \item[Chapman-Kolmogorov equation] Suppose that $\lbrace f_i \rbrace$  is an indexed collection of random variables aka. a stochastic process. Suppose the joint probability density function is  $p_{i_1, \dots, i_n}(f_1, \dots, f_n)$. The Chapman-Kolmogorov equation is
+    \begin{align}
+    p_{i_1, \dots, i_n}(f_1, \dots, f_n) = \int_{-\infty}^{\infty} p_{i_1, \dots, i_n}(f_1, \dots, f_{n-1}) df_n
+    \end{align}
+  This is a straightforward marginalization. But, if the stochastic process is Markovian we have
+    \begin{align}
+    p_{i_1, \dots, i_n}(f_1, \dots, f_n) = p_{i_1}(f_1)p_{i_2;i_1}(f_2|f_1) \cdots p_{i_n;i_{n-1}}(f_n|f_{n-1})
+    \end{align}
+  Which makes the Chapman-Kolmogorov equation take the form
+    \begin{align}
+    p_{i_3;i_1}(f_3|f_1) = \int_{-\infty}^{\infty} p_{i_3;i_2}(f_3|f_2) p_{i_1;i_2}(f_2|f_1) df_2
+    \end{align}
+  In English, the probability of going from state 1 to state 3 is the sum of probabilities of going from state 1 to state 2 to state 3, summed over all of the possible values of state 2.
+
+  \item[choline] A vitamin required for neurotransmission and signalling.
+
+  \item[cortical minicolumn/microcolumn] A vertical column through the layers of the cortex, comprising 80-120 neurons. Except in the primate primary visual cortex where there are usually double that number. In humans, there are about $2\times 10^8$ minicolumns. Their diameters is about 28-40$\mu$m. Cells in the same minicolumn may all have the same receptive field, and adjacent minicolumns may have different receptive fields.
+
+  \item[dorsal visual stream] The collection of brain regions concerned with guidance of actions and recognising where objects are in space.
+
+  \item[GABAergic] Any agent or drug that functions to directly modulate the GABA system in the body or brain is GABAergic.
+
+  \item[likelihood] The likelihood function of a set of parameters, $\theta$, given a set of evidence, or data $X$, is the probability of those data, or that evidence, given those parameters. That is
+  \begin{align}
+   \mathcal{L}(\theta | X) = P(X | \theta)
+  \end{align}
+
+  \item[maximum entropy model] Given a system which produces some output, with or without constraints, the maximum entropy model of this system is the model which gives the most unifrom probability to each potential output, while satisfying the constraints. It is therefore the model with maximum entropy. The typical method of finding the maximum entropy model is to use a Langrian mutliplier.
+
+  \item[mode] The mode of a data set is the value that appears more often. The mode of a discrete probability distribution is the value of $x$ at which $P(x)$ takes its maximum value. The mode of a continuous probability distribution is the value of $x$ at which $p(x)$ takes its maximum value.
+
+  \item[molar concentration] Also called molarity, amount concentration, or substance concentration is a measure of the concentration of a solute in a solution, or of any chemical species, in terms of amount of substance in a given volume. The commonly used unit is the mole per litre, mol/L. 1 mole per litre is one molar, 1 mol/L = 1 M.
+
+  \item[multinomial distribution] For $n$ independent trials each of which leads to a success for exactly one of $k$ categories, each of which have a given fixed probability of success, the multinomial distribution gives the probability of any particular combination of numbers of successes for the categories. The parameters are $n$, the number of trials, and $p_1, \dots, p_k$, the fixed probability of success for each possible outcome. The probability mass function is:
+  \begin{equation}
+    P(X_1 = x_1 \text{ and } X_2 = x_2 \text{ and } \dots \text{ and } X_k = x_k) =
+      \begin{cases}
+        \frac{n!}{x_1!\cdots x_k!}p_1^{x_1}\cdots p_k^{x_k} & \text{ if } \sum_{i=1}^k x_k = n \\
+        0 & \text{ otherwise }
+      \end{cases}
+  \end{equation}
+
+  \item[neuropil] An area of the body (usually the brain) which contains a large amount of unmylinated axons, dendrites, and glial cells. The area should also be dense in synapses, and rare in cell bodies.
+
+  \item[phenomenological] A phenomenological model does not attempt to model biophysical characteristics directly. Instead it attempts to recreate the same results as the biophysical process.
+
+  \item[p-value] The p-value of a statistic is a function of that statistic which tests the probability of a certain hypothesis relating to that statistic. For example, given two datasets, one experimental, and one control, to test if the mean of the two sets are different one does the following:
+   \begin{enumerate}
+    \item Merge the two datasets, and select two samples at random from the resulting dataset.
+    \item Find the means of the two datasets, $\mu_1$, and $\mu_2$.
+    \item Find the difference between the two, $\Delta \mu_{null}$.
+    \item Repeat the process a number (e.g. $10^7$) of times. Build up a probability distribution for $\Delta \mu_{null}$ using these samples, Pr$(\Delta \mu_{null})$.
+    \item Calculate difference between the means of the observed, or original, datasets $\Delta \mu_{obs}$.
+    \item Calculate the probability of observing $\Delta \mu_{obs}$ if both the original datasets had been selected from the same distribution, i.e. the p-value of $\Delta \mu_{obs}$ by calculating
+     \begin{align}
+      p &= \int_{-\infty}^{-\Delta \mu_{obs}} \text{Pr}(\Delta \mu_{null}) d \Delta \mu_{null} +  \int^{\infty}_{\Delta \mu_{obs}} \text{Pr}(\Delta \mu_{null}) d \Delta \mu_{null}
+     \end{align}
+   \end{enumerate}
+   The lower the p-value, the less likely the null hypothesis is, i.e. the less likely it is that both the experimental and control datasets were selected from the same distribution. Bear in mind that this isn't really saying that much, we still have no idea what a true hypothesis would look like.
+
+  \item[Poisson distribution] The Poisson distribution gives the probability of a given number of events occurring in a fixed interval of time or space, if these events occur with a known constant rate, and independently of the time since the last event. There is only one parameter, $\lambda$, the rate, aka the event rate, aka the Poisson rate. The probability mass function is:
+  \begin{equation}
+    P(\text{number of events} = k) = e^{-\lambda} \frac{\lambda^k}{k!}
+  \end{equation}
+
+  \item[posterior (probability distribution)] The posterior distribution of an uncertain quantity is the probability distribution expressing our beliefs about the quantity after some evidence has been taken into account. For example, the posterior distribution of the parameter $\theta$, after the evidence $X$ has been taken into account, is written as $p(\theta|X)$.
+
+  \item[prior (probability distribution)] The prior probability distribution, or simply the prior, of an uncertain quantity is the probability distribution expressing our beliefs about the quantity before any observed data or evidence is taken into account.
+
+  \item[standard score (z-score)] The standard score of an observation within a dataset is the signed number of standard deviations away from the mean that the observation lies. So, for an observation $x$, its standard score is
+  	\begin{align}
+  	z = \frac{x - \mu}{\sigma}
+  	\end{align}
+
+  \item[stiff DE] A differential equation, or system of equations, where the numerical methods for solving the system are unstable unless an extremely small step size is used.
+
+  \item[sufficient statistic] A statistic is sufficient with respect to a statistical model and its associated unknown parameter if ``no other statistic that can be calculated from the same sample provides any additional information as to the value of the parameter." $\sim$ Ronal Fisher.
+
+  \item[TEA (Tetraethylammonium)] Chemical used as a potassium channel blocker.
+
+  \item[ventral visual stream] The collection of brain regions associated with object recognition and form representation. As opposed to the dorsal stream.
+
+  \item[Wilcoxon rank sum test] A method for testing the null hypothesis that it is equally likely that a randomly selected value from one sample will be less than or greater a randomly selected value from a second sample.
+
+ \end{description}
+
+\end{document}

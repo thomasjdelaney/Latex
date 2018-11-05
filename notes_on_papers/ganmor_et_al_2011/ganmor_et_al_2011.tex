@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Ganmor et al 2011: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section*{Sparse low-order interaction network underlies a highly correlated and learnable neural population code}
+\subsection*{Elad Ganmor, Ronen Segev, Elad Schneidman}
+\subsubsection*{Abstract}
+Pairwise models (Schneidmann's maximum entropy model) are not sufficient for large ($\sim$100) groups of neurons responding to natural stimuli. The sparse nature of the neural code allows higher order interactions to be learned by a novel model, to be described. The interaction network is organised in a heirarchical and modular manner, suggesting scalability. 
+
+\subsubsection*{Introduction}
+	To analyse the code produced by large groups of neurons we need to find dependencies between the neurons. Models which only analyse the pairwise interactions of neurons have proved useful in the past, but are shown to be insufficient for larger groups of neurons here. A very sparse network of low order interactions gives an accurate prediction of the probabilites observed. The model itself is called "The reliable interactions model", it learns the functional relationships between neurons of any order based on the data observed. It is shown than the smaller networks can be combined to make larger networks.
+	
+\subsubsection*{Results}
+	$20$ms time bin sizes were used to bin the data. The pairwise correlations were found to be weak, but the network was strongly correlated overall. The pairwise maximum entropy model was better at modelling the responses of the network to artificial films without spatial structure than it was at modelling the responses to natural films. This indicates that higher order interactions may be more important in encoding natural stimuli.
+	The behaviour of the overall network, and the network of cells only categorised as `off' cells were found to behave very similarly. The RI model performed well when the time bin size was varied over 10ms, 20ms, and 40ms, whereas the pairwise maximum entropy model performed worse for the larger time bins.
+	The RI model set a learning threshold of $n_{RI} = 10$. That means that in order for a pattern to be used in the model, the pattern must be observed at least 10 times. With this $n_{RI}$ it was found that the number of parameters in the model was far fewer than those needed for the pairwise maximum entropy model. All of the parameters corresponded to patterns with an order of 5 or less. 
+	The more correlated the natural stimulus, the more correlated the responses, and the higher the order of correlation. So with a more correlated response, the RI model outperformed the maximum entropy model even more.
+	The RI model improved when $n_{RI}$ was lowered and when more data was used. It outperformed the maximum entropy model using significatly fewer parameters.
+	Bear in mind that the RI model does not guarantee a completely normalised probability distribution across all possible responses. It will assign a zero probability to any patterns which it does not see.
+	It was found that correlation strength between neurons weakened with distance between the neurons. Because of this, a large network of more than 100 neurons could be modelled in a modular way implementing the RI model over smaller subsets of the network.
+
+\end{document}

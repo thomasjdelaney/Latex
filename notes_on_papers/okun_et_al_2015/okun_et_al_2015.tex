@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Okun et al 2015: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section*{Diverse coupling of neurons to populations in sensor cortex}
+\subsection*{Michael Okun, Nicholas Steinmetz, Lee Cossell, M. Florencia lacaruso, Ho Ko, P\'eter Barth\'o, Tirin Moore, Sonja B. Hofer, Thomas D. Mrsic-Flogel, Matteo Carandini, Kenneth D. Harris}
+\subsubsection*{Abstract}
+	The idea of this paper was to explore the relationship between neuronal couplings and the behaviour of the whole population. Recordings from mouse and monkey visual cortices were used. Neighbouring neurons can differ in their population coupling strength, from strongly to weakly coupled. The population coupling is a fixed cellular attribute, independent of stimulus conditions. Neurons with strong population coupling are often affected more strongly by non-sensory behavioural variables like motor intention. Population coupling reflects a causal relationship, in that it can be used to predict the behaviour of a neuron. The population coupling of a neuron also predicted \textit{in vitro} estimates of the number of synapses between that neuron and its neighbours. Knowledge of the population couplings of $N$ neurons predicts a substantial portion of their $N^2$ pairwise couplings. 
+	
+\subsubsection*{Introduction}
+The population rate, i.e. the summed activity of all the neurons in a population was considered. The population rate was not strictly determined by sensory stimuli. It closely tracked the LFP, which was also tracked. Population coupling strength formed a spectrum across all neurons. This spectrum was destroyed when the data was shuffled, even when preserving the individual neuron spike rates, and the population rates. Strongly coupled neurons were more likely to have a low firing rate, and to exhibit bursting behaviour.
+
+Some synthetic data was produced. Each neuron's mean firing rate, each neuron's population coupling, and the population rate was set. The data produced looked very much like the actual data. 
+
+Population coupling was shown to be invariant under the presence or otherwise of a stimulus, and the properties of a grating stimulus also had no effect on population coupling. This shows that population coupling is an invariant characteristic of the neuron itself.
+
+Cells with a stronger population coupling showed a greater increase in firing rate when presented with any kind of stimulus.
+
+An experiment was set up with mice whose synaptic coupling was slowed or disabled. When these mice were presented with a stimulus only a few neurons increased their firing rate. In a control set of mice, the firing rate of many more neurons, especially those with strong population coupling showed an increase. This shows that the population coupling is a measure of the affect of the population on one of its members. 
+
+Measuring variations in the cells' subthreshold membrane potential, and calculating the cells' probability of receiving synaptic input suggested that neurons with stronger population coupling also had more synaptic input. So population coupling reflects synaptic inputs from other neurons in the population. In contrast, there was no correlation between giving synaptic output and population coupling.
+
+\end{document}

@@ -1,0 +1,64 @@
+\begin{thebibliography}{9}
+ \bibitem{retinal}
+  S. Nirenberg, S.M. Carcieri, A.L. Jacobs, P.E. Latham,
+  \emph{Retinal ganglion cells act largely as independent encoders}.
+  Nature 411,
+  689-701,
+  (2001)
+ 
+ \bibitem{weak}
+  Elad Schneidman, Michael J. Berry, Ronen Segev, William Bialek, 
+  \emph{Weak pairwise correlations imply strongly correlated network states in a neural population}. 
+  Nature 440, 
+  1007-1012,
+  (2006)  
+  
+ \bibitem{lfps}
+  Alberto Mazzoni, Nikos K. Logothetis, Stefano Panzeri, 
+  \emph{The information content of Local Field Potentials: experiments and models}.
+  arXiv:1206.0560, 
+  [q-bio.NC],
+  (2012)
+  
+ \bibitem{barlow}  
+  H.B. Barlow, 
+  \emph{Possible principles underlying the transformations of sensory messages}.
+  Sensory Communications, 
+  217-234, 
+  (1961)
+
+ \bibitem{building}
+  Quoc V. Le, Marc Aurelio Ranzato, Rajat Monga, Matthieu Devin, Kai Chen, Greg S. Corrado, Jeff Dean, Andrew Y. Ng,
+  \emph{Building high-level features using large scale unsupervised learning}.
+  Proceedings of the $29^{\text{th}}$ International Conference on Machine Learning,
+  (2012)
+
+ \bibitem{identification}
+  Shijun Weng, Wenzhi Sun, Shigang He, 
+  \emph{Identification of ON–OFF direction selective ganglion cells in the mouse retina}.
+  Journal of Physiology 562, 
+  915–923, 
+  (2005)
+
+ \bibitem{analytical}
+  Stefano Panzeri, Alessandro Treves
+  \emph{Analytical estimates of limited sampling biases in different information measures}.
+  Network: Computation in Neural Systems 7,
+  87–107,
+  (1996)
+  
+ \bibitem{correcting}
+  Stefano Panzeri, Riccardo Senatore, Marcelo A. Montemurro and Rasmus S.Petersen,
+  \emph{Correcting for the Sampling Bias Problem in Spike Train Information Measures}.
+  Journal of Neurophysiology 98,
+  1064-1072,
+  (2007)
+  
+ \bibitem{calculating}
+  Houghton C. 2015,
+  \emph{Calculating mutual information for spike trains and other data with distances but no coordinates}.
+  Royal Society Open Science 2,
+  140391,
+  (2015)
+  
+\end{thebibliography}

@@ -1,0 +1,72 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Ionic Channels of Excitable Membranes - Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section{Notes on ``Ionic Channels of Excitable Membranes" by Bertil Hille}
+\subsection{Chapter 4: Calcium Channels}
+\subsubsection{Crustacean muscles can make Ca$^{2+}$ action potentials}
+	Fatt and Katz (1958) discovered that crustacean muscles don't need Na channels in order to create action potentials.
+	
+	Fatt and Ginsborg (1958) identified that Ca$^{2+}$ ions were facilitating the spiking. Ca$^{2+}$ has a greater Nernst equilibrium potential than Na. The use of TBA and TEA in their experiments blocked the K channels. This stopped the repolarisation of the cells, which caused the Ca$^{2+}$ channels to remain open and depolarise the cells regenratively.
+	
+	Hagiwara and Naka (1964) found that reducing the amount of intracellular Ca$^{2+}$ restored Ca spiking mechanism.
+	
+	Every type of excitable cell has Ca channels. They are similar to Na and K channels in that they are voltage dependent, they open in response to depolarisation with some delay, and they close rapidly after repolarisation.
+	
+\subsubsection{Ca Channels activate with depolarisation}
+	In general, Ca channels activate when the membrane is depolarised. They need a larger depolarisation than Na channels need. They activate more slowly than Na channels also. $I_{Ca}$ is usually quite a bit smaller than a typical $I_{Na}$. If depolarisation is maintained, the $I_{Ca}$ deactivates slowly, and usually doesn't completely stop. $I_{Ca}$ is usually small, and slowly decaying. This causes pure Ca action potentials to rise slowly, conduct slowly, and have a long duration.
+	
+	Even within the same species, different cells use Ca$^{2+}$ in different ways. For example, in crayfish muscles or mammalian hearts, the $I_{Ca}$ makes a major contribution to functionality. But in frog muscles, the $I_{Ca}$ is negligable relative to the $I_{Na}$, which does all the work.
+
+
+\end{document}

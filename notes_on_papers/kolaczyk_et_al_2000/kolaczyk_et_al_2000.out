@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Abstract \046 Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Aggregation \046 The Likelihood}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The Spatial Model}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Multiscale Likelihood Factorizations}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Likelihood Factorisation for Continuous and Count Data}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Gaussian case}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Poisson case}{subsection.2.3}% 7
+\BOOKMARK [1][-]{section.3}{Estimation}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Prior Distributions}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Further Notes}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Implementation of Gaussian case on a parent with two children}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Attempt at deriving Gaussian parameter transformations}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Variable Directory}{}% 13

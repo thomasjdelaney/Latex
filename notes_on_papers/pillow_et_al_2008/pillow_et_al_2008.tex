@@ -1,0 +1,89 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Pillow et al 2008: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section*{Spatio-temporal correlations and visual signalling in a complete neuronal population}
+\subsection*{Jonathan W. Pillow, Jonathon Shlens, Liam Paninski, Alexander Sher, Alan M. Litke, E.J. Chichilnisky, Eero P. Simoncelli}
+
+\subsubsection*{Abstract}
+	Parameters were fit to the physiological data. The model captured the stimulus dependence and the spatio temporal correlations.Two main observations were made: 
+	\begin{enumerate}
+		\item Neural encoding was less noisy than expected at the population level. After taking the spike times of neighbouring neurons into account, the spike times of neurons were more precise and predictable.
+		\item A model that makes use of correlations in the data extracts $20\%$ more information than the independent model, and $40\%$ more information than optimal linear encoders.
+	\end{enumerate}
+	The correlations in the population response are very important.
+	
+\subsubsection*{Introduction}
+	The point of the paper was to find out how the correlation of responses is related to the visual stimulus pattern, and how these relations affect the coding of the visual stimuli. The model used was a generalised linear model. More specifically, a linear non-linear Possion (LNP) cascade model was used. The linear filters take the form of a a set of vectors with the same number of elements as there are cells (?) $\mathbf{k}_1, \mathbf{k}_2, \dots , \mathbf{k}_n$. Each one of the vectors represents a certain linear filter. The result of the linear filtering is then passed into a non-linear function to represent any non-linearities. The result of the non-linear filtering is then used as the spiking rate for a Poisson distribution. This results in an instantaneous spike probability of
+	\[
+		P(spike) \propto f(\mathbf{k}_1 \cdot \mathbf{x}, \dots, \mathbf{k}_n \cdot \mathbf{x})
+	\]
+	and a probability of
+	\[
+		P(\text{y-spikes}) = \frac{(\Delta \lambda)^y}{y!} e^{-\Delta \lambda}
+	\]
+	for observing $y$ spikes in a single time bin of size $\Delta$. This model had a set of linear filters: stimulus filter or receptive field, a post-spike filter, which factors in spike history, and coupling filters. The stimulus used was 120 Hz white noise. Fitting was performed by maximum likelihood estimate, and a penalty was placed on the coupling filters in order to find the minimal sufficient network.
+	
+	There were 27 ON and OFF retinal gangloin cells from a macaque retina used. 
+	
+\subsubsection*{Results}
+	For an ON cell, spikes in neighbouring ON cells exhibit a large transient excitation, whereas spikes in nearby OFF cell exhibit an inhibition/supression. The reverse effects are observed for an OFF cell. Coupling strength falls off with increasing distance between receptive field centres. The cross correlation on ON-ON, OFF-OFF, and ON-OFF cells was examined. A peak at zero appears for ON-ON and OFF-OFF cells, indicating that these cells produced synchronised spikes. For ON-OFF cells a trough at 0 was observed. The coupling was removed from the model, and this analysis was repeated in order to test the importance of coupling strength in producing the correlations observed. It was found that the correlations, and anti-correlations observed in the data could not be accurately reproduced without the coupling. Indicating that an independent model loses the information held in the inter-neuron correlations. 
+	
+	However it was observed that both the complete model and the independent model both described the responses of individual neurons to new stimuli acccurately. 
+	
+	In order to test that the extra information extracted by the coupled model is information about the stimulus, Bayesian decoding was performed on the coupled model, an LNP model without a post-spike filter, and an uncoupled model. The coupled model recovered $20\%$ more information than the uncoupled model (the SNR was $20\%$ higher). So knowledge of the correlation structure is important for extracting all possible information about the stimulus. Bayesian decoding using the coupled model also extracted $6\%$ more information than the LNP model without a post-spike filter. This indicates that the spiking history of the cells is required to extract as much information as possible.
+
+\subsubsection*{Discussion}
+	The generalised linear model gives a concise and tractalbe description of population encoding. It also allows us to evaluate the relative importance of the stimulus, spike history, and network interactions in stimulus encoding. But it does not reveal the biophysical mechainisms underlying these statistical dependencies. It also is as difficult to fit for large $N$ as the pairwise maximum entropy model, as the coupling strength between cells must be evaluated. This model does not give estimates for the probability of any given, pattern, and it does not give a full distribution for all patterns either.
+
+\end{document}

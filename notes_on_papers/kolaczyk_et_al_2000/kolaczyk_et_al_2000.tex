@@ -1,0 +1,314 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Kolaczyk et al 2000: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section{Abstract \& Introduction}
+The authors introduce a \textit{multiscale model}, i.e. a model that decomposes the overall structure of an object under study according to its component structures at different scales of spatial and/or temporal resolution. The key assumption of these models is that there exists a set of hierarchically defined partitions, corresponding to successive aggregations of the space. In this paper, they study the effect of scale by studying the data likelihood in each part of the hierarchical partitions.
+
+\section{Aggregation \& The Likelihood}
+\subsection{The Spatial Model}
+We wish to take measurements on the domain $D \subset \mathbb{R}^{n}$ of an underlying mean process $\{ \mu(s) : s \in D \}$. We assume that there is some granularity or aggregation beyond which the data and $\mu$ cannot be resolved. The aggregation at this granularity is defined by the parititon $\{ B_1, \dots, B_n \}$ of D, where $B_k \subset D, B_k \cap B_{k^\prime} = \emptyset$ for $k \neq k^\prime$, and $\cup_k B_k = D$. We denote the measurement as $Y_k$ and this is linked to the mean process $\mu$ by $E[Y_k] = \mu_k \equiv \mu(B_k) = \int_{B_k} \mu(s) ds$.
+
+We can defined coarser aggregations than $\{ B_1, \dots, B_n \}$ as a set $\mathscr{B}$ of $J+1$ nested partitions of $D$, for integer $J \geq 1$. The original, and finest, partition is now denoted $\{ B_{J,1}, \dots, B_{J, n_J} \}$. For each scale $j = 0,\dots, J-1$ a collection of the elements from the $j$th partition $\{ B_{j,k} \}_{k=1}^{n_j}$ is defined such that:
+\begin{itemize}
+  \item the collection is a proper partition of $D$
+  \item It must be possible to express every $B_{j,k}$ as the union of a unique set of elements in the partition at scale $j+1$, $B_{j,k} = \cup_{k^\prime \in ch(k)} B_{j+1,k^\prime}$, where $ch(k)$ is the collection of spatial indices of the children of $B_{j,k}$.
+\end{itemize}
+
+Now consider the $k$th element of the $j$th partition $B_{j,k}$. The measurement corresponding to this element $Y_{j,k}$ is the sum of the measurements corresponding to the children of $B_{j,k}$
+\begin{equation}
+  Y_{j,k} = \sum_{k^\prime \in ch(k)}Y_{j+1, k^\prime} \hspace{5mm} \text{and} \hspace{5mm} \mu_{j,k} = \sum_{k^\prime \in ch(k)}\mu_{j+1, k^\prime}
+\end{equation}
+Information is lost in the process of aggregating from finer partitions to coarser partitions. We would like to be able to quantify how much information. We will use the likelihood as a measure of the information.
+
+\subsection{Multiscale Likelihood Factorizations}
+We can define the relationship between a collection of the measurements on the finest partition that (uniquely) form all the children of an element of the next finest partition with that element as follows. Let $n_{ch(k)}$ denote the total number of children minus one, then
+\begin{align*}
+  P(Y_{J,1}, \dots, Y_{J,n_{ck(k)}} | \mu_{J,1}, \dots \mu_{J, n_{ck(k)}}) = P(Y_{J,1}, &\dots, Y_{J,n_{ck(k)}} | Y_{J-1,k}, \mu_{J,1}, \dots \mu_{J, n_{ck(k)}}) \\
+    &P(Y_{J-1,k} | \mu_{J-1,k})
+\end{align*}
+or more concisely
+\begin{equation}
+  P(\mathbf{Y}_{J,ch(k)} | \boldsymbol{\mu}_{J,ch(k)}) = P(\mathbf{Y}_{J,ch(k)} | Y_{J-1,k}, \boldsymbol{\mu}_{J,ch(k)}) P(Y_{J-1,k} | \mu_{J-1,k})
+\end{equation}
+or even more concisely
+\begin{equation}
+  P_{\boldsymbol{\mu}}(\mathbf{Y}_{J,ch(k)}) = P_{\boldsymbol{\mu}}(\mathbf{Y}_{J,ch(k)} | Y_{J-1,k}) P_{\boldsymbol{\mu}}(Y_{J-1,k})
+\end{equation}
+Remembering that the $Y_{J,k}$ are conditionally independent given $\mu_{J,k}$ we can write
+\begin{equation}
+  \prod_{k^\prime=1}^{n_{ch(k)}} P_\mu(Y_{J,k^\prime}) = P_\mu(Y_{J-1,k}) \prod_{k^\prime=1}^{n_{ch(k)}} P_\mu(Y_{J,k^\prime} | Y_{J-1,k})
+\end{equation}
+and we can extend that to each of the parent child groups
+\begin{equation}\label{eq:partial_factorisation}
+  \prod_{k=1}^{n_J} P_{\mu}(Y_{J,k}) = \prod_{k=1}^{n_{J-1}} P_\mu(Y_{J-1,k}) \prod_{k=1}^{n_{J-1}} P_{\boldsymbol{\mu}}(\mathbf{Y}_{J,ch(k)} | Y_{J-1,k})
+\end{equation}
+Note that $\prod_{k=1}^{n_J}P_{\mu}(Y_{J,k})$ is the likelihood of the measurements/data at scale $J$. Further note that we have the likelihood of the data at scale $J$ on the left hand side of equation \ref{eq:partial_factorisation}, and the likelihood of the data at scale $J-1$ on the right hand side. So the second factor on the right hand side of equation \ref{eq:partial_factorisation} must be information lost due to aggregation.
+
+We can factorise the likelihood at scale $J-1$, $J-2$, etc., in the same fashion which gives the fully factorized likelihood:
+\begin{equation}\label{eq:factorised_likelihood}
+  \prod_{k=1}^{n_J} P_{\mu}(Y_{J,k}) =  \left[ \prod_{k=1}^{n_0} P_{\mu}(Y_{0,k}) \right] \left[ \prod_{j=0}^{J-1} \prod_{k=1}^{n_j} P_{\boldsymbol{\mu}}(\mathbf{Y}_{j+1, ch(k)} | Y_{j,k})  \right]
+\end{equation}
+In graph theory, a graph that has the \textit{directed local Markov} property must have a factorisation like that described in equation \ref{eq:factorised_likelihood}.
+
+\subsection{Likelihood Factorisation for Continuous and Count Data}
+
+\subsubsection{Gaussian case}
+If the measurements on the finest partition $J$ are sampled from a Gaussian distribution $\mathbf{Y}_{J} | \boldsymbol{\mu}_J \sim \mathcal{N}(\boldsymbol{\mu}_J, \Sigma_J)$ it can be shown that:
+\begin{equation}
+  P(\mathbf{Y}_J | \boldsymbol{\mu}_J, \Sigma_J) = \mathcal{N}(\mathbf{Y}_0 | \boldsymbol{\mu}_0, \Sigma_0) \prod_{j=0}^{J-1}\prod_{k=1}^{n_J} P(\mathbf{Y}_{j+1, ch(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k}, \Omega_{j,k})
+\end{equation}
+where $\mathbf{Y}_0 \sim \mathcal{N}(\boldsymbol{\mu}_0, \Sigma_0)$ and
+\begin{equation}\label{eq:gaussian_child}
+  P(\mathbf{Y}_{j+1, ck(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k}, \Omega_{j,k}) = \mathcal{N}(\boldsymbol{\nu}_{j,k}Y_{j,k} + \boldsymbol{\omega}_{j,k}, \Omega_{j,k})
+\end{equation}
+with $\boldsymbol{\nu}_{j,k} = \frac{\boldsymbol{\sigma}^2_{j+1,ch(k)}}{\sigma^2_{j,k}}$ and
+\begin{equation}\label{eq:gaussian_omega}
+  \boldsymbol{\omega}_{j,k} = \boldsymbol{\mu}_{j+1, ch(k)} - \boldsymbol{\nu}_{j,k}\mu_{j,k}
+\end{equation}
+and
+\begin{equation}\label{eq:gaussian_big_omega}
+  \Omega_{j,k} = \Sigma_{j+1, ch(k)} - \frac{1}{\sigma^2_{j,k}} \boldsymbol{\sigma}^2_{j+1, ch(k)}\left[ \boldsymbol{\sigma}^2_{j+1, ch(k)}  \right]^T
+\end{equation}
+Note that the multiscale means $(\boldsymbol{\mu}_0, \boldsymbol{\omega}_0, \dots, \boldsymbol{\omega}_{J-1})$ are a reparametrisation of the original means $\boldsymbol{\mu}_J$. So knowledge of the multiscale parameters is equivalent to knowledge of the original mean variables, but only knowledge of the multiscale parameters allows us to see the effects of scale on the analysis.
+
+\subsubsection{Poisson case}
+If the measurements on the finest partition $J$ are sampled from a Poisson distribution $\mathbf{Y}_{J} | \boldsymbol{\mu}_J \sim Poiss(\boldsymbol{\mu}_J)$, then it can be shown that
+\begin{equation}
+	P(\mathbf{Y}_J | \boldsymbol{\mu}_J) = Poiss(\boldsymbol{\mu}_0) \prod_{j=0}^{J-1} \prod_{k=1}^{n_j} P(\mathbf{Y}_{j+1,ch(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k})
+\end{equation}
+where $\mathbf{Y}_{j+1,ch(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k} \sim Mult(Y_{j,k}; \boldsymbol{\omega}_{j,k})$, the multinomial distribution with parameter components
+\begin{equation}
+	\boldsymbol{\omega}_{j,k} = \frac{\boldsymbol{\mu}_{j+1,ch(k)}}{\mu_{j,k}}
+\end{equation}
+Note that each element of $\boldsymbol{\omega}_{j,k}$ is between $1$ and $0$, and the some of the elements will equal $1$. So the requirements for the multinomial distribution are satisfied.
+
+\section{Estimation}
+Here we're estimating the $\boldsymbol{\mu}_J$ given the $\mathbf{Y}_{J}$. We take a Bayesian approach. First specifying priors $P(\boldsymbol{\theta})$, then optimising the posterior distribution $P(\boldsymbol{\theta} | \mathbf{X}) \propto P(\mathbf{X} | \boldsymbol{\theta}) P(\boldsymbol{\theta})$.
+
+\subsection{Prior Distributions}
+In this section the authors consider the case where the original measurements $Y_{J,k}$ are proportional to the area of the original partition elements. That is, the area of $B_{J,k}$ is $A_{J,k}$, and $c_1 A_{J,k} = \mu_{J,k}$, and $c_2 A_{J,k} = \sigma_{J,k}^2$, where $c_1>0$, and $c_2>0$ are just constants.
+
+The consequence of this assumption in the Guassian case is,
+\begin{align*}
+	\boldsymbol{\nu}_{j,k} = \frac{\boldsymbol{\sigma}_{j+1,ch(k)}}{\sigma_{j,k}^2} = \frac{\mathbf{A}_{j+1,ch(k)}}{A_{j,k}}
+\end{align*}
+and
+\begin{align*}
+	\boldsymbol{\omega}_{j,k} &= \boldsymbol{\mu}_{j+1, ch(k)} - \boldsymbol{\nu}_{j,k}\mu_{j,k} \\
+		&= c_1 \mathbf{A}_{j+1,ch(k)} - \frac{\mathbf{A}_{j+1,ch(k)}}{A_{j,k}} c_1 A_{j,k} \\
+		&= 0
+\end{align*}
+Therefore the prior
+\begin{equation}\label{eq:gaussian_omega_prior}
+	P(\boldsymbol{\omega}_{j,k} | \boldsymbol{\Phi}_{j,k}) = \mathcal{N}(\mathbf{0}, \boldsymbol{\Phi}_{j,k})
+\end{equation}
+is chosen, where $\boldsymbol{\Phi}_{j,k}$ is an $n_{ch(k)} \times n_{ch(k)}$ covariance matrix. The Gaussian form of this prior is convenient because the conjugate of a Gaussian distribution is another Gaussian distribution.
+
+For the Poisson case we have
+\begin{align*}
+	\boldsymbol{\omega}_{j,k} = \frac{\boldsymbol{\mu}_{j+1,ch(k)}}{\mu_{j,k}} &= \frac{c_1}{c_1 A_{j,k}}\begin{pmatrix}
+																																																				A_{j+1,1} \\
+																																																				\vdots \\
+																																																				A_{j+1,n_{ch(k)}+1}
+																																																			\end{pmatrix} \\
+		&= \frac{1}{A_{j,k}}\begin{pmatrix}
+													A_{j+1,1} \\
+													\vdots \\
+													A_{j+1,n_{ch(k)}+1}
+												\end{pmatrix} \\
+\end{align*}
+Remembering that $n_{ch(k)}$ is defined as the number of children of $B_{j,k}$ \textit{minus one}, consider one element of this vector,
+\begin{align*}
+	\frac{A_{j+1,1}}{A_{j,k}} = \frac{A_{j+1,1}}{A_{j+1,1} + \cdots + A_{j+1,n_{ch(k)}+1}} = \frac{1}{1 + \frac{A_{j+1,2}}{A_{j+1,1}} + \cdots + \frac{A_{j+1,n_{ch(k)}+1}}{A_{j+1,1}}}
+\end{align*}
+If we assume that all the child regions have the same area, then
+\begin{align*}
+	\frac{A_{j+1,1}}{A_{j,k}} &= \frac{1}{1 + n_{ch(k)}} \\
+	\implies \boldsymbol{\omega}_{j,k} &= \frac{1}{1 + n_{ch(k)}} \mathbf{1}
+\end{align*}
+where $\mathbf{1}$ is a vector of ones of length $n_{ch(k)}+1$. A sensible choice for the prior in this case is
+\begin{equation}
+	P(\boldsymbol{\omega}_{j,k}) = Dir(\gamma_{j,k} \mathbf{1})
+\end{equation}
+where $\gamma_{j,k} > 0$, and $Dir()$ is the Dirichlet distribution. This means the expected value of the elements of $\boldsymbol{\omega}_{j,k}$ is $\frac{1}{n_{ch(k)}+1} \mathbf{1}$.
+
+
+\section{Further Notes}
+\subsection{Implementation of Gaussian case on a parent with two children}\label{sec:implementation}
+Consider the case of a parent region with mean $\mu_p$ and variance $\sigma_p^2$. The parent region has two children with means $\mu_1, \mu_2$ and $\sigma_1^2, \sigma_2^2$. According to the model if we have measurements for the parent and wish to model measurements for the children, the children are distributed according to equations \ref{eq:gaussian_child}, \ref{eq:gaussian_omega}, and \ref{eq:gaussian_big_omega}.
+
+In this case,
+\begin{align*}
+	\Omega	&	= \begin{pmatrix}
+		\sigma_1^2	&	0						\\
+		0						&	\sigma_2^2
+	\end{pmatrix}
+	- \frac{1}{\sigma_p^2}\begin{pmatrix} \sigma_1^2 \\
+																				\sigma_2^2
+																			\end{pmatrix}
+																			(\sigma_1^2 \sigma_2^2) \\
+					& = \begin{pmatrix}
+								\sigma_1^2 \left(1 - \frac{\sigma_1^2}{\sigma_p^2}\right)	&	-\frac{\sigma_1^2 \sigma_2^2}{\sigma_p^2}	\\
+								-\frac{\sigma_1^2 \sigma_2^2}{\sigma_p^2}			&	\sigma_2^2 \left(1 - \frac{\sigma_2^2}{\sigma_p^2} \right)
+							\end{pmatrix}
+\end{align*}
+This matrix must be positive definite in order for the distribution in equation \ref{eq:gaussian_child} to be valid. In order for a $2 \times 2$ matrix to be positive definite, the trace must be positive, and the determinant must be positive. As for the determinant,
+\begin{align*}
+	\det (\Omega) & = \sigma_1^2 \sigma_2^2 \left( \left( 1 - \frac{\sigma_1^2}{\sigma_p^2} \right)\left( 1 - \frac{\sigma_2^2}{\sigma_p^2} \right) - \frac{\sigma_1^2 \sigma_2^2}{\sigma_p^4}  \right) \\
+	\det (\Omega) & < 0 \\
+	\implies \sigma_p^2 & < \sigma_1^2 + \sigma_2^2
+\end{align*}
+So when the variance of the parent is less than the sum of the variances of the children, the matrix $\Omega$ is not positive definite, and the model of the distribution of the children is invalid. This condition can easily occur. If we sum two Gaussian random variables, the result is another Gaussian random variable, with mean $\mu = \mu_1 + \mu_2$, and variance $\sigma^2 = \sigma_1^2 + \sigma_2^2 + 2\rho \sigma_1 \sigma_2$, where $\rho$ is the correlation between the two Gaussian variables. If $\rho$ is negative then the model is invalidated.
+
+\subsection{Attempt at deriving Gaussian parameter transformations}
+Here I attempt to derive the expressions in equations \ref{eq:gaussian_child},  \ref{eq:gaussian_omega}, and \ref{eq:gaussian_big_omega}.
+
+In this paper, it is assumed that the $Y_{j,k}$ are conditionally independent given the $\mu_{j,k}$. This assumption gives an expression for the correlation between the parent region and each of the children in terms of the parent and child standard deviations. If the parent region is denoted by $p$, and the two children are denoted by $1$, and $2$, then
+\begin{align*}
+	\sigma_{1p} = \sigma_1 \sigma_p \rho_{1p} &= E\left[\left(Y_p - \mu_p \right)\left(Y_1 - \mu_1 \right) \right] \\
+		&= E\left[\left( Y_1 + Y_2 - \mu_1 - \mu_2 \right)\left( Y_1 - \mu_1 \right) \right] \\
+		&= E\left[\left( Y_1 - \mu_1 \right)^2 + \left( Y_1 - \mu_1 \right)\left( Y_2 - \mu_2 \right) \right] \\
+		&= \sigma_1^2 + \rho_{12} \sigma_1 \sigma_2
+\end{align*}
+Because of conditional independence $\rho_{12} = 0$, which gives
+\begin{align*}
+	\sigma_1 \sigma_p \rho_{1p} &= \sigma_1^2 \\
+	\rho_{1p} &= \frac{\sigma_1}{\sigma_p}
+\end{align*}
+This expression holds for child $2$ as well, and would hold for all the children in the case where there are more than 2.
+
+Consider the random vector $(Y_p, Y_1, Y_2)^{\top}$. This vector is sampled from a Gaussian distribution with
+\begin{align*}
+	\boldsymbol{\mu} &= 	\begin{pmatrix}
+												\mu_p \\
+												\mu_1 \\
+												\mu_1
+											\end{pmatrix} \\
+	\Sigma &=	\begin{pmatrix}
+							\sigma_1^2									&	0														& \rho_{p1} \sigma_p \sigma_1 \\
+							0 													&	\sigma_2^2									&	\rho_{p2} \sigma_p \sigma_2	\\
+							\rho_{p1} \sigma_p \sigma_1 & \rho_{p2} \sigma_p \sigma_2	&	\sigma_p^2
+						\end{pmatrix}
+					=	\begin{pmatrix}
+							\sigma_1^2	&	0						& \sigma_1^2	\\
+							0						&	\sigma_2^2	&	\sigma_2^2	\\
+							\sigma_1^2	& \sigma_2^2	&	\sigma_p^2
+						\end{pmatrix}
+\end{align*}
+
+We want an expression for $P(Y_1, Y_2 | Y_p)$. This is equivalent to conditioning some elements of a random Gaussian vector on the other elements. In this situation we get
+\begin{align*}
+	\boldsymbol{\mu}_{cond} &= 	\begin{pmatrix}
+																\mu_1 \\
+																\mu_2
+															\end{pmatrix}
+															+ \frac{1}{\sigma_p^2}
+															\begin{pmatrix}
+																\sigma_1^2 \\
+																\sigma_2^2
+															\end{pmatrix}
+															(Y_p - \mu_p) \\
+													&=	\boldsymbol{\nu}_p Y_p + \boldsymbol{\omega}_p
+\end{align*}
+where $\boldsymbol{\nu}_p = \frac{1}{\sigma_p^2} \begin{pmatrix} \sigma_1^2 \\ \sigma_2^2 \end{pmatrix}$ and $\boldsymbol{\omega}_p = \begin{pmatrix} \mu_1 \\ \mu_2 \end{pmatrix} - \boldsymbol{\nu}_p \mu_p$.
+
+As for the covariance matrix, we have
+\begin{align*}
+ 	\Omega_p	=	\begin{pmatrix}
+								\sigma_1^2	&	0						\\
+								0						&	\sigma_2^2
+							\end{pmatrix}
+							- \frac{1}{\sigma_p^2}
+							\begin{pmatrix}
+								\sigma_1^2 \\
+								\sigma_2^2
+							\end{pmatrix}
+							\begin{pmatrix}
+								\sigma_1^2 &	\sigma_2^2
+							\end{pmatrix}
+\end{align*}
+
+\section{Variable Directory}
+For specifying what each varible means, and where it comes from.
+
+\begin{description}
+  \item[$\boldsymbol{\mu}(s)$] `mean process': Some process operating in each part of our partition. We want to `obtain knowledge' of this process.
+  \item[$B_k$] Used to indicate an element of a partition.
+  \item[$Y_k$] A univariate measurement corresponding to the parition element $B_k$, linked to the mean process by $E[Y_k] = \boldsymbol{\mu}_k$ where $\boldsymbol{\mu}_k \equiv \boldsymbol{\mu}(B_k) = \int_{B_k}\boldsymbol{\mu}(s)ds$.
+	\item[$\mathscr{B}$] The set of nested partitions of our space. Each partition that forms a level in our hierarchy will we an element of $\mathscr{B}$.
+  \item[$\lbrace B_{J,1}, \dots, B_{J,n_J} \rbrace$] The elements of the finest partition.
+  \item[$\lbrace B_{j,1}, \dots, B_{j,n_j} \rbrace$] where $0 \leq j < J$: The elements of a coarser partition. The partition is proper, and each of the elements is the union of a unique collection taken from the next finest parition.
+  \item[$Pr_{\boldsymbol{\mu}}(\mathbf{Y})$] $Pr_{\boldsymbol{\mu}}(\mathbf{Y}) = Pr(\mathbf{Y} | \boldsymbol{\mu})$. Remember that we assume that the measurements $Y_k$ are conditionally independent given $\mu_k$.
+  \item[Factorisation across one level] In the expression
+  \begin{equation}
+  Pr_{\boldsymbol{\mu}}(\mathbf{Y}_{J,ch(k)}) = Pr_{\boldsymbol{\mu}}(\mathbf{Y}_{J,ch(k)} | Y_{J-1, k})Pr_{\boldsymbol{\mu}}(Y_{J-1,k}),
+  \end{equation}
+  $ch(k)$ refers to all but one of the children of $B_{J-1,k}$. If we are given the value of the measurement on the parent, and the value of all but one of the children, then the value of the last child is determined due to our assumptions about the summations of the measurements. Therefore, we only need to define the distribution across all but one of the children. Which child is left out is arbitrary.
+  \item[$\Sigma_j = diag(\boldsymbol{\sigma^2_j})$] The covariance matrix of a Gaussian distributed measurement across a partition is a diagonal matrix, because of our conditional independence assumption.
+  \item[$\nu_{j,k}, \omega_{j,k}, \Omega_{j,k}$] Multiscale parameters of the Gaussian distributed partitions.
+  \begin{align}
+    \nu_{j,k} &= \frac{\boldsymbol{\sigma}^2_{j+1,ch(k)}}{\sigma^2_{j,k}} \\
+    \omega_{j,k} &= \boldsymbol{\mu}_{j+1,ch(k)} - \nu_{j,k}\mu_{j,k} \\
+    \Omega_{j,k} &= \Sigma_{j+1,ch(k)} - \frac{1}{\sigma^2_{j,k}}\boldsymbol{\sigma}^2_{j+1,ch(k)}\left[ \boldsymbol{\sigma}^2_{j+1,ch(k)} \right]^{\top}
+  \end{align}
+  \item[$\omega_{j,k}$ (Poisson)] Multiscale parameters of the Poisson distributed partitions.
+  \begin{equation}
+    \omega_{j,k} = \frac{\boldsymbol{\mu}_{j+1, ch(k)}}{\mu_{j,k}}
+  \end{equation}
+  \item[$A_{j,k}$] The area of the parition element $B_{j,k}$. In a special case of this model, the mean and variance of the data $Y_{j,k}$ is proportional to the area $A_{j,k}$.
+  \item[$\boldsymbol{\Phi}_{j,k}$] The covariance matrix of the multiscale parameters for the special case of measurements proportional to area.
+  \item[$\gamma_{j,k}$] The parameter of the Dirichlet distribution used as the prior distribution for the multiscale parameters of the Poisson version of the area proportional model.
+  \item[$\eta_{j,k}$] A Bernoulli variable used to facilitate mixture models.
+	\item[$\boldsymbol{\tau}, \boldsymbol{\Phi_0}$] Mean and variance chosen for the prior over $\boldsymbol{\mu}_0$ when attempting to calculate a posterior for $\omega_{j,k}$ in the Gaussian context. The corresponding parameters for the Poisson case are $\boldsymbol{\tau_0^{(1)}}, \boldsymbol{\tau_0^{(2)}}$.
+\end{description}
+
+\end{document}

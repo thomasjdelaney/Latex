@@ -1,0 +1,947 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.8.26)  13 MAY 2018 17:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**calcium_imaging_model_paper.tex
+(./calcium_imaging_model_paper.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2012/08/28 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks21
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks22
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks23
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@layoutwidth=\dimen116
+\Gm@layoutheight=\dimen117
+\Gm@layouthoffset=\dimen118
+\Gm@layoutvoffset=\dimen119
+\Gm@dimlist=\toks32
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen122
+\enit@toks=\toks33
+\enit@inbox=\box28
+\enitdp@description=\count104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip50
+\f@ncyO@elh=\skip51
+\f@ncyO@erh=\skip52
+\f@ncyO@olh=\skip53
+\f@ncyO@orh=\skip54
+\f@ncyO@elf=\skip55
+\f@ncyO@erf=\skip56
+\f@ncyO@olf=\skip57
+\f@ncyO@orf=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen123
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count107
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count108
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen124
+\Fld@menulength=\count109
+\Field@Width=\dimen125
+\Fld@charsize=\dimen126
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count113
+\c@bookmark@seq@number=\count114
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+)
+\c@ContinuedFloat=\count115
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count116
+\c@subtable=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count118
+\calc@Bcount=\count119
+\calc@Adimen=\dimen134
+\calc@Bdimen=\dimen135
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count120
+\calc@Cskip=\skip62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count121
+\l_MT_multwidth_dim=\dimen136
+\origjot=\skip63
+\l_MT_shortvdotswithinadjustabove_dim=\dimen137
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen138
+\l_MT_above_intertext_sep=\dimen139
+\l_MT_below_intertext_sep=\dimen140
+\l_MT_above_shortintertext_sep=\dimen141
+\l_MT_below_shortintertext_sep=\dimen142
+)
+\c@theorem=\count122
+\c@proposition=\count123
+\c@lemma=\count124
+\c@corollary=\count125
+\c@definition=\count126
+
+(./calcium_imaging_model_paper.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+)
+\openout1 = `calcium_imaging_model_paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 54.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count127
+\scratchdimen=\dimen143
+\scratchbox=\box29
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen144
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 54.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count133
+)
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
+
+(./calcium_imaging_model_paper.out) (./calcium_imaging_model_paper.out)
+\@outlinefile=\write3
+\openout3 = `calcium_imaging_model_paper.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 57.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1
+
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+
+Overfull \hbox (17.82024pt too wide) in paragraph at lines 64--65
+[]\OT1/ptm/m/n/10.95 The mod-elled cell con-tents con-sisted of free cal-cium, 
+flu-o-res-cent in-di-ca-tor molecules,
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+ (./calcium_imaging_model_paper.toc)
+\tf@toc=\write4
+\openout4 = `calcium_imaging_model_paper.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] <figures/spike_finder_example_8.png, id=65, 325.215pt x 278.2395pt>
+File: figures/spike_finder_example_8.png Graphic file (type png)
+
+<use figures/spike_finder_example_8.png>
+Package pdftex.def Info: figures/spike_finder_example_8.png used on input line 
+79.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+<figures/spike_finder_example_8_zoomed.png, id=67, 357.7365pt x 291.9708pt>
+File: figures/spike_finder_example_8_zoomed.png Graphic file (type png)
+
+<use figures/spike_finder_example_8_zoomed.png>
+Package pdftex.def Info: figures/spike_finder_example_8_zoomed.png used on inpu
+t line 84.
+(pdftex.def)             Requested size: 213.39568pt x 174.1636pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 77--87
+[]$[]$ $[]$ 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+<figures/trace_comparison.png, id=68, 654.7662pt x 539.1342pt>
+File: figures/trace_comparison.png Graphic file (type png)
+
+<use figures/trace_comparison.png>
+Package pdftex.def Info: figures/trace_comparison.png used on input line 96.
+(pdftex.def)             Requested size: 426.79135pt x 351.42026pt.
+
+<figures/concentration_dynamics.png, id=69, 348.3414pt x 288.3573pt>
+File: figures/concentration_dynamics.png Graphic file (type png)
+
+<use figures/concentration_dynamics.png>
+Package pdftex.def Info: figures/concentration_dynamics.png used on input line 
+103.
+(pdftex.def)             Requested size: 213.39568pt x 176.65448pt.
+
+<figures/concentration_dynamics_18_zoomed_BCa_star.png, id=70, 325.215pt x 278.
+2395pt>
+File: figures/concentration_dynamics_18_zoomed_BCa_star.png Graphic file (type 
+png)
+ <use figures/concentration_dynamics_18_zoomed_BCa_star.png>
+Package pdftex.def Info: figures/concentration_dynamics_18_zoomed_BCa_star.png 
+used on input line 108.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+<figures/concentration_dynamics_18_zoomed_BCa.png, id=71, 325.215pt x 278.2395p
+t>
+File: figures/concentration_dynamics_18_zoomed_BCa.png Graphic file (type png)
+ <use figures/concentration_dynamics_18_zoomed_BCa.png>
+Package pdftex.def Info: figures/concentration_dynamics_18_zoomed_BCa.png used 
+on input line 112.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+<figures/concentration_dynamics_18_zoomed_ImCa.png, id=72, 325.215pt x 278.2395
+pt>
+File: figures/concentration_dynamics_18_zoomed_ImCa.png Graphic file (type png)
+
+ <use figures/concentration_dynamics_18_zoomed_ImCa.png>
+Package pdftex.def Info: figures/concentration_dynamics_18_zoomed_ImCa.png used
+ on input line 116.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+<figures/concentration_dynamics_18_zoomed_ECa.png, id=73, 325.215pt x 278.2395p
+t>
+File: figures/concentration_dynamics_18_zoomed_ECa.png Graphic file (type png)
+ <use figures/concentration_dynamics_18_zoomed_ECa.png>
+Package pdftex.def Info: figures/concentration_dynamics_18_zoomed_ECa.png used 
+on input line 120.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+<figures/concentration_dynamics_18_zoomed_Ca.png, id=74, 325.215pt x 278.2395pt
+>
+File: figures/concentration_dynamics_18_zoomed_Ca.png Graphic file (type png)
+ <use figures/concentration_dynamics_18_zoomed_Ca.png>
+Package pdftex.def Info: figures/concentration_dynamics_18_zoomed_Ca.png used o
+n input line 124.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 102--127
+[]$[]$ $[]$
+ []
+
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 102--127
+[]$ $[]$
+ []
+
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 102--127
+[]$ $[]$ 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 127.
+
+LaTeX Warning: Float too large for page by 16.70135pt on input line 129.
+
+<figures/three_algo_comparison_tp_paper.png, id=75, 462.528pt x 346.896pt>
+File: figures/three_algo_comparison_tp_paper.png Graphic file (type png)
+
+<use figures/three_algo_comparison_tp_paper.png>
+Package pdftex.def Info: figures/three_algo_comparison_tp_paper.png used on inp
+ut line 134.
+(pdftex.def)             Requested size: 426.79135pt x 320.11154pt.
+
+<figures/indicator_perturbed_fluorescence_18_paper.png, id=76, 650.43pt x 505.8
+9pt>
+File: figures/indicator_perturbed_fluorescence_18_paper.png Graphic file (type 
+png)
+ <use figures/indicator_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/indicator_perturbed_fluorescence_18_paper.png 
+used on input line 145.
+(pdftex.def)             Requested size: 426.79135pt x 331.9586pt.
+
+<figures/indicator_perturbed_snr.png, id=77, 361.35pt x 289.08pt>
+File: figures/indicator_perturbed_snr.png Graphic file (type png)
+
+<use figures/indicator_perturbed_snr.png>
+Package pdftex.def Info: figures/indicator_perturbed_snr.png used on input line
+ 149.
+(pdftex.def)             Requested size: 213.39568pt x 170.71892pt.
+
+<figures/indictor_perturbed_oasis_first_paper.png, id=78, 361.35pt x 289.08pt>
+File: figures/indictor_perturbed_oasis_first_paper.png Graphic file (type png)
+
+<use figures/indictor_perturbed_oasis_first_paper.png>
+Package pdftex.def Info: figures/indictor_perturbed_oasis_first_paper.png used 
+on input line 153.
+(pdftex.def)             Requested size: 213.39568pt x 170.71892pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 144--156
+[]$ $[]$ 
+ []
+
+
+LaTeX Warning: Float too large for page by 38.04716pt on input line 158.
+
+
+<figures/immobile_perturbed_fluorescence_18_paper.png, id=79, 650.43pt x 505.89
+pt>
+File: figures/immobile_perturbed_fluorescence_18_paper.png Graphic file (type p
+ng)
+ <use figures/immobile_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/immobile_perturbed_fluorescence_18_paper.png u
+sed on input line 164.
+(pdftex.def)             Requested size: 426.79135pt x 331.9586pt.
+
+<figures/immobile_perturbed_snr.png, id=80, 361.35pt x 289.08pt>
+File: figures/immobile_perturbed_snr.png Graphic file (type png)
+
+<use figures/immobile_perturbed_snr.png>
+Package pdftex.def Info: figures/immobile_perturbed_snr.png used on input line 
+168.
+(pdftex.def)             Requested size: 213.39568pt x 170.71892pt.
+
+<figures/immobile_perturbed_oasis_first_paper.png, id=81, 361.35pt x 289.08pt>
+File: figures/immobile_perturbed_oasis_first_paper.png Graphic file (type png)
+
+<use figures/immobile_perturbed_oasis_first_paper.png>
+Package pdftex.def Info: figures/immobile_perturbed_oasis_first_paper.png used 
+on input line 172.
+(pdftex.def)             Requested size: 213.39568pt x 170.71892pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 163--175
+[]$ $[]$ 
+ []
+
+
+<figures/b_i_f_i_perturbed_fluorescence_18_paper.png, id=82, 650.43pt x 505.89p
+t>
+File: figures/b_i_f_i_perturbed_fluorescence_18_paper.png Graphic file (type pn
+g)
+ <use figures/b_i_f_i_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/b_i_f_i_perturbed_fluorescence_18_paper.png us
+ed on input line 183.
+(pdftex.def)             Requested size: 426.79135pt x 331.9586pt.
+
+<figures/b_i_f_i_perturbed_snr.png, id=83, 361.35pt x 289.08pt>
+File: figures/b_i_f_i_perturbed_snr.png Graphic file (type png)
+
+<use figures/b_i_f_i_perturbed_snr.png>
+Package pdftex.def Info: figures/b_i_f_i_perturbed_snr.png used on input line 1
+87.
+(pdftex.def)             Requested size: 213.39568pt x 170.71892pt.
+
+<figures/b_i_f_i_perturbed_oasis_tp_paper.png, id=84, 361.35pt x 289.08pt>
+File: figures/b_i_f_i_perturbed_oasis_tp_paper.png Graphic file (type png)
+
+<use figures/b_i_f_i_perturbed_oasis_tp_paper.png>
+Package pdftex.def Info: figures/b_i_f_i_perturbed_oasis_tp_paper.png used on i
+nput line 191.
+(pdftex.def)             Requested size: 213.39568pt x 170.71892pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 182--194
+[]$ $[]$ 
+ []
+
+<figures/freq_compare_images_10_Hz_1_1.png, id=85, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_10_Hz_1_1.png Graphic file (type png)
+
+<use figures/freq_compare_images_10_Hz_1_1.png>
+Package pdftex.def Info: figures/freq_compare_images_10_Hz_1_1.png used on inpu
+t line 201.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_5_Hz_1_2.png, id=86, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_5_Hz_1_2.png Graphic file (type png)
+
+<use figures/freq_compare_images_5_Hz_1_2.png>
+Package pdftex.def Info: figures/freq_compare_images_5_Hz_1_2.png used on input
+ line 202.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_1_Hz_1_3.png, id=87, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_1_Hz_1_3.png Graphic file (type png)
+
+<use figures/freq_compare_images_1_Hz_1_3.png>
+Package pdftex.def Info: figures/freq_compare_images_1_Hz_1_3.png used on input
+ line 203.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_10_Hz_2_4.png, id=88, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_10_Hz_2_4.png Graphic file (type png)
+
+<use figures/freq_compare_images_10_Hz_2_4.png>
+Package pdftex.def Info: figures/freq_compare_images_10_Hz_2_4.png used on inpu
+t line 204.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_5_Hz_2_5.png, id=89, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_5_Hz_2_5.png Graphic file (type png)
+
+<use figures/freq_compare_images_5_Hz_2_5.png>
+Package pdftex.def Info: figures/freq_compare_images_5_Hz_2_5.png used on input
+ line 205.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_1_Hz_2_6.png, id=90, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_1_Hz_2_6.png Graphic file (type png)
+
+<use figures/freq_compare_images_1_Hz_2_6.png>
+Package pdftex.def Info: figures/freq_compare_images_1_Hz_2_6.png used on input
+ line 206.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_10_Hz_3_7.png, id=91, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_10_Hz_3_7.png Graphic file (type png)
+
+<use figures/freq_compare_images_10_Hz_3_7.png>
+Package pdftex.def Info: figures/freq_compare_images_10_Hz_3_7.png used on inpu
+t line 207.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_5_Hz_3_8.png, id=92, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_5_Hz_3_8.png Graphic file (type png)
+
+<use figures/freq_compare_images_5_Hz_3_8.png>
+Package pdftex.def Info: figures/freq_compare_images_5_Hz_3_8.png used on input
+ line 208.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/freq_compare_images_1_Hz_3_9.png, id=93, 325.215pt x 278.2395pt>
+File: figures/freq_compare_images_1_Hz_3_9.png Graphic file (type png)
+
+<use figures/freq_compare_images_1_Hz_3_9.png>
+Package pdftex.def Info: figures/freq_compare_images_1_Hz_3_9.png used on input
+ line 209.
+(pdftex.def)             Requested size: 140.41211pt x 120.13313pt.
+
+<figures/simulated_oasis_tp_paper.png, id=94, 325.215pt x 278.2395pt>
+File: figures/simulated_oasis_tp_paper.png Graphic file (type png)
+
+<use figures/simulated_oasis_tp_paper.png>
+Package pdftex.def Info: figures/simulated_oasis_tp_paper.png used on input lin
+e 215.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+<figures/mean_fluorescence_comparison.png, id=95, 325.215pt x 278.2395pt>
+File: figures/mean_fluorescence_comparison.png Graphic file (type png)
+
+<use figures/mean_fluorescence_comparison.png>
+Package pdftex.def Info: figures/mean_fluorescence_comparison.png used on input
+ line 216.
+(pdftex.def)             Requested size: 213.39568pt x 182.57724pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 215--217
+[][] [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./figures/spike_finder_example_8.png> <./figures/spike_finder_example_8_zoo
+med.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./figures/trace_comparison.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./figures/concentration_dynamics.png> <./figures/concentration_dynamics_18_
+zoomed_BCa_star.png> <./figures/concentration_dynamics_18_zoomed_BCa.png> <./fi
+gures/concentration_dynamics_18_zoomed_ImCa.png> <./figures/concentration_dynam
+ics_18_zoomed_ECa.png> <./figures/concentration_dynamics_18_zoomed_Ca.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./figures/three_algo_comparison_tp_paper.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./figures/indicator_perturbed_fluorescence_18_paper.png> <./figures/indicat
+or_perturbed_snr.png> <./figures/indictor_perturbed_oasis_first_paper.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./figures/immobile_perturbed_fluorescence_18_paper.png> <./figures/immobil
+e_perturbed_snr.png> <./figures/immobile_perturbed_oasis_first_paper.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./figures/b_i_f_i_perturbed_fluorescence_18_paper.png> <./figures/b_i_f_i_
+perturbed_snr.png> <./figures/b_i_f_i_perturbed_oasis_tp_paper.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12 <./figures/freq_compare_images_10_Hz_1_1.png> <./figures/freq_compare_image
+s_5_Hz_1_2.png> <./figures/freq_compare_images_1_Hz_1_3.png> <./figures/freq_co
+mpare_images_10_Hz_2_4.png> <./figures/freq_compare_images_5_Hz_2_5.png> <./fig
+ures/freq_compare_images_1_Hz_2_6.png> <./figures/freq_compare_images_10_Hz_3_7
+.png> <./figures/freq_compare_images_5_Hz_3_8.png> <./figures/freq_compare_imag
+es_1_Hz_3_9.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./figures/simulated_oasis_tp_paper.png> <./figures/mean_fluorescence_compa
+rison.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+ (./calcium_imaging_model_paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package rerunfilecheck Info: File `calcium_imaging_model_paper.out' has not cha
+nged.
+(rerunfilecheck)             Checksum: 0BB5DE5E747AB6E9B9713B176428E9EE;687.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+ ) 
+Here is how much of TeX's memory you used:
+ 9032 strings out of 495063
+ 141639 string characters out of 3182201
+ 248407 words of memory out of 3000000
+ 12013 multiletter control sequences out of 15000+200000
+ 26938 words of font info for 73 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 42i,10n,43p,1075b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb>
+Output written on calcium_imaging_model_paper.pdf (13 pages, 982084 bytes).
+PDF statistics:
+ 209 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+

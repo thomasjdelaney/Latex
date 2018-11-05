@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Shimazaki et al 2012: Notes}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+\section*{State-space analysis of time-varying higher-order spike correlation for multiple neural spike train data}
+\subsection*{Hideaki Shimazaki, Shun-ichi Amari, Emery N. Brown, Sonja Gr\"{u}n}
+\subsubsection*{Abstract}
+	Correlated activity in neuronal populations is expected to organize dynamically during behaviour and cognition. Therefore analysis methods must be extended to enable time-varying correlations to be measured. In particular, higher order correlations over time need to be observed. In this paper, they use a \textit{log-linear} model, i.e. the one arising from the maximum entropy principle, to model discretized spike trains, The model is trained using a \textit{Bayesian filter/smoother} (The EM algorithm). A goodness-of-fit measure was used to see how well the model worked, and a method for testing how well the model simulates non-stationary spike data was also developed. They apply the model to data from an awake monkey.
+
+\subsubsection*{Introduction}
+	The affect of synchronous spiking in neurons upstream to a population and network coordination amongst a population were theoretically investigated to assess which is more likely to induce spiking in that population. It was found that upstream synchronous spiking was more likely to induce spiking downstream. Spike synchrony is most likely to occur in response to stimuli, behaviour, or internal states such as memory, expectation, and attention. When trying to model neurons as a function of time, older models modelled each neuron separately, then tried to tie them together using additional variables. In this paper, the response of the whole population is treated as a binary pattern generator. The dependencies between the Bernoulli variables (neurons) are modelled in a generalised linear framework called the \textit{log-linear} model. This is just the Ising model with higher order correlations included. The benefits of this model are that it provides a well defined measure of spike correlation, it can provide a pure measure of higher order correlations, and the information held in the higher order correlations can be measured using the KL-divergence between the model and its projection to a lower order model space, this is similar to (might be the same as) the idea of the multi-information.
+	
+	\begin{quotation}
+	\dots in order to assess the behavioural relevance of pairwise and higher-order spike correlations in awake behaving animals, it is necessary to appropriately correct for time-varying firing rates within an experiment trial and provide an algorithm that reliably estimates the time-varying spike correlations within multiple neurons.
+	\end{quotation}
+	
+	A state-space model offers a general framework for modelling time-dependent systems by representing its parameters or states as a Markov process. The parameters can be learned using an expectation-maximisation (EM) algorithm. The model in this paper uses a state-space model. It also assumes the context of an electrophysiological experiment where a number of trials take place. 
+	
+\subsubsection*{Results}
+
+	
+\end{document}

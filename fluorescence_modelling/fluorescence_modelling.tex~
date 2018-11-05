@@ -1,0 +1,362 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{mathtools}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Fluorescence Modelling}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{Modelling the fluorescence produced by fluorescent calcium indicators in response to sequences of action potentials}
+\date{}
+\author{Thomas J. Delaney \\ Cian O'Donnell, Michael C. Ashby}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\abstract{The use of fluorescent calcium indicators, such as GCaMP6s, to monitor neuronal activity is widespread. But the relationship between the fluorescence signal and action potential firing is poorly understood. Furthermore, the effects of the indicator characteristics on this fluorescence signal are unknown. For example, it is known that genetically encoded indicators accumulate within neurons over weeks and months. This makes comparison of activity levels at different time points difficult. As a result, whether or not spike train inference is always possible using fluorescent calcium indicators remains unknown.
+
+The aim of this project was to model the fluorescence traces produced by a fluorescent calcium indicator in a neuron soma, given parameters such as binding rate, dissociation rate, and molecular concentration from a specific spike train. The ultimate goal of the model is to allow benchmarking of the various spike inference algorithms that have been developed, and to understand how indicator characteristics affect the quality of spike train inference.
+
+The modelled cell contents consisted of free calcium, fluorescent indicator molecules, and mobile and immobile endogenous calcium buffers. The indicator molecules which were bound to a calcium molecule could be either excited, i.e. able to release a photon, or relaxed. In order to reproduce the noise in the system dynamics, we modelled the release of photons from the excited indicator bound calcium as a stochastic process.
+
+The fluorescence traces produced by the simulation were calibrated to reproduce the signal-to-noise ratio observed in experimental data. Spike inference algorithms were used to infer spike trains from the experimental fluorescence traces and the modelled fluorescence traces. The parameters of the model were then varied in order to determine the effect on the system dynamics and the effects on spike inference.} % no citations in the abstract
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\subsection{Fluorescent calcium indicators}
+Since the invention of two-photon calcium imaging, the use of fluorescent calcium indicators to study the activity of populations of neurons has grown in popularity. In this process, the neurons are made to fluoresce using one of three methods. Either a calcium sensitive dye is injected into the body of each cell to be monitored, or the cells are altered by a virus, or the cells are genetically modified to make them express a calcium sensitive protein. The dye or the proteins fluoresce when they come into contact with and bind to calcium molecules. This fluorescence allows us to locate the cells containing the fluorescent indicator. Furthermore, since the firing of an action potential involves an influx of calcium molecules, the indicator makes the firing of action potentials observable by an increase and subsequent decay in fluorescence inside the cell. An example of the fluorescence produced by a fluorescent calcium indicator can be seen in figure \ref{fig:GCaMP6_fluorescence}. The activity of the cell is quantified by measuring $\Delta F = (F - F_0)/F_0$, where $F$ is the fluorescence within the soma, and $F_0$ is the baseline fluorescence within the soma \cite{maravall}. This $\Delta F$ quantity measured at each time step constitutes the fluorescence traces that make up the data used in this research. An example trace can be seen in figure \ref{fig:spike_finder_example}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/GCaMP6_fluorescence.png}
+  \caption{Single frame from video of spontaneous activity recorded from cultured mouse hippocampal neurons using GCaMP6s fluorescent indicator. Image courtesy of brainslicemethods.com}
+  \label{fig:GCaMP6_fluorescence}
+\end{figure}
+
+Calcium imaging has a number of advantages over the more traditional electrophysiological methods. Firstly, electrophysiological methods involve inserting a electrode or a number of electrodes into the brain to measure extra-cellular voltages. The electrodes need to be attached by wires to a device that collects their data. This inhibits the movement of the experimental subject, and makes longitudinal experiments impossible. The calcium imaging can be performed \textit{in vivo} \cite{stosiek}, and the apparatus can be removed from the subject when the subject is not under observation. This enables longitudinal experiments as the subject can survive and move around normally when not being examined. Furthermore, inserting these electrodes can cause cells, or the connections between cells to be damaged. Using calcium imaging avoids this kind of damage. Also, in electrophysiology, the strength of the spiking signal, and the position of each electrode are used by purpose designed algorithms to identify the position of individual neurons and ‘sort’ the spikes, i.e. attribute the spikes to a cell. This method is very good for spike detection and attribution. But these methods are biased toward readings from the most active cells. In fact, an inactive cell will be completely ignored by electrophysiological methods. With calcium imaging, inactive cells are still detected since each cell contains a baseline level of calcium \cite{maravall}, and therefore fluorescences a small amount. Finally, electrophysiological methods can only read from the cells nearby the electrodes. Genetically encoded fluorescent calcium indicators such as GCaMP6s can be targeted at neurons with a specific genetic make-up.
+
+fMRI methods can also be used to monitor brain activity. But the resolution is too low to monitor individual cells.
+
+\begin{figure}[p]
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/spike_finder_example_8.png}
+    \caption{Plot of a spike train and the corresponding GCaMP6s fluorescence trace. Data courtesy of spikefinder.codeneuro.org}
+  \end{subfigure}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/spike_finder_example_8_zoomed.png}
+    \caption{The same image as (a) but zoomed into the period from 80s to 86s. A group of six action potentials around the 81s point followed by a group of three action potentials just before the 82s point are shown. The decay of the fluorescence trace is much slower than the dynamics of an action potential.}
+  \end{subfigure}
+  \caption{}
+  \label{fig:spike_finder_example}
+\end{figure}
+
+There are some drawbacks to fluorescent calcium indicators. For example, the dynamics of the fluorescent indicators are much slower than the dynamics of action potentials. After excitation, the cross-membrane potential of a cell will return to baseline in $2-3$ms. After a single action potential, the fluorescence of GCaMP6s will return to baseline after approximately $3$s. At least a thousand times longer. An example of this can be seen in a figure \ref{fig:spike_finder_example}, showing a fluorescence trace and the corresponding spike train. The relaxation time is extended when more than one action potential is fired in quick succession \cite{chen}. Furthermore, readings are usually taken from cells after a `loading period', so that the indicator is saturated within the cells. At this point the increase in fluorescence in response to an action potential will be greatest. So another issue with the genetically encoded indicators is that it is impossible to know whether or not the indicator is saturated within the cell. This is especially a problem with longitudinal studies, as the amplitude of fluorescence change in response to an action potential will change as the experiment continues. This means that the same amount of activity in cells will cause different amounts of fluorescence changes at different times, which makes analysis difficult. It is claimed that despite this, it is still possible to detect individual spikes even in spike bursts \cite{chen}.
+
+\subsection{Spike Inference Algorithms}
+There are existing methods for converting the fluorescence traces read during these experiments into spike trains \cite{vogelstein, pnevmatikakis, jewell, friedrich}, but these methods have not been tested rigorously. Also, these methods do not take experimental variations into account, such as a variation in the concentration of the indicator. Furthermore, the process of collecting the photons emitted by the indicator introduces some noise. Whether or not this noise is enough to obfuscate the spiking signal has never been investigated. A model of the fluorescence induced by a spike train is required to assess whether or not it is actually possible to infer an accurate spike train from a fluorescence trace. A model of this kind could also be used to test the methods that infer a spike train from a fluorescence trace.
+
+\section{Methods \& Data Sources} % description of everything used to create the results, and justifications for assumptions/approaches/parameters
+
+\subsection{Modelling}\label{sec:model}
+
+\subsubsection{Calcium Dynamics}\label{sec:calcium_dynamics}
+When a neuron fires an action potential, voltage-dependent calcium ion-channels open up that allow a current of Ca$^{2+}$ to flow into the neuron \cite{koch}. The increase in the free calcium ion concentration inside of the cell along with changes in the concentration of potassium and sodium causes the change in cell membrane potential, which must be depolarised. The depolarising process consists of free calcium ions leaving the cell through open ion channels, binding to molecules within the cell called \textit{buffers}, and some calcium storage by organelles such as the endoplasmic reticulum. A diagram illustrating the cell, its channels, and its buffers can be seen in figure \ref{fig:cell_diagram} There are several different types of calcium buffer, each with different dynamics and different concentrations within different types of excitable cell. The fluorescent calcium indicator is another calcium buffer, with the useful property that when it is bound to a calcium ion, the bound molecule may become excited by a photon and release a photon in return. This is what creates the fluorescence. After the action potential has taken place, the free calcium concentration within the cell will return to a baseline level \cite{maravall}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/cell_diagram.png}
+  \caption{A diagram showing the methods by which Ca$^{2+}$ can enter the cell, leave the cell, and become `buffered'.}
+  \label{fig:cell_diagram}
+\end{figure}
+
+\subsubsection{The Model}\label{sec:the_model}
+We modelled the the dynamics of five molecular concentrations within the body of a neuron,
+\begin{itemize}
+  \item Free calcium ion concentration, $[Ca^{2+}]$,
+  \item Fluorescent indicator bound calcium, $[BCa]$,
+  \item Endogenous mobile buffer bound calcium, $[ECa]$,
+  \item Endogenous immobile buffer bound calcium, $[ImCa]$,
+  \item Excited buffered calcium, $[BCa^*]$.
+\end{itemize}
+The term `buffering' refers to free calcium ions coming into contact with buffer molecules and binding together. Diagrammatically this is:
+\begin{equation*}
+   [X][Ca^{2+}] \xrightleftharpoons[k_{Xb}]{k_{Xf}} [XCa]
+\end{equation*}
+where $[X]$ represents any buffer molecule, and $k_{Xf}$ and $k_{Xb}$ represent the binding and unbinding (dissociation) rates in units of per molar concentration per second ($M^{-1}s^{-1}$) and per second ($s^{-1}$) respectively. The speed of this chemical reaction is determined by the binding and unbinding rates.
+
+There are a number different endogenous buffers in any neuron. Which buffers are present, and the buffers' concentrations vary from cell to cell. In order to capture the effects of mobile and immobile endogenous buffers without introducing several parameters they were modelled as two buffers. One representing mobile buffers and the other representing immobile buffers. Each with their own binding and unbinding rates.
+
+The fluorescent calcium indicator behaves similarly to the other calcium buffers. The calcium is buffered by the indicator in the same way. But an indicator bound calcium molecule can become excited by absorbing the energy from a photon. An excited indicator bound calcium molecule can then release a photon to go back to its `relaxed' state.
+\begin{equation*}
+   [B][Ca^{2+}] \xrightleftharpoons[k_{Bb}]{k_{Bf}} [BCa] \leftrightsquigarrow [BCa^{*}]
+\end{equation*}
+The released photons are captured by a photon collector. This gives us the fluorescence trace.
+
+Ignoring the baseline level of free calcium in a neuron, the system of equations we used to model all of these interactions is as follows:
+\begin{equation} \label{eq:model_equations}
+  \begin{split}
+  \diff{[Ca^{2+}]}{t} = & k_{Bb}[BCa] + k_{Eb}[ECa] + k_{Imb}[ImCa] \\
+                      & - k_{Bf}[B][Ca^{2+}]- k_{Ef} [E][Ca^{2+}] - k_{Imf}[Im][Ca^{2+}] \\
+                      & + \beta ([Ca^{2+}_{0}] - [Ca^{2+}])
+  \end{split}
+\end{equation}
+\begin{align}
+  \diff{[BCa]}{t} = & k_{Bf}[B][Ca^{2+}] - k_{Bb}[BCa] + r[BCa^{*}] - e[BCa] \\
+  \diff{[ECa]}{t} = & k_{Ef}[E][Ca^{2+}] - k_{Eb}[ECa] \\
+  \diff{[ImCa]}{t} = & k_{Imf}[Im][Ca^{2+}] - k_{Imb}[ImCa] \\
+  \diff{[BCa^{*}]}{t} = & e[BCa] - r[BCa^{*}]
+%  \end{split}
+\end{align}
+where $[Ca^{2+}_{0}]$ is the baseline calcium concentration within the cell soma, $\beta$ is a rate defining how quickly free calcium enters or leaves the cell in the absence of an action potential, $e$ is the excitation rate for indicator bound calcium, $r$ is the photon release rate for the excited indicator bound calcium, and $f$ and $b$ are used to indicate the forward and backward rates for chemical reactions respectively. The excitation rate defines the proportion of indicator bound calcium that becomes excited at each time step. The photon release rate defines the proportion of excited indicator bound calcium that releases a photon and returns to its relaxed state at each time step. An action potential is modelled as a discontinuous increase in the free calcium concentration to an appropriate value \cite{maravall}. 
+
+Note that each of the three pairs of binding and unbinding terms in the first equation has a corresponding pair in one of the subsequent three equations. Binding removes a free calcium molecule and adds a bound calcium molecule, and unbinding does the opposite. Note that the excitation and release dynamics are included by the last two terms in the equation $4$, and all of equation $7$. The last term in equation $1$ drives the free calcium concentration back to the baseline level $[Ca^{2+}_{0}]$. The calcium rate, $\beta$, controls how quickly the concentration will be driven to the baseline.
+
+\subsubsection{Photon release \& capture}\label{sec:photon_capture}
+We used a simple model for the photon release. The number of photons released at each time step was controlled by the number of excited indicator bound calcium molecules in the cell and a parameter called the `release rate'. The release rate is an optimised free parameter of the model.
+
+As for the photon capture, in two-photon excitation microscopy the photons scattered by the fluorescent indicator get scattered in all directions. Therefore the number of photons detected is stochastic. This made the process for capturing photons the natural source of noise in the system. The number of photons captured, and therefore the intensity of the fluorescence, is modelled using a binomial distribution.
+
+A binomial distribution is the discrete probability distribution of the number of successes in a sequence of independent trials with a binary outcome. The parameters defining the distribution are:
+\begin{itemize}
+  \item $n$, The number of trials
+  \item $p$, The probability of success
+\end{itemize}
+The probability mass function of the distribution is
+\begin{equation}
+  Pr(\text{number of successes} = k) = {{n}\choose{k}}p^k(1-p)^{n-k}
+\end{equation}
+
+The number of photons released was used as number of trials. This was a natural choice as each photon is either captured, or not captured. The probability of success is set equal to the `capture rate'. The capture rate is a free parameter of the model to be optimised.
+
+\subsubsection{Parameter optimisation}
+The free parameters of the model are as follows:
+\begin{description}
+  \item[Calcium rate] Controls how quickly the concentration of free calcium will be driven to the baseline concentration.
+  \item[Capture rate] The average proportion of photons captured by the photon detector.
+  \item[Excitation rate] The number of indicator bound calcium molecules that become excited by photon bombardment at each time step.
+  \item[Release rate] The number of excited indicator bound calcium molecules that release a photon at each time step.
+\end{description}
+To optimise the free parameters given a fluorescence trace, we applied the following procedure:
+\begin{enumerate}
+  \item The frequency power spectrum of the trace was measured.
+  \item The power spectrum was smoothed using a boxcar smoother (aka. sliding average, box smoother).
+  \item The log of the smoothed power spectrum was measured.
+  \item Use the model to create a modelled fluorescence trace
+  \item Apply steps 1, 2, and 3 to the modelled fluorescence trace.
+  \item Calculate the root mean squared difference between the log power of the actual fluorescence trace, and the log power of the modelled fluorescence trace.
+  \item Calculate the root mean squared difference between the actual fluorescence trace and the modelled fluorescence trace.
+  \item Use an optimisation algorithm to reapply this process, attempting to minimize the sum of the two root mean squared differences at each iteration.
+\end{enumerate}
+Using the root mean squared difference of the log power spectra as part of the objective function forces the model to match the noise frequency of the actual fluorescence. Using the root mean squared difference of the traces themselves forces the model to match the amplitude of the fluorescence changes more accurately. % (Should I be saying this???)
+
+In order to minimise the objective function, a suite of \textit{meta-heuristic optimisation} (aka. \textit{black-box optimisation}) algorithms were implemented on each of the traces in the dataset. These methods were chosen because they don't require a gradient for the objective function (gradient-free) and they are particularly useful for minimising stochastic objective functions like the one we used here. The free parameters were optimised for each individual fluorescence trace. The most successful method for each trace was recorded. The method that was most often successful was \textit{probabilistic descent}, and the second most successful method was \textit{generating set search}. Both of these methods are examples of \textit{pattern search}. These two methods were the best optimisers on about $75\%$ of the traces in the dataset.
+
+An example of an observed trace, a modelled traced created with optimised parameters, and the smoothed power spectrum of each of these traces can seen in figure \ref{fig:fluorescence_comparison}.
+
+Although this optimisation procedure minimises the value of the optimisation function, the value never reaches zero for a number of reasons. Firstly, the fluorescence traces carry low frequency fluctuations that cannot be captured by the model (see figure \ref{fig:all_spikefinder_data}). Secondly, the model assumes that the process of calcium binding to the fluorescent indicator is linear in time (see equation \ref{eq:model_equations}), but there are more complicated dynamics involved here. Fluorescent calcium indicators are often built upon the calcium binding protein called `calmodulin'. This protein has four calcium binding sites. These sites are locally split into two pairs. Each pair has a different affinity for calcium, and the affinity of the binding sites is affected by the occupancy of the other binding sites \cite{kilhoffer}. So the calcium to calcium indicator binding process is non-linear, but the model does not take this into account.
+
+\subsubsection{Julia}
+The programming language used to write and execute the model was `Julia'. Julia is a dynamic programming language designed for technical computing. Julia was designed specifically to provide a convenient high-level dynamic language similar to MATLAB\textsuperscript{\textregistered}, or Python, with improved performance. Julia's type system and Julia's direct interfaces with C and Fortran allow this aim to be achieved \cite{bezanson}. The Julia version of the `Sundials' package for ODE solving was used to solve the system of equations in section \ref{sec:the_model}. The \texttt{BlackBoxOptim.jl} package for Julia was used to perform the optimisation.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=\textwidth]{figures/all_spikefinder_data.png}
+  \caption{All the spikefinder data. Fluorescence traces in green, spike trains in blue.}
+  \label{fig:all_spikefinder_data}
+\end{figure}
+
+\subsection{Spike Inference}\label{sec:spike_inference_methods}
+We used spike inference algorithms to compare the quality of spike inference using the modelled traces to the quality of spike inference using the observed traces. We also used the spike inference algorithms to assess the effect of parameter perturbation on the spike inference. Three algorithms were used:
+\begin{description}
+  \item[Constrained non-negative deconvolution algorithm (aka Paninski algorithm)] This algorithm uses a constrained version of non-negative Weiner deconvolution to infer a calcium signal and a `spiking activity signal' from the fluorescence trace \cite{pnevmatikakis, vogelstein}. The spiking activity signal is a non-negative vector of real numbers reflecting the cell's activity rather than an actual spike train. We inferred a spike train by choosing an optimised threshold for the spiking activity signal. Whenever the spiking activity signal exceeded that threshold, an action potential was inferred. The threshold was optimised by minimising the difference between the number of spikes observed and the number of spikes predicted.
+  \item[ML-Spike algorithm] This algorithm uses a generalised version of the Viterbi algorithm to return the spike train that maximises the likelihood of producing the given fluorescence trace. The Viterbi algorithm is an algorithm for estimating the most likely sequence of hidden states resulting in a sequence of observed states in a discrete-time finite-state Markov process \cite{viterbi}. In this case, each hidden state is defined by the presence or absence of an action potential, and each observed state is the value of the fluorescence trace at each time step. This algorithms assumes that the concentration of calcium within the cell will decay to a drifting baseline, rather than a fixed baseline \cite{deneux}.
+  \item[Online Active Set method to Infer Spikes (OASIS)] This algorithm is once again based on an auto-regressive model of the fluorescence trace, but can be generalised to any order. The algorithm itself is a generalisation of the \textit{pool adjacent violators algorithm} (PAVA) that is used in isotonic regression. The OASIS algorithm works through the fluorescence trace from beginning to end,
+   this combined with speed of the algorithm means that it could be used for real-time online spike inference \cite{friedrich}. Given a fluorescence trace, the algorithm will return the most likely spike train and an inferred denoised fluorescence signal.
+\end{description}
+In order to quantify the quality of spike inference for a given algorithm, we ran that algorithm on all of the fluorescence traces in dataset number eight of the spike finder datasets. Then we measured some binary classification measures on the results. These measures included
+\begin{itemize}
+  \item Accuracy
+  \item True positive rate, (aka recall, sensitivity, hit rate)
+  \item True negative rate, (aka specificity)
+  \item Precision, (aka positive predicted value)
+  \item Negative predicted value,
+  \item False negative rate, (aka miss rate)
+  \item False positive rate, (aka fall-out)
+  \item False discovery rate,
+  \item False omission rate
+\end{itemize}
+In making these measurements, we allowed a tolerance of two subsequent time bins for spike prediction. For example, the spike train data is a vector of 0s and 1s, with one element for each time bin. A `0' denotes inactivity, a `1' denotes the presence of at least one action potential. The inferred spike trains produced by the spike inference algorithms take the same form. In our analysis, if a spike appeared in the inferred spike train up to two time frames after a spike in the observed spike train, that spike was considered correctly inferred i.e. a true positive. However, once a spike in the inferred spike train was matched to a spike from the observed spike train, the inferred spike could not be matched to another observed spike. To illustrate, if two spikes were inferred in the two time bins following an isolated observed spike, the first inferred spike was considered correctly inferred, but the second inferred spike was considered incorrectly inferred, i.e. a false positive.
+
+The most useful measure was the true positive rate. This is because the spiking is sparse and this measurement is sensitive to the number of spikes observed and inferred. After optimising the parameters for each fluorescence trace we measured the spike inference quality for the observed fluorescence traces, and compared this to the spike inference quality for the modelled traces.
+
+\subsubsection{Perturbation analysis}
+In order to measure the sensitivity of spike inference to changes in a given model parameter, we perturbed the parameter and compared the quality of spike inference with the perturbed parameters to the quality of spike inference with the experimental or optimised parameters. In order to maximise the possibility of observing a difference due to the perturbation, we perturbed the chosen parameter by a relatively large amount. For example, the experimental value for the molar concentration of the fluorescent indicator within the cell was $10^{-4}$M \cite{maravall}. The perturbed values used for this parameter were $10^{-2}$M, $10^{-3}$M, $10^{-5}$M, and $10^{-6}$M. The quality of the inference was compared by measuring the true positive rate for each perturbed value and using a \textit{t}-test to compare the distributions of the results.
+
+This analysis was performed firstly without any optimisation of the free parameters for use with the perturbed parameters. Then the analysis was performed after the optimised parameters for each perturbed value were calculated.
+
+\subsection{Data sources}
+All of the data used in this project was sourced from the `Spike Finder' project (spikefinder.codeneuro.org). The data consisted of a collection of datasets with simultaneously measured fluorescence traces and action potentials. All of the fluorescence traces and action potential trains from the dataset that we used most heavily can be seen in figure \ref{fig:all_spikefinder_data}.
+
+\section{Results} % just insert all the results as created and observed
+
+\subsection{Concentration \& Fluorescence Modelling}
+The spike trains from the Spike Finder project were used as input to the fluorescence model.
+
+\subsubsection{Buffered Calcium Concentrations}
+
+In order to produce a fluorescence trace, the model first simulates the traces of five chemical concentrations within the cell (detailed in section \ref{sec:the_model}) $[Ca^{2+}]$, $[BCa]$, $[ECa]$, $[ImCa]$, $[BCa^*]$. The trajectory of each of the concentrations over a sample spike train can be seen in figure \ref{fig:concentration_dynamics}. Each of the action potentials caused a discontinuous increase in the concentration of $[Ca^{2+}]$ in the cell.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{figures/concentration_dynamics_2.png}
+  \caption{The concentrations of free calcium ions, $[Ca^{2+}]$, fluorescent indicator bound calcium, $[BCa]$, endogenous buffer bound calcium, $[ECa]$, immobile buffer bound calcium, $[ImCa]$, and excited fluorescent indicator bound calcium, $[BCa^*]$, over the course of a sample trial from the spike finder data. At each action potential there is a discontinuous increase in free calcium concentration, causing a chain reaction in the other concentrations.}
+  \label{fig:concentration_dynamics}
+\end{figure}
+
+% buffer trajectories
+The trajectories of $[BCa]$, $[ECa]$, and $[ImCa]$ are all similar. Each of the proteins buffer some of the baseline calcium, so the buffered concentrations settle to a stable baseline in the absence of action potentials. At the onset of an action potential, the jump in free calcium causes a sudden jump in each of these three concentrations. The concentrations then begin to decay very quickly. This very quick decay is not visible in figure \ref{fig:concentration_dynamics}, but can be observed in the zoomed in version figure \ref{fig:concentration_dynamics_zoomed}. Then the decay slows down to a slower rate. The trace of each of these concentrations can be accurately modelled by the sum of two exponential decays, one of which decays much more quickly than the other.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{figures/concentration_dynamics_2_zoomed.png}
+  \caption{A zoomed in version of figure \ref{fig:concentration_dynamics} showing only the $[Ca^{2+}]$, $[BCa]$, $[ECa]$, and $[ImCa]$ concentrations during the period $14.30 - 14.33$s. The fast decay dynamics of the buffered concentrations can be seen here. The excess of free calcium that enters the cell at the time of an action potential is immediately buffered by a combination of the fluorescent indicator and the endogeneous mobile and immobile buffers.}
+  \label{fig:concentration_dynamics_zoomed}
+\end{figure}
+
+% excited buffered trajectories
+The trajectory of the excited indicator bound calcium, $[Bca^*]$, is slightly different. There is a baseline level of this concentration in the absence of an action potential. This is in agreement with experimental observations of a baseline level of fluorescence. The increase in this concentration does not mirror the instantaneous jump in free calcium. Instead, the increase resembles a logarithmic increase up to some limit. After reaching a peak the concentration then begins an exponential decay back to a baseline level. These effects can be observed in figures \ref{fig:concentration_dynamics} and \ref{fig:concentration_dynamics_zoomed_excited}. The trace of the $[BCa^*]$ concentration can be accurately modelled by the difference of two exponentials.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{figures/concentration_dynamics_2_zoomed_excited.png}
+  \caption{A zoomed in version of figure \ref{fig:concentration_dynamics} showing only the $[Ca^{2+}]$, and $[BCa^*]$ concentrations during the period $14.30 - 14.33$s. The $[Ca^{2+}]$ is only included to show the presence of an action potential. There is a logarithmic increase in the $[BCa^*]$ concentration immediately after the action potential, followed by a much slower exponential decay.}
+  \label{fig:concentration_dynamics_zoomed_excited}
+\end{figure}
+
+%%% Include information about the time constants of the decays
+
+\begin{figure}[p]
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/fluorescence_comparison_2_observed.png}
+    \caption{An experimentally observed fluorescence trace and the spike train that induced the trace. Note that is the same example trace as we used in figures \ref{fig:concentration_dynamics}, \ref{fig:concentration_dynamics_zoomed}, and \ref{fig:concentration_dynamics_zoomed_excited}.}
+  \end{subfigure}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/fluorescence_comparison_2_modelled.png}
+    \caption{The modelled fluorescence trace created from the same spike train as shown in (a). Note that the experimental fluorescence trace contains some low frequency oscillations that are not captured by the model.}
+  \end{subfigure}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/fluorescence_comparison_2_power.png}
+    \caption{The smoothed log power spectra for both the observed fluorescence trace and the modelled fluorescence trace shown in (a) and (b) respectively. The aim of our optimisation process was to make these two spectra as alike as possible.}
+    \label{fig:log_power_spectra}
+  \end{subfigure}
+  \caption{}
+  \label{fig:fluorescence_comparison}
+\end{figure}
+
+\subsubsection{Fluorescence Modelling}
+The fluorescence trace is defined by the number of photons released and subsequently captured. The number of photons released was proportional to the number of excited indicator bound calcium molecules in the cell. The size of that proportion was defined by another optimised parameter of the model called the `release rate'. The actual fluorescence trace was sampled at each time step from a binomial distribution. For details on the binomial distribution see section \ref{sec:photon_capture}. The number of trials in the distribution was equal to the number of photons released from the excited indicator bound calcium molecules, $[BCa^*]$, in the cell. The probability of success was an optimised parameter of the model called the `capture rate'. The model caused the fluorescence trace to follow the excited indicator bound calcium trace, with some noise associated with the binomial distribution.
+
+An example observed fluorescence trace along side its modelled counterpart can be seen in figure \ref{fig:fluorescence_comparison}
+
+\subsection{Spike Inference}
+
+\subsubsection{Observed fluorescence vs Modelled fluorescence}
+We used the three spike inference algorithms mentioned in section \ref{sec:spike_inference_methods} to infer spike trains from each of the observed fluorescence traces, and each of the modelled fluorescence traces. We compared the performance of the inference algorithms on the observed fluorescence traces to their performance on the modelled fluorescence traces by measuring the true positive rates and true negative rates of inferred spike trains. The results of these measurements can be seen figures \ref{fig:three_algo_comparison_tp} and \ref{fig:three_algo_comparison_tn}.
+
+All of the algorithms performed better on the modelled spike trains. The spike trains that the algorithms inferred from the modelled fluorescence traces were more similar to the observed spike trains than the spike trains inferred from the observed fluorescence traces. Since the observed fluorescence traces contain low frequency fluctuations that cannot be captured by the model, the spikes should be easier to infer from the modelled fluorescence traces. So the improved performance is expected.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{figures/three_algo_comparison_tp.png}
+  \caption{Box plot showing the distribution of the true positive rate measurements for spike inference on each of the observed and modelled fluorescence traces. Each of the box plots are labelled with either `data' for the observed fluorescence traces, or `model' for the modelled fluorescence traces. One box plot for observed fluorescences, and one box plot for modelled fluorescences for each of the three algorithms mentioned in section \ref{sec:spike_inference_methods} are shown. So six plots in total. The box extends from the lower to the upper quartile. The median is shown as a green line, and the mean is shown as a red triangle. The whiskers show the range of the data. The individual true positive rates are represented by the blue dots. Each of the algorithms performs better on the modelled data than on the observed data ($p < 10^{-8}$).}
+  \label{fig:three_algo_comparison_tp}
+  % actual p values here were OASIS: 1.01e-9, Lzero: 4.01e-5, Paninski: 1.92e-12
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{figures/three_algo_comparison_tn.png}
+  \caption{This figure is the same as figure \ref{fig:three_algo_comparison_tp} with true positive rates replaced with true negative rates. Again, each of the algorithms performed better on the modelled data than on the observed data ($p < 0.05$)}
+  \label{fig:three_algo_comparison_tn}
+  % actual p values here were OASIS: 0.0026, Lzero: 2.03e-7, Paninski: 0.03
+\end{figure}
+
+\subsubsection{Perturbation analysis}
+In order to measure the sensitivity of the spike inference algorithms to changes in the concentration of fluorescent calcium indicator within the cell, the spike inference analysis outlined in section \ref{sec:spike_inference_methods} was carried out, using different values for the concentration of fluorescent indicator. The experimental, and therefore unperturbed, value for the indicator concentration was $10^{-4}$M. The perturbed values used were different from this value by orders of magnitude in order ensure that any effects of the perturbation would be observed. These values were $10^{-2}$M, $10^{-3}$M, $10^{-5}$M, and $10^{-6}$M.
+
+The dynamics of the five free calcium/calcium molecule concentrations simulated by the model can be seen in figure \ref{fig:indicator_peturbed_calcium_dynamics}. There is one figure for each perturbed value as well as one for the unperturbed value. There is not much difference between the models using the three highest values for the indicator concentration. In each of these cases, all of the free calcium that enters the cell upon the firing of an action potential is buffered by a combination of the fluorescent indicator and the mobile and immobile endogeneous buffers. For the models using the lowest two values of the indicator concentration, the relative difference between the indicator bound calcium and immobile buffer bound calcium traces is either much smaller, or the sign of the difference is reversed. This is a result of the indicator becoming saturated by the free calcium, and the immobile buffer binding to the remaining free calcium. A consequence of this is a smaller change in the amplitude of the fluoresce in response to an action potential.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{figures/indicator_peturbed_calcium_dynamics.png}
+  \caption{The dynamics of all the concentrations modelled by the model for five different concentrations of fluorescent indicator. From top to bottom, the concentration of the fluorescent indicator is $10^{-2}$M, $10^{-3}$M, $10^{-5}$M, and $10^{-6}$M. The top three values all look very similar. Having more fluorescent indicator doesn't make any difference when all of the free calcium is buffered by the indicator. For the two lowest values of fluorescent indicator, we can see the concentration of excited buffered calcium is much smaller, and therefore the fluorescence will be reduced. We can also see the other calcium buffers bonding to more free calcium as the fluorescent indicator becomes saturated. }
+  \label{fig:indicator_peturbed_calcium_dynamics}
+\end{figure}
+
+\section{Discussion}
+%
+We wrote a program to model the fluorescence traces read from neuron somata containing a fluorescent calcium indicator during spiking activity. The model simulated five molecular concentrations within the soma. The photon collection process was modelled as the noisy part of the system, with photons being captured stochastically according to a binomial distribution. We used the trained model to create synthetic fluorescence traces using the spike trains in the \textit{Spike Finder} dataset. We ran three spike inference algorithms on the modelled fluorescence traces as well as on the observed ground truth fluorescence traces and compared both the spike trains inferred from the modelled traces and from the observed traces with the ground truth spike trains.
+
+We found that the observed fluorescence traces contained low frequency fluctuations that were not captured by the model consisting of first order ordinary differential equations.
+
+In comparing the quality of spike inference from observed fluorescence traces to the quality of spike inference from modelled fluorescence traces, we found that two of the three algorithms used performed better on the modelled fluorescence traces, with no significant difference for the other algorithm used. We expected an improvement in performance due to the lack of low frequency oscillations in the modelled fluorescence traces.
+
+\newpage
+
+\bibliography{fluorescence_modelling.bbl}
+
+\end{document}
