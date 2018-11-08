@@ -10,4 +10,7 @@
 \BOOKMARK [1][-]{section.4}{Further Notes}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{Implementation of Gaussian case on a parent with two children}{section.4}% 11
 \BOOKMARK [2][-]{subsection.4.2}{Attempt at deriving Gaussian parameter transformations}{section.4}% 12
-\BOOKMARK [1][-]{section.5}{Variable Directory}{}% 13
+\BOOKMARK [1][-]{section.5}{Posterior Expectation}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Proposition 3}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Multiscale parameter posterior \(Problem\)}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Variable Directory}{}% 16

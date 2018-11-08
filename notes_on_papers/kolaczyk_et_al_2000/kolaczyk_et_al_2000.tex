@@ -277,6 +277,66 @@ As for the covariance matrix, we have
 							\end{pmatrix}
 \end{align*}
 
+\section{Posterior Expectation}
+If we have the measurements at the finest partition $\mathbf{Y}_{J}$ and we want to estimate the means of the underlying process $\boldsymbol{\mu}_J$, and we assume either the Gaussian or Poisson prior for the multiscale parameters, then our estimate for the $\boldsymbol{\mu}_J$ will the posterior expectation $\hat{\boldsymbol{\mu}}_J = E[\boldsymbol{\mu}_J | \boldsymbol{Y}_J]$. Given our assumptions and the hierarchical set up, this posterior takes a reasonably simple form.
+
+\subsection{Proposition 3}\label{sec:prop3}
+Given either the Gaussian or Poisson models of Proposition 2, and independent multiscale priors specified according to Gaussian, Poisson, Gaussian mixture, or Poisson mixture models, the posterior distribution factorises as
+\begin{equation}
+  P(\boldsymbol{\mu}_J | \mathbf{Y}_J) = P(\boldsymbol{\mu}_0 | \mathbf{Y}_0) \prod_{j=0}^{J-1} \prod_{k=1}^{n_j} P(\boldsymbol{\omega}_{j,k} | \mathbf{Y}_{j+1,ch(k)}, Y_{j,k})
+\end{equation}
+
+From this result we can see that the $\hat{\boldsymbol{\mu}_J}$ can be calculated recursively starting at $j=0$ using
+\begin{equation}
+  \hat{\boldsymbol{\mu}}_{j+1,k} = \hat{\boldsymbol{\omega}}_{j,k} + v_{j,k}\hat{\boldsymbol{\mu}}_{j,k}
+\end{equation}
+in the Gaussian case, where $\hat{\boldsymbol{\omega}}_{j,k} = E[\boldsymbol{\omega}_{j,k} | \mathbf{Y}_{j+1, ch(k)}, Y_{j,k}]$.
+
+\subsection{Multiscale parameter posterior (Problem)}
+We saw in section \ref{sec:prop3} that in order to estimate $\hat{\boldsymbol{\mu}}_J$ all we need is knowledge of $\hat{\boldsymbol{\omega}}_{j,k} = E[\boldsymbol{\omega}_{j,k} | \mathbf{Y}_{j+1, ch(k)}, Y_{j,k}]$. In order to calculate that, note that
+\begin{equation}
+  P(\boldsymbol{\omega}_{j,k} | \mathbf{Y}_{j+1, ch(k)}, Y_{j,k}) \propto P(\mathbf{Y}_{j+1, ch(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k}) P(\boldsymbol{\omega}_{j,k})
+\end{equation}
+In the gaussian case, we already chose a prior for the multiscale parameters $P(\boldsymbol{\omega}_{j,k}) = \mathcal{N}(0, \Phi_{j,k})$. Also note that from proposition 2 we have
+\begin{equation}
+  P(\mathbf{Y}_{j+1, ch(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k}) = \mathcal{N}(v_{j,k}Y_{j,k} + \boldsymbol{\omega}_{j,k}, \Omega_{j,k})
+\end{equation}
+which gives
+\begin{equation}
+  P(\boldsymbol{\omega}_{j,k} | \mathbf{Y}_{j+1, ch(k)}, Y_{j,k}) = \mathcal{N}(\Phi_{j,k}(\Omega_{j,k} + \Phi_{j,k})^{-1}(v_{j,k}Y_{j,k} + \boldsymbol{\omega}_{j,k}), \Phi_{j,k}(\Omega_{j,k} + \Phi_{j,k})^{-1} \Omega_{j,k})
+\end{equation}
+and would suggest
+\begin{equation}\label{eq:my_omega_hat}
+  \hat{\boldsymbol{\omega}}_{j,k} = \Phi_{j,k}(\Omega_{j,k} + \Phi_{j,k})^{-1}(v_{j,k}Y_{j,k} + \boldsymbol{\omega}_{j,k})
+\end{equation}
+This seems inconsistent, since the posterior distribution of $\boldsymbol{\omega}_{j,k}$ depends on itself.
+
+The result given by the authors of the paper is
+\begin{equation}\label{eq:author_omega_hat}
+  \hat{\boldsymbol{\omega}}_{j,k} = \Phi_{j,k}(\Omega_{j,k} + \Phi_{j,k})^{-1}(\mathbf{Y}_{j+1, ch(k)} - Y_{j,k}v_{j,k})
+\end{equation}
+which would make sense if the posterior was
+\begin{equation}
+  P(\boldsymbol{\omega}_{j,k} | \mathbf{Y}_{j+1, ch(k)}, Y_{j,k}) = \mathcal{N}(\Phi_{j,k}(\Omega_{j,k} + \Phi_{j,k})^{-1}(\mathbf{Y}_{j+1, ch(k)} - Y_{j,k}v_{j,k}, \Phi_{j,k}(\Omega_{j,k} + \Phi_{j,k})^{-1} \Omega_{j,k})
+\end{equation}
+This could be formed by a prior of $P(\boldsymbol{\omega}_{j,k}) = \mathcal{N}(0, \Phi_{j,k})$ and a likelihood of
+\begin{equation}
+  P(\mathbf{Y}_{j+1, ch(k)} | Y_{j,k}, \boldsymbol{\omega}_{j,k}) = \mathcal{N}(\mathbf{Y}_{j+1, ch(k)} - Y_{j,k}v_{j,k}, \Omega_{j,k})
+\end{equation}
+which again doesn't make sense.
+
+A somewhat sensible route to the author's result is as follows: Notice that $\boldsymbol{\omega}_{j,k}$ is defined in proposition 2 as
+\begin{equation}
+  \boldsymbol{\omega}_{j,k} = \boldsymbol{\mu}_{j+1,ch(k)} - \boldsymbol{\mu}_{j,k}v_{j,k}
+\end{equation}
+therefore
+\begin{equation}
+  \boldsymbol{\omega}_{j,k}^e = \mathbf{Y}_{j+1, ch(k)} - Y_{j,k}v_{j,k}
+\end{equation}
+can be regarded as an imperical estimation of $\boldsymbol{\omega}_{j,k}$ using the data available. Then equation \ref{eq:author_omega_hat} is a combination of our prior, and this empirical estimation. The authors don't hint at anything like this until section 4.2 of the paper where they define $\boldsymbol{\omega}_{j,k}^e$ as above. Then in section 4.4, the authors note that in the event that $\boldsymbol{\omega}_{j,k}^{\circ} = 0$, their equation 34 breaks down to their equation 19 (which is the equation I'm trying to derive here.)
+
+From what I understand about empirical bayes parameter estimation, this `somewhat sensible route' appears to be an example of \textit{parametric empirical bayes}, where the actual parameters are estimated from the data, rather than the hyperparameters. The authors mention that they use empirical Bayes estimation in the paper, but not until section 4.2. The equation with which I am having trouble is in section 2.2.
+
 \section{Variable Directory}
 For specifying what each varible means, and where it comes from.
 
