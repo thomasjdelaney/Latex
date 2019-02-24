@@ -1,7 +1,7 @@
 PWD /home/thomas/Latex/daily
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /home/thomas/.cache/texlive/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /home/thomas/.texlive2018/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT daily.tex
 OUTPUT daily.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -58,10 +58,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty

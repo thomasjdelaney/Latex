@@ -452,18 +452,24 @@
 
         \item[27/04/2018 - 16/05/2018] Spent a lot of time on the applications for CheckRisk and Adarga. Now submitted. Remade the figures for Cian, they look more like what would be seen in a paper now. Need to ask Cian about what the next step is on the paper. Did the analysis for Mike/Anna Simpson. Only acknowledging one spike per bin may be a problem. Currently working on loading in Neuropixels data, and applying the heirarchical model to this data.
 
-        \item[17/05/2018 - 06/06/2018] Re-did the analysis for Mike, worked out quite well. Mike was happy with it anyway. I redid the figures for the paper. Cian was happy with most of them, but a few still need to be redone. The application with CheckRisk was accepted, I will start on the 25th of June. Must tell Cian about that. Wrote a julia script to do most of the same analysis as is in the MATLAB script that goes with the Neuropixels data.
+        \item[17/05/2018 - 06/06/2018] Re-did the analysis for Mike, worked out quite well. Mike was happy with it anyway. I redid the figures for the paper. Cian was happy with most of them, but a few still need to be redone. The application with CheckRisk was accepted, I will start on the 25th of June. Must tell Cian about that. Wrote a Julia script to do most of the same analysis as is in the MATLAB script that goes with the Neuropixels data.
 
-        \item[07/06/2018 - 08/06/2018] Wrote a julia script to count the spikes for each cell, and created a csv holding all the necessary data. Need to fit the hierarchical model to the data. Sent the figures to Mike. He said he would discuss the paper with Cian.Also need to update the figures.
+        \item[07/06/2018 - 08/06/2018] Wrote a Julia script to count the spikes for each cell, and created a csv holding all the necessary data. Need to fit the hierarchical model to the data. Sent the figures to Mike. He said he would discuss the paper with Cian.Also need to update the figures.
 
         \item[09/06/2018 - 14/06/2018] Used statistical tests to see if the cells are more Poisson or more Gaussian. More of them are Gaussian, but most of them are neither. Need to write some functions to do the parameter transformation. Also still need to edit the paper figures. But Cian and Mike have not looked at them yet. Starting placement the week after next.
 
-        \item[15/06/2018 - 22/06/2018] Wrote the fuctions for the parameter transformations. Also wrote some functions to get the model distributions. There may be a problem with the model. Need to re-read the paper and make sure I understand. Placement is supposed to start soon.
+        \item[15/06/2018 - 22/06/2018] Wrote the functions for the parameter transformations. Also wrote some functions to get the model distributions. There may be a problem with the model. Need to re-read the paper and make sure I understand. Placement is supposed to start soon.
 
-				\item[23/06/2018 - 08/11/2018] Attempted to derive all the results given in the Kolaczyk paper. Ran into trouble with the posterior esimation of $\boldsymbol{\omega}_{j,k}$. Went on three month placement, learned about time series analysis, forecasting, and recurrent neural networks. Suggested time series relatied topic for chapter 3 of thesis. Caught up again with the Kolaczyk paper. Added to the notes on the Kolaczyk paper. Emailed Cian to ask him about my problem. Learned about empirical Bayes.
+				\item[23/06/2018 - 08/11/2018] Attempted to derive all the results given in the Kolaczyk paper. Ran into trouble with the posterior estimation of $\boldsymbol{\omega}_{j,k}$. Went on three month placement, learned about time series analysis, forecasting, and recurrent neural networks. Suggested time series related topic for chapter 3 of thesis. Caught up again with the Kolaczyk paper. Added to the notes on the Kolaczyk paper. Emailed Cian to ask him about my problem. Learned about empirical Bayes.
 
-				\item[09/11/2018 - 23/11/2018] Implemented some toy examples of Bayeian parameter estimation. Learned quite a bit about it, definitely have a better understanding now. Also did a lot of teaching assistance for the Machine Learning course. Need to infer the parameters of the synthetic heirarchical data.
+				\item[09/11/2018 - 23/11/2018] Implemented some toy examples of Bayeian parameter estimation. Learned quite a bit about it, definitely have a better understanding now. Also did a lot of teaching assistance for the Machine Learning course. Need to infer the parameters of the synthetic hierarchical data.
 
 				\item[24/11/2018 - 28/11/2018] Implemented the Gaussian version of the hierarchical model to synthetic data. Seems to work ok. Told Cian and Nick. Need to do more on the Machine Learning course before next week.
+
+				\item[29/11/2019 - 22/02/2019] Implemented Poisson version of the multiscale model, fixed bugs in the Gaussian version. Sampled from Gaussian version. Did progress meeting with Conor. Started on regional correlations project. Wrote code to get the cell info and save it down. Wrote code to select random neurons and calculate the regional correlations between them.
+
+				\item[23/02/2019] Started working on calculating the marginal likelihood for the multiscale model. Need to calculate the likelihood, then find a way of comparing the likelihoods for two different tree structures. One correct, and one incorrect.
+
+				\item[24/02/2019]
 \end{description}
 \end{document}
