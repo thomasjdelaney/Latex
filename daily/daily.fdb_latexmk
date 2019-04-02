@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1554162847 "daily.tex" "daily.pdf" "daily" 1554162847
+["pdflatex"] 1554247063 "daily.tex" "daily.pdf" "daily" 1554247064
   "/home/thomas/.texlive2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1550972528 3682902 5edbeb781481373c7d9336db116906a2 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1553009388 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -108,11 +108,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def" 1480098842 8036 21f7ac37aafb6cfeddbb196b8bfd6280 ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1480098842 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1553009379 33523 3a2c32bd77384f8f4508d61b4be83582 ""
-  "daily.aux" 1554162847 662 b2b94621371df8d9296b8bf5bec1b851 "pdflatex"
-  "daily.out" 1554162847 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "daily.tex" 1554162845 53945 c5ba531cac8d9b8aece4b86130f4b516 ""
+  "daily.aux" 1554247064 662 b2b94621371df8d9296b8bf5bec1b851 "pdflatex"
+  "daily.out" 1554247063 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "daily.tex" 1554247060 54060 56bf6d343e33ba4d84d6821cbd5cce87 ""
   (generated)
-  "daily.out"
   "daily.aux"
   "daily.pdf"
+  "daily.out"
   "daily.log"
