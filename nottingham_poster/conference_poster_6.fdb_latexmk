@@ -1,12 +1,11 @@
 # Fdb version 3
-["bibtex conference_poster_6"] 1561055207 "conference_poster_6.aux" "conference_poster_6.bbl" "conference_poster_6" 1561056169
-  "/opt/texlive/2016/texmf-dist/bibtex/bst/base/plain.bst" 1486555470 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "conference_poster_6.aux" 1561056169 665 d1f2cbc5161d22e60c683e18e9462e58 ""
-  "sample.bib" 1364336898 389 db81ddd685b8d7a35c72de38da6aecfa ""
+["bibtex conference_poster_6"] 1561133644 "conference_poster_6.aux" "conference_poster_6.bbl" "conference_poster_6" 1561133848
+  "conference_poster_6.aux" 1561133848 568 810e8e5171a2d7007e4085e60aea3d28 ""
+  "conference_poster_6.bbl.bib" 0 -1 0 ""
   (generated)
   "conference_poster_6.blg"
   "conference_poster_6.bbl"
-["pdflatex"] 1561056169 "conference_poster_6.tex" "conference_poster_6.pdf" "conference_poster_6" 1561056169
+["pdflatex"] 1561133848 "conference_poster_6.tex" "conference_poster_6.pdf" "conference_poster_6" 1561133848
   "/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1486555907 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1486555816 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/opt/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1486555770 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -88,9 +87,9 @@
   "/opt/texlive/2016/texmf.cnf" 1486555459 496 01ab80fa0036a81d2df86fb0ac70c709 ""
   "a0poster.cls" 1371911156 6176 37402c6052502599d35b9e16a21767aa ""
   "a0size.sty" 1297937226 7728 3b92cf7fd22bdf46734222814afe7554 ""
-  "conference_poster_6.aux" 1561056169 665 d1f2cbc5161d22e60c683e18e9462e58 ""
-  "conference_poster_6.bbl" 1561055207 317 40d3bcbe1989a7a26701254683c93049 "bibtex conference_poster_6"
-  "conference_poster_6.tex" 1561056169 14019 fc0e1b4f60edfa2508ad914eda38e630 ""
+  "conference_poster_6.aux" 1561133848 568 810e8e5171a2d7007e4085e60aea3d28 ""
+  "conference_poster_6.bbl" 1561133442 470 2de1d6ddbd5120417654a9f50a508b66 "bibtex conference_poster_6"
+  "conference_poster_6.tex" 1561133847 13896 0c11ea6a1511c7dc5694f5ca56ab4d93 ""
   "figures/bristol_university_logo.png" 1552388428 25216 cd9d2f4de857ba947c5a4bcc5c65b15d ""
   "figures/epsrc_logo.png" 1552388428 25663 f42edaeeba83368b7ce4497f6741af07 ""
   "figures/placeholder.jpg" 1360003896 20279 2c3b3984e263aa5f7146ef59d3f89f8c ""

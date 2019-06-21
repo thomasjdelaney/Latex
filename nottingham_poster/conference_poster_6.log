@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  20 JUN 2019 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  21 JUN 2019 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,61 +340,67 @@ File: figures/epsrc_logo.png Graphic file (type png)
  <use figures/epsrc_logo.png>
 Package pdftex.def Info: figures/epsrc_logo.png used on input line 61.
 (pdftex.def)             Requested size: 454.55037pt x 159.10445pt.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <35.83> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 89.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <29.86> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 128.
-LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <35.83> not available
+(Font)              Font shape `OT1/ppl/b/sc' tried instead on input line 87.
+LaTeX Font Info:    Try loading font information for U+msa on input line 102.
  (/opt/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+LaTeX Font Info:    Try loading font information for U+msb on input line 102.
  (/opt/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (80.22961pt too wide) in paragraph at lines 165--174
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <29.86> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 126.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <29.86> not available
+(Font)              Font shape `OT1/ppl/b/sc' tried instead on input line 126.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 165.
+
+Overfull \hbox (80.22961pt too wide) in paragraph at lines 163--172
 [][] 
  []
 
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 172.
 <figures/placeholder.jpg, id=4, 351.3125pt x 193.72375pt>
 File: figures/placeholder.jpg Graphic file (type jpg)
  <use figures/placeholder.jpg>
-Package pdftex.def Info: figures/placeholder.jpg used on input line 182.
+Package pdftex.def Info: figures/placeholder.jpg used on input line 180.
 (pdftex.def)             Requested size: 801.74945pt x 442.18245pt.
 File: figures/placeholder.jpg Graphic file (type jpg)
  <use figures/placeholder.jpg>
-Package pdftex.def Info: figures/placeholder.jpg used on input line 206.
+Package pdftex.def Info: figures/placeholder.jpg used on input line 204.
 (pdftex.def)             Requested size: 801.74945pt x 442.18245pt.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 219.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 217.
  (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <24.88> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
- (./conference_poster_6.bbl)
-Overfull \vbox (35.74875pt too high) has occurred while \output is active []
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
+ (./conference_poster_6.bbl
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no “ in font pplr7t!
+) [1
 
- [1
 
-
-Non-PDF special ignored!{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/bristol_university_logo.png> <./figures/epsrc_logo.png> <./figures/placeholder.jpg>] [2] (./conference_poster_6.aux) ) 
+Non-PDF special ignored!{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/bristol_university_logo.png> <./figures/epsrc_logo.png> <./figures/placeholder.jpg>] (./conference_poster_6.aux) ) 
 Here is how much of TeX's memory you used:
- 4588 strings out of 493013
- 68454 string characters out of 6136083
- 187211 words of memory out of 5000000
- 8040 multiletter control sequences out of 15000+600000
- 22844 words of font info for 64 fonts, out of 8000000 for 9000
+ 4594 strings out of 493013
+ 68528 string characters out of 6136083
+ 182211 words of memory out of 5000000
+ 8044 multiletter control sequences out of 15000+600000
+ 24904 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,39p,860b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,8n,39p,862b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on conference_poster_6.pdf (2 pages, 165057 bytes).
+Output written on conference_poster_6.pdf (1 page, 169618 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
