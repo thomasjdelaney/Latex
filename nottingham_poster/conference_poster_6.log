@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  23 JUN 2019 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  23 JUN 2019 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -393,11 +393,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 114.
-<figures/raster_plot.png, id=4, 902.37125pt x 466.74374pt>
+<figures/raster_plot.png, id=4, 857.2025pt x 469.755pt>
 File: figures/raster_plot.png Graphic file (type png)
 <use figures/raster_plot.png>
 Package pdftex.def Info: figures/raster_plot.png  used on input line 117.
-(pdftex.def)             Requested size: 801.74945pt x 414.71692pt.
+(pdftex.def)             Requested size: 801.74945pt x 439.36923pt.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 118.
 
@@ -433,7 +433,7 @@ ng> <./figures/placeholder.jpg>] (./conference_poster_6.aux) )
 Here is how much of TeX's memory you used:
  4555 strings out of 492701
  68299 string characters out of 6134504
- 180831 words of memory out of 5000000
+ 173831 words of memory out of 5000000
  8338 multiletter control sequences out of 15000+600000
  21964 words of font info for 61 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
@@ -446,7 +446,7 @@ amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/u
 crr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on conference_poster_6.pdf (1 page, 175755 bytes).
+Output written on conference_poster_6.pdf (1 page, 174022 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
