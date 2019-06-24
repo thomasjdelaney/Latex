@@ -111,12 +111,20 @@ We then used these measurements to create networks between the neurons in these 
 
 \section*{\color{NavyBlue}\textsc{Data}\color{NavyBlue}}
 
-  Using two probes, spiking activity was simultaneously collected from over 800 neurons in an awake mouse brain for a period of 84 minutes. During this period, the mouse and was shown various visual stimuli. The 800 neurons were distributed across 5 different brain regions: \textbf{V1, hippocampus, thalamus, motor cortex}, and \textbf{striatum}.
+Using two probes, spiking activity was simultaneously collected from over 800 neurons in an awake mouse brain for a period of 84 minutes. During this period, the mouse and was shown various visual stimuli. The 800 neurons were distributed across 5 different brain regions: \textbf{V1, hippocampus, thalamus, motor cortex}, and \textbf{striatum} \cite{jun}.
 
-\begin{center}\vspace{1cm}
-\includegraphics[width=0.8\linewidth]{raster_plot.png}
-\captionof{figure}{Raster plot showing a the firing times of a subset of the cells, during a subset of the experiment time. Shaded areas indicate times when a visual stimulus was present.}
-\end{center}\vspace{1cm}
+\begin{minipage}[b]{0.9\linewidth}
+  \begin{center}
+  \includegraphics[width=0.9\linewidth, height=13cm]{raster_plot.png}
+  \end{center}
+\end{minipage}
+%
+\begin{minipage}[b]{0.1\linewidth}
+  \includegraphics[width=\linewidth, height=5cm]{probe_1.jpg} \\
+  \includegraphics[width=0.9\linewidth, height=6.5cm]{probe_2.jpg} % \vspace{2.5cm}
+\end{minipage}
+
+\captionof{figure}{(Left) a Raster plot showing a the firing times of a subset of the cells, during a subset of the experiment time. Shaded areas indicate times when a visual stimulus was present, and (Right) positions of the two probes. Probe 1 intersects V1, the hippocampus, and the thalamus. Probe 2 intersects the motor cortex and the striatum.}
 
 %----------------------------------------------------------------------------------------
 %	MATERIALS AND METHODS
@@ -137,53 +145,75 @@ We then used these measurements to create networks between the neurons in these 
 
 \section*{\color{NavyBlue}\textsc{Results}\color{Black}}
 
-Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan. Aenean vitae risus ante.
-%
-\begin{wraptable}{l}{12cm} % Left or right alignment is specified in the first bracket, the width of the table is in the second
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\captionof{table}{Table caption}
-\end{wraptable}
-%
-Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin. Proin sollicitudin. Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh.
+\subsection*{\color{NavyBlue}\textsc{Correlation \& Information Distributions}\color{Black}}
 
-Nulla ut porttitor enim. Suspendisse venenatis dui eget eros gravida tempor. Mauris feugiat elit et augue placerat ultrices. Morbi accumsan enim nec tortor consectetur non commodo. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu. Phasellus imperdiet, tortor vitae congue bibendum, felis enim sagittis lorem, et volutpat ante orci sagittis mi. Morbi rutrum laoreet semper. Morbi accumsan enim nec tortor consectetur non commodo nisi sollicitudin.
+We used statistical tests to find out if the distributions of pairwise correlation were different between regions. We found that correlations in the hippocampus and thalamus were statistically different those in the other three regions ($p < 0.05$). The other three regions were statistically similar.
 
-\begin{center}\vspace{1cm}
-\includegraphics[width=0.8\linewidth]{placeholder}
-\captionof{figure}{Figure caption}
-\end{center}\vspace{1cm}
+\vspace{3mm}
+\includegraphics[width=0.195\linewidth]{all_hippocampus_6_1p0_correlation_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_motor_cortex_10_1p0_correlation_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_striatum_14_1p0_correlation_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_thalamus_15_1p0_correlation_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_v1_6_1p0_correlation_histogram.png}
+\captionof{figure}{Histograms of the spike count correlations of 1000 randomly chosen pairs of neurons from within each region.}
+\vspace{3mm}
 
-In hac habitasse platea dictumst. Etiam placerat, risus ac.
+We did the same for mutual information distributions. Comparing all pairwise combinations of regions, we found that all regional distributions of mutual information were statistically different ($p < 0.001$).
 
-Adipiscing lectus in magna blandit:
+\vspace{3mm}
+\includegraphics[width=0.195\linewidth]{all_hippocampus_6_1p0_information_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_motor_cortex_10_1p0_information_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_striatum_14_1p0_information_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_thalamus_15_1p0_information_histogram.png}
+\includegraphics[width=0.195\linewidth]{all_v1_6_1p0_information_histogram.png}
+\captionof{figure}{Histograms of the mutual information between the neuron spike counts of 1000 randomly chosen pairs from within each region.}
+\vspace{3mm}
 
-\begin{center}\vspace{1cm}
-\begin{tabular}{l l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\captionof{table}{Table caption}
-\end{center}\vspace{1cm}
+\subsection*{\color{NavyBlue}\textsc{Pairwise Geomtric Mean, Correlation \& Information}\color{Black}}
 
-Vivamus sed nibh ac metus tristique tristique a vitae ante. Sed lobortis mi ut arcu fringilla et adipiscing ligula rutrum. Aenean turpis velit, placerat eget tincidunt nec, ornare in nisl. In placerat.
+We compared the spike count correlations for pairs of neurons to the geometric means of their firing rates. Surprisingly, we found very little correlation between the two quantities.
 
-\begin{center}\vspace{1cm}
-\includegraphics[width=0.8\linewidth]{placeholder}
-\captionof{figure}{\color{Green} Figure caption}
-\end{center}\vspace{1cm}
+\vspace{3mm}
+\includegraphics[width=0.195\linewidth]{corr_vs_geometric_hippocampus_8.png}
+\includegraphics[width=0.195\linewidth]{corr_vs_geometric_motor_cortex_16.png}
+\includegraphics[width=0.195\linewidth]{corr_vs_geometric_striatum_16.png}
+\includegraphics[width=0.195\linewidth]{corr_vs_geometric_thalamus_15.png}
+\includegraphics[width=0.195\linewidth]{corr_vs_geometric_v1_8.png}
+\captionof{figure}{Spike count correlations of pairs of neurons plotted against geometric means of the firing rate of those pairs for each region.}
+\vspace{3mm}
+
+We found a strong positive correlation between the pairwise geometric mean and the mutual information.
+
+\vspace{3mm}
+\includegraphics[width=0.195\linewidth]{info_vs_geometric_hippocampus_8.png}
+\includegraphics[width=0.195\linewidth]{info_vs_geometric_motor_cortex_16.png}
+\includegraphics[width=0.195\linewidth]{info_vs_geometric_striatum_16.png}
+\includegraphics[width=0.195\linewidth]{info_vs_geometric_thalamus_15.png}
+\includegraphics[width=0.195\linewidth]{info_vs_geometric_v1_8.png}
+\captionof{figure}{Mutual information of pairs of neurons plotted against geometric means of the firing rate of those pairs for each region.}
+\vspace{3mm}
+
+We expected strong spike count correlations to correspond to relatively large values for the mutual information. So we scattered one quantity against the other and fit a quadratic curve to the data. Whatever correlation we found between the two quantities was not as strong as we expected.
+
+\vspace{3mm}
+\includegraphics[width=0.195\linewidth]{info_vs_corr_hippocampus_15.png}
+\includegraphics[width=0.195\linewidth]{info_vs_corr_motor_cortex_15.png}
+\includegraphics[width=0.195\linewidth]{info_vs_corr_striatum_15.png}
+\includegraphics[width=0.195\linewidth]{info_vs_corr_thalamus_15.png}
+\includegraphics[width=0.195\linewidth]{info_vs_corr_v1_15.png}
+\captionof{figure}{Mutual information of pairs of neurons plotted against geometric means of the firing rate of those pairs for each region.}
+\vspace{3mm}
+
+\subsection*{\color{NavyBlue}\textsc{Community Detection}\color{Black}}
+
+Using Network Noise Rejection and Consensus Clustering, we isolated a network 
+
+\begin{minipage}[b]{\linewidth}
+  \includegraphics[width=0.5\linewidth]{cons_cluster_map_all_good_15.png}
+  \includegraphics[width=0.5\linewidth]{eig_hist_all_good_15.png}
+  \captionof{figure}{(Left) Mutual information matrix of the signal network, with communities shown. Main diagonal entries set to zero. (Right) A histogram of the eigenvalues of the samples from the null model, with the eigenvalues of the modularity matrix of the network shown in blue.}
+\end{minipage}
+
 
 %----------------------------------------------------------------------------------------
 %	CONCLUSIONS
