@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  24 JUN 2019 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  25 JUN 2019 18:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -334,12 +334,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--56
 File: figures/bristol_university_logo.png Graphic file (type png)
  <use figures/bristol_university_logo.png>
 Package pdftex.def Info: figures/bristol_university_logo.png used on input line 60.
-(pdftex.def)             Requested size: 454.55037pt x 131.338pt.
+(pdftex.def)             Requested size: 479.13394pt x 138.43874pt.
  <figures/epsrc_logo.png, id=3, 401.5pt x 140.525pt>
 File: figures/epsrc_logo.png Graphic file (type png)
  <use figures/epsrc_logo.png>
 Package pdftex.def Info: figures/epsrc_logo.png used on input line 61.
-(pdftex.def)             Requested size: 454.55037pt x 159.10445pt.
+(pdftex.def)             Requested size: 479.13394pt x 167.70926pt.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <35.83> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <35.83> not available
@@ -358,17 +358,17 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
 File: figures/raster_plot.png Graphic file (type png)
  <use figures/raster_plot.png>
 Package pdftex.def Info: figures/raster_plot.png used on input line 118.
-(pdftex.def)             Requested size: 811.76103pt x 369.88385pt.
+(pdftex.def)             Requested size: 857.8544pt x 369.88385pt.
  <figures/probe_1.jpg, id=5, 98.3675pt x 167.62625pt>
 File: figures/probe_1.jpg Graphic file (type jpg)
  <use figures/probe_1.jpg>
 Package pdftex.def Info: figures/probe_1.jpg used on input line 123.
-(pdftex.def)             Requested size: 100.22392pt x 142.263pt.
+(pdftex.def)             Requested size: 105.91408pt x 142.263pt.
  <figures/probe_2.jpg, id=6, 74.2775pt x 170.6375pt>
 File: figures/probe_2.jpg Graphic file (type jpg)
  <use figures/probe_2.jpg>
 Package pdftex.def Info: figures/probe_2.jpg used on input line 124.
-(pdftex.def)             Requested size: 90.20586pt x 184.9549pt.
+(pdftex.def)             Requested size: 95.3276pt x 184.9549pt.
 
 Overfull \hbox (19.72723pt too wide) in paragraph at lines 116--126
 [][] [] 
@@ -380,155 +380,52 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <29.86> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 148.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <29.86> not available
 (Font)              Font shape `OT1/ppl/b/sc' tried instead on input line 148.
-<figures/all_hippocampus_6_1p0_correlation_histogram.png, id=7, 289.08pt x 216.81pt>
-File: figures/all_hippocampus_6_1p0_correlation_histogram.png Graphic file (type png)
- <use figures/all_hippocampus_6_1p0_correlation_histogram.png>
-Package pdftex.def Info: figures/all_hippocampus_6_1p0_correlation_histogram.png used on input line 153.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_motor_cortex_10_1p0_correlation_histogram.png, id=8, 289.08pt x 216.81pt>
-File: figures/all_motor_cortex_10_1p0_correlation_histogram.png Graphic file (type png)
- <use figures/all_motor_cortex_10_1p0_correlation_histogram.png>
-Package pdftex.def Info: figures/all_motor_cortex_10_1p0_correlation_histogram.png used on input line 154.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_striatum_14_1p0_correlation_histogram.png, id=9, 289.08pt x 216.81pt>
-File: figures/all_striatum_14_1p0_correlation_histogram.png Graphic file (type png)
- <use figures/all_striatum_14_1p0_correlation_histogram.png>
-Package pdftex.def Info: figures/all_striatum_14_1p0_correlation_histogram.png used on input line 155.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_thalamus_15_1p0_correlation_histogram.png, id=10, 289.08pt x 216.81pt>
-File: figures/all_thalamus_15_1p0_correlation_histogram.png Graphic file (type png)
- <use figures/all_thalamus_15_1p0_correlation_histogram.png>
-Package pdftex.def Info: figures/all_thalamus_15_1p0_correlation_histogram.png used on input line 156.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_v1_6_1p0_correlation_histogram.png, id=11, 289.08pt x 216.81pt>
-File: figures/all_v1_6_1p0_correlation_histogram.png Graphic file (type png)
- <use figures/all_v1_6_1p0_correlation_histogram.png>
-Package pdftex.def Info: figures/all_v1_6_1p0_correlation_histogram.png used on input line 157.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_hippocampus_6_1p0_information_histogram.png, id=12, 289.08pt x 216.81pt>
-File: figures/all_hippocampus_6_1p0_information_histogram.png Graphic file (type png)
- <use figures/all_hippocampus_6_1p0_information_histogram.png>
-Package pdftex.def Info: figures/all_hippocampus_6_1p0_information_histogram.png used on input line 164.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_motor_cortex_10_1p0_information_histogram.png, id=13, 289.08pt x 216.81pt>
-File: figures/all_motor_cortex_10_1p0_information_histogram.png Graphic file (type png)
-
-<use figures/all_motor_cortex_10_1p0_information_histogram.png>
-Package pdftex.def Info: figures/all_motor_cortex_10_1p0_information_histogram.png used on input line 165.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_striatum_14_1p0_information_histogram.png, id=14, 289.08pt x 216.81pt>
-File: figures/all_striatum_14_1p0_information_histogram.png Graphic file (type png)
- <use figures/all_striatum_14_1p0_information_histogram.png>
-Package pdftex.def Info: figures/all_striatum_14_1p0_information_histogram.png used on input line 166.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_thalamus_15_1p0_information_histogram.png, id=15, 289.08pt x 216.81pt>
-File: figures/all_thalamus_15_1p0_information_histogram.png Graphic file (type png)
- <use figures/all_thalamus_15_1p0_information_histogram.png>
-Package pdftex.def Info: figures/all_thalamus_15_1p0_information_histogram.png used on input line 167.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/all_v1_6_1p0_information_histogram.png, id=16, 289.08pt x 216.81pt>
-File: figures/all_v1_6_1p0_information_histogram.png Graphic file (type png)
- <use figures/all_v1_6_1p0_information_histogram.png>
-Package pdftex.def Info: figures/all_v1_6_1p0_information_histogram.png used on input line 168.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/corr_vs_geometric_hippocampus_8.png, id=17, 289.08pt x 216.81pt>
-File: figures/corr_vs_geometric_hippocampus_8.png Graphic file (type png)
- <use figures/corr_vs_geometric_hippocampus_8.png>
-Package pdftex.def Info: figures/corr_vs_geometric_hippocampus_8.png used on input line 177.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/corr_vs_geometric_motor_cortex_16.png, id=18, 289.08pt x 216.81pt>
-File: figures/corr_vs_geometric_motor_cortex_16.png Graphic file (type png)
- <use figures/corr_vs_geometric_motor_cortex_16.png>
-Package pdftex.def Info: figures/corr_vs_geometric_motor_cortex_16.png used on input line 178.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/corr_vs_geometric_striatum_16.png, id=19, 289.08pt x 216.81pt>
-File: figures/corr_vs_geometric_striatum_16.png Graphic file (type png)
- <use figures/corr_vs_geometric_striatum_16.png>
-Package pdftex.def Info: figures/corr_vs_geometric_striatum_16.png used on input line 179.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/corr_vs_geometric_thalamus_15.png, id=20, 289.08pt x 216.81pt>
-File: figures/corr_vs_geometric_thalamus_15.png Graphic file (type png)
- <use figures/corr_vs_geometric_thalamus_15.png>
-Package pdftex.def Info: figures/corr_vs_geometric_thalamus_15.png used on input line 180.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
-
-<figures/corr_vs_geometric_v1_8.png, id=21, 289.08pt x 216.81pt>
-File: figures/corr_vs_geometric_v1_8.png Graphic file (type png)
- <use figures/corr_vs_geometric_v1_8.png>
-Package pdftex.def Info: figures/corr_vs_geometric_v1_8.png used on input line 181.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_geometric_hippocampus_8.png, id=22, 289.08pt x 216.81pt>
-File: figures/info_vs_geometric_hippocampus_8.png Graphic file (type png)
- <use figures/info_vs_geometric_hippocampus_8.png>
-Package pdftex.def Info: figures/info_vs_geometric_hippocampus_8.png used on input line 188.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_geometric_motor_cortex_16.png, id=23, 289.08pt x 216.81pt>
-File: figures/info_vs_geometric_motor_cortex_16.png Graphic file (type png)
- <use figures/info_vs_geometric_motor_cortex_16.png>
-Package pdftex.def Info: figures/info_vs_geometric_motor_cortex_16.png used on input line 189.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_geometric_striatum_16.png, id=24, 289.08pt x 216.81pt>
-File: figures/info_vs_geometric_striatum_16.png Graphic file (type png)
- <use figures/info_vs_geometric_striatum_16.png>
-Package pdftex.def Info: figures/info_vs_geometric_striatum_16.png used on input line 190.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_geometric_thalamus_15.png, id=25, 289.08pt x 216.81pt>
-File: figures/info_vs_geometric_thalamus_15.png Graphic file (type png)
- <use figures/info_vs_geometric_thalamus_15.png>
-Package pdftex.def Info: figures/info_vs_geometric_thalamus_15.png used on input line 191.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_geometric_v1_8.png, id=26, 289.08pt x 216.81pt>
-File: figures/info_vs_geometric_v1_8.png Graphic file (type png)
- <use figures/info_vs_geometric_v1_8.png>
-Package pdftex.def Info: figures/info_vs_geometric_v1_8.png used on input line 192.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_corr_hippocampus_15.png, id=27, 289.08pt x 216.81pt>
-File: figures/info_vs_corr_hippocampus_15.png Graphic file (type png)
- <use figures/info_vs_corr_hippocampus_15.png>
-Package pdftex.def Info: figures/info_vs_corr_hippocampus_15.png used on input line 199.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_corr_motor_cortex_15.png, id=28, 289.08pt x 216.81pt>
-File: figures/info_vs_corr_motor_cortex_15.png Graphic file (type png)
- <use figures/info_vs_corr_motor_cortex_15.png>
-Package pdftex.def Info: figures/info_vs_corr_motor_cortex_15.png used on input line 200.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
-
-<figures/info_vs_corr_striatum_15.png, id=29, 289.08pt x 216.81pt>
-File: figures/info_vs_corr_striatum_15.png Graphic file (type png)
- <use figures/info_vs_corr_striatum_15.png>
-Package pdftex.def Info: figures/info_vs_corr_striatum_15.png used on input line 201.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_corr_thalamus_15.png, id=30, 289.08pt x 216.81pt>
-File: figures/info_vs_corr_thalamus_15.png Graphic file (type png)
- <use figures/info_vs_corr_thalamus_15.png>
-Package pdftex.def Info: figures/info_vs_corr_thalamus_15.png used on input line 202.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/info_vs_corr_v1_15.png, id=31, 289.08pt x 216.81pt>
-File: figures/info_vs_corr_v1_15.png Graphic file (type png)
- <use figures/info_vs_corr_v1_15.png>
-Package pdftex.def Info: figures/info_vs_corr_v1_15.png used on input line 203.
-(pdftex.def)             Requested size: 195.43301pt x 146.57532pt.
- <figures/cons_cluster_map_all_good_15.png, id=32, 462.528pt x 346.896pt>
+<figures/correlation_histograms.png, id=7, 1684.2925pt x 417.56pt>
+File: figures/correlation_histograms.png Graphic file (type png)
+ <use figures/correlation_histograms.png>
+Package pdftex.def Info: figures/correlation_histograms.png used on input line 152.
+(pdftex.def)             Requested size: 1059.1053pt x 213.39877pt.
+ <figures/information_histograms.png, id=8, 1624.0675pt x 432.61626pt>
+File: figures/information_histograms.png Graphic file (type png)
+ <use figures/information_histograms.png>
+Package pdftex.def Info: figures/information_histograms.png used on input line 157.
+(pdftex.def)             Requested size: 1059.12555pt x 213.39647pt.
+ <figures/correlation_vs_geometric_mean.png, id=9, 1734.48pt x 439.6425pt>
+File: figures/correlation_vs_geometric_mean.png Graphic file (type png)
+ <use figures/correlation_vs_geometric_mean.png>
+Package pdftex.def Info: figures/correlation_vs_geometric_mean.png used on input line 164.
+(pdftex.def)             Requested size: 1059.14285pt x 213.39406pt.
+ <figures/info_vs_geometric_mean.png, id=10, 1620.0525pt x 436.63126pt>
+File: figures/info_vs_geometric_mean.png Graphic file (type png)
+ <use figures/info_vs_geometric_mean.png>
+Package pdftex.def Info: figures/info_vs_geometric_mean.png used on input line 169.
+(pdftex.def)             Requested size: 1059.10278pt x 213.39154pt.
+ <figures/info_vs_corr.png, id=11, 1640.1275pt x 428.60126pt>
+File: figures/info_vs_corr.png Graphic file (type png)
+ <use figures/info_vs_corr.png>
+Package pdftex.def Info: figures/info_vs_corr.png used on input line 174.
+(pdftex.def)             Requested size: 1059.163pt x 213.39758pt.
+ <figures/cons_cluster_map_all_good_15.png, id=12, 462.528pt x 346.896pt>
 File: figures/cons_cluster_map_all_good_15.png Graphic file (type png)
  <use figures/cons_cluster_map_all_good_15.png>
-Package pdftex.def Info: figures/cons_cluster_map_all_good_15.png used on input line 212.
-(pdftex.def)             Requested size: 501.09149pt x 375.83835pt.
- <figures/eig_hist_all_good_15.png, id=33, 462.528pt x 346.896pt>
+Package pdftex.def Info: figures/cons_cluster_map_all_good_15.png used on input line 181.
+(pdftex.def)             Requested size: 529.54425pt x 397.18053pt.
+ <figures/eig_hist_all_good_15.png, id=13, 462.528pt x 346.896pt>
 File: figures/eig_hist_all_good_15.png Graphic file (type png)
  <use figures/eig_hist_all_good_15.png>
-Package pdftex.def Info: figures/eig_hist_all_good_15.png used on input line 213.
-(pdftex.def)             Requested size: 501.09149pt x 375.83835pt.
+Package pdftex.def Info: figures/eig_hist_all_good_15.png used on input line 182.
+(pdftex.def)             Requested size: 529.54425pt x 397.18053pt.
 
-Overfull \hbox (4.72723pt too wide) in paragraph at lines 212--214
+Overfull \hbox (4.72723pt too wide) in paragraph at lines 181--183
 [][] [] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 227.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 193.
 (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <24.88> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 227.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
  (./conference_poster_6.bbl
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
@@ -536,22 +433,21 @@ Missing character: There is no “ in font pplr7t!
 ) [1
 
 
-Non-PDF special ignored!{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/bristol_university_logo.png> <./figures/epsrc_logo.png> <./figures/raster_plot.png> <./figures/probe_1.jpg> <./figures/probe_2.jpg> <./figures/all_hippocampus_6_1p0_correlation_histogram.png> <./figures/all_motor_cortex_10_1p0_correlation_histogram.png> <./figures/all_striatum_14_1p0_correlation_histogram.png> <./figures/all_thalamus_15_1p0_correlation_histogram.png> <./figures/all_v1_6_1p0_correlation_histogram.png> <./figures/all_hippocampus_6_1p0_information_histogram.png> <./figures/all_motor_cortex_10_1p0_information_histogram.png> <./figures/all_striatum_14_1p0_information_histogram.png> <./figures/all_thalamus_15_1p0_information_histogram.png> <./figures/all_v1_6_1p0_information_histogram.png> <./figures/corr_vs_geometric_hippocampus_8.png> <./figures/corr_vs_geometric_motor_cortex_16.png> <./figures/corr_vs_geometric_striatum_16.png> <./figures/corr_vs_geometric_thalamus_15.png> 
-<./figures/corr_vs_geometric_v1_8.png> <./figures/info_vs_geometric_hippocampus_8.png> <./figures/info_vs_geometric_motor_cortex_16.png> <./figures/info_vs_geometric_striatum_16.png> <./figures/info_vs_geometric_thalamus_15.png> <./figures/info_vs_geometric_v1_8.png> <./figures/info_vs_corr_hippocampus_15.png> <./figures/info_vs_corr_motor_cortex_15.png> <./figures/info_vs_corr_striatum_15.png> <./figures/info_vs_corr_thalamus_15.png> <./figures/info_vs_corr_v1_15.png> <./figures/cons_cluster_map_all_good_15.png> <./figures/eig_hist_all_good_15.png>] (./conference_poster_6.aux) ) 
+Non-PDF special ignored!{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/bristol_university_logo.png> <./figures/epsrc_logo.png> <./figures/raster_plot.png> <./figures/probe_1.jpg> <./figures/probe_2.jpg> <./figures/correlation_histograms.png> <./figures/information_histograms.png> <./figures/correlation_vs_geometric_mean.png> <./figures/info_vs_geometric_mean.png> <./figures/info_vs_corr.png> <./figures/cons_cluster_map_all_good_15.png> <./figures/eig_hist_all_good_15.png>] (./conference_poster_6.aux) ) 
 Here is how much of TeX's memory you used:
- 4728 strings out of 493013
- 74842 string characters out of 6136083
- 178187 words of memory out of 5000000
- 8150 multiletter control sequences out of 15000+600000
+ 4628 strings out of 493013
+ 69872 string characters out of 6136083
+ 175187 words of memory out of 5000000
+ 8070 multiletter control sequences out of 15000+600000
  23983 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,39p,862b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></opt/texl
-ive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on conference_poster_6.pdf (1 page, 715713 bytes).
+ 39i,6n,39p,862b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8
+a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on conference_poster_6.pdf (1 page, 680965 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

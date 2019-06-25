@@ -1,18 +1,18 @@
 %$Id: a0poster.cls,v 1.5 1999/04/05 14:49:56 mjf Exp $
-%% 
+%%
 %% This is file `a0poster.cls'
-%% 
+%%
 %% Copyright (C) 07.05.97 Gerlinde Kettl and Matthias Weiser
 %%
-%% Problems, bugs and comments to 
+%% Problems, bugs and comments to
 %% gerlinde.kettl@physik.uni-regensburg.de
-%% 
+%%
 %% changed textwidths and margins to cope with printable area and
 %% frame.  Make sure that the offsets are set to -1in!
 %% Also changed scaling for a0->a4, since this was wrong.
 
 %% This version changed by Hugh Pumphrey on 4.5.1999. Every instance
-%% of the string ``draft'' replaced by the string ``preview''. This gives 
+%% of the string ``draft'' replaced by the string ``preview''. This gives
 %% an a4 size preview but includes the postscript figures
 
 \ProvidesClass{a0poster}[1997/05/07 v1.21b a0poster class (GK, MW)]
@@ -86,14 +86,14 @@
 
 \ifanullb
    \setlength{\paperwidth}{129.3cm} %% 36 * sqrt(2) in
-   \setlength{\paperheight}{91.4cm} %% 36 in
-   \setlength{\textwidth}{119.3cm} %% paperwidth - (5cm + 5cm)
-   \setlength{\textheight}{81.4cm} %% paperheight - (5cm + 5cm)
+   \setlength{\paperheight}{92.4cm} %% 36 in
+   \setlength{\textwidth}{123.3cm} %% paperwidth - (3cm + 3cm)
+   \setlength{\textheight}{86.4cm} %% paperheight - (3cm + 3cm)
 \else\ifanull
         \setlength{\paperwidth}{118.82cm}
         \setlength{\paperheight}{83.96cm}
-        \setlength{\textwidth}{108.82cm} %% paperwidth - (5cm + 5cm)
-        \setlength{\textheight}{73.96cm} %% paperheight - (5cm + 5cm)
+        \setlength{\textwidth}{112.82cm} %% paperwidth - (3cm + 3cm)
+        \setlength{\textheight}{77.96cm} %% paperheight - (3cm + 3cm)
      \else\ifaeins
              \setlength{\paperwidth}{83.96cm}
              \setlength{\paperheight}{59.4cm}
@@ -136,21 +136,21 @@
 %%   	B: 18.1mm
 
 
-\voffset -1in
-\hoffset -1in
+\voffset 0in
+\hoffset 0in
 
 \setlength{\headheight}{0 cm}
 \setlength{\headsep}{0 cm}
-\setlength{\topmargin}{5 cm} %% 3 cm for unprintable at top
+\setlength{\topmargin}{0 cm} %% 3 cm for unprintable at top
 			     %% (landscape) + 2 cm from border
-\setlength{\oddsidemargin}{5 cm} %% 3 cm for unprintable at left
+\setlength{\oddsidemargin}{0.5 cm} %% 3 cm for unprintable at left
 			    	 %% (landscape) + 2 cm from border
 \setlength{\topskip}{0 cm}
 
 \input{a0size.sty}
 
 \renewcommand{\tiny}{\fontsize{12}{14}\selectfont}
-\renewcommand{\scriptsize}{\fontsize{14.4}{18}\selectfont}   
+\renewcommand{\scriptsize}{\fontsize{14.4}{18}\selectfont}
 \renewcommand{\footnotesize}{\fontsize{17.28}{22}\selectfont}
 \renewcommand{\small}{\fontsize{20.74}{25}\selectfont}
 \renewcommand{\normalsize}{\fontsize{24.88}{30}\selectfont}
@@ -200,5 +200,5 @@
 \pagestyle{empty}}
 
 \endinput
-%% 
+%%
 %% End of file `a0poster.cls'.
