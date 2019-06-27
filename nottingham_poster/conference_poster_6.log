@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  25 JUN 2019 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  26 JUN 2019 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,67 +384,58 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/sc' in size <29.86> not available
 File: figures/correlation_histograms.png Graphic file (type png)
  <use figures/correlation_histograms.png>
 Package pdftex.def Info: figures/correlation_histograms.png used on input line 152.
-(pdftex.def)             Requested size: 1059.1053pt x 213.39877pt.
+(pdftex.def)             Requested size: 1059.1053pt x 227.6262pt.
  <figures/information_histograms.png, id=8, 1624.0675pt x 432.61626pt>
 File: figures/information_histograms.png Graphic file (type png)
  <use figures/information_histograms.png>
 Package pdftex.def Info: figures/information_histograms.png used on input line 157.
-(pdftex.def)             Requested size: 1059.12555pt x 213.39647pt.
- <figures/correlation_vs_geometric_mean.png, id=9, 1734.48pt x 439.6425pt>
+(pdftex.def)             Requested size: 1059.12555pt x 227.62202pt.
+ <figures/correlation_vs_geometric_mean.png, id=9, 1683.28876pt x 448.67625pt>
 File: figures/correlation_vs_geometric_mean.png Graphic file (type png)
  <use figures/correlation_vs_geometric_mean.png>
 Package pdftex.def Info: figures/correlation_vs_geometric_mean.png used on input line 164.
-(pdftex.def)             Requested size: 1059.14285pt x 213.39406pt.
- <figures/info_vs_geometric_mean.png, id=10, 1620.0525pt x 436.63126pt>
+(pdftex.def)             Requested size: 1059.09056pt x 227.61691pt.
+ <figures/info_vs_geometric_mean.png, id=10, 1671.24374pt x 436.63126pt>
 File: figures/info_vs_geometric_mean.png Graphic file (type png)
  <use figures/info_vs_geometric_mean.png>
 Package pdftex.def Info: figures/info_vs_geometric_mean.png used on input line 169.
-(pdftex.def)             Requested size: 1059.10278pt x 213.39154pt.
+(pdftex.def)             Requested size: 1059.13692pt x 227.62253pt.
  <figures/info_vs_corr.png, id=11, 1640.1275pt x 428.60126pt>
 File: figures/info_vs_corr.png Graphic file (type png)
  <use figures/info_vs_corr.png>
 Package pdftex.def Info: figures/info_vs_corr.png used on input line 174.
-(pdftex.def)             Requested size: 1059.163pt x 213.39758pt.
- <figures/cons_cluster_map_all_good_15.png, id=12, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 1059.163pt x 227.62192pt.
+ <figures/cons_cluster_map_all_good_15.png, id=12, 583.17876pt x 459.7175pt>
 File: figures/cons_cluster_map_all_good_15.png Graphic file (type png)
  <use figures/cons_cluster_map_all_good_15.png>
 Package pdftex.def Info: figures/cons_cluster_map_all_good_15.png used on input line 181.
-(pdftex.def)             Requested size: 529.54425pt x 397.18053pt.
- <figures/eig_hist_all_good_15.png, id=13, 462.528pt x 346.896pt>
-File: figures/eig_hist_all_good_15.png Graphic file (type png)
- <use figures/eig_hist_all_good_15.png>
-Package pdftex.def Info: figures/eig_hist_all_good_15.png used on input line 182.
-(pdftex.def)             Requested size: 529.54425pt x 397.18053pt.
-
-Overfull \hbox (4.72723pt too wide) in paragraph at lines 181--183
-[][] [] 
- []
-
+(pdftex.def)             Requested size: 476.5866pt x 375.70113pt.
+ <figures/regional_cluster_matrix.png, id=13, 622.325pt x 482.80376pt>
+File: figures/regional_cluster_matrix.png Graphic file (type png)
+ <use figures/regional_cluster_matrix.png>
+Package pdftex.def Info: figures/regional_cluster_matrix.png used on input line 182.
+(pdftex.def)             Requested size: 476.5866pt x 369.74149pt.
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 193.
-(/opt/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
+ (/opt/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <24.88> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
- (./conference_poster_6.bbl
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no “ in font pplr7t!
-) [1
+ (./conference_poster_6.bbl) [1
 
 
-Non-PDF special ignored!{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/bristol_university_logo.png> <./figures/epsrc_logo.png> <./figures/raster_plot.png> <./figures/probe_1.jpg> <./figures/probe_2.jpg> <./figures/correlation_histograms.png> <./figures/information_histograms.png> <./figures/correlation_vs_geometric_mean.png> <./figures/info_vs_geometric_mean.png> <./figures/info_vs_corr.png> <./figures/cons_cluster_map_all_good_15.png> <./figures/eig_hist_all_good_15.png>] (./conference_poster_6.aux) ) 
+Non-PDF special ignored!{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/bristol_university_logo.png> <./figures/epsrc_logo.png> <./figures/raster_plot.png> <./figures/probe_1.jpg> <./figures/probe_2.jpg> <./figures/correlation_histograms.png> <./figures/information_histograms.png> <./figures/correlation_vs_geometric_mean.png> <./figures/info_vs_geometric_mean.png> <./figures/info_vs_corr.png> <./figures/cons_cluster_map_all_good_15.png> <./figures/regional_cluster_matrix.png>] (./conference_poster_6.aux) ) 
 Here is how much of TeX's memory you used:
  4628 strings out of 493013
- 69872 string characters out of 6136083
- 175187 words of memory out of 5000000
+ 69887 string characters out of 6136083
+ 180024 words of memory out of 5000000
  8070 multiletter control sequences out of 15000+600000
  23983 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,6n,39p,862b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8
-a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on conference_poster_6.pdf (1 page, 680965 bytes).
+{/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/up
+lr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on conference_poster_6.pdf (1 page, 675200 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream

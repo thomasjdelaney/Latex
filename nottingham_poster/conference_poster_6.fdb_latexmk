@@ -1,11 +1,11 @@
 # Fdb version 3
-["bibtex conference_poster_6"] 1561484724 "conference_poster_6.aux" "conference_poster_6.bbl" "conference_poster_6" 1561484726
-  "conference_poster_6.aux" 1561484726 1918 ba361072242fdabd3b6dc2fbc9647f9d ""
+["bibtex conference_poster_6"] 1561565422 "conference_poster_6.aux" "conference_poster_6.bbl" "conference_poster_6" 1561565974
+  "conference_poster_6.aux" 1561565973 1853 56aa7e2d4d63d153f435634d347b0192 ""
   "conference_poster_6.bbl.bib" 0 -1 0 ""
   (generated)
   "conference_poster_6.blg"
   "conference_poster_6.bbl"
-["pdflatex"] 1561484724 "conference_poster_6.tex" "conference_poster_6.pdf" "conference_poster_6" 1561484726
+["pdflatex"] 1561565971 "conference_poster_6.tex" "conference_poster_6.pdf" "conference_poster_6" 1561565974
   "/opt/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1486555907 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1486555816 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/opt/texlive/2016/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1486555770 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -85,21 +85,21 @@
   "/opt/texlive/2016/texmf.cnf" 1486555459 496 01ab80fa0036a81d2df86fb0ac70c709 ""
   "a0poster.cls" 1561481732 6167 0770eada3ebe58fbe36289cb2e0de994 ""
   "a0size.sty" 1297937226 7728 3b92cf7fd22bdf46734222814afe7554 ""
-  "conference_poster_6.aux" 1561484726 1918 ba361072242fdabd3b6dc2fbc9647f9d ""
-  "conference_poster_6.bbl" 1561133442 470 2de1d6ddbd5120417654a9f50a508b66 "bibtex conference_poster_6"
-  "conference_poster_6.tex" 1561484647 14042 fd43c06da9e6cdeeb791d2ea3ddd9a8b ""
+  "conference_poster_6.aux" 1561565973 1853 56aa7e2d4d63d153f435634d347b0192 ""
+  "conference_poster_6.bbl" 1561554120 423 fd7bbdb571aa161cbdbf2e3e9baaeef1 "bibtex conference_poster_6"
+  "conference_poster_6.tex" 1561565419 14004 1fdf1d375028c2339956e9e58814badf ""
   "figures/bristol_university_logo.png" 1552388428 25216 cd9d2f4de857ba947c5a4bcc5c65b15d ""
-  "figures/cons_cluster_map_all_good_15.png" 1561397293 362438 cac56e1504dc7548f1c30b22ad619aaa ""
+  "figures/cons_cluster_map_all_good_15.png" 1561565270 360821 2fd04fe782b544f6b0da7efd7f63bd04 ""
   "figures/correlation_histograms.png" 1561477504 32546 90dfb961061deac2830421b6b0130f8d ""
-  "figures/correlation_vs_geometric_mean.png" 1561477619 124791 fec3a9318fd5624499cee9da455133dc ""
-  "figures/eig_hist_all_good_15.png" 1561397181 30194 369ac8b7013e11fb0b90d76f653bda39 ""
+  "figures/correlation_vs_geometric_mean.png" 1561553955 125239 2dbe270426d9d04e638124ba7e3fab3c ""
   "figures/epsrc_logo.png" 1552388428 25663 f42edaeeba83368b7ce4497f6741af07 ""
   "figures/info_vs_corr.png" 1561477693 131406 90482455568fc1dd84d560044517d1f0 ""
-  "figures/info_vs_geometric_mean.png" 1561477651 94597 519c746a2b6758c4c429b21db79088d3 ""
+  "figures/info_vs_geometric_mean.png" 1561554015 98911 1fff7a1aba0b20c1d0e0b17b3061a81c ""
   "figures/information_histograms.png" 1561477582 33870 3c0620800c9382e32b23d703e835dc7b ""
   "figures/probe_1.jpg" 1561380554 9227 c9cb94205a97d71228cd9e05b4494557 ""
   "figures/probe_2.jpg" 1561381437 7166 58821312d789ff0abdc3a678e254f69f ""
   "figures/raster_plot.png" 1561378694 25246 2296110967c9d1c4c7ae6f5f3d629fac ""
+  "figures/regional_cluster_matrix.png" 1561565963 17607 6310d3a049eadd624a8b58d167f11fef ""
   (generated)
   "conference_poster_6.aux"
   "conference_poster_6.pdf"

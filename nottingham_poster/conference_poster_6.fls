@@ -165,9 +165,9 @@ INPUT ./figures/info_vs_corr.png
 INPUT figures/cons_cluster_map_all_good_15.png
 INPUT ./figures/cons_cluster_map_all_good_15.png
 INPUT ./figures/cons_cluster_map_all_good_15.png
-INPUT figures/eig_hist_all_good_15.png
-INPUT ./figures/eig_hist_all_good_15.png
-INPUT ./figures/eig_hist_all_good_15.png
+INPUT figures/regional_cluster_matrix.png
+INPUT ./figures/regional_cluster_matrix.png
+INPUT ./figures/regional_cluster_matrix.png
 INPUT /opt/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 INPUT /opt/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 INPUT conference_poster_6.bbl
