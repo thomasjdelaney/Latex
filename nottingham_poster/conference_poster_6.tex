@@ -132,13 +132,13 @@ Using two probes, spiking activity was simultaneously collected from over 800 ne
 %	MATERIALS AND METHODS
 %----------------------------------------------------------------------------------------
 
-\section*{\color{NavyBlue}\textsc{Materials and Methods}\color{Black}}
+\section*{\color{NavyBlue}\textsc{Methods}\color{Black}}
 
 \begin{description}
   \item[Spike Count Correlation, $r_{SC}$] We measured Pearson's correlation between the spike counts of neurons in pairs.
   \item[Mutual Information, $I(X;Y)$] We measured the mutual information between the spike counts of neurons in pairs.
   \item[Network Noise Rejection] We used a recently developed method to split the networks created by these measures into signal and noise networks \cite{humphries}.
-  \item[Consensus Clustering] We used consensus clustering on the signal network to investigate any communities within these networks \cite{humphries}.
+  \item[Consensus Clustering] We used consensus clustering on the signal network to investigate any communities within this  network \cite{humphries}.
 \end{description}
 
 %----------------------------------------------------------------------------------------
@@ -149,7 +149,7 @@ Using two probes, spiking activity was simultaneously collected from over 800 ne
 
 \subsection*{\color{NavyBlue}\textsc{Correlation \& Information Distributions}\color{Black}}
 
-We used the Kolmogorov-Smirnov statistical test to find out if the distributions of pairwise correlations were different between regions. We found that correlations in the hippocampus and thalamus were statistically different to those in the other three regions ($p < 0.05$).
+We used the Kolmogorov-Smirnov statistical test to find out if the distributions of pairwise correlations were different between regions. We found that the distribution of correlations in the hippocampus and thalamus were statistically different to those in the other regions ($p < 0.05$).
 
 \includegraphics[width=\linewidth, height=8cm]{correlation_histograms.png}
 \captionof{figure}{Histograms of the spike count correlations of 1000 randomly chosen pairs of neurons from within each region.}
@@ -178,11 +178,12 @@ We expected strong spike count correlations to correspond to relatively large va
 
 \subsection*{\color{NavyBlue}\textsc{Community Detection}\color{Black}}
 
-Using Network Noise Rejection and Consensus Clustering, we detected two communities in the network created by the mutual information measurements. It appears that one community is dominated by the thalamus, and the other community is dominated by the motor cortex and striatum.
+Using Network Noise Rejection and Consensus Clustering, we detected two communities in the network created by the mutual information measurements. It appears that one community is dominated by the thalamus, and the other community is dominated by the motor cortex and striatum. But each cluster contains cells from all of the available regions.
 
-\includegraphics[width=0.45\linewidth]{cons_cluster_map_all_good_15.png}
-\includegraphics[width=0.45\linewidth]{regional_cluster_matrix.png}
-\captionof{figure}{(Left) Mutual information matrix of the signal network, with communities shown. Main diagonal entries set to zero. (Right) A matrix showing the regional membership of each cell within their clusters. }
+\includegraphics[width=0.33\linewidth]{cons_cluster_map_all_good_15.png}
+\includegraphics[width=0.33\linewidth]{regional_cluster_matrix.png}
+\includegraphics[width=0.33\linewidth]{regional_info_matrix.png}
+\captionof{figure}{(Left) Mutual information matrix of the signal network, with communities shown. Main diagonal entries set to zero. (Middle) A matrix showing the regional membership of each cell within their clusters. (Right) The mutual info matrix sorted first by cluster, and second by region. Both the middle and right panels are sorted in the same way.}
 
 
 %----------------------------------------------------------------------------------------
@@ -193,9 +194,9 @@ Using Network Noise Rejection and Consensus Clustering, we detected two communit
 
 \begin{itemize}
   \item The pairwise measurements we took were distributed differently in different brain regions.
-  \item The mutual information between two cells is strongly correlated with the geometric mean of their firing rates.
+  \item The mutual information between two cells is strongly correlated with the geometric mean of their firing rates. Conversely, the spike count correlation between two cells is not correlated with the geometric mean of their firing rate.
   \item Functional communities exist across anatomical regions.
-  \item The thalamus appears to be more isolated functionally than the other anatomical regions.
+  \item It appears the thalamus may be more isolated functionally than the other anatomical regions.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -204,7 +205,7 @@ Using Network Noise Rejection and Consensus Clustering, we detected two communit
 
 \section*{\color{NavyBlue}\textsc{Forthcoming Research}\color{Black}}
 
-Different pairwise measurements could be used along with the community detection. Alternatively, higher order correlation measures, such as population coupling could be examined. Changes in community structure in response to different stimuli could be examined.
+Different pairwise measurements, such as a spike train metric, could be used along with the community detection. Alternatively, higher order correlation measures, such as population coupling could be examined. Changes in community structure in response to different stimuli could be examined.
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
