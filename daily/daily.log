@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  19 JUL 2019 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  22 JUL 2019 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,15 +507,15 @@ sts. Up-dated the README.md.
  []
 
 [19] [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 585.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 587.
  [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 585.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 587.
  (./daily.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 585.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 585.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 587.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 587.
 Package rerunfilecheck Info: File `daily.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 585.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 587.
  ) 
 Here is how much of TeX's memory you used:
  7256 strings out of 492701
@@ -537,7 +537,7 @@ sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on daily.pdf (21 pages, 167056 bytes).
+Output written on daily.pdf (21 pages, 167163 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
