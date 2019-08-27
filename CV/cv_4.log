@@ -1,18 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.8.26)  8 APR 2018 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  27 AUG 2019 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cv_4.tex
 (./cv_4.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
+LaTeX2e <2017/01/01> patch level 1
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./resume.cls
 Document Class: resume 2010/07/10 v0.9 Resume class
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/opt/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -26,36 +25,35 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+(/opt/texlive/2016/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+(/opt/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen103
 \extrarowheight=\dimen104
 \NC@list=\toks14
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+(/opt/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/opt/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/opt/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+(/opt/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/opt/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -131,35 +129,36 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 32--32
 [] 
  []
 
+[1
+
+{/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[1
 
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (15.90054pt too wide) in paragraph at lines 125--131
+Overfull \hbox (5.26344pt too wide) in paragraph at lines 131--138
 [][] 
  []
 
-[2] (./cv_4.aux) ) 
+[2] [3] (./cv_4.aux) ) 
 Here is how much of TeX's memory you used:
- 873 strings out of 495063
- 11701 string characters out of 3182201
- 69373 words of memory out of 3000000
- 4100 multiletter control sequences out of 15000+200000
- 7639 words of font info for 27 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 27i,9n,21p,227b,211s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (2 pages, 89964 bytes).
+ 866 strings out of 493013
+ 11599 string characters out of 6136083
+ 75635 words of memory out of 5000000
+ 4454 multiletter control sequences out of 15000+600000
+ 7639 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,9n,21p,227b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
+</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on cv_4.pdf (3 pages, 91017 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
