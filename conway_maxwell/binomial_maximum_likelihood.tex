@@ -1,0 +1,180 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[margin=3cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{mathtools}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Thomas Delaney}
+\rhead{Maximum likelihood estimation}
+\cfoot{\thepage}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
+\newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
+\newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
+\newcommand{\difff}[2]{\frac{d^2 #1}{d #2^2}}% to be used in mathmode
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}} % to be used in mathmode
+\newcommand{\pdifff}[2]{\frac{\partial^2 #1}{\partial #2^2}}% to be used in mathmode
+\newcommand{\upperth}{$^{\mbox{\footnotesize{th}}}$}%to be used in text mode
+\newcommand{\vect}[1]{\mathbf{#1}}% to be used in mathmode
+\newcommand{\curl}[1]{\boldnabla \times \vect{#1}} % to be used in mathmode
+\newcommand{\divr}[1]{\boldnabla \cdot \vect{#1}} %to be used in mathmode
+\newcommand{\modu}[1]{\left| #1 \right|} %to be used in mathmode
+\newcommand{\brak}[1]{\left( #1 \right)} % to be used in mathmode
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]} %to be used in mathmode
+\newcommand{\dop}{\vect{d}} %to be used in mathmode
+\newcommand{\cov}{\text{cov}} %to be used in mathmode
+\newcommand{\var}{\text{var}} %to be used in mathmode
+\newcommand{\mb}{\mathbf} %to be used in mathmode
+\newcommand{\bs}{\boldsymbol} %to be used in mathmode
+% Title Page
+\title{How informative are retinal ganglion cells?}
+\author{Thomas Delaney 1330432}
+
+\begin{document}
+
+\section{Normal binomial distribution}\label{normal}
+\subsection{Probability mass function}
+The probability mass function (p.m.f.) for a random variable $X$ with a `normal' binomial distribution with probability of success $p$, and $m$ trials is
+\begin{align}
+  P(X=k) = \binom{m}{k} p^k (1-p)^{m-k}
+\end{align}
+that is $k$ successes and $m-k$ failures with a coefficient for the number of different ways we can have $k$ successes and $m-k$ failures. 
+
+\subsection{Likelihood function}
+If we take $n$ i.i.d. samples from $X$ consisting of $n$ integers between $0$ and $m$, $\lbrace k_1, \dots , k_n \rbrace$, the probability of these data, aka the likelihood is
+\begin{align}
+  P(\lbrace k_1, \dots , k_n \rbrace | p) = L(K|p, m) = \prod_{i=1}^n \binom{m}{k_i} p^{k_i}(1-p)^{m-k_i}
+\end{align}
+that is the product of all the samples.
+
+\subsection{Maximum likelihood estimation}
+In order to estimate the value of $p$ from the sample $\lbrace k_1, \dots , k_n \rbrace$, we maximise the value of the likelihood function with respect to $p$. Since $\log$ is an increasing function, maximising the log of the likelihood function is equivalent to maximising the likelihood function. But because likelihood functions tend to take the form of large products, maximising the log of the likelihood is often easier than maximising the likelihood. So we will maximise the log of the likelihood function, a.k.a. the `log likelihood'.
+\begin{align}
+  l(p, m)  &= \log L(K|p, m) = \log \left( \prod_{i=1}^n \binom{m}{k_i} p^{k_i}(1-p)^{m-k_i} \right) \\
+        &= \sum_{i=1}^n \log \binom{m}{k_i} +  k_i \log p + (m - k_i) \log (1-p) 
+\end{align}
+
+The derivative with respect to $p$ is
+\begin{align}
+  \pdiff{l(p, m)}{p} = \sum_{i=1}^n \frac{k_i}{p} - \frac{m - k_i}{1-p}
+\end{align}
+
+Letting the derivative equal $0$ gives
+\begin{align}
+  & \sum_{i=1}^n \frac{k_i}{\hat{p}} - \frac{m - k_i}{1-\hat{p}} = 0 \\
+  \implies & \sum_{i=1}^n \frac{k_i (1-\hat{p}) - \hat{p}(m - k_i)}{\hat{p}(1-\hat{p})} = 0 \\
+  \implies & \sum_{i=1}^n k_i - k_i \hat{p} - m \hat{p} + k_i \hat{p} = 0 \\
+  \implies & \hat{p} = \frac{1}{nm} \sum_{i=1}^n k_i
+\end{align}
+
+As you might expect, our maximum likelihood estimate for $p$ is the total number of successes divided by the total number of trials. It's interesting to note that $m$ is technically a parameter of the binomial distribution, and if we didn't know $m$ beforehand, we would be unable to estimate $p$ or $m$ using the maximum likelihood method (I think).
+
+The number of trials $m$ is also a parameter of the binomial distribution. In order to find an estimate for $m$ using maximum likelihood estimation, we take the derivative of $l(p, m)$ with respect to $m$.
+\begin{align}
+  \pdiff{l(p, m)}{m} = \sum_{i=1}^n \pdiff{\log{\binom{m}{k_i}}}{m} + \log(1-p)
+\end{align}
+
+Using 
+\begin{align}
+  \pdiff{\log \binom{m}{k_i}}{m} = H_m - H_{m - k_i}
+\end{align}
+where $H_n$ is the $n$th Harmonic number \footnote{\url{https://en.wikipedia.org/wiki/Harmonic_number}}, and letting the derivative equal 0 gives 
+\begin{align}
+   & \sum_{i=1}^n H_m - H_{m - k_i} + \log (1-p) = 0 \\ 
+\end{align}
+Theoretically we could sub in our expression for $\hat{p}$ and solve for $m$ (??? is this true ???). But I don't know how to do this right now.
+
+Now we know how to do maximum likelihood estimation, we move onto a more complicated distribution.
+
+\section{Conway-Maxwell binomial distribution}
+The Conway-Maxwell binomial distribution is similar to the binomial distribution in that we can think of it as a sum of Bernoulli trials. But for the Conway-Maxwell binomial distribution, the Bernoulli variables are associated with each other. Not dependent, not correlated, but associated. 
+
+\subsection{Probability mass function}
+The p.m.f. of a random variable $X$ with the Conway-Maxwell binomial distribution with probability of success $p$, dispersion parameter $\nu$, and number of trials $m$ is
+\begin{align}
+  P(X = k) = \frac{1}{S(p, \nu, m)} \binom{m}{k}^{\nu} p^{k} (1-p)^{m-k}
+\end{align}
+where 
+\begin{align}
+  S(p, \nu, m) = \sum_{i=0}^{m} \binom{m}{i}^{\nu} p^{i} (1-p)^{m-i}
+\end{align}
+is a normalising function. 
+
+The use of the dispersion parameter $\nu$ enables the Conway-Maxwell binomial distribution to `over-disperse' or `under-disperse' relative to a binomial distribution i.e., have greater or lesser variance.
+
+When $\nu > 1$ the distribution is under-dispersed relative to a binomial distribution. In the limit that $\nu \rightarrow \infty$ all the mass accumulates at $m/2$ for even $m$, and at $\lfloor m/2 \rfloor$ and $\lceil m/2 \rceil$ for odd $m$. This corresponds to negatively associated Bernoulli variables. For $\nu < 1$, the distribution is over-dispersed relative to a binomial distribution. In the case where $\nu \rightarrow -\infty$ all the mass is distributed at $0$ and $m$. This is the extreme case of positive association, where all the Bernoulli variables have the value. So, $\nu$ measures the strength of the negative or positive association between the Bernoulli variables that make up the Conway-Maxwell binomial distribution. Note that if $\nu =1$ we have the `normal' binomial distribution described in section \ref{normal}.
+
+\subsection{Likelihood function}
+If we take $n$ i.i.d. samples from a random variable $X$ with the Conway-Maxwell binomial distribution with parameters $p$, $\nu$, and $m$ this gives us $n$ integers between $0$ and $m$, $\lbrace k_1, \dots , k_n \rbrace$. These probability or 'likelihood' of these data is
+\begin{align}
+  P(\lbrace k_1, \dots, k_n \rbrace | p, \nu, m) &= L(K | p, \nu, m) = \prod_{i=1}^{n} \frac{\binom{m}{k_i}^{\nu} p^{k_i} (1-p)^{m-k_i}}{S(p, \nu, m)} \\ 
+  & = \frac{\prod_{i=1}^{n} \binom{m}{k_i}^{\nu} p^{k_i} (1-p)^{m-k_i}}{S(p, \nu, m)^n}
+\end{align}
+
+Again, just the product of the individual probabilities of each sample.
+
+\subsection{Maximum likelihood estimation}
+Once again, we maximise the log-likelihood function, which is
+\begin{align}
+  l(p, \nu, m) &= \log L(K | p, \nu, m) = \log \frac{\prod_{i=1}^{n} \binom{m}{k_i}^{\nu} p^{k_i} (1-p)^{m-k_i}}{S(p, \nu, m)^n} \\
+  &= - n \log S(p, \nu, m) + \sum_{i=1}^{n} \log \binom{m}{k_i}^{\nu} + k_i \log p + (m - k_i) \log (1-p)
+\end{align}
+
+Maximising will involve calculating the partial derivative of $\log S(p, \nu, m)$ with respect to the parameters. 
+
+\begin{align}
+  \pdiff{\log S(p, \nu, m)}{p} = \frac{1}{S(p, \nu, m)} \pdiff{S(p, \nu, m)}{p}
+\end{align}
+
+For the partial derivative without the $\log$, we have
+\begin{align}
+  \pdiff{S(p, \nu, m)}{p} &= \pdiff{\sum_{i=0}^m \binom{m}{i}^{\nu} p^i (1-p)^{m-i}}{p} \\
+  & = \sum_{i=0}^m \binom{m}{i}^{\nu} \left[ i p^{i-1}(1-p)^{m-i} - (m-i)p^i(1-p)^{m-i-1} \right]
+\end{align}
+which gives
+\begin{align}
+  \pdiff{\log S(p, \nu, m)}{p} & = \sum_{i=0}^m \frac{\binom{m}{i}^{\nu} \left[ i p^{i-1}(1-p)^{m-i} - (m-i)p^i(1-p)^{m-i-1} \right]}{\binom{m}{i}^{\nu} p^{i} (1-p)^{m-i}} \\
+  & = \sum_{i=0}^m i p^{-1} - (m-i) (1-p)^{-1} \\
+  & = \sum_{i=0}^m \frac{i}{p} - \frac{m-i}{1-p} \\
+  & = \sum_{i=0}^m \frac{i(1-p) - (m-i)p}{p(1-p)} \\
+  & = \sum_{i=0}^m \frac{i - mp}{p(1-p)} \\
+  & = \frac{m(m+1) -2m(m+1)p}{2p(1-p)} \\
+  & = \frac{m(m+1)(1-2p)}{2p(1-p)}
+\end{align}
+using $\sum_{i=0}^{m} i = m(m+1)/2$.
+
+So the partial derivative of the log-likelihood function with respect to $p$ is
+\begin{align}
+  \pdiff{l(p,\nu,m)}{p} & = -n \pdiff{\log S(p, \nu, m)}{p} + \sum_{i=1}^n \frac{k_i}{p} - \frac{m-k_i}{1-p} \\
+  & = -n \pdiff{\log S(p, \nu, m)}{p} + \sum_{i=1}^n \frac{k_i - mp}{p(1-p)} \\
+  & = \frac{-nm(m+1)(1-2p)}{2p(1-p)} + \sum_{i=1}^n \frac{k_i - mp}{p(1-p)} \\
+  & = \frac{-nm(m+1)(1-2p) - 2nmp + 2\sum_{i=1}^n k_i}{2p(1-p)} \\
+  & = \frac{-nm\left[ (m+1)(1-2p) + 2p \right] + 2\sum_{i=1}^n k_i}{2p(1-p)} \\
+  & = \frac{-nm \left[m - 2mp + 1 -2p +2p \right] + 2 \sum_{i=1}^n k_i}{2p(1-p)} \\
+  & = \frac{-nm\left[ m(1-2p) + 1\right] + 2 \sum_{i=1}^n k_i}{2p(1-p)}
+\end{align}
+
+\newpage
+\bibliography{binomial_maximum_likelihood.bbl}
+
+\end{document}
