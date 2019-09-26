@@ -52,6 +52,63 @@
 
 \begin{document}
 
+\section{Exponential Family}
+If the probability mass/density function of a probability distribution with $R$ parameters $\boldsymbol{\theta}$ can be written in the form 
+\begin{align}\label{eq:exponential_family_definition}
+  P(x | \boldsymbol{\theta}) = h(x) \exp \left( \boldsymbol{\eta}(\boldsymbol{\theta}) \cdot \mathbf{T}(x) - A(\boldsymbol{\theta}) \right)
+\end{align}
+where $h(x)$ is any function of $x$, $\eta(\boldsymbol{\theta})$ is a vector of reparametrisations called the \textit{natural parameters} of $P$, $\mathbf{T}(x)$ is a vector containing $R$ transformations of $x$ called the \textit{natural sufficient statistics} of $P$, and $A(\boldsymbol{\theta})$ is a partition function, then $P$ is a member of the exponential family of distributions.
+
+\subsection{Maximum likelihood estimation for the exponential family}
+For any exponential family distribution 
+\begin{align}
+  1 = \int P(x | \boldsymbol{\theta}) dx = \int h(x) \exp \left( \boldsymbol{\eta}(\boldsymbol{\theta}) \cdot \mathbf{T}(x) - A(\boldsymbol{\theta}) \right) dx
+\end{align}
+because it's a probability distribution. Taking the derivative of both sides with respect to the $r$th natural parameter eventually gives
+\begin{align}
+  E_P \left[ [\mathbf{T}(x)]_r \right] = \pdiff{A(\boldsymbol{\theta})}{\eta(\boldsymbol{\theta})_r} 
+\end{align}
+
+To estimate the parameters of the distribution using some i.i.d. samples $\lbrace x_1, \dots, x_n \rbrace$, we maximise the likelihood of these data under the probability distribution by varying the parameters, whatever parameter values maximise the likelihood are our estimates for the parameters. To do this, we take the derivatives of the likelihood with respect to each of the natural parameters and set this derivative to zero. In practice, we use the log-likelihood. 
+
+The likelihood takes the form 
+\begin{align}\label{eq:exponential_family_likelihood}
+  P(\lbrace x_1, \dots, x_n \rbrace | \boldsymbol{\theta}) = \prod_{i=1}^n h(x_i) \exp \left( \boldsymbol{\eta}(\boldsymbol{\theta})\cdot \mathbf{T}(x_i) - A(\boldsymbol{\theta}) \right)
+\end{align}
+The log-likelihood takes the form
+\begin{align}
+  l(X) = \sum_{i=1}^n \log h(x_i) + \boldsymbol{\eta}(\boldsymbol{\theta})\cdot \mathbf{T}(x_i) - A(\boldsymbol{\theta})
+\end{align}
+Therefore the derivative takes the form 
+\begin{align}
+  \pdiff{l(X)}{\eta (\boldsymbol{\theta})_r} = \sum_{i=1}^n \left[ \mathbf{T}(x_i) \right]_r - \pdiff{A(\boldsymbol{\theta})}{\eta(\boldsymbol{\theta})_r}
+\end{align}
+Setting this expression equal to $0$ gives 
+\begin{align}\label{eq:maximum_likelihood_requirement}
+  \sum_{i=1}^n \left[ \mathbf{T}(x_i) \right]_r = n\pdiff{A(\boldsymbol{\theta})}{\eta(\boldsymbol{\theta})_r} = n E_P \left[ [\mathbf{T}(x)]_r \right]
+\end{align}
+So, if we cannot solve the left hand equations in \ref{eq:maximum_likelihood_requirement}, we can use the equity of the left and right expressions in \ref{eq:maximum_likelihood_requirement} as requirements in numerically estimating the parameters.
+
+\subsection{Bayesian parameter estimation}
+Every member of the exponential family has a \textit{conjugate prior}. Given some likelihood function, a conjugate prior distribution to that likelihood is one that results in a posterior distribution of the same form as that prior distribution when used in Bayes's Rule. The conjugate prior for a probability distribution  in the form of \ref{eq:exponential_family_definition} has a has the form 
+\begin{align}\label{eq:exponential_family_prior}
+  P(\boldsymbol{\eta} | \boldsymbol{\chi}, \nu) = f(\boldsymbol{\chi}, \nu)\exp (\boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta}))
+\end{align}
+where $\boldsymbol{\eta}$ represent the natural parameters of the likelihood. Then $\boldsymbol{\chi}$ and $\nu$ are hyperparameters, $f(\boldsymbol{\chi}, \nu)$ is a normalising function, and $A(\boldsymbol{\eta})$ is the same partition function as in \ref{eq:exponential_family_definition}. Note that $\nu > 0$ and $\boldsymbol{\chi} \in \mathbb{R}^s$ where $s$ is the dimensionality of $\boldsymbol{\eta}$ (the number of parameters). $\nu$ controls the effective number of observations contributed by the prior. $\boldsymbol{\chi}$ controls the total amount that these pseudo-observations contribute to the sufficient statistic over all observations and pseudo-observations. Note also that $f$ is defined exactly by the the other functions.
+
+If equation \ref{eq:exponential_family_likelihood} is our likelihood and equation \ref{eq:exponential_family_prior} is our prior, then our posterior takes the form
+\begin{align}
+  P(\boldsymbol{\eta} | \mathbf{X}, \boldsymbol{\chi}, \nu) & = P(X | \boldsymbol{\eta}) P(\boldsymbol{\eta} | \boldsymbol{\chi}, \nu) \\
+  & = \prod_{i=1}^n h(x_i) \exp \left( \boldsymbol{\eta}\cdot \mathbf{T}(x_i) - A(\boldsymbol{\eta}) \right) f(\boldsymbol{\chi}, \nu)\exp (\boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta})) \\ 
+  & = \left( f(\boldsymbol{\chi}, \nu) \prod_{i=1}^n h(x_i) \right) \exp \left( \sum_{i=1}^n \boldsymbol{\eta} \cdot \mathbf{T}(x_i) - nA(\boldsymbol{\eta}) + \boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta}) \right) \\
+  & = \left( f(\boldsymbol{\chi}, \nu) \prod_{i=1}^n h(x_i) \right) \exp \left( \boldsymbol{\eta} \cdot \left(\boldsymbol{\chi} + \sum_{i=1}^n\mathbf{T}(x_i) \right) - (n + \nu) A(\boldsymbol{\eta}) \right)
+\end{align}
+This is the same form as the prior. We can write the posterior as 
+\begin{align}
+  P(\boldsymbol{\eta} | \mathbf{X}, \boldsymbol{\chi}, \nu) = P (\boldsymbol{\eta} | \boldsymbol{\chi} + \sum_{i=1}^n\mathbf{T}(x_i) , n + \nu )
+\end{align}
+The maximum a priori estimate for the parameters $\boldsymbol{\eta}$ is the mode of this posterior distribution.
+
 \section{Normal binomial distribution}\label{normal}
 \subsection{Probability mass function}
 The probability mass function (p.m.f.) for a random variable $X$ with a `normal' binomial distribution with probability of success $p$, and $m$ trials is
@@ -133,7 +190,31 @@ If we take $n$ i.i.d. samples from a random variable $X$ with the Conway-Maxwell
 
 Again, just the product of the individual probabilities of each sample.
 
+\subsubsection{Exponential family form}
+The likelihood function for a single data point sampled from the Conway-Maxwell binomial distributed variable can be rewritten as 
+\begin{align}
+  P(k | p, \nu, m) & = \frac{\binom{m}{k}^{\nu} p^{k} (1-p)^{m-k}}{S(p, \nu, m)} \\
+  & = \frac{m!^{\nu}}{S(p, \nu, m)} \frac{(1-p)^{m}}{k!^{\nu}(m - k)!^{\nu}} \left( \frac{p}{1-p} \right)^{k} \\
+  & = \exp \large( k \log \frac{p}{1-p} - \nu \log(k!(m-k)!) \\ 
+  & + \nu \log (m!)  + m \log (1 - p) - \log S(p, \nu, m) \large)
+\end{align}
+
+If we let $\pi = \log \frac{p}{1-p}$, then we have 
+\begin{align}
+  P(k | p, \nu, m) & = \exp \left( k \pi - \nu \log(k!(m-k)!) - m \log (1 + e^{\pi}) + \nu \log m!  - \log S(\pi, \nu, m) \right) \\ 
+  & = h (k) \exp \left( \boldsymbol{\theta} \cdot \mathbf{T} (x) - A (\boldsymbol{\theta}) \right)
+\end{align}
+where $\boldsymbol{\theta} = (\pi, -\nu)$, $h(k) = 1$, $A(\boldsymbol{\theta}) = m \log (1 + e^{\pi}) - \nu \log m!  + \log S(\pi, \nu, m)$ and $\mathbf{T} (x) = (k, \log(k!(m-k)!)$.
+When we consider $m$ to be fixed and known, $\boldsymbol{\theta}$ are the natural parameters of the distribution, and $\mathbf{T} (x)$ are the natural sufficient statistics.
+
 \subsection{Maximum likelihood estimation}
+Since the natural parameters of the Conway-Maxwell binomial distribution are $\left( \log \frac{p}{1-p}, -\nu \right)$ and the natural sufficient statistics are $\left( \sum_{i=1}^n k_i, \sum_{i=1}^n \log (k! (m-k)!) \right)$, the values of $p$ and $\nu$ satisfy 
+\begin{align}
+  E_{P(p,\nu)}[k] & = \pdiff{A(\boldsymbol{\theta})}{\pi} \\
+  E_{P(p, \nu)}[\log (k!(m-k)!)] & = \pdiff{A(\boldsymbol{\theta})}{\nu}
+\end{align}
+at the point of maximum likelihood.
+
 Once again, we maximise the log-likelihood function, which is
 \begin{align}
   l(p, \nu, m) &= \log L(K | p, \nu, m) = \log \frac{\prod_{i=1}^{n} \binom{m}{k_i}^{\nu} p^{k_i} (1-p)^{m-k_i}}{S(p, \nu, m)^n} \\
