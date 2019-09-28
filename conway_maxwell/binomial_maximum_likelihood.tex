@@ -28,6 +28,8 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 
+\DeclareMathOperator*{\argmin}{arg\,min} % Jan Hlavacek
+\DeclareMathOperator*{\argmax}{arg\,max} % Jan Hlavacek
 \newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}} % to be used in mathmode
 \newcommand{\cbar}{\overline{\mathbb{C}}}% to be used in mathmode
 \newcommand{\diff}[2]{\frac{d #1}{d #2}}% to be used in mathmode
@@ -99,7 +101,7 @@ where $\boldsymbol{\eta}$ represent the natural parameters of the likelihood. Th
 If equation \ref{eq:exponential_family_likelihood} is our likelihood and equation \ref{eq:exponential_family_prior} is our prior, then our posterior takes the form
 \begin{align}
   P(\boldsymbol{\eta} | \mathbf{X}, \boldsymbol{\chi}, \nu) & = P(X | \boldsymbol{\eta}) P(\boldsymbol{\eta} | \boldsymbol{\chi}, \nu) \\
-  & = \prod_{i=1}^n h(x_i) \exp \left( \boldsymbol{\eta}\cdot \mathbf{T}(x_i) - A(\boldsymbol{\eta}) \right) f(\boldsymbol{\chi}, \nu)\exp (\boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta})) \\ 
+  & = \left( \prod_{i=1}^n h(x_i) \exp \left( \boldsymbol{\eta}\cdot \mathbf{T}(x_i) - A(\boldsymbol{\eta}) \right) \right) f(\boldsymbol{\chi}, \nu)\exp (\boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta})) \\ 
   & = \left( f(\boldsymbol{\chi}, \nu) \prod_{i=1}^n h(x_i) \right) \exp \left( \sum_{i=1}^n \boldsymbol{\eta} \cdot \mathbf{T}(x_i) - nA(\boldsymbol{\eta}) + \boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta}) \right) \\
   & = \left( f(\boldsymbol{\chi}, \nu) \prod_{i=1}^n h(x_i) \right) \exp \left( \boldsymbol{\eta} \cdot \left(\boldsymbol{\chi} + \sum_{i=1}^n\mathbf{T}(x_i) \right) - (n + \nu) A(\boldsymbol{\eta}) \right)
 \end{align}
@@ -160,6 +162,32 @@ where $H_n$ is the $n$th Harmonic number \footnote{\url{https://en.wikipedia.org
    & \sum_{i=1}^n H_m - H_{m - k_i} + \log (1-p) = 0 \\ 
 \end{align}
 Theoretically we could sub in our expression for $\hat{p}$ and solve for $m$ (??? is this true ???). But I don't know how to do this right now.
+
+\subsection{Bayesian parameter estimation}
+If we consider $m$ to be known and fixed, then the binomial distribution is an exponential family member.
+\begin{align}
+  P(k | p) & = \binom{m}{k} p^{k}(1-p)^{m-k} \\
+  & = \binom{m}{k} \exp \left( k \log p + (m-k) \log (1-p) \right) \\
+  & = \binom{m}{k} \exp \left( k \log \frac{p}{1-p} + m \log (1-p) \right)
+\end{align}
+this takes the form of equation \ref{eq:exponential_family_definition} where $h(x) = \binom{m}{k}$, $\boldsymbol{\eta}(\boldsymbol{\theta}) = \log p/(1-p)$, $\mathbf{T}(k) = k$, and $A(\boldsymbol{\theta}) = -m \log 1-p$. 
+
+This means the conjugate prior for the binomial distribution takes the form
+\begin{align}
+  P(p | \chi, \nu) = f(\chi, \nu) \exp \left( \chi \log \frac{p}{1-p} - \nu m \log (1 - p)  \right)
+\end{align}
+or in natural parameter form
+\begin{align}
+  P(\eta | \chi, \nu) = f(\chi, \nu) \exp \left( \chi \eta + \nu m \log (1 + e^{\eta}) \right)
+\end{align}
+which gives a posterior of the form
+\begin{align}
+  P(\eta | \mathbf{X}, \chi, \nu) & = \left( \prod_{i=1}^n \binom{m}{k_i} \exp \left( \eta k_i  + m \log (1 + e^{\eta})  \right) \right) f(\chi, \nu) \exp \left( \chi \eta + \nu m \log (1 + e^{\eta})  \right) \\
+  & = \left( f(\chi, \nu) \prod_{i=1}^n \binom{m}{k_i} \right) \exp \left( \eta (\chi + \sum_{i=1}^{n} k_i) + m \log ( 1 + e^{\eta})(n + \nu) \right) \\
+  & \propto \exp \left( \eta (\chi + \sum_{i=1}^{n} k_i) + m \log ( 1 + e^{\eta})(n + \nu) \right)
+\end{align}
+In order to estimate $p$ for our distribution, we pick values for $\chi$ and $\nu$, we find $\hat{\eta} = \argmax_{\eta} P(\eta | \mathbf{X}, \chi, \nu)$, then $\hat{p} = e^{\hat{\eta}}/(1 + e^{\hat{\eta}})$.
+
 
 Now we know how to do maximum likelihood estimation, we move onto a more complicated distribution.
 
