@@ -249,6 +249,20 @@ or in natural parameter form
 \end{align}
 where we use $c$ to represent the pseudocount hyperparameter instead of $\nu$, as in section \ref{sec:bayesian_parameter_estimation}. This is to avoid confusion with the dispersion parameter of the Conway-Maxwell binomial distribution, which we will still represent using $\nu$.
 
+If we have $n$ i.i.d. samples as before, the $\mathbf{T}(\lbrace k_i \rbrace)$ factor of the exponential form of the likelihood is 
+\begin{align}
+  \mathbf{T}(\lbrace k_i \rbrace) = \left( \sum_{i=1}^n k_i, \sum_{i=1}^n \log (k_i!(m - k_i)!) \right)
+\end{align}
+and there is a factor of $n$ in the second term of the exponential so the form of the likelihood is
+\begin{align}
+  P(\lbrace k_i \rbrace | \pi, \nu) = \exp \left( (\pi, \nu) \cdot \mathbf{T}(\lbrace k_i \rbrace) - nA (\pi, \nu)  \right)
+\end{align}
+Taking the product with the conjugate prior gives
+\begin{align}\label{eq:conway_maxwell_posterior}
+  P(\pi, \nu | \lbrace k_i \rbrace, \boldsymbol{\chi}, c) \propto \exp \left( (\pi, \nu) \cdot ( \boldsymbol{\chi} + \mathbf{T}(\lbrace k_i \rbrace)) - (n + c) A(\pi, \nu) \right)
+\end{align}
+We pick suitable values for $\boldsymbol{\chi}$ and $c$. Then whatever values of $\pi$ and $\nu$ maximise the right hand side of equation \ref{eq:conway_maxwell_posterior} are our estimates.
+
 \subsection{Maximum likelihood estimation}
 Since the natural parameters of the Conway-Maxwell binomial distribution are $\left( \log \frac{p}{1-p}, -\nu \right)$ and the natural sufficient statistics are $\left( \sum_{i=1}^n k_i, \sum_{i=1}^n \log (k! (m-k)!) \right)$, the values of $p$ and $\nu$ satisfy 
 \begin{align}
