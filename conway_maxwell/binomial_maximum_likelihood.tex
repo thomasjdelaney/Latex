@@ -91,7 +91,7 @@ Setting this expression equal to $0$ gives
 \end{align}
 So, if we cannot solve the left hand equations in \ref{eq:maximum_likelihood_requirement}, we can use the equity of the left and right expressions in \ref{eq:maximum_likelihood_requirement} as requirements in numerically estimating the parameters.
 
-\subsection{Bayesian parameter estimation}
+\subsection{Bayesian parameter estimation}\label{sec:bayesian_parameter_estimation}
 Every member of the exponential family has a \textit{conjugate prior}. Given some likelihood function, a conjugate prior distribution to that likelihood is one that results in a posterior distribution of the same form as that prior distribution when used in Bayes's Rule. The conjugate prior for a probability distribution  in the form of \ref{eq:exponential_family_definition} has a has the form 
 \begin{align}\label{eq:exponential_family_prior}
   P(\boldsymbol{\eta} | \boldsymbol{\chi}, \nu) = f(\boldsymbol{\chi}, \nu)\exp (\boldsymbol{\eta} \cdot \boldsymbol{\chi} - \nu A(\boldsymbol{\eta}))
@@ -233,7 +233,21 @@ If we let $\pi = \log \frac{p}{1-p}$, then we have
   & = h (k) \exp \left( \boldsymbol{\theta} \cdot \mathbf{T} (x) - A (\boldsymbol{\theta}) \right)
 \end{align}
 where $\boldsymbol{\theta} = (\pi, -\nu)$, $h(k) = 1$, $A(\boldsymbol{\theta}) = m \log (1 + e^{\pi}) - \nu \log m!  + \log S(\pi, \nu, m)$ and $\mathbf{T} (x) = (k, \log(k!(m-k)!)$.
-When we consider $m$ to be fixed and known, $\boldsymbol{\theta}$ are the natural parameters of the distribution, and $\mathbf{T} (x)$ are the natural sufficient statistics.
+When we consider $m$ to be fixed and known, $\boldsymbol{\theta}$ are the natural parameters of the distribution, and $\mathbf{T} (x)$ are the natural sufficient statistics. After the parameter transformation 
+\begin{align}
+  S(\pi, \nu, m) = \sum_{j=0}^{m} \binom{m}{j}^{\nu} \frac{e^{\pi j}}{(1 + e^{\pi})^m}
+\end{align}
+
+\subsection{Bayesian parameter estimation}
+The conjugate prior for the Conway-Maxwell binomial distribution takes the form
+\begin{align}
+  P(p, \nu | \boldsymbol{\chi}, c) = f(\boldsymbol{\chi}, c) \exp \left((p, \nu) \cdot \boldsymbol{\chi} - c A(p, \nu)\right)
+\end{align}
+or in natural parameter form 
+\begin{align}
+  P(\pi, \nu | \boldsymbol{\chi}, c) = f(\boldsymbol{\chi}, c) \exp \left((\pi, \nu) \cdot \boldsymbol{\chi} - c A(\pi, \nu)\right)
+\end{align}
+where we use $c$ to represent the pseudocount hyperparameter instead of $\nu$, as in section \ref{sec:bayesian_parameter_estimation}. This is to avoid confusion with the dispersion parameter of the Conway-Maxwell binomial distribution, which we will still represent using $\nu$.
 
 \subsection{Maximum likelihood estimation}
 Since the natural parameters of the Conway-Maxwell binomial distribution are $\left( \log \frac{p}{1-p}, -\nu \right)$ and the natural sufficient statistics are $\left( \sum_{i=1}^n k_i, \sum_{i=1}^n \log (k! (m-k)!) \right)$, the values of $p$ and $\nu$ satisfy 
