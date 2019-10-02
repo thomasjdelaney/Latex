@@ -111,6 +111,11 @@ This is the same form as the prior. We can write the posterior as
 \end{align}
 The maximum a priori estimate for the parameters $\boldsymbol{\eta}$ is the mode of this posterior distribution.
 
+In order to maximise the posterior with respect to $\boldsymbol{\eta}$, we only need to maximise the exponential part. This is called the \textit{kernel} of the posterior.
+\begin{align}
+  \boldsymbol{\eta}_{MAP} = \argmax_{\boldsymbol{\eta}} \exp \left( \boldsymbol{\eta} \cdot \left(\boldsymbol{\chi} + \sum_{i=1}^n\mathbf{T}(x_i) \right) - (n + \nu) A(\boldsymbol{\eta}) \right)
+\end{align}
+
 \section{Normal binomial distribution}\label{normal}
 \subsection{Probability mass function}
 The probability mass function (p.m.f.) for a random variable $X$ with a `normal' binomial distribution with probability of success $p$, and $m$ trials is
