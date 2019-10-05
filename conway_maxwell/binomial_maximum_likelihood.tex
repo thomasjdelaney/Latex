@@ -226,22 +226,42 @@ Again, just the product of the individual probabilities of each sample.
 \subsubsection{Exponential family form}
 The likelihood function for a single data point sampled from the Conway-Maxwell binomial distributed variable can be rewritten as 
 \begin{align}
-  P(k | p, \nu, m) & = \frac{\binom{m}{k}^{\nu} p^{k} (1-p)^{m-k}}{S(p, \nu, m)} \\
-  & = \frac{m!^{\nu}}{S(p, \nu, m)} \frac{(1-p)^{m}}{k!^{\nu}(m - k)!^{\nu}} \left( \frac{p}{1-p} \right)^{k} \\
-  & = \exp \large( k \log \frac{p}{1-p} - \nu \log(k!(m-k)!) \\ 
-  & + \nu \log (m!)  + m \log (1 - p) - \log S(p, \nu, m) \large)
+  P(k | p, \nu) & = \frac{\binom{m}{k}^{\nu} p^{k} (1-p)^{m-k}}{\sum_{j=0}^m \binom{m}{j}^{\nu} p^j(1-p)^{m-j}} \\
+  & = \frac{\left(\frac{m!}{k!(m-k)!}\right)^{\nu}p^{k} (1-p)^{m-k}}{\sum_{j=0}^m \left(\frac{m!}{k!(m-k)!}\right)^{\nu} p^j(1-p)^{m-j}} \\
+  & = \frac{m!^{\nu} (1-p)^m (k!(m-k)!)^{-\nu} \left( \frac{p}{1-p}  \right)^k}{m!^{\nu} (1-p)^m \sum_{j=0}^m (j!(m-j)!)^{-\nu} \left( \frac{p}{1-p}  \right)^j } \\
+  & = \frac{(k!(m-k)!)^{-\nu} \left( \frac{p}{1-p}  \right)^k}{\sum_{j=0}^m (j!(m-j)!)^{-\nu} \left( \frac{p}{1-p}  \right)^j} \\
+  & = \frac{\exp \left(-\log(k!(m-k)!) \nu + k \log\left( \frac{p}{1-p}  \right) \right)}{\sum_{j=0}^m \exp \left( -\log(j!(m-j)!) \nu + j \log\left( \frac{p}{1-p}  \right) \right)}
+\end{align}
+Let 
+\begin{align}
+  t(k) &= -\log(k!(m-k)!), \\
+  \mathbf{T}(k) &= (k, t(k)), \\ 
+  \boldsymbol{\eta} &= \left( \log \left( \frac{p}{1-p} \right), \nu \right), \\
+  A(p, \nu) &= \log \left( \sum_{j=0}^m \exp \left( t(j)\nu + j \log \left( \frac{p}{1-p} \right) \right) \right)
+\end{align}
+or 
+\begin{align}
+  A(\boldsymbol{\eta}) = \log \left( \sum_{j=0}^m \exp \left( \boldsymbol{\eta} \cdot \mathbf{T}(j) \right) \right)
+\end{align}
+Then 
+\begin{align}
+  P(k | p, \nu) = \exp \left( \boldsymbol{\eta} \cdot \mathbf{T}(k) - A(\boldsymbol{\eta}) \right)
+\end{align}
+This is the Conway-Maxwell binomial distribution in natural exponential famly form. This gives rise to a natural conjugate prior 
+\begin{align}
+  P(p, \nu | \boldsymbol{\chi}, c) \propto \exp \left( \boldsymbol{\eta \cdot \chi} - c A(\boldsymbol{\eta}) \right)
 \end{align}
 
-If we let $\pi = \log \frac{p}{1-p}$, then we have 
+Or, if we had $n$ i.i.d. samples from $P(k | p, \nu)$, then the likelihood becomes
 \begin{align}
-  P(k | p, \nu, m) & = \exp \left( k \pi - \nu \log(k!(m-k)!) - m \log (1 + e^{\pi}) + \nu \log m!  - \log S(\pi, \nu, m) \right) \\ 
-  & = h (k) \exp \left( \boldsymbol{\theta} \cdot \mathbf{T} (x) - A (\boldsymbol{\theta}) \right)
+  P(\lbrace k_i \rbrace | p, \nu) = \exp \left( \boldsymbol{\eta} \cdot \mathbf{T}(\lbrace k_i \rbrace) - nA(\boldsymbol{\eta}) \right)
 \end{align}
-where $\boldsymbol{\theta} = (\pi, -\nu)$, $h(k) = 1$, $A(\boldsymbol{\theta}) = m \log (1 + e^{\pi}) - \nu \log m!  + \log S(\pi, \nu, m)$ and $\mathbf{T} (x) = (k, \log(k!(m-k)!)$.
-When we consider $m$ to be fixed and known, $\boldsymbol{\theta}$ are the natural parameters of the distribution, and $\mathbf{T} (x)$ are the natural sufficient statistics. After the parameter transformation 
+where $\mathbf{T}(\lbrace k_i \rbrace) = \left( \sum_{i=1}^n k_i, \sum_{i=1}^n t(k_i)\right)$. Taking the product with the prior gives a posterior 
 \begin{align}
-  S(\pi, \nu, m) = \sum_{j=0}^{m} \binom{m}{j}^{\nu} \frac{e^{\pi j}}{(1 + e^{\pi})^m}
+  P(p, \nu | \lbrace k_i \rbrace, \boldsymbol{\chi}, c) & \propto \exp \left(\boldsymbol{\eta} \cdot \left( \boldsymbol{\chi} + \mathbf{T}(\lbrace k_i \rbrace) \right) - (n + c)A(\boldsymbol{\eta}) \right) \\
+  & = P(p, \nu | \boldsymbol{\chi} + \mathbf{T}(\lbrace k_i \rbrace), n + c)
 \end{align}
+If we let $\boldsymbol{\chi} = (a,b)$, then in order for the posterior to be a proper probability distribution there are some restrictions on the values of $a$, $b$, and $c$.
 
 \subsection{Bayesian parameter estimation}
 The conjugate prior for the Conway-Maxwell binomial distribution takes the form
