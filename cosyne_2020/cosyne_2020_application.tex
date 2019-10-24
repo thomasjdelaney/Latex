@@ -5,7 +5,7 @@
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{amsthm}
-\usepackage[margin=3cm]{geometry}
+\usepackage[margin=1.3cm]{geometry}
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{enumitem}
@@ -15,11 +15,11 @@
 \usepackage{subcaption}
 \usepackage{mathtools}
 
-\pagestyle{fancy}
-\fancyhf{}
-\lhead{Thomas Delaney}
-\rhead{COSYNE 2018 Abstract}
-\cfoot{\thepage}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\lhead{Thomas Delaney}
+%\rhead{COSYNE 2018 Abstract}
+%\cfoot{\thepage}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}[section]
@@ -52,10 +52,38 @@
 
 \begin{document}
 
+Does structure in neural correlations during spontaneous behaviour match anatomical structure?
+
 \subsubsection*{300-word Summary}
-We used a cutting edge community detection method to detect communities in the network induced by pairwise correlations across 9 different brain regions. We used electrophysiological data from three different mice. Findings include existance of communities across brain regions. Single region communities are more likely to exist at shorter time scales. This coincides with a greater difference in mean correlation between within region correlations, and between region correlations.
+Information in the brain is carried in correlated network activity. Decades of research has established that these correlations play a crucial role in representing sensory information\cite{cohen}. Recent findings show that spontaneous behaviours can explain correlations in parts of the brain not usually related to motor control\cite{stringer}. In order to understand the brain, we must understand networks of correlated neurons. The question arises, are correlated networks restricted to anatomical brain regions?
+
+Because of limitations in recording technology almost all research has explored correlations between neurons within a given brain region. Relatively little is known about correlations between neurons in different brain regions. However, the recent development of `Neuropixels' probes\cite{jun} has allowed extracellular voltage measurements to be collected from multiple brain regions simultaneously routinely, and in much larger numbers than traditional methods. In this project we used a publicly available Neuropixels dataset to analyse correlations between different brain regions.
+
+Using eight probes each in three mice, readings from 2296, 2668, and 1462 cells respectively in nine different brain regions were extracted during approximately 1 hour of continuous activity. Each mouse was behaving spontaneously and could use their front paws to turna wheel\cite{stringer}. Using these data, we examined pairwise spike count correlations between neurons within the same region, and between neurons in different regions. We found that cells from the same region tend to be more strongly correlated than cells from different regions. We also found that this difference in strength reduces when a longer time bin is used to bin spike counts.
+
+We used a cutting edge community detection method\cite{humphries} to detect communities in the network induced by pairwise correlations. We found that these communities generally exist across multiple brain regions. However, at shorter time-scales we found that communities dominated by cells from a single region were more prevelant. 
 
 \subsubsection*{Additional Detail}
+Mouse make-up, they were all different. inconsistencies may be down to mutations?
+
+Repeat idea?
+
+picking suitable time bins
+
+correlation histogram results largely agree with previous findings, cite cohen and kohn.
+
+regional correlation matrices, not consistent
+
+within vs between for Krebs only (only two figures maybe)
+
+regional communities 
+
+
+
 Used a super computer. Details about network noise rejection, and community detection, including consensus clustering.
+
+Could reflect dispersion of correlations across regions over time.
+
+\bibliography{cosyne_2020_application.bbl}
 
 \end{document}
