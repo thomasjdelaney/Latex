@@ -55,7 +55,7 @@
 Does structure in neural correlations during spontaneous behaviour match anatomical structure?
 
 \subsubsection*{300-word Summary}
-Information in the brain is carried in correlated network activity. Decades of research has established that these correlations play a crucial role in representing sensory information\cite{cohen}. Recent findings show that spontaneous behaviours can explain correlations in parts of the brain not usually related to motor control\cite{stringer}. In order to understand the brain, we must understand networks of correlated neurons. The question arises, are correlated networks restricted to anatomical brain regions?
+Information in the brain is carried in correlated network activity. Decades of research has established that these correlations play a crucial role in representing sensory information\cite{cohen1}. Recent findings show that spontaneous behaviours can explain correlations in parts of the brain not usually related to motor control\cite{stringer}. In order to understand the brain, we must understand networks of correlated neurons. The question arises, are correlated networks restricted to anatomical brain regions?
 
 Because of limitations in recording technology almost all research has explored correlations between neurons within a given brain region. Relatively little is known about correlations between neurons in different brain regions. However, the recent development of `Neuropixels' probes\cite{jun} has allowed extracellular voltage measurements to be collected from multiple brain regions simultaneously routinely, and in much larger numbers than traditional methods. In this project we used a publicly available Neuropixels dataset to analyse correlations between different brain regions.
 
@@ -64,19 +64,46 @@ Using eight probes each in three mice, readings from 2296, 2668, and 1462 cells 
 We used a cutting edge community detection method\cite{humphries} to detect communities in the network induced by pairwise correlations. We found that these communities generally exist across multiple brain regions. However, at shorter time-scales we found that communities dominated by cells from a single region were more prevelant. 
 
 \subsubsection*{Additional Detail}
-Mouse make-up, they were all different. inconsistencies may be down to mutations?
+The three mice from which the data were collected had some potentially important differences. The first mouse was a $73$ day old female wild type. The second mouse was a $113$ day old male mutant (TetO-GCaMP6s, Camk2a-tTa). The third mouse was a $99$ day old male mutant (Ai32, Pvalb-Cre).
 
-Repeat idea?
+Before we measured the spike count correlations between cells, we had to decide what length of time bin would be suitable for binning the spike counts. Taking a similar approach to the authors of \cite{cohen2}, we evaluated the average correlations from many cell pairs using different values for the time bin width. We found that correlations increased logarithmically with the size of the bin width. This result was consistent across all three mice. We used a bin width of $2$s in order to capture the magnitude of the correlations, without completely averaging out short-term dynamics. However, we still performed our analyses at time bin widths ranging from $50$ms to $3$s in order to assess the effect of the bin width. The same dataset was used in \cite{stringer}, they used $1.2$s time bins for their analyses.
 
-picking suitable time bins
+% revisit
+In order to assess the significance of our correlation measures, we also measured the shuffled correlation between each pair. We found that the mean correlation was usually an order of magnitude greater than the mean shuffled correlation. 
 
-correlation histogram results largely agree with previous findings, cite cohen and kohn.
+Due to the large number of cells, and the even larger number of cell pairs, in order to make these measurements in a reasonable amount of time, a local supercomputer was used to perform the calculations using parallelisation to speed up the process.
 
-regional correlation matrices, not consistent
+In order to compare \textit{within-region} mean correlations to \textit{between-region} mean correlations, we created correlation matrices, with within-region correlations on the main diagonal, and between-region correlations everywhere else.
 
-within vs between for Krebs only (only two figures maybe)
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.32\columnwidth]{images/Krebs_2p0_corr.png}
+    \includegraphics[width=0.32\columnwidth]{images/Robbins_2p0_corr.png}
+    \includegraphics[width=0.32\columnwidth]{images/Waksman_2p0_corr.png}
+%    \vspace*{-10mm}
+    \caption{}
+    \label{fig:game_results}
+\end{figure}
 
-regional communities 
+
+
+
+\subsubsection*{Notes}
+\begin{itemize}
+  \item Mouse make-up, they were all different. inconsistencies may be down to mutations?
+
+  \item Repeat idea?
+
+  \item picking suitable time bins
+
+  \item correlation histogram results largely agree with previous findings, cite cohen and kohn.
+
+  \item regional correlation matrices, not consistent
+
+  \item within vs between for Krebs only (only two figures maybe)
+
+  \item regional communities 
+\end{itemize}
 
 
 
