@@ -74,44 +74,38 @@ In order to assess the significance of our correlation measures, we also measure
 
 Due to the large number of cells, and the even larger number of cell pairs, in order to make these measurements in a reasonable amount of time, a local supercomputer was used to perform the calculations using parallelisation to speed up the process.
 
-In order to compare \textit{within-region} mean correlations to \textit{between-region} mean correlations, we created correlation matrices, with within-region correlations on the main diagonal, and between-region correlations everywhere else. There appeared to be no consistency in correlation patterns across the three mice.
+In order to compare \textit{within-region} mean correlations to \textit{between-region} mean correlations, we created correlation matrices, with within-region correlations on the main diagonal, and between-region correlations everywhere else. There appeared to be no consistency in correlation patterns across the three mice (see figure \ref{fig:regional_correlation_matrices}).
 
 \begin{figure}[t!]
     \centering
     \includegraphics[width=0.32\columnwidth]{images/Krebs_2p0_corr.png}
     \includegraphics[width=0.32\columnwidth]{images/Robbins_2p0_corr.png}
     \includegraphics[width=0.32\columnwidth]{images/Waksman_2p0_corr.png}
-%    \vspace*{-10mm}
     \caption{Matrices showing the mean spike count correlation taken across pairs of neurons from various brain regions. One matrix for each mouse. Entries on the main diagonal correspond to pairs where each cell is from the same region. All other entries have pairs of cells from different regions.}
-    \label{fig:game_results}
+    \label{fig:regional_correlation_matrices}
 \end{figure}
 
-Include within vs between results here.
+We also compared within-region correlations to between-region correlations at different time-scales by using different values for the time bin width. With a given region, in general we found that within-region mean correlations tended to exceed most or all of the mean correlations for between-region correlations involving that region. We also found that this tendency was greatest for shorter time bins, and reduced for longer time bin values (see figure \ref{fig:within_between}). This dynamic may reflect the dispersion of correlations throughout the brain over time.
 
-Then detail the Network Noise Rejection method.
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_corr_comp.png}
+    \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_corr_comp.png}
+    \caption{Regional comparisons of within-region and between-region correlations for different time bin widths. The reduction in difference between within-region and between-region mean correlations was also observed at intermediate values for the time bin width.}
+    \label{fig:within_between}
+\end{figure}
+
+The cutting edge community detection method used involved choosing a null network distribution and testing if this model was valid for the data network. This hypothesis testing applied to network distributions allowed us to determine if the data network contained structure beyond that contained described by the null networks. It also allowed us to determine a subspace to the data vector space where this structure exists, and which nodes contribute to this structure. Therefore we could perform the community detection algorithm in this subspace. The algorithm itself is analogous to ensemble methods for time-series analysis. It uses the output of many different modularity clustering attempts to find one final clustering through \textit{consensus-clustering}.
+
 
 Then show some results of communities with regions.
 
 \subsubsection*{Notes}
 \begin{itemize}
-  \item Mouse make-up, they were all different. inconsistencies may be down to mutations?
-
-  \item Repeat idea?
-
-  \item picking suitable time bins
-
   \item correlation histogram results largely agree with previous findings, cite cohen and kohn.
-
-  \item regional correlation matrices, not consistent
-
-  \item within vs between for Krebs only (only two figures maybe)
 
   \item regional communities 
 \end{itemize}
-
-
-
-Used a super computer. Details about network noise rejection, and community detection, including consensus clustering.
 
 Could reflect dispersion of correlations across regions over time.
 
