@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  27 OCT 2019 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  27 OCT 2019 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,47 +493,48 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
-
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-<images/Krebs_0p05_corr_comp.png, id=29, 505.89pt x 289.08pt>
+)
+<images/Krebs_0p05_corr_comp.png, id=12, 702.625pt x 353.32pt>
 File: images/Krebs_0p05_corr_comp.png Graphic file (type png)
 <use images/Krebs_0p05_corr_comp.png>
 Package pdftex.def Info: images/Krebs_0p05_corr_comp.png  used on input line 94
 .
-(pdftex.def)             Requested size: 235.58714pt x 134.6237pt.
-<images/Krebs_3p0_corr_comp.png, id=31, 505.89pt x 289.08pt>
+(pdftex.def)             Requested size: 235.58714pt x 118.4667pt.
+<images/Krebs_3p0_corr_comp.png, id=14, 702.625pt x 353.32pt>
 File: images/Krebs_3p0_corr_comp.png Graphic file (type png)
 <use images/Krebs_3p0_corr_comp.png>
 Package pdftex.def Info: images/Krebs_3p0_corr_comp.png  used on input line 95.
 
-(pdftex.def)             Requested size: 235.58714pt x 134.6237pt.
-<images/Krebs_0p05_regional_cluster_map.png, id=34, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 235.58714pt x 118.4667pt.
+ [1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+<images/Krebs_0p05_regional_cluster_map.png, id=35, 642.4pt x 458.71375pt>
 File: images/Krebs_0p05_regional_cluster_map.png Graphic file (type png)
 <use images/Krebs_0p05_regional_cluster_map.png>
 Package pdftex.def Info: images/Krebs_0p05_regional_cluster_map.png  used on in
 put line 106.
-(pdftex.def)             Requested size: 235.58714pt x 176.69229pt.
-<images/Krebs_3p0_regional_cluster_map.png, id=35, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 235.58714pt x 168.22356pt.
+<images/Krebs_3p0_regional_cluster_map.png, id=36, 642.4pt x 459.7175pt>
 File: images/Krebs_3p0_regional_cluster_map.png Graphic file (type png)
 <use images/Krebs_3p0_regional_cluster_map.png>
 Package pdftex.def Info: images/Krebs_3p0_regional_cluster_map.png  used on inp
 ut line 107.
-(pdftex.def)             Requested size: 235.58714pt x 176.69229pt.
+(pdftex.def)             Requested size: 235.58714pt x 168.59166pt.
 
 (./cosyne_2020_application.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
@@ -559,18 +560,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
 Here is how much of TeX's memory you used:
  9435 strings out of 492701
  142304 string characters out of 6134504
- 254634 words of memory out of 5000000
+ 255634 words of memory out of 5000000
  13155 multiletter control sequences out of 15000+600000
  15807 words of font info for 44 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 42i,5n,43p,960b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,5n,43p,960b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on cosyne_2020_application.pdf (3 pages, 144844 bytes).
+Output written on cosyne_2020_application.pdf (3 pages, 138677 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
