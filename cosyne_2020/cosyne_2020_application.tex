@@ -14,6 +14,8 @@
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{mathtools}
+\usepackage[square,sort,comma,numbers]{natbib}
+\setlength{\bibsep}{0.0pt}
 
 %\pagestyle{fancy}
 %\fancyhf{}
@@ -74,16 +76,16 @@ In order to assess the significance of our correlation measures, we also measure
 
 Due to the large number of cells, and the even larger number of cell pairs, in order to make these measurements in a reasonable amount of time, a local supercomputer was used to perform the calculations using parallelisation to speed up the process.
 
-In order to compare \textit{within-region} mean correlations to \textit{between-region} mean correlations, we created correlation matrices, with within-region correlations on the main diagonal, and between-region correlations everywhere else. There appeared to be no consistency in correlation patterns across the three mice (see figure \ref{fig:regional_correlation_matrices}).
+In order to compare \textit{within-region} mean correlations to \textit{between-region} mean correlations, we created correlation matrices, with within-region correlations on the main diagonal, and between-region correlations everywhere else. There appeared to be no consistency in correlation patterns across the three mice. % (see figure \ref{fig:regional_correlation_matrices}).
 
-\begin{figure}[t!]
-    \centering
-    \includegraphics[width=0.32\columnwidth]{images/Krebs_2p0_corr.png}
-    \includegraphics[width=0.32\columnwidth]{images/Robbins_2p0_corr.png}
-    \includegraphics[width=0.32\columnwidth]{images/Waksman_2p0_corr.png}
-    \caption{Matrices showing the mean spike count correlation taken across pairs of neurons from various brain regions. One matrix for each mouse. Entries on the main diagonal correspond to pairs where each cell is from the same region. All other entries have pairs of cells from different regions.}
-    \label{fig:regional_correlation_matrices}
-\end{figure}
+%\begin{figure}[t!]
+%    \centering
+%    \includegraphics[width=0.32\columnwidth]{images/Krebs_2p0_corr.png}
+%    \includegraphics[width=0.32\columnwidth]{images/Robbins_2p0_corr.png}
+%    \includegraphics[width=0.32\columnwidth]{images/Waksman_2p0_corr.png}
+%    \caption{Matrices showing the mean spike count correlation taken across pairs of neurons from various brain regions. One matrix for each mouse. Entries on the main diagonal correspond to pairs where each cell is from the same region. All other entries have pairs of cells from different regions.}
+%    \label{fig:regional_correlation_matrices}
+%\end{figure}
 
 We also compared within-region correlations to between-region correlations at different time-scales by using different values for the time bin width. With a given region, in general we found that within-region mean correlations tended to exceed most or all of the mean correlations for between-region correlations involving that region. We also found that this tendency was greatest for shorter time bins, and reduced for longer time bin values (see figure \ref{fig:within_between}). This dynamic may reflect the dispersion of correlations throughout the brain over time.
 
@@ -95,20 +97,21 @@ We also compared within-region correlations to between-region correlations at di
     \label{fig:within_between}
 \end{figure}
 
-The cutting edge community detection method used involved choosing a null network distribution and testing if this model was valid for the data network. This hypothesis testing applied to network distributions allowed us to determine if the data network contained structure beyond that contained described by the null networks. It also allowed us to determine a subspace to the data vector space where this structure exists, and which nodes contribute to this structure. Therefore we could perform the community detection algorithm in this subspace. The algorithm itself is analogous to ensemble methods for time-series analysis. It uses the output of many different modularity clustering attempts to find one final clustering through \textit{consensus-clustering}.
+The cutting edge community detection method used involved choosing a null network distribution and testing if this model was valid for the data network. This hypothesis testing applied to network distributions allowed us to determine if the data network contained structure beyond that described by the null networks. It also allowed us to determine a subspace to the data network vector space where this structure exists, and which nodes contribute to this structure. Thus we could remove those nodes not contributing to the extra structure, and perform the community detection algorithm in the subspace. This process is referred to as \textit{Network Noise Rejection} \cite{humphries}. The community detection itself is analogous to ensemble methods for time-series analysis. It uses the output of many different modularity clustering attempts to find one final clustering through \textit{consensus-clustering}.
+
+We performed the network noise rejection and community detection on weighted networks created by spike count correlation measurements. We did this using different values for the time bin width. We found that correlated communities generally included neurons from multiple brain regions. But, we found that communities dominated by neurons from a single region were more likely to be observed when using a smaller time bin width (see figure \ref{fig:regional_cluster_maps}). This result may also reflect dispersion of correlations throughout the brain over time.
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_regional_cluster_map.png}
+    \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_regional_cluster_map.png}
+    \caption{Matrices showing pairwise regional membership and correlation network community membership. Within-region pairs are coloured by their regional membership, between-region pairs are left grey. In general, communities include pairs from multiple regions. At shorter time-scales communities dominated by a single region are more prominent.}
+    \label{fig:regional_cluster_maps}
+\end{figure}
 
 
-Then show some results of communities with regions.
-
-\subsubsection*{Notes}
-\begin{itemize}
-  \item correlation histogram results largely agree with previous findings, cite cohen and kohn.
-
-  \item regional communities 
-\end{itemize}
-
-Could reflect dispersion of correlations across regions over time.
 
 \bibliography{cosyne_2020_application.bbl}
 
+%  \item correlation histogram results largely agree with previous findings, cite cohen and kohn.
 \end{document}
