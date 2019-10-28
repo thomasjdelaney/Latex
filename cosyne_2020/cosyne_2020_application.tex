@@ -5,7 +5,8 @@
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{amsthm}
-\usepackage[margin=1.3cm]{geometry}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=0.51in,rmargin=0.51in,headheight=0.5cm,headsep=1.5cm,footskip=0.7cm}
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{enumitem}
@@ -56,7 +57,9 @@
 
 \noindent
 \textbf{Title:} Does structure in neural correlations during spontaneous behaviour match anatomical structure?
+\vspace{-0.5cm}
 \subsubsection*{300-word Summary}
+\vspace{-0.3cm}
 Information in the brain is carried in correlated network activity. Decades of research has established that these correlations play a crucial role in representing sensory information\cite{cohen1}. Recent findings show that spontaneous behaviours can explain correlations in parts of the brain not usually related to motor control\cite{stringer}. In order to understand the brain, we must understand networks of correlated neurons. The question arises, are correlated networks restricted to anatomical brain regions?
 
 Because of limitations in recording technology almost all research has explored correlations between neurons within a given brain region. Relatively little is known about correlations between neurons in different brain regions. However, the recent development of `Neuropixels' probes\cite{jun} has allowed extracellular voltage measurements to be collected from multiple brain regions simultaneously routinely, and in much larger numbers than traditional methods. In this project we used a publicly available Neuropixels dataset to analyse correlations between different brain regions.
@@ -65,7 +68,9 @@ Using eight probes each in three mice, readings from 2296, 2668, and 1462 cells 
 
 We used a cutting-edge community detection method\cite{humphries} to detect communities in the network induced by pairwise correlations. We found that these communities generally exist across multiple brain regions. However, at shorter time-scales we found that communities dominated by cells from a single region were more prevelant. 
 
+\vspace{-0.5cm}
 \subsubsection*{Additional Detail}
+\vspace{-0.3cm}
 The three mice from which the data were collected had some key differences. The first mouse was a female wild type, P73. The second mouse was a male mutant (TetO-GCaMP6s, Camk2a-tTa), P113. The third mouse was a male mutant (Ai32, Pvalb-Cre), P99.
 
 Prior to measuring spike count correlations, we chose suitable time bin widths for binning the spike counts by taking a similar approach to \cite{cohen2}. We evaluated the average correlations from many cell pairs using different values for the time bin width. We found that correlations increased logarithmically with the size of the bin width consistently across mice. We used a bin width of $2$s in order to capture the magnitude of the correlations, without completely averaging out short-term dynamics. However, we still performed our analyses at time bin widths ranging from $50$ms to $3$s in order to assess the effect of the bin width. The same dataset was used in \cite{stringer}, they used $1.2$s time bins for their analyses.
@@ -74,7 +79,7 @@ Prior to measuring spike count correlations, we chose suitable time bin widths f
 To assess the correlation significance, we measured the shuffled correlation between each pair. We found that the mean correlation was usually an order of magnitude greater than the mean shuffled correlation. 
 
 % disposable
-% Due to the large number of cells, and the even larger number of cell pairs, in order to make these measurements in a reasonable amount of time, a local supercomputer was used to perform the calculations using parallelisation to speed up the process.
+Due to the large number of cells, and the even larger number of cell pairs, in order to make these measurements in a reasonable amount of time, a local supercomputer was used to perform the calculations using parallelisation to speed up the process.
 
 To compare \textit{within-region} mean correlations to \textit{between-region} mean correlations, we created correlation matrices with within-region correlations on the main diagonal and between-region correlations elsewhere. There appeared to be no consistency in correlation patterns across mice. % (see figure \ref{fig:regional_correlation_matrices}).
 
@@ -93,6 +98,7 @@ We compared within-region correlations to between-region correlations at differe
     \centering
     \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_corr_comp.png}
     \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_corr_comp.png}
+    \vspace{-0.4cm}
     \caption{Regional comparisons of within-region and between-region correlations for different time bin widths. The reduction in difference between within-region and between-region mean correlations was also observed at intermediate values for the time bin width.}
     \label{fig:within_between}
 \end{figure}
@@ -105,12 +111,13 @@ We performed the network noise rejection and community detection on weighted net
     \centering
     \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_regional_cluster_map.png}
     \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_regional_cluster_map.png}
+    \vspace{-0.3cm}
     \caption{Matrices showing pairwise regional membership and correlation network community membership. Within-region pairs are coloured by their regional membership, between-region pairs are left grey. In general, communities include pairs from multiple regions. At shorter time-scales communities dominated by a single region are more prominent.}
     \label{fig:regional_cluster_maps}
 \end{figure}
 
 
-
+\vspace{-0.5cm}
 \bibliography{cosyne_2020_application.bbl}
 
 %  \item correlation histogram results largely agree with previous findings, cite cohen and kohn.

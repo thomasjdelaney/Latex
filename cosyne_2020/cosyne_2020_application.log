@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  27 OCT 2019 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  28 OCT 2019 08:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,21 +384,21 @@ LaTeX Info: Redefining \cite on input line 694.
 (./cosyne_2020_application.aux)
 \openout1 = `cosyne_2020_application.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -408,25 +408,29 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
+
+Package geometry Warning: The marginal notes overrun the paper.
+     Add 8.1427pt and more to the right margin.
+
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.98866pt, 523.53055pt, 36.98866pt)
-* v-part:(T,H,B)=(36.98866pt, 771.06952pt, 36.98866pt)
+* h-part:(L,W,R)=(36.8573pt, 523.79327pt, 36.8573pt)
+* v-part:(T,H,B)=(36.135pt, 772.77686pt, 36.135pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=523.53055pt
-* \textheight=771.06952pt
-* \oddsidemargin=-35.28133pt
-* \evensidemargin=-35.28133pt
-* \topmargin=-72.28133pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* \textwidth=523.79327pt
+* \textheight=772.77686pt
+* \oddsidemargin=-35.41269pt
+* \evensidemargin=-35.41269pt
+* \topmargin=-93.04048pt
+* \headheight=14.22636pt
+* \headsep=42.67912pt
 * \topskip=12.0pt
-* \footskip=30.0pt
+* \footskip=19.91684pt
 * \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -471,7 +475,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -481,9 +485,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 
 (./cosyne_2020_application.out) (./cosyne_2020_application.out)
 \@outlinefile=\write3
@@ -492,18 +496,18 @@ LaTeX Info: Redefining \nameref on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
-LaTeX Font Info:    Try loading font information for U+msa on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 71.
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 71.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -511,15 +515,15 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 <images/Krebs_0p05_corr_comp.png, id=12, 702.625pt x 353.32pt>
 File: images/Krebs_0p05_corr_comp.png Graphic file (type png)
 <use images/Krebs_0p05_corr_comp.png>
-Package pdftex.def Info: images/Krebs_0p05_corr_comp.png  used on input line 94
+Package pdftex.def Info: images/Krebs_0p05_corr_comp.png  used on input line 99
 .
-(pdftex.def)             Requested size: 235.58714pt x 118.4667pt.
+(pdftex.def)             Requested size: 235.70537pt x 118.52602pt.
 <images/Krebs_3p0_corr_comp.png, id=14, 702.625pt x 353.32pt>
 File: images/Krebs_3p0_corr_comp.png Graphic file (type png)
 <use images/Krebs_3p0_corr_comp.png>
-Package pdftex.def Info: images/Krebs_3p0_corr_comp.png  used on input line 95.
-
-(pdftex.def)             Requested size: 235.58714pt x 118.4667pt.
+Package pdftex.def Info: images/Krebs_3p0_corr_comp.png  used on input line 100
+.
+(pdftex.def)             Requested size: 235.70537pt x 118.52602pt.
  [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
@@ -527,14 +531,14 @@ Package pdftex.def Info: images/Krebs_3p0_corr_comp.png  used on input line 95.
 File: images/Krebs_0p05_regional_cluster_map.png Graphic file (type png)
 <use images/Krebs_0p05_regional_cluster_map.png>
 Package pdftex.def Info: images/Krebs_0p05_regional_cluster_map.png  used on in
-put line 106.
-(pdftex.def)             Requested size: 235.58714pt x 168.22356pt.
+put line 112.
+(pdftex.def)             Requested size: 235.70537pt x 168.30754pt.
 <images/Krebs_3p0_regional_cluster_map.png, id=36, 642.4pt x 459.7175pt>
 File: images/Krebs_3p0_regional_cluster_map.png Graphic file (type png)
 <use images/Krebs_3p0_regional_cluster_map.png>
 Package pdftex.def Info: images/Krebs_3p0_regional_cluster_map.png  used on inp
-ut line 107.
-(pdftex.def)             Requested size: 235.58714pt x 168.59166pt.
+ut line 113.
+(pdftex.def)             Requested size: 235.70537pt x 168.67583pt.
 
 (./cosyne_2020_application.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
@@ -542,39 +546,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [2 <./images/Krebs_0p05_corr_comp.png> <./images/Krebs_3p0_corr_comp.png> <./
-images/Krebs_0p05_regional_cluster_map.png> <./images/Krebs_3p0_regional_cluste
-r_map.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+ [2 <./images/Krebs_0p05_corr_comp.png> <./images/Krebs_3p0_corr_comp.png> <./i
+mages/Krebs_0p05_regional_cluster_map.png> <./images/Krebs_3p0_regional_cluster
+_map.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
- (./cosyne_2020_application.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+(./cosyne_2020_application.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `cosyne_2020_application.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 9435 strings out of 492701
- 142304 string characters out of 6134504
- 255634 words of memory out of 5000000
+ 9433 strings out of 492701
+ 142290 string characters out of 6134504
+ 255766 words of memory out of 5000000
  13155 multiletter control sequences out of 15000+600000
  15807 words of font info for 44 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 42i,5n,43p,960b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,5n,43p,960b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on cosyne_2020_application.pdf (3 pages, 138677 bytes).
+Output written on cosyne_2020_application.pdf (2 pages, 138552 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
