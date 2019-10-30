@@ -60,13 +60,13 @@
 \vspace{-0.5cm}
 \subsubsection*{300-word Summary}
 \vspace{-0.3cm}
-Information in the brain is carried in correlated network activity. For example, decades of research has established that these correlations play a crucial role in representing sensory information\cite{cohen1}. Recent findings show that spontaneous behaviours explain correlations in parts of the brain not usually related to motor control\cite{stringer}. The question arises, are correlated networks restricted to anatomical brain regions? We found that correlated networks tend to exist \textit{within} anatomical regions at short time-scales, and \textit{across} anatomical regions at longer time-scales.
+Information in the brain is carried in correlated network activity\cite{cohen1, cohen2}. Recent findings show that spontaneous behaviours explain correlations in parts of the brain not usually related to motor control\cite{stringer}. The question arises, are correlated networks restricted to anatomical brain regions? We found that correlated networks tend to exist \textit{within} anatomical regions at short time-scales, and \textit{across} anatomical regions at longer time-scales. This implies that neural circuits compute locally at short time-scales ($\sim 50$ms) but more globally at longer ($\sim 1$s) time-scales. 
 
 Because of limitations in recording technology most research has explored correlations between neurons within a given brain region. Relatively little is known about correlations between neurons in different brain regions. However, the recent development of `Neuropixels' probes\cite{jun} has allowed extracellular voltage measurements to be collected from multiple brain regions simultaneously routinely, and in larger numbers than traditional methods. We used a publicly available Neuropixels dataset to analyse correlations between different brain regions.
 
 Using eight probes each in three mice, readings from 2296, 2668, and 1462 cells respectively in nine brain regions were extracted during 1 hour of activity. Each mouse was behaving spontaneously and could use their front paws to turn a wheel\cite{stringer}. We examined pairwise spike count correlations between neurons within the same region, and between neurons in different regions. We found that cells from the same region tend to be more strongly correlated than cells from different regions. This difference in correlation strength is greater for shorter time-scales, and weakens at longer time-scales. 
 
-We used a cutting-edge method\cite{humphries} to detect communities in the network induced by pairwise correlations. In agreement with our first finding, at shorter time-scales we found many communities dominated by cells from a single region. At longer time-scales communities tended to exist across multiple brain regions. 
+We used a cutting-edge method\cite{humphries} to detect communities in the network induced by pairwise correlations. In agreement with our first finding, at shorter time-scales we found many communities dominated by cells from a single region. At longer time-scales, communities spanned multiple brain regions. 
 
 \vspace{-0.5cm}
 \subsubsection*{Additional Detail}
@@ -100,12 +100,12 @@ We compared within-region correlations to between-region correlations at differe
     \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_corr_comp.png}
     \vspace{-0.4cm}
     \caption{Regional comparisons of within-region (coloured dots) and between-region (black dots) correlations for the same mouse using different time bin widths. The reduction in difference between within-region and between-region mean correlations was also observed at intermediate values for the time bin width.}
-    \vspace{-0.4cm}
+    \vspace{-0.1cm}
     \label{fig:within_between}
 \end{figure}
 
 
-The cutting-edge community detection method used involved choosing a null network distribution and testing if this model was valid for the data network. This hypothesis testing applied to network distributions allowed us to determine if the data network contained structure beyond that described by the null networks. It also allowed us to determine a subspace to the data network vector space where this structure exists, and which nodes contribute to this structure. Thus we could remove those nodes not contributing to the extra structure, and perform the community detection algorithm in the subspace. This process is referred to as \textit{Network Noise Rejection} \cite{humphries}. The community detection itself is analogous to ensemble methods for time-series analysis. It uses the output of many different modularity clustering attempts to find one final clustering through \textit{consensus-clustering}.
+The cutting-edge community detection method that we used involved choosing a null network distribution and testing if this model was valid for the data network. Choosing a null model allowed us to conserve network strength, degree sequence, and sparsity of the data network in our null model. The hypothesis testing allowed us to determine if the data network contained structure beyond that described by the null model. It also allowed us to determine a subspace to the data network vector space where this structure exists, and which nodes contribute to this structure. Thus we could remove those nodes not contributing to the extra structure, and perform the community detection algorithm in the subspace. This process is referred to as \textit{Network Noise Rejection} \cite{humphries}. The community detection itself is analogous to ensemble methods for time-series analysis. It uses the output of many different modularity clustering attempts to find one final clustering through \textit{consensus-clustering}.
 
 We performed the network noise rejection and community detection on weighted networks created by spike count correlation measurements. We did this using different values for the time bin width. We found that correlated communities generally included neurons from multiple brain regions. But, we found that communities dominated by neurons from a single region were more likely to be observed when using a smaller time bin width (fig. \ref{fig:regional_cluster_maps}). This result may also reflect dispersion of correlations throughout the brain over time.
 
@@ -114,8 +114,8 @@ We performed the network noise rejection and community detection on weighted net
     \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_regional_cluster_map.png}
     \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_regional_cluster_map.png}
     \vspace{-0.3cm}
-    \caption{Matrices showing cell regional membership and community membership for the same mouse using different bin widths. Each row and column corresponds to a cell. Within-region pairs are coloured by their regional membership, between-region pairs are left grey. In general, communities include pairs from multiple regions. But, at shorter time-scales communities dominated by a single region are more prevalent.}
-    \vspace{-0.4cm}
+    \caption{Matrices showing cell regional membership and community membership for the same mouse using different bin widths. Each row and column corresponds to a cell. Within-region pairs are coloured by their regional membership, between-region pairs are left grey. In general, communities include pairs from multiple regions. But, at shorter time-scales (left-panel) communities dominated by a single region are more prevalent.}
+    \vspace{-0.1cm}
     \label{fig:regional_cluster_maps}
 \end{figure}
 

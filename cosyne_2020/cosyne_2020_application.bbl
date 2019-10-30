@@ -7,6 +7,13 @@
   1594–1600,
   (2009)
 
+  \bibitem{cohen2}
+  Marlene R Cohen, Adam Kohn, 
+  \emph{Measuring and interpreting neuronal correlations},
+  Nature Neuroscience 14,
+  811-819,
+  (2011)
+
   \bibitem{stringer}
   Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Charu Bai Reddy, Matteo Carandini, Kenneth D. Harris, 
   \emph{Spontaneous behaviors drive multidimensional, brainwide activity}, 
@@ -25,12 +32,5 @@
   \emph{Spectral rejection for testing hypotheses of structure in networks}, 
   arXiv:1901.04747, 
   (2019)
-
-  \bibitem{cohen2}
-  Marlene R Cohen, Adam Kohn, 
-  \emph{Measuring and interpreting neuronal correlations},
-  Nature Neuroscience 14,
-  811-819,
-  (2011)
 
 \end{thebibliography}
