@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  28 OCT 2019 22:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  30 OCT 2019 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,39 +521,39 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 76.
 (/opt/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<images/Krebs_0p05_corr_comp.png, id=12, 702.625pt x 376.40625pt>
+<images/Krebs_0p05_corr_comp.png, id=12, 702.625pt x 375.4025pt>
 File: images/Krebs_0p05_corr_comp.png Graphic file (type png)
 
 <use images/Krebs_0p05_corr_comp.png>
 Package pdftex.def Info: images/Krebs_0p05_corr_comp.png used on input line 99.
 
-(pdftex.def)             Requested size: 235.70537pt x 126.2706pt.
+(pdftex.def)             Requested size: 235.70537pt x 125.93388pt.
 
-<images/Krebs_3p0_corr_comp.png, id=14, 702.625pt x 374.39874pt>
+<images/Krebs_3p0_corr_comp.png, id=14, 702.625pt x 377.41pt>
 File: images/Krebs_3p0_corr_comp.png Graphic file (type png)
 
 <use images/Krebs_3p0_corr_comp.png>
 Package pdftex.def Info: images/Krebs_3p0_corr_comp.png used on input line 100.
 
-(pdftex.def)             Requested size: 235.70537pt x 125.59717pt.
+(pdftex.def)             Requested size: 235.70537pt x 126.60733pt.
  [1
 
 {/opt/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/Krebs_0p05_regional_cluster_map.png, id=35, 642.4pt x 465.74pt>
+<images/Krebs_0p05_regional_cluster_map.png, id=35, 662.475pt x 462.72874pt>
 File: images/Krebs_0p05_regional_cluster_map.png Graphic file (type png)
 
 <use images/Krebs_0p05_regional_cluster_map.png>
 Package pdftex.def Info: images/Krebs_0p05_regional_cluster_map.png used on inp
-ut line 112.
-(pdftex.def)             Requested size: 235.70537pt x 170.88556pt.
+ut line 114.
+(pdftex.def)             Requested size: 235.70537pt x 164.63347pt.
 
-<images/Krebs_3p0_regional_cluster_map.png, id=36, 642.4pt x 464.73625pt>
+<images/Krebs_3p0_regional_cluster_map.png, id=36, 662.475pt x 462.72874pt>
 File: images/Krebs_3p0_regional_cluster_map.png Graphic file (type png)
 
 <use images/Krebs_3p0_regional_cluster_map.png>
 Package pdftex.def Info: images/Krebs_3p0_regional_cluster_map.png used on inpu
-t line 113.
-(pdftex.def)             Requested size: 235.70537pt x 170.51727pt.
+t line 115.
+(pdftex.def)             Requested size: 235.70537pt x 164.63347pt.
  (./cosyne_2020_application.bbl
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
@@ -561,24 +561,28 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (/opt/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
  [2 <./images/Krebs_0p05_corr_comp.png> <./images/Krebs_3p0_corr_comp.png> <./i
 mages/Krebs_0p05_regional_cluster_map.png> <./images/Krebs_3p0_regional_cluster
 _map.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
 
 (./cosyne_2020_application.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `cosyne_2020_application.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
  9487 strings out of 493013
  142784 string characters out of 6136083
- 253292 words of memory out of 5000000
+ 253364 words of memory out of 5000000
  12872 multiletter control sequences out of 15000+600000
  15807 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -588,7 +592,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/2016/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cosyne_2020_application.pdf (2 pages, 161606 bytes).
+Output written on cosyne_2020_application.pdf (2 pages, 144743 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
