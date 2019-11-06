@@ -99,8 +99,8 @@ We compared within-region correlations to between-region correlations at differe
     \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_corr_comp.png}
     \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_corr_comp.png}
     \vspace{-0.4cm}
-    \caption{Regional comparisons of within-region (coloured dots) and between-region (black dots) correlations for the same mouse using different time bin widths. The reduction in difference between within-region and between-region mean correlations was also observed at intermediate values for the time bin width.}
-    \vspace{-0.1cm}
+    \caption{Regional comparisons of within-region (coloured dots) and between-region (black dots) correlations for the same mouse using different time bin widths. Each black dot represents the mean correlation for a mixed region pair. For example, one of the black dots above `LS' represents the mean correlation of cell pairs where one cell is from the LS, and the other is from V1. There is a corresponding black dot above V1 for the same value. The reduction in difference between within-region and between-region mean correlations with increasing time bin width shown here was also observed at intermediate values for the time bin width ($0.2$s, $1$s, $2$s, $3$s).}
+    \vspace{-0.4cm}
     \label{fig:within_between}
 \end{figure}
 
@@ -114,14 +114,16 @@ We performed the network noise rejection and community detection on weighted net
     \includegraphics[width=0.45\columnwidth]{images/Krebs_0p05_regional_cluster_map.png}
     \includegraphics[width=0.45\columnwidth]{images/Krebs_3p0_regional_cluster_map.png}
     \vspace{-0.3cm}
-    \caption{Matrices showing cell regional membership and community membership for the same mouse using different bin widths. Each row and column corresponds to a cell. Within-region pairs are coloured by their regional membership, between-region pairs are left grey. In general, communities include pairs from multiple regions. But, at shorter time-scales (left-panel) communities dominated by a single region are more prevalent.}
-    \vspace{-0.1cm}
+    \caption{Matrices showing cell regional membership and community membership for the same mouse using different bin widths. Each cell has a corresponding row and column. Regional membership is denoted by colour. The majority of cell pairs are between regions and are therefore grey. Network communities are those cells within the white borders. Each cell is in one community only. In general, communities include pairs from multiple regions. But, at shorter time-scales (left-panel) communities dominated by a single region are more prevalent.}
+    \vspace{-0.6cm}
     \label{fig:regional_cluster_maps}
 \end{figure}
 
 
-\vspace{-0.5cm}
+\vspace{-0.6cm}
+\renewcommand\refname{\normalsize References \vspace{-0.5cm}}
 \bibliography{cosyne_2020_application.bbl}
+\bibliographystyle{rsc}
 
 %  \item correlation histogram results largely agree with previous findings, cite cohen and kohn.
 \end{document}
