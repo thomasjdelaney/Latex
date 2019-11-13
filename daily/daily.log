@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  7 NOV 2019 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  13 NOV 2019 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,15 +528,15 @@ ram-e-ters of the Conway-
  []
 
 [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 665.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 667.
  [24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 665.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 667.
  (./daily.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 665.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 665.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 667.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 667.
 Package rerunfilecheck Info: File `daily.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 665.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 667.
  ) 
 Here is how much of TeX's memory you used:
  7350 strings out of 493013
@@ -558,7 +558,7 @@ s/cm/cmr8.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/texlive/2016/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on daily.pdf (24 pages, 174716 bytes).
+Output written on daily.pdf (24 pages, 174912 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams
