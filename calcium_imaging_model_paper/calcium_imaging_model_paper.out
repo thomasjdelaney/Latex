@@ -1,9 +1,19 @@
-\BOOKMARK [1][-]{section.1}{Calcium Imaging}{}% 1
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Results}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{The model}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Spike Inference}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Perturbation analysis}{section.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Perturbing indicator concentration}{subsection.2.3}% 6
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Perturbing immobile endogeneous buffer concentration}{subsection.2.3}% 7
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Perturbing indicator binding and unbinding rates}{subsection.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.4}{Varying spike rate for different cell types}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.1}{A biophysical computational model can generate accurate fluorescence traces from spike trains}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Spike inference algorithms perform similarly on real data compared with time series simulated from the model}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Relative effects of various buffers to the fluorescence signal}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Discussion}{}% 8
+\BOOKMARK [1][-]{section.4}{Methods}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Calcium dynamics model}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Photon release \046 capture}{subsection.4.1}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Parameter optimisation}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Fixed parameters}{subsection.4.2}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Julia}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.4}{Spike inference}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Comparing spike inference quality}{subsection.4.4}% 16
+\BOOKMARK [2][-]{subsection.4.5}{Perturbation analysis}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.6}{Signal-to-noise ratio}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.7}{Data sources}{section.4}% 19

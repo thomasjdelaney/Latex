@@ -16,33 +16,101 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Calcium Imaging}{4}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{4}{section.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Results}{4}{section.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}The model}{4}{subsection.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Spike Inference}{4}{subsection.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Perturbation analysis}{4}{subsection.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Perturbing indicator concentration}{4}{subsubsection.2.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Perturbing immobile endogeneous buffer concentration}{4}{subsubsection.2.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Perturbing indicator binding and unbinding rates}{4}{subsubsection.2.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Varying spike rate for different cell types}{4}{subsection.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces (a) Plot of a spike train and the corresponding GCaMP6s fluorescence trace. Data courtesy of spikefinder.codeneuro.org (b) The same image as (a) but zoomed into the period from 79s to 85s. This period is marked on figure (a) by the horizontal black line with stars at each end. A group of six action potentials around the 81s point followed by a group of three action potentials just before the 82s point are shown. The decay of the fluorescence trace is much slower than the dynamics of an action potential.\relax }}{5}{figure.caption.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}A biophysical computational model can generate accurate fluorescence traces from spike trains}{4}{subsection.2.1}}
+\citation{berens}
+\citation{pnevmatikakis}
+\citation{friedrich}
+\citation{deneux}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Spike inference algorithms perform similarly on real data compared with time series simulated from the model}{5}{subsection.2.2}}
+\citation{maravall}
+\citation{bartol}
+\citation{chen}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Relative effects of various buffers to the fluorescence signal}{6}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{6}{subsection.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}{7}{subsection.2.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Discussion}{8}{section.3}}
+\citation{koch}
+\citation{maravall}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methods}{9}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Calcium dynamics model}{9}{subsection.4.1}}
+\citation{maravall}
+\newlabel{eq:model_equations}{{1}{10}{Calcium dynamics model}{equation.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Photon release \& capture}{11}{subsubsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Parameter optimisation}{11}{subsection.4.2}}
+\newlabel{sec:parameter_optimisation}{{4.2}{11}{Parameter optimisation}{subsection.4.2}{}}
+\citation{kilhoffer}
+\citation{maravall}
+\citation{fiala}
+\citation{faas}
+\citation{bartol}
+\citation{maravall}
+\citation{bartol}
+\citation{bartol}
+\citation{bartol}
+\citation{bartol}
+\citation{bartol}
+\citation{bartol}
+\citation{maravall}
+\citation{bezanson}
+\citation{vogelstein}
+\citation{pnevmatikakis}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Fixed parameters}{12}{subsubsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Julia}{12}{subsection.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Spike inference}{12}{subsection.4.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Fixed parameters} A table of the parameters fixed before optimising the model. The values of these parameters could be changed to model different fluorescent calcium indicators.\relax }}{13}{table.caption.12}}
+\newlabel{tab:fixed_parameters}{{1}{13}{\textbf {Fixed parameters} A table of the parameters fixed before optimising the model. The values of these parameters could be changed to model different fluorescent calcium indicators.\relax }{table.caption.12}{}}
+\citation{forney}
+\citation{deneux}
+\citation{friedrich}
+\citation{maravall}
+\citation{tada}
+\citation{berens}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Comparing spike inference quality}{15}{subsubsection.4.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Perturbation analysis}{15}{subsection.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Signal-to-noise ratio}{15}{subsection.4.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Data sources}{16}{subsection.4.7}}
+\bibdata{calcium_imaging_model_paper.bbl}
+\bibcite{berens}{1}
+\bibcite{maravall}{2}
+\bibcite{buzsaki}{3}
+\bibcite{stosiek}{4}
+\bibcite{chen}{5}
+\bibcite{vogelstein}{6}
+\bibcite{pnevmatikakis}{7}
+\bibcite{viterbi}{8}
+\bibcite{deneux}{9}
+\bibcite{jewell}{10}
+\bibcite{friedrich}{11}
+\bibcite{tada}{12}
+\bibcite{fiala}{13}
+\bibcite{faas}{14}
+\bibcite{bartol}{15}
+\bibcite{koch}{16}
+\bibcite{kilhoffer}{17}
+\bibcite{bezanson}{18}
+\bibcite{kilhoffer}{19}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces (a) Plot of a spike train and the corresponding GCaMP6s fluorescence trace. Data courtesy of spikefinder.codeneuro.org (b) The same image as (a) but zoomed into the period from 79s to 85s. This period is marked on figure (a) by the horizontal black line with stars at each end. A group of six action potentials around the 81s point followed by a group of three action potentials just before the 82s point are shown. The decay of the fluorescence trace is much slower than the dynamics of an action potential.\relax }}{19}{figure.caption.2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:spike_finder_example}{{1}{5}{(a) Plot of a spike train and the corresponding GCaMP6s fluorescence trace. Data courtesy of spikefinder.codeneuro.org (b) The same image as (a) but zoomed into the period from 79s to 85s. This period is marked on figure (a) by the horizontal black line with stars at each end. A group of six action potentials around the 81s point followed by a group of three action potentials just before the 82s point are shown. The decay of the fluorescence trace is much slower than the dynamics of an action potential.\relax }{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces (LHS) Observed fluorescence traces from the Spikefinder dataset with their associated spike trains. (RHS) Fluorescence traces created by the model given the same spike trains. Traces were created after the model was optimised for each florescence trace.\relax }}{6}{figure.caption.3}}
-\newlabel{fig:observed_modelled_examples}{{2}{6}{(LHS) Observed fluorescence traces from the Spikefinder dataset with their associated spike trains. (RHS) Fluorescence traces created by the model given the same spike trains. Traces were created after the model was optimised for each florescence trace.\relax }{figure.caption.3}{}}
-\newlabel{fig:contrentration_dynamics}{{3a}{7}{\relax }{figure.caption.4}{}}
-\newlabel{sub@fig:contrentration_dynamics}{{a}{7}{\relax }{figure.caption.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Calcium Buffering Dynamics } (a) The proportions of bound and free calcium concentrations within a cell, with the associated spike train. (b)-(f) The dynamics of the concentration of (b) excited indicator bound calcium, (c) indicator bound calcium, (d) immobile endogeneous buffer bound calcium, (e) mobile endogeneous buffer bound calcium, and (f) free calcium in response to an action potential at 23.17s.\relax }}{7}{figure.caption.4}}
-\newlabel{fig:concentrations}{{3}{7}{\textbf {Calcium Buffering Dynamics } (a) The proportions of bound and free calcium concentrations within a cell, with the associated spike train. (b)-(f) The dynamics of the concentration of (b) excited indicator bound calcium, (c) indicator bound calcium, (d) immobile endogeneous buffer bound calcium, (e) mobile endogeneous buffer bound calcium, and (f) free calcium in response to an action potential at 23.17s.\relax }{figure.caption.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Box plots showing the distribution of the true positive rates achieved by three spike inference algorithms when applied to observed spike trains, and modelled spike trains. Data points overlaid as blue circles. The performance is similar from real and simulated data for each of the algorithms.\relax }}{8}{figure.caption.5}}
-\newlabel{fig:three_algo_comparison}{{4}{8}{Box plots showing the distribution of the true positive rates achieved by three spike inference algorithms when applied to observed spike trains, and modelled spike trains. Data points overlaid as blue circles. The performance is similar from real and simulated data for each of the algorithms.\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.\relax }}{9}{figure.caption.6}}
-\newlabel{fig:indicator_perturbed}{{5}{9}{(a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces (a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }}{10}{figure.caption.7}}
-\newlabel{fig:endogeneous_perturbed}{{6}{10}{(a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces (a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The SNRs for the two pairs with values lower than the experimental value are lower than the experimental pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }}{11}{figure.caption.8}}
-\newlabel{fig:rates_perturbed}{{7}{11}{(a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The SNRs for the two pairs with values lower than the experimental value are lower than the experimental pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {Simulating fluorescence traces at different firing rates } Three example modelled traces created using simulated spike trains with a mean firing rate of 10 Hz (left column), 5 Hz (middle column), and 1 Hz (right column). Note the difference in amplitude with different mean firing rates.\relax }}{12}{figure.caption.9}}
-\newlabel{}{{8}{12}{\textbf {Simulating fluorescence traces at different firing rates } Three example modelled traces created using simulated spike trains with a mean firing rate of 10 Hz (left column), 5 Hz (middle column), and 1 Hz (right column). Note the difference in amplitude with different mean firing rates.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces (left) The spike inference true positive rate when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.\relax }}{13}{figure.caption.10}}
-\newlabel{}{{9}{13}{(left) The spike inference true positive rate when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.\relax }{figure.caption.10}{}}
+\newlabel{fig:spike_finder_example}{{1}{19}{(a) Plot of a spike train and the corresponding GCaMP6s fluorescence trace. Data courtesy of spikefinder.codeneuro.org (b) The same image as (a) but zoomed into the period from 79s to 85s. This period is marked on figure (a) by the horizontal black line with stars at each end. A group of six action potentials around the 81s point followed by a group of three action potentials just before the 82s point are shown. The decay of the fluorescence trace is much slower than the dynamics of an action potential.\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces (LHS) Observed fluorescence traces from the Spikefinder dataset with their associated spike trains. (RHS) Fluorescence traces created by the model given the same spike trains. Traces were created after the model was optimised for each florescence trace.\relax }}{20}{figure.caption.3}}
+\newlabel{fig:observed_modelled_examples}{{2}{20}{(LHS) Observed fluorescence traces from the Spikefinder dataset with their associated spike trains. (RHS) Fluorescence traces created by the model given the same spike trains. Traces were created after the model was optimised for each florescence trace.\relax }{figure.caption.3}{}}
+\newlabel{fig:concentration_dynamics_a}{{3a}{21}{\relax }{figure.caption.4}{}}
+\newlabel{sub@fig:concentration_dynamics_a}{{a}{21}{\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Calcium Buffering Dynamics } (a) The proportions of bound and free calcium concentrations within a cell, with the associated spike train. (b)-(f) The dynamics of the concentration of (b) excited indicator bound calcium, (c) indicator bound calcium, (d) immobile endogeneous buffer bound calcium, (e) mobile endogeneous buffer bound calcium, and (f) free calcium in response to an action potential at 23.17s.\relax }}{21}{figure.caption.4}}
+\newlabel{fig:concentrations}{{3}{21}{\textbf {Calcium Buffering Dynamics } (a) The proportions of bound and free calcium concentrations within a cell, with the associated spike train. (b)-(f) The dynamics of the concentration of (b) excited indicator bound calcium, (c) indicator bound calcium, (d) immobile endogeneous buffer bound calcium, (e) mobile endogeneous buffer bound calcium, and (f) free calcium in response to an action potential at 23.17s.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Box plots showing the distribution of the true positive rates achieved by three spike inference algorithms when applied to observed spike trains, and modelled spike trains. Data points overlaid as blue circles. The performance is similar from real and simulated data for each of the algorithms.\relax }}{22}{figure.caption.5}}
+\newlabel{fig:three_algo_comparison}{{4}{22}{Box plots showing the distribution of the true positive rates achieved by three spike inference algorithms when applied to observed spike trains, and modelled spike trains. Data points overlaid as blue circles. The performance is similar from real and simulated data for each of the algorithms.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The SNRs for the two pairs with values lower than the experimental value are lower than the experimental pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }}{23}{figure.caption.6}}
+\newlabel{fig:rates_perturbed}{{5}{23}{(a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The SNRs for the two pairs with values lower than the experimental value are lower than the experimental pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces (a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.\relax }}{24}{figure.caption.7}}
+\newlabel{fig:indicator_perturbed}{{6}{24}{(a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces (a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }}{25}{figure.caption.8}}
+\newlabel{fig:endogeneous_perturbed}{{7}{25}{(a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {Simulating fluorescence traces at different firing rates } Three example modelled traces created using simulated spike trains with a mean firing rate of $1$Hz (left column), $5$Hz (middle column), and $10$Hz (right column). Note the difference in amplitude with different mean firing rates.\relax }}{26}{figure.caption.9}}
+\newlabel{fig:frequency_comparison_traces}{{8}{26}{\textbf {Simulating fluorescence traces at different firing rates } Three example modelled traces created using simulated spike trains with a mean firing rate of $1$Hz (left column), $5$Hz (middle column), and $10$Hz (right column). Note the difference in amplitude with different mean firing rates.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {Inference quality and $\Delta F/F_0$ vs Firing rate} (left) The spike inference true positive rate when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.\relax }}{27}{figure.caption.10}}
+\newlabel{fig:frequency_comparison_measures}{{9}{27}{\textbf {Inference quality and $\Delta F/F_0$ vs Firing rate} (left) The spike inference true positive rate when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {Calcium exchange in the neuron} A diagram showing the methods by which Ca 2+ can enter the cell, leave the cell, and become `buffered'.\relax }}{27}{figure.caption.11}}
+\newlabel{fig:cell_diagram}{{10}{27}{\textbf {Calcium exchange in the neuron} A diagram showing the methods by which Ca 2+ can enter the cell, leave the cell, and become `buffered'.\relax }{figure.caption.11}{}}

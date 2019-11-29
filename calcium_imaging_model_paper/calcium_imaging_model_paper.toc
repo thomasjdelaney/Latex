@@ -1,9 +1,19 @@
-\contentsline {section}{\numberline {1}Calcium Imaging}{4}{section.1}
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
 \contentsline {section}{\numberline {2}Results}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}The model}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Spike Inference}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Perturbation analysis}{4}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Perturbing indicator concentration}{4}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Perturbing immobile endogeneous buffer concentration}{4}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Perturbing indicator binding and unbinding rates}{4}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Varying spike rate for different cell types}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.1}A biophysical computational model can generate accurate fluorescence traces from spike trains}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Spike inference algorithms perform similarly on real data compared with time series simulated from the model}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Relative effects of various buffers to the fluorescence signal}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}{7}{subsection.2.5}
+\contentsline {section}{\numberline {3}Discussion}{8}{section.3}
+\contentsline {section}{\numberline {4}Methods}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Calcium dynamics model}{9}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Photon release \& capture}{11}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Parameter optimisation}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Fixed parameters}{12}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}Julia}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Spike inference}{12}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Comparing spike inference quality}{15}{subsubsection.4.4.1}
+\contentsline {subsection}{\numberline {4.5}Perturbation analysis}{15}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Signal-to-noise ratio}{15}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Data sources}{16}{subsection.4.7}
