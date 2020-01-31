@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  27 JAN 2020 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  31 JAN 2020 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,15 +551,15 @@ Overfull \hbox (5.50313pt too wide) in paragraph at lines 690--691
 al ma-te-rial in Gerkin. Wrote
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 701.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 703.
 [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 701.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 703.
  (./daily.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 701.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 701.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 703.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 703.
 Package rerunfilecheck Info: File `daily.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 701.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 703.
  ) 
 Here is how much of TeX's memory you used:
  7352 strings out of 493013
@@ -581,7 +581,7 @@ s/cm/cmr8.pfb></opt/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/texlive/2016/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></opt/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on daily.pdf (26 pages, 179965 bytes).
+Output written on daily.pdf (26 pages, 180247 bytes).
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams
