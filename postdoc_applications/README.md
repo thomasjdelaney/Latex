@@ -33,16 +33,16 @@ Salutations
 : Make sure the salutation is to a particular person, like the head of the department or whatever.
 
 First paragraph
-: For which post are you applying? How did you hear about it? Your academic background and research interests.
+: For which post are you applying? How did you hear about it? Your academic background and research interests. Mention that you are doing a PhD, the title/subject, and the supervisor.
 
 Middle section
-: Research interests and achievements, teaching and administrative activities. Mention future research plans. 
+: Research interests and achievements, teaching and administrative activities. Mention future research plans. Try to point out how these experiences have prepared you for this particular post. 
 
 Final section
 : Explain why you are attracted to this role, and how it will fit into your career plans.
 
 Conclusion
-: Summarise why you are suitable, and express an interest in an interview.
+: Mention the other enclosed documents. Summarise why you are suitable, and express an interest in an interview.
 
 #### Tailoring the letter
 
@@ -77,6 +77,13 @@ Don't
 ### Curriculum Vitae
 
 The Curriculum Vitae, or 'CV'.
+
+#### Formatting
+
+- Put the most relevant or important information first. What is most relevant will depend on the post for which you are applying.
+- Pay attention to section titles. Could they sound more impressive?
+- Use active verbs and fragmented sentences. Try to avoid using pronouns. 
+- Look for some example CV from someone.
 
 ---
 
