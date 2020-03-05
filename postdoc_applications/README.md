@@ -95,4 +95,6 @@ I don't have any publications at the moment. In any applications I make, I shoul
 
 ### Contact information for references
 
-Is the supervisor the best option? Is CheckRisk the best option for me?
+- One of the academic referees should be the supervisor.
+- Should email the Japanese post about their request for a reference from a 'previous employer'.
+
