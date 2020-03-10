@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  9 MAR 2020 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  10 MAR 2020 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -133,12 +133,18 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 33--33
 
 [1
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (5.26344pt too wide) in paragraph at lines 184--191
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (1.2477pt too wide) in paragraph at lines 96--97
+[]\OT1/cmr/m/n/10.95 Teaching As-sis-tant for Com-puter Sci-ence and En-gi-neer
+-ing Math-e-mat-ics un-der-grad-u-ate and MSc courses: 
+ []
+
+[2] [3]
+Overfull \hbox (5.26344pt too wide) in paragraph at lines 222--229
 [][] 
  []
 
-[3] (./cv_tokyo.aux) ) 
+[4] (./cv_tokyo.aux) ) 
 Here is how much of TeX's memory you used:
  888 strings out of 492701
  11939 string characters out of 6134504
@@ -146,17 +152,17 @@ Here is how much of TeX's memory you used:
  4807 multiletter control sequences out of 15000+600000
  7639 words of font info for 27 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 27i,9n,21p,242b,171s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,21p,242b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_tokyo.pdf (3 pages, 91559 bytes).
+Output written on cv_tokyo.pdf (4 pages, 95305 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
