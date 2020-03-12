@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Formal Letter
+% LaTeX Template
+% Version 2.0 (7/2/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% Originally based on an example on WikiBooks 
+% (http://en.wikibooks.org/wiki/LaTeX/Letters) but rewritten as of v2.0
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % 10pt font size default, 11pt and 12pt are also possible
+
+\usepackage{geometry} % Required for adjusting page dimensions
+
+%\longindentation=0pt % Un-commenting this line will push the closing "Sincerely," to the left of the page
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=3cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2.5cm, % Left margin
+  right=2.5cm, % Right margin
+  %showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+
+\usepackage{stix} % Use the Stix font by default
+
+\usepackage{microtype} % Improve justification
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%----------------------------------------------------------------------------------------
+% YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\signature{Thomas J. Delaney} % Your name for the signature at the bottom
+
+\address{\textbf{Thomas J. Delaney}
+  81-83 Woodland Road \\ 
+  University of Bristol \\ 
+  Bristol, BS8 1US \\ 
+  United Kingdom \\  
+  t.delaney@bristol.ac.uk} % Your address and phone number
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{Dr. Yukie Nagai \\ 
+  Cognitive Development Robotics Lab \\ 
+  International Research Centre for Neurointelligence \\
+  The University of Tokyo \\
+  7-3-1 Hongo, Bunkyo-ku \\
+  Tokyo 113-0033, Japan} % Name/title of the addressee
+
+%----------------------------------------------------------------------------------------
+% LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+  \opening{\textbf{Dear Dr. Nagai,}}
+  
+%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%
+  I am writing to you to apply for the postdoctoral researcher position in your lab, as seen on the `comp-neuro' mailing list. I am a Compututational Neuroscience PhD student in the University of Bristol, England, under the supervision of Dr. Cian O'Donnell. I am due to submit my thesis in June/July of this year. I am particularly interested in the applications of statistical modelling, information theory, and machine learning to neuroscience. Each of these areas will be useful to the CREST Cognitive mirroring project as predictive coding is based upon these concepts.
+
+%%%%%%%%%%%%%%% BACKGROUND & CURRENT RESEARCH %%%%%%%%%%%%%%%
+  My academic background is in mathematics and computer science. I completed a 4-year BA in Mathematics in Trinity College Dublin, Ireland in 2011. I also completed an MSc in Informatics in The University of Edinburgh, Scotland in 2015. During the intervening years, I was a financial software consultant. I began my PhD in the University of Bristol in September 2016. My first project during my PhD was a biophysical model of the calcium concentration and fluorescence trace of fluorescent calcium indicators used to detect activity in neurons. 
+
+  My current reseach uses network science to cluster neurons based on their activity, and compares these clusterings to the neurons' anatomical distribution. I use a cutting-edge cluster detection algorithm that uses hypothesis testing and spectral methods to detect clusters in a network. I also perform these analyses while modelling the neuronal activity as a function of the behaviour of the mouse.
+
+  I have done poster presentations on both of these projects at numerous conferences, and both works will be submitted for publication this year. 
+
+%%%%%%%%%%%%%%% FUTURE RESEARCH %%%%%%%%%%%%%%%%
+  During the remainder of my PhD, I plan to develop a simple model for the number of spiking neurons in a neuronal population, and extend this into a hierarchical model across multiple brain regions. This model will be based on the Conway-Maxwell-Binomial distribution, which is similar to a binomial distribution, but allows for over- or under-dispersion relative to a binomial distribution. 
+
+%%%%%%%%%%%%%%% TEACHING %%%%%%%%%%%%%%%%%%%%%%%
+  My teaching experience during my PhD has broadened my horizons by allowing me to learn and teach about machine learning, algorithms, and the practical side of statistics. 
+
+%%%%%%%%%%%%%%% THIS ROLE %%%%%%%%%%%%%%%%%%%%%%
+  As I am interested in researching a model of large neuronal populations I am perfect for this position. I'm interested in being part of the project that produces a tangible productto assist people with developmental disorders.
+
+%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%%%%%%%%%%
+%  conclusion
+
+  \vspace{2\parskip} % Extra whitespace for aesthetics
+  \closing{Sincerely,}
+  \vspace{2\parskip} % Extra whitespace for aesthetics
+
+%  \ps{P.S. You can find additional information attached to this letter.} % Postscript text, comment this line to remove it
+
+%  \encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+  %----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
+\end{document}
