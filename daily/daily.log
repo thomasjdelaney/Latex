@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  12 APR 2020 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.24)  14 APR 2020 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,15 +561,20 @@ Maxwell-binomial
  []
 
 [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
+Overfull \hbox (2.59613pt too wide) in paragraph at lines 761--762
+[]\OT1/ptm/m/n/12 Wrote more use-ful func-tions for the Conway-Maxwell-binomial
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 766.
+[29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 766.
  (./daily.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 766.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 766.
 Package rerunfilecheck Info: File `daily.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 766.
  ) 
 Here is how much of TeX's memory you used:
  7269 strings out of 492701
@@ -591,7 +596,7 @@ sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on daily.pdf (29 pages, 186537 bytes).
+Output written on daily.pdf (29 pages, 186616 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams
