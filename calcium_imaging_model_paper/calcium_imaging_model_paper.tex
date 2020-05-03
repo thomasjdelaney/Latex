@@ -15,11 +15,11 @@
 \usepackage{subcaption}
 \usepackage{mathtools}
 
-\pagestyle{fancy}
-\fancyhf{}
-\lhead{Thomas Delaney}
-\rhead{Fluorescence Modelling}
-\cfoot{\thepage}
+% stuff added by Cian
+\usepackage{lineno}
+\linenumbers
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{authblk}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}[section]
@@ -47,23 +47,23 @@
 \newcommand{\mb}{\mathbf} %to be used in mathmode
 \newcommand{\bs}{\boldsymbol} %to be used in mathmode
 % Title Page
-\title{Modelling the fluorescence produced by fluorescent calcium indicators in response to sequences of action potentials}
+\title{Sensitivity of the spikes-to-fluorescence transform to calcium indicator and neuron properties}
 \date{}
-\author{Thomas J. Delaney \\ Cian O'Donnell, Michael C. Ashby}
+
+%\author{Thomas J. Delaney$^1$, Michael C. Ashby$^2$, Cian O'Donnell$^1$ $^1$School of Computer Science, Electrical and Electronic Engineering, and Engineering Mathematics, $^2$School of Physiology, Pharmacology and Neuroscience, University of Bristol, Bristol, United Kingdom.}
+
+\author[1]{Thomas J. Delaney}
+\author[2]{Michael C. Ashby}
+\author[1]{Cian O'Donnell}
+\affil[1]{School of Computer Science, Electrical and Electronic Engineering, and Engineering Mathematics, University of Bristol, Bristol, United Kingdom.}
+\affil[2]{School of Physiology, Pharmacology and Neuroscience, University of Bristol, Bristol, United Kingdom.}
+\renewcommand\Affilfont{\itshape\small}
 
 \begin{document}
 
 \maketitle
 
-\newpage
-
-\abstract{Although fluorescent calcium indicators such as GCaMP are widely used to monitor neuronal activity, in many cases the relationship between the fluorescence signal and action potential firing is poorly understood. This lack of knowledge makes it difficult for experimenters to decide between different indicator variants for a given application. We addressed this problem by building a basic biophysical model of calcium dynamics in neuronal soma. We fit the model parameters to publicly available data where GCaMP6s fluorescence and whole-cell electrophysiological recordings were made simultaneously in the same cells. We systematically varied the model’s parameters to characterise the sensitivity of spike train inference algorithms to the calcium indicator’s main biophysical properties: binding rate, dissociation rate, and molecular concentration. This model should have two potential uses: experimental researchers may use it to help them select the optimal indicator for their desired experiment; and computational researchers may use it to generate simulated data to aid design of spike inference algorithms.}
-
-\newpage
-
-\tableofcontents
-
-\newpage
+\abstract{Fluorescent calcium indicators such as GCaMP are widely used to monitor neuronal activity. However the relationship between the fluorescence signal and the underlying action potential firing is poorly understood. This lack of knowledge makes it difficult for experimenters to decide between different indicator variants for a given application. We addressed this problem by studying a basic biophysical model of calcium dynamics in neuronal soma. We fit the model parameters to publicly available data where GCaMP6s fluorescence and whole-cell electrophysiological recordings were made simultaneously in the same single neurons. We systematically varied the model’s parameters to characterise the sensitivity of spike train inference algorithms to the calcium indicator’s main biophysical properties: binding rate, dissociation rate, and molecular concentration. This model should have two potential uses: experimental researchers may use it to help them select the optimal indicator for their desired experiment; and computational researchers may use it to generate simulated data to aid design of spike inference algorithms.}
 
 \section{Introduction}
 Although fluorescent calcium indicators such as GCaMP are widely used to monitor neuronal activity, in many cases the relationship between the fluorescence signal and action potential firing is poorly understood. Furthermore, the effects of the indicator characteristics on this fluorescence signal are unknown. For example, it is known that genetically encoded indicators accumulate within neurons over weeks and months. This makes comparison of activity levels at different time points difficult. As a result, the experimenter may not know whether to trust the outputs of spike train inference methods in any given application.
