@@ -55,7 +55,7 @@
 \begin{description}
 	\item[19/09/2016 - 15/11/2016] During this time I read most of the papers mentioned in Cian's model paper describing different models of neuronal networks. I also attempted to model some of Mike Ashby's data, but we only had data for one point in time. So analysing changes in internal representation was not possible. I also worked on a Kaggle challenge to predict epileptic seizures. I also started working on a project to model the fluoresence created by calcium indicators.
 
-	\item[16/11/2016] Read about piecewise-deterministic Markov processes (PDMPs), mostly mathematical definitions and concepts. The main point ot take away is: In order to solve the system, we get the jump times for poisson process, and we solve the ODE for the periods in between the jump times. We change the values of the ODE variables according the jumps of the poisson process. So, solve the ODE for the interval $t = [0, T_{1^{st} jump})$, then apply the variable changes, then solve the ODE for the interval $t = [T_{1^{st} jump}, T_{2^{nd} jump})$, and so on.
+	\item[16/11/2016] Read about piecewise-deterministic Markov processes (PDMPs), mostly \\ mathematical definitions and concepts. The main point ot take away is: In order to solve the system, we get the jump times for poisson process, and we solve the ODE for the periods in between the jump times. We change the values of the ODE variables according the jumps of the poisson process. So, solve the ODE for the interval $t = [0, T_{1^{st} jump})$, then apply the variable changes, then solve the ODE for the interval $t = [T_{1^{st} jump}, T_{2^{nd} jump})$, and so on.
 
 	\item[17/11/2016] Worked on understanding the \texttt{julia} implementation of a PDMP solver.
 
@@ -77,7 +77,7 @@
 
 	\item[28/11/2016] Meeting with Cian and Mike today, need a list of questions for Mike. Mike lent me a book. It contains useful information, and formulas for analysis. Implementing this info could be useful if possible. The main takeaway from the meeting was that I should introduce the endogenous buffer, as this will change the dynamics of the system quite significantly. Read more tomorrow, and start thinking about the implementation of the endogenous buffer.
 
-	\item[29/11/2016] Used Thomas Griffith's thesis to get numbers for the endogeneous buffer. Started writing code to implement endogeneous buffer. Guessed at the forward/backward rates for Oregon Green BAPTA.
+	\item[29/11/2016] Used Thomas Griffith's thesis to get numbers for the endogeneous buffer. Started writing code to implement endogeneous buffer. Guessed at the \\ forward/backward rates for Oregon Green BAPTA.
 
 	\item[30/11/2016] Added the code for the endogeneous buffer. Causes the rates to go negative immediately. All the figures need to be in the same dimensions. Currently putting all the figures in molecules per litre units. This causes concentrations to be massive, and rates to be tiny.
 
@@ -320,7 +320,7 @@
 
 	\item[31/07/2017] Had a meeting with Cian. It was good. Almost finished with the optimisation. Need to put the optimisation figures on the Google drive. Need to make a figure of the rms path as the number of iterations increases. Need to make notes on what I have done in this project. Hopefully a paper can be written on it. Need to email the Deneux guy.
 
-	\item[01/08/2017] Tomorrow I need to continue with learning about the OASIS algorithm. Hopefully I can implement it soon. Its seems somewhat simple. I should also redo the optimisation with slightly different starting points.
+	\item[01/08/2017] Tomorrow I need to continue with learning about the OASIS algorithm. \\ Hopefully I can implement it soon. Its seems somewhat simple. I should also redo the optimisation with slightly different starting points.
 
 	\item[02/08/2017 - 03/08/2017] I had the flu for these days.
 
@@ -398,7 +398,7 @@
 
 	\item[21/11/2017 - 11/12/2017] Managed to the new model working well. I have changed the objective function to include the difference between the two traces. I have re-made almost all analysis. Still running the Lzero spike inference on the perturbation. Need to make new dynamics comparisons and trace comparisons for the perturbation data. Need to have a go at making an RNN to infer spikes.
 
-	\item[12/12/2017 - 13/12/2017] Many other people have made combinations of RNNs and CNNs to solve the spike inference problem. All of these solutions require tensorflow and a GPU however. After much messing around I have managed to get the `MLspike' spike inference algorithm working. Although it doesn't perform very well. It's better than Lzero.
+	\item[12/12/2017 - 13/12/2017] Many other people have made combinations of RNNs and \\ CNNs to solve the spike inference problem. All of these solutions require tensorflow and a GPU however. After much messing around I have managed to get the `MLspike' spike inference algorithm working. Although it doesn't perform very well. It's better than Lzero.
 
 	\item[14/12/2017 - 17/12/2017] Managed to get MLSpike working well enough to include in the results. Had to update my version of Julia due to Sundials (I think). Took all day on the 15th but got it working. Need to analyse the perturbation without optimisation results. On the spike inference performance figures make sure the Y-axis is between 0 and 1. Read about the false discovery rate and Tukey's test. These may be good ways to compare the infernce performance at perturbed values.
 
@@ -450,7 +450,7 @@
 
 	\item[19/04/2018 - 26/04/2018] Attending meetings at Adarga and CheckRisk. Will be applying with both of these companies. Need to email CheckRisk soon, and Adarga also. Made the figures for Cian. He suggested changes. Start on those tomorrow evening. Also received data from Mike/Anna Simpson, started work on modelling fluorescence traces for that.
 
-	\item[27/04/2018 - 16/05/2018] Spent a lot of time on the applications for CheckRisk and Adarga. Now submitted. Remade the figures for Cian, they look more like what would be seen in a paper now. Need to ask Cian about what the next step is on the paper. Did the analysis for Mike/Anna Simpson. Only acknowledging one spike per bin may be a problem. Currently working on loading in Neuropixels data, and applying the heirarchical model to this data.
+	\item[27/04/2018 - 16/05/2018] Spent a lot of time on the applications for CheckRisk and \\ Adarga. Now submitted. Remade the figures for Cian, they look more like what would be seen in a paper now. Need to ask Cian about what the next step is on the paper. Did the analysis for Mike/Anna Simpson. Only acknowledging one spike per bin may be a problem. Currently working on loading in Neuropixels data, and applying the heirarchical model to this data.
 
 	\item[17/05/2018 - 06/06/2018] Re-did the analysis for Mike, worked out quite well. Mike was happy with it anyway. I redid the figures for the paper. Cian was happy with most of them, but a few still need to be redone. The application with CheckRisk was accepted, I will start on the 25th of June. Must tell Cian about that. Wrote a Julia script to do most of the same analysis as is in the MATLAB script that goes with the Neuropixels data.
 
@@ -496,7 +496,7 @@
 
 	\item[24/03/2019 - 26/03/2019] Had a meeting with Cian. The correlations vs bin width figures and results are good. Trying to make some cross-correlograms. Not working so far.
 
-	\item[27/03/2019] Attended CS Dept Seminar given by Cian. Still trying to make cross-correlograms.
+	\item[27/03/2019] Attended CS Dept Seminar given by Cian. Still trying to make \\ cross-correlograms.
 
 	\item[28/03/2019 - 30/03/2019] Made the cross corellograms, but they don't look as expected. I'm not worried. Wrote a script to calculate the signal correlation. Started plotting the signal correlation.
 
@@ -510,7 +510,7 @@
 
 	\item[12/04/2019] Added firing rates measurements and images. Started on geomtric means vs pairwise measurements. Probably need to remeasure the mutual information using bias correction, at least to examine the difference.
 
-	\item[15/04/2019] Added the correlation and mutual information histograms for strongly responding neurons and their corresponding statistical tests. Updated the README.md. Need to get on with measuring the MI with bias correction and learning how to do community detection.
+	\item[15/04/2019] Added the correlation and mutual information histograms for strongly responding neurons and their corresponding statistical tests. Updated the \\ README.md. Need to get on with measuring the MI with bias correction and learning how to do community detection.
 
 	\item[16/04/2019] Implemented bias correction techniques in measuring the MI. Need to rebuild the big csvs on both machines and decide on an MI measure to use for figures etc. Also need to read about community detection. Also need to read emails about other stuff.
 
@@ -593,7 +593,7 @@
 
 	\item[02/08/2019 - 09/08/2019] Parallelised across nodes and processes. Still had to use a subset of 50 neurons in order to do the bin width analysis. Some very surprising results comparing mutual information to shuffled mutual information.
 
-	\item[10/08/2019 - 22/08/2019] Spent some time wondering about the mutual information. Read Panzeri et al 1996, mentioned that shuffled info may overestimate the bias if a lot of bins are empty. Need to write a function to measure the Panzeri-Treves bias. Also need to hear from Sarah Tennant, and do something with the Matt Jones data. Also need to extract a dataframe with 5ms bins to analyse spike trains, and distribution of the number of active cells.
+	\item[10/08/2019 - 22/08/2019] Spent some time wondering about the mutual information. \\ Read Panzeri et al 1996, mentioned that shuffled info may overestimate the bias if a lot of bins are empty. Need to write a function to measure the Panzeri-Treves bias. Also need to hear from Sarah Tennant, and do something with the Matt Jones data. Also need to extract a dataframe with 5ms bins to analyse spike trains, and distribution of the number of active cells.
 
 	\item[23/08/2019] Wrote function to measure PT-bias. Ran new analysis on BlueCrystal. Need to get files copied across. Started on analysis for spike trains. Need to parallelise some of the code.
 
@@ -615,7 +615,7 @@
 
 	\item[13/09/2019 - 16/09/2019] Got the Fluorescence Modelling working as before (I think). Blue Crystal still failing. Need to choose a handful of cells from each region for each mouse, and go with that. Worked on maximum likelihood estimation for the parameters of the Conway-Maxwell Binomial distribution. Flying to France on the 21st.
 
-	\item[17/09/2019] Worked on the maximum likelihood estimation of the parameters of the Conway-Maxwell distribution. Wrote a decent document about it, and have a good idea of what is going on.
+	\item[17/09/2019] Worked on the maximum likelihood estimation of the parameters of the \\ Conway-Maxwell distribution. Wrote a decent document about it, and have a good idea of what is going on.
 
 	\item[18/09/2019] Did more on maximum likelihood. Looks like standard approach will not work. Also added a function to Eight\_Probe to distribute the cells used over the regions. Trying to analyse the data.
 
@@ -665,7 +665,7 @@
 
 	\item[09/11/2019 - 15/11/2019] Added a methods section to the fluorescence modelling paper draft. Tried cleaning up some of the references. Also added to the Eight\_Probe document. Also put together a list of conferences to go to potentially. Need to do another TODO list.
 
-	\item[16/11/2019 - 18/11/2019] Thought about implementing the active population model. Added to the Eight Probe readme.
+	\item[16/11/2019 - 18/11/2019] Thought about implementing the active population model. \\ Added to the Eight Probe readme.
 
 	\item[19/11/2019 - 22/11/2019] Read about comparing clusterings. Treated the anatomical classification as a cluster. Compared the anatomical clustering with the community detection clustering using a range of measurements. Found nice results. Had a meeting with Cian. Only very small things left to do with the Eight Probe project.
 
@@ -675,7 +675,7 @@
 
 	\item[27/11/2019] Added more to the Eight\_Probe latex. Methods might be finished now. Had a meeting with Cian. Some options for travelling to Denver. Need to check them out.
 
-	\item[28/11/2019 - 29/11/2019] Moved the calcium fluorescence paper word document over to latex and put it on overleaf. Waste of time. Need to fix the \texttt{detect\_communities.py} script, and look for money to go to COSYNE.
+	\item[28/11/2019 - 29/11/2019] Moved the calcium fluorescence paper word document over to latex and put it on overleaf. Waste of time. Need to fix the \\ \texttt{detect\_communities.py} script, and look for money to go to COSYNE.
 
 	\item[30/11/2019 - 02/12/2019] Applied for travel funding on the COSYNE webpage. Unlikely to get that. Had a meeting with Mike. Need to do yet more work on the Eight Probe project. Need to work the behaviour SVD into analysis somehow. Did some marking for Data Structures \& Algorithms.
 
@@ -687,7 +687,7 @@
 
 	\item[11/12/2019 - 17/12/2019] Played around with different settings for the BlueCrystal submission script. Eventually got \texttt{bin\_width\_variation.py} script running. Currently running \texttt{detect\_communities.py} , hopefully it'll go ok. Will have to get a quote from Ian Allen before I get confirmation from COSYNE. Need to read more about controlling for external variables.
 
-	\item[18/12/2019 - 29/12/2019] On Christmas holidays. Looked for something useful in Stringer related to controlling for mouse facial movement measures. Looked again Gerkin. Implementing the procedure described in the supplemental material in Gerkin. Wrote a good function for getting the required ingredients. Need to start working on the part that involves pairs. Don't fully understand what I am doing. But, hopefully it will work out.
+	\item[18/12/2019 - 29/12/2019] On Christmas holidays. Looked for something useful in \\ Stringer related to controlling for mouse facial movement measures. Looked again Gerkin. Implementing the procedure described in the supplemental material in Gerkin. Wrote a good function for getting the required ingredients. Need to start working on the part that involves pairs. Don't fully understand what I am doing. But, hopefully it will work out.
 
 	\item[30/12/2019 - 16/01/2020] Working on calculating the expected value of the conditional covarince between spike counts using the law of total covariance. It's a pain. Also invigilating at the moment. Will start on teaching assistance next week.
 
@@ -738,11 +738,11 @@
 
 	\item[13/03/2020] Continued working on the cover letter for a very short time. Attended 'Data analysis with python' ACRC workshop.
 
-	\item[14/03/2020 - 17/03/2020] Long weekend. Started working on detecting communities in different correlation types. Added some functionality to \texttt{detect\_communities.py}. The signal correlations have NaNs. Need to investigate.
+	\item[14/03/2020 - 17/03/2020] Long weekend. Started working on detecting communities in different correlation types. Added some functionality to \\ \texttt{detect\_communities.py}. The signal correlations have NaNs. Need to investigate.
 
 	\item[18/03/2020] Running the \texttt{bin\_width\_variation.py} script on blue crystal to rebuild the data. Needs to finish within 16 hours. Also need to invesigate the NaN signal correlations. Finished off the Tokyo applcation. Asked Cian a question about making the application. Should start on Barcelona application. Should also start on CNU presentation.
 
-	\item[19/03/2020 - 20/03/2020] Something went wrong with the \texttt{bin\_width\_variation.py} script on BlueCrystal. It did Krebs and Waksman, but didn't do Robbins. Running now with Robbins only, hopefully it was jus a time thing. Doing CNU next week on this project.
+	\item[19/03/2020 - 20/03/2020] Something went wrong with the \\ \texttt{bin\_width\_variation.py} script on BlueCrystal. It did Krebs and Waksman, but didn't do Robbins. Running now with Robbins only, hopefully it was jus a time thing. Doing CNU next week on this project.
 
 	\item[21/02/2020 - 23/03/2020] `Robbins only' run went fine. Have data now, need to run community detection algorithm. Also need to send applcation to University of Tokyo.
 
@@ -756,9 +756,9 @@
 
 	\item[09/04/2020 - 11/04/2020] Made a lot of figures for Eight Probe. Still more to do there, but moving on for the moment. Applied for Barcelona postdoc. Emailed about the NY postdoc. Started on COMB hierarchical model.
 
-	\item[12/04/2020] Easter Sunday. Wrote some useful functions for the Conway-Maxwell-binomial distribution model. Remember to fit other models as well.
+	\item[12/04/2020] Easter Sunday. Wrote some useful functions for the \\ Conway-Maxwell-binomial distribution model. Remember to fit other models as well.
 
-	\item[13/04/2020 - 14/04/2020] Wrote more useful functions for the Conway-Maxwell-binomial distribution model. Onto fitting now. Need to do rolling functions.
+	\item[13/04/2020 - 14/04/2020] Wrote more useful functions for the \\ Conway-Maxwell-binomial distribution model. Onto fitting now. Need to do \\ rolling functions.
 
 	\item[15/04/2020 - 18/04/2020] Did some work on the interview presentation. Added more functions to Conway-Maxwell-binomial project. Started the rolling calculations.
 	\item[19/04/2020 - 01/05/2020] Had two postdoc interviews. One for the Universty of Tokyo, and one for Center de Recerce Barcelona. They seemed to go OK. I have since received another email from Tokyo asking for some documents showing an ability to write papers and present my work. Have not heard anything from Barcelona yet. Made a lot of progress on the Conway-Maxwell-binomial project. It may be possible to do something similar to the population tracking model. I have write some code to implement a model like that. I should also look at the University of Bristol Institutes for short term employment purposes. In the short term, I need to prepare some documents to send to Yukie. I must send them on Sunday night, and hopefully that will be sufficient for her and her team.
@@ -777,49 +777,51 @@
 
 	\item[11/05/2020 - 12/05/2020] Received an offer from Yukie. Accepted the offer. Added more to the Conway-Maxwell-binomial latex. Added a statistical test to the Fanos bit.
 
-	\item[13/05/2020 - 14/05/2020] Received email from Yukie, had to rewrite publication list. Added more to the Conway-Maxwell-binomial latex. Had meeting with Cian. Didn't discuss a huge amount.
+	\item[13/05/2020 - 14/05/2020] Received email from Yukie, had to rewrite publication list. \\ Added more to the Conway-Maxwell-binomial latex. Had meeting with Cian. Didn't discuss a huge amount.
 
 	\item[15/05/2020] Added more to the Conway-Maxwell-binomial latex. Added more plotting to the Conway-Maxwell-binomial repo.
-	
+
 	\item[16/05/2020] Added more to the Conway-Maxwell-binomial latex.
 
-        \item[17/05/2020] Added more to the Conway-Maxwell-binomial latex. Updated the way of measuring the average correlation coefficient. Updated the average across trials images.
+	\item[17/05/2020] Added more to the Conway-Maxwell-binomial latex. Updated the way of measuring the average correlation coefficient. Updated the average across trials images.
 
-        \item[18/05/2020] Rebuilt the results and looked at the correlation results. Added to the results section. Need to rebuild again. Changed the duration of the stimuli. Messaged Cian with a draft of my thesis title.
+	\item[18/05/2020] Rebuilt the results and looked at the correlation results. Added to the results section. Need to rebuild again. Changed the duration of the stimuli. Messaged Cian with a draft of my thesis title.
 
-        \item[19/05/2020 - 20/05/2020] Continued with the COMb latex. Mostly making figures now. Had meeting with Cian, went fine. Need to edit the x-axes of certain plots. Got email from Yukie, need to register for conference. Need to do application for teaching in July also.
+	\item[19/05/2020 - 20/05/2020] Continued with the COMb latex. Mostly making figures now. Had meeting with Cian, went fine. Need to edit the x-axes of certain plots. Got email from Yukie, need to register for conference. Need to do application for teaching in July also.
 
-        \item[21/05/2020] Added more to the COMb latex. Results starting to take a good shape now. Need to register for conference and apply for Neuromatch teaching before Monday.
+	\item[21/05/2020] Added more to the COMb latex. Results starting to take a good shape now. Need to register for conference and apply for Neuromatch teaching before Monday.
 
-        \item[22/05/2020] Had a look over the Neuromatch stuff. Added the Fano factor result to the Conway-Maxwell-binomial stuff. Just need to do Abstract, Intro and Discussion.
+	\item[22/05/2020] Had a look over the Neuromatch stuff. Added the Fano factor result to the Conway-Maxwell-binomial stuff. Just need to do Abstract, Intro and Discussion.
 
-        \item[23/05/2020 - 24/05/2020] Did the Neuromatch application. Took a lot of effort, so I hope I get it. Leared lots of Japanese.
+	\item[23/05/2020 - 24/05/2020] Did the Neuromatch application. Took a lot of effort, so I hope I get it. Leared lots of Japanese.
 
-        \item[25/05/2020 - 26/05/2020] Did a very small about on the Conway-Maxwell-binomial latex. Spent most time preparing for marking the Computational Neuroscience course works.
+	\item[25/05/2020 - 26/05/2020] Did a very small about on the Conway-Maxwell-binomial latex. Spent most time preparing for marking the Computational Neuroscience course works.
 
-        \item[27/05/2020] Had a meeting with Cian about the marking. Added more to the Conway-Maxwell-binomial latex. Just need to do the Discussion now.
+	\item[27/05/2020] Had a meeting with Cian about the marking. Added more to the Conway-Maxwell-binomial latex. Just need to do the Discussion now.
 
-        \item[28/05/2020] Spent the day doing marking. Got about 6 hours done. Had some questions for Cian also.
+	\item[28/05/2020] Spent the day doing marking. Got about 6 hours done. Had some questions for Cian also.
 
-        \item[29/05/2020] Spent the day doing marking. Again, another 6 hours. Need to go a little faster tomorrow. It will be my last day.
+	\item[29/05/2020] Spent the day doing marking. Again, another 6 hours. Need to go a little faster tomorrow. It will be my last day.
 
-        \item[30/05/2020 - 02/06/2020] Attended a meeting, added to the Conway-Maxwell-binomial distribution latex. Sent title to Cian.
+	\item[30/05/2020 - 02/06/2020] Attended a meeting, added to the Conway-Maxwell-binomial distribution latex. Sent title to Cian.
 
-        \item[03/05/2020] Had a meeting with Cian. Read over the Conway-Maxwell-binomial chapter. Will send it Cian now.
+	\item[03/05/2020] Had a meeting with Cian. Read over the Conway-Maxwell-binomial chapter. Will send it Cian now.
 
-        \item[04/05/2020 - 05/05/2020] Filled in some paper work for University of Tokyo. Did a little bit on Eigt Probe thesis chapter. Read the whole chapter. Need to have a look over my methods for the Network Noise Rejection. Using the possion distribution in particular. Also need to find the list that Cian wrote about the Eight Probe results.
+	\item[04/05/2020 - 05/05/2020] Filled in some paper work for University of Tokyo. Did a little bit on Eigt Probe thesis chapter. Read the whole chapter. Need to have a look over my methods for the Network Noise Rejection. Using the possion distribution in particular. Also need to find the list that Cian wrote about the Eight Probe results.
 
-        \item[06/06/2020 - 08/06/2020] Added a little bit to the Eight Probe results. Included goodness of fit for Poisson and Gaussian distributions. Getting letter of graduation.
+	\item[06/06/2020 - 08/06/2020] Added a little bit to the Eight Probe results. Included goodness of fit for Poisson and Gaussian distributions. Getting letter of graduation.
 
-        \item[09/06/2020] Added some results to the Eight probe latex. Edited the within between scripts. Need to make another comparison of inter and intra regional correlations.
+	\item[09/06/2020] Added some results to the Eight probe latex. Edited the within between scripts. Need to make another comparison of inter and intra regional correlations.
 
-        \item[10/06/2020] Updated some plotting for the Eight Probe project. Also updated the latex. Attended CNU tea. Need to do something for the University of Japan.
+	\item[10/06/2020] Updated some plotting for the Eight Probe project. Also updated the latex. Attended CNU tea. Need to do something for the University of Japan.
 
-        \item[11/06/2020] Did the application for accommodation in the university of Japan. Learned some Japanese. Installed inkscape. Thought about the network noise rejection and community detection part of the chapter. Would be good to have bin width vs number of eigenvalues outside of null eigenspectrum.
+	\item[11/06/2020] Did the application for accommodation in the university of Japan. Learned some Japanese. Installed inkscape. Thought about the network noise rejection and community detection part of the chapter. Would be good to have bin width vs number of eigenvalues outside of null eigenspectrum.
 
-        \item[12/06/2020] Added a good bit to the Eight Probe results. Attended both ND forum, and CNU meeting. Think about Eight Probe discussion.
+	\item[12/06/2020] Added a good bit to the Eight Probe results. Attended both ND forum, and CNU meeting. Think about Eight Probe discussion.
 
-        \item[13/06/2020] Added a little bit to the Eight Probe results. Updated some images to make them thesis friendly.
+	\item[13/06/2020] Added a little bit to the Eight Probe results. Updated some images to make them thesis friendly.
+
+	\item[14/06/2020] Added more to the Eight Probe results. Edited accommodation application for the University of Tokyo. Accepted offer of TA job for Neuromatch. Must email Cian in the morning, ask for feeback. Tell him about the Neuromatch job.
 
 \end{description}
 \end{document}

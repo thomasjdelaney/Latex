@@ -1,7 +1,7 @@
 PWD /home/thomas/Latex/daily
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /home/thomas/.texlive2018/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /home/thomas/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT daily.tex
 OUTPUT daily.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
