@@ -1,9 +1,9 @@
 \begin{thebibliography}{9}
   \bibitem{berens}
-  Philipp Berens et al., 
-  \emph{Community-based benchmarking improves spike inference from two-photon calcium imaging data}. 
-  bioRXiv, 
-  https://doi.org/10.1101/177956, 
+  Philipp Berens et al.,
+  \emph{Community-based benchmarking improves spike inference from two-photon calcium imaging data}.
+  bioRXiv,
+  https://doi.org/10.1101/177956,
   (2017)
 
   \bibitem{maravall}
@@ -47,6 +47,17 @@
   Neuron 89,
   285-299,
   (2016)
+
+  \bibitem{paninski1}
+  Eftychios A. Pnevmatikakis, Josh Merel, Ari Pakman, Liam Paninski,
+  \emph{Bayesian spike inference from calcium imaging data}.
+  Conference Record - Asilomar Conference on Signals, Systems, and Computers,
+  (2013)
+
+  \bibitem{paninski2}
+  Eftychios A. Pnevmatikakis, Yuanjun Gao, Daniel Soudry, David Pfau, Clay Lacefield, Kira Poskanzer, Randy Bruno, Rafael Yuste, Liam Paninski,
+  \emph{A structured matrix factorization framework for large scale calcium imaging data analysis}.
+  (2014)  
 
   \bibitem{viterbi}
   G.D. Forney,
