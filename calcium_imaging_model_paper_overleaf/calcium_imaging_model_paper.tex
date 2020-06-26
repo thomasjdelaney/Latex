@@ -114,31 +114,30 @@ Researchers often pass the fluorescence time series through a spike inference to
 \end{figure}
 
 \subsection{Relative effects of various buffers to the fluorescence signal}
-One of the benefits of computational models over laboratory experiments is that we can observe all the variables in the simulation to gain insight into the system’s dynamics, which can be difficult to do in the lab. We plotted the concentrations of the various species over time for a version of the model fit to one data set, in response to the same train of spikes used for fitting (figure \ref{fig:concentrations}). Figure \ref{fig:concentration_dynamics_a} shows the absolute values of the species concentrations, summed. Consistent with experimental estimates \cite{maravall}, only a small fraction ($\sim 0.1\%$) of calcium is free and unbound to any buffer. Of the bound calcium, the vast majority, ($\sim 56\%$) is bound to the GCaMP indicator. The two types of endogenous buffer are bound to the remaining calcium ($\sim 44\%$). An influx of calcium from a single spike adds very little to the total calcium, in relative terms (red line in Figure 3a).
-\begin{figure}[h]
-  \centering
-  \begin{subfigure}{0.3\textwidth}
-    \includegraphics[width=\textwidth]{figures/concentration_dynamics.png}
+One of the benefits of computational models over laboratory experiments is that we can observe all the variables in the simulation to gain insight into the system’s dynamics, which can be difficult to do in the lab. We plotted the concentrations of the various species over time for a version of the model fit to one data set, in response to the same train of spikes used for fitting (figure \ref{fig:concentrations}). Figure \ref{fig:concentration_dynamics_a} shows the absolute values of the species concentrations, summed. Consistent with experimental estimates \cite{maravall}, only a small fraction ($\sim 0.1\%$) of calcium is free and unbound to any buffer. Of the bound calcium, the vast majority, ($\sim 96\%$) is bound to the GCaMP indicator. The two types of endogenous buffer are bound to the remaining calcium ($\sim 4\%$). An influx of calcium from a single spike adds very little to the total calcium, in relative terms (red line in Figure 3a).
+\begin{figure}[p]
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/concentration_dynamics_18.png}
     \caption{}
     \label{fig:concentration_dynamics_a}
   \end{subfigure}
-  \begin{subfigure}{0.3\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=\textwidth]{figures/concentration_dynamics_18_zoomed_BCa_star.png}
     \caption{}
   \end{subfigure}
-  \begin{subfigure}{0.3\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=\textwidth]{figures/concentration_dynamics_18_zoomed_BCa.png}
     \caption{}
   \end{subfigure}
-  \begin{subfigure}{0.3\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=\textwidth]{figures/concentration_dynamics_18_zoomed_ImCa.png}
     \caption{}
   \end{subfigure}
-  \begin{subfigure}{0.3\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=\textwidth]{figures/concentration_dynamics_18_zoomed_ECa.png}
     \caption{}
   \end{subfigure}
-  \begin{subfigure}{0.3\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \includegraphics[width=\textwidth]{figures/concentration_dynamics_18_zoomed_Ca.png}
     \caption{}
   \end{subfigure}
@@ -146,9 +145,11 @@ One of the benefits of computational models over laboratory experiments is that 
   \label{fig:concentrations}
 \end{figure}
 
-When calcium entered the model neuron it was rapidly buffered \cite{bartol}. However the relative fractions of which buffer molecules bound to the influxed calcium was dynamic, and changed over time (New Figure 3X (Insert more commentary on this once the new figure is added)). Figure \ref{fig:concentrations} (b-f) shows the time course of the various species over time in response to a calcium influx event from a single action potential. Crucially, the indicator $BCa$ competed with the endogenous buffers $ImCa$ and $ECa$ – all three bind calcium on similar timescales. This implies that the timecourse and amplitude of the $BCa$ variable will also depend on the binding rates and availabilities of the endogenous buffers. For example if we decreased the concentration of an endogenous buffer, we might expect both a faster rise time and greater peak amplitude of the $BCa$ signal in response to a calcium influx event. The slowest component of the decay had a similar time constant for $BCa$, $ImCa$ and $ECa$, which in turn matched the $Ca$ extrusion time constant in our model (add approximate decay time constant, ~2s). This implies that the buffers and the indicator had reached a dynamic equilibrium and were jointly tracking the free calcium concentration as calcium was slowly extruded from the cell.
+% (New Figure 3X (Insert more commentary on this once the new figure is added))
 
-Interestingly the excited bound calcium species ($BCa*$) showed a qualitatively different timecourse in response to a calcium influx event...
+When calcium entered the model neuron it was rapidly buffered \cite{bartol}. However the relative fractions of which buffer molecules bound to the influxed calcium was dynamic, and changed over time . Figure \ref{fig:concentrations} (b-f) shows the time course of the various species over time in response to a calcium influx event from a single action potential. Crucially, the indicator $[BCa]$ competed with the endogenous buffers $[ImCa]$ and $[ECa]$ – all three bind calcium on similar timescales. This implies that the timecourse and amplitude of the $[BCa]$ variable will also depend on the binding rates and availabilities of the endogenous buffers. For example if we decreased the concentration of an endogenous buffer, we might expect both a faster rise time and greater peak amplitude of the $[BCa]$ signal in response to a calcium influx event. The slowest component of the decay had a similar time constant for $[BCa]$, $[ImCa]$ and $[ECa]$, which in turn matched the $[Ca]$ extrusion time constant in our model ($\sim 6.29 \times 10^{-22}$Ms$^{-1}$). This implies that the buffers and the indicator had reached a dynamic equilibrium and were jointly tracking the free calcium concentration as calcium was slowly extruded from the cell.
+
+Interestingly the excited bound calcium species ($[BCa^*]$) showed a qualitatively different timecourse in response to a calcium influx event. This concentration is subject to the added `excitation and release' dynamic, where a certain proportion of the concentration absorbs the energy from an incoming photon and goes into an `excited state' at each time step. A certain proportion of the concentration releases a photon and reverts to a `relaxed state' at each timestep also. This means that the excited bound calcium lags behind the bound calcium trace. We could think of the excited bound calcium trace as a low pass filtered version of the bound calcium trace.
 
 \subsection{Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}
 The above results imply that the fluorescence signal depends on the relative properties of both GCaMP and the endogenous buffers. We next used the model to directly ask how sensitive spike inference was to these components. We focused on three key parameters that likely vary from cell to cell and experiment to experiment: GCaMP binding kinetics, GCaMP concentration, and endogenous buffer concentration.
