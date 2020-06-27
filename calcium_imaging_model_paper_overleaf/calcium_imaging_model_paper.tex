@@ -156,18 +156,18 @@ The above results imply that the fluorescence signal depends on the relative pro
 
 Several variants of GCaMP itself have been made that differ in calcium binding kinetics, baseline fluorescence, fluorescence efficiency, and other factors. For example, GCaMP6f has a decay time constant of $\sim 1$s, while GCaMP6s has a decay time constant of $\sim 2$s \cite{chen}. Here we asked how these differences in binding kinetics affect spike inference. We jointly varied the calcium binding and unbinding rates of the indicator by the same factor over a range from $100$-fold slower to $100$-fold faster from the fitted values, and simulated the fluorescence response for each of the parameter settings in response to the same spike trains as before (figure \ref{fig:rates_perturbed}). Notably this manipulation does not affect the indicators affinity, and therefore would not affect steady-state responses to prolonged changes in calcium. Instead it is likely to affect its sensitivity to the spike train dynamics. We computed two summary measures from the simulated fluorescence traces: the signal-to-noise ratio for a single spike (Methods), and the accuracy of spike inference for each of the spike trains. (The text that was here before needs to be rewritten, the figures were not swapped.)
 
-\begin{figure}[h]
+\begin{figure}[p]
 \centering
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.8\textwidth}
         \includegraphics[width=\linewidth]{figures/b_i_f_i_perturbed_fluorescence_18_paper.png}
         \caption{}
     \end{subfigure}
     \newline
-    \begin{subfigure}{0.25\textwidth}
+    \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\linewidth]{figures/b_i_f_i_perturbed_snr.png}
         \caption{}
     \end{subfigure}
-    \begin{subfigure}{0.25\textwidth}
+    \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\linewidth]{figures/b_i_f_i_perturbed_oasis_tp_paper.png}
         \caption{}
     \end{subfigure}
@@ -177,18 +177,18 @@ Several variants of GCaMP itself have been made that differ in calcium binding k
 
 Second, the overall concentrations of GCaMP often varies from cell to cell. For example different cells, even of the same type in the same tissue, can express different levels of GCaMP (citation). Also, GCaMP is often used for longitudinal experiments where the same cells are re-imaged across multiple days or weeks. However since GCaMP expression typically ramps up over time (citation), the accuracy of spike inference may differ across multiple longitudinal recordings in the same cell. We addressed this by varying the concentration of calcium indicator in the model, simulating spike trains and measuring signal-to-noise ratio and spike inference accuracy on the resulting fluorescence traces. (The text that was here before needs to be rewritten, the figures were not swapped.)
 
-\begin{figure}[h]
+\begin{figure}[p]
 \centering
-    \begin{subfigure}{0.5\textwidth}
+    \begin{subfigure}{0.8\textwidth}
         \includegraphics[width=\linewidth]{figures/indicator_perturbed_fluorescence_18_paper.png}
         \caption{}
     \end{subfigure}
     \newline
-    \begin{subfigure}{0.25\textwidth}
+    \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\linewidth]{figures/indicator_perturbed_snr.png}
         \caption{}
     \end{subfigure}
-    \begin{subfigure}{0.25\textwidth}
+    \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=\linewidth]{figures/indictor_perturbed_oasis_first_paper.png}
         \caption{}
     \end{subfigure}
@@ -198,7 +198,7 @@ Second, the overall concentrations of GCaMP often varies from cell to cell. For 
 
 Third, the concentration and types of endogenous calcium buffers also vary from neuron to neuron, both within and between cell types (REF calbindin hippocampal paper, MORE). Since the calcium buffer capacity of neurons is high, around (X-Y) (REF numbers for pyramidal and purkinje cells), these endogenous buffers may compete with GCaMP for binding to calcium, and variations in endogenous buffer concentration may affect GCaMP signal and therefore spike inference. To address this we varied the concentration of the endogenous buffer in the model neuron over five orders of magnitude from $0.8$ to $8000$ $\mu$M, simulated calcium fluorescence traces in response to the same set of spike trains, and performed spike inference on the resulting fluorescence time series. Increasing the endogenous buffer concentration had a substantial effect on the GCaMP fluorescence signal, both decreasing its amplitude and slowing its kinetics (figure \ref{fig:endogeneous_perturbed}(a)). This corresponded with a decrease in both single-spike signal-to-noise ratio (figure \ref{fig:endogeneous_perturbed}(b)) and spike inference accuracy (figure \ref{fig:endogeneous_perturbed}(c)). In contrast, decreasing endogenous buffer capacity from the fitted value had little effect on either the GCaMP signal or spike inference (figure \ref{fig:endogeneous_perturbed}).
 
-\begin{figure}[h]
+\begin{figure}[p]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/Figure_immobile.png}
 \caption{(a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer.	(b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR.	(c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
