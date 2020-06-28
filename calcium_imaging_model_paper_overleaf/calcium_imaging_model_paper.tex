@@ -154,54 +154,72 @@ Interestingly the excited bound calcium species ($[BCa^*]$) showed a qualitative
 \subsection{Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}
 The above results imply that the fluorescence signal depends on the relative properties of both GCaMP and the endogenous buffers. We next used the model to directly ask how sensitive spike inference was to these components. We focused on three key parameters that likely vary from cell to cell and experiment to experiment: GCaMP binding kinetics, GCaMP concentration, and endogenous buffer concentration.
 
-Several variants of GCaMP itself have been made that differ in calcium binding kinetics, baseline fluorescence, fluorescence efficiency, and other factors. For example, GCaMP6f has a decay time constant of $\sim 1$s, while GCaMP6s has a decay time constant of $\sim 2$s \cite{chen}. Here we asked how these differences in binding kinetics affect spike inference. We jointly varied the calcium binding and unbinding rates of the indicator by the same factor over a range from $100$-fold slower to $100$-fold faster from the fitted values, and simulated the fluorescence response for each of the parameter settings in response to the same spike trains as before (figure \ref{fig:rates_perturbed}). Notably this manipulation does not affect the indicators affinity, and therefore would not affect steady-state responses to prolonged changes in calcium. Instead it is likely to affect its sensitivity to the spike train dynamics. We computed two summary measures from the simulated fluorescence traces: the signal-to-noise ratio for a single spike (Methods), and the accuracy of spike inference for each of the spike trains. (The text that was here before needs to be rewritten, the figures were not swapped.)
+Several variants of GCaMP itself have been made that differ in calcium binding kinetics, baseline fluorescence, fluorescence efficiency, and other factors. For example, GCaMP6f has a decay time constant of $\sim 1$s, while GCaMP6s has a decay time constant of $\sim 2$s \cite{chen}. Here we asked how these differences in binding kinetics affect spike inference. We jointly varied the calcium binding and unbinding rates of the indicator by the same factor over a range from $100$-fold slower to $100$-fold faster from the fitted values, and simulated the fluorescence response for each of the parameter settings in response to the same spike trains as before (figure \ref{fig:rates_perturbed}). Notably this manipulation does not affect the indicators affinity, and therefore would not affect steady-state responses to prolonged changes in calcium. Instead it is likely to affect its sensitivity to the spike train dynamics. We computed two summary measures from the simulated fluorescence traces: the signal-to-noise ratio for a single spike (Methods, section \ref{sec:snr}), and the accuracy of spike inference for each of the spike trains. We observed a reduction in the signal-to-noise ratio and the spike inference quality when we set the binding and unbinding rates were set to one hundreth of their fitted values, and to one tenth of their fitted values. When we increased the value of both binding rates, we observed no change in these measurements. The reduction in both rates lead to smaller increases in fluorescence in response to an action potential and a longer decay time (figure \ref{fig:rates_perturbed_fluorescence}), this caused the reduction in signal-to-noise ratio. As both rates were increased, the change in $\Delta F/F_0$ in response to an action potential increased and the decay time decreased slightly, but the fluorescence trace created by these values was very similar to the trace created by the fitted values.
 
 \begin{figure}[p]
 \centering
-    \begin{subfigure}{0.8\textwidth}
+    \begin{subfigure}{0.9\textwidth}
         \includegraphics[width=\linewidth]{figures/b_i_f_i_perturbed_fluorescence_18_paper.png}
         \caption{}
+        \label{fig:rates_perturbed_fluorescence}
     \end{subfigure}
     \newline
-    \begin{subfigure}{0.4\textwidth}
+    \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\linewidth]{figures/b_i_f_i_perturbed_snr.png}
         \caption{}
+        \label{fig:rates_perturbed_snr}
     \end{subfigure}
-    \begin{subfigure}{0.4\textwidth}
+    \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\linewidth]{figures/b_i_f_i_perturbed_oasis_tp_paper.png}
         \caption{}
+        \label{fig:rates_perturbed_inference}
     \end{subfigure}
     \caption{(a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The SNRs for the two pairs with values lower than the experimental value are lower than the experimental pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
     \label{fig:rates_perturbed}
 \end{figure}
 
-Second, the overall concentrations of GCaMP often varies from cell to cell. For example different cells, even of the same type in the same tissue, can express different levels of GCaMP (citation). Also, GCaMP is often used for longitudinal experiments where the same cells are re-imaged across multiple days or weeks. However since GCaMP expression typically ramps up over time (citation), the accuracy of spike inference may differ across multiple longitudinal recordings in the same cell. We addressed this by varying the concentration of calcium indicator in the model, simulating spike trains and measuring signal-to-noise ratio and spike inference accuracy on the resulting fluorescence traces. (The text that was here before needs to be rewritten, the figures were not swapped.)
-
 \begin{figure}[p]
-\centering
-    \begin{subfigure}{0.8\textwidth}
+    \centering
+    \begin{subfigure}{0.9\textwidth}
         \includegraphics[width=\linewidth]{figures/indicator_perturbed_fluorescence_18_paper.png}
         \caption{}
+        \label{fig:indicator_perturbed_fluorescence}
     \end{subfigure}
     \newline
-    \begin{subfigure}{0.4\textwidth}
+    \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\linewidth]{figures/indicator_perturbed_snr.png}
         \caption{}
+        \label{fig:indicator_perturbed_snr}
     \end{subfigure}
-    \begin{subfigure}{0.4\textwidth}
+    \begin{subfigure}{0.45\textwidth}
         \includegraphics[width=\linewidth]{figures/indictor_perturbed_oasis_first_paper.png}
         \caption{}
+        \label{fig:indicator_perturbed_inference}
     \end{subfigure}
     \caption{(a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.}
     \label{fig:indicator_perturbed}
 \end{figure}
 
+Second, the overall concentrations of GCaMP often varies from cell to cell. For example different cells, even of the same type in the same tissue, can express different levels of GCaMP (citation). Also, GCaMP is often used for longitudinal experiments where the same cells are re-imaged across multiple days or weeks. However since GCaMP expression typically ramps up over time \cite{chen}, the accuracy of spike inference may differ across multiple longitudinal recordings in the same cell. We addressed this by varying the concentration of calcium indicator in the model, simulating spike trains and measuring signal-to-noise ratio and spike inference accuracy on the resulting fluorescence traces. Both increasing and decreasing the concentration of the indicator had effects on the fluorescence trace, signal-to-noise ratio, and spike inference. The signal-to-noise ratio and spike inference quality decreased with decreased indicator concentration, and both showed a decrease when the indicator concentration was increased to $100$ times it's fitted value (figure \ref{fig:indicator_perturbed}). The signal-to-noise ratio showed an increase when the indicator concentration was increased to $10$ times it's fitted value, but there was no corresponding change in the spike inference quality. The decrease in indicator concentration caused a reduction in the increase in $\Delta F/F_0$ in response to an action potential, and an increase in the decay time of this increase (figure \ref{fig:indicator_perturbed_fluorescence}). The increase in indicator concentration had the opposite effect, it casued an increase in the change in $\Delta F/F_0$ in response to an action potential, and a decrease in the decay time.
+
 Third, the concentration and types of endogenous calcium buffers also vary from neuron to neuron, both within and between cell types (REF calbindin hippocampal paper, MORE). Since the calcium buffer capacity of neurons is high, around (X-Y) (REF numbers for pyramidal and purkinje cells), these endogenous buffers may compete with GCaMP for binding to calcium, and variations in endogenous buffer concentration may affect GCaMP signal and therefore spike inference. To address this we varied the concentration of the endogenous buffer in the model neuron over five orders of magnitude from $0.8$ to $8000$ $\mu$M, simulated calcium fluorescence traces in response to the same set of spike trains, and performed spike inference on the resulting fluorescence time series. Increasing the endogenous buffer concentration had a substantial effect on the GCaMP fluorescence signal, both decreasing its amplitude and slowing its kinetics (figure \ref{fig:endogeneous_perturbed}(a)). This corresponded with a decrease in both single-spike signal-to-noise ratio (figure \ref{fig:endogeneous_perturbed}(b)) and spike inference accuracy (figure \ref{fig:endogeneous_perturbed}(c)). In contrast, decreasing endogenous buffer capacity from the fitted value had little effect on either the GCaMP signal or spike inference (figure \ref{fig:endogeneous_perturbed}).
 
 \begin{figure}[p]
-\centering
-\includegraphics[width=0.7\linewidth]{figures/Figure_immobile.png}
-\caption{(a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer.	(b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR.	(c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
+    \centering
+    \begin{subfigure}{0.9\textwidth}
+        \includegraphics[width=\linewidth]{figures/immobile_perturbed_fluorescence_18_paper.png}
+        \caption{}
+    \end{subfigure}
+    \newline
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/immobile_perturbed_snr.png}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/immobile_perturbed_oasis_first_paper.png}
+        \caption{}
+    \end{subfigure}
+    \caption{(a) An example trace for each of the five perturbed values for the concentration of immobile endogeneous buffer.	(b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR.	(c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
     \label{fig:endogeneous_perturbed}
 \end{figure}
 
@@ -209,23 +227,17 @@ Third, the concentration and types of endogenous calcium buffers also vary from 
 The fluorescence signal recorded from neurons using calcium indicators is typically much slower than changes in membrane potential for two reasons: first, because the calcium and the indicator have slow binding and unbinding kinetics, the signal is a low-pass filtered version of the membrane potential. Second, neuronal two-photon imaging experiments are often performed in scanning mode, which limits their frame rate to $\sim 10$Hz or slower. This implies that multiple spike events that occur close in time might be difficult to resolve from a calcium indicator time series. Many cells, especially several types of inhibitory interneurons, fire tonically at rates higher than $10$Hz. We used the model to test whether spike inference accuracy depended on the neuron’s firing frequency by driving the cell with spike trains sampled from Poisson processes of varying frequency. Surprisingly, spike inference accuracy increased with increasing firing rate, for up to $10$Hz Poisson spike trains (figure \ref{fig:frequency_comparison_measures}(left)). We also plotted the average $\Delta F$ as a function of stimulation firing rate. We found that it increased monotonically as a function of firing rate (figure \ref{fig:frequency_comparison_measures}(right)).
 
 \begin{figure}[h]
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_1_Hz_1_3.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_5_Hz_1_2.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_10_Hz_1_1.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_1_Hz_2_6.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_5_Hz_2_5.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_10_Hz_2_4.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_1_Hz_3_9.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_5_Hz_3_8.png}
-  \includegraphics[width=0.329\linewidth]{figures/freq_compare_images_10_Hz_3_7.png}
-  \caption{\textbf{Simulating fluorescence traces at different firing rates } Three example modelled traces created using simulated spike trains with a mean firing rate of $1$Hz (left column), $5$Hz (middle column), and $10$Hz (right column). Note the difference in amplitude with different mean firing rates.}
+  \includegraphics[width=0.329\linewidth]{figures/paper_fig_1_Hz_1_3.png}
+  \includegraphics[width=0.329\linewidth]{figures/paper_fig_5_Hz_1_2.png}
+  \includegraphics[width=0.329\linewidth]{figures/paper_fig_10_Hz_1_1.png}
+  \caption{\textbf{Simulating fluorescence traces at different firing rates } Example modelled traces created using simulated spike trains with a mean firing rate of $1$Hz (left column), $5$Hz (middle column), and $10$Hz (right column). Note the difference in amplitude with different mean firing rates.}
   \label{fig:frequency_comparison_traces}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-  \includegraphics[width=0.4\linewidth]{figures/simulated_oasis_tp_paper.png}
-  \includegraphics[width=0.4\linewidth]{figures/mean_fluorescence_comparison.png}
+  \includegraphics[width=0.45\linewidth]{figures/simulated_oasis_tp_paper.png}
+  \includegraphics[width=0.45\linewidth]{figures/mean_fluorescence_comparison.png}
   \caption{\textbf{Inference quality and $\Delta F/F_0$ vs Firing rate} (left) The spike inference true positive rate when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.}
   \label{fig:frequency_comparison_measures}
 \end{figure}
@@ -385,7 +397,7 @@ In order to measure the sensitivity of spike inference to changes in a given mod
 
 This analysis was performed firstly without any optimisation of the free parameters for use with the perturbed parameters. Then the analysis was performed after the optimised parameters for each perturbed value were calculated.
 
-\subsection{Signal-to-noise ratio}
+\subsection{Signal-to-noise ratio}\label{sec:snr}
 To assess the effect of perturbation on the modelled traces, we measured and compared the signal to noise ratio (SNR) on each of the modelled traces. We calculated the SNR as the peak change in fluorescence divided by the standard deviation of the baseline fluctuation of the fluorescence trace \cite{tada}. We measured these values by running the model on a spike train consisting a long period of inactivity followed by one action potential. We ran the model on this spike train one hundred times. We then measured the mean change in fluorescence and standard deviation of baseline activity across the one hundred modelled fluorescence traces, and calculated the SNR.
 
 \subsection{Data sources}

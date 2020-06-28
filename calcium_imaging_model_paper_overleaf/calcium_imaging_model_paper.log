@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  27 JUN 2020 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  28 JUN 2020 21:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -539,128 +539,107 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 119--144
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 144.
 [6] [7 <./figures/concentration_dynamics_18.png> <./figures/concentration_dynamics_18_zoomed_BCa_star.png> <./figures/concentration_dynamics_18_zoomed_BCa.png> <./figures/concentration_dynamics_18_zoomed_ImCa.png> <./figures/concentration_dynamics_18_zoomed_ECa.png> <./figures/concentration_dynamics_18_zoomed_Ca.png>]
-<figures/b_i_f_i_perturbed_fluorescence_18_paper.png, id=180, 578.16pt x 361.35pt>
+<figures/b_i_f_i_perturbed_fluorescence_18_paper.png, id=182, 578.16pt x 361.35pt>
 File: figures/b_i_f_i_perturbed_fluorescence_18_paper.png Graphic file (type png)
 <use figures/b_i_f_i_perturbed_fluorescence_18_paper.png>
 Package pdftex.def Info: figures/b_i_f_i_perturbed_fluorescence_18_paper.png  used on input line 162.
-(pdftex.def)             Requested size: 386.95897pt x 241.84961pt.
-<figures/b_i_f_i_perturbed_snr.png, id=181, 361.35pt x 289.08pt>
+(pdftex.def)             Requested size: 435.32422pt x 272.07599pt.
+<figures/b_i_f_i_perturbed_snr.png, id=183, 361.35pt x 289.08pt>
 File: figures/b_i_f_i_perturbed_snr.png Graphic file (type png)
 <use figures/b_i_f_i_perturbed_snr.png>
-Package pdftex.def Info: figures/b_i_f_i_perturbed_snr.png  used on input line 167.
-(pdftex.def)             Requested size: 193.47578pt x 154.78198pt.
-<figures/b_i_f_i_perturbed_oasis_tp_paper.png, id=182, 361.35pt x 289.08pt>
+Package pdftex.def Info: figures/b_i_f_i_perturbed_snr.png  used on input line 168.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/b_i_f_i_perturbed_oasis_tp_paper.png, id=184, 361.35pt x 289.08pt>
 File: figures/b_i_f_i_perturbed_oasis_tp_paper.png Graphic file (type png)
 <use figures/b_i_f_i_perturbed_oasis_tp_paper.png>
-Package pdftex.def Info: figures/b_i_f_i_perturbed_oasis_tp_paper.png  used on input line 171.
-(pdftex.def)             Requested size: 193.47578pt x 154.78198pt.
-<figures/indicator_perturbed_fluorescence_18_paper.png, id=183, 578.16pt x 361.35pt>
+Package pdftex.def Info: figures/b_i_f_i_perturbed_oasis_tp_paper.png  used on input line 173.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/indicator_perturbed_fluorescence_18_paper.png, id=185, 578.16pt x 361.35pt>
 File: figures/indicator_perturbed_fluorescence_18_paper.png Graphic file (type png)
 <use figures/indicator_perturbed_fluorescence_18_paper.png>
-Package pdftex.def Info: figures/indicator_perturbed_fluorescence_18_paper.png  used on input line 183.
-(pdftex.def)             Requested size: 386.95897pt x 241.84961pt.
-<figures/indicator_perturbed_snr.png, id=184, 361.35pt x 289.08pt>
+Package pdftex.def Info: figures/indicator_perturbed_fluorescence_18_paper.png  used on input line 184.
+(pdftex.def)             Requested size: 435.32422pt x 272.07599pt.
+<figures/indicator_perturbed_snr.png, id=186, 361.35pt x 289.08pt>
 File: figures/indicator_perturbed_snr.png Graphic file (type png)
 <use figures/indicator_perturbed_snr.png>
-Package pdftex.def Info: figures/indicator_perturbed_snr.png  used on input line 188.
-(pdftex.def)             Requested size: 193.47578pt x 154.78198pt.
-<figures/indictor_perturbed_oasis_first_paper.png, id=185, 361.35pt x 289.08pt>
+Package pdftex.def Info: figures/indicator_perturbed_snr.png  used on input line 190.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/indictor_perturbed_oasis_first_paper.png, id=187, 361.35pt x 289.08pt>
 File: figures/indictor_perturbed_oasis_first_paper.png Graphic file (type png)
 <use figures/indictor_perturbed_oasis_first_paper.png>
-Package pdftex.def Info: figures/indictor_perturbed_oasis_first_paper.png  used on input line 192.
-(pdftex.def)             Requested size: 193.47578pt x 154.78198pt.
+Package pdftex.def Info: figures/indictor_perturbed_oasis_first_paper.png  used on input line 195.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
  [8] [9 <./figures/b_i_f_i_perturbed_fluorescence_18_paper.png> <./figures/b_i_f_i_perturbed_snr.png> <./figures/b_i_f_i_perturbed_oasis_tp_paper.png>] [10 <./figures/indicator_perturbed_fluorescence_18_paper.png> <./figures/indicator_perturbed_snr.png> <./figures/indictor_perturbed_oasis_first_paper.png>]
-<figures/Figure_immobile.png, id=212, 305.7021pt x 289.8027pt>
-File: figures/Figure_immobile.png Graphic file (type png)
-<use figures/Figure_immobile.png>
-Package pdftex.def Info: figures/Figure_immobile.png  used on input line 203.
-(pdftex.def)             Requested size: 338.58632pt x 320.99054pt.
-<figures/freq_compare_images_1_Hz_1_3.png, id=215, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_1_Hz_1_3.png Graphic file (type png)
-<use figures/freq_compare_images_1_Hz_1_3.png>
-Package pdftex.def Info: figures/freq_compare_images_1_Hz_1_3.png  used on input line 212.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_5_Hz_1_2.png, id=216, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_5_Hz_1_2.png Graphic file (type png)
-<use figures/freq_compare_images_5_Hz_1_2.png>
-Package pdftex.def Info: figures/freq_compare_images_5_Hz_1_2.png  used on input line 213.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_10_Hz_1_1.png, id=217, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_10_Hz_1_1.png Graphic file (type png)
-<use figures/freq_compare_images_10_Hz_1_1.png>
-Package pdftex.def Info: figures/freq_compare_images_10_Hz_1_1.png  used on input line 214.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_1_Hz_2_6.png, id=218, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_1_Hz_2_6.png Graphic file (type png)
-<use figures/freq_compare_images_1_Hz_2_6.png>
-Package pdftex.def Info: figures/freq_compare_images_1_Hz_2_6.png  used on input line 215.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_5_Hz_2_5.png, id=219, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_5_Hz_2_5.png Graphic file (type png)
-<use figures/freq_compare_images_5_Hz_2_5.png>
-Package pdftex.def Info: figures/freq_compare_images_5_Hz_2_5.png  used on input line 216.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_10_Hz_2_4.png, id=220, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_10_Hz_2_4.png Graphic file (type png)
-<use figures/freq_compare_images_10_Hz_2_4.png>
-Package pdftex.def Info: figures/freq_compare_images_10_Hz_2_4.png  used on input line 217.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_1_Hz_3_9.png, id=221, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_1_Hz_3_9.png Graphic file (type png)
-<use figures/freq_compare_images_1_Hz_3_9.png>
-Package pdftex.def Info: figures/freq_compare_images_1_Hz_3_9.png  used on input line 218.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_5_Hz_3_8.png, id=222, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_5_Hz_3_8.png Graphic file (type png)
-<use figures/freq_compare_images_5_Hz_3_8.png>
-Package pdftex.def Info: figures/freq_compare_images_5_Hz_3_8.png  used on input line 219.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
-<figures/freq_compare_images_10_Hz_3_7.png, id=223, 325.215pt x 278.2395pt>
-File: figures/freq_compare_images_10_Hz_3_7.png Graphic file (type png)
-<use figures/freq_compare_images_10_Hz_3_7.png>
-Package pdftex.def Info: figures/freq_compare_images_10_Hz_3_7.png  used on input line 220.
-(pdftex.def)             Requested size: 159.13373pt x 136.15173pt.
+<figures/immobile_perturbed_fluorescence_18_paper.png, id=216, 578.16pt x 361.35pt>
+File: figures/immobile_perturbed_fluorescence_18_paper.png Graphic file (type png)
+<use figures/immobile_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/immobile_perturbed_fluorescence_18_paper.png  used on input line 210.
+(pdftex.def)             Requested size: 435.32422pt x 272.07599pt.
+<figures/immobile_perturbed_snr.png, id=217, 361.35pt x 289.08pt>
+File: figures/immobile_perturbed_snr.png Graphic file (type png)
+<use figures/immobile_perturbed_snr.png>
+Package pdftex.def Info: figures/immobile_perturbed_snr.png  used on input line 215.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/immobile_perturbed_oasis_first_paper.png, id=218, 361.35pt x 289.08pt>
+File: figures/immobile_perturbed_oasis_first_paper.png Graphic file (type png)
+<use figures/immobile_perturbed_oasis_first_paper.png>
+Package pdftex.def Info: figures/immobile_perturbed_oasis_first_paper.png  used on input line 219.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/paper_fig_1_Hz_1_3.png, id=221, 289.08pt x 361.35pt>
+File: figures/paper_fig_1_Hz_1_3.png Graphic file (type png)
+<use figures/paper_fig_1_Hz_1_3.png>
+Package pdftex.def Info: figures/paper_fig_1_Hz_1_3.png  used on input line 230.
+(pdftex.def)             Requested size: 159.13373pt x 198.91403pt.
+<figures/paper_fig_5_Hz_1_2.png, id=222, 289.08pt x 361.35pt>
+File: figures/paper_fig_5_Hz_1_2.png Graphic file (type png)
+<use figures/paper_fig_5_Hz_1_2.png>
+Package pdftex.def Info: figures/paper_fig_5_Hz_1_2.png  used on input line 231.
+(pdftex.def)             Requested size: 159.13373pt x 198.91403pt.
+<figures/paper_fig_10_Hz_1_1.png, id=223, 289.08pt x 361.35pt>
+File: figures/paper_fig_10_Hz_1_1.png Graphic file (type png)
+<use figures/paper_fig_10_Hz_1_1.png>
+Package pdftex.def Info: figures/paper_fig_10_Hz_1_1.png  used on input line 232.
+(pdftex.def)             Requested size: 159.13373pt x 198.91403pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/simulated_oasis_tp_paper.png, id=224, 325.215pt x 278.2395pt>
+<figures/simulated_oasis_tp_paper.png, id=224, 361.35pt x 289.08pt>
 File: figures/simulated_oasis_tp_paper.png Graphic file (type png)
 <use figures/simulated_oasis_tp_paper.png>
-Package pdftex.def Info: figures/simulated_oasis_tp_paper.png  used on input line 227.
-(pdftex.def)             Requested size: 193.47578pt x 165.5312pt.
-<figures/mean_fluorescence_comparison.png, id=225, 325.215pt x 278.2395pt>
+Package pdftex.def Info: figures/simulated_oasis_tp_paper.png  used on input line 239.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/mean_fluorescence_comparison.png, id=225, 289.08pt x 216.81pt>
 File: figures/mean_fluorescence_comparison.png Graphic file (type png)
 <use figures/mean_fluorescence_comparison.png>
-Package pdftex.def Info: figures/mean_fluorescence_comparison.png  used on input line 228.
-(pdftex.def)             Requested size: 193.47578pt x 165.5312pt.
+Package pdftex.def Info: figures/mean_fluorescence_comparison.png  used on input line 240.
+(pdftex.def)             Requested size: 217.66211pt x 163.24557pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12 <./figures/Figure_immobile.png>] [13 <./figures/freq_compare_images_1_Hz_1_3.png> <./figures/freq_compare_images_5_Hz_1_2.png> <./figures/freq_compare_images_10_Hz_1_1.png> <./figures/freq_compare_images_1_Hz_2_6.png> <./figures/freq_compare_images_5_Hz_2_5.png> <./figures/freq_compare_images_10_Hz_2_4.png> <./figures/freq_compare_images_1_Hz_3_9.png> <./figures/freq_compare_images_5_Hz_3_8.png> <./figures/freq_compare_images_10_Hz_3_7.png>] [14 <./figures/simulated_oasis_tp_paper.png> <./figures/mean_fluorescence_comparison.png>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 256.
+[11] [12 <./figures/immobile_perturbed_fluorescence_18_paper.png> <./figures/immobile_perturbed_snr.png> <./figures/immobile_perturbed_oasis_first_paper.png>] [13 <./figures/paper_fig_1_Hz_1_3.png> <./figures/paper_fig_5_Hz_1_2.png> <./figures/paper_fig_10_Hz_1_1.png> <./figures/simulated_oasis_tp_paper.png> <./figures/mean_fluorescence_comparison.png>] [14]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 268.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 256.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 268.
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-) [15] [16] [17]
-Underfull \hbox (badness 2573) in paragraph at lines 340--340
+) [15] [16] [17] [18]
+Underfull \hbox (badness 2573) in paragraph at lines 352--352
 \OT1/ptm/m/n/12 im-mo-bile buffer within the cell
  []
 
-[18] [19]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 355.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 367.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+) [19]
 
-LaTeX Warning: Citation `forney' on page 20 undefined on input line 361.
+LaTeX Warning: Citation `forney' on page 20 undefined on input line 373.
 
 [20] [21]
-Overfull \hbox (36.04268pt too wide) in paragraph at lines 392--393
+Overfull \hbox (36.04268pt too wide) in paragraph at lines 404--405
 \OT1/ptm/m/n/10.95 All of the data used in this project was sourced from the `Spike Finder' project (spikefinder.codeneuro.org).
  []
 
@@ -672,34 +651,34 @@ Underfull \hbox (badness 3965) in paragraph at lines 77--81
  []
 
 [23])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
  [24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
  (./calcium_imaging_model_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
 Package rerunfilecheck Info: File `calcium_imaging_model_paper.out' has not changed.
 (rerunfilecheck)             Checksum: 6AE9ED3312FAFD8A872BE43688F9BAB8;1646.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 10905 strings out of 492667
- 163523 string characters out of 6134097
- 267357 words of memory out of 5000000
- 14530 multiletter control sequences out of 15000+600000
+ 10898 strings out of 492667
+ 163071 string characters out of 6134097
+ 265787 words of memory out of 5000000
+ 14527 multiletter control sequences out of 15000+600000
  35670 words of font info for 86 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  42i,21n,43p,2234b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on calcium_imaging_model_paper.pdf (24 pages, 2445167 bytes).
+Output written on calcium_imaging_model_paper.pdf (24 pages, 1978020 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
+ 426 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
  90 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 
