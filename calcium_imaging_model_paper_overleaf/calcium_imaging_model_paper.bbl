@@ -57,7 +57,7 @@
   \bibitem{paninski2}
   Eftychios A. Pnevmatikakis, Yuanjun Gao, Daniel Soudry, David Pfau, Clay Lacefield, Kira Poskanzer, Randy Bruno, Rafael Yuste, Liam Paninski,
   \emph{A structured matrix factorization framework for large scale calcium imaging data analysis}.
-  (2014)  
+  (2014)
 
   \bibitem{viterbi}
   G.D. Forney,
@@ -131,5 +131,53 @@
   \emph{Julia: A fast dynamic language for the technical computing}.
   arXiv:1209.5145,
   (2012)
+
+  \bibitem{dana}
+  Hod Dana, Tsai-Wen Chen, Amy Hu, Brenda C. Shields, Caiying Guo, Loren L. Looger, Douglas S. Kim, Karel Svoboda,
+  \emph{Thy1-GCaMP6 transgenic mice for neuronal population imaging in vivo}.
+  PLOS ONE 9: e108697,
+  (2014)
+
+  \bibitem{tian}
+  Lin Tian, S. Andrew Hires, Tianyi Mao, Daniel Huber, M. Eugenia Chiappe, Sreekanth H. Chalasani, Leopoldo Petreanu, Jasper Akerboom, Sean A. McKinney, Eric R. Schreiter, Cornelia I. Bargmann, Vivek Jayaraman, Karel Svoboda, Loren L. Looger,
+  \emph{Imaging neural activity in worms, flies and mice with improved GCaMP calcium indicators}.
+  Nature Methods 6,
+  875-881,
+  (2009)
+
+  \bibitem{neher}
+  Erwin Neher, George J. Augustine,
+  {Calcium gradients and buffers in bovine chromaffin cells}.
+  Journal of Physiology 450,
+  273-301,
+  (1992)
+
+  \bibitem{kaiser}
+  Katharina M. M. Kaiser, Y. Zilberter, B. Sakmann,
+  \emph{Back-propagating action potentials mediate calcium signalling in dendrites of bitufted interneurons in layer 2/3 of rat somatosensory cortex}.
+  Journal of Physiology 535,
+  17-31,
+  (2001)
+
+  \bibitem{lee}
+  Suk-Ho Lee, Christian Rosenmund, Beat Schwaller, Erwin Neher,
+  \emph{Differences in Ca$^{2+}$ buffering properties between excitatory and inhibitory hippocampal neurons from the rat}.
+  Journal of Physiology 525,
+  405—418,
+  (2000)
+
+  \bibitem{fierro}
+  Leonardo Fierro, Isabel Llano,
+  emph{High endogenous calcium buffering in Purkinje cells from rat cerebellar slices}.
+  Journal of Physiology 496,
+  617-625,
+  (1996)
+
+  \bibitem{greenberg}
+  David S Greenberg, Damian J Wallace, Kay-Michael Voit, Silvia Wuertenberger, Uwe Czubayko, Arne Monsees, Takashi Handa, Joshua T Vogelstein, Reinhard Seifert, Yvonne Groemping, Jason ND Kerr,
+  \emph{Accurate action potential inference from a calcium sensor protein through biophysical modelling}.
+  bioRxiv 479055,
+  doi: https://doi.org/10.1101/479055,
+  (2018)
 
 \end{thebibliography}

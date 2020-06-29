@@ -280,9 +280,9 @@ INPUT ./figures/paper_fig_5_Hz_1_2.png
 INPUT figures/paper_fig_10_Hz_1_1.png
 INPUT ./figures/paper_fig_10_Hz_1_1.png
 INPUT ./figures/paper_fig_10_Hz_1_1.png
-INPUT figures/simulated_oasis_tp_paper.png
-INPUT ./figures/simulated_oasis_tp_paper.png
-INPUT ./figures/simulated_oasis_tp_paper.png
+INPUT figures/simulated_oasis_accuracy_paper.png
+INPUT ./figures/simulated_oasis_accuracy_paper.png
+INPUT ./figures/simulated_oasis_accuracy_paper.png
 INPUT figures/mean_fluorescence_comparison.png
 INPUT ./figures/mean_fluorescence_comparison.png
 INPUT ./figures/mean_fluorescence_comparison.png
