@@ -1,0 +1,114 @@
+\begin{thebibliography}{9}
+
+  \bibitem{altham}
+    Patricia M. E. Altham,
+    \emph{Two Generalizations of the Binomial Distribution}.
+    Journal of the Royal Statistical Society 27,
+    162-167,
+    (1978)
+
+  \bibitem{churchland}
+    Mark M Churchland, Byron M Yu, John P Cunningham, Leo P Sugrue, Marlene R Cohen, Greg S Corrado, William T Newsome, Andrew M Clark, Paymon Hosseini, Benjamin B Scott, David C Bradley, Matthew A Smith, Adam Kohn, J Anthony Movshon, Katherine M Armstrong, Tirin Moore, Steve W Chang, Lawrence H Snyder, Stephen G Lisberger, Nicholas J Priebe, Ian M Finn, David Ferster, Stephen I Ryu, Gopal Santhanam, Maneesh Sahani, Krishna V Shenoy,
+    \emph{Stimulus onset quenches neural variability: A widespread cortical phenomenon.}
+    Nature Neuroscience 13,
+    369-378,
+    (2010)
+
+  \bibitem{cohen}
+    Marlene R Cohen, Adam Kohn,
+    \emph{Measuring and interpreting neuronal correlations}
+    Nature neuroscience 14,
+    811-819,
+    (2011)
+
+  \bibitem{daly}
+    Fraser Daly, Robert E. Gaunt,
+    \emph{The Conway-Maxwell-Poisson distribution: Distributional theory and approximation.}
+    ALEA 13,
+    635-658,
+    (2016)
+
+  \bibitem{flach}
+    Boris Flach,
+    \emph{A class of random fields on complete graphs with tractable partition function.}
+    IEEE Transactions on Pattern Analysis and Machine Intelligence 35,
+    2304-2306,
+    (2013)
+
+  \bibitem{ganmor}
+    Elad Ganmor, Ronen Segev, Elad Schneidman,
+    \emph{Sparse low-order interaction network underlies a highly correlated and learnable neural population code.}
+    PNAS 108,
+    9679-9684,
+    (2011)
+
+  \bibitem{jun}
+    James J. Jun, Nicholas A. Steinmetz, Joshua H. Siegle, Daniel J. Denman 5, Marius Bauza, Brian Barbarits, Albert K. Lee, Costas A. Anastassiou, Alexandru Andrei, Çağatay Aydın, Mladen Barbic, Timothy J. Blanche, Vincent Bonin, João Couto, Barundeb Dutta, Sergey L. Gratiy, Diego A. Gutnisky, Michael Häusser, Bill Karsh, Peter Ledochowitsch, Carolina Mora Lopez, Catalin Mitelut, Silke Musa, Michael Okun, Marius Pachitariu, Jan Putzeys, P. Dylan Rich, Cyrille Rossant, Wei-lung Sun, Karel Svoboda, Matteo Carandini, Kenneth D. Harris, Christof Koch, John O’Keefe, Timothy D. Harris,
+    \emph{Fully integrated silicon probes for high-density recording of neural activity.}
+    Nature 551,
+    232-236,
+    (2017)
+
+  \bibitem{kadane_2016}
+    Joseph B. Kadane,
+    \emph{Sums of Possibly Associated Bernoulli Variables: The Conway–Maxwell-Binomial Distribution.}
+    Bayesian Analysis 11,
+    403-420,
+    (2016)
+
+  \bibitem{kadane_2006}
+    Joseph B. Kadane, Galit Shmueli, Thomas P. Minka, Sharad Borle, Peter Boatwright,
+    \emph{Conjugate Analysis of the Conway-Maxwell-Poisson Distribution.}
+    Bayesian Analysis 1,
+    (2006)
+
+  \bibitem{odonnell}
+    Cian O'Donnell, J Tiago Gonçalves, Nick Whiteley, Carlos Portera-Cailliau, Terrence J Sejnowski,
+    \emph{The population tracking model: A simple, scalable statistical model for neural population data}.
+    Neural Computation 29,
+    50-93,
+    (2017)
+
+  \bibitem{prentice}
+    R. L. Prentice,
+    \emph{Binary Regression Using an Extended Beta-Binomial Distribution, With Discussion of Correlation Induced by Covariate Measurement Errors.}
+    Journal of American Statistical Association 81,
+    321-327,
+    (1986)
+
+  \bibitem{shmueli}
+    Galit Shmueli, Thomas P. Minka, Joseph B. Kadane, Sharad Borle, Peter Boatwright,
+    \emph{A useful distribution for fitting discrete data: revival of the Conway–Maxwell–Poisson distribution.}
+    Applied Statistics 54,
+    127-142,
+    (2005)
+
+  \bibitem{schneidman}
+    Elad Schneidman, Michael J. Berry II, Ronen Segev, William Bialek,
+    \emph{Weak pairwise correlations imply strongly correlated network states in a neural population}.
+    Nature 440,
+    1007-1012
+    (2006)
+
+  \bibitem{steinmetz}
+    Nick Steinmetz, Matteo Carandini, Kenneth D. Harris,
+    \emph{"Single Phase3" and "Dual Phase3" Neuropixels Datasets.}
+    figshare,
+    Dataset: https://doi.org/10.6084/m9.figshare.7666892.v2
+    (2019)
+
+  \bibitem{tkacik}
+    Ga\v{s}per Tka\v{c}ik, Olivier Marre, Dario Amodei, Elad Schneidman, William Bialek, Michael J. Berry II,
+    \emph{Searching for Collective Behavior in a Large Network of Sensory Neurons.}
+    PLOS computational biology 10,
+    1-23
+    (2014)
+
+  \bibitem{verducci}
+    Joseph S. Verducci,  Michael E. Mack, Morris H. DeGroot,
+    \emph{Estimating multiple rater agreement for a rare diagnosis.}
+    Journal of Multivariate Analysis 27,
+    512-535,
+    (1988)
+
+\end{thebibliography}

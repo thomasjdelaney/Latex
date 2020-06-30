@@ -1,11 +1,11 @@
 # Fdb version 3
-["bibtex calcium_imaging_model_paper"] 1593466562 "calcium_imaging_model_paper.aux" "calcium_imaging_model_paper.bbl" "calcium_imaging_model_paper" 1593466567
-  "calcium_imaging_model_paper.aux" 1593466567 16630 796f39ef9129a7bce543fdd0bb69fc99 "pdflatex"
+["bibtex calcium_imaging_model_paper"] 1593517074 "calcium_imaging_model_paper.aux" "calcium_imaging_model_paper.bbl" "calcium_imaging_model_paper" 1593517082
+  "calcium_imaging_model_paper.aux" 1593517082 16630 7be600aed87223dcf8fcfb9035b13aea "pdflatex"
   "calcium_imaging_model_paper.bbl.bib" 0 -1 0 ""
   (generated)
-  "calcium_imaging_model_paper.blg"
   "calcium_imaging_model_paper.bbl"
-["pdflatex"] 1593466562 "calcium_imaging_model_paper.tex" "calcium_imaging_model_paper.pdf" "calcium_imaging_model_paper" 1593466567
+  "calcium_imaging_model_paper.blg"
+["pdflatex"] 1593517074 "calcium_imaging_model_paper.tex" "calcium_imaging_model_paper.pdf" "calcium_imaging_model_paper" 1593517082
   "/home/thomas/.texlive2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1589722506 3704429 0303ff8f3ada1c5655ff4477b651b125 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1580927601 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -126,10 +126,10 @@
   "/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def" 1368571634 8036 21f7ac37aafb6cfeddbb196b8bfd6280 ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1580927610 35594 9aef19174c178978f61d14961262af5d ""
-  "calcium_imaging_model_paper.aux" 1593466567 16630 796f39ef9129a7bce543fdd0bb69fc99 "pdflatex"
+  "calcium_imaging_model_paper.aux" 1593517082 16630 7be600aed87223dcf8fcfb9035b13aea "pdflatex"
   "calcium_imaging_model_paper.bbl" 1593466483 6572 743164a826fb266913cf279be7f81a25 "bibtex calcium_imaging_model_paper"
-  "calcium_imaging_model_paper.out" 1593466567 1646 6ae9ed3312fafd8a872be43688f9bab8 "pdflatex"
-  "calcium_imaging_model_paper.tex" 1593466554 59482 e2dea66c150bba6e0b8ea09f5f7cf49d ""
+  "calcium_imaging_model_paper.out" 1593517082 1646 6ae9ed3312fafd8a872be43688f9bab8 "pdflatex"
+  "calcium_imaging_model_paper.tex" 1593517066 59688 c6b35a2ebaaf96db2ec0dcc89f89e047 ""
   "figures/Figure1.png" 1588507038 821222 b0d9f63e98642ca5495b01ef2381addb ""
   "figures/Figure2.png" 1588507038 766270 080ab5f16226c9a893b13e2aa3b85d6f ""
   "figures/b_i_f_i_perturbed_fluorescence_18_paper.png" 1593278980 58330 f626c3b41cd7cbfd67760e9a495fb309 ""
@@ -153,7 +153,7 @@
   "figures/paper_fig_5_Hz_1_2.png" 1593370619 27915 e66bdfcebfd70869b4c79696e27d083e ""
   "figures/simulated_oasis_accuracy_paper.png" 1593449266 15718 c69f20056a30f2f8e0d169eac0c9ab48 ""
   (generated)
-  "calcium_imaging_model_paper.pdf"
-  "calcium_imaging_model_paper.out"
-  "calcium_imaging_model_paper.aux"
   "calcium_imaging_model_paper.log"
+  "calcium_imaging_model_paper.out"
+  "calcium_imaging_model_paper.pdf"
+  "calcium_imaging_model_paper.aux"

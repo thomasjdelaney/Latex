@@ -1,0 +1,894 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  30 JUN 2020 23:29
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**phd_thesis.tex
+(./phd_thesis.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count89
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen103
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks21
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks22
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks23
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks30
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks31
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@layoutwidth=\dimen116
+\Gm@layoutheight=\dimen117
+\Gm@layouthoffset=\dimen118
+\Gm@layoutvoffset=\dimen119
+\Gm@dimlist=\toks32
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen122
+\enit@toks=\toks33
+\enit@inbox=\box29
+\enit@count@id=\count105
+\enitdp@description=\count106
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/06/12 v6.88h Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen123
+\Hy@linkcounter=\count107
+\Hy@pagecounter=\count108
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/06/12 v6.88h Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count109
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4550.
+Package hyperref Info: Link nesting OFF on input line 4555.
+Package hyperref Info: Hyper index ON on input line 4558.
+Package hyperref Info: Plain pages OFF on input line 4565.
+Package hyperref Info: Backreferencing OFF on input line 4570.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4803.
+\c@Hy@tempcnt=\count110
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5156.
+\XeTeXLinkMargin=\dimen124
+\Fld@menulength=\count111
+\Field@Width=\dimen125
+\Fld@charsize=\dimen126
+Package hyperref Info: Hyper figures OFF on input line 6411.
+Package hyperref Info: Link nesting OFF on input line 6416.
+Package hyperref Info: Hyper index ON on input line 6419.
+Package hyperref Info: backreferencing OFF on input line 6426.
+Package hyperref Info: Link coloring OFF on input line 6431.
+Package hyperref Info: Link coloring with OCG OFF on input line 6436.
+Package hyperref Info: PDF/A mode OFF on input line 6441.
+LaTeX Info: Redefining \ref on input line 6481.
+LaTeX Info: Redefining \pageref on input line 6485.
+\Hy@abspage=\count112
+\c@Item=\count113
+\c@Hfootnote=\count114
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2019/06/12 v6.88h Hyperref driver for pdfTeX
+\Fld@listcount=\count115
+\c@bookmark@seq@number=\count116
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip59
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+)
+\c@caption@flags=\count117
+\c@ContinuedFloat=\count118
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count119
+\c@subtable=\count120
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2019/07/31 v1.22 mathematical typesetting tools
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count121
+\calc@Bcount=\count122
+\calc@Adimen=\dimen134
+\calc@Bdimen=\dimen135
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count123
+\calc@Cskip=\skip62
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count124
+\l_MT_multwidth_dim=\dimen136
+\origjot=\skip63
+\l_MT_shortvdotswithinadjustabove_dim=\dimen137
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen138
+\l_MT_above_intertext_sep=\dimen139
+\l_MT_below_intertext_sep=\dimen140
+\l_MT_above_shortintertext_sep=\dimen141
+\l_MT_below_shortintertext_sep=\dimen142
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count125
+\output=\toks34
+\linenoprevgraf=\count126
+\linenumbersep=\dimen143
+\linenumberwidth=\dimen144
+\c@linenumber=\count127
+\c@pagewiselinenumber=\count128
+\c@LN@truepage=\count129
+\c@internallinenumber=\count130
+\c@internallinenumbers=\count131
+\quotelinenumbersep=\dimen145
+\bframerule=\dimen146
+\bframesep=\dimen147
+\bframebox=\box30
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/share/texlive/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip64
+\@affilsep=\skip65
+\c@Maxaffil=\count132
+\c@authors=\count133
+\c@affil=\count134
+)
+\c@theorem=\count135
+\c@proposition=\count136
+\c@lemma=\count137
+\c@corollary=\count138
+\c@definition=\count139
+ (./phd_thesis.aux)
+\openout1 = `phd_thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 69.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count140
+\scratchdimen=\dimen148
+\scratchbox=\box31
+\nofMPsegments=\count141
+\nofMParguments=\count142
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen149
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
+\everyMPtoPDFconversion=\toks36
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 69.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count146
+)
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
+ (./phd_thesis.out) (./phd_thesis.out)
+\@outlinefile=\write3
+\openout3 = `phd_thesis.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 71.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 71.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+ (./phd_thesis.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+)
+\tf@toc=\write4
+\openout4 = `phd_thesis.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \chapter
+             {Sensitivity of the spikes-to-fluorescence transform to calcium... [1
+
+]
+Chapter 1.
+[2
+
+] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+
+
+LaTeX Warning: Citation `chen' on page 1 undefined on input line 80.
+
+
+LaTeX Warning: Citation `maravall' on page 1 undefined on input line 80.
+
+<figures/calcium_chapter/Figure1.png, id=116, 580.68945pt x 444.58095pt>
+File: figures/calcium_chapter/Figure1.png Graphic file (type png)
+<use figures/calcium_chapter/Figure1.png>
+Package pdftex.def Info: figures/calcium_chapter/Figure1.png  used on input line 84.
+(pdftex.def)             Requested size: 483.69687pt x 370.31813pt.
+
+LaTeX Warning: Citation `berens' on page 1 undefined on input line 87.
+
+
+LaTeX Warning: Citation `berens' on page 1 undefined on input line 87.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `vogelstein' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `pnevmatikakis' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `friedrich' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `paninski1' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `paninski2' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `deneux' on page 1 undefined on input line 91.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 
+      [1]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 
+      [2 <./figures/calcium_chapter/Figure1.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+ [3]
+
+LaTeX Warning: Citation `berens' on page 4 undefined on input line 107.
+
+[4]
+Overfull \hbox (1.2041pt too wide) in paragraph at lines 109--109
+[]\OT1/ptm/b/n/14.4 Spike in-fer-ence al-go-rithms per-form sim-i-larly on real data com-pared with
+ []
+
+
+LaTeX Warning: Citation `vogelstein' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `pnevmatikakis' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `friedrich' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `paninski1' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `paninski2' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `deneux' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `pnevmatikakis' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `friedrich' on page 5 undefined on input line 110.
+
+
+LaTeX Warning: Citation `deneux' on page 5 undefined on input line 110.
+
+<figures/calcium_chapter/Figure2.png, id=143, 582.7371pt x 271.7352pt>
+File: figures/calcium_chapter/Figure2.png Graphic file (type png)
+<use figures/calcium_chapter/Figure2.png>
+Package pdftex.def Info: figures/calcium_chapter/Figure2.png  used on input line 113.
+(pdftex.def)             Requested size: 483.69687pt x 225.55672pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `maravall' on page 5 undefined on input line 121.
+
+<figures/calcium_chapter/concentration_dynamics_18.png, id=146, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/concentration_dynamics_18.png Graphic file (type png)
+<use figures/calcium_chapter/concentration_dynamics_18.png>
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18.png  used on input line 124.
+(pdftex.def)             Requested size: 241.84843pt x 193.47968pt.
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png, id=147, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png Graphic file (type png)
+<use figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png>
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png  used on input line 129.
+(pdftex.def)             Requested size: 241.84843pt x 193.47968pt.
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png, id=148, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png Graphic file (type png)
+<use figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png>
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png  used on input line 133.
+(pdftex.def)             Requested size: 241.84843pt x 193.47968pt.
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png, id=149, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png Graphic file (type png)
+<use figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png>
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png  used on input line 137.
+(pdftex.def)             Requested size: 241.84843pt x 193.47968pt.
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png, id=150, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png Graphic file (type png)
+<use figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png>
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png  used on input line 141.
+(pdftex.def)             Requested size: 241.84843pt x 193.47968pt.
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png, id=151, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png Graphic file (type png)
+<use figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png>
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png  used on input line 145.
+(pdftex.def)             Requested size: 241.84843pt x 193.47968pt.
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 123--148
+[]$[]$ $[]$
+ []
+
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 123--148
+[]$ $[]$
+ []
+
+
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 123--148
+[]$ $[]$ 
+ []
+
+[5]
+
+LaTeX Warning: Citation `bartol' on page 6 undefined on input line 154.
+
+[6 <./figures/calcium_chapter/Figure2.png>] [7 <./figures/calcium_chapter/concentration_dynamics_18.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png>]
+
+LaTeX Warning: Citation `chen' on page 8 undefined on input line 161.
+
+<figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png, id=179, 578.16pt x 361.35pt>
+File: figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png Graphic file (type png)
+<use figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png  used on input line 166.
+(pdftex.def)             Requested size: 435.32422pt x 272.07599pt.
+<figures/calcium_chapter/b_i_f_i_perturbed_snr.png, id=180, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/b_i_f_i_perturbed_snr.png Graphic file (type png)
+<use figures/calcium_chapter/b_i_f_i_perturbed_snr.png>
+Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_snr.png  used on input line 172.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png, id=181, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png Graphic file (type png)
+<use figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png  used on input line 177.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png, id=182, 578.16pt x 361.35pt>
+File: figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png Graphic file (type png)
+<use figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png  used on input line 188.
+(pdftex.def)             Requested size: 435.32422pt x 272.07599pt.
+<figures/calcium_chapter/indicator_perturbed_snr.png, id=183, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/indicator_perturbed_snr.png Graphic file (type png)
+<use figures/calcium_chapter/indicator_perturbed_snr.png>
+Package pdftex.def Info: figures/calcium_chapter/indicator_perturbed_snr.png  used on input line 194.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png, id=184, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png Graphic file (type png)
+<use figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png  used on input line 199.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+
+LaTeX Warning: Citation `tian' on page 8 undefined on input line 207.
+
+
+LaTeX Warning: Citation `chen' on page 8 undefined on input line 207.
+
+
+LaTeX Warning: Citation `chen' on page 8 undefined on input line 207.
+
+[8] [9 <./figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png> <./figures/calcium_chapter/b_i_f_i_perturbed_snr.png> <./figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png>] [10 <./figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png> <./figures/calcium_chapter/indicator_perturbed_snr.png> <./figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png>]
+
+LaTeX Warning: Citation `bartol' on page 11 undefined on input line 209.
+
+
+LaTeX Warning: Citation `maravall' on page 11 undefined on input line 209.
+
+
+LaTeX Warning: Citation `neher' on page 11 undefined on input line 209.
+
+
+LaTeX Warning: Citation `lee' on page 11 undefined on input line 209.
+
+
+LaTeX Warning: Citation `lee' on page 11 undefined on input line 209.
+
+<figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png, id=212, 578.16pt x 361.35pt>
+File: figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png Graphic file (type png)
+<use figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png  used on input line 214.
+(pdftex.def)             Requested size: 435.32422pt x 272.07599pt.
+<figures/calcium_chapter/immobile_perturbed_snr.png, id=213, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/immobile_perturbed_snr.png Graphic file (type png)
+<use figures/calcium_chapter/immobile_perturbed_snr.png>
+Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_snr.png  used on input line 219.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png, id=214, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png Graphic file (type png)
+<use figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png  used on input line 223.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+[11] [12 <./figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png> <./figures/calcium_chapter/immobile_perturbed_snr.png> <./figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png>]
+<figures/calcium_chapter/paper_fig_1_Hz_1_3.png, id=229, 289.08pt x 361.35pt>
+File: figures/calcium_chapter/paper_fig_1_Hz_1_3.png Graphic file (type png)
+<use figures/calcium_chapter/paper_fig_1_Hz_1_3.png>
+Package pdftex.def Info: figures/calcium_chapter/paper_fig_1_Hz_1_3.png  used on input line 236.
+(pdftex.def)             Requested size: 159.13373pt x 198.91403pt.
+<figures/calcium_chapter/paper_fig_5_Hz_1_2.png, id=230, 289.08pt x 361.35pt>
+File: figures/calcium_chapter/paper_fig_5_Hz_1_2.png Graphic file (type png)
+<use figures/calcium_chapter/paper_fig_5_Hz_1_2.png>
+Package pdftex.def Info: figures/calcium_chapter/paper_fig_5_Hz_1_2.png  used on input line 237.
+(pdftex.def)             Requested size: 159.13373pt x 198.91403pt.
+<figures/calcium_chapter/paper_fig_10_Hz_1_1.png, id=231, 289.08pt x 361.35pt>
+File: figures/calcium_chapter/paper_fig_10_Hz_1_1.png Graphic file (type png)
+<use figures/calcium_chapter/paper_fig_10_Hz_1_1.png>
+Package pdftex.def Info: figures/calcium_chapter/paper_fig_10_Hz_1_1.png  used on input line 238.
+(pdftex.def)             Requested size: 159.13373pt x 198.91403pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/calcium_chapter/simulated_oasis_accuracy_paper.png, id=232, 361.35pt x 289.08pt>
+File: figures/calcium_chapter/simulated_oasis_accuracy_paper.png Graphic file (type png)
+<use figures/calcium_chapter/simulated_oasis_accuracy_paper.png>
+Package pdftex.def Info: figures/calcium_chapter/simulated_oasis_accuracy_paper.png  used on input line 245.
+(pdftex.def)             Requested size: 217.66211pt x 174.12862pt.
+<figures/calcium_chapter/mean_fluorescence_comparison.png, id=233, 289.08pt x 216.81pt>
+File: figures/calcium_chapter/mean_fluorescence_comparison.png Graphic file (type png)
+<use figures/calcium_chapter/mean_fluorescence_comparison.png>
+Package pdftex.def Info: figures/calcium_chapter/mean_fluorescence_comparison.png  used on input line 246.
+(pdftex.def)             Requested size: 217.66211pt x 163.24557pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13] [14 <./figures/calcium_chapter/paper_fig_1_Hz_1_3.png> <./figures/calcium_chapter/paper_fig_5_Hz_1_2.png> <./figures/calcium_chapter/paper_fig_10_Hz_1_1.png> <./figures/calcium_chapter/simulated_oasis_accuracy_paper.png> <./figures/calcium_chapter/mean_fluorescence_comparison.png>]
+
+LaTeX Warning: Citation `greenberg' on page 15 undefined on input line 262.
+
+[15]
+
+LaTeX Warning: Citation `koch' on page 16 undefined on input line 266.
+
+
+LaTeX Warning: Citation `maravall' on page 16 undefined on input line 266.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 270.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 270.
+ [16] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-34.def
+File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
+) [17]
+
+LaTeX Warning: Citation `maravall' on page 18 undefined on input line 304.
+
+[18]
+Overfull \hbox (8.7303pt too wide) in paragraph at lines 328--329
+[]\OT1/ptm/m/n/12 The power spec-trum was smoothed us-ing a box-car smoother (aka. slid-ing av-er-age, box smoother). 
+ []
+
+[19]
+
+LaTeX Warning: Citation `kilhoffer' on page 20 undefined on input line 340.
+
+
+LaTeX Warning: Citation `maravall' on page 20 undefined on input line 350.
+
+
+LaTeX Warning: Citation `fiala' on page 20 undefined on input line 351.
+
+
+LaTeX Warning: Citation `faas' on page 20 undefined on input line 352.
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 354--354
+\OT1/ptm/m/n/12 im-mo-bile buffer within the cell
+ []
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 354.
+
+
+LaTeX Warning: Citation `maravall' on page 20 undefined on input line 355.
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 356.
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 357.
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 358.
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 359.
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 360.
+
+
+LaTeX Warning: Citation `bartol' on page 20 undefined on input line 361.
+
+
+LaTeX Warning: Citation `maravall' on page 20 undefined on input line 362.
+
+
+LaTeX Warning: Citation `bezanson' on page 20 undefined on input line 369.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 369.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [20] [21]
+
+LaTeX Warning: Citation `vogelstein' on page 22 undefined on input line 374.
+
+
+LaTeX Warning: Citation `pnevmatikakis' on page 22 undefined on input line 374.
+
+
+Overfull \hbox (14.78552pt too wide) in paragraph at lines 374--375
+[]\OT1/ptm/m/n/12 This al-go-rithm
+ []
+
+
+LaTeX Warning: Citation `forney' on page 22 undefined on input line 375.
+
+
+LaTeX Warning: Citation `deneux' on page 22 undefined on input line 375.
+
+
+LaTeX Warning: Citation `friedrich' on page 22 undefined on input line 376.
+
+[22] [23]
+
+LaTeX Warning: Citation `maravall' on page 24 undefined on input line 400.
+
+
+LaTeX Warning: Citation `tada' on page 24 undefined on input line 405.
+
+
+LaTeX Warning: Citation `berens' on page 24 undefined on input line 408.
+
+
+Overfull \hbox (21.49887pt too wide) in paragraph at lines 408--409
+\OT1/ptm/m/n/12 All of the data used in this project was sourced from the `Spike Finder' project (spikefinder.codeneuro.org).
+ []
+
+[24]
+No file phd_thesis.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
+(./phd_thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
+Package rerunfilecheck Info: File `phd_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 16738B4C5263276E3C777579F8C021B5;1612.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 414.
+ ) 
+Here is how much of TeX's memory you used:
+ 10380 strings out of 492667
+ 158955 string characters out of 6134097
+ 267651 words of memory out of 5000000
+ 14032 multiletter control sequences out of 15000+600000
+ 37861 words of font info for 89 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 42i,21n,43p,2217b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on phd_thesis.pdf (27 pages, 1948522 bytes).
+PDF statistics:
+ 374 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+

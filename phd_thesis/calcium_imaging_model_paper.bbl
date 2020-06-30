@@ -1,0 +1,183 @@
+\begin{thebibliography}{9}
+  \bibitem{berens}
+  Philipp Berens et al.,
+  \emph{Community-based benchmarking improves spike inference from two-photon calcium imaging data}.
+  bioRXiv,
+  https://doi.org/10.1101/177956,
+  (2017)
+
+  \bibitem{maravall}
+  M. Maravall, Z. F. Mainen, B. L. Sabatini, K. Svoboda,
+  \emph{Estimating intracellular calcium concentrations and buffering without wavelength ratioing}.
+  Biophysical Journal 78,
+  2655-2667,
+  (2000)
+
+  \bibitem{buzsaki}
+  Gy\"{o}rgy Buzs\'aki,
+  \emph{Large-scale recording of neuronal ensembles}.
+  Nature Neuroscience 7,
+  446-451,
+  (2004)
+
+  \bibitem{stosiek}
+  Christoph Stosiek, Olga Garaschuk, Knut Holthoff, Arthur Konnerth,
+  \emph{In vivo two-photon calcium imaging of neuronal networks}.
+  Proceedings of the National Academy of Sciences 100,
+  7319-7324,
+  (2003)
+
+  \bibitem{chen}
+  Tsai-Wen Chen, Trevor J. Wardill, Yi Sun, Stefan R. Pulver, Sabine L. Renninger, Amy Baohan, Eric R. Schreiter, Rex A. Kerr, Michael B. Orger, Vivek Jayaraman, Loren L. Looger, Karel Svoboda, Douglas S. Kim,
+  \emph{Ultrasensitive fluorescent proteins for imaging neuronal activity}.
+  Nature 499,
+  295-300,
+  (2013)
+
+  \bibitem{vogelstein}
+  Joshua T. Vogelstein, Adam M. Packer, Timothy A. Machado, Tanya Sippy, Baktash Babadi, Rafael Yuste, Liam Paninski,
+  \emph{Fast non-negative deconvolution for spike train inference from population calcium imaging}.
+  Journal of Neurophysiology 104,
+  3691-3704,
+  (2010)
+
+  \bibitem{pnevmatikakis}
+  E.A. Pnevmatikakis, D. Soudry, Y. Gao, T.A. Machado, J. Merel, D. Pfau, T. Reardon, Y. Mu, C. Lacefield, W. Yang, M. Ahrens, R. Bruno, T.M. Jessell, D.S. Peterka, R.Yuste, L. Paninski,
+  \emph{Simultaneous Denoising, Deconvolution, and Demixing of Calcium Imaging Data}.
+  Neuron 89,
+  285-299,
+  (2016)
+
+  \bibitem{paninski1}
+  Eftychios A. Pnevmatikakis, Josh Merel, Ari Pakman, Liam Paninski,
+  \emph{Bayesian spike inference from calcium imaging data}.
+  Conference Record - Asilomar Conference on Signals, Systems, and Computers,
+  (2013)
+
+  \bibitem{paninski2}
+  Eftychios A. Pnevmatikakis, Yuanjun Gao, Daniel Soudry, David Pfau, Clay Lacefield, Kira Poskanzer, Randy Bruno, Rafael Yuste, Liam Paninski,
+  \emph{A structured matrix factorization framework for large scale calcium imaging data analysis}.
+  (2014)
+
+  \bibitem{viterbi}
+  G.D. Forney,
+  \emph{The Viterbi algorithm}.
+  IEEE Transactions on Information Theory 61,
+  268-278,
+  (1973)
+
+  \bibitem{deneux}
+  Thomas Deneux, Attila Kaszas, Gergely Szalay, Gergely Katona, Tamás Lakner, Amiram Grinvald, Balázs Rózsa, Ivo Vanzetta,
+  \emph{Accurate spike estimation from noisy calcium signals for ultrafast three-dimensional imaging of large neuronal populations in vivo}.
+  Nature Communications 7,
+  12190,
+  (2016)
+
+  \bibitem{jewell}
+  Sean Jewell, Daniela Witten,
+  \emph{Exact Spike Train Inference Via $\ell_0$ Optimization}.
+  arXiv:1703.08644v2,
+  (2017)
+
+  \bibitem{friedrich}
+  Johannes Friedrich, Liam Paninski,
+  \emph{Fast active set methods for online spike inference from calcium imaging}.
+  30th Conference on Neural Information Processing Systems,
+  (2017)
+
+  \bibitem{tada}
+  Mayumi Tada, Atsuya Takeuchi, Miki Hashizume, Kazuo Kitamura, Masanobu Kano,
+  \emph{A highly sensitive fluorescent indicator dye for calcium imaging of neural activity in  vitro and in  vivo}.
+  European Journal of Neuroscience 39,
+  1720-1728,
+  (2014)
+
+  \bibitem{fiala}
+  John C. Fiala, Kristen M. Harris,
+  {Dendrites}.
+  Oxford University Press,
+  Chapter 1: Dendrite Structure,
+  (1999)
+
+  \bibitem{faas}
+  G. C. Faas, S. Raghavachari, J. E. Lisman, I. Mody,
+  \emph{Calmodulin as a direct detector of Ca 2+ signals}.
+  Nature Neuroscience 14,
+  301–304,
+  (2011)
+
+  \bibitem{bartol}
+  Thomas M. Bartol, Daniel X. Keller, Justin P. Kinney, Chandrajit L. Bajaj, Kristen M. Harris, Terrence J. Sejnowski, Mary B. Kennedy,
+  \emph{Computational reconstitution of spine calcium transients from individual proteins}.
+  Frontiers in Synaptic Neuroscience 7,
+  Article 17,
+  (2015)
+
+  \bibitem{koch}
+  Christoff Koch,
+  \emph{Biophysics of Computation: Information processing in single neurons}.
+  Oxford University Press,
+  (1999)
+
+  \bibitem{kilhoffer}
+  Marie-Claude Kilhoffer, Daniel M. Roberts,  Abiodun 0. Adibi, D. Martin  Wattersons, Jacques Haiech,
+  \emph{Investigation of the Mechanism of Calcium Binding to Calmodulin}.
+  Journal of Biological Chemistry 32,
+  17023-17029,
+  (1988)
+
+  \bibitem{bezanson}
+  Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman,
+  \emph{Julia: A fast dynamic language for the technical computing}.
+  arXiv:1209.5145,
+  (2012)
+
+  \bibitem{dana}
+  Hod Dana, Tsai-Wen Chen, Amy Hu, Brenda C. Shields, Caiying Guo, Loren L. Looger, Douglas S. Kim, Karel Svoboda,
+  \emph{Thy1-GCaMP6 transgenic mice for neuronal population imaging in vivo}.
+  PLOS ONE 9: e108697,
+  (2014)
+
+  \bibitem{tian}
+  Lin Tian, S. Andrew Hires, Tianyi Mao, Daniel Huber, M. Eugenia Chiappe, Sreekanth H. Chalasani, Leopoldo Petreanu, Jasper Akerboom, Sean A. McKinney, Eric R. Schreiter, Cornelia I. Bargmann, Vivek Jayaraman, Karel Svoboda, Loren L. Looger,
+  \emph{Imaging neural activity in worms, flies and mice with improved GCaMP calcium indicators}.
+  Nature Methods 6,
+  875-881,
+  (2009)
+
+  \bibitem{neher}
+  Erwin Neher, George J. Augustine,
+  {Calcium gradients and buffers in bovine chromaffin cells}.
+  Journal of Physiology 450,
+  273-301,
+  (1992)
+
+  \bibitem{kaiser}
+  Katharina M. M. Kaiser, Y. Zilberter, B. Sakmann,
+  \emph{Back-propagating action potentials mediate calcium signalling in dendrites of bitufted interneurons in layer 2/3 of rat somatosensory cortex}.
+  Journal of Physiology 535,
+  17-31,
+  (2001)
+
+  \bibitem{lee}
+  Suk-Ho Lee, Christian Rosenmund, Beat Schwaller, Erwin Neher,
+  \emph{Differences in Ca$^{2+}$ buffering properties between excitatory and inhibitory hippocampal neurons from the rat}.
+  Journal of Physiology 525,
+  405—418,
+  (2000)
+
+  \bibitem{fierro}
+  Leonardo Fierro, Isabel Llano,
+  emph{High endogenous calcium buffering in Purkinje cells from rat cerebellar slices}.
+  Journal of Physiology 496,
+  617-625,
+  (1996)
+
+  \bibitem{greenberg}
+  David S Greenberg, Damian J Wallace, Kay-Michael Voit, Silvia Wuertenberger, Uwe Czubayko, Arne Monsees, Takashi Handa, Joshua T Vogelstein, Reinhard Seifert, Yvonne Groemping, Jason ND Kerr,
+  \emph{Accurate action potential inference from a calcium sensor protein through biophysical modelling}.
+  bioRxiv 479055,
+  doi: https://doi.org/10.1101/479055,
+  (2018)
+
+\end{thebibliography}
