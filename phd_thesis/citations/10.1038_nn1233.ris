@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Buzsáki, György
+PY  - 2004
+DA  - 2004/05/01
+TI  - Large-scale recording of neuronal ensembles
+JO  - Nature Neuroscience
+SP  - 446
+EP  - 451
+VL  - 7
+IS  - 5
+AB  - How does the brain orchestrate perceptions, thoughts and actions from the spiking activity of its neurons? Early single-neuron recording research treated spike pattern variability as noise that needed to be averaged out to reveal the brain's representation of invariant input. Another view is that variability of spikes is centrally coordinated and that this brain-generated ensemble pattern in cortical structures is itself a potential source of cognition. Large-scale recordings from neuronal ensembles now offer the opportunity to test these competing theoretical frameworks. Currently, wire and micro-machined silicon electrode arrays can record from large numbers of neurons and monitor local neural circuits at work. Achieving the full potential of massively parallel neuronal recordings, however, will require further development of the neuron–electrode interface, automated and efficient spike-sorting algorithms for effective isolation and identification of single neurons, and new mathematical insights for the analysis of network properties.
+SN  - 1546-1726
+UR  - https://doi.org/10.1038/nn1233
+DO  - 10.1038/nn1233
+ID  - Buzsáki2004
+ER  - 

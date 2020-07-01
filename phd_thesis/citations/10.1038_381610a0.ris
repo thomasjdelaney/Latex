@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - deCharms, R. Christopher
+AU  - Merzenich, Michael M.
+PY  - 1996
+DA  - 1996/06/01
+TI  - Primary cortical representation of sounds by the coordination of action-potential timing
+JO  - Nature
+SP  - 610
+EP  - 613
+VL  - 381
+IS  - 6583
+AB  - CORTICAL population coding could in principle rely on either the mean rate of neuronal action potentials, or the relative timing of action potentials, or both. When a single sensory stimulus drives many neurons to fire at elevated rates, the spikes of these neurons become tightly synchronized1,2, which could be involved in 'binding' together individual firing-rate feature representations into a unified object percept3. Here we demonstrate that the relative timing of cortical action potentials can signal stimulus features themselves, a function even more basic than feature grouping. Populations of neurons in the primary auditory cortex can coordinate the relative timing of their action potentials such that spikes occur closer together in time during continuous stimuli. In this way cortical neurons can signal stimuli even when their firing rates do not change. Population coding based on relative spike timing can systematically signal stimulus features, it is topographically mapped, and it follows the stimulus time course even where mean firing rate does not.
+SN  - 1476-4687
+UR  - https://doi.org/10.1038/381610a0
+DO  - 10.1038/381610a0
+ID  - deCharms1996
+ER  - 

@@ -1,0 +1,62 @@
+PMID- 30627301
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20200225
+IS  - 1932-6157 (Print)
+IS  - 1941-7330 (Electronic)
+IS  - 1932-6157 (Linking)
+VI  - 12
+IP  - 4
+DP  - 2018 Dec
+TI  - EXACT SPIKE TRAIN INFERENCE VIA ℓ(0) OPTIMIZATION.
+PG  - 2457-2482
+LID - 10.1214/18-AOAS1162 [doi]
+AB  - In recent years new technologies in neuroscience have made it possible to measure 
+      the activities of large numbers of neurons simultaneously in behaving animals. For 
+      each neuron a fluorescence trace is measured; this can be seen as a first-order 
+      approximation of the neuron's activity over time. Determining the exact time at 
+      which a neuron spikes on the basis of its fluorescence trace is an important open 
+      problem in the field of computational neuroscience. Recently, a convex optimization 
+      problem involving an ℓ(1) penalty was proposed for this task. In this paper we 
+      slightly modify that recent proposal by replacing the ℓ(1) penalty with an ℓ(0) 
+      penalty. In stark contrast to the conventional wisdom that ℓ(0) optimization 
+      problems are computationally intractable, we show that the resulting optimization 
+      problem can be efficiently solved for the global optimum using an extremely simple 
+      and efficient dynamic programming algorithm. Our R-language implementation of the 
+      proposed algorithm runs in a few minutes on fluorescence traces of 100,000 
+      timesteps. Furthermore, our proposal leads to substantial improvements over the 
+      previous ℓ(1) proposal, in simulations as well as on two calcium imaging datasets. 
+      R-language software for our proposal is available on CRAN in the package 
+      LZeroSpikeInference. Instructions for running this software in python can be found 
+      at https://github.com/jewellsean/LZeroSpikeInference.
+FAU - Jewell, Sean
+AU  - Jewell S
+AD  - Department of Statistics, University of Washington, Seattle, Washington 98195, USA, 
+      swjewell@uw.edu.
+FAU - Witten, Daniela
+AU  - Witten D
+AD  - Departments of Statistics and Biostatistics, University of Washington, Seattle, 
+      Washington 98195, USA, dwitten@uw.edu.
+LA  - eng
+GR  - DP5 OD009145/OD/NIH HHS/United States
+PT  - Journal Article
+DEP - 20181113
+TA  - Ann Appl Stat
+JT  - The annals of applied statistics
+JID - 101479511
+PMC - PMC6322847
+MID - NIHMS997321
+OTO - NOTNLM
+OT  - Neuroscience
+OT  - calcium imaging
+OT  - changepoint detection
+OT  - dynamic programming
+EDAT- 2019/01/11 06:00
+MHDA- 2019/01/11 06:01
+CRDT- 2019/01/11 06:00
+PHST- 2019/01/11 06:00 [entrez]
+PHST- 2019/01/11 06:00 [pubmed]
+PHST- 2019/01/11 06:01 [medline]
+AID - 10.1214/18-AOAS1162 [doi]
+PST - ppublish
+SO  - Ann Appl Stat. 2018 Dec;12(4):2457-2482. doi: 10.1214/18-AOAS1162. Epub 2018 Nov 13.

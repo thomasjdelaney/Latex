@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Deneux, Thomas
+AU  - Kaszas, Attila
+AU  - Szalay, Gergely
+AU  - Katona, Gergely
+AU  - Lakner, Tamás
+AU  - Grinvald, Amiram
+AU  - Rózsa, Balázs
+AU  - Vanzetta, Ivo
+PY  - 2016
+DA  - 2016/07/19
+TI  - Accurate spike estimation from noisy calcium signals for ultrafast three-dimensional imaging of large neuronal populations in vivo
+JO  - Nature Communications
+SP  - 12190
+VL  - 7
+IS  - 1
+AB  - Extracting neuronal spiking activity from large-scale two-photon recordings remains challenging, especially in mammals in vivo, where large noises often contaminate the signals. We propose a method, MLspike, which returns the most likely spike train underlying the measured calcium fluorescence. It relies on a physiological model including baseline fluctuations and distinct nonlinearities for synthetic and genetically encoded indicators. Model parameters can be either provided by the user or estimated from the data themselves. MLspike is computationally efficient thanks to its original discretization of probability representations; moreover, it can also return spike probabilities or samples. Benchmarked on extensive simulations and real data from seven different preparations, it outperformed state-of-the-art algorithms. Combined with the finding obtained from systematic data investigation (noise level, spiking rate and so on) that photonic noise is not necessarily the main limiting factor, our method allows spike extraction from large-scale recordings, as demonstrated on acousto-optical three-dimensional recordings of over 1,000 neurons in vivo.
+SN  - 2041-1723
+UR  - https://doi.org/10.1038/ncomms12190
+DO  - 10.1038/ncomms12190
+ID  - Deneux2016
+ER  - 

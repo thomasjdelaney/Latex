@@ -1,0 +1,2629 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{baadel}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={{Baadel}},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={{Thabtah}},
+         familyi={T\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={{Lu}},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{data mining;fuzzy set theory;pattern classification;pattern
+  clustering;overlapping clustering;data clustering;unsupervised
+  classification;data mining;partitioning clustering;hard partitioning
+  techniques;fuzzy k-means;overlapping k-means;weighted OKM;WOKM;overlapping
+  partitioning cluster;OPC;multicluster overlapping k-means
+  extension;MCOKE;Clustering algorithms;Partitioning algorithms;Linear
+  programming;Prototypes;Data mining;Algorithm design and analysis;Phase change
+  materials;Data mining;clustering;k-means;MCOKE;overlapping clustering}
+    \strng{namehash}{BSTFLJ1}
+    \strng{fullhash}{BSTFLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Data Clustering or unsupervised classification is one of the main research
+  area in Data Mining. Partitioning Clustering involves the partitioning of n
+  objects into k clusters. Many clustering algorithms use hard (crisp)
+  partitioning techniques where each object is assigned to one cluster. Other
+  algorithms utilise overlapping techniques where an object may belong to one
+  or more clusters. Partitioning algorithms that overlap include the commonly
+  used Fuzzy K-means and its variations. Other more recent algorithms reviewed
+  in this paper are: the Overlapping K-Means (OKM), Weighted OKM (WOKM), the
+  Overlapping Partitioning Cluster (OPC), and the Multi-Cluster Overlapping
+  K-means Extension (MCOKE). This review focuses on the above mentioned
+  partitioning methods and future direction in overlapping clustering is
+  highlighted in this paper.%
+    }
+    \field{booktitle}{2016 SAI Computing Conference (SAI)}
+    \verb{doi}
+    \verb 10.1109/SAI.2016.7555988
+    \endverb
+    \field{pages}{233\bibrangedash 237}
+    \field{title}{Overlapping clustering: A review}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{bartol}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BTM}{%
+         family={Bartol},
+         familyi={B\bibinitperiod},
+         given={Thomas\bibnamedelima M.},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KDX}{%
+         family={Keller},
+         familyi={K\bibinitperiod},
+         given={Daniel\bibnamedelima X.},
+         giveni={D\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=KJP}{%
+         family={Kinney},
+         familyi={K\bibinitperiod},
+         given={Justin\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BCL}{%
+         family={Bajaj},
+         familyi={B\bibinitperiod},
+         given={Chandrajit\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HKM}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kristen\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=STJ}{%
+         family={Sejnowski},
+         familyi={S\bibinitperiod},
+         given={Terrence\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KMB}{%
+         family={Kennedy},
+         familyi={K\bibinitperiod},
+         given={Mary\bibnamedelima B.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BTM+1}
+    \strng{fullhash}{BTMKDXKJPBCLHKMSTJKMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    We have built a stochastic model in the program MCell that simulates
+  Ca<sup>2+</sup> transients in spines from the principal molecular components
+  believed to control Ca<sup>2+</sup> entry and exit. Proteins, with their
+  kinetic models, are located within two segments of dendrites containing 88
+  intact spines, centered in a fully reconstructed 6 × 6 × 5 μm<sup>3</sup>
+  cube of hippocampal neuropil. Protein components include AMPA- and NMDA-type
+  glutamate receptors, L- and R-type voltage-dependent Ca<sup>2+</sup>
+  channels, Na<sup>+</sup>/Ca<sup>2+</sup> exchangers, plasma membrane
+  Ca<sup>2+</sup> ATPases, smooth endoplasmic reticulum Ca<sup>2+</sup>
+  ATPases, immobile Ca<sup>2+</sup> buffers, and calbindin. Kinetic models for
+  each protein were taken from published studies of the isolated proteins in
+  vitro. For simulation of electrical stimuli, the time course of voltage
+  changes in the dendritic spine was generated with the desired stimulus in the
+  program NEURON. Voltage-dependent parameters were then continuously
+  re-adjusted during simulations in MCell to reproduce the effects of the
+  stimulus. Nine parameters of the model were optimized within realistic
+  experimental limits by a process that compared results of simulations to
+  published data. We find that simulations in the optimized model reproduce the
+  timing and amplitude of Ca<sup>2+</sup> transients measured experimentally in
+  intact neurons. Thus, we demonstrate that the characteristics of individual
+  isolated proteins determined in vitro can accurately reproduce the dynamics
+  of experimentally measured Ca<sup>2+</sup> transients in spines. The model
+  will provide a test bed for exploring the roles of additional proteins that
+  regulate Ca<sup>2+</sup> influx into spines and for studying the behavior of
+  protein targets in the spine that are regulated by Ca<sup>2+</sup> influx.%
+    }
+    \verb{doi}
+    \verb 10.3389/fnsyn.2015.00017
+    \endverb
+    \field{issn}{1663-3563}
+    \field{pages}{17}
+    \field{title}{Computational reconstitution of spine calcium transients from
+  individual proteins}
+    \verb{url}
+    \verb https://www.frontiersin.org/article/10.3389/fnsyn.2015.00017
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Frontiers in Synaptic Neuroscience}
+    \field{year}{2015}
+  \endentry
+
+  \entry{berens}{article}{}
+    \name{author}{29}{}{%
+      {{hash=BP}{%
+         family={Berens},
+         familyi={B\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Freeman},
+         familyi={F\bibinitperiod},
+         given={Jeremy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Deneux},
+         familyi={D\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CN}{%
+         family={Chenkov},
+         familyi={C\bibinitperiod},
+         given={Nikolay},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={McColgan},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Speiser},
+         familyi={S\bibinitperiod},
+         given={Artur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJH}{%
+         family={Macke},
+         familyi={M\bibinitperiod},
+         given={Jakob\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=TSC}{%
+         family={Turaga},
+         familyi={T\bibinitperiod},
+         given={Srinivas\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Mineault},
+         familyi={M\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Rupprecht},
+         familyi={R\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gerhard},
+         familyi={G\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FRW}{%
+         family={Friedrich},
+         familyi={F\bibinitperiod},
+         given={Rainer\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Friedrich},
+         familyi={F\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paninski},
+         familyi={P\bibinitperiod},
+         given={Liam},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pachitariu},
+         familyi={P\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HKD}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kenneth\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Bolte},
+         familyi={B\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MTA}{%
+         family={Machado},
+         familyi={M\bibinitperiod},
+         given={Timothy\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Ringach},
+         familyi={R\bibinitperiod},
+         given={Dario},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stone},
+         familyi={S\bibinitperiod},
+         given={Jasmine},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RLE}{%
+         family={Rogerson},
+         familyi={R\bibinitperiod},
+         given={Luke\bibnamedelima E.},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SNJ}{%
+         family={Sofroniew},
+         familyi={S\bibinitperiod},
+         given={Nicolas\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Reimer},
+         familyi={R\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Froudarakis},
+         familyi={F\bibinitperiod},
+         given={Emmanouil},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Euler},
+         familyi={E\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RRM}{%
+         family={Román\bibnamedelima Rosón},
+         familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Miroslav},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Theis},
+         familyi={T\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TAS}{%
+         family={Tolias},
+         familyi={T\bibinitperiod},
+         given={Andreas\bibnamedelima S.},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bethge},
+         familyi={B\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{BP+1}
+  \strng{fullhash}{BPFJDTCNMTSAMJHTSCMPRPGSFRWFJPLPMHKDBBMTARDSJRLESNJRJFEETRRMTLTASBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Author summary Two-photon calcium imaging is one of the major tools to
+  study the activity of large populations of neurons in the brain. In this
+  technique, a fluorescent calcium indicator changes its brightness when a
+  neuron fires an action potential due to an associated increase in
+  intracellular calcium. However, while a number of algorithms have been
+  proposed for estimating spike rates from the measured signal, the problem is
+  far from solved. We organized a public competition using a data set for which
+  ground truth data was available. Participants were given a training set to
+  develop new algorithms, and the performance of the algorithms was evaluated
+  on a hidden test set. Here we report on the results of this competition and
+  discuss the progress made towards better algorithms to infer spiking activity
+  from imaging data.%
+    }
+    \verb{doi}
+    \verb 10.1371/journal.pcbi.1006157
+    \endverb
+    \field{number}{5}
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{Community-based benchmarking improves spike rate inference
+  from two-photon calcium imaging data}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pcbi.1006157
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{PLOS Computational Biology}
+    \field{month}{05}
+    \field{year}{2018}
+  \endentry
+
+  \entry{bezanson}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BJ}{%
+         family={Bezanson},
+         familyi={B\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Karpinski},
+         familyi={K\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Shah},
+         familyi={S\bibinitperiod},
+         given={Viral},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Edelman},
+         familyi={E\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJKSSVEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Julia: A Fast Dynamic Language for Technical Computing}
+    \field{journaltitle}{MIT}
+    \field{month}{09}
+    \field{year}{2012}
+  \endentry
+
+  \entry{chen}{article}{}
+    \name{author}{12}{}{%
+      {{hash=CTW}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tsai-Wen},
+         giveni={T\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=WTJ}{%
+         family={Wardill},
+         familyi={W\bibinitperiod},
+         given={Trevor\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SY}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=PSR}{%
+         family={Pulver},
+         familyi={P\bibinitperiod},
+         given={Stefan\bibnamedelima R.},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RSL}{%
+         family={Renninger},
+         familyi={R\bibinitperiod},
+         given={Sabine\bibnamedelima L.},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=BERyS}{%
+         family={Baohan},
+         familyi={B\bibinitperiod},
+         suffix={yAND\bibnamedelima Schreiter},
+         suffixi={y\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Eric\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KRA}{%
+         family={Kerr},
+         familyi={K\bibinitperiod},
+         given={Rex\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=OMB}{%
+         family={Orger},
+         familyi={O\bibinitperiod},
+         given={Michael\bibnamedelima B.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=JV}{%
+         family={Jayaraman},
+         familyi={J\bibinitperiod},
+         given={Vivek},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LLL}{%
+         family={Looger},
+         familyi={L\bibinitperiod},
+         given={Loren\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KDS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Douglas\bibnamedelima S.},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTW+1}
+    \strng{fullhash}{CTWWTJSYPSRRSLBySERKRAOMBJVLLLSKKDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1038/nature12354
+    \endverb
+    \field{pages}{295–300}
+    \field{title}{Ultrasensitive fluorescent proteins for imaging neuronal
+  activity}
+    \verb{url}
+    \verb https://doi.org/10.1038/nature12354
+    \endverb
+    \field{volume}{499}
+    \field{journaltitle}{Nature}
+    \field{month}{07}
+    \field{year}{2013}
+  \endentry
+
+  \entry{cohen2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMR}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Marlene\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMRKA1}
+    \strng{fullhash}{CMRKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Recent work suggests that the correlations between neurons are important
+  for encoding information, but there has been significant discrepancy among
+  studies. The authors review this rapidly growing body of literature, examine
+  the potential sources of the discrepancies and offer guidelines for how to
+  interpret data about neuronal correlations.%
+    }
+    \verb{doi}
+    \verb 10.1038/nn.2842
+    \endverb
+    \field{issn}{1546-1726}
+    \field{number}{7}
+    \field{pages}{811\bibrangedash 819}
+    \field{title}{Measuring and interpreting neuronal correlations}
+    \verb{url}
+    \verb https://doi.org/10.1038/nn.2842
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Nature Neuroscience}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{cohen1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMR}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Marlene\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MJHR}{%
+         family={Maunsell},
+         familyi={M\bibinitperiod},
+         given={John H.\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Action Potentials/physiology; Animals; Artifacts;
+  Attention/*physiology; Interneurons/*physiology; Macaca mulatta; Psychomotor
+  Performance/*physiology; Psychophysics; Visual Cortex/*cytology/*physiology;
+  Visual Pathways/physiology; Visual Perception/physiology}
+    \strng{namehash}{CMRMJHR1}
+    \strng{fullhash}{CMRMJHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Visual attention can improve behavioral performance by allowing observers
+  to focus on the important information in a complex scene. Attention also
+  typically increases the firing rates of cortical sensory neurons. Rate
+  increases improve the signal-to-noise ratio of individual neurons, and this
+  improvement has been assumed to underlie attention-related improvements in
+  behavior. We recorded dozens of neurons simultaneously in visual area V4 and
+  found that changes in single neurons accounted for only a small fraction of
+  the improvement in the sensitivity of the population. Instead, over 80{\%} of
+  the attentional improvement in the population signal was caused by decreases
+  in the correlations between the trial-to-trial fluctuations in the responses
+  of pairs of neurons. These results suggest that the representation of sensory
+  information in populations of neurons and the way attention affects the
+  sensitivity of the population may only be understood by considering the
+  interactions between neurons.%
+    }
+    \verb{doi}
+    \verb 10.1038/nn.2439
+    \endverb
+    \field{edition}{2009/11/15}
+    \field{issn}{1546-1726}
+    \field{note}{19915566[pmid]}
+    \field{number}{12}
+    \field{pages}{1594\bibrangedash 1600}
+    \field{title}{Attention improves performance primarily by reducing
+  interneuronal correlations}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/19915566
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Nature neuroscience}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{decharms}{article}{}
+    \name{author}{2}{}{%
+      {{hash=dRC}{%
+         family={deCharms},
+         familyi={d\bibinitperiod},
+         given={R.\bibnamedelima Christopher},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MMM}{%
+         family={Merzenich},
+         familyi={M\bibinitperiod},
+         given={Michael\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{dRCMMM1}
+    \strng{fullhash}{dRCMMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    CORTICAL population coding could in principle rely on either the mean rate
+  of neuronal action potentials, or the relative timing of action potentials,
+  or both. When a single sensory stimulus drives many neurons to fire at
+  elevated rates, the spikes of these neurons become tightly synchronized1,2,
+  which could be involved in 'binding' together individual firing-rate feature
+  representations into a unified object percept3. Here we demonstrate that the
+  relative timing of cortical action potentials can signal stimulus features
+  themselves, a function even more basic than feature grouping. Populations of
+  neurons in the primary auditory cortex can coordinate the relative timing of
+  their action potentials such that spikes occur closer together in time during
+  continuous stimuli. In this way cortical neurons can signal stimuli even when
+  their firing rates do not change. Population coding based on relative spike
+  timing can systematically signal stimulus features, it is topographically
+  mapped, and it follows the stimulus time course even where mean firing rate
+  does not.%
+    }
+    \verb{doi}
+    \verb 10.1038/381610a0
+    \endverb
+    \field{issn}{1476-4687}
+    \field{number}{6583}
+    \field{pages}{610\bibrangedash 613}
+    \field{title}{Primary cortical representation of sounds by the coordination
+  of action-potential timing}
+    \verb{url}
+    \verb https://doi.org/10.1038/381610a0
+    \endverb
+    \field{volume}{381}
+    \field{journaltitle}{Nature}
+    \field{year}{1996}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{deneux}{article}{}
+    \name{author}{8}{}{%
+      {{hash=DT}{%
+         family={Deneux},
+         familyi={D\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kaszas},
+         familyi={K\bibinitperiod},
+         given={Attila},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Szalay},
+         familyi={S\bibinitperiod},
+         given={Gergely},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Katona},
+         familyi={K\bibinitperiod},
+         given={Gergely},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Lakner},
+         familyi={L\bibinitperiod},
+         given={Tamás},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Grinvald},
+         familyi={G\bibinitperiod},
+         given={Amiram},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RB}{%
+         family={Rózsa},
+         familyi={R\bibinitperiod},
+         given={Balázs},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VI}{%
+         family={Vanzetta},
+         familyi={V\bibinitperiod},
+         given={Ivo},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DT+1}
+    \strng{fullhash}{DTKASGKGLTGARBVI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1038/ncomms12190
+    \endverb
+    \field{number}{1}
+    \field{title}{Accurate spike estimation from noisy calcium signals for
+  ultrafast three-dimensional imaging of large neuronal populations in vivo}
+    \verb{url}
+    \verb https://doi.org/10.1038/ncomms12190
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Nature Communications}
+    \field{month}{07}
+    \field{year}{2016}
+  \endentry
+
+  \entry{faas}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FGC}{%
+         family={Faas},
+         familyi={F\bibinitperiod},
+         given={G.\bibnamedelima C.},
+         giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Raghavachari},
+         familyi={R\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LJE}{%
+         family={Lisman},
+         familyi={L\bibinitperiod},
+         given={J.\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Mody},
+         familyi={M\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FGC+1}
+    \strng{fullhash}{FGCRSLJEMI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1038/nn.2746
+    \endverb
+    \field{number}{3}
+    \field{pages}{301\bibrangedash 304}
+    \field{title}{Calmodulin as a direct detector of Ca2+ signals}
+    \verb{url}
+    \verb https://dx.doi.org/10.1038/nn.2746
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Nature neuroscience}
+    \field{month}{03}
+    \field{year}{2011}
+  \endentry
+
+  \entry{fiala}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FJC}{%
+         family={Fiala},
+         familyi={F\bibinitperiod},
+         given={John\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HKM}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kristen\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJCHKM1}
+    \strng{fullhash}{FJCHKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Dendrite Structure}
+    \field{year}{1999}
+  \endentry
+
+  \entry{fosdick}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FB}{%
+         family={Fosdick},
+         familyi={F\bibinitperiod},
+         given={Bailey},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Larremore},
+         familyi={L\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nishimura},
+         familyi={N\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=UJ}{%
+         family={Ugander},
+         familyi={U\bibinitperiod},
+         given={Johan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FB+1}
+    \strng{fullhash}{FBLDNJUJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1137/16M1087175
+    \endverb
+    \field{title}{Configuring Random Graph Models with Fixed Degree Sequences}
+    \field{volume}{60}
+    \field{journaltitle}{SIAM Review}
+    \field{month}{08}
+    \field{year}{2016}
+  \endentry
+
+  \entry{friedrich}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=FJ}{%
+         family={Friedrich},
+         familyi={F\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paninski},
+         familyi={P\bibinitperiod},
+         given={Liam},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=LDD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiyama},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LUV}{%
+         family={Luxburg},
+         familyi={L\bibinitperiod},
+         given={U.\bibnamedelima V.},
+         giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=GI}{%
+         family={Guyon},
+         familyi={G\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \strng{namehash}{FJPL1}
+    \strng{fullhash}{FJPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Advances in Neural Information Processing Systems 29}
+    \field{pages}{1984\bibrangedash 1992}
+    \field{title}{Fast Active Set Methods for Online Spike Inference from
+  Calcium Imaging}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/6505-fast-active-set-methods-for-online-s
+    \verb pike-inference-from-calcium-imaging.pdf
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{greenberg}{article}{}
+    \name{author}{11}{}{%
+      {{hash=GD}{%
+         family={Greenberg},
+         familyi={G\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wallace},
+         familyi={W\bibinitperiod},
+         given={Damian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VKM}{%
+         family={Voit},
+         familyi={V\bibinitperiod},
+         given={Kay-Michael},
+         giveni={K\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wuertenberger},
+         familyi={W\bibinitperiod},
+         given={Silvia},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CU}{%
+         family={Czubayko},
+         familyi={C\bibinitperiod},
+         given={Uwe},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Monsees},
+         familyi={M\bibinitperiod},
+         given={Arne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Handa},
+         familyi={H\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Vogelstein},
+         familyi={V\bibinitperiod},
+         given={Joshua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Seifert},
+         familyi={S\bibinitperiod},
+         given={Reinhard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Groemping},
+         familyi={G\bibinitperiod},
+         given={Yvonne},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kerr},
+         familyi={K\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GD+1}
+    \strng{fullhash}{GDWDVKMWSCUMAHTVJSRGYKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1101/479055
+    \endverb
+    \field{title}{Accurate action potential inference from a calcium sensor
+  protein through biophysical modeling:}
+    \field{month}{11}
+    \field{year}{2018}
+  \endentry
+
+  \entry{humphries}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HM}{%
+         family={Humphries},
+         familyi={H\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Caballero},
+         familyi={C\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={Mat},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Maggi},
+         familyi={M\bibinitperiod},
+         given={Silvia},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Abhinav},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMCJEMMSSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Spectral rejection for testing hypotheses of structure in
+  networks}
+    \field{month}{01}
+    \field{year}{2019}
+  \endentry
+
+  \entry{humphries2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HMD}{%
+         family={Humphries},
+         familyi={H\bibinitperiod},
+         given={Mark\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Society for Neuroscience}%
+    }
+    \strng{namehash}{HMD1}
+    \strng{fullhash}{HMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Identifying similar spike-train patterns is a key element in understanding
+  neural coding and computation. For single neurons, similar spike patterns
+  evoked by stimuli are evidence of common coding. Across multiple neurons,
+  similar spike trains indicate potential cell assemblies. As recording
+  technology advances, so does the urgent need for grouping methods to make
+  sense of large-scale datasets of spike trains. Existing methods require
+  specifying the number of groups in advance, limiting their use in exploratory
+  analyses. I derive a new method from network theory that solves this key
+  difficulty: it self-determines the maximum number of groups in any set of
+  spike trains, and groups them to maximize intragroup similarity. This method
+  brings us revealing new insights into the encoding of aversive stimuli by
+  dopaminergic neurons, and the organization of spontaneous neural activity in
+  cortex. I show that the characteristic pause response of a
+  rat{\textquoteright}s dopaminergic neuron depends on the state of the
+  superior colliculus: when it is inactive, aversive stimuli invoke a single
+  pattern of dopaminergic neuron spiking; when active, multiple patterns occur,
+  yet the spike timing in each is reliable. In spontaneous multineuron activity
+  from the cortex of anesthetized cat, I show the existence of neural ensembles
+  that evolve in membership and characteristic timescale of organization during
+  global slow oscillations. I validate these findings by showing that the
+  method both is remarkably reliable at detecting known groups and can detect
+  large-scale organization of dynamics in a model of the striatum.%
+    }
+    \verb{doi}
+    \verb 10.1523/JNEUROSCI.2853-10.2011
+    \endverb
+    \verb{eprint}
+    \verb https://www.jneurosci.org/content/31/6/2321.full.pdf
+    \endverb
+    \field{issn}{0270-6474}
+    \field{number}{6}
+    \field{pages}{2321\bibrangedash 2336}
+    \field{title}{Spike-Train Communities: Finding Groups of Similar Spike
+  Trains}
+    \verb{url}
+    \verb https://www.jneurosci.org/content/31/6/2321
+    \endverb
+    \field{volume}{31}
+    \field{journaltitle}{Journal of Neuroscience}
+    \field{year}{2011}
+  \endentry
+
+  \entry{jun}{article}{}
+    \name{author}{35}{}{%
+      {{hash=JJJ}{%
+         family={Jun},
+         familyi={J\bibinitperiod},
+         given={James\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SNA}{%
+         family={Steinmetz},
+         familyi={S\bibinitperiod},
+         given={Nicholas\bibnamedelima A.},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SJH}{%
+         family={Siegle},
+         familyi={S\bibinitperiod},
+         given={Joshua\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=DDJ}{%
+         family={Denman},
+         familyi={D\bibinitperiod},
+         given={Daniel\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bauza},
+         familyi={B\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Barbarits},
+         familyi={B\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LAK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Albert\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=ACA}{%
+         family={Anastassiou},
+         familyi={A\bibinitperiod},
+         given={Costas\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Andrei},
+         familyi={A\bibinitperiod},
+         given={Alexandru},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Ayd{\i}n},
+         familyi={A\bibinitperiod},
+         given={{\c{C}}a{\u{g}}atay},
+         giveni={{\c{C}}\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Barbic},
+         familyi={B\bibinitperiod},
+         given={Mladen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BTJ}{%
+         family={Blanche},
+         familyi={B\bibinitperiod},
+         given={Timothy\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Bonin},
+         familyi={B\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Couto},
+         familyi={C\bibinitperiod},
+         given={Jo{\~a}o},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={Dutta},
+         familyi={D\bibinitperiod},
+         given={Barundeb},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GSL}{%
+         family={Gratiy},
+         familyi={G\bibinitperiod},
+         given={Sergey\bibnamedelima L.},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GDA}{%
+         family={Gutnisky},
+         familyi={G\bibinitperiod},
+         given={Diego\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={H{\"a}usser},
+         familyi={H\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Karsh},
+         familyi={K\bibinitperiod},
+         given={Bill},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Ledochowitsch},
+         familyi={L\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=LCM}{%
+         family={Lopez},
+         familyi={L\bibinitperiod},
+         given={Carolina\bibnamedelima Mora},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Mitelut},
+         familyi={M\bibinitperiod},
+         given={Catalin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Musa},
+         familyi={M\bibinitperiod},
+         given={Silke},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Okun},
+         familyi={O\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pachitariu},
+         familyi={P\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Putzeys},
+         familyi={P\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RPD}{%
+         family={Rich},
+         familyi={R\bibinitperiod},
+         given={P.\bibnamedelima Dylan},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rossant},
+         familyi={R\bibinitperiod},
+         given={Cyrille},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SWl}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Wei-lung},
+         giveni={W\bibinithyphendelim l\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Carandini},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HKD}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kenneth\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=OJ}{%
+         family={O'Keefe},
+         familyi={O\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HTD}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Timothy\bibnamedelima D.},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJJ+1}
+  \strng{fullhash}{JJJSNASJHDDJBMBBLAKACAAAACBMBTJBVCJDBGSLGDAHMKBLPLCMMCMSOMPMPJRPDRCSWlSKCMHKDKCOJHTD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    New silicon probes known as Neuropixels are shown to record from hundreds
+  of neurons simultaneously in awake and freely moving rodents.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature24636
+    \endverb
+    \field{issn}{1476-4687}
+    \field{number}{7679}
+    \field{pages}{232\bibrangedash 236}
+    \field{title}{Fully integrated silicon probes for high-density recording of
+  neural activity}
+    \verb{url}
+    \verb https://doi.org/10.1038/nature24636
+    \endverb
+    \field{volume}{551}
+    \field{journaltitle}{Nature}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{kilhoffer}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KMC}{%
+         family={Kilhoffer},
+         familyi={K\bibinitperiod},
+         given={Marie-Claude},
+         giveni={M\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=RDM}{%
+         family={Roberts},
+         familyi={R\bibinitperiod},
+         given={Daniel\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Adibi},
+         familyi={A\bibinitperiod},
+         given={Abiodun\bibnamedelima 0.},
+         giveni={A\bibinitperiod\bibinitdelim \bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wattersons},
+         familyi={W\bibinitperiod},
+         given={D.\bibnamedelima Martin},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Haiech},
+         familyi={H\bibinitperiod},
+         given={Jacques},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KMC+1}
+    \strng{fullhash}{KMCRDMAAWDMHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1021/bi00149a046
+    \endverb
+    \field{number}{34}
+    \field{pages}{8098\bibrangedash 8106}
+    \field{title}{Use of Engineered Proteins With Internal Tryptophan Reporter
+  Groups and Pertubation Techniques to Probe the Mechanism of Ligand-Protein
+  Interactions: Investigation of the Mechanism of Calcium Binding to
+  Calmodulin}
+    \verb{url}
+    \verb https://doi.org/10.1021/bi00149a046
+    \endverb
+    \field{volume}{31}
+    \field{journaltitle}{Biochemistry}
+    \field{month}{09}
+    \field{year}{1992}
+  \endentry
+
+  \entry{koch}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KC}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={Christoff},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{KC1}
+    \strng{fullhash}{KC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{isbn}{ISBN 0-19-510491-9}
+    \field{title}{Biophysics of Computation: Information Processing in Single
+  Neurons}
+    \field{year}{1999}
+  \endentry
+
+  \entry{lee}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LSH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Suk-HO},
+         giveni={S\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rosenmund},
+         familyi={R\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schwaller},
+         familyi={S\bibinitperiod},
+         given={Beat},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NE}{%
+         family={Neher},
+         familyi={N\bibinitperiod},
+         given={Erwin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LSH+1}
+    \strng{fullhash}{LSHRCSBNE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1111/j.1469-7793.2000.t01-3-00405.x
+    \endverb
+    \field{title}{Differences in Ca2+ buffering properties between excitatory
+  and inhibitory hippocampal neurons from the rat}
+    \field{volume}{525}
+    \field{journaltitle}{The Journal of Physiology}
+    \field{month}{07}
+    \field{year}{2000}
+  \endentry
+
+  \entry{litwinkumar}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LKA}{%
+         family={Litwin-Kumar},
+         familyi={L\bibinithyphendelim K\bibinitperiod},
+         given={Ashok},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chacron},
+         familyi={C\bibinitperiod},
+         given={Maurice},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={Doiron},
+         familyi={D\bibinitperiod},
+         given={Brent},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LKACMDB1}
+    \strng{fullhash}{LKACMDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1371/journal.pcbi.1002667
+    \endverb
+    \field{pages}{e1002667}
+    \field{title}{The Spatial Structure of Stimuli Shapes the Timescale of
+  Correlations in Population Spiking Activity}
+    \field{volume}{8}
+    \field{journaltitle}{PLoS computational biology}
+    \field{month}{09}
+    \field{year}{2012}
+  \endentry
+
+  \entry{maravall}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MM}{%
+         family={Maravall},
+         familyi={M\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=MZF}{%
+         family={Mainen},
+         familyi={M\bibinitperiod},
+         given={Z\bibnamedelima F},
+         giveni={Z\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=SBL}{%
+         family={Sabatini},
+         familyi={S\bibinitperiod},
+         given={B\bibnamedelima L},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+    }
+    \strng{namehash}{MM+1}
+    \strng{fullhash}{MMMZFSBLSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1016/S0006-3495(00)76809-3
+    \endverb
+    \field{number}{5}
+    \field{pages}{2655\bibrangedash 2667}
+    \field{title}{Estimating intracellular calcium concentrations and buffering
+  without wavelength ratioing}
+    \verb{url}
+    \verb https://doi.org/10.1016/s0006-3495(00)76809-3
+    \endverb
+    \field{volume}{78}
+    \field{journaltitle}{Biophysical Journal}
+    \field{month}{05}
+    \field{year}{2000}
+  \endentry
+
+  \entry{maugis}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={Maugis},
+         familyi={M\bibinitperiod},
+         given={Pa},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Event Conditional Correlation: Or How Non-Linear Linear
+  Dependence Can Be}
+    \field{month}{01}
+    \field{year}{2014}
+  \endentry
+
+  \entry{meila}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Meilă},
+         familyi={M\bibinitperiod},
+         given={Marina},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Agreement measures, Clustering, Comparing partitions, Information
+  theory, Mutual information, Similarity measures}
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    This paper proposes an information theoretic criterion for comparing two
+  partitions, or clusterings, of the same data set. The criterion, called
+  variation of information (VI), measures the amount of information lost and
+  gained in changing from clustering C to clustering C′. The basic properties
+  of VI are presented and discussed. We focus on two kinds of properties: (1)
+  those that help one build intuition about the new criterion (in particular,
+  it is shown the VI is a true metric on the space of clusterings), and (2)
+  those that pertain to the comparability of VI values over different
+  experimental conditions. As the latter properties have rarely been discussed
+  explicitly before, other existing comparison criteria are also examined in
+  their light. Finally we present the VI from an axiomatic point of view,
+  showing that it is the only “sensible” criterion for comparing partitions
+  that is both aligned to the lattice and convexely additive. As a consequence,
+  we prove an impossibility result for comparing partitions: there is no
+  criterion for comparing partitions that simultaneously satisfies the above
+  two desirable properties and is bounded.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.jmva.2006.11.013
+    \endverb
+    \field{issn}{0047-259X}
+    \field{number}{5}
+    \field{pages}{873 \bibrangedash  895}
+    \field{title}{Comparing clusterings—an information based distance}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0047259X06002016
+    \endverb
+    \field{volume}{98}
+    \field{journaltitle}{Journal of Multivariate Analysis}
+    \field{year}{2007}
+  \endentry
+
+  \entry{neher}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NE}{%
+         family={Neher},
+         familyi={N\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=AGJ}{%
+         family={Augustine},
+         familyi={A\bibinitperiod},
+         given={G.\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Adrenal Glands/*metabolism; Animals; Calcium/*metabolism; Calcium
+  Channels/physiology; Cattle; Cells, Cultured; Fura-2; Mathematics;
+  Microscopy, Fluorescence; Models, Biological}
+    \strng{namehash}{NEAGJ1}
+    \strng{fullhash}{NEAGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    1. Digital imaging and photometry were used in conjunction with the
+  fluorescent Ca2+ indicator, Fura-2, to examine intracellular Ca2+ signals
+  produced by depolarization of single adrenal chromaffin cells. 2.
+  Depolarization with a patch pipette produced radial gradients of Ca2+ within
+  the cell, with Ca2+ concentration highest in the vicinity of the plasma
+  membrane. These gradients dissipated within a few hundred milliseconds when
+  the voltage-gated Ca2+ channels were closed. 3. Dialysis of Fura-2 into the
+  chromaffin cell caused concentration-dependent changes in the
+  depolarization-induced Ca2+ signal, decreasing its magnitude and slowing its
+  recovery time course. These changes were used to estimate the properties of
+  the endogenous cytoplasmic Ca2+ buffer with which Fura-2 competes for Ca2+.
+  4. The spatially averaged Fura-2 signal was well described by a model
+  assuming fast competition between Fura-2 and an endogenous buffer on a
+  millisecond time scale. Retrieval of calcium by pumps and slow buffers occurs
+  on a seconds-long time scale. No temporal changes indicative of buffers with
+  intermediate kinetics could be detected. 5. Two independent estimates of the
+  capacity of the fast endogenous Ca2+ buffer suggest that 98-99{\%} of the
+  Ca2+ entering the cell normally is taken up by this buffer. This buffer
+  appears to be immobile, because it does not wash out of the cell during
+  dialysis. It has a low affinity for Ca2+ ions, because it does not saturate
+  with 1 microM-Ca2+ inside the cell. 6. The low capacity, affinity and
+  mobility of the endogenous Ca2+ buffer makes it possible for relatively small
+  amounts of exogenous Ca2+ buffers, such as Fura-2, to exert a significant
+  influence on the characteristics of the Ca2+ concentration signal as measured
+  by fluorescence ratios. On the other hand, even at moderate Fura-2
+  concentrations (0.4 mM) Fura-2 will dominate over the endogenous buffers.
+  Under these conditions radiometric Ca2+ concentration signals are largely
+  attenuated, but absolute fluorescence changes (at 390 nm) accurately reflect
+  calcium fluxes.%
+    }
+    \verb{doi}
+    \verb 10.1113/jphysiol.1992.sp019127
+    \endverb
+    \field{issn}{0022-3751}
+    \field{note}{1331424[pmid]}
+    \field{pages}{273\bibrangedash 301}
+    \field{title}{Calcium gradients and buffers in bovine chromaffin cells}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/1331424
+    \endverb
+    \field{volume}{450}
+    \field{journaltitle}{The Journal of physiology}
+    \field{year}{1992}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{pnevmatikakis}{article}{}
+    \name{author}{16}{}{%
+      {{hash=PE}{%
+         family={Pnevmatikakis},
+         familyi={P\bibinitperiod},
+         given={E.A.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Machado},
+         familyi={M\bibinitperiod},
+         given={T.A.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Merel},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pfau},
+         familyi={P\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Reardon},
+         familyi={R\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mu},
+         familyi={M\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lacefield},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Ahrens},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bruno},
+         familyi={B\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={Jessell},
+         familyi={J\bibinitperiod},
+         given={T.M.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Peterka},
+         familyi={P\bibinitperiod},
+         given={D.S.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=R}{%
+         family={R.Yuste},
+         familyi={R\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paninski},
+         familyi={P\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PE+1}
+    \strng{fullhash}{PESDGYMTMJPDRTMYLCYWAMBRJTPDRPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1016/j.neuron.2015.11.037
+    \endverb
+    \field{number}{2}
+    \field{pages}{285\bibrangedash 299}
+    \field{title}{Simultaneous Denoising, Deconvolution, and Demixing of
+  Calcium Imaging Data}
+    \verb{url}
+    \verb https://doi.org/10.1016/j.neuron.2015.11.037
+    \endverb
+    \field{volume}{89}
+    \field{journaltitle}{Neuron}
+    \field{month}{01}
+    \field{year}{2016}
+  \endentry
+
+  \entry{paninski1}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PE}{%
+         family={Pnevmatikakis},
+         familyi={P\bibinitperiod},
+         given={Eftychios},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Merel},
+         familyi={M\bibinitperiod},
+         given={Josh},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pakman},
+         familyi={P\bibinitperiod},
+         given={Ari},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paninski},
+         familyi={P\bibinitperiod},
+         given={Liam},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PE+2}
+    \strng{fullhash}{PEMJPAPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1109/ACSSC.2013.6810293
+    \endverb
+    \field{title}{Bayesian spike inference from calcium imaging data}
+    \field{journaltitle}{Conference Record - Asilomar Conference on Signals,
+  Systems and Computers}
+    \field{month}{11}
+    \field{year}{2013}
+  \endentry
+
+  \entry{paninski2}{article}{}
+    \name{author}{9}{}{%
+      {{hash=PE}{%
+         family={Pnevmatikakis},
+         familyi={P\bibinitperiod},
+         given={Eftychios},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Yuanjun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pfau},
+         familyi={P\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lacefield},
+         familyi={L\bibinitperiod},
+         given={Clay},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Poskanzer},
+         familyi={P\bibinitperiod},
+         given={Kira},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bruno},
+         familyi={B\bibinitperiod},
+         given={Randy},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YR}{%
+         family={Yuste},
+         familyi={Y\bibinitperiod},
+         given={Rafael},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paninski},
+         familyi={P\bibinitperiod},
+         given={Liam},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PE+2}
+    \strng{fullhash}{PEGYSDPDLCPKBRYRPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{A structured matrix factorization framework for large scale
+  calcium imaging data analysis}
+    \field{month}{09}
+    \field{year}{2014}
+  \endentry
+
+  \entry{shannon}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCE}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={C.\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCE1}
+    \strng{fullhash}{SCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1948}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1002/j.1538-7305.1948.tb01338.x
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/j.1538-7305.1948.tb01
+    \verb 338.x
+    \endverb
+    \field{number}{3}
+    \field{pages}{379\bibrangedash 423}
+    \field{title}{A Mathematical Theory of Communication}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/j.1538-7305.1948.tb01
+    \verb 338.x
+    \endverb
+    \field{volume}{27}
+    \field{journaltitle}{Bell System Technical Journal}
+    \field{year}{1948}
+  \endentry
+
+  \entry{stringer}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SC}{%
+         family={Stringer},
+         familyi={S\bibinitperiod},
+         given={Carsen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pachitariu},
+         familyi={P\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Steinmetz},
+         familyi={S\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RCB}{%
+         family={Reddy},
+         familyi={R\bibinitperiod},
+         given={Charu\bibnamedelima Bai},
+         giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Carandini},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HKD}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kenneth\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCPMSNRCBCMHKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    How is it that groups of neurons dispersed through the brain interact to
+  generate complex behaviors? Three papers in this issue present brain-scale
+  studies of neuronal activity and dynamics (see the Perspective by Huk and
+  Hart). Allen et al. found that in thirsty mice, there is widespread neural
+  activity related to stimuli that elicit licking and drinking. Individual
+  neurons encoded task-specific responses, but every brain area contained
+  neurons with different types of response. Optogenetic stimulation of
+  thirst-sensing neurons in one area of the brain reinstated drinking and
+  neuronal activity across the brain that previously signaled thirst.
+  Gr{\"u}ndemann et al. investigated the activity of mouse basal amygdala
+  neurons in relation to behavior during different tasks. Two ensembles of
+  neurons showed orthogonal activity during exploratory and nonexploratory
+  behaviors, possibly reflecting different levels of anxiety experienced in
+  these areas. Stringer et al. analyzed spontaneous neuronal firing, finding
+  that neurons in the primary visual cortex encoded both visual information and
+  motor activity related to facial movements. The variability of neuronal
+  responses to visual stimuli in the primary visual area is mainly related to
+  arousal and reflects the encoding of latent behavioral states.Science, this
+  issue p. eaav3932, p. eaav8736, p. eaav7893; see also p. 236INTRODUCTIONIn
+  the absence of sensory inputs, the brain produces structured patterns of
+  activity, which can be as large as or larger than sensory-driven activity.
+  Ongoing activity exists even in primary sensory cortices and has been
+  hypothesized to reflect recapitulation of previous sensory experiences, or
+  expectations of possible sensory events. Alternatively, ongoing activity
+  could be related to behavioral and cognitive states.RATIONALEMuch previous
+  work has linked spontaneous neural activity to behavior through
+  one-dimensional measures like running speed and pupil diameter. However, mice
+  perform diverse behaviors consisting of whisking, licking, sniffing, and
+  other facial movements. We hypothesized that there exists a multidimensional
+  representation of behavior in visual cortex and that previously reported
+  {\textquotedblleft}noise{\textquotedblright} during stimulus presentations
+  may in fact be behaviorally driven. To investigate this, we recorded the
+  activity of ~10,000 neurons in visual cortex of awake mice using two-photon
+  calcium imaging, while simultaneously monitoring the facial movements using
+  an infrared camera. In a second set of experiments, we recorded the activity
+  of thousands of neurons across the brain using eight simultaneous Neuropixels
+  probes, again videographically monitoring facial behavior.RESULTSFirst, we
+  found that ongoing activity in visual cortex is high dimensional: More than a
+  hundred latent dimensions could be reliably extracted from the population
+  activity. We found that a third of this activity could be predicted by a
+  multidimensional model of the mouse{\textquoteright}s behavior, extracted
+  from the face video. This behaviorally related activity was not limited to
+  visual cortex. We observed multidimensional representations of behavior in
+  electrophysiological recordings from frontal, sensorimotor, and retrosplenial
+  cortex; hippocampus; striatum; thalamus; and midbrain. Even though both
+  behavior and neural activity contained fast{\textendash}time scale
+  fluctuations on the order of 200 ms, they were only related to each other at
+  a time scale of about 1 s. We next investigated how this spontaneous,
+  behavior-related signal interacts with stimulus responses. The representation
+  of sensory stimuli and behavioral variables was mixed in the same neurons:
+  The fractions of each neuron{\textquoteright}s variance explained by stimuli
+  and by behavior were only slightly negatively correlated, and neurons with
+  similar stimulus responses did not have more similar behavioral correlates.
+  Nevertheless, at a population level, the neural dimensions encoding motor
+  variables overlapped with those encoding visual stimuli along only one
+  dimension, which coherently increased or decreased the activity of the entire
+  population. Activity in all other behaviorally driven dimensions continued
+  unperturbed regardless of sensory stimulation.CONCLUSIONThe brainwide
+  representation of behavioral variables suggests that information encoded
+  nearly anywhere in the forebrain is combined with behavioral state variables
+  into a mixed representation. We found that these multidimensional signals are
+  present both during ongoing activity and during passive viewing of a
+  stimulus. This suggests that previously reported noise during stimulus
+  presentations may consist primarily of behavioral-state information. What
+  benefit could this ubiquitous mixing of sensory and motor information
+  provide? The most appropriate behavior for an animal to perform at any moment
+  depends on the combination of available sensory data, ongoing motor actions,
+  and purely internal variables such as motivational drives. Integration of
+  sensory inputs with motor actions must therefore occur somewhere in the
+  nervous system. Our data indicate that it happens as early as primary sensory
+  cortex.Large-scale neural population recordings can be predicted from
+  behavior.We used new recording technologies to simultaneously monitor the
+  activity of ~10,000 neurons in a single brain area and ~3000 neurons from
+  across the brain (top left). These neurons showed slow{\textendash}time scale
+  patterns of coactivation restricted to subsets of neurons which were
+  distributed across the brain (top right). The patterns of neural activity
+  appeared to be driven by specific spontaneous behaviors that the animals
+  engaged in during the experiment. We tracked these spontaneous behaviors by
+  projecting a video recording of the mouse face onto a set of canonical
+  {\textquotedblleft}eigenfaces{\textquotedblright} (bottom left) and used
+  these projections to predict a large fraction of the neural activity (bottom
+  right). t, time; PC, principal component.Neuronal populations in sensory
+  cortex produce variable responses to sensory stimuli and exhibit intricate
+  spontaneous activity even without external sensory input. Cortical
+  variability and spontaneous activity have been variously proposed to
+  represent random noise, recall of prior experience, or encoding of ongoing
+  behavioral and cognitive variables. Recording more than 10,000 neurons in
+  mouse visual cortex, we observed that spontaneous activity reliably encoded a
+  high-dimensional latent state, which was partially related to the
+  mouse{\textquoteright}s ongoing behavior and was represented not just in
+  visual cortex but also across the forebrain. Sensory inputs did not interrupt
+  this ongoing signal but added onto it a representation of external stimuli in
+  orthogonal dimensions. Thus, visual cortical population activity, despite its
+  apparently noisy structure, reliably encodes an orthogonal fusion of sensory
+  and multidimensional behavioral information.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.aav7893
+    \endverb
+    \verb{eprint}
+    \verb https://science.sciencemag.org/content/364/6437/eaav7893.full.pdf
+    \endverb
+    \field{issn}{0036-8075}
+    \field{number}{6437}
+    \field{title}{Spontaneous behaviors drive multidimensional, brainwide
+  activity}
+    \verb{url}
+    \verb https://science.sciencemag.org/content/364/6437/eaav7893
+    \endverb
+    \field{volume}{364}
+    \field{journaltitle}{Science}
+    \field{year}{2019}
+  \endentry
+
+  \entry{tada}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TM}{%
+         family={Tada},
+         familyi={T\bibinitperiod},
+         given={Mayumi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Takeuchi},
+         familyi={T\bibinitperiod},
+         given={Atsuya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hashizume},
+         familyi={H\bibinitperiod},
+         given={Miki},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kitamura},
+         familyi={K\bibinitperiod},
+         given={Kazuo},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kano},
+         familyi={K\bibinitperiod},
+         given={Masanobu},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{cerebellum, mouse, neocortex, population activity, two-photon
+  imaging}
+    \strng{namehash}{TM+1}
+    \strng{fullhash}{TMTAHMKKKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Abstract Calcium imaging of individual neurons is widely used for
+  monitoring their activity in vitro and in vivo. Synthetic fluorescent calcium
+  indicator dyes are commonly used, but the resulting calcium signals sometimes
+  suffer from a low signal-to-noise ratio (SNR). Therefore, it is difficult to
+  detect signals caused by single action potentials (APs) particularly from
+  neurons in vivo. Here we showed that a recently developed calcium indicator
+  dye, Cal-520, is sufficiently sensitive to reliably detect single APs both in
+  vitro and in vivo. In neocortical neurons, calcium signals were linearly
+  correlated with the number of APs, and the SNR was > 6 for in vitro slice
+  preparations and > 1.6 for in vivo anesthetised mice. In cerebellar Purkinje
+  cells, dendritic calcium transients evoked by climbing fiber inputs were
+  clearly observed in anesthetised mice with a high SNR and fast decay time.
+  These characteristics of Cal-520 are a great advantage over those of Oregon
+  Green BAPTA-1, the most commonly used calcium indicator dye, for monitoring
+  the activity of individual neurons both in vitro and in vivo.%
+    }
+    \verb{doi}
+    \verb 10.1111/ejn.12476
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/ejn.12476
+    \endverb
+    \field{number}{11}
+    \field{pages}{1720\bibrangedash 1728}
+    \field{title}{A highly sensitive fluorescent indicator dye for calcium
+  imaging of neural activity in vitro and in vivo}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/ejn.12476
+    \endverb
+    \field{volume}{39}
+    \field{journaltitle}{European Journal of Neuroscience}
+    \field{year}{2014}
+  \endentry
+
+  \entry{tian}{article}{}
+    \name{author}{14}{}{%
+      {{hash=TL}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HSA}{%
+         family={Hires},
+         familyi={H\bibinitperiod},
+         given={S.\bibnamedelima Andrew},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Tianyi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CME}{%
+         family={Chiappe},
+         familyi={C\bibinitperiod},
+         given={M.\bibnamedelima Eugenia},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CSH}{%
+         family={Chalasani},
+         familyi={C\bibinitperiod},
+         given={Sreekanth\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Petreanu},
+         familyi={P\bibinitperiod},
+         given={Leopoldo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Akerboom},
+         familyi={A\bibinitperiod},
+         given={Jasper},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MSA}{%
+         family={McKinney},
+         familyi={M\bibinitperiod},
+         given={Sean\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SER}{%
+         family={Schreiter},
+         familyi={S\bibinitperiod},
+         given={Eric\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BCI}{%
+         family={Bargmann},
+         familyi={B\bibinitperiod},
+         given={Cornelia\bibnamedelima I.},
+         giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=JV}{%
+         family={Jayaraman},
+         familyi={J\bibinitperiod},
+         given={Vivek},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LLL}{%
+         family={Looger},
+         familyi={L\bibinitperiod},
+         given={Loren\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Animals; Brain/metabolism; Caenorhabditis
+  elegans/*cytology/metabolism; Calcium/*metabolism; Cell Line; Drosophila
+  melanogaster/*cytology/metabolism; Fluorescence Resonance Energy Transfer;
+  Humans; Mice; Neurons/*metabolism}
+    \strng{namehash}{TL+1}
+    \strng{fullhash}{TLHSAMTHDCMECSHPLAJMSASERBCIJVSKLLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Genetically encoded calcium indicators (GECIs) can be used to image
+  activity in defined neuronal populations. However, current GECIs produce
+  inferior signals compared to synthetic indicators and recording electrodes,
+  precluding detection of low firing rates. We developed a single-wavelength
+  GCaMP2-based GECI (GCaMP3), with increased baseline fluorescence (3-fold),
+  increased dynamic range (3-fold) and higher affinity for calcium (1.3-fold).
+  We detected GCaMP3 fluorescence changes triggered by single action potentials
+  in pyramidal cell dendrites, with signal-to-noise ratio and photostability
+  substantially better than those of GCaMP2, D3cpVenus and TN-XXL. In
+  Caenorhabditis elegans chemosensory neurons and the Drosophila melanogaster
+  antennal lobe, sensory stimulation-evoked fluorescence responses were
+  significantly enhanced with GCaMP3 (4-6-fold). In somatosensory and motor
+  cortical neurons in the intact mouse, GCaMP3 detected calcium transients with
+  amplitudes linearly dependent on action potential number. Long-term imaging
+  in the motor cortex of behaving mice revealed large fluorescence changes in
+  imaged neurons over months.%
+    }
+    \verb{doi}
+    \verb 10.1038/nmeth.1398
+    \endverb
+    \field{edition}{2009/11/08}
+    \field{issn}{1548-7105}
+    \field{note}{19898485[pmid]}
+    \field{number}{12}
+    \field{pages}{875\bibrangedash 881}
+    \field{title}{Imaging neural activity in worms, flies and mice with
+  improved GCaMP calcium indicators}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/19898485
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Nature methods}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{treves}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TA}{%
+         family={Treves},
+         familyi={T\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Panzeri},
+         familyi={P\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TAPS1}
+    \strng{fullhash}{TAPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Extracting information measures from limited experimental samples, such as
+  those normally available when using data recorded in vivo from mammalian
+  cortical neurons, is known to be plagued by a systematic error, which tends
+  to bias the estimate upward. We calculate here the average of the bias, under
+  certain conditions, as an asymptotic expansion in the inverse of the size of
+  the data sample. The result agrees with numerical simulations, and is
+  applicable, as an additive correction term, to measurements obtained under
+  such conditions. Moreover, we discuss the implications for measurements
+  obtained through other usual procedures.%
+    }
+    \verb{doi}
+    \verb 10.1162/neco.1995.7.2.399
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1162/neco.1995.7.2.399
+    \endverb
+    \field{number}{2}
+    \field{pages}{399\bibrangedash 407}
+    \field{title}{The Upward Bias in Measures of Information Derived from
+  Limited Data Samples}
+    \verb{url}
+    \verb https://doi.org/10.1162/neco.1995.7.2.399
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Neural Computation}
+    \field{year}{1995}
+  \endentry
+
+  \entry{vinh}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VNX}{%
+         family={Vinh},
+         familyi={V\bibinitperiod},
+         given={Nguyen\bibnamedelima Xuan},
+         giveni={N\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={Epps},
+         familyi={E\bibinitperiod},
+         given={Julien},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bailey},
+         familyi={B\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JMLR.org}%
+    }
+    \strng{namehash}{VNXEJBJ1}
+    \strng{fullhash}{VNXEJBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{issn}{1532-4435}
+    \field{pages}{2837–2854}
+    \field{title}{Information Theoretic Measures for Clusterings Comparison:
+  Variants, Properties, Normalization and Correction for Chance}
+    \field{volume}{11}
+    \field{journaltitle}{J. Mach. Learn. Res.}
+    \field{month}{12}
+    \field{year}{2010}
+  \endentry
+
+  \entry{vogelstein}{article}{}
+    \name{author}{7}{}{%
+      {{hash=VJT}{%
+         family={Vogelstein},
+         familyi={V\bibinitperiod},
+         given={Joshua\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=PAM}{%
+         family={Packer},
+         familyi={P\bibinitperiod},
+         given={Adam\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MTA}{%
+         family={Machado},
+         familyi={M\bibinitperiod},
+         given={Timothy\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sippy},
+         familyi={S\bibinitperiod},
+         given={Tanya},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Babadi},
+         familyi={B\bibinitperiod},
+         given={Baktash},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=YR}{%
+         family={Yuste},
+         familyi={Y\bibinitperiod},
+         given={Rafael},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Paninski},
+         familyi={P\bibinitperiod},
+         given={Liam},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VJT+1}
+    \strng{fullhash}{VJTPAMMTASTBBYRPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1152/jn.01073.2009
+    \endverb
+    \field{number}{6}
+    \field{pages}{295–300}
+    \field{title}{Fast nonnegative deconvolution for spike train inference from
+  population calcium imaging}
+    \verb{url}
+    \verb https://dx.doi.org/10.1152%2Fjn.01073.2009
+    \endverb
+    \field{volume}{104}
+    \field{journaltitle}{Journal of neurophysiology}
+    \field{month}{10}
+    \field{year}{2010}
+  \endentry
+
+  \entry{zou}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZH}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hastie},
+         familyi={H\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZHHT1}
+    \strng{fullhash}{ZHHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{pages}{301\bibrangedash 320}
+    \field{title}{Regularization and variable selection via the Elastic Net}
+    \field{volume}{67}
+    \field{journaltitle}{Journal of the Royal Statistical Society, Series B}
+    \field{year}{2005}
+  \endentry
+\enddatalist
+\endinput

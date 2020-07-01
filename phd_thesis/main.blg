@@ -1,0 +1,97 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
+A level-1 auxiliary file: Chapters/eight_probe.aux
+A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
+A level-1 auxiliary file: Chapters/small_chapter.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 11672 items from 5000.
+Database file #1: main-blx.bib
+Database file #2: phd_thesis.bib
+Warning--I'm ignoring tian's extra "note" field
+--line 316 of file phd_thesis.bib
+Warning--I'm ignoring tian's extra "note" field
+--line 317 of file phd_thesis.bib
+Warning--I'm ignoring tian's extra "url" field
+--line 321 of file phd_thesis.bib
+Warning--I'm ignoring neher's extra "note" field
+--line 337 of file phd_thesis.bib
+Warning--I'm ignoring neher's extra "url" field
+--line 341 of file phd_thesis.bib
+Warning--I'm ignoring cohen1's extra "note" field
+--line 404 of file phd_thesis.bib
+Warning--I'm ignoring cohen1's extra "note" field
+--line 405 of file phd_thesis.bib
+Warning--I'm ignoring cohen1's extra "url" field
+--line 409 of file phd_thesis.bib
+Warning--I didn't find a database entry for "forney"
+Warning--I didn't find a database entry for "schneidman"
+Warning--I didn't find a database entry for "flach"
+Warning--I didn't find a database entry for "ganmor"
+Warning--I didn't find a database entry for "tkacik"
+Warning--I didn't find a database entry for "cohen"
+Warning--I didn't find a database entry for "churchland"
+Warning--I didn't find a database entry for "odonnell"
+Warning--I didn't find a database entry for "steinmetz"
+Warning--I didn't find a database entry for "shimazaki"
+Warning--I didn't find a database entry for "kolacayk"
+Biblatex version: 3.11
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 37 entries,
+            6304 wiz_defined-function locations,
+            1509 strings with 41941 characters,
+and the built_in function-call counts, 429552 in all, are:
+= -- 35692
+> -- 5094
+< -- 1129
++ -- 12065
+- -- 2182
+* -- 34581
+:= -- 53256
+add.period$ -- 0
+call.type$ -- 37
+change.case$ -- 555
+chr.to.int$ -- 149
+cite$ -- 72
+duplicate$ -- 43018
+empty$ -- 37364
+format.name$ -- 3926
+if$ -- 83159
+int.to.chr$ -- 0
+int.to.str$ -- 84
+missing$ -- 0
+newline$ -- 2310
+num.names$ -- 1671
+pop$ -- 14844
+preamble$ -- 1
+purify$ -- 1020
+quote$ -- 0
+skip$ -- 6731
+stack$ -- 0
+substring$ -- 70257
+swap$ -- 8443
+text.length$ -- 1135
+text.prefix$ -- 38
+top$ -- 1
+type$ -- 1246
+warning$ -- 0
+while$ -- 7218
+width$ -- 0
+write$ -- 2274
+(There were 19 warnings)

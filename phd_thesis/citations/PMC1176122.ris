@@ -1,0 +1,32 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Neher, E
+AU  - Augustine, G J
+T1  - Calcium gradients and buffers in bovine chromaffin cells
+LA  - eng
+SN  - 0022-3751
+SN  - 1469-7793
+Y1  - 1992/05/
+AB  - 1. Digital imaging and photometry were used in conjunction with the fluorescent Ca2+ indicator, Fura-2, to examine intracellular Ca2+ signals produced by depolarization of single adrenal chromaffin cells. 2. Depolarization with a patch pipette produced radial gradients of Ca2+ within the cell, with Ca2+ concentration highest in the vicinity of the plasma membrane. These gradients dissipated within a few hundred milliseconds when the voltage-gated Ca2+ channels were closed. 3. Dialysis of Fura-2 into the chromaffin cell caused concentration-dependent changes in the depolarization-induced Ca2+ signal, decreasing its magnitude and slowing its recovery time course. These changes were used to estimate the properties of the endogenous cytoplasmic Ca2+ buffer with which Fura-2 competes for Ca2+. 4. The spatially averaged Fura-2 signal was well described by a model assuming fast competition between Fura-2 and an endogenous buffer on a millisecond time scale. Retrieval of calcium by pumps and slow buffers occurs on a seconds-long time scale. No temporal changes indicative of buffers with intermediate kinetics could be detected. 5. Two independent estimates of the capacity of the fast endogenous Ca2+ buffer suggest that 98-99% of the Ca2+ entering the cell normally is taken up by this buffer. This buffer appears to be immobile, because it does not wash out of the cell during dialysis. It has a low affinity for Ca2+ ions, because it does not saturate with 1 microM-Ca2+ inside the cell. 6. The low capacity, affinity and mobility of the endogenous Ca2+ buffer makes it possible for relatively small amounts of exogenous Ca2+ buffers, such as Fura-2, to exert a significant influence on the characteristics of the Ca2+ concentration signal as measured by fluorescence ratios. On the other hand, even at moderate Fura-2 concentrations (0.4 mM) Fura-2 will dominate over the endogenous buffers. Under these conditions radiometric Ca2+ concentration signals are largely attenuated, but absolute fluorescence changes (at 390 nm) accurately reflect calcium fluxes.
+SP  - 273
+EP  - 301
+VL  - 450
+AN  - 1331424
+UR  - https://pubmed.ncbi.nlm.nih.gov/1331424
+DO  - 10.1113/jphysiol.1992.sp019127
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1176122/
+U1  - 1331424[pmid]
+U2  - PMC1176122[pmcid]
+J2  - J Physiol
+JF  - The Journal of physiology
+KW  - Adrenal Glands/*metabolism
+KW  - Animals
+KW  - Calcium/*metabolism
+KW  - Calcium Channels/physiology
+KW  - Cattle
+KW  - Cells, Cultured
+KW  - Fura-2
+KW  - Mathematics
+KW  - Microscopy, Fluorescence
+KW  - Models, Biological
+ER  - 

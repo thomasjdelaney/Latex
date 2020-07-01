@@ -1,0 +1,87 @@
+PMID- 20554834
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20110509
+LR  - 20181113
+IS  - 1522-1598 (Electronic)
+IS  - 0022-3077 (Print)
+IS  - 0022-3077 (Linking)
+VI  - 104
+IP  - 6
+DP  - 2010 Dec
+TI  - Fast nonnegative deconvolution for spike train inference from population calcium 
+      imaging.
+PG  - 3691-704
+LID - 10.1152/jn.01073.2009 [doi]
+AB  - Fluorescent calcium indicators are becoming increasingly popular as a means for 
+      observing the spiking activity of large neuronal populations. Unfortunately, 
+      extracting the spike train of each neuron from a raw fluorescence movie is a 
+      nontrivial problem. This work presents a fast nonnegative deconvolution filter to 
+      infer the approximately most likely spike train of each neuron, given the 
+      fluorescence observations. This algorithm outperforms optimal linear deconvolution 
+      (Wiener filtering) on both simulated and biological data. The performance gains come 
+      from restricting the inferred spike trains to be positive (using an interior-point 
+      method), unlike the Wiener filter. The algorithm runs in linear time, and is fast 
+      enough that even when simultaneously imaging >100 neurons, inference can be 
+      performed on the set of all observed traces faster than real time. Performing 
+      optimal spatial filtering on the images further refines the inferred spike train 
+      estimates. Importantly, all the parameters required to perform the inference can be 
+      estimated using only the fluorescence data, obviating the need to perform joint 
+      electrophysiological and imaging calibration experiments.
+FAU - Vogelstein, Joshua T
+AU  - Vogelstein JT
+AD  - Johns Hopkins University, Department of Neuroscience, 3400 N. Charles St., 
+      Baltimore, MD 21205, USA. joshuav@jhu.edu
+FAU - Packer, Adam M
+AU  - Packer AM
+FAU - Machado, Timothy A
+AU  - Machado TA
+FAU - Sippy, Tanya
+AU  - Sippy T
+FAU - Babadi, Baktash
+AU  - Babadi B
+FAU - Yuste, Rafael
+AU  - Yuste R
+FAU - Paninski, Liam
+AU  - Paninski L
+LA  - eng
+GR  - T32 HD007430/HD/NICHD NIH HHS/United States
+GR  - DC-00109/DC/NIDCD NIH HHS/United States
+GR  - EY-11787/EY/NEI NIH HHS/United States
+GR  - Howard Hughes Medical Institute/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+PT  - Research Support, U.S. Gov't, Non-P.H.S.
+DEP - 20100616
+TA  - J Neurophysiol
+JT  - Journal of neurophysiology
+JID - 0375404
+RN  - 0 (Fluorescent Dyes)
+SB  - IM
+MH  - *Action Potentials
+MH  - *Algorithms
+MH  - *Calcium Signaling
+MH  - Computer Simulation
+MH  - Fluorescent Dyes/*analysis
+MH  - Microscopy, Fluorescence
+MH  - Microscopy, Video
+MH  - *Models, Neurological
+MH  - Neurons/physiology
+MH  - Normal Distribution
+MH  - Poisson Distribution
+MH  - *Signal Processing, Computer-Assisted
+MH  - Time Factors
+PMC - PMC3007657
+EDAT- 2010/06/18 06:00
+MHDA- 2011/05/10 06:00
+CRDT- 2010/06/18 06:00
+PHST- 2010/06/18 06:00 [entrez]
+PHST- 2010/06/18 06:00 [pubmed]
+PHST- 2011/05/10 06:00 [medline]
+AID - jn.01073.2009 [pii]
+AID - J01073-9 [pii]
+AID - 10.1152/jn.01073.2009 [doi]
+PST - ppublish
+SO  - J Neurophysiol. 2010 Dec;104(6):3691-704. doi: 10.1152/jn.01073.2009. Epub 2010 Jun 
+      16.

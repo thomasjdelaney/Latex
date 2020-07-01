@@ -1,10 +1,10 @@
 \begin{thebibliography}{9}
   \bibitem{berens}
-  Philipp Berens et al.,
-  \emph{Community-based benchmarking improves spike inference from two-photon calcium imaging data}.
-  bioRXiv,
-  https://doi.org/10.1101/177956,
-  (2017)
+  Berens P, Freeman J, Deneux T, Chenkov N, McColgan T, Speiser A, et al.,
+  \emph{Community-based benchmarking improves spike rate inference from two-photon calcium imaging data}.
+  PLoS Comput Biol 14(5): e1006157,
+  https://doi.org/10.1371/journal.pcbi.1006157,
+  (2018)
 
   \bibitem{maravall}
   M. Maravall, Z. F. Mainen, B. L. Sabatini, K. Svoboda,
@@ -147,7 +147,7 @@
 
   \bibitem{neher}
   Erwin Neher, George J. Augustine,
-  {Calcium gradients and buffers in bovine chromaffin cells}.
+  \emph{Calcium gradients and buffers in bovine chromaffin cells}.
   Journal of Physiology 450,
   273-301,
   (1992)
