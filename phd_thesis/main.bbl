@@ -532,6 +532,217 @@
     \field{year}{2013}
   \endentry
 
+  \entry{churchland}{article}{}
+    \name{author}{26}{}{%
+      {{hash=CMM}{%
+         family={Churchland},
+         familyi={C\bibinitperiod},
+         given={Mark\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=YBM}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Byron\bibnamedelima M.},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CJP}{%
+         family={Cunningham},
+         familyi={C\bibinitperiod},
+         given={John\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SLP}{%
+         family={Sugrue},
+         familyi={S\bibinitperiod},
+         given={Leo\bibnamedelima P.},
+         giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=CMR}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Marlene\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CGS}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NWT}{%
+         family={Newsome},
+         familyi={N\bibinitperiod},
+         given={William\bibnamedelima T.},
+         giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=CAM}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Andrew\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Hosseini},
+         familyi={H\bibinitperiod},
+         given={Paymon},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SBB}{%
+         family={Scott},
+         familyi={S\bibinitperiod},
+         given={Benjamin\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BDC}{%
+         family={Bradley},
+         familyi={B\bibinitperiod},
+         given={David\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SMA}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Matthew\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJA}{%
+         family={Movshon},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima Anthony},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=AKM}{%
+         family={Armstrong},
+         familyi={A\bibinitperiod},
+         given={Katherine\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={Tirin},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CSW}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Steve\bibnamedelima W.},
+         giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SLH}{%
+         family={Snyder},
+         familyi={S\bibinitperiod},
+         given={Lawrence\bibnamedelima H.},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LSG}{%
+         family={Lisberger},
+         familyi={L\bibinitperiod},
+         given={Stephen\bibnamedelima G.},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=PNJ}{%
+         family={Priebe},
+         familyi={P\bibinitperiod},
+         given={Nicholas\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=FIM}{%
+         family={Finn},
+         familyi={F\bibinitperiod},
+         given={Ian\bibnamedelima M.},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FD}{%
+         family={Ferster},
+         familyi={F\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RSI}{%
+         family={Ryu},
+         familyi={R\bibinitperiod},
+         given={Stephen\bibnamedelima I.},
+         giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Santhanam},
+         familyi={S\bibinitperiod},
+         given={Gopal},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sahani},
+         familyi={S\bibinitperiod},
+         given={Maneesh},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SKV}{%
+         family={Shenoy},
+         familyi={S\bibinitperiod},
+         given={Krishna\bibnamedelima V.},
+         giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Action Potentials; Anesthesia; Animals; Cats; Cerebral
+  Cortex/*physiology; Databases, Factual; Electrodes, Implanted; Factor
+  Analysis, Statistical; Macaca fascicularis; Macaca mulatta; Macaca
+  nemestrina; Membrane Potentials; Microelectrodes; Motor Activity/physiology;
+  Neurons/*physiology; Neuropsychological Tests; Time Factors; Video Recording;
+  Visual Perception/physiology; Wakefulness/physiology}
+    \strng{namehash}{CMM+1}
+  \strng{fullhash}{CMMYBMCJPSLPCMRCGSNWTCAMHPSBBBDCSMAKAMJAAKMMTCSWSLHLSGPNJFIMFDRSISGSMSKV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Neural responses are typically characterized by computing the mean firing
+  rate, but response variability can exist across trials. Many studies have
+  examined the effect of a stimulus on the mean response, but few have examined
+  the effect on response variability. We measured neural variability in 13
+  extracellularly recorded datasets and one intracellularly recorded dataset
+  from seven areas spanning the four cortical lobes in monkeys and cats. In
+  every case, stimulus onset caused a decline in neural variability. This
+  occurred even when the stimulus produced little change in mean firing rate.
+  The variability decline was observed in membrane potential recordings, in the
+  spiking of individual neurons and in correlated spiking variability measured
+  with implanted 96-electrode arrays. The variability decline was observed for
+  all stimuli tested, regardless of whether the animal was awake, behaving or
+  anaesthetized. This widespread variability decline suggests a rather general
+  property of cortex, that its state is stabilized by an input.%
+    }
+    \verb{doi}
+    \verb 10.1038/nn.2501
+    \endverb
+    \field{edition}{2010/02/21}
+    \field{issn}{1546-1726}
+    \field{note}{20173745[pmid]}
+    \field{number}{3}
+    \field{pages}{369\bibrangedash 378}
+    \field{title}{Stimulus onset quenches neural variability: a widespread
+  cortical phenomenon}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/20173745
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Nature neuroscience}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{cohen2}{article}{}
     \name{author}{2}{}{%
       {{hash=CMR}{%
@@ -852,6 +1063,36 @@
     \field{year}{1999}
   \endentry
 
+  \entry{flach}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FB}{%
+         family={Flach},
+         familyi={F\bibinitperiod},
+         given={Boris},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FB1}
+    \strng{fullhash}{FB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1109/TPAMI.2013.99
+    \endverb
+    \field{pages}{2304\bibrangedash 6}
+    \field{title}{A Class of Random Fields on Complete Graphs with Tractable
+  Partition Function}
+    \field{volume}{35}
+    \field{journaltitle}{IEEE transactions on pattern analysis and machine
+  intelligence}
+    \field{month}{09}
+    \field{year}{2013}
+  \endentry
+
   \entry{fosdick}{article}{}
     \name{author}{4}{}{%
       {{hash=FB}{%
@@ -964,6 +1205,72 @@
     \verb pike-inference-from-calcium-imaging.pdf
     \endverb
     \field{year}{2016}
+  \endentry
+
+  \entry{ganmor}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GE}{%
+         family={Ganmor},
+         familyi={G\bibinitperiod},
+         given={Elad},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Segev},
+         familyi={S\bibinitperiod},
+         given={Ronen},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Schneidman},
+         familyi={S\bibinitperiod},
+         given={Elad},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Academy of Sciences}%
+    }
+    \strng{namehash}{GESRSE1}
+    \strng{fullhash}{GESRSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Information is carried in the brain by the joint activity patterns of large
+  groups of neurons. Understanding the structure and function of population
+  neural codes is challenging because of the exponential number of possible
+  activity patterns and dependencies among neurons. We report here that for
+  groups of ~100 retinal neurons responding to natural stimuli, pairwise-based
+  models, which were highly accurate for small networks, are no longer
+  sufficient. We show that because of the sparse nature of the neural code, the
+  higher-order interactions can be easily learned using a novel model and that
+  a very sparse low-order interaction network underlies the code of large
+  populations of neurons. Additionally, we show that the interaction network is
+  organized in a hierarchical and modular manner, which hints at scalability.
+  Our results suggest that learnability may be a key feature of the neural
+  code.%
+    }
+    \verb{doi}
+    \verb 10.1073/pnas.1019641108
+    \endverb
+    \verb{eprint}
+    \verb https://www.pnas.org/content/108/23/9679.full.pdf
+    \endverb
+    \field{issn}{0027-8424}
+    \field{number}{23}
+    \field{pages}{9679\bibrangedash 9684}
+    \field{title}{Sparse low-order interaction network underlies a highly
+  correlated and learnable neural population code}
+    \verb{url}
+    \verb https://www.pnas.org/content/108/23/9679
+    \endverb
+    \field{volume}{108}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{2011}
   \endentry
 
   \entry{greenberg}{article}{}
@@ -1778,6 +2085,88 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{odonnell}{article}{}
+    \name{author}{5}{}{%
+      {{hash=OC}{%
+         family={O'Donnell},
+         familyi={O\bibinitperiod},
+         given={Cian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Goncalves},
+         familyi={G\bibinitperiod},
+         given={{J Tiago}},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Whiteley},
+         familyi={W\bibinitperiod},
+         given={{Nick P}},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PCC}{%
+         family={Portera-Cailliau},
+         familyi={P\bibinithyphendelim C\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sejnowski},
+         familyi={S\bibinitperiod},
+         given={{Terrence J}},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {Massachusetts Institute of Technology (MIT) Press}%
+    }
+    \strng{namehash}{OC+1}
+    \strng{fullhash}{OCGJWNPCCST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Our understanding of neural population coding has been limited by a lack of
+  analysis methods to characterize spiking data from large populations. The
+  biggest challenge comes from the fact that the number of possible network
+  activity patterns scales exponentially with the number of neurons recorded (~
+  2Neurons). Here we introduce a new statistical method for characterizing
+  neural population activity that requires semi-independent fitting of only as
+  many parameters as the square of the number of neurons, so requiring
+  drastically smaller data sets and minimal computation time. The model works
+  by matching the population rate (the number of neurons synchronously active)
+  and the probability that each individual neuron fires given the population
+  rate. We found that this model can accurately fit synthetic data from up to
+  1000 neurons. We also found that the model could rapidly decode visual
+  stimuli from neural population data from macaque primary visual cortex, ~ 65
+  ms after stimulus onset. Finally, we used the model to estimate the entropy
+  of neural population activity in developing mouse matosensory cortex and
+  surprisingly found that it first increases, then decreases during
+  development. This statistical model opens new options for interrogating
+  neural population data, and can bolster the use of modern large-scale in vivo
+  Ca2+ and voltage imaging tools.%
+    }
+    \verb{doi}
+    \verb 10.1162/NECO_a_00910
+    \endverb
+    \field{issn}{0899-7667}
+    \field{number}{1}
+    \field{pages}{50\bibrangedash 93}
+    \field{title}{The population tracking model: a simple, scalable statistical
+  model for neural population data}
+    \field{volume}{29}
+    \field{journaltitle}{Neural Computation}
+    \field{month}{01}
+    \field{year}{2017}
+  \endentry
+
   \entry{pnevmatikakis}{article}{}
     \name{author}{16}{}{%
       {{hash=PE}{%
@@ -2015,6 +2404,85 @@
     \field{year}{2014}
   \endentry
 
+  \entry{schneidman}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SE}{%
+         family={Schneidman},
+         familyi={S\bibinitperiod},
+         given={Elad},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BnMJ}{%
+         family={Berry},
+         familyi={B\bibinitperiod},
+         suffix={Michael\bibnamedelima J},
+         suffixi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={2nd},
+         giveni={n\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Segev},
+         familyi={S\bibinitperiod},
+         given={Ronen},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BW}{%
+         family={Bialek},
+         familyi={B\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Action Potentials; Animals; Cerebral Cortex/*cytology; Entropy;
+  Guinea Pigs; *Models, Neurological; Neurons/cytology/*physiology; Poisson
+  Distribution; Retina/*cytology/physiology; Urodela}
+    \strng{namehash}{SE+1}
+    \strng{fullhash}{SEBMJnSRBW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Biological networks have so many possible states that exhaustive sampling
+  is impossible. Successful analysis thus depends on simplifying hypotheses,
+  but experiments on many systems hint that complicated, higher-order
+  interactions among large groups of elements have an important role. Here we
+  show, in the vertebrate retina, that weak correlations between pairs of
+  neurons coexist with strongly collective behaviour in the responses of ten or
+  more neurons. We find that this collective behaviour is described
+  quantitatively by models that capture the observed pairwise correlations but
+  assume no higher-order interactions. These maximum entropy models are
+  equivalent to Ising models, and predict that larger networks are completely
+  dominated by correlation effects. This suggests that the neural code has
+  associative or error-correcting properties, and we provide preliminary
+  evidence for such behaviour. As a first test for the generality of these
+  ideas, we show that similar results are obtained from networks of cultured
+  cortical neurons.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature04701
+    \endverb
+    \field{edition}{2006/04/09}
+    \field{issn}{1476-4687}
+    \field{note}{16625187[pmid]}
+    \field{number}{7087}
+    \field{pages}{1007\bibrangedash 1012}
+    \field{title}{Weak pairwise correlations imply strongly correlated network
+  states in a neural population}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/16625187
+    \endverb
+    \field{volume}{440}
+    \field{journaltitle}{Nature}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{shannon}{article}{}
     \name{author}{1}{}{%
       {{hash=SCE}{%
@@ -2049,6 +2517,50 @@
     \field{volume}{27}
     \field{journaltitle}{Bell System Technical Journal}
     \field{year}{1948}
+  \endentry
+
+  \entry{steinmetz}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=SN}{%
+         family={Steinmetz},
+         familyi={S\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Carandini},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HKD}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kenneth\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {figshare}%
+    }
+    \strng{namehash}{SNCMHKD1}
+    \strng{fullhash}{SNCMHKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.6084/m9.figshare.7666892.v2
+    \endverb
+    \field{title}{"Single Phase3" and "Dual Phase3" Neuropixels Datasets}
+    \verb{url}
+    \verb https://figshare.com/articles/dataset/_Single_Phase3_Neuropixels_Data
+    \verb set/7666892/2
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{stringer}{article}{}
@@ -2430,6 +2942,104 @@
     \field{volume}{6}
     \field{journaltitle}{Nature methods}
     \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{tkacik}{article}{}
+    \name{author}{6}{}{%
+      {{hash=TG}{%
+         family={Tka{\v{c}}ik},
+         familyi={T\bibinitperiod},
+         given={Ga{\v{s}}per},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MO}{%
+         family={Marre},
+         familyi={M\bibinitperiod},
+         given={Olivier},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Amodei},
+         familyi={A\bibinitperiod},
+         given={Dario},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Schneidman},
+         familyi={S\bibinitperiod},
+         given={Elad},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BW}{%
+         family={Bialek},
+         familyi={B\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=BnMJ}{%
+         family={Berry},
+         familyi={B\bibinitperiod},
+         suffix={Michael\bibnamedelima J},
+         suffixi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={2nd},
+         giveni={n\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Action Potentials/physiology; Animals; Computational Biology;
+  Entropy; Fishes; Models, Neurological; Movement; Nerve Net/physiology;
+  Probability; Retina/*pathology; Sensory Receptor Cells/*cytology;
+  Urodela/*physiology}
+    \strng{namehash}{TG+1}
+    \strng{fullhash}{TGMOADSEBWBMJn1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Maximum entropy models are the least structured probability distributions
+  that exactly reproduce a chosen set of statistics measured in an interacting
+  network. Here we use this principle to construct probabilistic models which
+  describe the correlated spiking activity of populations of up to 120 neurons
+  in the salamander retina as it responds to natural movies. Already in groups
+  as small as 10 neurons, interactions between spikes can no longer be regarded
+  as small perturbations in an otherwise independent system; for 40 or more
+  neurons pairwise interactions need to be supplemented by a global interaction
+  that controls the distribution of synchrony in the population. Here we show
+  that such "K-pairwise" models--being systematic extensions of the previously
+  used pairwise Ising models--provide an excellent account of the data. We
+  explore the properties of the neural vocabulary by: 1) estimating its
+  entropy, which constrains the population's capacity to represent visual
+  information; 2) classifying activity patterns into a small set of metastable
+  collective modes; 3) showing that the neural codeword ensembles are extremely
+  inhomogenous; 4) demonstrating that the state of individual neurons is highly
+  predictable from the rest of the population, allowing the capacity for error
+  correction.%
+    }
+    \verb{doi}
+    \verb 10.1371/journal.pcbi.1003408
+    \endverb
+    \field{edition}{2014/01/02}
+    \field{issn}{1553-7358}
+    \field{note}{24391485[pmid]}
+    \field{number}{1}
+    \field{pages}{e1003408\bibrangedash e1003408}
+    \field{title}{Searching for collective behavior in a large network of
+  sensory neurons}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/24391485
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{PLoS computational biology}
+    \field{year}{2014}
     \warn{\item Invalid format of field 'month'}
   \endentry
 

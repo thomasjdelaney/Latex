@@ -1,0 +1,37 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Schneidman, Elad
+AU  - Berry, Michael J, 2nd
+AU  - Segev, Ronen
+AU  - Bialek, William
+T1  - Weak pairwise correlations imply strongly correlated network states in a neural population
+LA  - eng
+SN  - 1476-4687
+SN  - 0028-0836
+Y1  - 2006/04/20
+ET  - 2006/04/09
+AB  - Biological networks have so many possible states that exhaustive sampling is impossible. Successful analysis thus depends on simplifying hypotheses, but experiments on many systems hint that complicated, higher-order interactions among large groups of elements have an important role. Here we show, in the vertebrate retina, that weak correlations between pairs of neurons coexist with strongly collective behaviour in the responses of ten or more neurons. We find that this collective behaviour is described quantitatively by models that capture the observed pairwise correlations but assume no higher-order interactions. These maximum entropy models are equivalent to Ising models, and predict that larger networks are completely dominated by correlation effects. This suggests that the neural code has associative or error-correcting properties, and we provide preliminary evidence for such behaviour. As a first test for the generality of these ideas, we show that similar results are obtained from networks of cultured cortical neurons.
+SP  - 1007
+EP  - 1012
+VL  - 440
+IS  - 7087
+AN  - 16625187
+UR  - https://pubmed.ncbi.nlm.nih.gov/16625187
+DO  - 10.1038/nature04701
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1785327/
+U1  - 16625187[pmid]
+U2  - PMC1785327[pmcid]
+U4  - nature04701[PII]
+J2  - Nature
+JF  - Nature
+KW  - Action Potentials
+KW  - Animals
+KW  - Cerebral Cortex/*cytology
+KW  - Entropy
+KW  - Guinea Pigs
+KW  - *Models, Neurological
+KW  - Neurons/cytology/*physiology
+KW  - Poisson Distribution
+KW  - Retina/*cytology/physiology
+KW  - Urodela
+ER  - 

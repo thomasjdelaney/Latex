@@ -1,0 +1,69 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Churchland, Mark M
+AU  - Yu, Byron M
+AU  - Cunningham, John P
+AU  - Sugrue, Leo P
+AU  - Cohen, Marlene R
+AU  - Corrado, Greg S
+AU  - Newsome, William T
+AU  - Clark, Andrew M
+AU  - Hosseini, Paymon
+AU  - Scott, Benjamin B
+AU  - Bradley, David C
+AU  - Smith, Matthew A
+AU  - Kohn, Adam
+AU  - Movshon, J Anthony
+AU  - Armstrong, Katherine M
+AU  - Moore, Tirin
+AU  - Chang, Steve W
+AU  - Snyder, Lawrence H
+AU  - Lisberger, Stephen G
+AU  - Priebe, Nicholas J
+AU  - Finn, Ian M
+AU  - Ferster, David
+AU  - Ryu, Stephen I
+AU  - Santhanam, Gopal
+AU  - Sahani, Maneesh
+AU  - Shenoy, Krishna V
+T1  - Stimulus onset quenches neural variability: a widespread cortical phenomenon
+LA  - eng
+SN  - 1546-1726
+SN  - 1097-6256
+Y1  - 2010/03/
+ET  - 2010/02/21
+AB  - Neural responses are typically characterized by computing the mean firing rate, but response variability can exist across trials. Many studies have examined the effect of a stimulus on the mean response, but few have examined the effect on response variability. We measured neural variability in 13 extracellularly recorded datasets and one intracellularly recorded dataset from seven areas spanning the four cortical lobes in monkeys and cats. In every case, stimulus onset caused a decline in neural variability. This occurred even when the stimulus produced little change in mean firing rate. The variability decline was observed in membrane potential recordings, in the spiking of individual neurons and in correlated spiking variability measured with implanted 96-electrode arrays. The variability decline was observed for all stimuli tested, regardless of whether the animal was awake, behaving or anaesthetized. This widespread variability decline suggests a rather general property of cortex, that its state is stabilized by an input.
+SP  - 369
+EP  - 378
+VL  - 13
+IS  - 3
+AN  - 20173745
+UR  - https://pubmed.ncbi.nlm.nih.gov/20173745
+DO  - 10.1038/nn.2501
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2828350/
+U1  - 20173745[pmid]
+U2  - PMC2828350[pmcid]
+U4  - nn.2501[PII]
+J2  - Nat Neurosci
+JF  - Nature neuroscience
+KW  - Action Potentials
+KW  - Anesthesia
+KW  - Animals
+KW  - Cats
+KW  - Cerebral Cortex/*physiology
+KW  - Databases, Factual
+KW  - Electrodes, Implanted
+KW  - Factor Analysis, Statistical
+KW  - Macaca fascicularis
+KW  - Macaca mulatta
+KW  - Macaca nemestrina
+KW  - Membrane Potentials
+KW  - Microelectrodes
+KW  - Motor Activity/physiology
+KW  - Neurons/*physiology
+KW  - Neuropsychological Tests
+KW  - Time Factors
+KW  - Video Recording
+KW  - Visual Perception/physiology
+KW  - Wakefulness/physiology
+ER  - 

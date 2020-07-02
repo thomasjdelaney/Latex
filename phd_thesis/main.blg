@@ -39,59 +39,71 @@ Warning--I'm ignoring cohen1's extra "note" field
 --line 405 of file phd_thesis.bib
 Warning--I'm ignoring cohen1's extra "url" field
 --line 409 of file phd_thesis.bib
+Warning--I'm ignoring churchland's extra "note" field
+--line 700 of file phd_thesis.bib
+Warning--I'm ignoring churchland's extra "note" field
+--line 701 of file phd_thesis.bib
+Warning--I'm ignoring churchland's extra "url" field
+--line 705 of file phd_thesis.bib
+Warning--I'm ignoring schneidman's extra "note" field
+--line 835 of file phd_thesis.bib
+Warning--I'm ignoring schneidman's extra "note" field
+--line 836 of file phd_thesis.bib
+Warning--I'm ignoring schneidman's extra "url" field
+--line 840 of file phd_thesis.bib
+Warning--I'm ignoring tkacik's extra "note" field
+--line 874 of file phd_thesis.bib
+Warning--I'm ignoring tkacik's extra "note" field
+--line 875 of file phd_thesis.bib
+Warning--I'm ignoring tkacik's extra "url" field
+--line 879 of file phd_thesis.bib
 Warning--I didn't find a database entry for "forney"
-Warning--I didn't find a database entry for "schneidman"
-Warning--I didn't find a database entry for "flach"
-Warning--I didn't find a database entry for "ganmor"
-Warning--I didn't find a database entry for "tkacik"
 Warning--I didn't find a database entry for "cohen"
-Warning--I didn't find a database entry for "churchland"
-Warning--I didn't find a database entry for "odonnell"
-Warning--I didn't find a database entry for "steinmetz"
 Warning--I didn't find a database entry for "shimazaki"
 Warning--I didn't find a database entry for "kolacayk"
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 37 entries,
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+You've used 44 entries,
             6304 wiz_defined-function locations,
-            1509 strings with 41941 characters,
-and the built_in function-call counts, 429552 in all, are:
-= -- 35692
-> -- 5094
-< -- 1129
-+ -- 12065
-- -- 2182
-* -- 34581
-:= -- 53256
+            1584 strings with 51013 characters,
+and the built_in function-call counts, 530370 in all, are:
+= -- 44411
+> -- 6226
+< -- 1439
++ -- 14746
+- -- 2643
+* -- 42846
+:= -- 65415
 add.period$ -- 0
-call.type$ -- 37
-change.case$ -- 555
-chr.to.int$ -- 149
-cite$ -- 72
-duplicate$ -- 43018
-empty$ -- 37364
-format.name$ -- 3926
-if$ -- 83159
+call.type$ -- 44
+change.case$ -- 763
+chr.to.int$ -- 165
+cite$ -- 86
+duplicate$ -- 52390
+empty$ -- 46168
+format.name$ -- 4752
+if$ -- 102997
 int.to.chr$ -- 0
-int.to.str$ -- 84
+int.to.str$ -- 106
 missing$ -- 0
-newline$ -- 2310
-num.names$ -- 1671
-pop$ -- 14844
+newline$ -- 2829
+num.names$ -- 2106
+pop$ -- 17757
 preamble$ -- 1
-purify$ -- 1020
+purify$ -- 1328
 quote$ -- 0
-skip$ -- 6731
+skip$ -- 8342
 stack$ -- 0
-substring$ -- 70257
-swap$ -- 8443
-text.length$ -- 1135
-text.prefix$ -- 38
+substring$ -- 88010
+swap$ -- 10381
+text.length$ -- 1354
+text.prefix$ -- 45
 top$ -- 1
-type$ -- 1246
+type$ -- 1484
 warning$ -- 0
-while$ -- 7218
+while$ -- 8749
 width$ -- 0
-write$ -- 2274
-(There were 19 warnings)
+write$ -- 2786
+(There were 21 warnings)
