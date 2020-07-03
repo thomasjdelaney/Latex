@@ -73,29 +73,29 @@
 \contentsline {subsubsection}{Comparing detected communities and anatomical divisions}{64}{section*.162}% 
 \contentsline {chapter}{\numberline {3}A simple two parameter distribution for modelling neuronal activity and capturing neuronal association}{67}{chapter.163}% 
 \contentsline {section}{\numberline {3.1}Introduction}{70}{section.165}% 
-\contentsline {section}{\numberline {3.2}Results}{71}{section.166}% 
-\contentsline {subsection}{\numberline {3.2.1}Increases in mean number of active neurons and variance in number of active neurons at stimulus onset in some regions}{71}{subsection.167}% 
-\contentsline {subsubsection}{Primary visual cortex}{71}{section*.168}% 
-\contentsline {subsubsection}{Hippocampus}{72}{section*.170}% 
-\contentsline {subsubsection}{Thalamus}{73}{section*.172}% 
-\contentsline {subsection}{\numberline {3.2.2}Conway-Maxwell-binomial distribution is usually a better fit than binomial or beta-binomial}{74}{subsection.174}% 
-\contentsline {subsection}{\numberline {3.2.3}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{76}{subsection.177}% 
-\contentsline {subsection}{\numberline {3.2.4}Replicating stimulus related quenching of neural variability}{78}{subsection.179}% 
-\contentsline {section}{\numberline {3.3}Discussion}{79}{section.181}% 
-\contentsline {section}{\numberline {3.4}Data}{80}{section.182}% 
-\contentsline {subsection}{\numberline {3.4.1}Experimental protocol}{80}{subsection.184}% 
-\contentsline {section}{\numberline {3.5}Methods}{81}{section.185}% 
-\contentsline {subsection}{\numberline {3.5.1}Binning data}{81}{subsection.186}% 
-\contentsline {subsection}{\numberline {3.5.2}Number of \textit {active} neurons}{81}{subsection.187}% 
-\contentsline {subsection}{\numberline {3.5.3}Moving windows for measurements}{81}{subsection.188}% 
-\contentsline {subsection}{\numberline {3.5.4}Fano factor}{83}{subsection.190}% 
-\contentsline {subsection}{\numberline {3.5.5}Probability Distributions suitable for modelling ensemble activity}{83}{subsection.192}% 
-\contentsline {subsubsection}{Association}{83}{section*.193}% 
-\contentsline {subsubsection}{Binomial distribution}{83}{section*.194}% 
-\contentsline {subsubsection}{Beta-binomial distribution}{84}{section*.196}% 
-\contentsline {subsubsection}{Conway-Maxwell-binomial distribution}{85}{section*.201}% 
-\contentsline {subsection}{\numberline {3.5.6}Fitting}{89}{subsection.208}% 
-\contentsline {subsection}{\numberline {3.5.7}Goodness-of-fit}{89}{subsection.213}% 
+\contentsline {section}{\numberline {3.2}Data}{71}{section.166}% 
+\contentsline {subsection}{\numberline {3.2.1}Experimental protocol}{71}{subsection.168}% 
+\contentsline {section}{\numberline {3.3}Methods}{72}{section.169}% 
+\contentsline {subsection}{\numberline {3.3.1}Binning data}{72}{subsection.170}% 
+\contentsline {subsection}{\numberline {3.3.2}Number of \textit {active} neurons}{72}{subsection.171}% 
+\contentsline {subsection}{\numberline {3.3.3}Moving windows for measurements}{72}{subsection.172}% 
+\contentsline {subsection}{\numberline {3.3.4}Fano factor}{74}{subsection.174}% 
+\contentsline {subsection}{\numberline {3.3.5}Probability Distributions suitable for modelling ensemble activity}{74}{subsection.176}% 
+\contentsline {subsubsection}{Association}{74}{section*.177}% 
+\contentsline {subsubsection}{Binomial distribution}{75}{section*.178}% 
+\contentsline {subsubsection}{Beta-binomial distribution}{75}{section*.180}% 
+\contentsline {subsubsection}{Conway-Maxwell-binomial distribution}{76}{section*.185}% 
+\contentsline {subsection}{\numberline {3.3.6}Fitting}{78}{subsection.192}% 
+\contentsline {subsection}{\numberline {3.3.7}Goodness-of-fit}{80}{subsection.197}% 
+\contentsline {section}{\numberline {3.4}Results}{80}{section.198}% 
+\contentsline {subsection}{\numberline {3.4.1}Increases in mean number of active neurons and variance in number of active neurons at stimulus onset in some regions}{80}{subsection.199}% 
+\contentsline {subsubsection}{Primary visual cortex}{81}{section*.200}% 
+\contentsline {subsubsection}{Hippocampus}{81}{section*.202}% 
+\contentsline {subsubsection}{Thalamus}{81}{section*.204}% 
+\contentsline {subsection}{\numberline {3.4.2}Conway-Maxwell-binomial distribution is usually a better fit than binomial or beta-binomial}{81}{subsection.206}% 
+\contentsline {subsection}{\numberline {3.4.3}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{86}{subsection.209}% 
+\contentsline {subsection}{\numberline {3.4.4}Replicating stimulus related quenching of neural variability}{86}{subsection.211}% 
+\contentsline {section}{\numberline {3.5}Discussion}{88}{section.213}% 
 \contentsline {chapter}{\numberline {4}Studies with practical limitations \& negative results}{91}{chapter.214}% 
 \contentsline {section}{\numberline {4.1}Dynamic state space model of pairwise and higher order neuronal correlations}{94}{section.216}% 
 \contentsline {section}{\numberline {4.2}A multiscale model for hierarchical data applied to \\ neuronal data}{94}{section.217}% 

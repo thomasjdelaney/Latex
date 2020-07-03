@@ -5,6 +5,10 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
 A level-1 auxiliary file: Chapters/eight_probe.aux
 A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
+White space in argument---line 404 of file phd_thesis.aux
+ : \citation{\parencite
+ :                      {litwinkumar}}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/small_chapter.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -106,4 +110,4 @@ warning$ -- 0
 while$ -- 8749
 width$ -- 0
 write$ -- 2786
-(There were 21 warnings)
+(There was 1 error message)
