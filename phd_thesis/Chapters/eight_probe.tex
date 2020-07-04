@@ -5,19 +5,25 @@
 \abstract{Decades of research has established that correlated spiking plays a crucial role in representing sensory information. One drawback associated with the recent improvement in recording technology and consequent large datasets is the difficulty in analysing higher order correlations in large neuronal ensembles. One benefit of these datasets that has not yet been explored is the opportunity to compare correlations within anatomical regions to correlations across anatomical regions. In this work, we measured correlations between neurons residing in nine different brains regions in three awake and behaving mice. Using the these correlation measurements, we created weighted undirected graph networks and applied network science methods to detect functional communities in our neural ensembles. We compared these functional communities to their anatomical distribution. We repeated the analysis, using different timescales for our correlation measurements, and found that functional communities were more likely to be dominated by neurons from a single brain region at shorter timescales ($< 100$ms).}
 
 \section{Introduction}
-Decades of research has established that correlations play a crucial role in representing sensory information. For example, the onset of visual attention has been shown to have a greater affect on the correlations in the macaque V4 region than on the firing rates in that region  \parencite{cohen1}. Recent findings show that spontaneous behaviours explain correlations in parts of the brain not associated with motor control  \parencite{stringer}. In order to understand the brain, we must understand the interactions between neurons.
+Decades of research has established that correlations play a crucial role in representing sensory information. For example, the onset of visual attention has been shown to have a greater affect on the correlations in the macaque V4 region than on the firing rates in that region  \parencite{cohen1}. Recent findings show that spontaneous behaviours explain correlations in parts of the brain not associated with motor control \parencite{stringer}, that satiety state appears to have a brain wide representation \parencite{allen}, and that subject exploratory and nonexploratory states are represented in the amygdala \parencite{grundemann}. So, behavioural states are likely represented across many regions of the brain, not just motor related areas. In order to understand the brain, we must understand the interactions between neurons and regions.
 
-Because of limitations in recording technology almost all research has explored correlations between neurons within a given brain region. Relatively little is known about correlations between neurons in different brain regions. However, the recent development of `Neuropixels' probes  \parencite{jun} has allowed extracellular voltage measurements to be collected from multiple brain regions simultaneously routinely, and in much larger numbers than traditional methods. In this project we used a publicly-available Neuropixels dataset to analyse correlations between different brain regions  \parencite{stringer}.
+Because of limitations in recording technology almost all research has explored correlations between neurons within a given brain region, or within only two regions at most \parencite{wierzynski, patterson, girard}. Relatively little is known about correlations between neurons in many different brain regions. However, the recent development of `Neuropixels' probes  \parencite{jun} has allowed extracellular voltage measurements to be collected from multiple brain regions simultaneously routinely, and in much larger numbers than traditional methods. In this project we used a publicly-available Neuropixels dataset to analyse correlations between different brain regions  \parencite{stringer}.
 
-A drawback associated with the improvement in recording technology is an increase in the difficulty of analysing these data. For example, analysing the $i$th order interactions of $N$ neurons generally requires estimation of $N^i$ parameters. A number that becomes astronomical for large $N$. New methods are required for analysing these new large datasets. We attempted to address this requirement in this piece of research by applying a cutting-edge network science community detection method to neural data.
+A drawback associated with the improvement in recording technology is an increase in the difficulty in analysing these data. For example, analysing the $i$th order interactions of $N$ neurons generally requires estimation of $N^i$ parameters. A number that becomes astronomical for large $N$. New methods are required for analysing these new large datasets. We attempted to address this requirement in this piece of research by applying a cutting-edge network science community detection method to neural data.
 
-Another unexplored area of research is the changes in cell interactions at different timescales. Most studies focus on quantifying interactions at a given timescale. But neurons may interact differently, or may interact with different neurons, at different timescales. Here we explore correlated communities of neurons at different timescales.
+Another unexplored area of research is the changes in cell interactions at different timescales. Studies have shown different timescales for fluctuations in spiking activity \parencite{murray}, and different time scales for event representation \parencite{baldassano} across different brain regions. Still most studies focus on quantifying interactions at a given timescale. But neurons may interact differently, or may interact with different neurons at different timescales. Here we explore correlated communities of neurons at different timescales.
 
-In this work, we measured correlations between binned spike counts from neurons from nine different regions of the mouse brain, the caudate putamen, frontal motor cortex, hippocampus, lateral septum, midbrain, primary visual cortex, superior colliculus, somatomotor cortex, and thalamus. Using these correlation measurements, we created weighted undirected graphs or networks with each node representing a neuron. We used newly invented network methods to detect communities in these networks. We compared these detected communities to the anatomical division of the cells. We also measured the conditional correlation and signal correlation of between cell spike counts, conditioning on the subject's behaviour. We repeated the network analysis using these measurements. We also repeated these analyses using different timescales for measuring the correlations.
+In this work, we measured correlations between binned spike counts from neurons from nine different regions of the mouse brain. These measurements induced a weighted undirected graph or network where each neuron is represented by a node, and the strength of the connection between these nodes/neurons is the strength of the correlation between their spike counts. We then applied newly invented network methods \parencite{humphries} to this network to find any community structure, and place the neurons in these correlation based communities. Finally, we compared these functional communities to the anatomical membership of the neurons.
+
+To investigate the functional communities and their relationship with anatomy at different time scales, we repeated these analyses using different length bin widths when binning spike times.
+
+To find and analyse functional networks while controlling for the subject's behaviour, we conditioned the binned spike counts on data from a video of the subject's face, and repeated our analysis for spike count correlations (or noise correlations) and signal correlations.
 
 \section{Results}
 
 Note that in the following text, we refer to the correlation coefficient between two sequences of spike counts from two different cells as the \textit{total correlation}. We refer to the correlation between spike counts in response to a certain stimulus as the \textit{spike count correlation} aka \textit{noise correlation}, and we refer to the correlation between mean or expected responses to different stimuli as the \textit{signal correlation} \parencite{cohen2}.
+
+The nine different brain regions from which we had data were the caudate putamen (CP), frontal motor cortex (FrMoCtx), hippocampus (HPF), lateral septum (LS), midbrain (MB), primary visual cortex (V1), superior colliculus (SC), somatomotor cortex (SomMoCtx), and thalamus (TH).
 
     \subsection{Average correlation size increases with increasing time bin width}
     First we inspected the affect of time bin width on total correlations. We know that using short time bins results in artificially small correlation measurements \parencite{cohen2}, so we expected to see an increase in correlation amplitude with increasing time bin width. That is exactly what we observed. Taking $50$ cells at random, we calculated the total correlation between every possible pair of these cells, using different time bin widths ranging from $0.005$s to $3$s. We found that the longer the time bin width, the greater the correlations (see figure \ref{fig:correlations_all_pairs}).
@@ -25,30 +31,21 @@ Note that in the following text, we refer to the correlation coefficient between
     \begin{figure}[h]
       \begin{subfigure}[h]{0.5\linewidth}
         \includegraphics[width=\linewidth]{figures/eight_probe/pairs_correlation.png}
+        \caption{Correlation coefficient as a function of bin width.}
         \label{fig:pair_example_correlations}
       \end{subfigure}
       \begin{subfigure}[h]{0.5\linewidth}
         \includegraphics[width=\linewidth]{figures/eight_probe/pairs_raster.png}
+        \caption{Raster plots for the four cells making up our example pairs.}
         \label{fig:pair_example_raster}
       \end{subfigure}
-      \caption{(left) An examples of the correlation coefficients between two different pairs of cells, one where both cells are in the same brain region (intra-regional pair), and one where both cells are in different brain regions (inter-regional pair). The correlation coefficients have been measured using different time bin widths, ranging from $5$ms to $3$s. Note the increasing amplitude of the correlations with increasing bin width. (right) A raster plot showing the spike times of each pair of cells.}
+      \caption{(A) An example of the correlation coefficients between two different pairs of cells, one where both cells are in the same brain region (intra-regional pair), and one where both cells are in different brain regions (inter-regional pair). The correlation coefficients have been measured using different time bin widths, ranging from $5$ms to $3$s. Note the increasing amplitude of the correlations with increasing bin width. (B) A raster plot showing the spike times of each pair of cells.}
       \label{fig:pair_example}
     \end{figure}
 
     We also separated the positively correlated pairs from the negatively correlated pairs using the mean correlation of each pair across all bin widths (see section \ref{sec:corr_anti_corr}). We found that the positively correlated pairs become more positively correlated with increasing time bin width, and the negatively correlated pairs become more negatively correlated with increasing time bin width (see figures \ref{fig:correlations_pos_pairs} and \ref{fig:correlations_neg_pairs}).
 
-    When taking the mean across all pairs, the positively correlated pairs dominate in terms of both number of pairs, and amplitude of correlations. Therefore the mean across all pairs is positive.
-
-    These results were observed in each of the three mouse subjects from which we had data.
-
-    For the sake of illustration, I have included two figures showing the correlation coefficients of two pairs of neurons, and a raster plot of the spikes of those cells (see figure \ref{fig:pair_example}).
-
-    \subsection{Goodness-of-fit for Poisson and Gaussian distributions across increasing time bin widths}
-    We wanted to investigate if the width of the time bin used to bin spike times into spike counts had an effect on the distribution of spike counts.  We used the $\chi^2$ statistic as a goodness-of-fit measure for Poisson and Gaussian (normal) distributions to the spike count of $100$ randomly chosen neurons for a number of bin widths ranging from $0.01$s to $4$s. For the $\chi^2$ statistic, the higher the value, the worse the fit. As you might expect, we found that that a Poisson distribution is the best fit for shorter time bins less than $0.7$s in length. Then a Gaussian distribution is a better fit for time bins greater than $0.7$s in length (see figure \ref{fig:chi_squared_fits}).
-
-    We expected a Poisson distribution to be a better fit for shorter time bin widths because spike counts must be non-negative, therefore any distribution of spike counts with mass distributed at or close to $0$ will be skewed. The distribution of spike counts is more likely to be distributed close to $0$ when the time bin widths used to bin spike times into spikes counts are small relative to the amount of time it takes for a neuron to fire an action potential ($\sim 1$ms in the case of non-burst firing neurons).
-
-    \begin{figure}[h]
+    \begin{figure}[p]
         \begin{subfigure}[h]{0.5\linewidth}
             \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_corr_all_pairs.png}
             \caption{All pairs, positive and negative.}
@@ -69,32 +66,44 @@ Note that in the following text, we refer to the correlation coefficient between
             \caption{$\chi^2$ test statistics as goodness-of-fit.}
             \label{fig:chi_squared_fits}
         \end{subfigure}
-        \caption{Mean correlation coefficients measured from pairs of $50$ randomly chosen neurons. (a) All possible pairs, (b) positively correlated pairs, and (c) negatively correlated pairs. (d) Mean and standard error of $\chi^2$ test statistics for Poisson and Gaussian distributions fitted to neuron spike counts.}
+        \caption{Mean correlation coefficients measured from pairs of $50$ randomly chosen neurons. (A) All possible pairs, (B) positively correlated pairs, and (C) negatively correlated pairs. (D) Mean and standard error of $\chi^2$ test statistics for Poisson and Gaussian distributions fitted to neuron spike counts.}
         \label{fig:correlations_vs_bin_widths}
     \end{figure}
 
-% Fig 1. Correlations increase with bin width
-% - 2 time series plots of a pair of neurons, one small bin width one big bin widt
-%
+    In figure \ref{fig:pair_example_correlations} we plot correlations from two example pairs, one pair from within a region, and one pair between regions. It can be seen that the correlation coefficient increases with bin width. The correlations can be observed by eye in the raster plot for these cells in figure \ref{fig:pair_example_raster}.
+
+    When taking the mean across all pairs, the positively correlated pairs dominate in terms of both number of pairs, and amplitude of correlations. Therefore the mean across all pairs is positive.
+
+    These results were observed in each of the three mouse subjects from which we had data.
+
+    \subsection{Goodness-of-fit for Poisson and Gaussian distributions across increasing time bin widths}
+    We wanted to investigate if the width of the time bin used to bin spike times into spike counts had an effect on the distribution of spike counts.  We used the $\chi^2$ statistic as a goodness-of-fit measure for Poisson and Gaussian (normal) distributions to the spike count of $100$ randomly chosen neurons for a number of bin widths ranging from $0.01$s to $4$s. For the $\chi^2$ statistic, the higher the value, the worse the fit.
+
+    We expected a Poisson distribution to be a better fit for shorter time bin widths because spike counts must be non-negative, therefore any distribution of spike counts with mass distributed at or close to $0$ will be skewed. The distribution of spike counts is more likely to be distributed close to $0$ when the time bin widths used to bin spike times into spike counts are small relative to the amount of time it takes for a neuron to fire an action potential ($\sim 1$ms in the case of non-burst firing neurons).
+
+    We expected a Gaussian distribution to be a better fit for longer time bin widths, because a Poisson distribution with a large rate is well approximated by a Gaussian distribution with mean and variance equal to the Poisson rate. Therefore, a Gaussian distribution would approximate the mean of a collection of large spike counts, and have more flexibility than a Poisson distribution to fit the variance.
+
+    We found that that a Poisson distribution is the best fit for shorter time bins less than $0.7$s in length. Then a Gaussian distribution is a better fit for time bins greater than $0.7$s in length (see figure \ref{fig:chi_squared_fits}).
+
   \subsection{Differences between and inter- and intra- regional correlations decrease with increasing bin width}
   We investigated the differences in distribution between inter-regional correlations, i.e. correlations between neurons in different brain regions, and intra-regional correlations, i.e. correlations between neurons in the same brain region.
 
-  Firstly, we investigated these quantities for all possible pairs of $\sim 500$ neurons taken from across all the $9$ brain regions from which we had data. We distributed these neurons as evenly as possible across all of the regions, so that cells from one region would not dominate our data. We observed that the mean intra-regional correlations were always higher than the mean inter-regional correlations for every value of time bin width used. We also observed that as the time bin width increased these mean correlations increased and the difference between the mean inter-regional and intra-regional correlations grew (see figure \ref{fig:all_pairs_inter_intra_corr}). Stringer et al. (2019) had a similar finding using the same data. They used only one value for the time bin width, $1.2$s. Using this time bin width to bin spike times and measure total correlations, they found that the mean `within-region' correlations were always greater than the `out-of-region' correlations  \parencite{stringer}.
+  Firstly, we investigated these quantities for all possible pairs of $\sim 500$ neurons taken from across all the $9$ brain regions from which we had data. We distributed these neurons as evenly as possible across all of the regions, so that cells from one region would not dominate our data. We observed that the mean intra-regional correlations were always higher than the mean inter-regional correlations for every value of time bin width used. We also observed that as the time bin width increased these mean correlations increased and the difference between the mean inter-regional and intra-regional correlations grew (see figure \ref{fig:all_pairs_inter_intra_corr} (Left)).
+
+  Stringer et al. (2019) had a similar finding using the same data. They used only one value for the time bin width, $1.2$s. Using this time bin width to bin spike times and measure total correlations, they found that the mean `within-region' correlations were always greater than the `out-of-region' correlations  \parencite{stringer}. The figure from thier paper showing this result can be seen in figure \ref{fig:all_pairs_inter_intra_corr} (Right).
 
   \begin{figure}[h]
-    \centering
     \includegraphics[width=0.5\linewidth]{figures/eight_probe/Krebs_inter_intra_regional_correlations.png}
-    \caption{The mean intra-region and inter-region correlations using all possible pairs of $\sim 500$ neurons, spread across $9$ different brain regions.}
+    \includegraphics[width=0.5\linewidth]{figures/eight_probe/stringer_2019.png}
+    \caption{(Left)The mean intra-region and inter-region correlations using all possible pairs of $\sim 500$ neurons, spread across $9$ different brain regions. (Right) Courtesy of Stringer et al. (2019), mean inter-regional (out-of-area) correlation coefficients vs  mean intra-regional (within-area) correlation coefficients for a bin width of 1.2s. Note that the intra-regional coefficients are higher in each case.}
     \label{fig:all_pairs_inter_intra_corr}
   \end{figure}
 
   Examples of the correlations of one intra-regional pair and one inter-regional pair can be seen in figure \ref{fig:pair_example}.
 
-  Secondly, we separated those pairs into intra-regional and inter-regional groups. We noted that the mean intra-regional correlations for a given region tended to be higher than the mean inter-regional correlations involving cells from that region. However, in contrast with our previous result, we noted that the difference between the mean intra-regional correlations and most highly correlated inter-regional correlations reduced as we increased the time bin width (see figures \ref{fig:short_bin_corr_comp} and \ref{fig:long_bin_corr_comp}).
+  Secondly, we separated those pairs into intra-regional and inter-regional groups. We noted that the mean intra-regional correlations (coloured dots in figures \ref{fig:short_bin_corr_comp} and \ref{fig:long_bin_corr_comp}) for a given region tended to be higher than the mean inter-regional correlations (black dots in figures \ref{fig:short_bin_corr_comp} and \ref{fig:long_bin_corr_comp}) involving cells from that region. However, in contrast with our previous result, we noted that the difference between the mean intra-regional correlations and most highly correlated inter-regional correlations reduced as we increased the time bin width (see figures \ref{fig:short_bin_corr_comp} and \ref{fig:long_bin_corr_comp}). This shows that the mean correlations showin in figure \ref{fig:all_pairs_inter_intra_corr} are not distributed evenly across all region pair combinations.
 
-  \newpage
-
-  \begin{figure}[h]
+  \begin{figure}[p]
     \begin{subfigure}[h]{\linewidth}
       \centering
       \includegraphics[width=0.7\linewidth]{figures/eight_probe/Krebs_0p005_corr_comp.png}
@@ -107,11 +116,13 @@ Note that in the following text, we refer to the correlation coefficient between
       \caption{Mean inter-regional and intra-regional correlations using a time bin width of 1s.}
       \label{fig:long_bin_corr_comp}
     \end{subfigure}
-    \caption{The mean intra-regional correlations (coloured dots) and mean inter-regional correlations (black dots) for a given region, indicated on the x-axis, for different time bin widths. Each black dot represents the mean inter-regional correalations between the region indicated on the x-axis and one other region. (a) shows these measurements when we used a time bin width of 5ms. (b) shows these measurements when we used a time bin width of 1s. Note that the difference between the mean inter-regional correlations and mean intra-regional correlations is smaller for 1s bins.}
+    \caption{The mean intra-regional correlations (coloured dots) and mean inter-regional correlations (black dots) for a given region, indicated on the x-axis, for different time bin widths. Each black dot represents the mean inter-regional correalations between the region indicated on the x-axis and one other region. (A) shows these measurements when we used a time bin width of 5ms. (B) shows these measurements when we used a time bin width of 1s. Note that the difference between the mean inter-regional correlations and mean intra-regional correlations is smaller for 1s bins.}
     \label{fig:corr_comps}
   \end{figure}
 
-  Finally, to see these regional mean correlations in a bit more detail, we displayed these data in a matrix of mean correlations (see figure \ref{fig:corr_matrices}), showing the mean intra-regional correlations on the main diagonal, and the mean inter-regional correlations off diagonal. Comparing a version of this figure created using a short time bin width of $5$ms (figure \ref{fig:short_bin_corr_matrix}) and a version using a longer time bin width of $1$s (figure \ref{fig:long_bin_corr_matrix}) we observed that the mean intra-regional correlations are always relatively high in comparison to the mean inter-regional correlations, but the mean correlations in some inter-regional pairs are relatively much higher when using the longer time bin width.
+  Finally, to see these regional mean correlations in a bit more detail, to examine the individual pair combinations in particular, we displayed these data in a matrix of mean correlations (see figure \ref{fig:corr_matrices}), showing the mean intra-regional correlations on the main diagonal, and the mean inter-regional correlations off diagonal. Comparing a version of this figure created using a short time bin width of $5$ms (figure \ref{fig:short_bin_corr_matrix}) and a version using a longer time bin width of $1$s (figure \ref{fig:long_bin_corr_matrix}) we observed that the mean intra-regional correlations are always relatively high in comparison to the mean inter-regional correlations, but the mean correlations in some inter-regional pairs are relatively much higher when using the longer time bin width.
+
+  This could indicate information being processed quickly at a local or within-region level, and the local representations of this information spreading between regions at longer timescales.
 
   \begin{figure}[h]
     \begin{subfigure}[h]{0.5\linewidth}
@@ -132,23 +143,30 @@ Note that in the following text, we refer to the correlation coefficient between
 
   These results were consistent across the three mouse subjects. But, the relative maginitudes of the mean intra-regional and inter-regional correlations were not consistent. For example, the region with the highest mean intra-regional correlations when using $1$s bin widths for subject one is the superior colliculus (SC), but for subject two it is the midbrain (MB).
 
-  \subsection{Connected and $k$-partite structure in correlation based networks reduces in dimension with increasing bin width}\label{sec:dims_result}
-  We used the correlation measurements to create weighted undirected graphs/networks where each node represents a neuron, and the weight of each edge is the pairwise correlation between those neurons represented by the nodes at either end of that edge. We aimed to find communities of neurons within these networks, and compare the structure of these communities to the anatomical division of those neurons. The first step of this process involved applying the `spectral rejection' technique developed by Humphries et al (2019) \parencite{humphries}. This technique compares our data network to a chosen null network model, and finds any additional structure in the data network beyond that which is captured in the null network model (if there is any such structure). By comparing the eigenspectrum of the data network to the eigenspectrum of many samples from the null network model, this technique allows us to estimate the dimensionality of the additional structure in the data network, and gives us a basis for that vector space. The technique also finds which nodes contribute to this additional structure, and divides our data network into signal and noise networks. The details of spectral rejection and node rejection can be found in sections \ref{sec:spectral_rejection} and \ref{sec:node_rejection} respectively, and a full overview can be found in  \parencite{humphries}.
+  \subsection{Connected and divided structure in correlation based networks reduces in dimension with increasing bin width}\label{sec:dims_result}
+  We used the correlation measurements to create weighted undirected graphs/networks where each node represents a neuron, and the weight of each edge is the pairwise correlation between those neurons represented by the nodes at either end of that edge. We aimed to find communities of neurons within these networks, and compare the structure of these communities to the anatomical division of those neurons. The first step of this process involved applying the `spectral rejection' technique developed by Humphries et al (2019) \parencite{humphries}. This technique compares our data network to a chosen null network model, and finds any additional structure in the data network beyond that which is captured in the null network model (if there is any such structure).
 
-  \begin{figure}[h]
+  By comparing the eigenspectrum of the data network to the eigenspectrum of many samples from the null network model, this technique allows us to estimate the dimensionality of the additional structure in the data network, and gives us a basis for that vector space. It also divides the additional structure into connected structure, and $k$-partite (or divided) structure. For example, if our algorithm found two dimensions of additional connected structure, and one dimension of additional divided structure. We might expect to find three communities, that is groups more strongly connected within group that without, and we might expect to find bi-partite structure, that is two sets that are more strongly connected between groups than within groups.
+
+  The technique also finds which nodes contribute to this additional structure, and divides our data network into signal and noise networks. The details of spectral rejection and node rejection can be found in sections \ref{sec:spectral_rejection} and \ref{sec:node_rejection} respectively, and a full overview can be found in  \parencite{humphries}.
+
+  \begin{figure}[p]
     \begin{subfigure}[h]{0.5\linewidth}
       \centering
       \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_rectified_total_structure_dims.png}
+      \caption{Subject 1}
       \label{fig:Krebs_rectified_total_structure_dims}
     \end{subfigure}
     \begin{subfigure}[h]{0.5\linewidth}
       \centering
       \includegraphics[width=\linewidth]{figures/eight_probe/Waksman_rectified_total_structure_dims.png}
+      \caption{Subject 2}
       \label{fig:Waksman_rectified_total_structure_dims}
     \end{subfigure}
     \begin{subfigure}[h]{0.5\linewidth}
       \centering
       \includegraphics[width=\linewidth]{figures/eight_probe/Robbins_rectified_total_structure_dims.png}
+      \caption{Subject 3}
       \label{fig:Robbins_rectified_total_structure_dims}
     \end{subfigure}
     \caption{The number of dimensions in the $k$-partite and connected structure in the correlation based networks beyond the structure captured by a sparse weighted configuration null network model (see section \ref{sec:sparse_weighted_configuration_model}), shown for different time bin widths. Note that the $k$-partite structure disappears for time bin width greater than $200$ms for all three subjects. The dimension of the connected structure reduces with increasing bin width for $2$ of the $3$ subjects (top row).}
@@ -157,11 +175,11 @@ Note that in the following text, we refer to the correlation coefficient between
 
   We chose the sparse weighted configuration model (see section \ref{sec:sparse_weighted_configuration_model}) as our null network model. This model matches the sparsity and the total weight of the original network but distributes the weight at random across the sparse network.
 
-  We applied the spectral rejection method to our networks based on total correlations using different values for the time bin width. We observed that for smaller time bin widths, our data networks had both $k$-partite structure, and community structure. As the width of the time bin increased, we found that the $k$-partite structure disappeared from our data networks, and the dimension of the community strcuture reduced in two of the three mice from which we had data (see figure \ref{fig:structure_dims}).
+  We applied the spectral rejection method to our networks based on total correlations using different values for the time bin width. We observed that for smaller time bin widths, our data networks had both $k$-partite structure, and community structure. As the width of the time bin increased, we found that the $k$-partite structure disappeared from our data networks, and the dimension of the community structure reduced in two of the three mice from which we had data (see figure \ref{fig:structure_dims}).
 
   \subsection{Detecting communities in correlation based networks}
 
-  \begin{figure}
+  \begin{figure}[p]
     \begin{subfigure}[h]{0.5\linewidth}
       \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png}
       \caption{5ms}
@@ -182,11 +200,11 @@ Note that in the following text, we refer to the correlation coefficient between
       \caption{1s}
       \label{fig:regional_cluster_map_1s}
     \end{subfigure}
-    \caption{(a) and (c) Correlation matrices with detected communities indicated by white lines. Each off main diagonal entry in the matrix represents a pair of neurons. Those entries within a white square indicate that both of neurons are in the same community as detected by our community detection procedure. Matrices shown are for $5$ms and $1$s time bin widths respectively. (b) and (d) Matrices showing the anatomical distribution of pairs along with their community membership. Entries where both cells are in the same reigon are given a colour indicated on the colour bar. Entries where cells are in different regions are given the grey colour also indicated on the colour bar.}
+    \caption{(A) and (C) Correlation matrices with detected communities indicated by white lines. Each off main diagonal entry in the matrix represents a pair of neurons. Those entries within a white square indicate that both of neurons are in the same community as detected by our community detection procedure. Matrices shown are for $5$ms and $1$s time bin widths respectively. (B) and (D) Matrices showing the anatomical distribution of pairs along with their community membership. Entries where both cells are in the same reigon are given a colour indicated on the colour bar. Entries where cells are in different regions are given the grey colour also indicated on the colour bar.}
     \label{fig:consensus_clusterings_with_regions}
   \end{figure}
 
-  We applied the community detection procedure described in section \ref{sec:community_detection} to our signal networks for our various time bin widths. As might be expected from the results described above in section \ref{sec:dims_result}, we detected a greater number of smaller communities at shorter time bin widths, and a smaller number of larger communities for longer time bin widths (see figure \ref{fig:consensus_clusterings_with_regions}).
+  We applied the community detection procedure described in section \ref{sec:community_detection} to our signal networks for our various time bin widths. We detected a greater number of smaller communities at shorter time bin widths, and a smaller number of larger communities for longer time bin widths (see figure \ref{fig:consensus_clusterings_with_regions}). This was expected after the results found in section \ref{sec:dims_result}. We found more dimensions of additional structure at shorter time bin widths, therefore we found more communities at shorter time bin widths.
 
   We also noticed that at short time bin widths the communities detected tended to be dominated by cells from one region. Whereas communities existing in networks created using wider time bin widths tended to contain cells from many different brain regions. More on this in the next section.
 
@@ -216,10 +234,10 @@ Note that in the following text, we refer to the correlation coefficient between
     \label{fig:distance_measures}
   \end{figure}
 
-  Both measures indicated that the detected communities and the anatomical division of the cells were more similar when we used shorter time bins widths (see figure \ref{fig:distance_measures}). This indicates that correlated behaviour in neuronal ensembles is more restricted to individual brain regions at short timescales ($<250$ms), and the correlated activty spreads out across brain regions over longer time scales.
+  Both measures indicated that the detected communities and the anatomical division of the cells were more similar when we used shorter time bins widths (see figure \ref{fig:distance_measures}). This indicates that correlated behaviour in neuronal ensembles is more restricted to individual brain regions at short timescales ($<250$ms), and the correlated activity spreads out across brain regions over longer time scales.
 
   \subsection{Conditional correlations \& signal correlations}
-  In light of the excellent research of Stringer et al (2019) showing that spontaneous behaviours can drive activity in neuronal ensembles across the visual cortex and midbrain \parencite{stringer}, we decided to control for the mouse's behaviour when performing our analyses. My second supervisor, Dr Michael Ashby, suggested that our community detection process may be detecting communities across multiple brain regions at longer time scales due to aggregating neuronal activity driven by several spontaneous behaviours occuring during the time interval covered by a given time bin. A time bin of $1$s, for example, could contain a spike count where those spikes were driven by different spontaneous behaviours. We aimed to investigate this possibility by applying our community detection analysis to conditional correlation measures.
+  In light of the excellent research of Stringer et al (2019) showing that spontaneous behaviours can drive activity in neuronal ensembles across the visual cortex and midbrain \parencite{stringer}, we decided to control for the mouse's behaviour when performing our analyses. It is possible that our community detection process may be detecting communities across multiple brain regions at longer time scales due to aggregating neuronal activity driven by several spontaneous behaviours occuring during the time interval covered by a given time bin. A time bin of $1$s, for example, could contain a spike count where those spikes were driven by different spontaneous behaviours. We aimed to investigate this possibility by applying our community detection analysis to conditional correlation measures.
 
   We used the top $500$ principal components of a video of the mouse's face as a measure of the mouse's behaviour (see section \ref{sec:video_recordings}). We modelled the spike counts as a linear combination of the principal components using linear regression with ElasticNet regularisation (see section \ref{sec:conditioning_on_behavioural_data}). Using this model, we quantified the expected spike count given the mouse's behaviour $E[X|Z_1, \dots ,Z_{500}]$.
 
@@ -263,7 +281,7 @@ Note that in the following text, we refer to the correlation coefficient between
 
   Using $\cov (E[X|Z], E[Y|Z])$ we measured the signal correlation, $\rho_{\text{signal}}$, and using $E[\cov (X,Y|Z)]$ we measured the event conditional correlation, $\rho_{X,Y|Z}$ (see section \ref{sec:cond_corr} for more details). We saw a consistent increase in $\rho_{X,Y|Z}$ as the time bin width increased, this corresponds to the result for $E[\cov(X,Y|Z)]$. We observed different trends for $\rho_{\text{signal}}$ for each mouse, this corresponds to the result for $\cov(E[X|Z],E[Y|Z])$.
 
-  \begin{figure}[h]
+  \begin{figure}[p]
     \begin{subfigure}[h]{0.5\linewidth}
       \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png}
       \caption{$\rho_{X,Y|Z}$}
@@ -284,7 +302,7 @@ Note that in the following text, we refer to the correlation coefficient between
       \caption{$\rho_{\text{signal}}$}
       \label{fig:long_time_signal_rectified_regional_clusters}
     \end{subfigure}
-    \caption{Matrices showing the regional membership of pairs by colour, and the communities in which those pairs lie. (a-b) Detected communities and regional membership matrix for network based on rectified spike count correlation $\rho_{X,Y|Z}$, using time bin widths of $0.005$s and $1$s respectively. (c-d) Detected communities and regional membership matrix for network based on rectified signal correlation $\rho_{\text{signal}}$, using time bin widths of $0.005$s and $1$s respectively.}
+    \caption{Matrices showing the regional membership of pairs by colour, and the communities in which those pairs lie. (A-B) Detected communities and regional membership matrix for network based on rectified spike count correlation $\rho_{X,Y|Z}$, using time bin widths of $0.005$s and $1$s respectively. (C-D) Detected communities and regional membership matrix for network based on rectified signal correlation $\rho_{\text{signal}}$, using time bin widths of $0.005$s and $1$s respectively.}
     \label{fig:rectified_signal_regional_clusters}
   \end{figure}
 
@@ -592,7 +610,7 @@ Another space for further investigation is the community detection. The algorith
         The \textit{weighted configuration model} is a canonical null network model for weighted networks. Given some data network, the weighted configuration model null network will preserve the degree sequence and weight sequence of each node in the data network. But the edges will be distributed randomly  \parencite{fosdick}. Any structure in the data network beyond its degree sequence and weight sequence will not be captured in the weighted configuration model. So, this model can be used in testing the hypothesis that this extra structure exists.
 
         \subsubsection{Sparse weighted configuration model}\label{sec:sparse_weighted_configuration_model}
-        The \textit{sparse weighted configuration model} is another null network model. Similar in nature to the weighted configuration model (see section \ref{sec:weight_configuration_model}), but the sparsity of the data network is preserved in the null network. This is achieved by sampling from a probability distribution for the creation or non-creation of each possible connection, then distributing the weight of the data network randomly in this sparse network  \parencite{humphries}. This is the null network that we used when searching for additional strcuture in our data networks.
+        The \textit{sparse weighted configuration model} is another null network model. Similar in nature to the weighted configuration model (see section \ref{sec:weight_configuration_model}), but the sparsity of the data network is preserved in the null network. This is achieved by sampling from a probability distribution for the creation or non-creation of each possible connection, then distributing the weight of the data network randomly in this sparse network  \parencite{humphries}. This is the null network that we used when searching for additional structure in our data networks.
 
         \subsubsection{Spectral rejection}\label{sec:spectral_rejection}
         We made use of the spectral rejection algorithm as outlined in  \parencite{humphries}. The spectral rejection algorithm is a method for finding structure in a network not captured by a supposed null model, if such structure exists.

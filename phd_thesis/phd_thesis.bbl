@@ -17,6 +17,175 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{allen}{article}{}
+    \name{author}{7}{}{%
+      {{hash=AWE}{%
+         family={Allen},
+         familyi={A\bibinitperiod},
+         given={William\bibnamedelima E.},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=CMZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Michael\bibnamedelima Z.},
+         giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Pichamoorthy},
+         familyi={P\bibinitperiod},
+         given={Nandini},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=TRH}{%
+         family={Tien},
+         familyi={T\bibinitperiod},
+         given={Rebecca\bibnamedelima H.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pachitariu},
+         familyi={P\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Liqun},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Deisseroth},
+         familyi={D\bibinitperiod},
+         given={Karl},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{AWE+1}
+    \strng{fullhash}{AWECMZPNTRHPMLLDK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    How is it that groups of neurons dispersed through the brain interact to
+  generate complex behaviors? Three papers in this issue present brain-scale
+  studies of neuronal activity and dynamics (see the Perspective by Huk and
+  Hart). Allen et al. found that in thirsty mice, there is widespread neural
+  activity related to stimuli that elicit licking and drinking. Individual
+  neurons encoded task-specific responses, but every brain area contained
+  neurons with different types of response. Optogenetic stimulation of
+  thirst-sensing neurons in one area of the brain reinstated drinking and
+  neuronal activity across the brain that previously signaled thirst.
+  Gr{\"u}ndemann et al. investigated the activity of mouse basal amygdala
+  neurons in relation to behavior during different tasks. Two ensembles of
+  neurons showed orthogonal activity during exploratory and nonexploratory
+  behaviors, possibly reflecting different levels of anxiety experienced in
+  these areas. Stringer et al. analyzed spontaneous neuronal firing, finding
+  that neurons in the primary visual cortex encoded both visual information and
+  motor activity related to facial movements. The variability of neuronal
+  responses to visual stimuli in the primary visual area is mainly related to
+  arousal and reflects the encoding of latent behavioral states.Science, this
+  issue p. eaav3932, p. eaav8736, p. eaav7893; see also p.
+  236INTRODUCTIONMotivational drives are internal states that can explain why
+  animals adaptively display distinct behaviors in response to the same
+  external stimulus. Physiological needs (e.g., for food and water) are thought
+  to produce specific drives that engage particular goal-directed behaviors to
+  promote survival. These drives are established through the activity of
+  populations of hypothalamic neurons that sense physiological variables and
+  relay this information to other parts of the brain. However, it is unclear
+  how the activity of these hypothalamic neurons activates and coordinates
+  other brain systems involved in sensation, decision-making, and action in
+  order to produce the appropriate goal-directed behavior. The cellular
+  dynamics of brainwide states underlying basic survival drives have heretofore
+  remained inaccessible.RATIONALEUnderstanding the neural basis of motivated
+  behavior would require measuring activity within distributed neural circuits
+  in the brain and studying how this activity is regulated by the
+  animal{\textquoteright}s motivational state. Recent advances in extracellular
+  electrophysiological recording technology have enabled large-scale
+  measurements of neuronal activity throughout the brains of behaving animals.
+  This technology could lead to a spatiotemporal map of activity flow across
+  the brain as an animal senses and responds to stimuli under different
+  conditions. By examining the animal in different motivational states, we
+  could determine how these states are represented in diverse brain regions and
+  how these states influence neuronal activity across the brain to alter
+  behavior.RESULTSWe recorded the activity of ~24,000 neurons throughout 34
+  brain regions during thirst-motivated choice behavior; these recordings were
+  performed across 87 sessions from 21 mice as they gradually consumed water
+  and became sated. We found that more than half of recorded neurons were
+  modulated by this task, with a rapid and widespread response to a
+  water-predicting olfactory cue preceding sustained activity related to water
+  acquisition. The animal{\textquoteright}s satiety state gated this wave of
+  activity: In satiated mice, the same sensory cue produced only a transient
+  change in activity and no behavioral response. Surprisingly, the spontaneous
+  baseline activity of neurons across many brain regions was also modulated by
+  the animal{\textquoteright}s satiety state.We found diverse correlates of the
+  task at the single-neuron level, with many neurons{\textquoteright} activity
+  correlating with specific sensory cues or behavior, and some of them highly
+  modulated by satiety state. Neurons from each of these groups were
+  distributed throughout the brain, with each brain area differing in the
+  relative proportions of different types of neurons. We separated the
+  high-dimensional population activity dynamics into lower-dimensional state-,
+  cue-, and behavior-related modes. Whereas the cue- and behavior-related modes
+  were primarily modulated by the task in a satiety state{\textendash}dependent
+  manner, activity along the state mode was persistent throughout the trial,
+  including the period before odor onset. Thus, there existed a brainwide
+  representation of satiety state that appeared to gate the flow of activity in
+  response to sensory inputs.Finally, as a causal test of the role of this
+  widespread encoding of satiety state, we optogenetically stimulated
+  hypothalamic thirst neurons and caused mice to perform more trials after
+  reaching satiety. We found that this focal stimulation returned the behavior,
+  brainwide single-neuron within-trial dynamics, and brainwide single-neuron
+  correlates of satiety state back to the state corresponding to thirst.
+  Stimulation also specifically modulated activity along the satiety-related
+  mode in a subset of brain areas.CONCLUSIONOur experiments revealed a global
+  representation of the thirst motivational state throughout the brain, which
+  appears to gate the brainwide propagation of sensory information and its
+  subsequent transformation into behavioral output.Brainwide dynamics of thirst
+  motivational drive.Top left: Potential models for widespread or selective
+  regulation of neural dynamics by thirst. Bottom left: Tracks of Neuropixels
+  electrodes used to record activity from different brain regions during
+  thirst-motivated behavior. Center: Brainwide activity dynamics of individual
+  neurons in response to a sensory cue while a mouse was thirsty and sated. Top
+  right: Neural activity correlated with satiety state. Bottom right:
+  Low-dimensional dynamics of task-related activity.Physiological needs produce
+  motivational drives, such as thirst and hunger, that regulate behaviors
+  essential to survival. Hypothalamic neurons sense these needs and must
+  coordinate relevant brainwide neuronal activity to produce the appropriate
+  behavior. We studied dynamics from ~24,000 neurons in 34 brain regions during
+  thirst-motivated choice behavior in 21 mice as they consumed water and became
+  sated. Water-predicting sensory cues elicited activity that rapidly spread
+  throughout the brain of thirsty animals. These dynamics were gated by a
+  brainwide mode of population activity that encoded motivational state. After
+  satiation, focal optogenetic activation of hypothalamic thirst-sensing
+  neurons returned global activity to the pre-satiation state. Thus,
+  motivational states specify initial conditions that determine how a brainwide
+  dynamical system transforms sensory input into behavioral output.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.aav3932
+    \endverb
+    \verb{eprint}
+    \verb https://science.sciencemag.org/content/364/6437/eaav3932.full.pdf
+    \endverb
+    \field{issn}{0036-8075}
+    \field{number}{6437}
+    \field{title}{Thirst regulates motivated behavior through modulation of
+  brainwide neural population dynamics}
+    \verb{url}
+    \verb https://science.sciencemag.org/content/364/6437/eaav3932
+    \endverb
+    \field{volume}{364}
+    \field{journaltitle}{Science}
+    \field{year}{2019}
+  \endentry
+
   \entry{baadel}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=BS}{%
@@ -76,6 +245,88 @@
     \field{title}{Overlapping clustering: A review}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{baldassano}{article}{}
+    \name{author}{6}{}{%
+      {{hash=BC}{%
+         family={Baldassano},
+         familyi={B\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Janice},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zadbood},
+         familyi={Z\bibinitperiod},
+         given={Asieh},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PJW}{%
+         family={Pillow},
+         familyi={P\bibinitperiod},
+         given={Jonathan\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HU}{%
+         family={Hasson},
+         familyi={H\bibinitperiod},
+         given={Uri},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NKA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Kenneth\bibnamedelima A.},
+         giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{event segmentation, fMRI, perception, memory, hippocampus, Hidden
+  Markov Model, recall, narrative, situation model, event model, reinstatement}
+    \strng{namehash}{BC+1}
+    \strng{fullhash}{BCCJZAPJWHUNKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Summary During realistic, continuous perception, humans automatically
+  segment experiences into discrete events. Using a novel model of cortical
+  event dynamics, we investigate how cortical structures generate event
+  representations during narrative perception and how these events are stored
+  to and retrieved from memory. Our data-driven approach allows us to detect
+  event boundaries as shifts between stable patterns of brain activity without
+  relying on stimulus annotations and reveals a nested hierarchy from short
+  events in sensory regions to long events in high-order areas (including
+  angular gyrus and posterior medial cortex), which represent abstract,
+  multimodal situation models. High-order event boundaries are coupled to
+  increases in hippocampal activity, which predict pattern reinstatement during
+  later free recall. These areas also show evidence of anticipatory
+  reinstatement as subjects listen to a familiar narrative. Based on these
+  results, we propose that brain activity is naturally structured into nested
+  events, which form the basis of long-term memory representations.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neuron.2017.06.041
+    \endverb
+    \field{issn}{0896-6273}
+    \field{number}{3}
+    \field{pages}{709 \bibrangedash  721.e5}
+    \field{title}{Discovering Event Structure in Continuous Narrative
+  Perception and Memory}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0896627317305937
+    \endverb
+    \field{volume}{95}
+    \field{journaltitle}{Neuron}
+    \field{year}{2017}
   \endentry
 
   \entry{bartol}{article}{}
@@ -1273,6 +1524,66 @@
     \field{year}{2011}
   \endentry
 
+  \entry{girard}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GP}{%
+         family={Girard},
+         familyi={G\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HJM}{%
+         family={Hupé},
+         familyi={H\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bullier},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GPHJMBJ1}
+    \strng{fullhash}{GPHJMBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    It is often assumed that the action of cortical feedback connections is
+  slow and modulatory, whereas feedforward connections carry a rapid drive to
+  their target neurons. Recent results from our laboratory showed a very rapid
+  effect of feedback connections on the visual responses of neurons in lower
+  order areas. We wanted to determine whether such a rapid action is mediated
+  by fast conducting axons. Using electrical stimulation, we compared the
+  conduction velocities along feedforward and feedback axons between areas V1
+  and V2 of the macaque monkey. We conclude that feedback and feedforward
+  connections between V1 and V2 have comparable fast conduction velocities
+  (around 3.5 m/s).%
+    }
+    \verb{doi}
+    \verb 10.1152/jn.2001.85.3.1328
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1152/jn.2001.85.3.1328
+    \endverb
+    \field{note}{PMID: 11248002}
+    \field{number}{3}
+    \field{pages}{1328\bibrangedash 1331}
+    \field{title}{Feedforward and Feedback Connections Between Areas V1 and V2
+  of the Monkey Have Similar Rapid Conduction Velocities}
+    \verb{url}
+    \verb https://doi.org/10.1152/jn.2001.85.3.1328
+    \endverb
+    \field{volume}{85}
+    \field{journaltitle}{Journal of Neurophysiology}
+    \field{year}{2001}
+  \endentry
+
   \entry{greenberg}{article}{}
     \name{author}{11}{}{%
       {{hash=GD}{%
@@ -1357,6 +1668,178 @@
   protein through biophysical modeling:}
     \field{month}{11}
     \field{year}{2018}
+  \endentry
+
+  \entry{grundemann}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GJ}{%
+         family={Gr{\"u}ndemann},
+         familyi={G\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bitterman},
+         familyi={B\bibinitperiod},
+         given={Yael},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Tingjia},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Krabbe},
+         familyi={K\bibinitperiod},
+         given={Sabine},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GBF}{%
+         family={Grewe},
+         familyi={G\bibinitperiod},
+         given={Benjamin\bibnamedelima F.},
+         giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=SMJ}{%
+         family={Schnitzer},
+         familyi={S\bibinitperiod},
+         given={Mark\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={L{\"u}thi},
+         familyi={L\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{GJ+1}
+    \strng{fullhash}{GJBYLTKSGBFSMJLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    How is it that groups of neurons dispersed through the brain interact to
+  generate complex behaviors? Three papers in this issue present brain-scale
+  studies of neuronal activity and dynamics (see the Perspective by Huk and
+  Hart). Allen et al. found that in thirsty mice, there is widespread neural
+  activity related to stimuli that elicit licking and drinking. Individual
+  neurons encoded task-specific responses, but every brain area contained
+  neurons with different types of response. Optogenetic stimulation of
+  thirst-sensing neurons in one area of the brain reinstated drinking and
+  neuronal activity across the brain that previously signaled thirst.
+  Gr{\"u}ndemann et al. investigated the activity of mouse basal amygdala
+  neurons in relation to behavior during different tasks. Two ensembles of
+  neurons showed orthogonal activity during exploratory and nonexploratory
+  behaviors, possibly reflecting different levels of anxiety experienced in
+  these areas. Stringer et al. analyzed spontaneous neuronal firing, finding
+  that neurons in the primary visual cortex encoded both visual information and
+  motor activity related to facial movements. The variability of neuronal
+  responses to visual stimuli in the primary visual area is mainly related to
+  arousal and reflects the encoding of latent behavioral states.Science, this
+  issue p. eaav3932, p. eaav8736, p. eaav7893; see also p.
+  236INTRODUCTIONAffective or metabolic states, such as anxiety, stress, or
+  thirst, enable adaptations of perception and the selection of appropriate
+  behaviors to achieve safety or homeostasis. Classically, changes in brain
+  states are associated with thalamocortical circuitry and sensory coding. Yet
+  homeostatic and affective states are associated with complex behavioral,
+  autonomic, and hormonal responses, suggesting that state representations
+  involve brain-wide networks, including subcortical structures such as the
+  amygdala. Previously, amygdala function has been studied mainly in the
+  framework of Pavlovian conditioning, leading to the identification of
+  specific circuit elements that underlie associative plasticity at the
+  single-cell and neural-ensemble levels. However, how internal states engage
+  neuronal ensembles in the basal amygdala, a hub for regulating affective,
+  homeostatic, foraging, and social behaviors via widespread connections with
+  many other brain areas, remains unknown.RATIONALEThe encoding of states
+  governing self-paced behaviors, including foraging or place avoidance, should
+  engage large neuronal populations, evolve on longer time scales (seconds to
+  minutes), generalize across contexts, and lead to differences in sensory
+  processing and action selection. We therefore used a miniature microscope and
+  longitudinal imaging of amygdala neural activity in freely moving mice
+  performing a series of behavioral paradigms in different contexts across
+  multiple days. We thereby tracked neuronal population activity across
+  distinct behavioral paradigms in which mice exhibited distinct modes of
+  behavior manifesting different internal states.RESULTSWe tracked amygdala
+  neuronal activity across the open-field test, the elevated plus maze test,
+  and a classical Pavlovian fear-conditioning paradigm. During open-field
+  exploration, two large ensembles of basal amygdala neurons antagonistically
+  conveyed information about an animal{\textquoteright}s corner or center
+  location. This population signature of opposing ensemble activity occurred on
+  a slow time scale (seconds), was evident across consecutive days and
+  paradigms, and predicted transitions from exploratory to nonexploratory,
+  defensive states and vice versa. Notably, amygdala ensemble coding did not
+  align with spatial areas generally thought to correspond to global anxiety
+  states (e.g., the open-field corners and the closed arms of the elevated plus
+  maze) but instead reflected moment-to-moment changes in the exploratory or
+  defensive state of the animal. During fear conditioning, sensory responses of
+  amygdala neuronal populations to conditioned (tone) and unconditioned (shock)
+  stimuli were orthogonal to state encoding, demonstrating that fast sensory
+  responses and slow exploratory state dynamics were separately encoded by
+  amygdala networks. Correlations of neural responses to state transitions were
+  largely conserved across major amygdala output pathways to the hippocampus,
+  nucleus accumbens, and prefrontal cortex.CONCLUSIONOur study reveals two
+  large, nonoverlapping functional neuronal ensembles of the basal amygdala
+  representing internal states. The ensembles are anatomically intermingled and
+  encode opposing moment-to-moment states changes, especially regarding
+  exploratory and defensive behaviors, but do not provide a scalar measure of
+  global anxiety levels.The amygdala broadcasts state signals to a wider brain
+  network, including cortical and subcortical areas. These signals are likely
+  correlated with diverse aspects of brain state, including anxiety, arousal,
+  sensory processing, and action selection. This extends the current concept of
+  thalamocortical brain-state coding to include affective and exploratory state
+  representations in the amygdala, which have the potential to control
+  state-dependent regulation of behavioral output and internal drives. Our
+  findings provide a low-dimensional amygdala population signature as a
+  trackable measure for the state dependency of brain function and behavior in
+  defined neuronal circuits. It remains to be tested whether a maladaptive bias
+  in neuronal state coding in the basolateral amygdala contributes to
+  behavioral and physiological alterations in animal disease models.Amygdala
+  ensembles encode behavioral states.Two large, antagonistic basal amygdala
+  neural ensembles signal opposite behavioral states conserved across different
+  behavioral paradigms and contexts. This neural state signature separates
+  exploratory and nonexploratory, defensive behaviors (dashed line) on a
+  moment-to-moment basis, does not align with global anxiety levels (red
+  clusters, high anxiety; blue clusters, low anxiety), is orthogonal to sensory
+  responses, and is broadcast to a wider brain network.Internal states,
+  including affective or homeostatic states, are important behavioral
+  motivators. The amygdala regulates motivated behaviors, yet how distinct
+  states are represented in amygdala circuits is unknown. By longitudinally
+  imaging neural calcium dynamics in freely moving mice across different
+  environments, we identified opponent changes in activity levels of two major,
+  nonoverlapping populations of basal amygdala principal neurons. This
+  population signature does not report global anxiety but predicts switches
+  between exploratory and nonexploratory, defensive states. Moreover, the
+  amygdala separately processes external stimuli and internal states and
+  broadcasts state information via several output pathways to larger brain
+  networks. Our findings extend the concept of thalamocortical
+  {\textquotedblleft}brain-state{\textquotedblright} coding to include
+  affective and exploratory states and provide an entry point into the state
+  dependency of brain function and behavior in defined circuits.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.aav8736
+    \endverb
+    \verb{eprint}
+    \verb https://science.sciencemag.org/content/364/6437/eaav8736.full.pdf
+    \endverb
+    \field{issn}{0036-8075}
+    \field{number}{6437}
+    \field{title}{Amygdala ensembles encode behavioral states}
+    \verb{url}
+    \verb https://science.sciencemag.org/content/364/6437/eaav8736
+    \endverb
+    \field{volume}{364}
+    \field{journaltitle}{Science}
+    \field{year}{2019}
   \endentry
 
   \entry{humphries}{article}{}
@@ -2009,6 +2492,106 @@
     \field{year}{2007}
   \endentry
 
+  \entry{murray}{article}{}
+    \name{author}{11}{}{%
+      {{hash=MJD}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bernacchia},
+         familyi={B\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FDJ}{%
+         family={Freedman},
+         familyi={F\bibinitperiod},
+         given={David\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Romo},
+         familyi={R\bibinitperiod},
+         given={Ranulfo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WJD}{%
+         family={Wallis},
+         familyi={W\bibinitperiod},
+         given={Jonathan\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Xinying},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=PSC}{%
+         family={Padoa-Schioppa},
+         familyi={P\bibinithyphendelim S\bibinitperiod},
+         given={Camillo},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pasternak},
+         familyi={P\bibinitperiod},
+         given={Tatiana},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Seo},
+         familyi={S\bibinitperiod},
+         given={Hyojung},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Daeyeol},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WXJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xiao-Jing},
+         giveni={X\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJD+1}
+    \strng{fullhash}{MJDBAFDJRRWJDCXPSCPTSHLDWXJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Primate cortex can be organized with specialization and hierarchical
+  principles, but presently there is little evidence for how it is organized
+  temporally. Across six separate datasets, the authors find a hierarchical
+  ordering of intrinsic fluctuation of spiking activity, with timescales that
+  increase from sensory to prefrontal areas.%
+    }
+    \verb{doi}
+    \verb 10.1038/nn.3862
+    \endverb
+    \field{issn}{1546-1726}
+    \field{number}{12}
+    \field{pages}{1661\bibrangedash 1663}
+    \field{title}{A hierarchy of intrinsic timescales across primate cortex}
+    \verb{url}
+    \verb https://doi.org/10.1038/nn.3862
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Nature Neuroscience}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{neher}{article}{}
     \name{author}{2}{}{%
       {{hash=NE}{%
@@ -2165,6 +2748,89 @@
     \field{journaltitle}{Neural Computation}
     \field{month}{01}
     \field{year}{2017}
+  \endentry
+
+  \entry{patterson}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PCA}{%
+         family={Patterson},
+         familyi={P\bibinitperiod},
+         given={Carlyn\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Duijnhouwer},
+         familyi={D\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WSC}{%
+         family={Wissig},
+         familyi={W\bibinitperiod},
+         given={Stephanie\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Krekelberg},
+         familyi={K\bibinitperiod},
+         given={Bart},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kohn},
+         familyi={K\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PCA+1}
+    \strng{fullhash}{PCADJWSCKBKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Recent stimulus history, or adaptation, can alter neuronal response
+  properties. Adaptation effects have been characterized in a number of
+  visually responsive structures, from the retina to higher visual cortex.
+  However, it remains unclear whether adaptation effects across stages of the
+  visual system take a similar form in response to a particular sensory event.
+  This is because studies typically probe a single structure or cortical area,
+  using a stimulus ensemble chosen to provide potent drive to the cells of
+  interest. Here we adopt an alternative approach and compare adaptation
+  effects in primary visual cortex (V1) and area MT using identical stimulus
+  ensembles. Previous work has suggested these areas adjust to recent stimulus
+  drive in distinct ways. We show that this is not the case: adaptation effects
+  in V1 and MT can involve weak or strong loss of responsivity and shifts in
+  neuronal preference toward or away from the adapter, depending on stimulus
+  size and adaptation duration. For a particular stimulus size and adaptation
+  duration, however, effects are similar in nature and magnitude in V1 and MT.
+  We also show that adaptation effects in MT of awake animals depend strongly
+  on stimulus size. Our results suggest that the strategies for adjusting to
+  recent stimulus history depend more strongly on adaptation duration and
+  stimulus size than on the cortical area. Moreover, they indicate that
+  different levels of the visual system adapt similarly to recent sensory
+  experience.%
+    }
+    \verb{doi}
+    \verb 10.1152/jn.00030.2013
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1152/jn.00030.2013
+    \endverb
+    \field{note}{PMID: 24371295}
+    \field{number}{6}
+    \field{pages}{1203\bibrangedash 1213}
+    \field{title}{Similar adaptation effects in primary visual cortex and area
+  MT of the macaque monkey under matched stimulus conditions}
+    \verb{url}
+    \verb https://doi.org/10.1152/jn.00030.2013
+    \endverb
+    \field{volume}{111}
+    \field{journaltitle}{Journal of Neurophysiology}
+    \field{year}{2014}
   \endentry
 
   \entry{pnevmatikakis}{article}{}
@@ -3204,6 +3870,76 @@
     \field{journaltitle}{Journal of neurophysiology}
     \field{month}{10}
     \field{year}{2010}
+  \endentry
+
+  \entry{wierzynski}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WCM}{%
+         family={Wierzynski},
+         familyi={W\bibinitperiod},
+         given={"Casimir\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=LEV}{%
+         family={Lubenov},
+         familyi={L\bibinitperiod},
+         given={Evgueniy\bibnamedelima V.},
+         giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SAG}{%
+         family={Siapas"},
+         familyi={S\bibinitperiod},
+         given={Athanassios\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \keyw{"SYSNEURO, SIGNALING, SYSBIO"}
+    \strng{namehash}{WCM+1}
+    \strng{fullhash}{WCMLEVGMSAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{"2009"}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    "Summary Cortico-hippocampal interactions during sleep are believed to
+  reorganize neural circuits in support of memory consolidation. However,
+  spike-timing relationships across cortico-hippocampal networks—key
+  determinants of synaptic changes—are poorly understood. Here we show that
+  cells in prefrontal cortex fire consistently within 100 ms after hippocampal
+  cells in naturally sleeping animals. This provides evidence at the single
+  cell-pair level for highly consistent directional interactions between these
+  areas within the window of plasticity. Moreover, these interactions are state
+  dependent: they are driven by hippocampal sharp-wave/ripple (SWR) bursts in
+  slow-wave sleep (SWS) and are sharply reduced during REM sleep. Finally,
+  prefrontal responses are nonlinear: as the strength of hippocampal bursts
+  rises, short-latency prefrontal responses are augmented by increased spindle
+  band activity and a secondary peak ∼100 ms later. These findings suggest
+  that SWR events are atomic units of hippocampal-prefrontal communication
+  during SWS and that the coupling between these areas is highly attenuated
+  during REM sleep."%
+    }
+    \verb{doi}
+    \verb "https://doi.org/10.1016/j.neuron.2009.01.011"
+    \endverb
+    \field{issn}{"0896-6273"}
+    \field{number}{"4"}
+    \field{pages}{"587 \bibrangedash  596"}
+    \field{title}{"State-Dependent Spike-Timing Relationships between
+  Hippocampal and Prefrontal Circuits during Sleep"}
+    \verb{url}
+    \verb "http://www.sciencedirect.com/science/article/pii/S0896627309000786"
+    \endverb
+    \field{volume}{"61"}
+    \field{journaltitle}{"Neuron"}
+    \field{year}{"2009"}
   \endentry
 
   \entry{zou}{article}{}

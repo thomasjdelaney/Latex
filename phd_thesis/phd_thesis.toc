@@ -27,76 +27,76 @@
 \contentsline {section}{\numberline {2.1}Introduction}{32}{section.53}% 
 \contentsline {section}{\numberline {2.2}Results}{33}{section.54}% 
 \contentsline {subsection}{\numberline {2.2.1}Average correlation size increases with increasing time bin width}{33}{subsection.55}% 
-\contentsline {subsection}{\numberline {2.2.2}Goodness-of-fit for Poisson and Gaussian distributions across increasing time bin widths}{34}{subsection.57}% 
-\contentsline {subsection}{\numberline {2.2.3}Differences between and inter- and intra- regional correlations decrease with increasing bin width}{34}{subsection.59}% 
-\contentsline {subsection}{\numberline {2.2.4}Connected and $k$-partite structure in correlation based networks reduces in dimension with increasing bin width}{38}{subsection.63}% 
+\contentsline {subsection}{\numberline {2.2.2}Goodness-of-fit for Poisson and Gaussian distributions across increasing time bin widths}{34}{subsection.58}% 
+\contentsline {subsection}{\numberline {2.2.3}Differences between and inter- and intra- regional correlations decrease with increasing bin width}{36}{subsection.59}% 
+\contentsline {subsection}{\numberline {2.2.4}Connected and divided structure in correlation based networks reduces in dimension with increasing bin width}{39}{subsection.63}% 
 \contentsline {subsection}{\numberline {2.2.5}Detecting communities in correlation based networks}{40}{subsection.65}% 
-\contentsline {subsection}{\numberline {2.2.6}Functional communities resemble anatomical division at short timescales}{41}{subsection.67}% 
-\contentsline {subsection}{\numberline {2.2.7}Conditional correlations \& signal correlations}{42}{subsection.69}% 
-\contentsline {subsection}{\numberline {2.2.8}Absolute correlations and negative rectified correlations}{45}{subsection.75}% 
-\contentsline {section}{\numberline {2.3}Discussion}{46}{section.76}% 
-\contentsline {section}{\numberline {2.4}Data}{49}{section.77}% 
-\contentsline {subsection}{\numberline {2.4.1}Brain regions}{49}{subsection.78}% 
-\contentsline {subsection}{\numberline {2.4.2}Video recordings}{50}{subsection.83}% 
-\contentsline {section}{\numberline {2.5}Methods}{50}{section.84}% 
-\contentsline {subsection}{\numberline {2.5.1}Binning data}{50}{subsection.85}% 
-\contentsline {subsection}{\numberline {2.5.2}Correlation coefficients}{50}{subsection.86}% 
-\contentsline {subsubsection}{Total correlations, $r_{SC}$}{51}{section*.90}% 
-\contentsline {subsubsection}{Shuffled total correlations}{51}{section*.91}% 
-\contentsline {subsubsection}{Separating Correlations \& Anti-correlations}{51}{section*.92}% 
-\contentsline {subsection}{\numberline {2.5.3}Conditioning on behavioural data}{52}{subsection.93}% 
-\contentsline {subsubsection}{Linear regression}{52}{section*.96}% 
-\contentsline {subsubsection}{Elastic net regularisation}{52}{section*.97}% 
-\contentsline {subsubsection}{Conditional covariance}{53}{section*.102}% 
-\contentsline {subsubsection}{Measures of conditional correlation}{54}{section*.106}% 
-\contentsline {subsection}{\numberline {2.5.4}Information Theory}{54}{subsection.109}% 
-\contentsline {subsubsection}{Entropy $H(X)$}{54}{section*.110}% 
-\contentsline {subsubsection}{Maximum entropy limit}{55}{section*.114}% 
-\contentsline {subsubsection}{Mutual Information $I(X;Y)$}{56}{section*.116}% 
-\contentsline {subsubsection}{Variation of Information $VI(X,Y)$}{57}{section*.122}% 
-\contentsline {subsubsection}{Measuring entropies \& mutual information}{58}{section*.125}% 
-\contentsline {subsection}{\numberline {2.5.5}Network analysis}{58}{subsection.126}% 
-\contentsline {subsubsection}{Correlation networks}{58}{section*.127}% 
-\contentsline {subsubsection}{Rectified correlations}{58}{section*.128}% 
-\contentsline {subsubsection}{Sparsifying data networks}{59}{section*.129}% 
-\contentsline {subsubsection}{Communities}{59}{section*.130}% 
-\contentsline {subsubsection}{Weighted configuration model}{59}{section*.131}% 
-\contentsline {subsubsection}{Sparse weighted configuration model}{59}{section*.132}% 
-\contentsline {subsubsection}{Spectral rejection}{60}{section*.133}% 
-\contentsline {subsubsection}{Node rejection}{61}{section*.135}% 
-\contentsline {subsubsection}{Community detection}{61}{section*.136}% 
-\contentsline {subsection}{\numberline {2.5.6}Clustering Comparison}{62}{subsection.137}% 
-\contentsline {subsubsection}{Adjusted Rand Index}{62}{section*.140}% 
-\contentsline {subsubsection}{Clusterings as random variables}{63}{section*.143}% 
-\contentsline {subsubsection}{Information based similarity measures}{63}{section*.147}% 
-\contentsline {subsubsection}{Information based metrics}{64}{section*.154}% 
-\contentsline {subsubsection}{Comparing detected communities and anatomical divisions}{64}{section*.162}% 
-\contentsline {chapter}{\numberline {3}A simple two parameter distribution for modelling neuronal activity and capturing neuronal association}{67}{chapter.163}% 
-\contentsline {section}{\numberline {3.1}Introduction}{70}{section.165}% 
-\contentsline {section}{\numberline {3.2}Data}{71}{section.166}% 
-\contentsline {subsection}{\numberline {3.2.1}Experimental protocol}{71}{subsection.168}% 
-\contentsline {section}{\numberline {3.3}Methods}{72}{section.169}% 
-\contentsline {subsection}{\numberline {3.3.1}Binning data}{72}{subsection.170}% 
-\contentsline {subsection}{\numberline {3.3.2}Number of \textit {active} neurons}{72}{subsection.171}% 
-\contentsline {subsection}{\numberline {3.3.3}Moving windows for measurements}{72}{subsection.172}% 
-\contentsline {subsection}{\numberline {3.3.4}Fano factor}{74}{subsection.174}% 
-\contentsline {subsection}{\numberline {3.3.5}Probability Distributions suitable for modelling ensemble activity}{74}{subsection.176}% 
-\contentsline {subsubsection}{Association}{74}{section*.177}% 
-\contentsline {subsubsection}{Binomial distribution}{75}{section*.178}% 
-\contentsline {subsubsection}{Beta-binomial distribution}{75}{section*.180}% 
-\contentsline {subsubsection}{Conway-Maxwell-binomial distribution}{76}{section*.185}% 
-\contentsline {subsection}{\numberline {3.3.6}Fitting}{78}{subsection.192}% 
-\contentsline {subsection}{\numberline {3.3.7}Goodness-of-fit}{80}{subsection.197}% 
-\contentsline {section}{\numberline {3.4}Results}{80}{section.198}% 
-\contentsline {subsection}{\numberline {3.4.1}Increases in mean number of active neurons and variance in number of active neurons at stimulus onset in some regions}{80}{subsection.199}% 
-\contentsline {subsubsection}{Primary visual cortex}{81}{section*.200}% 
-\contentsline {subsubsection}{Hippocampus}{81}{section*.202}% 
-\contentsline {subsubsection}{Thalamus}{81}{section*.204}% 
-\contentsline {subsection}{\numberline {3.4.2}Conway-Maxwell-binomial distribution is usually a better fit than binomial or beta-binomial}{81}{subsection.206}% 
-\contentsline {subsection}{\numberline {3.4.3}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{86}{subsection.209}% 
-\contentsline {subsection}{\numberline {3.4.4}Replicating stimulus related quenching of neural variability}{86}{subsection.211}% 
-\contentsline {section}{\numberline {3.5}Discussion}{88}{section.213}% 
-\contentsline {chapter}{\numberline {4}Studies with practical limitations \& negative results}{91}{chapter.214}% 
-\contentsline {section}{\numberline {4.1}Dynamic state space model of pairwise and higher order neuronal correlations}{94}{section.216}% 
-\contentsline {section}{\numberline {4.2}A multiscale model for hierarchical data applied to \\ neuronal data}{94}{section.217}% 
-\contentsline {chapter}{Bibliography}{97}{chapter*.218}% 
+\contentsline {subsection}{\numberline {2.2.6}Functional communities resemble anatomical division at short timescales}{40}{subsection.67}% 
+\contentsline {subsection}{\numberline {2.2.7}Conditional correlations \& signal correlations}{44}{subsection.69}% 
+\contentsline {subsection}{\numberline {2.2.8}Absolute correlations and negative rectified correlations}{46}{subsection.75}% 
+\contentsline {section}{\numberline {2.3}Discussion}{48}{section.76}% 
+\contentsline {section}{\numberline {2.4}Data}{51}{section.77}% 
+\contentsline {subsection}{\numberline {2.4.1}Brain regions}{51}{subsection.78}% 
+\contentsline {subsection}{\numberline {2.4.2}Video recordings}{52}{subsection.83}% 
+\contentsline {section}{\numberline {2.5}Methods}{52}{section.84}% 
+\contentsline {subsection}{\numberline {2.5.1}Binning data}{52}{subsection.85}% 
+\contentsline {subsection}{\numberline {2.5.2}Correlation coefficients}{53}{subsection.86}% 
+\contentsline {subsubsection}{Total correlations, $r_{SC}$}{53}{section*.90}% 
+\contentsline {subsubsection}{Shuffled total correlations}{53}{section*.91}% 
+\contentsline {subsubsection}{Separating Correlations \& Anti-correlations}{54}{section*.92}% 
+\contentsline {subsection}{\numberline {2.5.3}Conditioning on behavioural data}{54}{subsection.93}% 
+\contentsline {subsubsection}{Linear regression}{54}{section*.96}% 
+\contentsline {subsubsection}{Elastic net regularisation}{55}{section*.97}% 
+\contentsline {subsubsection}{Conditional covariance}{55}{section*.102}% 
+\contentsline {subsubsection}{Measures of conditional correlation}{56}{section*.106}% 
+\contentsline {subsection}{\numberline {2.5.4}Information Theory}{56}{subsection.109}% 
+\contentsline {subsubsection}{Entropy $H(X)$}{56}{section*.110}% 
+\contentsline {subsubsection}{Maximum entropy limit}{57}{section*.114}% 
+\contentsline {subsubsection}{Mutual Information $I(X;Y)$}{58}{section*.116}% 
+\contentsline {subsubsection}{Variation of Information $VI(X,Y)$}{60}{section*.122}% 
+\contentsline {subsubsection}{Measuring entropies \& mutual information}{60}{section*.125}% 
+\contentsline {subsection}{\numberline {2.5.5}Network analysis}{60}{subsection.126}% 
+\contentsline {subsubsection}{Correlation networks}{60}{section*.127}% 
+\contentsline {subsubsection}{Rectified correlations}{61}{section*.128}% 
+\contentsline {subsubsection}{Sparsifying data networks}{61}{section*.129}% 
+\contentsline {subsubsection}{Communities}{61}{section*.130}% 
+\contentsline {subsubsection}{Weighted configuration model}{62}{section*.131}% 
+\contentsline {subsubsection}{Sparse weighted configuration model}{62}{section*.132}% 
+\contentsline {subsubsection}{Spectral rejection}{62}{section*.133}% 
+\contentsline {subsubsection}{Node rejection}{63}{section*.135}% 
+\contentsline {subsubsection}{Community detection}{64}{section*.136}% 
+\contentsline {subsection}{\numberline {2.5.6}Clustering Comparison}{64}{subsection.137}% 
+\contentsline {subsubsection}{Adjusted Rand Index}{64}{section*.140}% 
+\contentsline {subsubsection}{Clusterings as random variables}{65}{section*.143}% 
+\contentsline {subsubsection}{Information based similarity measures}{66}{section*.147}% 
+\contentsline {subsubsection}{Information based metrics}{66}{section*.154}% 
+\contentsline {subsubsection}{Comparing detected communities and anatomical divisions}{67}{section*.162}% 
+\contentsline {chapter}{\numberline {3}A simple two parameter distribution for modelling neuronal activity and capturing neuronal association}{69}{chapter.163}% 
+\contentsline {section}{\numberline {3.1}Introduction}{72}{section.165}% 
+\contentsline {section}{\numberline {3.2}Data}{73}{section.166}% 
+\contentsline {subsection}{\numberline {3.2.1}Experimental protocol}{73}{subsection.168}% 
+\contentsline {section}{\numberline {3.3}Methods}{74}{section.169}% 
+\contentsline {subsection}{\numberline {3.3.1}Binning data}{74}{subsection.170}% 
+\contentsline {subsection}{\numberline {3.3.2}Number of \textit {active} neurons}{74}{subsection.171}% 
+\contentsline {subsection}{\numberline {3.3.3}Moving windows for measurements}{74}{subsection.172}% 
+\contentsline {subsection}{\numberline {3.3.4}Fano factor}{76}{subsection.174}% 
+\contentsline {subsection}{\numberline {3.3.5}Probability Distributions suitable for modelling ensemble activity}{76}{subsection.176}% 
+\contentsline {subsubsection}{Association}{76}{section*.177}% 
+\contentsline {subsubsection}{Binomial distribution}{77}{section*.178}% 
+\contentsline {subsubsection}{Beta-binomial distribution}{77}{section*.180}% 
+\contentsline {subsubsection}{Conway-Maxwell-binomial distribution}{78}{section*.185}% 
+\contentsline {subsection}{\numberline {3.3.6}Fitting}{80}{subsection.192}% 
+\contentsline {subsection}{\numberline {3.3.7}Goodness-of-fit}{82}{subsection.197}% 
+\contentsline {section}{\numberline {3.4}Results}{82}{section.198}% 
+\contentsline {subsection}{\numberline {3.4.1}Increases in mean number of active neurons and variance in number of active neurons at stimulus onset in some regions}{82}{subsection.199}% 
+\contentsline {subsubsection}{Primary visual cortex}{83}{section*.200}% 
+\contentsline {subsubsection}{Hippocampus}{83}{section*.202}% 
+\contentsline {subsubsection}{Thalamus}{83}{section*.204}% 
+\contentsline {subsection}{\numberline {3.4.2}Conway-Maxwell-binomial distribution is usually a better fit than binomial or beta-binomial}{83}{subsection.206}% 
+\contentsline {subsection}{\numberline {3.4.3}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{88}{subsection.209}% 
+\contentsline {subsection}{\numberline {3.4.4}Replicating stimulus related quenching of neural variability}{88}{subsection.211}% 
+\contentsline {section}{\numberline {3.5}Discussion}{90}{section.213}% 
+\contentsline {chapter}{\numberline {4}Studies with practical limitations \& negative results}{93}{chapter.214}% 
+\contentsline {section}{\numberline {4.1}Dynamic state space model of pairwise and higher order neuronal correlations}{96}{section.216}% 
+\contentsline {section}{\numberline {4.2}A multiscale model for hierarchical data applied to \\ neuronal data}{96}{section.217}% 
+\contentsline {chapter}{Bibliography}{99}{chapter*.218}% 

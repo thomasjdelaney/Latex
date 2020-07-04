@@ -5,7 +5,7 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
 A level-1 auxiliary file: Chapters/eight_probe.aux
 A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
-White space in argument---line 404 of file phd_thesis.aux
+White space in argument---line 435 of file phd_thesis.aux
  : \citation{\parencite
  :                      {litwinkumar}}
 I'm skipping whatever remains of this command
@@ -24,7 +24,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11672 items from 5000.
+Reallocated field_info (elt_size=4) to 12645 items from 5000.
 Database file #1: phd_thesis-blx.bib
 Database file #2: phd_bibliography.bib
 Warning--I'm ignoring tian's extra "note" field
@@ -61,6 +61,7 @@ Warning--I'm ignoring tkacik's extra "note" field
 --line 875 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "url" field
 --line 879 of file phd_bibliography.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--I didn't find a database entry for "forney"
 Warning--I didn't find a database entry for "cohen"
 Warning--I didn't find a database entry for "shimazaki"
@@ -68,46 +69,45 @@ Warning--I didn't find a database entry for "kolacayk"
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-You've used 44 entries,
+You've used 51 entries,
             6304 wiz_defined-function locations,
-            1584 strings with 51037 characters,
-and the built_in function-call counts, 530370 in all, are:
-= -- 44411
-> -- 6226
-< -- 1439
-+ -- 14746
-- -- 2643
-* -- 42846
-:= -- 65415
+            1648 strings with 72286 characters,
+and the built_in function-call counts, 617783 in all, are:
+= -- 51819
+> -- 7213
+< -- 1703
++ -- 17077
+- -- 3055
+* -- 49929
+:= -- 75865
 add.period$ -- 0
-call.type$ -- 44
-change.case$ -- 763
-chr.to.int$ -- 165
-cite$ -- 86
-duplicate$ -- 52390
-empty$ -- 46168
-format.name$ -- 4752
-if$ -- 102997
+call.type$ -- 51
+change.case$ -- 944
+chr.to.int$ -- 166
+cite$ -- 100
+duplicate$ -- 60812
+empty$ -- 53867
+format.name$ -- 5497
+if$ -- 120195
 int.to.chr$ -- 0
-int.to.str$ -- 106
+int.to.str$ -- 122
 missing$ -- 0
-newline$ -- 2829
-num.names$ -- 2106
-pop$ -- 17757
+newline$ -- 3309
+num.names$ -- 2501
+pop$ -- 20580
 preamble$ -- 1
-purify$ -- 1328
+purify$ -- 1597
 quote$ -- 0
-skip$ -- 8342
+skip$ -- 9797
 stack$ -- 0
-substring$ -- 88010
-swap$ -- 10381
-text.length$ -- 1354
-text.prefix$ -- 45
+substring$ -- 102744
+swap$ -- 12158
+text.length$ -- 1551
+text.prefix$ -- 52
 top$ -- 1
-type$ -- 1484
+type$ -- 1722
 warning$ -- 0
-while$ -- 8749
+while$ -- 10096
 width$ -- 0
-write$ -- 2786
+write$ -- 3259
 (There was 1 error message)
