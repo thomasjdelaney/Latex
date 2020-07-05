@@ -2,14 +2,16 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: phd_thesis.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/introduction.aux
 A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
 A level-1 auxiliary file: Chapters/eight_probe.aux
 A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
-White space in argument---line 435 of file phd_thesis.aux
+White space in argument---line 454 of file phd_thesis.aux
  : \citation{\parencite
  :                      {litwinkumar}}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/small_chapter.aux
+A level-1 auxiliary file: Chapters/discussion.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -71,7 +73,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 51 entries,
             6304 wiz_defined-function locations,
-            1648 strings with 72286 characters,
+            1650 strings with 72334 characters,
 and the built_in function-call counts, 617783 in all, are:
 = -- 51819
 > -- 7213

@@ -137,7 +137,7 @@ The nine different brain regions from which we had data were the caudate putamen
       \caption{Time bin width 1s.}
       \label{fig:long_bin_corr_matrix}
     \end{subfigure}
-    \caption{Mean inter-regional (main diagonal) and intra-regional (off diagonal) correlation coefficients. (a) Shows these measurements when spike times were binned using $5$ms time bins. (b) Shows the same, using $1$s time bins. Note that the matrices are ordered according to the main diagonal values, therefore the ordering is different in each subfigure.}
+    \caption{Mean inter-regional (main diagonal) and intra-regional (off diagonal) correlation coefficients. (A) Shows these measurements when spike times were binned using $5$ms time bins. (B) Shows the same, using $1$s time bins. Note that the matrices are ordered according to the main diagonal values, therefore the ordering is different in each subfigure.}
     \label{fig:corr_matrices}
   \end{figure}
 
@@ -147,8 +147,6 @@ The nine different brain regions from which we had data were the caudate putamen
   We used the correlation measurements to create weighted undirected graphs/networks where each node represents a neuron, and the weight of each edge is the pairwise correlation between those neurons represented by the nodes at either end of that edge. We aimed to find communities of neurons within these networks, and compare the structure of these communities to the anatomical division of those neurons. The first step of this process involved applying the `spectral rejection' technique developed by Humphries et al (2019) \parencite{humphries}. This technique compares our data network to a chosen null network model, and finds any additional structure in the data network beyond that which is captured in the null network model (if there is any such structure).
 
   By comparing the eigenspectrum of the data network to the eigenspectrum of many samples from the null network model, this technique allows us to estimate the dimensionality of the additional structure in the data network, and gives us a basis for that vector space. It also divides the additional structure into connected structure, and $k$-partite (or divided) structure. For example, if our algorithm found two dimensions of additional connected structure, and one dimension of additional divided structure. We might expect to find three communities, that is groups more strongly connected within group that without, and we might expect to find bi-partite structure, that is two sets that are more strongly connected between groups than within groups.
-
-  The technique also finds which nodes contribute to this additional structure, and divides our data network into signal and noise networks. The details of spectral rejection and node rejection can be found in sections \ref{sec:spectral_rejection} and \ref{sec:node_rejection} respectively, and a full overview can be found in  \parencite{humphries}.
 
   \begin{figure}[p]
     \begin{subfigure}[h]{0.5\linewidth}
@@ -173,6 +171,8 @@ The nine different brain regions from which we had data were the caudate putamen
     \label{fig:structure_dims}
   \end{figure}
 
+  The technique also finds which nodes contribute to this additional structure, and divides our data network into signal and noise networks. The details of spectral rejection and node rejection can be found in sections \ref{sec:spectral_rejection} and \ref{sec:node_rejection} respectively, and a full overview can be found in  \parencite{humphries}.
+
   We chose the sparse weighted configuration model (see section \ref{sec:sparse_weighted_configuration_model}) as our null network model. This model matches the sparsity and the total weight of the original network but distributes the weight at random across the sparse network.
 
   We applied the spectral rejection method to our networks based on total correlations using different values for the time bin width. We observed that for smaller time bin widths, our data networks had both $k$-partite structure, and community structure. As the width of the time bin increased, we found that the $k$-partite structure disappeared from our data networks, and the dimension of the community structure reduced in two of the three mice from which we had data (see figure \ref{fig:structure_dims}).
@@ -186,21 +186,21 @@ The nine different brain regions from which we had data were the caudate putamen
       \label{fig:consensus_cluster_5ms}
     \end{subfigure}
     \begin{subfigure}[h]{0.5\linewidth}
-      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_regional_cluster_map.png}
-      \caption{5ms}
-      \label{fig:regional_cluster_map_5ms}
-    \end{subfigure}
-    \begin{subfigure}[h]{0.5\linewidth}
       \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png}
       \caption{1s}
       \label{fig:consensus_cluster_1s}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_regional_cluster_map.png}
+      \caption{5ms}
+      \label{fig:regional_cluster_map_5ms}
     \end{subfigure}
     \begin{subfigure}[h]{0.5\linewidth}
       \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_1p0_regional_cluster_map.png}
       \caption{1s}
       \label{fig:regional_cluster_map_1s}
     \end{subfigure}
-    \caption{(A) and (C) Correlation matrices with detected communities indicated by white lines. Each off main diagonal entry in the matrix represents a pair of neurons. Those entries within a white square indicate that both of neurons are in the same community as detected by our community detection procedure. Matrices shown are for $5$ms and $1$s time bin widths respectively. (B) and (D) Matrices showing the anatomical distribution of pairs along with their community membership. Entries where both cells are in the same reigon are given a colour indicated on the colour bar. Entries where cells are in different regions are given the grey colour also indicated on the colour bar.}
+    \caption{(A-B) Correlation matrices with detected communities indicated by white lines. Each off main diagonal entry in the matrix represents a pair of neurons. Those entries within a white square indicate that both of those neurons are in the same community as detected by our community detection procedure. Matrices shown are for $5$ms and $1$s time bin widths respectively. Main diagonal entries were set to $0$. (C-D) Matrices showing the anatomical distribution of pairs along with their community membership. Entries where both cells are in the same region are given a colour indicated by the colour bar. Entries where cells are in different regions are given the grey colour also indicated by the colour bar.}
     \label{fig:consensus_clusterings_with_regions}
   \end{figure}
 
@@ -230,7 +230,7 @@ The nine different brain regions from which we had data were the caudate putamen
       \caption{Adjusted Rand index}
       \label{fig:adjusted_rand_index_rectified_total}
     \end{subfigure}
-    \caption{(a) The variation of information is a measure of distance between clusterings. The distance between the anatomical `clustering' and community detection `clustering' increases with increasing time bin width. (b) The adjusted Rand index is a normalised similarity measure between clusterings. The anatomical and community detection clusterings become less similar as the time bin width increases. }
+    \caption{(A) The variation of information is a measure of distance between clusterings. The distance between the anatomical `clustering' and community detection `clustering' increases with increasing time bin width. (B) The adjusted Rand index is a normalised similarity measure between clusterings. The anatomical and community detection clusterings become less similar as the time bin width increases. }
     \label{fig:distance_measures}
   \end{figure}
 
@@ -238,8 +238,6 @@ The nine different brain regions from which we had data were the caudate putamen
 
   \subsection{Conditional correlations \& signal correlations}
   In light of the excellent research of Stringer et al (2019) showing that spontaneous behaviours can drive activity in neuronal ensembles across the visual cortex and midbrain \parencite{stringer}, we decided to control for the mouse's behaviour when performing our analyses. It is possible that our community detection process may be detecting communities across multiple brain regions at longer time scales due to aggregating neuronal activity driven by several spontaneous behaviours occuring during the time interval covered by a given time bin. A time bin of $1$s, for example, could contain a spike count where those spikes were driven by different spontaneous behaviours. We aimed to investigate this possibility by applying our community detection analysis to conditional correlation measures.
-
-  We used the top $500$ principal components of a video of the mouse's face as a measure of the mouse's behaviour (see section \ref{sec:video_recordings}). We modelled the spike counts as a linear combination of the principal components using linear regression with ElasticNet regularisation (see section \ref{sec:conditioning_on_behavioural_data}). Using this model, we quantified the expected spike count given the mouse's behaviour $E[X|Z_1, \dots ,Z_{500}]$.
 
   \begin{figure}[h]
     \begin{subfigure}[h]{0.5\linewidth}
@@ -254,9 +252,11 @@ The nine different brain regions from which we had data were the caudate putamen
       \includegraphics[width=\linewidth]{figures/eight_probe/Robbins_cond_cov_comparison.png}
       \label{fig:Robbins_cond_cov_comparison}
     \end{subfigure}
-    \caption{Comparing the components of the spike count covariance across different values for the time bin width. We observed a consistent increase in $E[\cov (X,Y|Z)]$ as the time bin width increased. But we saw different trends for $\cov (E[X|Z], E[Y|Z])$ for each mouse.}
+    \caption{Comparing the components of the total covariance across different values for the time bin width. We observed a consistent increase in $E[\cov (X,Y|Z)]$ as the time bin width increased. But we saw different trends for $\cov (E[X|Z], E[Y|Z])$ for each mouse.}
     \label{fig:conditional_covariance_comparison}
   \end{figure}
+
+  We used the top $500$ principal components of a video of the mouse's face as a measure of the mouse's behaviour (see section \ref{sec:video_recordings}). We modelled the spike counts as a linear combination of the principal components using linear regression with ElasticNet regularisation (see section \ref{sec:conditioning_on_behavioural_data}). Using this model, we quantified the expected spike count given the mouse's behaviour $E[X|Z_1, \dots ,Z_{500}]$.
 
   We used these expected values to measure $\cov (E[X|Z], E[Y|Z])$, and we used that value, the covariance $\cov (X,Y)$, and the \textit{law of total covariance} (see section \ref{sec:conditional_covariance}) to measure $E[\cov (X,Y|Z)]$. Here $X$ and $Y$ represent spike counts from individual cells, and $Z$ is shorthand for the $500$ principal components mentioned above. The two components of the covariance, $\cov (E[X|Z], E[Y|Z])$ and $E[\cov (X,Y|Z)]$, represent a `signal covariance' and expected value of a `spike count covariance' respectively, analagous to the signal correlation and spike count correlation \parencite{cohen2}.
 
@@ -273,13 +273,11 @@ The nine different brain regions from which we had data were the caudate putamen
       \includegraphics[width=\linewidth]{figures/eight_probe/Robbins_cond_corr_comparison.png}
       \label{fig:Robbins_cond_corr_comparison}
     \end{subfigure}
-    \caption{Comparing the components of the total spike count covariance across different values for the time bin width. We saw a consistent increase in $\rho_{X,Y|Z}$ as the time bin width increased in all three subjects. But we saw different trends for in $\rho_{\text{signal}}$ for each of the subjects.}
+    \caption{Comparing the components of the total covariance across different values for the time bin width. We saw a consistent increase in $\rho_{X,Y|Z}$ as the time bin width increased in all three subjects. But we saw different trends in $\rho_{\text{signal}}$ for each of the subjects.}
     \label{fig:conditional_correlation_comparison}
   \end{figure}
 
   We examined the means of these components for different values of the time bin width (see figure \ref{fig:conditional_covariance_comparison}). We observed a consistent increase in $E[\cov (X,Y|Z)]$ as the time bin width increased. But we saw different trends for $\cov (E[X|Z], E[Y|Z])$ for each mouse.
-
-  Using $\cov (E[X|Z], E[Y|Z])$ we measured the signal correlation, $\rho_{\text{signal}}$, and using $E[\cov (X,Y|Z)]$ we measured the event conditional correlation, $\rho_{X,Y|Z}$ (see section \ref{sec:cond_corr} for more details). We saw a consistent increase in $\rho_{X,Y|Z}$ as the time bin width increased, this corresponds to the result for $E[\cov(X,Y|Z)]$. We observed different trends for $\rho_{\text{signal}}$ for each mouse, this corresponds to the result for $\cov(E[X|Z],E[Y|Z])$.
 
   \begin{figure}[p]
     \begin{subfigure}[h]{0.5\linewidth}
@@ -306,9 +304,9 @@ The nine different brain regions from which we had data were the caudate putamen
     \label{fig:rectified_signal_regional_clusters}
   \end{figure}
 
-  We applied our network noise rejection and community detection process to networks based on the spike count correlations $\rho_{X,Y|Z}$ and the signal correlations $\rho_{\text{signal}}$. We noted that the community detection on $\rho_{X,Y|Z}$ behaved similarly to the community detection on the total correlation. We can see this  in figures \ref{fig:short_time_conditional_rectified_regional_clusters} and \ref{fig:long_time_conditional_rectified_regional_clusters}. At very short time bin widths, we detect more communities, and those communities often contain cells from one brain region only. At longer time bin widths, we detect fewer communities, and those communities tend to contain cells from multiple brain regions. When we examine the distance between (or similarity between) the anatomical division of the cells, and the detected communities we notice that the two clusterings are more similar at shorter time bin widths (see figure \ref{fig:conditional_clustering_distance_measures}).
+  Using $\cov (E[X|Z], E[Y|Z])$ we measured the signal correlation, $\rho_{\text{signal}}$, and using $E[\cov (X,Y|Z)]$ we measured the event conditional correlation, $\rho_{X,Y|Z}$ (see section \ref{sec:cond_corr} for more details). We saw a consistent increase in $\rho_{X,Y|Z}$ as the time bin width increased, this corresponds to the result for $E[\cov(X,Y|Z)]$. We observed different trends for $\rho_{\text{signal}}$ for each mouse, this corresponds to the result for $\cov(E[X|Z],E[Y|Z])$.
 
-  When we applied the network noise rejection and community detection process to the networks based on the signal correlations $\rho_{\text{signal}}$ we found the number of communities we detected reduced with increasing time bin width. But the number of communities detected was less than that for the total correlations or the spike count correlations. The communities detected always tended to contain cells from multiple regions at both short and long timescales (see figures \ref{fig:short_time_signal_rectified_regional_clusters} and \ref{fig:long_time_signal_rectified_regional_clusters}). The communities detected bore very little relation to the anatomical division of the cells. The adjusted Rand index between the community clustering and the anatomical `clustering' is close to zero for every time bin width (see figure \ref{fig:adjusted_rand_index_rectified_signal}). This indicates that the similarity between the clusterings is close to chance. We did observe a slight downward trend in the variation of information with increasing bin width (see figure \ref{fig:variation_of_information_rectified_signal}), but this is more likely due to a decrease in the number of communities detected rather than any relationship with anatomy.
+  We applied our network noise rejection and community detection process to networks based on the spike count correlations $\rho_{X,Y|Z}$ and the signal correlations $\rho_{\text{signal}}$. We noted that the community detection on $\rho_{X,Y|Z}$ behaved similarly to the community detection on the total correlation. We can see this  in figures \ref{fig:short_time_conditional_rectified_regional_clusters} and \ref{fig:long_time_conditional_rectified_regional_clusters}. At very short time bin widths, we detect more communities, and those communities often contain cells from one brain region only. At longer time bin widths, we detect fewer communities, and those communities tend to contain cells from multiple brain regions. When we examine the distance between (or similarity between) the anatomical division of the cells, and the detected communities we notice that the two clusterings are more similar at shorter time bin widths (see figure \ref{fig:conditional_clustering_distance_measures}).
 
   \begin{figure}[h]
     \begin{subfigure}[h]{0.5\linewidth}
@@ -321,7 +319,7 @@ The nine different brain regions from which we had data were the caudate putamen
       \caption{$\rho_{X,Y|Z}$ Adjusted Rand Index.}
       \label{fig:adjusted_rand_index_rectified_conditional}
     \end{subfigure}
-    \caption{Distance and similarity measures between the anatomical division of the neurons, and the communities detected in the network based on the spike count correlations $\rho_{X,Y|Z}$. (a) The variation of information is a `distance' measure between clusterings. The distance between the anatomical `clustering' and the community clustering increases as the time bin width increases. (b) The adjusted Rand index is a similarity measure between clusterings. The detected communities become less similar to the anatomical division of the cells as the time bin width increases.}
+    \caption{Distance and similarity measures between the anatomical division of the neurons, and the communities detected in the network based on the spike count correlations $\rho_{X,Y|Z}$. (A) The variation of information is a `distance' measure between clusterings. The distance between the anatomical `clustering' and the community clustering increases as the time bin width increases. (B) The adjusted Rand index is a similarity measure between clusterings. The detected communities become less similar to the anatomical division of the cells as the time bin width increases.}
     \label{fig:conditional_clustering_distance_measures}
   \end{figure}
 
@@ -336,9 +334,11 @@ The nine different brain regions from which we had data were the caudate putamen
       \caption{$\rho_{\text{signal}}$ Adjusted Rand Index.}
       \label{fig:adjusted_rand_index_rectified_signal}
     \end{subfigure}
-    \caption{Distance and similarity measures between the anatomical division of the neurons, and the communities detected in the network based on the signal correlations $\rho_{\text{signal}}$. (a) The variation of information is a `distance' measure between clusterings. The distance between the anatomical `clustering' and the community clustering increases as the time bin width increases. (b) The adjusted Rand index is a similarity measure between clusterings. The detected communities become less similar to the anatomical division of the cells as the time bin width increases.}
+    \caption{Distance and similarity measures between the anatomical division of the neurons, and the communities detected in the network based on the signal correlations $\rho_{\text{signal}}$. (A) The variation of information is a `distance' measure between clusterings. The distance between the anatomical `clustering' and the community clustering increases as the time bin width increases. (B) The adjusted Rand index is a similarity measure between clusterings. The detected communities become less similar to the anatomical division of the cells as the time bin width increases.}
     \label{fig:signal_clustering_distance_measures}
   \end{figure}
+
+  When we applied the network noise rejection and community detection process to the networks based on the signal correlations $\rho_{\text{signal}}$ we found the number of communities we detected reduced with increasing time bin width. But the number of communities detected was less than that for the total correlations or the spike count correlations. The communities detected always tended to contain cells from multiple regions at both short and long timescales (see figures \ref{fig:short_time_signal_rectified_regional_clusters} and \ref{fig:long_time_signal_rectified_regional_clusters}). The communities detected bore very little relation to the anatomical division of the cells. The adjusted Rand index between the community clustering and the anatomical `clustering' is close to zero for every time bin width (see figure \ref{fig:adjusted_rand_index_rectified_signal}). This indicates that the similarity between the clusterings is close to chance. We did observe a slight downward trend in the variation of information with increasing bin width (see figure \ref{fig:variation_of_information_rectified_signal}), but this is more likely due to a decrease in the number of communities detected rather than any relationship with anatomy.
 
   We also observed that the network noise rejection process rejected some of the cells when applied to the network based on the signal correlations. This means that those cells did not contribute to the additional structure of the network beyond that captured by the sparse weighted configuration model. This is why the matrices in figures \ref{fig:short_time_signal_rectified_regional_clusters} and \ref{fig:long_time_signal_rectified_regional_clusters} are smaller than their analogues in figures \ref{fig:short_time_conditional_rectified_regional_clusters} and \ref{fig:long_time_conditional_rectified_regional_clusters}.
 
@@ -351,18 +351,92 @@ The nine different brain regions from which we had data were the caudate putamen
   \subsection{Absolute correlations and negative rectified correlations}
   At the moment, the network noise rejection protocol can only be applied to weighted undirected graphs with non-negative weights. This meant that we had to rectify our correlated networks before applying the network noise rejection and community detection process. We wanted to investigate what would happen if instead of rectifying the correlations, we used the absolute value, or reversed the signs of the correlations and then rectified.
 
-  When we used the absolute value of the correlations, we found very similar results to those shown above for the rectified total correlations and the rectified spike count correlations. The only exception being that we detected more communities. This could indicate that we detected both positively and negatively correlated communities, but we haven't done any further investigation so we cannot say for sure.
+  \begin{figure}[p]
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png}
+      \caption{5ms}
+      \label{fig:absolute_consensus_cluster_5ms}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png}
+      \caption{1s}
+      \label{fig:absolute_consensus_cluster_1s}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png}
+      \caption{5ms}
+      \label{fig:absolute_regional_cluster_map_5ms}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png}
+      \caption{1s}
+      \label{fig:absolute_regional_cluster_map_1s}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/variation_of_information_absolute_total.png}
+      \caption{Variation of information}
+      \label{fig:variation_of_information_absolute_total}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/adjusted_rand_index_absolute_total.png}
+      \caption{Adjusted Rand index}
+      \label{fig:adjusted_rand_index_absolute_total}
+    \end{subfigure}
+    \caption{(A-B) Absolute correlation matrices with detected communities indicated by white lines. These communities are based on the absolute value of the total correlation between each pair of cells. Those entries within a white square indicate that both of those neurons are in the same community. Matrices shown are for $5$ms and $1$s time bin widths respectively. Main diagonal entries were set to $0$. (C-D) Matrices showing the anatomical distribution of pairs along with their community membership. Regional membership is indicated by the colour bar. (E) Variation of information between the anatomical division of the cells, and the detected communities. (F) Adjusted Rand index between the anatomical division, and the detected communities.}
+    \label{fig:absolute_consensus_clusterings_with_regions}
+  \end{figure}
 
-  When we used the sign reversed rectified correlated networks, we tended to find fewer communities and often found no signal network after applying network noise rejection. This indicates that there was not much structure in the negatively correlated networks beyond that captured by the sparse weighted configuration model.
+  \begin{figure}[p]
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png}
+      \caption{5ms}
+      \label{fig:negative_consensus_cluster_5ms}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png}
+      \caption{1s}
+      \label{fig:negative_consensus_cluster_1s}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png}
+      \caption{5ms}
+      \label{fig:negative_regional_cluster_map_5ms}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png}
+      \caption{1s}
+      \label{fig:negative_regional_cluster_map_1s}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/variation_of_information_negative_total.png}
+      \caption{Variation of information}
+      \label{fig:variation_of_information_negative_total}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/eight_probe/adjusted_rand_index_negative_total.png}
+      \caption{Adjusted Rand index}
+      \label{fig:adjusted_rand_index_negative_total}
+    \end{subfigure}
+    \caption{(A-B) Sign reversed rectified correlation matrices with detected communities indicated by white lines. Those entries within a white square indicate that both of those neurons are in the same community. Matrices shown are for $5$ms and $1$s time bin widths respectively. Main diagonal entries were set to $0$. (C-D) Matrices showing the anatomical distribution of pairs along with their community membership. Regional membership is indicated by the colour bar. (E) Variation of information between the anatomical division of the cells, and the detected communities. (F) Adjusted Rand index between the anatomical division, and the detected communities.}
+    \label{fig:negative_consensus_clusterings_with_regions}
+  \end{figure}
+
+  When we used the absolute value of the correlations, we found very similar results to those shown above for the rectified total correlations and the rectified spike count correlations. We detected more communities using shorter bin widths, and these communities were more similar to the brain's anatomy than those communities detected using a longer bin width (see figure \ref{fig:absolute_consensus_clusterings_with_regions}). The only exception being that we detected more communities. This could indicate that we detected both positively and negatively correlated communities, but we haven't done any further investigation so we cannot say for sure.
+
+  When we used the sign reversed rectified correlated networks, we tended to find fewer communities. Each community contained cells from many different anatomical regions, at both long and short bin widths (see figures \ref{fig:negative_consensus_cluster_5ms}, \ref{fig:negative_consensus_cluster_1s}, \ref{fig:negative_regional_cluster_map_5ms}, \ref{fig:negative_regional_cluster_map_1s}). The communities bore little relation to the anatomical distribution of the cells, this can be seen in figure \ref{fig:adjusted_rand_index_negative_total}, the values close to zero indicate that the similarity between the two clusterings are around chance level. This indicates that there was not much structure in the negatively correlated networks beyond that captured by the sparse weighted configuration model.
 
 \section{Discussion}
-It is well established that the brain uses correlated behaviour in neuronal ensembles to represent the information taken in through sensation \parencite{cohen1, litwinkumar, decharms}. However, most studies that examine the nature of these correlations in-vivo, study an ensemble of cells from only one brain region \parencite{cohen2}. Furthermore, recent results have shown that behaviour can drive correlated activity in multiple brain regions, including those not normally associated with motor control \parencite{stringer}. In this study, we utilised one of the newly recorded large datasets containing electrophysiological recordings from multiple brain regions simultaneously. We investigated correlated behaviour in these different brain regions and we investigated correlated behaviour between neurons in different regions, during spontaneous behaviour.
+It is well established that the brain uses correlated behaviour in neuronal ensembles to represent the information taken in through sensation \parencite{cohen1, litwinkumar, decharms}. However, most studies that examine the nature of these correlations in-vivo, study an ensemble of cells from only one ot two brain regions \parencite{cohen2, wierzynski, patterson, girard}. Furthermore, recent results have shown that behaviour can drive correlated activity in multiple brain regions, including those not normally associated with motor control \parencite{stringer, grundemann, allen}. In this study, we utilised one of the newly recorded large datasets containing electrophysiological recordings from multiple brain regions simultaneously. We investigated correlated behaviour in these different brain regions and we investigated correlated behaviour between neurons in different regions, during spontaneous behaviour.
 
 A number of studies have found that the timescale of correlated behaviour induced by a stimulus can be modulated by the stimulus structure and behavioural context. For example, the spike train correlations between cells in weakly electric fish are modulated by the spatial extent of the stimulus \parencite{litwinkumar}, and neurons in the marmoset primary auditory cortex modulate their spike timing (and therefore correlation) in response to stimulus features without modulating their firing rate  \parencite{decharms}. Furthermore, the width of the time bins over which spike counts are measured has been shown to have an effect on the magnitude of those correlations \parencite{cohen2}. Despite this, very little research has been done comparing correlation measures from the same dataset at different timescales. We investigated this by varying the time bin width used to bin spike times into spike counts from as short as $5$ms up to $3$s.
 
-In order to further investigate the effect of these correlations at different timescales, we regarded our neuronal ensemble as a weighted undirected graph, where each neuron is represented by a node, and the weight on each edge is the correlation between the neurons connected by that edge. We then applied a novel clustering method from network science \parencite{humphries} to identify communities in these networks. These networks, and the community detection process, were completely agnostic of anatomical division of the cells in our ensemble. When we compared the detected communities with the anatomical division of the cells using distance and similarity measures for clusterings, we found that the detected communities were more similar to the anatomical division and shorter timescales. That is, when we used a wider time bin to count spikes, and computed pairwise correlations with these spike counts, the correlated communities tended to exist within anatomical regions at shorter timescales, and tended to span anatomical regions at longer timescales. This could reflect localised functional correlations at short time scales rippling outwards across brain regions at longer timescales.
+In order to further investigate the effect of these correlations at different timescales, we regarded our neuronal ensemble as a weighted undirected graph, where each neuron is represented by a node, and the weight on each edge is the correlation between the neurons connected by that edge. We then applied a novel clustering method from network science \parencite{humphries} to identify communities in these networks. Communities in a network graph refer to sets of nodes that are more strongly connected to each other than the nodes outside of their set. Another way to put this is to say that the nodes in a community are more strongly connected than \textit{expected}. What connection strength might be expected is defined by a null network model. We chose a null network model that matched the sparsity and total strength of our correlation based data networks. So, if two cells were in the same community, those cells were more correlated than would be expected given the correlation strength of their ensemble.
 
-We acknowledged that the region spanning correlated communities that we detected at longer time scales could exist due to collating activity driven by distinct spontaneous activities. In order to account for this, we modelled the spike counts as a linear function of the top $500$ principal components of a video of the mouse's face filmed simultaneously with the electrophysiological readings. We applied our network noise rejection and community detection process to the weighted undirected networks formed by the spike count correlations and the signal correlations that we calculated using our model. For the spike count correlation networks, we found much the same results as for the total correlations as described above. For the signal correlations, the communities detected in these networks bore little relation to the anatomical division of the cells.
+These networks, and the community detection process, were completely agnostic of the anatomical division of the cells in our ensemble. When we compared the detected communities with the anatomical division of the cells using distance and similarity measures for clusterings, we found that the detected communities were more similar to the anatomical division at shorter timescales. That is, when we used a wider time bin to count spikes, and computed pairwise correlations with these spike counts, the correlated communities tended to exist within anatomical regions at shorter timescales, and tended to span anatomical regions at longer timescales. This could reflect localised functional correlations at short time scales rippling outwards across brain regions at longer timescales. The brain may be processing some information quickly locally, and carrying out further, perhaps more detailed, representation over a longer timescale across many regions using the representations that were just built locally.
+
+These changes in communities across timescales could also be driven by the anatomy of the individual cells. For example, it may simply take longer to transmit action potentials over longer distances, hence correlated activity over longer timescales will exist between anatomical regions, rather than within. However, the switch to almost exclusively multi-regional functional networks at $1$s bin widths, rather than a mixture of multi-region, and single-region suggests that the inter-regional correlations either overpower, or inhibit the local correlations. So there may be more at play than just timescales.
+
+We acknowledged that the region spanning correlated communities that we detected at longer time scales could exist due to collating activity driven by distinct spontaneous activities. In order to account for this, we modelled the spike counts as a linear function of the top $500$ principal components of a video of the mouse's face filmed simultaneously with the electrophysiological readings. We applied our network noise rejection and community detection process to the weighted undirected networks formed by the spike count correlations (or noise correlations) and the signal correlations that we calculated using our model. For the spike count correlation networks, we found much the same results as for the total correlations as described above. For the signal correlations, the communities detected in these networks bore little relation to the anatomical division of the cells. Recent findings have shown that behavioural data accounts for correlations in many brain regions that would otherwise be dismissed as noise \parencite{stringer}, our finding to shows that these correlations are still governed by the timescale division beteen local and across-region communication.
 
 There is a lot of room for further investigation based on this research. For a start, the data that we used here were collected from nine different regions in the mouse brain, but none of these regions were part of the somatosensory cortex. Given that a mouse experiences so much of its environment through its sense of smell, some data from this region would be interesting to investigate. On the same theme, the mice in the experiment from which the data were collected were headfixed and placed on a rotating ball, but were otherwise behaving spontaneously. Had these mice been exposed to a visual, aural, or olfactory stimulus, we could have examined the responses of the cells in the brain regions corresponding to vision, hearing, and olfaction, and compared these responses to the responses from the other brain regions. Furthermore, we could have investigated the interaction between the sets of responses.
 
