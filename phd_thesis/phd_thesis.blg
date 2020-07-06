@@ -6,10 +6,6 @@ A level-1 auxiliary file: Chapters/introduction.aux
 A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
 A level-1 auxiliary file: Chapters/eight_probe.aux
 A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
-White space in argument---line 454 of file phd_thesis.aux
- : \citation{\parencite
- :                      {litwinkumar}}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/small_chapter.aux
 A level-1 auxiliary file: Chapters/discussion.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -26,7 +22,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12645 items from 5000.
+Reallocated field_info (elt_size=4) to 12923 items from 5000.
 Database file #1: phd_thesis-blx.bib
 Database file #2: phd_bibliography.bib
 Warning--I'm ignoring tian's extra "note" field
@@ -64,52 +60,54 @@ Warning--I'm ignoring tkacik's extra "note" field
 Warning--I'm ignoring tkacik's extra "url" field
 --line 879 of file phd_bibliography.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--I didn't find a database entry for "forney"
-Warning--I didn't find a database entry for "cohen"
-Warning--I didn't find a database entry for "shimazaki"
-Warning--I didn't find a database entry for "kolacayk"
+Warning--I'm ignoring shimazaki's extra "note" field
+--line 1047 of file phd_bibliography.bib
+Warning--I'm ignoring shimazaki's extra "note" field
+--line 1048 of file phd_bibliography.bib
+Warning--I'm ignoring shimazaki's extra "url" field
+--line 1052 of file phd_bibliography.bib
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 51 entries,
+You've used 57 entries,
             6304 wiz_defined-function locations,
-            1650 strings with 72334 characters,
-and the built_in function-call counts, 617783 in all, are:
-= -- 51819
-> -- 7213
-< -- 1703
-+ -- 17077
-- -- 3055
-* -- 49929
-:= -- 75865
+            1704 strings with 78439 characters,
+and the built_in function-call counts, 665193 in all, are:
+= -- 55339
+> -- 7925
+< -- 1893
++ -- 18287
+- -- 3329
+* -- 53715
+:= -- 81153
 add.period$ -- 0
-call.type$ -- 51
-change.case$ -- 944
-chr.to.int$ -- 166
-cite$ -- 100
-duplicate$ -- 60812
-empty$ -- 53867
-format.name$ -- 5497
-if$ -- 120195
+call.type$ -- 57
+change.case$ -- 1049
+chr.to.int$ -- 181
+cite$ -- 112
+duplicate$ -- 65889
+empty$ -- 58186
+format.name$ -- 5976
+if$ -- 129596
 int.to.chr$ -- 0
-int.to.str$ -- 122
+int.to.str$ -- 137
 missing$ -- 0
-newline$ -- 3309
-num.names$ -- 2501
-pop$ -- 20580
+newline$ -- 3614
+num.names$ -- 2792
+pop$ -- 22762
 preamble$ -- 1
-purify$ -- 1597
+purify$ -- 1748
 quote$ -- 0
-skip$ -- 9797
+skip$ -- 10860
 stack$ -- 0
-substring$ -- 102744
-swap$ -- 12158
-text.length$ -- 1551
-text.prefix$ -- 52
+substring$ -- 109071
+swap$ -- 13420
+text.length$ -- 1714
+text.prefix$ -- 58
 top$ -- 1
-type$ -- 1722
+type$ -- 1926
 warning$ -- 0
-while$ -- 10096
+while$ -- 10844
 width$ -- 0
-write$ -- 3259
-(There was 1 error message)
+write$ -- 3558
+(There were 20 warnings)

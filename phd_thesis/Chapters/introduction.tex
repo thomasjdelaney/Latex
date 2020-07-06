@@ -1,11 +1,28 @@
-\section{Introduction}
+\section*{Introduction}
 Ideas (not in order):
 \begin{itemize}
-    \item From small for big datasets (in terms of number of neurons)
+    \item From small to big datasets (in terms of number of neurons)
     \item Big datasets mean statistical methods are more necessary (curse of dimensionality)
     \item Big datasets mean higher order correlations are more meaningful (schneidman)
     \item Exploit pairwise correlations in different way (eight probe)
     \item abandon correlations embrace association (COMB)
     \item electrophysiology drawbacks vs calcium benefits
-    \item calcium drawbacks (fluorescence modelling)
+    \item calcium drawbacks (fluorescence modelling) (mention nuclear filling and cell pathology) (menthion that calcium imaging can only be used near the surface of the brain, e-phys can go deeper, especially with new probes)
 \end{itemize}
+
+Since Hodgkin and Huxley's squid experiments featuring a single axon \parencite{hodgkin}, to more recent research with spike sorted data from  $\sim 24000$ neurons from $34$ brain regions from $21$ mice \parencite{allen}, the number of neurons contributing to electrophysiological datasets has been growing. Recording methods using two-photon calcium imaging have also been used to extract data from populations containing over $10000$ neurons \parencite{peron}. This dramatic growth in the number of neurons to analyse required a dramatic change in analysis methods.
+
+To focus on calcium imaging for a start, a neuron that contains a fluorescent calcium indicator in its cytoplasm will fluoresce when bombarded with photons. The amount that the cell will fluoresce is dependent on the concentration of fluorescent indicator within the cell, and the concentration of calcium within the cell. When a neuron fires an action potential, the influx of free calcium ions causes an increase in fluorescence when those ions bond with the fluorescent indicator and those bounded molecules are bombarded with photons. After the action potential, as calcium is extruded from the cell the fluorescence returns to a baseline level. This is the basic mechanism of fluorescent calcium indicator based imaging.
+
+This method has some advantages over electrophysiology as measure of neuronal ensemble activity. Isolating individual neurons is easier and more reliable than identifying unique spike sources in electrophysiology. Also, spike sorting methods can only detect spikes, but imaging methods can also detect cells that are not spiking. Cells will emit a baseline level of fluorescence when not firing action potentials. Calcium imaging sites can be re-used for weeks for longitudinal studies \parencite{chen}. Because the fluorescent indicator is delivered to the cell by adeno-associated viruses, there can be problems with indicator gradients around the infection site, and expression levels will change in individual cells over weeks \parencite{tian, chen}. This delivery method can also cause cell pathology, and nuclear filling \parencite{zariwala}, but these problems can be solved by using lines of transgenic mice \parencite{dana}.
+
+If the imaging data is collected at a high enough frequency, and the signal-to-noise ratio of the fluorescence trace is high enough, it should be possible to infer the spike times to some level of accuracy. For example, the calmodulin based indicator GCaMP6s has a sufficiently high signal-to-noise ratio that isolated action potentials can be detected and inferred \parencite{chen}. Many spike inference algorithms exist \parencite{vogelstein, pnevmatikakis, friedrich, paninski1, paninski2, deneux, greenberg}, and some of these can perform both cell isolation and spike detection simultaneously [CITATIONS]
+
+but the relationship between spiking and fluorescence change is not fully understood.
+indicator acts like another calcium buffer,
+most of the inference algorithms are not biologically influenced
+don't include binding dynamics
+don't include the influence of endogenous buffers
+
+that's why we made the model,
+we hope it will be useful for this and that

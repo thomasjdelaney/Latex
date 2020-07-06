@@ -1,0 +1,48 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Zariwala, Hatim A
+AU  - Borghuis, Bart G
+AU  - Hoogland, Tycho M
+AU  - Madisen, Linda
+AU  - Tian, Lin
+AU  - De Zeeuw, Chris I
+AU  - Zeng, Hongkui
+AU  - Looger, Loren L
+AU  - Svoboda, Karel
+AU  - Chen, Tsai-Wen
+T1  - A Cre-dependent GCaMP3 reporter mouse for neuronal imaging in vivo
+LA  - eng
+SN  - 1529-2401
+SN  - 0270-6474
+Y1  - 2012/02/29
+AB  - Fluorescent calcium indicator proteins, such as GCaMP3, allow imaging of activity in genetically defined neuronal populations. GCaMP3 can be expressed using various gene delivery methods, such as viral infection or electroporation. However, these methods are invasive and provide inhomogeneous and nonstationary expression. Here, we developed a genetic reporter mouse, Ai38, which expresses GCaMP3 in a Cre-dependent manner from the ROSA26 locus, driven by a strong CAG promoter. Crossing Ai38 with appropriate Cre mice produced robust GCaMP3 expression in defined cell populations in the retina, cortex, and cerebellum. In the primary visual cortex, visually evoked GCaMP3 signals showed normal orientation and direction selectivity. GCaMP3 signals were rapid, compared with virally expressed GCaMP3 and synthetic calcium indicators. In the retina, Ai38 allowed imaging spontaneous calcium waves in starburst amacrine cells during development, and light-evoked responses in ganglion cells in adult tissue. Our results show that the Ai38 reporter mouse provides a flexible method for targeted expression of GCaMP3.
+SP  - 3131
+EP  - 3141
+VL  - 32
+IS  - 9
+AN  - 22378886
+UR  - https://pubmed.ncbi.nlm.nih.gov/22378886
+DO  - 10.1523/JNEUROSCI.4469-11.2012
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3315707/
+U1  - 22378886[pmid]
+U2  - PMC3315707[pmcid]
+U4  - 32/9/3131[PII]
+J2  - J Neurosci
+JF  - The Journal of neuroscience : the official journal of the Society for Neuroscience
+KW  - Animals
+KW  - Calcium Signaling/genetics/*physiology
+KW  - Female
+KW  - Genes, Reporter/*physiology
+KW  - Humans
+KW  - Integrases/*physiology
+KW  - Male
+KW  - Mice
+KW  - Mice, Inbred C57BL
+KW  - Mice, Transgenic
+KW  - Neurons/enzymology/*metabolism
+KW  - Photic Stimulation/methods
+KW  - Proteins/genetics
+KW  - RNA, Untranslated
+KW  - Retinal Ganglion Cells/enzymology/*metabolism
+PB  - Society for Neuroscience
+ER  - 

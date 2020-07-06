@@ -1106,6 +1106,77 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{dana}{article}{}
+    \name{author}{8}{}{%
+      {{hash=DH}{%
+         family={Dana},
+         familyi={D\bibinitperiod},
+         given={Hod},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CTW}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tsai-Wen},
+         giveni={T\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Amy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Shields},
+         familyi={S\bibinitperiod},
+         given={Brenda},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Caiying},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Looger},
+         familyi={L\bibinitperiod},
+         given={Loren},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DH+1}
+    \strng{fullhash}{DHCTWHASBGCLLKDSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1371/journal.pone.0108697
+    \endverb
+    \field{pages}{e108697}
+    \field{title}{Thy1-GCaMP6 Transgenic Mice for Neuronal Population Imaging
+  In Vivo}
+    \field{volume}{9}
+    \field{journaltitle}{PloS one}
+    \field{month}{09}
+    \field{year}{2014}
+  \endentry
+
   \entry{decharms}{article}{}
     \name{author}{2}{}{%
       {{hash=dRC}{%
@@ -1342,6 +1413,48 @@
   intelligence}
     \field{month}{09}
     \field{year}{2013}
+  \endentry
+
+  \entry{forney}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FGD}{%
+         family={{Forney}},
+         familyi={F\bibinitperiod},
+         given={G.\bibnamedelima D.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \keyw{Viterbi algorithm;Markov processes;State estimation;Recursive
+  estimation;Digital communication;Algorithm design and
+  analysis;Decoding;Convolutional codes;Stochastic processes}
+    \strng{namehash}{FGD1}
+    \strng{fullhash}{FGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    The Viterbi algorithm (VA) is a recursive optimal solution to the problem
+  of estimating the state sequence of a discrete-time finite-state Markov
+  process observed in memoryless noise. Many problems in areas such as digital
+  communications can be cast in this form. This paper gives a tutorial
+  exposition of the algorithm and of how it is implemented and analyzed.
+  Applications to date are reviewed. Increasing use of the algorithm in a
+  widening variety of areas is foreseen.%
+    }
+    \verb{doi}
+    \verb 10.1109/PROC.1973.9030
+    \endverb
+    \field{issn}{1558-2256}
+    \field{number}{3}
+    \field{pages}{268\bibrangedash 278}
+    \field{title}{The viterbi algorithm}
+    \field{volume}{61}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1973}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{fosdick}{article}{}
@@ -1842,6 +1955,55 @@
     \field{year}{2019}
   \endentry
 
+  \entry{hodgkin}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HAL}{%
+         family={Hodgkin},
+         familyi={H\bibinitperiod},
+         given={A.\bibnamedelima L.},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HAF}{%
+         family={Huxley},
+         familyi={H\bibinitperiod},
+         given={A.\bibnamedelima F.},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HALHAF1}
+    \strng{fullhash}{HALHAF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1939}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    NERVOUS messages are invariably associated with an electrical change known
+  as the action potential. This potential is generally believed to arise at a
+  membrane which is situated between the axoplasm and the external medium. If
+  this theory is correct, it should be possible to record the action potential
+  between an electrode inside a nerve fibre and the conducting fluid outside
+  it. Most nerve fibres are too small for this to be tested directly, but we
+  have recently succeeded in inserting micro-electrodes into the giant axons of
+  squids (Loligo forbesi)1.%
+    }
+    \verb{doi}
+    \verb 10.1038/144710a0
+    \endverb
+    \field{issn}{1476-4687}
+    \field{number}{3651}
+    \field{pages}{710\bibrangedash 711}
+    \field{title}{Action Potentials Recorded from Inside a Nerve Fibre}
+    \verb{url}
+    \verb https://doi.org/10.1038/144710a0
+    \endverb
+    \field{volume}{144}
+    \field{journaltitle}{Nature}
+    \field{year}{1939}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{humphries}{article}{}
     \name{author}{5}{}{%
       {{hash=HM}{%
@@ -2277,6 +2439,41 @@
     \field{title}{Biophysics of Computation: Information Processing in Single
   Neurons}
     \field{year}{1999}
+  \endentry
+
+  \entry{kolaczyk}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KE}{%
+         family={Kolaczyk},
+         familyi={K\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Haiying},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KEHH1}
+    \strng{fullhash}{KEHH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1111/j.1538-4632.2001.tb00439.x
+    \endverb
+    \field{pages}{95 \bibrangedash  118}
+    \field{title}{Multiscale Statistical Models for Hierarchical Spatial
+  Aggregation}
+    \field{volume}{33}
+    \field{journaltitle}{Geographical Analysis}
+    \field{month}{09}
+    \field{year}{2010}
   \endentry
 
   \entry{lee}{article}{}
@@ -2833,6 +3030,84 @@
     \field{year}{2014}
   \endentry
 
+  \entry{peron}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PS}{%
+         family={Peron},
+         familyi={P\bibinitperiod},
+         given={Simon P.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Freeman},
+         familyi={F\bibinitperiod},
+         given={Jeremy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=IV}{%
+         family={Iyer},
+         familyi={I\bibinitperiod},
+         given={Vijay},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Caiying},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{PS+1}
+    \strng{fullhash}{PSFJIVGCSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Comprehensive measurement of neural activity remains challenging due to the
+  large numbers of neurons in each brain area. We used volumetric two-photon
+  imaging in mice expressing GCaMP6s and nuclear red fluorescent proteins to
+  sample activity in 75{\%} of superficial barrel cortex neurons across the
+  relevant cortical columns, approximately 12,000 neurons per animal, during
+  performance of a single whisker object localization task. Task-related
+  activity peaked during object palpation. An encoding model related activity
+  to behavioral variables. In the column corresponding to the spared whisker,
+  300 layer (L) 2/3 pyramidal neurons (17{\%}) each encoded touch and whisker
+  movements. Touch representation declined by half in surrounding columns;
+  whisker movement representation was unchanged. Following the emergence of
+  stereotyped task-related movement, sensory representations showed no
+  measurable plasticity. Touch direction was topographically organized, with
+  distinct organization for passive and active touch. Our work reveals sparse
+  and spatially intermingled representations of multiple tactile features.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.neuron.2015.03.027
+    \endverb
+    \field{issn}{0896-6273}
+    \field{number}{3}
+    \field{pages}{783\bibrangedash 799}
+    \field{title}{A Cellular Resolution Map of Barrel Cortex Activity during
+  Tactile Behavior}
+    \verb{url}
+    \verb https://doi.org/10.1016/j.neuron.2015.03.027
+    \endverb
+    \field{volume}{86}
+    \field{journaltitle}{Neuron}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{pnevmatikakis}{article}{}
     \name{author}{16}{}{%
       {{hash=PE}{%
@@ -3183,6 +3458,103 @@
     \field{volume}{27}
     \field{journaltitle}{Bell System Technical Journal}
     \field{year}{1948}
+  \endentry
+
+  \entry{shimazaki}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SH}{%
+         family={Shimazaki},
+         familyi={S\bibinitperiod},
+         given={Hideaki},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ASI}{%
+         family={Amari},
+         familyi={A\bibinitperiod},
+         given={Shun-Ichi},
+         giveni={S\bibinithyphendelim I\bibinitperiod},
+      }}%
+      {{hash=BEN}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Emery\bibnamedelima N.},
+         giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gr{\"u}n},
+         familyi={G\bibinitperiod},
+         given={Sonja},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Action Potentials/*physiology; *Algorithms; Animals; Computer
+  Simulation; Electroencephalography/methods; Haplorhini; *Models,
+  Neurological; Motor Cortex/*physiology; Movement/*physiology; Nerve
+  Net/*physiology; Neurons/*physiology; Statistics as Topic; Task Performance
+  and Analysis}
+    \strng{namehash}{SH+1}
+    \strng{fullhash}{SHASIBENGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Precise spike coordination between the spiking activities of multiple
+  neurons is suggested as an indication of coordinated network activity in
+  active cell assemblies. Spike correlation analysis aims to identify such
+  cooperative network activity by detecting excess spike synchrony in
+  simultaneously recorded multiple neural spike sequences. Cooperative activity
+  is expected to organize dynamically during behavior and cognition; therefore
+  currently available analysis techniques must be extended to enable the
+  estimation of multiple time-varying spike interactions between neurons
+  simultaneously. In particular, new methods must take advantage of the
+  simultaneous observations of multiple neurons by addressing their
+  higher-order dependencies, which cannot be revealed by pairwise analyses
+  alone. In this paper, we develop a method for estimating time-varying spike
+  interactions by means of a state-space analysis. Discretized parallel spike
+  sequences are modeled as multi-variate binary processes using a log-linear
+  model that provides a well-defined measure of higher-order spike correlation
+  in an information geometry framework. We construct a recursive Bayesian
+  filter/smoother for the extraction of spike interaction parameters. This
+  method can simultaneously estimate the dynamic pairwise spike interactions of
+  multiple single neurons, thereby extending the Ising/spin-glass model
+  analysis of multiple neural spike train data to a nonstationary analysis.
+  Furthermore, the method can estimate dynamic higher-order spike interactions.
+  To validate the inclusion of the higher-order terms in the model, we
+  construct an approximation method to assess the goodness-of-fit to spike
+  data. In addition, we formulate a test method for the presence of
+  higher-order spike correlation even in nonstationary spike data, e.g., data
+  from awake behaving animals. The utility of the proposed methods is tested
+  using simulated spike data with known underlying correlation dynamics.
+  Finally, we apply the methods to neural spike data simultaneously recorded
+  from the motor cortex of an awake monkey and demonstrate that the
+  higher-order spike correlation organizes dynamically in relation to a
+  behavioral demand.%
+    }
+    \verb{doi}
+    \verb 10.1371/journal.pcbi.1002385
+    \endverb
+    \field{edition}{2012/03/08}
+    \field{issn}{1553-7358}
+    \field{note}{22412358[pmid]}
+    \field{number}{3}
+    \field{pages}{e1002385\bibrangedash e1002385}
+    \field{title}{State-space analysis of time-varying higher-order spike
+  correlation for multiple neural spike train data}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/22412358
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{PLoS computational biology}
+    \field{year}{2012}
   \endentry
 
   \entry{steinmetz}{misc}{}

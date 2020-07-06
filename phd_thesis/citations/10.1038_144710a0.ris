@@ -1,0 +1,16 @@
+@article{hodgkin,
+    author={HODGKIN, A. L.
+    and HUXLEY, A. F.},
+    title={Action Potentials Recorded from Inside a Nerve Fibre},
+    journal={Nature},
+    year={1939},
+    month={Oct},
+    day={01},
+    volume={144},
+    number={3651},
+    pages={710-711},
+    abstract={NERVOUS messages are invariably associated with an electrical change known as the action potential. This potential is generally believed to arise at a membrane which is situated between the axoplasm and the external medium. If this theory is correct, it should be possible to record the action potential between an electrode inside a nerve fibre and the conducting fluid outside it. Most nerve fibres are too small for this to be tested directly, but we have recently succeeded in inserting micro-electrodes into the giant axons of squids (Loligo forbesi)1.},
+    issn={1476-4687},
+    doi={10.1038/144710a0},
+    url={https://doi.org/10.1038/144710a0}
+}

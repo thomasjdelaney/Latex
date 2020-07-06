@@ -3,27 +3,26 @@
 \contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}% 
 \contentsline {chapter}{Abstract}{v}{section*.2}% 
 \contentsline {chapter}{Acknowledgements}{vii}{section*.3}% 
-\contentsline {section}{\numberline {0.1}Introduction}{1}{section.8}% 
 \contentsline {chapter}{\numberline {1}Sensitivity of the spikes-to-fluorescence transform to calcium indicator and neuron properties}{3}{chapter.9}% 
 \contentsline {section}{\numberline {1.1}Introduction}{6}{section.11}% 
 \contentsline {section}{\numberline {1.2}Results}{8}{section.13}% 
 \contentsline {subsection}{\numberline {1.2.1}A biophysical computational model can generate accurate fluorescence traces from spike trains}{8}{subsection.14}% 
 \contentsline {subsection}{\numberline {1.2.2}Spike inference algorithms perform similarly on real data compared with time series simulated from the model}{9}{subsection.15}% 
 \contentsline {subsection}{\numberline {1.2.3}Relative effects of various buffers to the fluorescence signal}{10}{subsection.17}% 
-\contentsline {subsection}{\numberline {1.2.4}Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{12}{subsection.19}% 
+\contentsline {subsection}{\numberline {1.2.4}Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{11}{subsection.19}% 
 \contentsline {subsection}{\numberline {1.2.5}Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}{16}{subsection.23}% 
-\contentsline {section}{\numberline {1.3}Discussion}{18}{section.26}% 
-\contentsline {section}{\numberline {1.4}Methods}{20}{section.27}% 
-\contentsline {subsection}{\numberline {1.4.1}Calcium dynamics model}{20}{subsection.28}% 
+\contentsline {section}{\numberline {1.3}Discussion}{19}{section.26}% 
+\contentsline {section}{\numberline {1.4}Methods}{21}{section.27}% 
+\contentsline {subsection}{\numberline {1.4.1}Calcium dynamics model}{21}{subsection.28}% 
 \contentsline {subsubsection}{Photon release \& capture}{23}{section*.34}% 
-\contentsline {subsection}{\numberline {1.4.2}Parameter optimisation}{23}{subsection.35}% 
+\contentsline {subsection}{\numberline {1.4.2}Parameter optimisation}{24}{subsection.35}% 
 \contentsline {subsubsection}{Fixed parameters}{25}{section*.44}% 
-\contentsline {subsection}{\numberline {1.4.3}Julia}{26}{subsection.46}% 
-\contentsline {subsection}{\numberline {1.4.4}Spike inference}{26}{subsection.47}% 
-\contentsline {subsubsection}{Comparing spike inference quality}{28}{section*.48}% 
-\contentsline {subsection}{\numberline {1.4.5}Perturbation analysis}{28}{subsection.49}% 
+\contentsline {subsection}{\numberline {1.4.3}Julia}{25}{subsection.46}% 
+\contentsline {subsection}{\numberline {1.4.4}Spike inference}{27}{subsection.47}% 
+\contentsline {subsubsection}{Comparing spike inference quality}{29}{section*.48}% 
+\contentsline {subsection}{\numberline {1.4.5}Perturbation analysis}{29}{subsection.49}% 
 \contentsline {subsection}{\numberline {1.4.6}Signal-to-noise ratio}{29}{subsection.50}% 
-\contentsline {subsection}{\numberline {1.4.7}Data sources}{29}{subsection.51}% 
+\contentsline {subsection}{\numberline {1.4.7}Data sources}{30}{subsection.51}% 
 \contentsline {chapter}{\numberline {2}Functional networks expand across anatomical boundaries as correlation time-scale increases}{31}{chapter.52}% 
 \contentsline {section}{\numberline {2.1}Introduction}{34}{section.54}% 
 \contentsline {section}{\numberline {2.2}Results}{35}{section.55}% 
@@ -98,7 +97,7 @@
 \contentsline {subsection}{\numberline {3.4.4}Replicating stimulus related quenching of neural variability}{92}{subsection.214}% 
 \contentsline {section}{\numberline {3.5}Discussion}{94}{section.216}% 
 \contentsline {chapter}{\numberline {4}Studies with practical limitations \& negative results}{97}{chapter.217}% 
-\contentsline {section}{\numberline {4.1}Dynamic state space model of pairwise and higher order neuronal correlations}{100}{section.219}% 
+\contentsline {section}{\numberline {4.1}Dynamic state space model of pairwise and higher order neuronal correlations}{99}{section.219}% 
 \contentsline {section}{\numberline {4.2}A multiscale model for hierarchical data applied to \\ neuronal data}{100}{section.220}% 
-\contentsline {section}{\numberline {4.3}Discussion}{102}{section.221}% 
+\contentsline {section}{\numberline {4.3}Discussion}{101}{section.221}% 
 \contentsline {chapter}{Bibliography}{103}{chapter*.222}% 
