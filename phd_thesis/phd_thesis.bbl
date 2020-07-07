@@ -4314,6 +4314,125 @@
     \field{year}{"2009"}
   \endentry
 
+  \entry{zariwala}{article}{}
+    \name{author}{10}{}{%
+      {{hash=ZHA}{%
+         family={Zariwala},
+         familyi={Z\bibinitperiod},
+         given={Hatim\bibnamedelima A.},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BBG}{%
+         family={Borghuis},
+         familyi={B\bibinitperiod},
+         given={Bart\bibnamedelima G.},
+         giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=HTM}{%
+         family={Hoogland},
+         familyi={H\bibinitperiod},
+         given={Tycho\bibnamedelima M.},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Madisen},
+         familyi={M\bibinitperiod},
+         given={Linda},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DZCI}{%
+         family={De\bibnamedelima Zeeuw},
+         familyi={D\bibinitperiod\bibinitdelim Z\bibinitperiod},
+         given={Chris\bibnamedelima I.},
+         giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Hongkui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LLL}{%
+         family={Looger},
+         familyi={L\bibinitperiod},
+         given={Loren\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svoboda},
+         familyi={S\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CTW}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tsai-Wen},
+         giveni={T\bibinithyphendelim W\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Society for Neuroscience}%
+    }
+    \keyw{Animals; Calcium Signaling/genetics/*physiology; Female; Genes,
+  Reporter/*physiology; Humans; Integrases/*physiology; Male; Mice; Mice,
+  Inbred C57BL; Mice, Transgenic; Neurons/enzymology/*metabolism; Photic
+  Stimulation/methods; Proteins/genetics; RNA, Untranslated; Retinal Ganglion
+  Cells/enzymology/*metabolism}
+    \strng{namehash}{ZHA+1}
+    \strng{fullhash}{ZHABBGHTMMLTLDZCIZHLLLSKCTW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Fluorescent calcium indicator proteins, such as GCaMP3, allow imaging of
+  activity in genetically defined neuronal populations. GCaMP3 can be expressed
+  using various gene delivery methods, such as viral infection or
+  electroporation. However, these methods are invasive and provide
+  inhomogeneous and nonstationary expression. Here, we developed a genetic
+  reporter mouse, Ai38, which expresses GCaMP3 in a Cre-dependent manner from
+  the ROSA26 locus, driven by a strong CAG promoter. Crossing Ai38 with
+  appropriate Cre mice produced robust GCaMP3 expression in defined cell
+  populations in the retina, cortex, and cerebellum. In the primary visual
+  cortex, visually evoked GCaMP3 signals showed normal orientation and
+  direction selectivity. GCaMP3 signals were rapid, compared with virally
+  expressed GCaMP3 and synthetic calcium indicators. In the retina, Ai38
+  allowed imaging spontaneous calcium waves in starburst amacrine cells during
+  development, and light-evoked responses in ganglion cells in adult tissue.
+  Our results show that the Ai38 reporter mouse provides a flexible method for
+  targeted expression of GCaMP3.%
+    }
+    \verb{doi}
+    \verb 10.1523/JNEUROSCI.4469-11.2012
+    \endverb
+    \field{issn}{1529-2401}
+    \field{note}{22378886[pmid]}
+    \field{number}{9}
+    \field{pages}{3131\bibrangedash 3141}
+    \field{title}{A Cre-dependent GCaMP3 reporter mouse for neuronal imaging in
+  vivo}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/22378886
+    \endverb
+    \field{volume}{32}
+    \field{journaltitle}{The Journal of neuroscience : the official journal of
+  the Society for Neuroscience}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{zou}{article}{}
     \name{author}{2}{}{%
       {{hash=ZH}{%
