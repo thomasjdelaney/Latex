@@ -1401,25 +1401,25 @@
       {{hash=FGC}{%
          family={Faas},
          familyi={F\bibinitperiod},
-         given={G.\bibnamedelima C.},
+         given={Guido\bibnamedelima C.},
          giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
       {{hash=RS}{%
          family={Raghavachari},
          familyi={R\bibinitperiod},
-         given={S.},
+         given={Sridhar},
          giveni={S\bibinitperiod},
       }}%
       {{hash=LJE}{%
          family={Lisman},
          familyi={L\bibinitperiod},
-         given={J.\bibnamedelima E.},
+         given={John\bibnamedelima E.},
          giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
       {{hash=MI}{%
          family={Mody},
          familyi={M\bibinitperiod},
-         given={I.},
+         given={Istvan},
          giveni={I\bibinitperiod},
       }}%
     }
@@ -1431,19 +1431,26 @@
     \field{labeldatesource}{year}
     \field{sortinit}{F}
     \field{sortinithash}{F}
+    \field{abstract}{%
+    The authors report that the rate at which calmodulin binds calcium is
+  faster than that of other calcium binding proteins, and that calmodulin
+  directly intercepts incoming calcium and sets [Ca2+]free rather than
+  responding to the lower [Ca2+]free set by other buffers.%
+    }
     \verb{doi}
     \verb 10.1038/nn.2746
     \endverb
+    \field{issn}{1546-1726}
     \field{number}{3}
     \field{pages}{301\bibrangedash 304}
     \field{title}{Calmodulin as a direct detector of Ca2+ signals}
     \verb{url}
-    \verb https://dx.doi.org/10.1038/nn.2746
+    \verb https://doi.org/10.1038/nn.2746
     \endverb
     \field{volume}{14}
-    \field{journaltitle}{Nature neuroscience}
-    \field{month}{03}
+    \field{journaltitle}{Nature Neuroscience}
     \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{fiala}{book}{}
@@ -3069,6 +3076,106 @@
     \field{journaltitle}{Neural Computation}
     \field{month}{01}
     \field{year}{2017}
+  \endentry
+
+  \entry{okun}{article}{}
+    \name{author}{11}{}{%
+      {{hash=OM}{%
+         family={Okun},
+         familyi={O\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SNA}{%
+         family={Steinmetz},
+         familyi={S\bibinitperiod},
+         given={Nicholas\bibnamedelima A.},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cossell},
+         familyi={C\bibinitperiod},
+         given={Lee},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=IMF}{%
+         family={Iacaruso},
+         familyi={I\bibinitperiod},
+         given={M.\bibnamedelima Florencia},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Ko},
+         familyi={K\bibinitperiod},
+         given={Ho},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Barth{\'o}},
+         familyi={B\bibinitperiod},
+         given={P{\'e}ter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={Tirin},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HSB}{%
+         family={Hofer},
+         familyi={H\bibinitperiod},
+         given={Sonja\bibnamedelima B.},
+         giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=MFTD}{%
+         family={Mrsic-Flogel},
+         familyi={M\bibinithyphendelim F\bibinitperiod},
+         given={Thomas\bibnamedelima D.},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Carandini},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HKD}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kenneth\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OM+1}
+    \strng{fullhash}{OMSNACLIMFKHBPMTHSBMFTDCMHKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Exploring the relationship between population coupling and neuronal
+  activity reveals that neighbouring neurons can differ in their coupling to
+  the overall firing rate of the population, the circuitry of which may
+  potentially help to explain the complex activity patterns in cortical
+  populations.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature14273
+    \endverb
+    \field{issn}{1476-4687}
+    \field{number}{7553}
+    \field{pages}{511\bibrangedash 515}
+    \field{title}{Diverse coupling of neurons to populations in sensory cortex}
+    \verb{url}
+    \verb https://doi.org/10.1038/nature14273
+    \endverb
+    \field{volume}{521}
+    \field{journaltitle}{Nature}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{ouzounov}{article}{}
@@ -4893,6 +5000,91 @@
     \field{volume}{67}
     \field{journaltitle}{Journal of the Royal Statistical Society, Series B}
     \field{year}{2005}
+  \endentry
+
+  \entry{eltes}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ÃT}{%
+         family={Ã‰ltes},
+         familyi={Ã\bibinitperiod},
+         given={TÃ­mea},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Szoboszlay},
+         familyi={S\bibinitperiod},
+         given={Miklos},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KSK}{%
+         family={Kerti-Szigeti},
+         familyi={K\bibinithyphendelim S\bibinitperiod},
+         given={Katalin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NZ}{%
+         family={Nusser},
+         familyi={N\bibinitperiod},
+         given={Zoltan},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \keyw{two-photon imaging, GCaMP6, in vitro electrophysiology,
+  immunohistochemistry, spike inference, mouse}
+    \strng{namehash}{ÃT+1}
+    \strng{fullhash}{ÃTSMKSKNZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Ã}
+    \field{sortinithash}{Ã}
+    \field{abstract}{%
+    Key points The amplitude of unitary, single action potential-evoked [Ca2+]
+  transients negatively correlates with GCaMP6f expression, but displays large
+  variability among hippocampal pyramidal cells with similarly low expression
+  levels. The summation of fluorescence signals is frequency-dependent,
+  supralinear and also shows remarkable cell-to-cell variability. The main
+  source of spike inference error is variability in the peak amplitude, and not
+  in the decay or supralinearity. We developed two procedures to estimate the
+  peak amplitudes of unitary [Ca2+] transients and show that spike inference
+  performed with MLspike using these unitary amplitude estimates in weakly
+  GCaMP6f-expressing cells results in error rates of âˆ¼5\%. Abstract
+  Investigating neuronal activity using genetically encoded Ca2+ indicators in
+  behaving animals is hampered by inaccuracies in spike inference from
+  fluorescent tracers. Here we combine two-photon [Ca2+] imaging with
+  cell-attached recordings, followed by post hoc determination of the
+  expression level of GCaMP6f, to explore how it affects the amplitude,
+  kinetics and temporal summation of somatic [Ca2+] transients in mouse
+  hippocampal pyramidal cells (PCs). The amplitude of unitary [Ca2+] transients
+  (evoked by a single action potential) negatively correlates with GCaMP6f
+  expression, but displays large variability even among PCs with similarly low
+  expression levels. The summation of fluorescence signals is
+  frequency-dependent, supralinear and also shows remarkable cell-to-cell
+  variability. We performed experimental data-based simulations and found that
+  spike inference error rates using MLspike depend strongly on unitary peak
+  amplitudes and GCaMP6f expression levels. We provide simple methods for
+  estimating the unitary [Ca2+] transients in individual weakly
+  GCaMP6f-expressing PCs, with which we achieve spike inference error rates of
+  âˆ¼5\%.%
+    }
+    \verb{doi}
+    \verb 10.1113/JP277681
+    \endverb
+    \verb{eprint}
+    \verb https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/JP277681
+    \endverb
+    \field{number}{11}
+    \field{pages}{2925\bibrangedash 2947}
+    \field{title}{Improved spike inference accuracy by estimating the peak
+  amplitude of unitary [Ca2+] transients in weakly GCaMP6f-expressing
+  hippocampal pyramidal cells}
+    \verb{url}
+    \verb https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/JP277681
+    \endverb
+    \field{volume}{597}
+    \field{journaltitle}{The Journal of Physiology}
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

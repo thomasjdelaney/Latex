@@ -7,9 +7,9 @@
 \subAbstract{Fluorescent calcium indicators such as GCaMP are widely used to monitor neuronal activity. However the relationship between the fluorescence signal and the underlying action potential firing is poorly understood. This lack of knowledge makes it difficult for experimenters to decide between different indicator variants for a given application. We addressed this problem by studying a basic biophysical model of calcium dynamics in neuronal soma. We fit the model parameters to publicly available data where GCaMP6s fluorescence and whole-cell electrophysiological recordings were made simultaneously in the same single neurons. We systematically varied the model’s parameters to characterise the sensitivity of spike train inference algorithms to the calcium indicator’s main biophysical properties: binding rate, dissociation rate, and molecular concentration. This model should have two potential uses: experimental researchers may use it to help them select the optimal indicator for their desired experiment; and computational researchers may use it to generate simulated data to aid design of spike inference algorithms.}
 
 \section{Introduction}
-Although fluorescent calcium indicators such as GCaMP are widely used to monitor neuronal activity, the relationship between the fluorescence signal and the underlying action potential firing is imperfect. The fluorescence signal has a low signal-to-noise ratio, and most indicators' kinetics are slow relative to the millisecond-timescale dynamics of the membrane voltage (example in Figure 1). This makes spike inference difficult. Furthermore, the effects of the indicator and cell properties on the fluorescence signal are unknown. For example, genetically encoded indicators can accumulate within neurons over weeks and months  \parencite{chen}. Studies using calcium-sensitive fluorescent dyes have shown that indicator concentration has substantial effects on the spike-to-fluorescence relationship  \parencite{maravall}. Therefore spike rates inferred from GCaMP fluorescence signals may give misleading results if comparing across imaging sessions. More generally, the poor understanding of the spike-to-fluorescence transform means experimenters may not know whether to trust the outputs of spike train inference methods in any given application.
+Although fluorescent calcium indicators such as GCaMP are widely used to monitor neuronal activity, the relationship between the fluorescence signal and the underlying action potential firing is imperfect. The fluorescence signal has a low signal-to-noise ratio, and most indicators' kinetics are slow relative to the millisecond-timescale dynamics of the membrane voltage (example in figure \ref{fig:spike_finder_example}A). This makes spike inference difficult. Furthermore, the effects of the indicator and cell properties on the fluorescence signal are unknown. For example, genetically encoded indicators can accumulate within neurons over weeks and months  \parencite{chen}. Studies using calcium-sensitive fluorescent dyes have shown that indicator concentration has substantial effects on the spike-to-fluorescence relationship  \parencite{maravall}. Therefore spike rates inferred from GCaMP fluorescence signals may give misleading results if comparing across imaging sessions. More generally, the poor understanding of the spike-to-fluorescence transform means experimenters may not know whether to trust the outputs of spike train inference methods in any given application.
 
-Spike trains are usually inferred from the time series of intensity values of one pixel of the fluorescence image, where the pixel is located at the cell's soma. The problems of identfying these pixels, and inferring spikes from their time series can solved separately or together. When attempting to infer spikes, the fluorescence trace is modelled as a linear combination of calcium concentration dynamics, a baseline calcium concentration, and some Gaussian noise. The calcium concentration dynamics are modelled as an autoregressive process of degree $1$ or $2$ with a pulse input corresponding to the spike train, or the number of spikes fired in a time step. The model includes no dynamics for the fluorescent indicator itself. Furthermore, in order to make this model into an easily solvable linear programming problem the number of spikes fired in a timestep is not restricted to non-negative integers but to arbitrary non-negative values \parencite{vogelstein, pnevmatikakis, friedrich, paninski1, paninski2}. More biologically inspired spike inference models do exist \parencite{deneux}, but their fundamentals are very similar. In this work, we investigated the effect of changing dynamics and buffer concentrations on the accuracy of the inference algorithms based on these models.
+Spike trains are usually inferred from the time series of intensity values of one pixel of the fluorescence image, where the pixel is located at the cell's soma. The problems of identifying these pixels, and inferring spikes from their time series can solved separately or together. When attempting to infer spikes, the fluorescence trace is modelled as a linear combination of calcium concentration dynamics, a baseline calcium concentration, and some Gaussian noise. The calcium concentration dynamics are modelled as an autoregressive process of degree $1$ or $2$ with a pulse input corresponding to the spike train, or the number of spikes fired in a time step. The model includes no dynamics for the fluorescent indicator itself. Furthermore, in order to make this model into an easily solvable linear programming problem the number of spikes fired in a timestep is not restricted to non-negative integers but to arbitrary non-negative values \parencite{vogelstein, pnevmatikakis, friedrich, paninski1, paninski2}. More biologically inspired spike inference models do exist \parencite{deneux}, but their fundamentals are very similar. In this work, we investigated the effect of changing dynamics and buffer concentrations on the accuracy of the inference algorithms based on these models.
 
 \begin{figure}[p]
     \centering
@@ -25,171 +25,6 @@ The aim of this project was to model the fluorescence traces produced by a fluor
 The model we developed consisted of free calcium, fluorescent indicator molecules, and mobile and immobile endogenous calcium buffers. The indicator molecules which were bound to a calcium molecule could be either excited, i.e. able to release a photon, or relaxed. In order to reproduce the noise inherent in the data collection, we modelled the release of photons from the excited indicator bound calcium as a stochastic process.
 
 The fluorescence traces produced by the simulation were calibrated to reproduce the signal-to-noise ratio observed in experimental data. Previously published spike inference algorithms were then used to infer spike trains from the experimental fluorescence traces and the modelled fluorescence traces. The parameters of the model were then varied in order to determine the effect on the system dynamics and the effects on spike inference.
-
-\section{Results}
-\subsection{A biophysical computational model can generate accurate fluorescence traces from spike trains}
-To study the relationship between action potential firing and calcium fluorescence, we built a computational model of calcium dynamics in a neuronal soma. The model consisted of four dynamic variables: the concentration of free calcium, two types of endogenous buffer, and the calcium-sensitive fluorescent indicator. Each of the buffers and the indicator could independently bind and unbind with calcium. These reactions were modelled as
-\begin{align*}
-   [X][Ca^{2+}] \xrightleftharpoons[k_{Xb}]{k_{Xf}} [XCa]
-\end{align*}
-where $X$ is the buffer concentration and $Ca^{2+}$ is the calcium concentration. Each species could therefore exist in two states: either bound with calcium or unbound. To model the imaging process, we also added a third, excited state to the indicator. When in the calcium-bound state, the indicator could be converted to an excited state, corresponding to the absorption of a photon. The rate of this excitation process could be interpreted as the intensity of the light illuminating the sample. Once excited, the species decayed back to the unexcited state at a fixed rate, corresponding to the spontaneous emission of photons. The total emitted fluorescence signal was interpreted as proportional to this de-excitation flux. To represent experimental noise in the photon capture process, we drew a random number of captured photons at each time step from a binomial distribution, parameterised by a number $p$ that corresponds to the mean fraction of released photons that are captured.
-
-The model had 17 parameters in total describing the molecules’ concentrations and reaction rates (Methods). We set 13 of these parameters to values from the literature. The remaining 4 parameter values we fit to publicly-available data  \parencite{berens}, briefly explained as follows (see Methods for full details).  Single neurons from acute rat cortical slices expressing GCaMP6f were imaged with two-photon microscopy while the membrane potentials of the somata of the same neurons were simultaneously recorded via whole-cell patch clamp electrophysiology. In this dataset, the electrical recordings give unambiguous information about neurons' spike times. To do the parameter fitting, we feed these spike trains as inputs to the computational model. After running, the model returns a simulated fluorescence trace. We aimed to find the model parameter values that give the best match between this simulated fluorescence trace and the real fluorescence time series recorded in the corresponding neuron. To do this we used a suite of optimisation procedures to jointly fit both the real neuron’s fluorescence time series and power spectrum, which capture complementary information about the spikes-to-fluorescence mapping (Methods). We performed the fitting procedure independently for each of the $20$ neurons in the spikefinder dataset (http://spikefinder.org). After fitting, the model produced realistic-looking fluorescence time series (Figure \ref{fig:spike_finder_example}).
-
-\subsection{Spike inference algorithms perform similarly on real data compared with time series simulated from the model}
-Researchers often pass the fluorescence time series through a spike inference tool before performing further statistical analyses. These spike inference algorithms take the fluorescence trace as input and attempt to estimate the neuronal spike train that triggered them \parencite{vogelstein, pnevmatikakis, friedrich, paninski1, paninski2, deneux}. Part of our motivation for building this model was to allow us to ask the question: how do the properties of the cell and the calcium indicator affect the quality of spike inference? In order to trust the conclusions from our model, we should first be confident that spike inference from our simulated fluorescence traces is similar to that from the real data. To test this we passed each of the simulated fluorescence traces through three previously published spike inference algorithms, quantified their performance against the ground-truth electrophysiology data, repeated the procedure for the real calcium fluorescence time series, and compared the accuracy of the inference processes in all cases. The \textit{true positive rate}, also known as the \textit{recall}, the \textit{sensitivity}, or the \textit{probability of detection} of spike inference varied across the three inference algorithms we tried (p value and statistical test here). The constrained non-negative matrix deconvolution algorithm  \parencite{pnevmatikakis} (CNMD algorithm) correctly detected approximately $45\%$ of the true spikes, the OASIS algorithm  \parencite{friedrich} correctly detected approximately $35\%$ of the true spikes, and the ML spike algorithm  \parencite{deneux} correctly detected approximately $15\%$ of the true spikes (see figure \ref{fig:three_algo_comparison}). Notably, for two of the three inference algorithms, the quality of inference was also fairly consistent for individual spike trains, not just the group means ($p > 0.05$, paired t-test). This demonstrates that the models were generating fluorescence time series that were similarly difficult to decode as the real data, in ways that were not specific to any one inference algorithm. This is evidence that the models captured real aspects of the spikes-to-fluorescence transform.
-\begin{figure}[h]
-\centering
-  \includegraphics[width=\textwidth]{figures/calcium_chapter/Figure2.png}
-  \caption{\\
-  A: Workflow to compare spike inference for real versus simulated fluorescence data.\\
-  B: True positive rates achieved by three different spike inference algorithms when applied to observed spike trains, and simulated spike trains. Data points overlaid as blue circles. The performance is similar from real and simulated data for each of the algorithms.}
-  \label{fig:three_algo_comparison}
-\end{figure}
-
-\subsection{Relative effects of various buffers to the fluorescence signal}
-One of the benefits of computational models over laboratory experiments is that we can observe all the variables in the simulation to gain insight into the system’s dynamics, which can be difficult to do in the lab. We plotted the concentrations of the various species over time for a version of the model fit to one data set, in response to the same train of spikes used for fitting (figure \ref{fig:concentrations}). Figure \ref{fig:concentration_dynamics_a} shows the absolute values of the species concentrations, summed. Consistent with experimental estimates  \parencite{maravall}, only a small fraction ($\sim 0.1\%$) of calcium is free and unbound to any buffer. Of the bound calcium, the vast majority, ($\sim 96\%$) is bound to the GCaMP indicator. The two types of endogenous buffer are bound to the remaining calcium ($\sim 4\%$). An influx of calcium from a single spike adds very little to the total calcium, in relative terms (red line in Figure 3a).
-\begin{figure}[p]
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18.png}
-    \caption{}
-    \label{fig:concentration_dynamics_a}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png}
-    \caption{}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png}
-    \caption{}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png}
-    \caption{}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png}
-    \caption{}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png}
-    \caption{}
-  \end{subfigure}
-  \caption{\textbf{Calcium Buffering Dynamics } (a) The proportions of bound and free calcium concentrations within a cell, with the associated spike train. (b)-(f) The dynamics of the concentration of (b) excited indicator bound calcium, (c) indicator bound calcium, (d) immobile endogenous buffer bound calcium, (e) mobile endogenous buffer bound calcium, and (f) free calcium in response to an action potential at $\sim$23.2s.}
-  \label{fig:concentrations}
-\end{figure}
-
-% (New Figure 3X (Insert more commentary on this once the new figure is added))
-
-When calcium entered the model neuron it was rapidly buffered  \parencite{bartol}. However the relative fractions of which buffer molecules bound to the influxed calcium was dynamic, and changed over time . Figure \ref{fig:concentrations} (b-f) shows the time course of the various species over time in response to a calcium influx event from a single action potential. Crucially, the indicator $[BCa]$ competed with the endogenous buffers $[ImCa]$ and $[ECa]$ – all three bind calcium on similar timescales. This implies that the timecourse and amplitude of the $[BCa]$ variable will also depend on the binding rates and availabilities of the endogenous buffers. For example if we decreased the concentration of an endogenous buffer, we might expect both a faster rise time and greater peak amplitude of the $[BCa]$ signal in response to a calcium influx event. The slowest component of the decay had a similar time constant for $[BCa]$, $[ImCa]$ and $[ECa]$, which in turn matched the $[Ca]$ extrusion time constant in our model ($\sim 6.29 \times 10^{-22}$Ms$^{-1}$). This implies that the buffers and the indicator had reached a dynamic equilibrium and were jointly tracking the free calcium concentration as calcium was slowly extruded from the cell.
-
-Interestingly the excited bound calcium species ($[BCa^*]$) showed a qualitatively different timecourse in response to a calcium influx event. This concentration is subject to the added `excitation and release' dynamic, where a certain proportion of the concentration absorbs the energy from an incoming photon and goes into an `excited state' at each time step. A certain proportion of the concentration releases a photon and reverts to a `relaxed state' at each timestep also. This means that the excited bound calcium lags behind the bound calcium trace. We could think of the excited bound calcium trace as a low pass filtered version of the bound calcium trace.
-
-\subsection{Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}
-The above results imply that the fluorescence signal depends on the relative properties of both GCaMP and the endogenous buffers. We next used the model to directly ask how sensitive spike inference was to these components. We focused on three key parameters that likely vary from cell to cell and experiment to experiment: GCaMP binding kinetics, GCaMP concentration, and endogenous buffer concentration.
-
-Several variants of GCaMP itself have been made that differ in calcium binding kinetics, baseline fluorescence, fluorescence efficiency, and other factors. For example, GCaMP6f has a decay time constant of $\sim 1$s, while GCaMP6s has a decay time constant of $\sim 2$s  \parencite{chen}. Here we asked how these differences in binding kinetics affect spike inference. We jointly varied the calcium binding and unbinding rates of the indicator by the same factor over a range from $100$-fold slower to $100$-fold faster from the fitted values, and simulated the fluorescence response for each of the parameter settings in response to the same spike trains as before (figure \ref{fig:rates_perturbed}). Notably this manipulation does not affect the indicators affinity, and therefore would not affect steady-state responses to prolonged changes in calcium. Instead it is likely to affect its sensitivity to the spike train dynamics. We computed two summary measures from the simulated fluorescence traces: the signal-to-noise ratio for a single spike (Methods, section \ref{sec:snr}), and the accuracy of spike inference for each of the spike trains. We observed a reduction in the signal-to-noise ratio and the spike inference quality when we set the binding and unbinding rates were set to one hundreth of their fitted values, and to one tenth of their fitted values. When we increased the value of both binding rates, we observed no change in these measurements. The reduction in both rates lead to smaller increases in fluorescence in response to an action potential and a longer decay time (figure \ref{fig:rates_perturbed_fluorescence}), this caused the reduction in signal-to-noise ratio. As both rates were increased, the change in $\Delta F/F_0$ in response to an action potential increased and the decay time decreased slightly, but the fluorescence trace created by these values was very similar to the trace created by the fitted values.
-
-\begin{figure}[p]
-\centering
-    \begin{subfigure}{0.9\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png}
-        \caption{}
-        \label{fig:rates_perturbed_fluorescence}
-    \end{subfigure}
-    \newline
-    \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/b_i_f_i_perturbed_snr.png}
-        \caption{}
-        \label{fig:rates_perturbed_snr}
-    \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png}
-        \caption{}
-        \label{fig:rates_perturbed_inference}
-    \end{subfigure}
-    \caption{(a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The SNRs for the two pairs with values lower than the experimental value are lower than the experimental pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
-    \label{fig:rates_perturbed}
-\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \begin{subfigure}{0.9\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png}
-        \caption{}
-        \label{fig:indicator_perturbed_fluorescence}
-    \end{subfigure}
-    \newline
-    \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/indicator_perturbed_snr.png}
-        \caption{}
-        \label{fig:indicator_perturbed_snr}
-    \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png}
-        \caption{}
-        \label{fig:indicator_perturbed_inference}
-    \end{subfigure}
-    \caption{(a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.}
-    \label{fig:indicator_perturbed}
-\end{figure}
-
-Second, the overall concentrations of GCaMP often varies from cell to cell. For example different cells, even of the same type in the same tissue, can express different levels of GCaMP, due to proximity to the infection site, or the cell becoming `nuclear-filled' \parencite{tian, chen}. Also, GCaMP is often used for longitudinal experiments where the same cells are re-imaged across multiple days or weeks. However since GCaMP expression typically ramps up over time  \parencite{chen}, the accuracy of spike inference may differ across multiple longitudinal recordings in the same cell. We addressed this by varying the concentration of calcium indicator in the model, simulating spike trains and measuring signal-to-noise ratio and spike inference accuracy on the resulting fluorescence traces. Both increasing and decreasing the concentration of the indicator had effects on the fluorescence trace, signal-to-noise ratio, and spike inference. The signal-to-noise ratio and spike inference quality decreased with decreased indicator concentration, and both showed a decrease when the indicator concentration was increased to $100$ times it's fitted value (figure \ref{fig:indicator_perturbed}). The signal-to-noise ratio showed an increase when the indicator concentration was increased to $10$ times it's fitted value, but there was no corresponding change in the spike inference quality. The decrease in indicator concentration caused a reduction in the increase in $\Delta F/F_0$ in response to an action potential, and an increase in the decay time of this increase (figure \ref{fig:indicator_perturbed_fluorescence}). The increase in indicator concentration had the opposite effect, it casued an increase in the change in $\Delta F/F_0$ in response to an action potential, and a decrease in the decay time.
-
-Third, the concentration and types of endogenous calcium buffers also vary from neuron to neuron, both within and between cell types \parencite{bartol, maravall, neher}. Since the calcium buffer capacity of neurons is high, around 50-70 \parencite{lee} in excitatory hippocampal pyramidal cells, around 100-250 \parencite{lee} in inhibitory hippocampal pyramidal cells, and 900-200 in Purkinje cells (depending on the age of the subject), these endogenous buffers compete with GCaMP for binding to calcium, and variations in endogenous buffer concentration may affect GCaMP signal and therefore spike inference. To address this we varied the concentration of the endogenous buffer in the model neuron over five orders of magnitude from $0.8$ to $8000$ $\mu$M, simulated calcium fluorescence traces in response to the same set of spike trains, and performed spike inference on the resulting fluorescence time series. Increasing the endogenous buffer concentration had a substantial effect on the GCaMP fluorescence signal, both decreasing its amplitude and slowing its kinetics (figure \ref{fig:endogenous_perturbed}(a)). This corresponded with a decrease in both single-spike signal-to-noise ratio (figure \ref{fig:endogenous_perturbed}(b)) and spike inference accuracy (figure \ref{fig:endogenous_perturbed}(c)). In contrast, decreasing endogenous buffer capacity from the fitted value had little effect on either the GCaMP signal or spike inference (figure \ref{fig:endogenous_perturbed}).
-
-\begin{figure}[p]
-    \centering
-    \begin{subfigure}{0.9\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png}
-        \caption{}
-    \end{subfigure}
-    \newline
-    \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/immobile_perturbed_snr.png}
-        \caption{}
-    \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}
-        \includegraphics[width=\linewidth]{figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png}
-        \caption{}
-    \end{subfigure}
-    \caption{(a) An example trace for each of the five perturbed values for the concentration of immobile endogenous buffer.	(b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR.	(c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
-    \label{fig:endogenous_perturbed}
-\end{figure}
-
-\subsection{Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}
-The fluorescence signal recorded from neurons using calcium indicators is typically much slower than changes in membrane potential for two reasons: first, because the calcium and the indicator have slow binding and unbinding kinetics, the signal is a low-pass filtered version of the membrane potential. Second, neuronal two-photon imaging experiments are often performed in scanning mode, which limits their frame rate to $\sim 10$Hz or slower. This implies that multiple spike events that occur close in time might be difficult to resolve from a calcium indicator time series. Many cells, especially several types of inhibitory interneurons, fire tonically at rates higher than $10$Hz. We used the model to test whether spike inference accuracy depended on the neuron’s firing frequency by driving the cell with spike trains sampled from a Poisson processes of varying frequency. We simulated a variable firing rate using an Ornstein-Uhlenbeck process, and simulated the spike trains using a Poisson distribution with its rate taken from this process. Because of the high frequency firing rate of these spike trains, we using the accuracy as the measure of spike inference quality. We simulated $30$ spike trains at average firing rate of $1$, $5$, and $10$Hz, and measured the spike inference quality of all these traces. Spike inference accuracy decreased with increasing firing rate, for up to $10$Hz Poisson spike trains (figure \ref{fig:frequency_comparison_measures}(left)). Although, the accuracy remained above $90\%$ for each of the three frequencies. We also plotted the average $\Delta F/F_0$ as a function of stimulation firing rate. We found that it increased monotonically as a function of firing rate (figure \ref{fig:frequency_comparison_measures}(right)).
-
-We expected lower spike inference quality as the average spiking frequency increased. Since the fluorescence trace, in some sense, is a low pass filtered version of the spike train, a tightly packed groups of spikes will be more difficult to infer than isolated spikes. However, the increasing amplitude of the fluorescence trace with increasing frequency suggests that some spike inference algorithm could be developed based on this amplitude.
-
-\begin{figure}[h]
-  \includegraphics[width=0.329\linewidth]{figures/calcium_chapter/paper_fig_1_Hz_1_3.png}
-  \includegraphics[width=0.329\linewidth]{figures/calcium_chapter/paper_fig_5_Hz_1_2.png}
-  \includegraphics[width=0.329\linewidth]{figures/calcium_chapter/paper_fig_10_Hz_1_1.png}
-  \caption{\textbf{Simulating fluorescence traces at different firing rates } Example modelled traces created using simulated spike trains with a mean firing rate of $1$Hz (left column), $5$Hz (middle column), and $10$Hz (right column). Note the difference in amplitude with different mean firing rates.}
-  \label{fig:frequency_comparison_traces}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.45\linewidth]{figures/calcium_chapter/simulated_oasis_accuracy_paper.png}
-  \includegraphics[width=0.45\linewidth]{figures/calcium_chapter/mean_fluorescence_comparison.png}
-  \caption{\textbf{Inference quality and $\Delta F/F_0$ vs Firing rate} (left) The spike inference accuracy when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.}
-  \label{fig:frequency_comparison_measures}
-\end{figure}
-
-\section{Discussion}
-We designed a biophysical model for the changes in free calcium and bound calcium concentrations within a cell soma with a fluorescent calcium indicator. We used this model to model the fluorescence trace resulting from a spike train in this cell.  We fit the free parameters of the model by matching the power spectrum and amplitude of fluorescence traces with simultaneously measured spike trains. We inferred spikes from real fluorescence traces and modelled fluorescence traces, and measured the quality of the spike inference in both cases. We found that the spike inference quality was similar in both cases. We perturbed the concentration of the calcium buffers in the model, and the binding/unbinding rates of those buffers in the model, and measured the effect on the signal-to-noise ratio (SNR) of the modelled fluorescence traces and the spike inference quality.
-
-For the fluorescent calcium indicator, we found that any large perturbation away from the experimental value led to a reduction in SNR, and spike inference quality. For the binding/unbinding rates, we kept the ratio of these rates constant, but altered their values in parallel. The lower values caused a reduction in SNR, and a reduction in spike inference quality. For the endogenous buffer concentration, an increase above the experimental value caused a reduction in SNR and spike inference quality.
-
-Although the model produced visually similar time series to the real data, there were a few aspects it did not capture. First, the real data featured some low-frequency components that did not appear related to the spike events. These were not captured by the models we used in this study, but could be added in future by adding a suitable low-frequency term to the resulting time series. Second, the real data seemed to have some nonlinearities not captured in the model, for example the response to two nearby spikes was greater than expected from the linear sum of two single spikes. This may be due to the co-operative binding of Calmodulin to calcium, which gives calmodulin a supra-linear sensitivity to calcium concentration. The model, in contrast behaved much more linearly, but could be extended in future to include such nonlinearities. Third, in the real data the fluorescence peak amplitude seemed to vary from spike to spike, even for well-isolated spike events. However in our model we assumed each spike lead to the same fixed-amplitude injection of calcium to the cell, leading to much greater regularity in fluorescence peak amplitudes. This variability could be added in future versions of the model by making the injected calcium peak a random variable. Fourth, we modelled the soma as a single compartment, but in reality there is likely a non-uniform spatial profile of calcium concentration. This may matter because some endogenous buffers might access calcium right as it influxes from the extracellular space, whereas the majority of the fluorescence signal is more likely coming from the bulk of the cytoplasm. Future models could attempt to model these spatial dependencies to assess whether they affect the overall spike inference procedure.
-
-As well as the optimised parameters, the model has 14 fixed parameters than can be changed to simulate different types of calcium indicators. This model could be used to test the theoretical performance of proposed new types of calcium indicator. The model could also be used by developers of spike inference algorithms to test the effects of changing calcium indicator parameters on spike inference, or to test the affects of changing spiking characteristics on spike inference. For example, high firing rate vs low firing rate, or bursting vs no bursting. Given the increasing amplitude of the fluorescence trace with increasing mean firing rate, it would be possible to build a spike inference algorithm on this principle at least in part.
-
-Our model has already been used as a tool by our colleagues, for simulating fluorescence traces in response to cells that can fire with a continuous rate between $10$ and $20$Hz, but do not always do so. Our colleagues found that a combination of the amplitude and the variance of the simulated fluorescence trace was the best indicator of firing rate. For example, when a cell was not firing, the amplitude and variance of the fluorescence trace was relatively low. When the cell fired with a low firing rate $\sim 1$Hz, the mean amplitude was still low but the variance of the fluorescence trace was high, and for high firing rate $\sim 10-20$Hz, the fluorescence amplitude was high, and the variance was low. In this way, our model may be useful for investigating firing rates underlying real fluorescence traces in response to cells which can fire in these rage ranges.
-
-A recent paper by Greenberg et al (2018) described a biophysical model for spike train inference called the `Sequential binding model'. Similar to our model, this model included parameters for two types of endogenous buffer. But this model also included dynamics for calcium binding to and unbinding from these endogenous buffers. Furthermore, this model included dynamics for calcium binding to and unbinding from the four binding sites present on a GCaMPs6 molecule. In the accuracy measurements specified in that paper, this model performed better than the MLspike algorithm, which is also partially a biophysically model, and it performed better than the constrained non-negative deconvolution algorithm. The sequential binding model also biophysically interpretable parameters, and its fitted parameters for quantites such as buffering capacity and calcium influx upon action potential firing fall in line with experimental values \parencite{greenberg}. Biophysical models like this appear to be the way forward for spike inference algorithms.
 
 \section{Methods}
 \subsection{Calcium dynamics model}
@@ -336,3 +171,168 @@ To assess the effect of perturbation on the modelled traces, we measured and com
 
 \subsection{Data sources}
 All of the data used in this project was sourced from the ‘Spike Finder’ project (spikefinder.codeneuro.org). The data consisted of a collection of datasets with simultaneously measured fluorescence traces and action potentials  \parencite{berens}.
+
+\section{Results}
+\subsection{A biophysical computational model can generate accurate fluorescence traces from spike trains}
+To study the relationship between action potential firing and calcium fluorescence, we built a computational model of calcium dynamics in a neuronal soma. The model consisted of four dynamic variables: the concentration of free calcium, two types of endogenous buffer, and the calcium-sensitive fluorescent indicator. Each of the buffers and the indicator could independently bind and unbind with calcium. These reactions were modelled as
+\begin{align*}
+   [X][Ca^{2+}] \xrightleftharpoons[k_{Xb}]{k_{Xf}} [XCa]
+\end{align*}
+where $X$ is the buffer concentration and $Ca^{2+}$ is the calcium concentration. Each species could therefore exist in two states: either bound with calcium or unbound. To model the imaging process, we also added a third, excited state to the indicator. When in the calcium-bound state, the indicator could be converted to an excited state, corresponding to the absorption of a photon. The rate of this excitation process could be interpreted as the intensity of the light illuminating the sample. Once excited, the species decayed back to the unexcited state at a fixed rate, corresponding to the spontaneous emission of photons. The total emitted fluorescence signal was interpreted as proportional to this de-excitation flux. To represent experimental noise in the photon capture process, we drew a random number of captured photons at each time step from a binomial distribution, parameterised by a number $p$ that corresponds to the mean fraction of released photons that are captured.
+
+The model had 17 parameters in total describing the molecules’ concentrations and reaction rates (Methods). We set 13 of these parameters to values from the literature. The remaining 4 parameter values we fit to publicly-available data  \parencite{berens}, briefly explained as follows (see Methods for full details).  Single neurons from acute rat cortical slices expressing GCaMP6f were imaged with two-photon microscopy while the membrane potentials of the somata of the same neurons were simultaneously recorded via whole-cell patch clamp electrophysiology. In this dataset, the electrical recordings give unambiguous information about neurons' spike times. To do the parameter fitting, we feed these spike trains as inputs to the computational model. After running, the model returns a simulated fluorescence trace. We aimed to find the model parameter values that give the best match between this simulated fluorescence trace and the real fluorescence time series recorded in the corresponding neuron. To do this we used a suite of optimisation procedures to jointly fit both the real neuron’s fluorescence time series and power spectrum, which capture complementary information about the spikes-to-fluorescence mapping (Methods). We performed the fitting procedure independently for each of the $20$ neurons in the spikefinder dataset (http://spikefinder.org). After fitting, the model produced realistic-looking fluorescence time series (Figure \ref{fig:spike_finder_example}).
+
+\subsection{Spike inference algorithms perform similarly on real data compared with time series simulated from the model}
+Researchers often pass the fluorescence time series through a spike inference tool before performing further statistical analyses. These spike inference algorithms take the fluorescence trace as input and attempt to estimate the neuronal spike train that triggered them \parencite{vogelstein, pnevmatikakis, friedrich, paninski1, paninski2, deneux}. Part of our motivation for building this model was to allow us to ask the questionon-linearitiesproperties of the cell and the calcium indicator affect the quality of spike inference? In order to trust the conclusions from our model, we should first be confident that spike inference from our simulated fluorescence traces is similar to that from the real data. To test this we passed each of the simulated fluorescence traces through three previously published spike inference algorithms, quantified their performance against the ground-truth electrophysiology data, repeated the procedure for the real calcium fluorescence time series, and compared the accuracy of the inference processes in all cases. The \textit{true positive rate}, also known as the \textit{recall}, the \textit{sensitivity}, or the \textit{probability of detection} of spike inference varied across the three inference algorithms we tried (p value and statistical test here). The constrained non-negative matrix deconvolution algorithm  \parencite{pnevmatikakis} (CNMD algorithm) correctly detected approximately $45\%$ of the true spikes, the OASIS algorithm  \parencite{friedrich} correctly detected approximately $35\%$ of the true spikes, and the ML spike algorithm  \parencite{deneux} correctly detected approximately $15\%$ of the true spikes (see figure \ref{fig:three_algo_comparison}). Notably, for two of the three inference algorithms, the quality of inference was also fairly consistent for individual spike trains, not just the group means ($p > 0.05$, paired t-test). This demonstrates that the models were generating fluorescence time series that were similarly difficult to decode as the real data, in ways that were not specific to any one inference algorithm. This is evidence that the models captured real aspects of the spikes-to-fluorescence transform.
+\begin{figure}[h]
+\centering
+  \includegraphics[width=\textwidth]{figures/calcium_chapter/Figure2.png}
+  \caption{\\
+  A: Workflow to compare spike inference for real versus simulated fluorescence data.\\
+  B: True positive rates achieved by three different spike inference algorithms when applied to observed spike trains, and simulated spike trains. Data points overlaid as blue circles. The performance is similar from real and simulated data for each of the algorithms.}quantities
+  \label{fig:three_algo_comparison}
+\end{figure}
+
+\subsection{Relative effects of various buffers to the fluorescence signal}
+One of the benefits of computational models over laboratory experiments is that we can observe all the variables in the simulation to gain insight into the system’s dynamics, which can be difficult to do in the lab. We plotted the concentrations of the various species over time for a version of the model fit to one data set, in response to the same train of spikes used for fitting (figure \ref{fig:concentrations}). Figure \ref{fig:concentration_dynamics_a} shows the absolute values of the species concentrations, summed. Consistent with experimental estimates  \parencite{maravall}, only a small fraction ($\sim 0.1\%$) of calcium is free and unbound to any buffer. Of the bound calcium, the vast majority, ($\sim 96\%$) is bound to the GCaMP indicator. The two types of endogenous buffer are bound to the remaining calcium ($\sim 4\%$). An influx of calcium from a single spike adds very little to the total calcium, in relative terms (red line in Figure 3a).
+\begin{figure}[p]
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18.png}
+    \caption{}
+    \label{fig:concentration_dynamics_a}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png}
+    \caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png}
+    \caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png}
+    \caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png}
+    \caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png}
+    \caption{}
+  \end{subfigure}
+  \caption{\textbf{Calcium Buffering Dynamics } (a) The proportions of bound and free calcium concentrations within a cell, with the associated spike train. (b)-(f) The dynamics of the concentration of (b) excited indicator bound calcium, (c) indicator bound calcium, (d) immobile endogenous buffer bound calcium, (e) mobile endogenous buffer bound calcium, and (f) free calcium in response to an action potential at $\sim$23.2s.}
+  \label{fig:concentrations}
+\end{figure}
+
+% (New Figure 3X (Insert more commentary on this once the new figure is added))
+
+When calcium entered the model neuron it was rapidly buffered  \parencite{bartol}. However the relative fractions of which buffer molecules bound to the influxed calcium was dynamic, and changed over time . Figure \ref{fig:concentrations} (b-f) shows the time course of the various species over time in response to a calcium influx event from a single action potential. Crucially, the indicator $[BCa]$ competed with the endogenous buffers $[ImCa]$ and $[ECa]$ – all three bind calcium on similar timescales. This implies that the timecourse and amplitude of the $[BCa]$ variable will also depend on the binding rates and availabilities of the endogenous buffers. For example if we decreased the concentration of an endogenous buffer, we might expect both a faster rise time and greater peak amplitude of the $[BCa]$ signal in response to a calcium influx event. The slowest component of the decay had a similar time constant for $[BCa]$, $[ImCa]$ and $[ECa]$, which in turn matched the $[Ca]$ extrusion time constant in our model ($\sim 6.29 \times 10^{-22}$Ms$^{-1}$). This implies that the buffers and the indicator had reached a dynamic equilibrium and were jointly tracking the free calcium concentration as calcium was slowly extruded from the cell.
+
+Interestingly the excited bound calcium species ($[BCa^*]$) showed a qualitatively different timecourse in response to a calcium influx event. This concentration is subject to the added `excitation and release' dynamic, where a certain proportion of the concentration absorbs the energy from an incoming photon and goes into an `excited state' at each time step. A certain proportion of the concentration releases a photon and reverts to a `relaxed state' at each timestep also. This means that the excited bound calcium lags behind the bound calcium trace. We could think of the excited bound calcium trace as a low pass filtered version of the bound calcium trace.
+
+\subsection{Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}
+The above results imply that the fluorescence signal depends on the relative properties of both GCaMP and the endogenous buffers. We next used the model to directly ask how sensitive spike inference was to these components. We focused on three key parameters that likely vary from cell to cell and experiment to experiment: GCaMP binding kinetics, GCaMP concentration, and endogenous buffer concentration.
+
+Several variants of GCaMP itself have been made that differ in calcium binding kinetics, baseline fluorescence, fluorescence efficiency, and other factors. For example, GCaMP6f has a decay time constant of $\sim 1$s, while GCaMP6s has a decay time constant of $\sim 2$s  \parencite{chen}. Here we asked how these differences in binding kinetics affect spike inference. We jointly varied the calcium binding and unbinding rates of the indicator by the same factor over a range from $100$-fold slower to $100$-fold faster from the fitted values, and simulated the fluorescence response for each of the parameter settings in response to the same spike trains as before (figure \ref{fig:rates_perturbed}). Notably this manipulation does not affect the indicators affinity, and therefore would not affect steady-state responses to prolonged changes in calcium. Instead it is likely to affect its sensitivity to the spike train dynamics. We computed two summary measures from the simulated fluorescence traces: the signal-to-noise ratio for a single spike (Methods, section \ref{sec:snr}), and the accuracy of spike inference for each of the spike trains. We observed a reduction in the signal-to-noise ratio and the spike inference quality when we set the binding and unbinding rates were set to one hundredth of their fitted values, and to one tenth of their fitted values. When we increased the value of both binding rates, we observed no change in these measurements. The reduction in both rates lead to smaller increases in fluorescence in response to an action potential and a longer decay time (figure \ref{fig:rates_perturbed_fluorescence}), this caused the reduction in signal-to-noise ratio. As both rates were increased, the change in $\Delta F/F_0$ in response to an action potential increased and the decay time decreased slightly, but the fluorescence trace created by these values was very similar to the trace created by the fitted values.
+
+\begin{figure}[p]
+\centering
+    \begin{subfigure}{0.9\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png}
+        \caption{}
+        \label{fig:rates_perturbed_fluorescence}
+    \end{subfigure}
+    \newline
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/b_i_f_i_perturbed_snr.png}
+        \caption{}
+        \label{fig:rates_perturbed_snr}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png}
+        \caption{}
+        \label{fig:rates_perturbed_inference}
+    \end{subfigure}
+    \caption{(a) An example trace for each of the five pairs of values used for the binding and unbinding rates of the fluorescent calcium indicator. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed value pairs, and the experimental value. The SNRs for the value pairs perturbed downward are lower than that for the unperturbed value pair or the higher value pairs. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
+    \label{fig:rates_perturbed}
+\end{figure}
+
+\begin{figure}[p]
+    \centering
+    \begin{subfigure}{0.9\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png}
+        \caption{}
+        \label{fig:indicator_perturbed_fluorescence}
+    \end{subfigure}
+    \newline
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/indicator_perturbed_snr.png}
+        \caption{}
+        \label{fig:indicator_perturbed_snr}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png}
+        \caption{}
+        \label{fig:indicator_perturbed_inference}
+    \end{subfigure}
+    \caption{(a) An example trace for each of the five perturbed values for the concentration of fluorescent calcium indicator. The top two traces are produced by the lower perturbed values, the middle trace is produced by the experimental value, and the lowest two traces are produced when using the higher perturbed values. (b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. Extreme perturbations of the concentration either above or below the experimental level lowered the SNR. (c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values. We found that the algorithms performs equally badly on the two most extreme values, and performs equally well on the experimental value, and the next higher perturbed value.}
+    \label{fig:indicator_perturbed}
+\end{figure}
+
+Second, the overall concentrations of GCaMP often varies from cell to cell. For example different cells, even of the same type in the same tissue, can express different levels of GCaMP, due to proximity to the infection site, or the cell becoming `nuclear-filled' \parencite{tian, chen}. Also, GCaMP is often used for longitudinal experiments where the same cells are re-imaged across multiple days or weeks. However since GCaMP expression typically ramps up over time  \parencite{chen}, the accuracy of spike inference may differ across multiple longitudinal recordings in the same cell. We addressed this by varying the concentration of calcium indicator in the model, simulating spike trains and measuring signal-to-noise ratio and spike inference accuracy on the resulting fluorescence traces. Both increasing and decreasing the concentration of the indicator had effects on the fluorescence trace, signal-to-noise ratio, and spike inference. The signal-to-noise ratio and spike inference quality decreased with decreased indicator concentration, and both showed a decrease when the indicator concentration was increased to $100$ times its fitted value (figure \ref{fig:indicator_perturbed}). The signal-to-noise ratio showed an increase when the indicator concentration was increased to $10$ times its fitted value, but there was no corresponding change in the spike inference quality. The decrease in indicator concentration caused a reduction in the increase in $\Delta F/F_0$ in response to an action potential, and an increase in the decay time of this increase (figure \ref{fig:indicator_perturbed_fluorescence}). The increase in indicator concentration had the opposite effect, it casued an increase in the change in $\Delta F/F_0$ in response to an action potential, and a decrease in the decay time.
+
+Third, the concentration and types of endogenous calcium buffers also vary from neuron to neuron, both within and between cell types \parencite{bartol, maravall, neher}. Since the calcium buffer capacity of neurons is high, around 50-70 \parencite{lee} in excitatory hippocampal pyramidal cells, around 100-250 \parencite{lee} in inhibitory hippocampal pyramidal cells, and 900-200 in Purkinje cells (depending on the age of the subject), these endogenous buffers compete with GCaMP for binding to calcium, and variations in endogenous buffer concentration may affect GCaMP signal and therefore spike inference. To address this we varied the concentration of the endogenous buffer in the model neuron over five orders of magnitude from $0.8$ to $8000$ $\mu$M, simulated calcium fluorescence traces in response to the same set of spike trains, and performed spike inference on the resulting fluorescence time series. Increasing the endogenous buffer concentration had a substantial effect on the GCaMP fluorescence signal, both decreasing its amplitude and slowing its kinetics (figure \ref{fig:endogenous_perturbed}(a)). This corresponded with a decrease in both single-spike signal-to-noise ratio (figure \ref{fig:endogenous_perturbed}(b)) and spike inference accuracy (figure \ref{fig:endogenous_perturbed}(c)). In contrast, decreasing endogenous buffer capacity from the fitted value had little effect on either the GCaMP signal or spike inference (figure \ref{fig:endogenous_perturbed}).
+
+\begin{figure}[p]
+    \centering
+    \begin{subfigure}{0.9\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png}
+        \caption{}
+    \end{subfigure}
+    \newline
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/immobile_perturbed_snr.png}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png}
+        \caption{}
+    \end{subfigure}
+    \caption{(a) An example trace for each of the five perturbed values for the concentration of immobile endogenous buffer.	(b) The signal-to-noise ratio of the modelled fluorescence traces using each of the four perturbed values, and the experimental value. The lower values for the immobile buffer produce the same SNR as the experimental value. But the higher perturbed values produce fluorescence traces with a lower SNR.	(c) The true-positive rates of the deconvolution algorithm's predictions when inferring from the observed data, and inferring from modelled traces using the perturbed and experimental values.}
+    \label{fig:endogenous_perturbed}
+\end{figure}
+
+\subsection{Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}
+The fluorescence signal recorded from neurons using calcium indicators is typically much slower than changes in membrane potential for two reasons: first, because the calcium and the indicator have slow binding and unbinding kinetics, the signal is a low-pass filtered version of the membrane potential. Second, neuronal two-photon imaging experiments are often performed in scanning mode, which limits their frame rate to $\sim 10$Hz or slower. This implies that multiple spike events that occur close in time might be difficult to resolve from a calcium indicator time series. Many cells, especially several types of inhibitory interneurons, fire tonically at rates higher than $10$Hz. We used the model to test whether spike inference accuracy depended on the neuron’s firing frequency by driving the cell with spike trains sampled from a Poisson processes of varying frequency. We simulated a variable firing rate using an Ornstein-Uhlenbeck process, and simulated the spike trains using a Poisson distribution with its rate taken from this process. Because of the high frequency firing rate of these spike trains, we using the accuracy as the measure of spike inference quality. We simulated $30$ spike trains at average firing rate of $1$, $5$, and $10$Hz, and measured the spike inference quality of all these traces. Spike inference accuracy decreased with increasing firing rate, for up to $10$Hz Poisson spike trains (figure \ref{fig:frequency_comparison_measures}(left)). Although the accuracy remained above $90\%$ for each of the three frequencies. We also plotted the average $\Delta F/F_0$ as a function of stimulation firing rate. We found that it increased monotonically as a function of firing rate (figure \ref{fig:frequency_comparison_measures}(right)).
+
+We expected lower spike inference quality as the average spiking frequency increased. Since the fluorescence trace, in some sense, is a low pass filtered version of the spike train, a tightly packed groups of spikes will be more difficult to infer than isolated spikes. However, the increasing amplitude of the fluorescence trace with increasing frequency suggests that some spike inference algorithm could be developed based on this amplitude.
+
+\begin{figure}[h]
+  \includegraphics[width=0.329\linewidth]{figures/calcium_chapter/paper_fig_1_Hz_1_3.png}
+  \includegraphics[width=0.329\linewidth]{figures/calcium_chapter/paper_fig_5_Hz_1_2.png}
+  \includegraphics[width=0.329\linewidth]{figures/calcium_chapter/paper_fig_10_Hz_1_1.png}
+  \caption{\textbf{Simulating fluorescence traces at different firing rates } Example modelled traces created using simulated spike trains with a mean firing rate of $1$Hz (left column), $5$Hz (middle column), and $10$Hz (right column). Note the difference in amplitude with different mean firing rates.}
+  \label{fig:frequency_comparison_traces}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\linewidth]{figures/calcium_chapter/simulated_oasis_accuracy_paper.png}
+  \includegraphics[width=0.45\linewidth]{figures/calcium_chapter/mean_fluorescence_comparison.png}
+  \caption{\textbf{Inference quality and $\Delta F/F_0$ vs Firing rate} (left) The spike inference accuracy when applied to 30 traces created using simulated spike trains with mean firing rates of 1, 5, and 10 Hz. (right) The mean $\Delta F/F_0$ across those 30 traces for each frequency.}
+  \label{fig:frequency_comparison_measures}
+\end{figure}
+
+\section{Discussion}
+We designed a biophysical model for the changes in free calcium and bound calcium concentrations within a cell soma with a fluorescent calcium indicator. We used this model to model the fluorescence trace resulting from a spike train in this cell.  We fit the free parameters of the model by matching the power spectrum and amplitude of fluorescence traces with simultaneously measured spike trains. We inferred spikes from real fluorescence traces and modelled fluorescence traces, and measured the quality of the spike inference in both cases. We found that the spike inference quality was similar in both cases. We perturbed the concentration of the calcium buffers in the model, and the binding/unbinding rates of those buffers in the model, and measured the effect on the signal-to-noise ratio (SNR) of the modelled fluorescence traces and the spike inference quality.
+
+For the fluorescent calcium indicator, we found that any large perturbation away from the taken from the literature led to a reduction in SNR, and spike inference quality. For the binding/unbinding rates, we kept the ratio of these rates constant, but altered their values in parallel. The lower values caused a reduction in SNR, and a reduction in spike inference quality. For the endogenous buffer concentration, an increase above the experimental value caused a reduction in SNR and spike inference quality.
+
+Although the model produced visually similar time series to the real data, there were a few aspects it did not capture. First, the real data featured some low-frequency components that did not appear related to the spike events. These were not captured by the models we used in this study, but could be added in future by adding a suitable low-frequency term to the resulting time series. Second, the real data seemed to have some non-linearities not captured in the model, for example the response to two nearby spikes was greater than expected from the linear sum of two single spikes. This may be due to the co-operative binding of calmodulin to calcium, which gives calmodulin a supra-linear sensitivity to calcium concentration \parencite{faas}. The non-linear dynamics of this binding have been included in a recently developed spike inference model \parencite{greenberg}. Our model, in contrast, behaved much more linearly but could be extended in future to include such non-linearities. Third, in the real data the fluorescence peak amplitude seemed to vary from spike to spike, even for well-isolated spike events. Recent research has shown that calcium influx due to a single action potential was quite variable in pyramidal cells, and that this variability had a effect on spike inference \parencite{eltes}. However in our model we assumed each spike lead to the same fixed-amplitude injection of calcium to the cell, leading to much greater regularity in fluorescence peak amplitudes. This variability could be added in future versions of the model by making the injected calcium peak a random variable. Fourth, we modelled the soma as a single compartment, but in reality there is likely a non-uniform spatial profile of calcium concentration. This may matter because some endogenous buffers might access calcium right as it influxes from the extracellular space, whereas the majority of the fluorescence signal is more likely coming from the bulk of the cytoplasm. Future models could attempt to model these spatial dependencies to assess whether they affect the overall spike inference procedure.
+
+As well as the optimised parameters, the model has 14 fixed parameters than can be changed to simulate different types of calcium indicators. This model could be used to test the theoretical performance of proposed new types of calcium indicator. The model could also be used by developers of spike inference algorithms to test the effects of changing calcium indicator parameters on spike inference, or to test the affects of changing spiking characteristics on spike inference. For example, high firing rate vs low firing rate, or bursting vs no bursting. Given the increasing amplitude of the fluorescence trace with increasing mean firing rate, it would be possible to build a spike inference algorithm on this principle at least in part.
+
+Our model has already been used as a tool by our colleagues, for simulating fluorescence traces in response to cells that can fire with a continuous rate between $10$ and $20$Hz, but do not always do so. Our colleagues found that a combination of the amplitude and the variance of the simulated fluorescence trace was the best indicator of firing rate. For example, when a cell was not firing, the amplitude and variance of the fluorescence trace was relatively low. When the cell fired with a low firing rate $\sim 1$Hz, the mean amplitude was still low but the variance of the fluorescence trace was high, and for high firing rate $\sim 10-20$Hz, the fluorescence amplitude was high, and the variance was low. In this way, our model may be useful for investigating firing rates underlying real fluorescence traces in response to cells which can fire in these rage ranges.
+
+A recent paper by Greenberg et al (2018) described a biophysical model for spike train inference called the `Sequential binding model'. Their model for spike inference was similar to our model for fluorescence traces in that their model included parameters for two types of endogenous buffer. But this model also included dynamics for calcium binding to and unbinding from these endogenous buffers. Furthermore, this model included dynamics for calcium binding to and unbinding from the four binding sites present on a GCaMPs6 molecule. In the accuracy measurements specified in that paper, this model performed better than the MLspike algorithm, which is also partially a biophysically model, and it performed better than the constrained non-negative deconvolution algorithm. The sequential binding model also has biophysically interpretable parameters, and its fitted parameters for quantities such as buffering capacity and calcium influx upon action potential firing fall in line with experimental values \parencite{greenberg}. Biophysical models like this appear to be the way forward for spike inference algorithms, and would make a good complimentary tool to our fluorescence model.

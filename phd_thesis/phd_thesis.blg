@@ -7,12 +7,12 @@ A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
 A level-1 auxiliary file: Chapters/eight_probe.aux
 A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
 Case mismatch error between cite keys churchland and Churchland
----line 607 of file phd_thesis.aux
+---line 622 of file phd_thesis.aux
  : \citation{churchland
  :                     }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys churchland and Churchland
----line 618 of file phd_thesis.aux
+---line 633 of file phd_thesis.aux
  : \citation{churchland
  :                     }
 I'm skipping whatever remains of this command
@@ -32,105 +32,104 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 14035 items from 5000.
+Reallocated field_info (elt_size=4) to 14174 items from 5000.
 Database file #1: phd_thesis-blx.bib
 Database file #2: phd_bibliography.bib
 Warning--I'm ignoring tian's extra "note" field
---line 316 of file phd_bibliography.bib
+--line 301 of file phd_bibliography.bib
 Warning--I'm ignoring tian's extra "note" field
---line 317 of file phd_bibliography.bib
+--line 302 of file phd_bibliography.bib
 Warning--I'm ignoring tian's extra "url" field
---line 321 of file phd_bibliography.bib
+--line 306 of file phd_bibliography.bib
 Warning--I'm ignoring neher's extra "note" field
---line 337 of file phd_bibliography.bib
+--line 322 of file phd_bibliography.bib
 Warning--I'm ignoring neher's extra "url" field
---line 341 of file phd_bibliography.bib
+--line 326 of file phd_bibliography.bib
 Warning--I'm ignoring cohen1's extra "note" field
---line 404 of file phd_bibliography.bib
+--line 389 of file phd_bibliography.bib
 Warning--I'm ignoring cohen1's extra "note" field
---line 405 of file phd_bibliography.bib
+--line 390 of file phd_bibliography.bib
 Warning--I'm ignoring cohen1's extra "url" field
---line 409 of file phd_bibliography.bib
+--line 394 of file phd_bibliography.bib
 Warning--I'm ignoring Churchland's extra "note" field
---line 700 of file phd_bibliography.bib
+--line 660 of file phd_bibliography.bib
 Warning--I'm ignoring Churchland's extra "note" field
---line 701 of file phd_bibliography.bib
+--line 661 of file phd_bibliography.bib
 Warning--I'm ignoring Churchland's extra "url" field
---line 705 of file phd_bibliography.bib
+--line 665 of file phd_bibliography.bib
 Warning--I'm ignoring schneidman's extra "note" field
---line 835 of file phd_bibliography.bib
+--line 795 of file phd_bibliography.bib
 Warning--I'm ignoring schneidman's extra "note" field
---line 836 of file phd_bibliography.bib
+--line 796 of file phd_bibliography.bib
 Warning--I'm ignoring schneidman's extra "url" field
---line 840 of file phd_bibliography.bib
+--line 800 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "note" field
---line 883 of file phd_bibliography.bib
+--line 843 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "note" field
---line 884 of file phd_bibliography.bib
+--line 844 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "url" field
---line 888 of file phd_bibliography.bib
+--line 848 of file phd_bibliography.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--I'm ignoring shimazaki's extra "note" field
---line 1056 of file phd_bibliography.bib
+--line 1016 of file phd_bibliography.bib
 Warning--I'm ignoring shimazaki's extra "note" field
---line 1057 of file phd_bibliography.bib
+--line 1017 of file phd_bibliography.bib
 Warning--I'm ignoring shimazaki's extra "url" field
---line 1061 of file phd_bibliography.bib
+--line 1021 of file phd_bibliography.bib
 Warning--I'm ignoring zariwala's extra "note" field
---line 1137 of file phd_bibliography.bib
+--line 1097 of file phd_bibliography.bib
 Warning--I'm ignoring zariwala's extra "note" field
---line 1138 of file phd_bibliography.bib
+--line 1098 of file phd_bibliography.bib
 Warning--I'm ignoring zariwala's extra "url" field
---line 1142 of file phd_bibliography.bib
+--line 1102 of file phd_bibliography.bib
 Warning--I'm ignoring ouzounov's extra "note" field
---line 1169 of file phd_bibliography.bib
+--line 1129 of file phd_bibliography.bib
 Warning--I'm ignoring ouzounov's extra "note" field
---line 1170 of file phd_bibliography.bib
+--line 1130 of file phd_bibliography.bib
 Warning--I'm ignoring ouzounov's extra "url" field
---line 1174 of file phd_bibliography.bib
-Warning--I didn't find a database entry for "okun"
+--line 1134 of file phd_bibliography.bib
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 64 entries,
+You've used 66 entries,
             6304 wiz_defined-function locations,
-            1778 strings with 86731 characters,
-and the built_in function-call counts, 751973 in all, are:
-= -- 62673
-> -- 8952
-< -- 2200
-+ -- 20570
-- -- 3736
-* -- 60695
-:= -- 91395
+            1797 strings with 90053 characters,
+and the built_in function-call counts, 780825 in all, are:
+= -- 65184
+> -- 9207
+< -- 2240
++ -- 21333
+- -- 3857
+* -- 63155
+:= -- 95028
 add.period$ -- 0
-call.type$ -- 64
-change.case$ -- 1252
-chr.to.int$ -- 192
-cite$ -- 126
-duplicate$ -- 74217
-empty$ -- 65818
-format.name$ -- 6707
-if$ -- 146746
+call.type$ -- 66
+change.case$ -- 1274
+chr.to.int$ -- 188
+cite$ -- 130
+duplicate$ -- 76894
+empty$ -- 68389
+format.name$ -- 6944
+if$ -- 152322
 int.to.chr$ -- 0
-int.to.str$ -- 159
+int.to.str$ -- 163
 missing$ -- 0
-newline$ -- 4084
-num.names$ -- 3224
-pop$ -- 25567
+newline$ -- 4240
+num.names$ -- 3306
+pop$ -- 26418
 preamble$ -- 1
-purify$ -- 2034
+purify$ -- 2086
 quote$ -- 0
-skip$ -- 12410
+skip$ -- 12735
 stack$ -- 0
-substring$ -- 123609
-swap$ -- 15201
-text.length$ -- 1928
-text.prefix$ -- 65
+substring$ -- 128868
+swap$ -- 15721
+text.length$ -- 1981
+text.prefix$ -- 67
 top$ -- 1
-type$ -- 2164
+type$ -- 2232
 warning$ -- 0
-while$ -- 12162
+while$ -- 12620
 width$ -- 0
-write$ -- 4021
+write$ -- 4175
 (There were 2 error messages)
