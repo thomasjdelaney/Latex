@@ -2947,6 +2947,121 @@
     \field{year}{2017}
   \endentry
 
+  \entry{ouzounov}{article}{}
+    \name{author}{11}{}{%
+      {{hash=ODG}{%
+         family={Ouzounov},
+         familyi={O\bibinitperiod},
+         given={Dimitre\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Tianyu},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Mengran},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FDD}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Danielle\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HNG}{%
+         family={Horton},
+         familyi={H\bibinitperiod},
+         given={Nicholas\bibnamedelima G.},
+         giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=CHJC}{%
+         family={Cruz-Hern{\'a}ndez},
+         familyi={C\bibinithyphendelim H\bibinitperiod},
+         given={Jean\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=CYT}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Yu-Ting},
+         giveni={Y\bibinithyphendelim T\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Reimer},
+         familyi={R\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TAS}{%
+         family={Tolias},
+         familyi={T\bibinitperiod},
+         given={Andreas\bibnamedelima S.},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NN}{%
+         family={Nishimura},
+         familyi={N\bibinitperiod},
+         given={Nozomi},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=XC}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{Animals; Brain/*cytology/physiology; Calmodulin/analysis/metabolism;
+  Green Fluorescent Proteins/analysis/genetics/metabolism;
+  Hippocampus/cytology/physiology; Male; Mice, Inbred C57BL; Mice, Transgenic;
+  Microscopy, Fluorescence, Multiphoton/*methods; Neurons/*physiology;
+  Recombinant Fusion Proteins/analysis/metabolism; Recombinant
+  Proteins/analysis/genetics/metabolism}
+    \strng{namehash}{ODG+1}
+    \strng{fullhash}{ODGWTWMFDDHNGCHJCCYTRJTASNNXC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    High-resolution optical imaging is critical to understanding brain
+  function. We demonstrate that three-photon microscopy at 1,300-nm excitation
+  enables functional imaging of GCaMP6s-labeled neurons beyond the depth limit
+  of two-photon microscopy. We record spontaneous activity from up to 150
+  neurons in the hippocampal stratum pyramidale at ∼1-mm depth within an
+  intact mouse brain. Our method creates opportunities for noninvasive
+  recording of neuronal activity with high spatial and temporal resolution deep
+  within scattering brain tissues.%
+    }
+    \verb{doi}
+    \verb 10.1038/nmeth.4183
+    \endverb
+    \field{edition}{2017/02/20}
+    \field{issn}{1548-7105}
+    \field{note}{28218900[pmid]}
+    \field{number}{4}
+    \field{pages}{388\bibrangedash 390}
+    \field{title}{In vivo three-photon imaging of activity of GCaMP6-labeled
+  neurons deep in intact mouse brain}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/28218900
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Nature methods}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{patterson}{article}{}
     \name{author}{5}{}{%
       {{hash=PCA}{%
@@ -3557,6 +3672,145 @@
     \field{year}{2012}
   \endentry
 
+  \entry{staude}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=SB}{%
+         family={Staude},
+         familyi={S\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gr{\"u}n},
+         familyi={G\bibinitperiod},
+         given={Sonja},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rotter},
+         familyi={R\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=GS}{%
+         family={Gr{\"u}n},
+         familyi={G\bibinitperiod},
+         given={Sonja},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rotter},
+         familyi={R\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \strng{namehash}{SBGSRS1}
+    \strng{fullhash}{SBGSRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Recent advances in electrophysiological and imaging techniques have
+  highlighted the need for correlation measures that go beyond simple pairwise
+  analyses. In this chapter, we discuss cumulant correlations as natural and
+  intuitive higher-order generalizations of the covariance. In particular, we
+  show how cumulant correlations fit to a frequently used additive model of
+  correlation, an idea that mimics correlations among spike trains that
+  originate from overlapping input pools. Finally, we compare the cumulant
+  correlations to the interaction parameters of the well-known exponential
+  family by computing the respective parameters for two different models. We
+  find that the different frameworks measure entirely different aspects, so
+  that populations can have higher-order correlations in one framework but none
+  in the other.%
+    }
+    \field{booktitle}{Analysis of Parallel Spike Trains}
+    \verb{doi}
+    \verb 10.1007/978-1-4419-5675-0_12
+    \endverb
+    \field{isbn}{978-1-4419-5675-0}
+    \field{pages}{253\bibrangedash 280}
+    \field{title}{Higher-Order Correlations and Cumulants}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-1-4419-5675-0_12
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{von_stein}{article}{}
+    \name{author}{2}{}{%
+      {{hash=vSA}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Stein},
+         familyi={S\bibinitperiod},
+         given={Astrid},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sarnthein},
+         familyi={S\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Synchronization, Oscillation, Interaction, Top-down, Attention,
+  Imagery, Memory, Semantics}
+    \strng{namehash}{SAvSJ1}
+    \strng{fullhash}{SAvSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Cortical activity and perception are not driven by the external stimulus
+  alone; rather sensory information has to be integrated with various other
+  internal constraints such as expectations, recent memories, planned actions,
+  etc. The question is how large scale integration over many remote and
+  size-varying processes might be performed by the brain. We have conducted a
+  series of EEG recordings during processes thought to involve neuronal
+  assemblies of varying complexity. While local synchronization during visual
+  processing evolved in the gamma frequency range, synchronization between
+  neighboring temporal and parietal cortex during multimodal semantic
+  processing evolved in a lower, the beta1 (12–18 Hz) frequency range, and
+  long range fronto-parietal interactions during working memory retention and
+  mental imagery evolved in the theta and alpha (4–8 Hz, 8–12 Hz) frequency
+  range. Thus, a relationship seems to exist between the extent of functional
+  integration and the synchronization-frequency. In particular, long-range
+  interactions in the alpha and theta ranges seem specifically involved in
+  processing of internal mental context, i.e. for top-down processing. We
+  propose that large scale integration is performed by synchronization among
+  neurons and neuronal assemblies evolving in different frequency ranges.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0167-8760(00)00172-0
+    \endverb
+    \field{issn}{0167-8760}
+    \field{number}{3}
+    \field{pages}{301 \bibrangedash  313}
+    \field{title}{Different frequencies for different scales of cortical
+  integration: from local gamma to long range alpha/theta synchronization}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0167876000001720
+    \endverb
+    \field{volume}{38}
+    \field{journaltitle}{International Journal of Psychophysiology}
+    \field{year}{2000}
+  \endentry
+
   \entry{steinmetz}{misc}{}
     \name{author}{3}{}{%
       {{hash=SN}{%
@@ -3599,6 +3853,60 @@
     \endverb
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{steinmetz2019}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SN}{%
+         family={Steinmetz},
+         familyi={S\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pachitariu},
+         familyi={P\bibinitperiod},
+         given={Marius},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Stringer},
+         familyi={S\bibinitperiod},
+         given={Carsen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Carandini},
+         familyi={C\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SN+1}
+    \strng{fullhash}{SNPMSCCMHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25378/janelia.7739750.v4
+    \endverb
+    \field{title}{{Eight-probe Neuropixels recordings during spontaneous
+  behaviors}}
+    \verb{url}
+    \verb https://janelia.figshare.com/articles/Eight-probe_Neuropixels_recordi
+    \verb ngs_during_spontaneous_behaviors/7739750
+    \endverb
+    \field{month}{03}
+    \field{year}{2019}
   \endentry
 
   \entry{stringer}{article}{}

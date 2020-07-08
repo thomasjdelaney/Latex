@@ -22,7 +22,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 13062 items from 5000.
+Reallocated field_info (elt_size=4) to 13618 items from 5000.
 Database file #1: phd_thesis-blx.bib
 Database file #2: phd_bibliography.bib
 Warning--I'm ignoring tian's extra "note" field
@@ -54,66 +54,72 @@ Warning--I'm ignoring schneidman's extra "note" field
 Warning--I'm ignoring schneidman's extra "url" field
 --line 840 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "note" field
---line 874 of file phd_bibliography.bib
+--line 883 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "note" field
---line 875 of file phd_bibliography.bib
+--line 884 of file phd_bibliography.bib
 Warning--I'm ignoring tkacik's extra "url" field
---line 879 of file phd_bibliography.bib
+--line 888 of file phd_bibliography.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--I'm ignoring shimazaki's extra "note" field
---line 1047 of file phd_bibliography.bib
+--line 1056 of file phd_bibliography.bib
 Warning--I'm ignoring shimazaki's extra "note" field
---line 1048 of file phd_bibliography.bib
+--line 1057 of file phd_bibliography.bib
 Warning--I'm ignoring shimazaki's extra "url" field
---line 1052 of file phd_bibliography.bib
+--line 1061 of file phd_bibliography.bib
 Warning--I'm ignoring zariwala's extra "note" field
---line 1128 of file phd_bibliography.bib
+--line 1137 of file phd_bibliography.bib
 Warning--I'm ignoring zariwala's extra "note" field
---line 1129 of file phd_bibliography.bib
+--line 1138 of file phd_bibliography.bib
 Warning--I'm ignoring zariwala's extra "url" field
---line 1133 of file phd_bibliography.bib
+--line 1142 of file phd_bibliography.bib
+Warning--I'm ignoring ouzounov's extra "note" field
+--line 1169 of file phd_bibliography.bib
+Warning--I'm ignoring ouzounov's extra "note" field
+--line 1170 of file phd_bibliography.bib
+Warning--I'm ignoring ouzounov's extra "url" field
+--line 1174 of file phd_bibliography.bib
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 58 entries,
+You've used 62 entries,
             6304 wiz_defined-function locations,
-            1719 strings with 80398 characters,
-and the built_in function-call counts, 685631 in all, are:
-= -- 57208
-> -- 8107
-< -- 1943
-+ -- 18827
-- -- 3402
-* -- 55416
-:= -- 83683
+            1760 strings with 84983 characters,
+and the built_in function-call counts, 730805 in all, are:
+= -- 60888
+> -- 8663
+< -- 2078
++ -- 20072
+- -- 3646
+* -- 59119
+:= -- 89158
 add.period$ -- 0
-call.type$ -- 58
-change.case$ -- 1089
-chr.to.int$ -- 182
-cite$ -- 114
-duplicate$ -- 67673
-empty$ -- 59968
-format.name$ -- 6124
-if$ -- 133601
+call.type$ -- 62
+change.case$ -- 1157
+chr.to.int$ -- 186
+cite$ -- 122
+duplicate$ -- 72256
+empty$ -- 63910
+format.name$ -- 6545
+if$ -- 142381
 int.to.chr$ -- 0
-int.to.str$ -- 141
+int.to.str$ -- 153
 missing$ -- 0
-newline$ -- 3712
-num.names$ -- 2866
-pop$ -- 23223
+newline$ -- 3976
+num.names$ -- 3064
+pop$ -- 24825
 preamble$ -- 1
-purify$ -- 1808
+purify$ -- 1923
 quote$ -- 0
-skip$ -- 11121
+skip$ -- 11879
 stack$ -- 0
-substring$ -- 113036
-swap$ -- 13761
-text.length$ -- 1745
-text.prefix$ -- 59
+substring$ -- 120171
+swap$ -- 14729
+text.length$ -- 1874
+text.prefix$ -- 63
 top$ -- 1
-type$ -- 1960
+type$ -- 2096
 warning$ -- 0
-while$ -- 11147
+while$ -- 11892
 width$ -- 0
-write$ -- 3655
-(There were 23 warnings)
+write$ -- 3915
+(There were 26 warnings)

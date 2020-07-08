@@ -1,0 +1,46 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Ouzounov, Dimitre G
+AU  - Wang, Tianyu
+AU  - Wang, Mengran
+AU  - Feng, Danielle D
+AU  - Horton, Nicholas G
+AU  - Cruz-Hernández, Jean C
+AU  - Cheng, Yu-Ting
+AU  - Reimer, Jacob
+AU  - Tolias, Andreas S
+AU  - Nishimura, Nozomi
+AU  - Xu, Chris
+T1  - In vivo three-photon imaging of activity of GCaMP6-labeled neurons deep in intact mouse brain
+LA  - eng
+SN  - 1548-7105
+SN  - 1548-7091
+Y1  - 2017/04/
+ET  - 2017/02/20
+AB  - High-resolution optical imaging is critical to understanding brain function. We demonstrate that three-photon microscopy at 1,300-nm excitation enables functional imaging of GCaMP6s-labeled neurons beyond the depth limit of two-photon microscopy. We record spontaneous activity from up to 150 neurons in the hippocampal stratum pyramidale at ∼1-mm depth within an intact mouse brain. Our method creates opportunities for noninvasive recording of neuronal activity with high spatial and temporal resolution deep within scattering brain tissues.
+SP  - 388
+EP  - 390
+VL  - 14
+IS  - 4
+AN  - 28218900
+UR  - https://pubmed.ncbi.nlm.nih.gov/28218900
+DO  - 10.1038/nmeth.4183
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6441362/
+U1  - 28218900[pmid]
+U2  - PMC6441362[pmcid]
+U4  - nmeth.4183[PII]
+J2  - Nat Methods
+JF  - Nature methods
+KW  - Animals
+KW  - Brain/*cytology/physiology
+KW  - Calmodulin/analysis/metabolism
+KW  - Green Fluorescent Proteins/analysis/genetics/metabolism
+KW  - Hippocampus/cytology/physiology
+KW  - Male
+KW  - Mice, Inbred C57BL
+KW  - Mice, Transgenic
+KW  - Microscopy, Fluorescence, Multiphoton/*methods
+KW  - Neurons/*physiology
+KW  - Recombinant Fusion Proteins/analysis/metabolism
+KW  - Recombinant Proteins/analysis/genetics/metabolism
+ER  - 
