@@ -6,6 +6,16 @@ A level-1 auxiliary file: Chapters/introduction.aux
 A level-1 auxiliary file: Chapters/calcium_imaging_model_paper.aux
 A level-1 auxiliary file: Chapters/eight_probe.aux
 A level-1 auxiliary file: Chapters/conway_maxwell_hierarchical_model.aux
+Case mismatch error between cite keys churchland and Churchland
+---line 607 of file phd_thesis.aux
+ : \citation{churchland
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys churchland and Churchland
+---line 618 of file phd_thesis.aux
+ : \citation{churchland
+ :                     }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/small_chapter.aux
 A level-1 auxiliary file: Chapters/discussion.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -22,7 +32,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 13618 items from 5000.
+Reallocated field_info (elt_size=4) to 14035 items from 5000.
 Database file #1: phd_thesis-blx.bib
 Database file #2: phd_bibliography.bib
 Warning--I'm ignoring tian's extra "note" field
@@ -41,11 +51,11 @@ Warning--I'm ignoring cohen1's extra "note" field
 --line 405 of file phd_bibliography.bib
 Warning--I'm ignoring cohen1's extra "url" field
 --line 409 of file phd_bibliography.bib
-Warning--I'm ignoring churchland's extra "note" field
+Warning--I'm ignoring Churchland's extra "note" field
 --line 700 of file phd_bibliography.bib
-Warning--I'm ignoring churchland's extra "note" field
+Warning--I'm ignoring Churchland's extra "note" field
 --line 701 of file phd_bibliography.bib
-Warning--I'm ignoring churchland's extra "url" field
+Warning--I'm ignoring Churchland's extra "url" field
 --line 705 of file phd_bibliography.bib
 Warning--I'm ignoring schneidman's extra "note" field
 --line 835 of file phd_bibliography.bib
@@ -78,48 +88,49 @@ Warning--I'm ignoring ouzounov's extra "note" field
 --line 1170 of file phd_bibliography.bib
 Warning--I'm ignoring ouzounov's extra "url" field
 --line 1174 of file phd_bibliography.bib
+Warning--I didn't find a database entry for "okun"
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 62 entries,
+You've used 64 entries,
             6304 wiz_defined-function locations,
-            1760 strings with 84983 characters,
-and the built_in function-call counts, 730805 in all, are:
-= -- 60888
-> -- 8663
-< -- 2078
-+ -- 20072
-- -- 3646
-* -- 59119
-:= -- 89158
+            1778 strings with 86731 characters,
+and the built_in function-call counts, 751973 in all, are:
+= -- 62673
+> -- 8952
+< -- 2200
++ -- 20570
+- -- 3736
+* -- 60695
+:= -- 91395
 add.period$ -- 0
-call.type$ -- 62
-change.case$ -- 1157
-chr.to.int$ -- 186
-cite$ -- 122
-duplicate$ -- 72256
-empty$ -- 63910
-format.name$ -- 6545
-if$ -- 142381
+call.type$ -- 64
+change.case$ -- 1252
+chr.to.int$ -- 192
+cite$ -- 126
+duplicate$ -- 74217
+empty$ -- 65818
+format.name$ -- 6707
+if$ -- 146746
 int.to.chr$ -- 0
-int.to.str$ -- 153
+int.to.str$ -- 159
 missing$ -- 0
-newline$ -- 3976
-num.names$ -- 3064
-pop$ -- 24825
+newline$ -- 4084
+num.names$ -- 3224
+pop$ -- 25567
 preamble$ -- 1
-purify$ -- 1923
+purify$ -- 2034
 quote$ -- 0
-skip$ -- 11879
+skip$ -- 12410
 stack$ -- 0
-substring$ -- 120171
-swap$ -- 14729
-text.length$ -- 1874
-text.prefix$ -- 63
+substring$ -- 123609
+swap$ -- 15201
+text.length$ -- 1928
+text.prefix$ -- 65
 top$ -- 1
-type$ -- 2096
+type$ -- 2164
 warning$ -- 0
-while$ -- 11892
+while$ -- 12162
 width$ -- 0
-write$ -- 3915
-(There were 26 warnings)
+write$ -- 4021
+(There were 2 error messages)

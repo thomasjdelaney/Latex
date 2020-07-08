@@ -683,6 +683,94 @@
     \field{year}{2012}
   \endentry
 
+  \entry{buccino}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BAP}{%
+         family={Buccino},
+         familyi={B\bibinitperiod},
+         given={Alessio\bibnamedelima P.},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HCL}{%
+         family={Hurwitz},
+         familyi={H\bibinitperiod},
+         given={Cole\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Magland},
+         familyi={M\bibinitperiod},
+         given={Jeremy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Garcia},
+         familyi={G\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJH}{%
+         family={Siegle},
+         familyi={S\bibinitperiod},
+         given={Joshua\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hurwitz},
+         familyi={H\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HMH}{%
+         family={Hennig},
+         familyi={H\bibinitperiod},
+         given={Matthias\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cold Spring Harbor Laboratory}%
+    }
+    \strng{namehash}{BAP+1}
+    \strng{fullhash}{BAPHCLMJGSSJHHRHMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Given the importance of understanding single-neuron activity, much
+  development has been directed towards improving the performance and
+  automation of spike sorting. These developments, however, introduce new
+  challenges, such as file format incompatibility and reduced interoperability,
+  that hinder benchmarking and preclude reproducible analysis. To address these
+  limitations, we developed SpikeInterface, a Python framework designed to
+  unify preexisting spike sorting technologies into a single codebase and to
+  standardize extracellular data file operations. With a few lines of code and
+  regardless of the underlying data format, researchers can: run, compare, and
+  benchmark most modern spike sorting algorithms; pre-process, post-process,
+  and visualize extracellular datasets; validate, curate, and export sorting
+  outputs; and more. In this paper, we provide an overview of SpikeInterface
+  and, with applications to both real and simulated extracellular datasets,
+  demonstrate how it can improve the accessibility, reliability, and
+  reproducibility of spike sorting in preparation for the widespread use of
+  large-scale electrophysiology.%
+    }
+    \verb{doi}
+    \verb 10.1101/796599
+    \endverb
+    \verb{eprint}
+    \verb https://www.biorxiv.org/content/early/2019/10/07/796599.full.pdf
+    \endverb
+    \field{title}{SpikeInterface, a unified framework for spike sorting}
+    \verb{url}
+    \verb https://www.biorxiv.org/content/early/2019/10/07/796599
+    \endverb
+    \field{journaltitle}{bioRxiv}
+    \field{year}{2019}
+  \endentry
+
   \entry{chen}{article}{}
     \name{author}{12}{}{%
       {{hash=CTW}{%
@@ -783,7 +871,7 @@
     \field{year}{2013}
   \endentry
 
-  \entry{churchland}{article}{}
+  \entry{Churchland}{article}{}
     \name{author}{26}{}{%
       {{hash=CMM}{%
          family={Churchland},
@@ -2354,6 +2442,42 @@
     \field{journaltitle}{Nature}
     \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{kadane_2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJB}{%
+         family={Kadane},
+         familyi={K\bibinitperiod},
+         given={Joseph\bibnamedelima B.},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Society for Bayesian Analysis}%
+    }
+    \strng{namehash}{KJB1}
+    \strng{fullhash}{KJB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1214/15-BA955
+    \endverb
+    \field{number}{2}
+    \field{pages}{403\bibrangedash 420}
+    \field{title}{Sums of Possibly Associated Bernoulli Variables: The
+  Conway–Maxwell-Binomial Distribution}
+    \verb{url}
+    \verb https://doi.org/10.1214/15-BA955
+    \endverb
+    \field{volume}{11}
+    \field{journaltitle}{Bayesian Anal.}
+    \field{month}{06}
+    \field{year}{2016}
   \endentry
 
   \entry{kilhoffer}{article}{}
@@ -4584,7 +4708,7 @@
     \strng{fullhash}{WCMLEVGMSAG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{"2009"}
+    \field{labelyear}{2009}
     \field{labeldatesource}{year}
     \field{sortinit}{W}
     \field{sortinithash}{W}
@@ -4619,7 +4743,7 @@
     \endverb
     \field{volume}{"61"}
     \field{journaltitle}{"Neuron"}
-    \field{year}{"2009"}
+    \field{year}{2009}
   \endentry
 
   \entry{zariwala}{article}{}
