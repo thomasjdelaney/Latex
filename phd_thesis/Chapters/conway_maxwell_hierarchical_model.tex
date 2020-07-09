@@ -84,7 +84,7 @@ Two `Phase3' Neuropixels  \parencite{jun} electrode arrays were inserted into th
     \begin{align}\label{eq:fano_factor}
       F = \frac{\sigma^2}{\mu}
     \end{align}
-    We measured the Fano factor of the spike count of a given cell by measuring the mean and variance of the spike count across trials, and taking the ratio of those two quantities. When calculated in this way the Fano factor can be used as a measure of neural variability that controls for changes in the firing rate.  This is similar to the calculation used in \parencite{churchland}.
+    We measured the Fano factor of the spike count of a given cell by measuring the mean and variance of the spike count across trials, and taking the ratio of those two quantities. When calculated in this way the Fano factor can be used as a measure of neural variability that controls for changes in the firing rate.  This is similar to the calculation used in \parencite{Churchland}.
 
     \subsection{Probability Distributions suitable for modelling ensemble activity}
 
@@ -367,7 +367,7 @@ We defined a neuron as \textit{active} in a time bin if it fires at least one sp
   \end{figure}
 
   \subsection{Replicating stimulus related quenching of neural variability}
-  Churchland et al. (2010) inspected the effect of a stimulus on neural variability. One of the measures of neural variability that they employed was the Fano factor of the spike counts of individual cells (see section \ref{sec:fano_factor}). They found a reduction in neural variability as measured by the Fano factor in various cortical areas in a macaque at the onset of various visual stimuli, or a juice reward \parencite{churchland}.
+  Churchland et al. (2010) inspected the effect of a stimulus on neural variability. One of the measures of neural variability that they employed was the Fano factor of the spike counts of individual cells (see section \ref{sec:fano_factor}). They found a reduction in neural variability as measured by the Fano factor in various cortical areas in a macaque at the onset of various visual stimuli, or a juice reward \parencite{Churchland}.
 
   We measured the Fano factor of the spike count of each cell in each brain region, during each trial. We measured the mean and standard error of these Fano factors from $500$ms before stimulus onset until $1000$ms after stimulus end. For the primary visual cortex, we found a transient reduction in the Fano factor immediately after stimulus onset. We used a Mann-Whitney U test to check that the Fano factors measured in a window starting at stimulus onset and ending $100$ms later were significantly lower than the factors measured in a window ending at stimulus onset ($p < 0.001$, see figure \ref{fig:v1_1ms_fano_factor}). We did not get this statistically significant result in any other region.
 
