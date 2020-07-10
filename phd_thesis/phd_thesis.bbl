@@ -1463,6 +1463,71 @@
     \field{year}{2016}
   \endentry
 
+  \entry{dombeck}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DDA}{%
+         family={Dombeck},
+         familyi={D\bibinitperiod},
+         given={Daniel\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HCD}{%
+         family={Harvey},
+         familyi={H\bibinitperiod},
+         given={Christopher\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LLL}{%
+         family={Looger},
+         familyi={L\bibinitperiod},
+         given={Loren\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=TDW}{%
+         family={Tank},
+         familyi={T\bibinitperiod},
+         given={David\bibnamedelima W.},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DDA+1}
+    \strng{fullhash}{DDAHCDTLLLLTDW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Dombeck and colleagues describe a method for two-photon calcium imaging
+  using a genetically encoded indicator in the hippocampus of awake, behaving
+  mice. This powerful approach permits the recording of multiple hippocampal
+  place cells' activity with subcellular resolution as the mice run on a track
+  in a virtual reality environment.%
+    }
+    \verb{doi}
+    \verb 10.1038/nn.2648
+    \endverb
+    \field{issn}{1546-1726}
+    \field{number}{11}
+    \field{pages}{1433\bibrangedash 1440}
+    \field{title}{Functional imaging of hippocampal place cells at cellular
+  resolution during virtual navigation}
+    \verb{url}
+    \verb https://doi.org/10.1038/nn.2648
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Nature Neuroscience}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{faas}{article}{}
     \name{author}{4}{}{%
       {{hash=FGC}{%

@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Stevenson, Ian H
+AU  - Kording, Konrad P
+PY  - 2011
+DA  - 2011/02/01
+TI  - How advances in neural recording affect data analysis
+JO  - Nature Neuroscience
+SP  - 139
+EP  - 142
+VL  - 14
+IS  - 2
+AB  - Progress in neural recording techniques has allowed the number of simultaneously recorded neurons to double approximately every 7 years, mimicking Moore's law. Emerging data analysis techniques should consider both the computational costs and the potential for more accurate models associated with this exponential growth of the number of recorded neurons.
+SN  - 1546-1726
+UR  - https://doi.org/10.1038/nn.2731
+DO  - 10.1038/nn.2731
+ID  - Stevenson2011
+ER  - 
