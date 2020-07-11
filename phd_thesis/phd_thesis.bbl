@@ -1528,6 +1528,91 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{eltes}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ET}{%
+         family={\'{E}ltes},
+         familyi={E\bibinitperiod},
+         given={TÃ­mea},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Szoboszlay},
+         familyi={S\bibinitperiod},
+         given={Miklos},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KSK}{%
+         family={Kerti-Szigeti},
+         familyi={K\bibinithyphendelim S\bibinitperiod},
+         given={Katalin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NZ}{%
+         family={Nusser},
+         familyi={N\bibinitperiod},
+         given={Zoltan},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \keyw{two-photon imaging, GCaMP6, in vitro electrophysiology,
+  immunohistochemistry, spike inference, mouse}
+    \strng{namehash}{ET+1}
+    \strng{fullhash}{ETSMKSKNZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    Key points The amplitude of unitary, single action potential-evoked [Ca2+]
+  transients negatively correlates with GCaMP6f expression, but displays large
+  variability among hippocampal pyramidal cells with similarly low expression
+  levels. The summation of fluorescence signals is frequency-dependent,
+  supralinear and also shows remarkable cell-to-cell variability. The main
+  source of spike inference error is variability in the peak amplitude, and not
+  in the decay or supralinearity. We developed two procedures to estimate the
+  peak amplitudes of unitary [Ca2+] transients and show that spike inference
+  performed with MLspike using these unitary amplitude estimates in weakly
+  GCaMP6f-expressing cells results in error rates of âˆ¼5\%. Abstract
+  Investigating neuronal activity using genetically encoded Ca2+ indicators in
+  behaving animals is hampered by inaccuracies in spike inference from
+  fluorescent tracers. Here we combine two-photon [Ca2+] imaging with
+  cell-attached recordings, followed by post hoc determination of the
+  expression level of GCaMP6f, to explore how it affects the amplitude,
+  kinetics and temporal summation of somatic [Ca2+] transients in mouse
+  hippocampal pyramidal cells (PCs). The amplitude of unitary [Ca2+] transients
+  (evoked by a single action potential) negatively correlates with GCaMP6f
+  expression, but displays large variability even among PCs with similarly low
+  expression levels. The summation of fluorescence signals is
+  frequency-dependent, supralinear and also shows remarkable cell-to-cell
+  variability. We performed experimental data-based simulations and found that
+  spike inference error rates using MLspike depend strongly on unitary peak
+  amplitudes and GCaMP6f expression levels. We provide simple methods for
+  estimating the unitary [Ca2+] transients in individual weakly
+  GCaMP6f-expressing PCs, with which we achieve spike inference error rates of
+  âˆ¼5\%.%
+    }
+    \verb{doi}
+    \verb 10.1113/JP277681
+    \endverb
+    \verb{eprint}
+    \verb https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/JP277681
+    \endverb
+    \field{number}{11}
+    \field{pages}{2925\bibrangedash 2947}
+    \field{title}{Improved spike inference accuracy by estimating the peak
+  amplitude of unitary [Ca2+] transients in weakly GCaMP6f-expressing
+  hippocampal pyramidal cells}
+    \verb{url}
+    \verb https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/JP277681
+    \endverb
+    \field{volume}{597}
+    \field{journaltitle}{The Journal of Physiology}
+    \field{year}{2019}
+  \endentry
+
   \entry{faas}{article}{}
     \name{author}{4}{}{%
       {{hash=FGC}{%
@@ -4272,6 +4357,52 @@
     \field{year}{2019}
   \endentry
 
+  \entry{stevenson}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SIH}{%
+         family={Stevenson},
+         familyi={S\bibinitperiod},
+         given={Ian\bibnamedelima H.},
+         giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KKP}{%
+         family={Kording},
+         familyi={K\bibinitperiod},
+         given={Konrad\bibnamedelima P.},
+         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SIHKKP1}
+    \strng{fullhash}{SIHKKP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Progress in neural recording techniques has allowed the number of
+  simultaneously recorded neurons to double approximately every 7 years,
+  mimicking Moore's law. Emerging data analysis techniques should consider both
+  the computational costs and the potential for more accurate models associated
+  with this exponential growth of the number of recorded neurons.%
+    }
+    \verb{doi}
+    \verb 10.1038/nn.2731
+    \endverb
+    \field{issn}{1546-1726}
+    \field{number}{2}
+    \field{pages}{139\bibrangedash 142}
+    \field{title}{How advances in neural recording affect data analysis}
+    \verb{url}
+    \verb https://doi.org/10.1038/nn.2731
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Nature Neuroscience}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{stringer}{article}{}
     \name{author}{6}{}{%
       {{hash=SC}{%
@@ -5132,91 +5263,6 @@
     \field{volume}{67}
     \field{journaltitle}{Journal of the Royal Statistical Society, Series B}
     \field{year}{2005}
-  \endentry
-
-  \entry{eltes}{article}{}
-    \name{author}{4}{}{%
-      {{hash=ÃT}{%
-         family={Ã‰ltes},
-         familyi={Ã\bibinitperiod},
-         given={TÃ­mea},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Szoboszlay},
-         familyi={S\bibinitperiod},
-         given={Miklos},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KSK}{%
-         family={Kerti-Szigeti},
-         familyi={K\bibinithyphendelim S\bibinitperiod},
-         given={Katalin},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=NZ}{%
-         family={Nusser},
-         familyi={N\bibinitperiod},
-         given={Zoltan},
-         giveni={Z\bibinitperiod},
-      }}%
-    }
-    \keyw{two-photon imaging, GCaMP6, in vitro electrophysiology,
-  immunohistochemistry, spike inference, mouse}
-    \strng{namehash}{ÃT+1}
-    \strng{fullhash}{ÃTSMKSKNZ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{year}
-    \field{sortinit}{Ã}
-    \field{sortinithash}{Ã}
-    \field{abstract}{%
-    Key points The amplitude of unitary, single action potential-evoked [Ca2+]
-  transients negatively correlates with GCaMP6f expression, but displays large
-  variability among hippocampal pyramidal cells with similarly low expression
-  levels. The summation of fluorescence signals is frequency-dependent,
-  supralinear and also shows remarkable cell-to-cell variability. The main
-  source of spike inference error is variability in the peak amplitude, and not
-  in the decay or supralinearity. We developed two procedures to estimate the
-  peak amplitudes of unitary [Ca2+] transients and show that spike inference
-  performed with MLspike using these unitary amplitude estimates in weakly
-  GCaMP6f-expressing cells results in error rates of âˆ¼5\%. Abstract
-  Investigating neuronal activity using genetically encoded Ca2+ indicators in
-  behaving animals is hampered by inaccuracies in spike inference from
-  fluorescent tracers. Here we combine two-photon [Ca2+] imaging with
-  cell-attached recordings, followed by post hoc determination of the
-  expression level of GCaMP6f, to explore how it affects the amplitude,
-  kinetics and temporal summation of somatic [Ca2+] transients in mouse
-  hippocampal pyramidal cells (PCs). The amplitude of unitary [Ca2+] transients
-  (evoked by a single action potential) negatively correlates with GCaMP6f
-  expression, but displays large variability even among PCs with similarly low
-  expression levels. The summation of fluorescence signals is
-  frequency-dependent, supralinear and also shows remarkable cell-to-cell
-  variability. We performed experimental data-based simulations and found that
-  spike inference error rates using MLspike depend strongly on unitary peak
-  amplitudes and GCaMP6f expression levels. We provide simple methods for
-  estimating the unitary [Ca2+] transients in individual weakly
-  GCaMP6f-expressing PCs, with which we achieve spike inference error rates of
-  âˆ¼5\%.%
-    }
-    \verb{doi}
-    \verb 10.1113/JP277681
-    \endverb
-    \verb{eprint}
-    \verb https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/JP277681
-    \endverb
-    \field{number}{11}
-    \field{pages}{2925\bibrangedash 2947}
-    \field{title}{Improved spike inference accuracy by estimating the peak
-  amplitude of unitary [Ca2+] transients in weakly GCaMP6f-expressing
-  hippocampal pyramidal cells}
-    \verb{url}
-    \verb https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/JP277681
-    \endverb
-    \field{volume}{597}
-    \field{journaltitle}{The Journal of Physiology}
-    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

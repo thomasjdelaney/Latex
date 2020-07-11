@@ -55,7 +55,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{subcaption}
 \usepackage{mathtools}
 
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=bibtex,style=authoryear,natbib=true,doi=false,eprint=false,url=false,isbn=false]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{phd_bibliography.bib} % The filename of the bibliography
 
@@ -200,7 +200,14 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+
+Ever since the use of multi-electrode recording in neuroscience began, the number neurons being recorded in parallel has been increasing. Methods developed more recently using calcium or voltage imaging have also contributed to the growth in neuronal datasets.
+As datasets grow, the need for new analysis methods that scale also grows.
+In our research we attempted to address some of the problems associated with reading from large neuronal ensembles using fluorescent calcium indicators by creating a new biophysical model for the fluorescence trace induced by spike trains.
+This model should be helpful for ...
+We applied a novel method from network science for detecting structure and communities in the correlated behaviour of a large dataset. We aimed to find order and structure in this dataset at different timescales and investigate the differences
+We developed a new statistical model for the number of neurons spiking in a neuronal ensemble based on the Conway-Maxwell-binomial distribution. Our aim was to capture correlated activity in a neuronal population without measuring correlation coefficients directly. Allowed us to capture correlated activity at very short timescales better than measuring correlation coefficients. Also parallel the finding of Churchland et al.
+
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
