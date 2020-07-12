@@ -280,7 +280,8 @@
 	\clearpairofpagestyles%
 	\automark[chapter]{chapter}
 	\ihead{\headmark}% Inner header
-	\ohead[\pagemark]{\pagemark}% Outer header
+	% \ohead[\pagemark]{\pagemark}% Outer header
+	\cfoot[\pagemark]{\pagemark}
 }
 \ifoot{}% Inner footer
 \ofoot{}% Outer footer
@@ -289,8 +290,8 @@
 	\automark*[section]{}%
 }
 \providepairofpagestyles[thesisSimple]{review}{%
-	\ofoot[\shorttitle/\authorname]{\shorttitle/\authorname}
-	\ifoot[\today]{\today}
+	% \ofoot[\shorttitle/\authorname]{\shorttitle/\authorname}
+	% \ifoot[\today]{\today}
 }
 \pagestyle{thesis}
 \ifbool{headsepline}{\KOMAoption{headsepline}{true}}{}
@@ -359,19 +360,19 @@ KOMA-script documentation for details.}]{fancyhdr}
 		#1%added to be able to have abstract more than one page long
 		\thispagestyle{plain}
 		\begin{center}
-			{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
-			\bigskip
+			%{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
+			%\smallskip
 			{\huge\textit{\abstractname} \par}
-			\bigskip
-			{\normalsize \facname \par}% Faculty name
-			{\normalsize \deptname \par}% Department name
-			\bigskip
-			{\normalsize \degreename\par}% Degree name
-			\bigskip
-			{\normalsize\bfseries \@title \par}% Thesis title
-			\medskip
-			{\normalsize \byname{} \authorname \par}% Author name
-			\bigskip
+			%\smallskip
+			%{\normalsize \facname \par}% Faculty name
+			%{\normalsize \deptname \par}% Department name
+			%\smallskip
+			%{\normalsize \degreename\par}% Degree name
+			%\smallskip
+			%{\normalsize\bfseries \@title \par}% Thesis title
+			%\smallskip
+			%{\normalsize \byname{} \authorname \par}% Author name
+			%\smallskip
 		\end{center}
 	}
 	{

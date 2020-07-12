@@ -21,7 +21,7 @@ To find and analyse functional networks while controlling for the subject's beha
 
 \section{Data}
 
-    The data that we used in this project were collected by Nick Steinmetz and his lab members \parencite{stringer}.
+    The data that we used in this project were collected by Nick Steinmetz and his lab members \parencite{stringer, steinmetz2019}.
 
     \subsection{Brain regions}
     Neuropixels probes were used to collect extracellular recordings  \parencite{jun} from three different mice. The mice were awake, headfixed, and engaging in spontaneous behaviour. The mice were of different sexes and different ages. One mouse was `wild-type', the others were mutants. Details as follows:
@@ -43,7 +43,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \item Thalamus (Th)
         \item Primary visual cortex (V1)
     \end{itemize}
-    Readings were continuous and lasted for about 1 hour  \parencite{stringer}. Locations of each of the probes can be seen in figure \ref{fig:probe_locations}.
+    Readings were continuous and lasted for about 1 hour  \parencite{stringer, steinmetz2019}. Locations of each of the probes can be seen in figure \ref{fig:probe_locations}.
 
     \begin{figure}[h]
         \centering
@@ -53,11 +53,11 @@ To find and analyse functional networks while controlling for the subject's beha
     \end{figure}
 
     \subsection{Video recordings}\label{sec:video_recordings}
-    Video recordings of the mouse's face were taken during the spontaneous behaviour. We had access to the top $500$ principle components and top $500$ eigenvectors of the processed videos. The frequency of recording was slightly less than $40$Hz. Each frame contained $327 \times 561$ pixels. These principal components were used as behavioural data. We controlled for these components when taking measurements conditioned on behaviour.
+    Video recordings of the mouse's face were taken during the spontaneous behaviour. We had access to the top $500$ principle components and top $500$ eigenvectors of the processed videos. The frequency of recording was slightly less than $40$Hz. Each frame contained $327 \times 561$ pixels \parencite{stringer, steinmetz}. These principal components were used as behavioural data. We controlled for these components when taking measurements conditioned on behaviour.
 
 \section{Methods}
     \subsection{Binning data}
-    We transformed the spike timing data into binned spike count data by dividing the experimental period into time bins and counting the spikes fired by each cell within the time period covered by each of those bins. The data were divided into time bins of various widths ranging from $0.01$s to $4$s.
+    We transformed the spike timing data into binned spike count data by dividing the experimental period into time bins and counting the spikes fired by each cell within the time period covered by each of those bins. The data were divided into time bins of various widths ranging from $0.005$s to $4$s.
 
     If the total length of the recording period was not an integer multiple of the time bin width, we cut off the remaining time at the end of the recording period. This period was at most $3.99$s. This is far less than the total recording time of around $1$ hour. So, this detail would not affect our results.
 
@@ -78,7 +78,7 @@ To find and analyse functional networks while controlling for the subject's beha
     In practice we used the python function \texttt{scipy.stats.pearsonr} to calculate the correlation coefficients.
 
         \subsubsection{Total correlations, $r_{SC}$}\label{sec:spike_count_correlation}
-        The total correlation ($r_{SC}$) of two cells is the correlation between the spike counts of those cells in response to a given stimulus condition.
+        In this context, we defined the total correlation ($r_{SC}$) of two cells to be the correlation between the spike counts of those cells across the entire period of spontaneous behaviour.
 
         \subsubsection{Shuffled total correlations}\label{sec:shuffled_correlations}
         We measured the shuffled total correlations between two neurons by randomly permuting one of the neuron's spike counts and measuring the total correlations. These shuffled correlations were useful when measuring the effect of time bin width on correlations, and when deciding which correlations should be preserved when creating correlation networks (see section \ref{sec:sparsifying_data_networks}).
