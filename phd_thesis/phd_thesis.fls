@@ -601,6 +601,7 @@ INPUT ./figures/eight_probe/pairs_correlation.png
 INPUT figures/eight_probe/pairs_raster.png
 INPUT ./figures/eight_probe/pairs_raster.png
 INPUT ./figures/eight_probe/pairs_raster.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT figures/eight_probe/Krebs_corr_all_pairs.png
 INPUT ./figures/eight_probe/Krebs_corr_all_pairs.png
 INPUT ./figures/eight_probe/Krebs_corr_all_pairs.png
@@ -616,7 +617,6 @@ INPUT ./figures/eight_probe/Krebs_stats_by_bin_width.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm

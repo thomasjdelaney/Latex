@@ -53,7 +53,7 @@ To find and analyse functional networks while controlling for the subject's beha
     \end{figure}
 
     \subsection{Video recordings}\label{sec:video_recordings}
-    Video recordings of the mouse's face were taken during the spontaneous behaviour. We had access to the top $500$ principle components and top $500$ eigenvectors of the processed videos. The frequency of recording was slightly less than $40$Hz. Each frame contained $327 \times 561$ pixels \parencite{stringer, steinmetz}. These principal components were used as behavioural data. We controlled for these components when taking measurements conditioned on behaviour.
+    Video recordings of the mouse's face were taken during the spontaneous behaviour. We had access to the top $500$ principal components and top $500$ eigenvectors of the processed videos. The frequency of recording was slightly less than $40$Hz. Each frame contained $327 \times 561$ pixels \parencite{stringer, steinmetz}. These principal components were used as behavioural data. We controlled for these components when taking measurements conditioned on behaviour.
 
 \section{Methods}
     \subsection{Binning data}
@@ -117,7 +117,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \begin{align}
           \hat{\boldsymbol{\beta}} = \arg \min_{\boldsymbol{\beta}} L(\lambda_1, \lambda_2, \boldsymbol{\beta})
         \end{align}
-        We implemented the model using the \texttt{ElasticNetCV} method of Python's \\ \texttt{sklearn.linear\_models} package.
+        We implemented the model using the \texttt{ElasticNetCV} method of Python's \\ \texttt{sklearn.linear\_models} package. We chose to put equal weighting on the $L1$ and $L2$ regression parts of equation \label{eq:elastic_net}. We used $10$-fold cross validation to set an  optimised value for $\lambda_1 = \lambda_2$.
 
         As well as using the PCs, we also tried fitting the models using the raw video data reconstructed from the PCs and eigenvectors. These models performed worse than those using the PCs. We expected this because each representation contains the same amount of information, but the raw video representation spreads this information across many more components. This requires more parameter fitting, but given the same information.
 
@@ -133,10 +133,12 @@ To find and analyse functional networks while controlling for the subject's beha
         The second component is analogous to what Cohn et al. (2011) call the \textit{signal correlation} \parencite{cohen2}. In particular, $\cov(E[X|Z], E[Y|Z])$ is the covariance between spike counts in response to different stimuli.
 
         Using our linear model, we calculated $E[X|Z_1,\dots, Z_{500}]$ for each cell $X$. Then we proceeded to calculate
-        \begin{align}
-            E[\cov(X,Y|Z_1,\dots, Z_{500})] = & \cov(X,Y) - \\
-              & \cov(E[X|Z_1,\dots, Z_{500}], E[Y|Z_1,\dots, Z_{500}])
-        \end{align}
+        \begin{equation}
+            \begin{split}
+                E[\cov(X,Y|Z_1,\dots, Z_{500})] = & \cov(X,Y) - \\
+                  & \cov(E[X|Z_1,\dots, Z_{500}], E[Y|Z_1,\dots, Z_{500}])
+            \end{split}
+        \end{equation}
 
         \subsubsection{Measures of conditional correlation}\label{sec:cond_corr}
         As a measure of expected correlation, we measured the `event conditional correlation'  \parencite{maugis}
@@ -163,7 +165,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \begin{align}\label{joint_entropy}
         H(X, Y) = -\sum_{n=1}^N \sum_{m=1}^M P(X=x_n, Y=y_m) \log _2 P(X=x_n, Y=y_m)
         \end{align}
-        If $X$ and $Y$ are independent then $H(X,Y) = H(X) + H(Y)$. Otherwise $H(X,Y) < H(X) + H(Y)$. When $X$ and $Y$ and completely dependent $H(X,Y) = H(X) = H(Y)$.
+        If $X$ and $Y$ are independent then $H(X,Y) = H(X) + H(Y)$. Otherwise $H(X,Y) < H(X) + H(Y)$. When $X$ and $Y$ are completely dependent and the mapping from $X$ to $Y$ is on-to-one, $H(X,Y) = H(X) = H(Y)$.
 
         The conditional entropy of $Y$ conditioned on $X$ is defined as
         \begin{align}

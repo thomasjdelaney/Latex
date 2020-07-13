@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  12 JUL 2020 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  13 JUL 2020 18:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,7 +906,11 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./phd_thesis.aux (./Chapters/introduction.aux) (./Chapters/calcium_imaging_model_paper.aux) (./Chapters/eight_probe.aux) (./Chapters/conway_maxwell_hierarchical_model.aux) (./Chapters/small_chapter.aux) (./Chapters/discussion.aux))
+ (./phd_thesis.aux (./Chapters/introduction.aux) (./Chapters/calcium_imaging_model_paper.aux) (./Chapters/eight_probe.aux
+
+LaTeX Warning: Label `eq:elastic_net' multiply defined.
+
+) (./Chapters/conway_maxwell_hierarchical_model.aux) (./Chapters/small_chapter.aux) (./Chapters/discussion.aux))
 \openout1 = `phd_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -1314,7 +1318,7 @@ Overfull \vbox (1.54172pt too high) has occurred while \output is active []
 
 ]
 --------------------
- Abstract
+ Acknowledgements
 --------------------
 1: section
 [5
@@ -1323,7 +1327,7 @@ Overfull \vbox (1.54172pt too high) has occurred while \output is active []
 
 ]
 --------------------
- Acknowledgements
+ Abstract
 --------------------
 1: section
 [7] [8
@@ -1452,22 +1456,22 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
  [12] [13] [14] [15]
-Overfull \hbox (59.55515pt too wide) in paragraph at lines 112--129
+Overfull \hbox (59.55515pt too wide) in paragraph at lines 110--127
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 134.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 127.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 132.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [16] [17]
-Overfull \hbox (3.06616pt too wide) in paragraph at lines 139--140
+Overfull \hbox (3.06616pt too wide) in paragraph at lines 137--138
 []\OT1/ptm/m/n/10.95 The
  []
 
 [18] [19] [20]
-Overfull \hbox (56.96107pt too wide) in paragraph at lines 173--174
+Overfull \hbox (56.96107pt too wide) in paragraph at lines 169--170
 \OT1/ptm/m/n/10.95 All of the data used in this project was sourced from the `Spike Finder' project (spikefinder.codeneuro.org).
  []
 
@@ -1475,127 +1479,124 @@ Overfull \hbox (56.96107pt too wide) in paragraph at lines 173--174
 <figures/calcium_chapter/Figure2.png, id=1426, 582.7371pt x 271.7352pt>
 File: figures/calcium_chapter/Figure2.png Graphic file (type png)
 <use figures/calcium_chapter/Figure2.png>
-Package pdftex.def Info: figures/calcium_chapter/Figure2.png  used on input line 189.
+Package pdftex.def Info: figures/calcium_chapter/Figure2.png  used on input line 185.
 (pdftex.def)             Requested size: 404.02908pt x 188.40552pt.
- [22]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/calcium_chapter/concentration_dynamics_18.png, id=1434, 361.35pt x 289.08pt>
+ [22] [23 <./figures/calcium_chapter/Figure2.png>]
+<figures/calcium_chapter/concentration_dynamics_18.png, id=1440, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/concentration_dynamics_18.png Graphic file (type png)
 <use figures/calcium_chapter/concentration_dynamics_18.png>
-Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18.png  used on input line 200.
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18.png  used on input line 196.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png, id=1435, 361.35pt x 289.08pt>
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png, id=1441, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png Graphic file (type png)
 <use figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png>
-Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png  used on input line 205.
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png  used on input line 201.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png, id=1436, 361.35pt x 289.08pt>
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png, id=1442, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png Graphic file (type png)
 <use figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png>
-Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png  used on input line 209.
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png  used on input line 205.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png, id=1437, 361.35pt x 289.08pt>
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png, id=1443, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png Graphic file (type png)
 <use figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png>
-Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png  used on input line 213.
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png  used on input line 209.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png, id=1438, 361.35pt x 289.08pt>
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png, id=1444, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png Graphic file (type png)
 <use figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png>
-Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png  used on input line 217.
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png  used on input line 213.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png, id=1439, 361.35pt x 289.08pt>
+<figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png, id=1445, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png Graphic file (type png)
 <use figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png>
-Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png  used on input line 221.
+Package pdftex.def Info: figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png  used on input line 217.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 199--224
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 195--220
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 199--224
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 195--220
 []$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 199--224
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 195--220
 []$ $[]$ 
  []
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 224.
+(Font)              scaled to size 10.42007pt on input line 220.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 224.
+(Font)              scaled to size 7.91925pt on input line 220.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 224.
+(Font)              scaled to size 10.42007pt on input line 220.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 224.
-[23] [24 <./figures/calcium_chapter/Figure2.png>] [25 <./figures/calcium_chapter/concentration_dynamics_18.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png>]
+(Font)              scaled to size 7.91925pt on input line 220.
+[24] [25 <./figures/calcium_chapter/concentration_dynamics_18.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa_star.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_BCa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_ImCa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_ECa.png> <./figures/calcium_chapter/concentration_dynamics_18_zoomed_Ca.png>]
 <figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png, id=1466, 578.16pt x 361.35pt>
 File: figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png Graphic file (type png)
 <use figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png  used on input line 242.
+Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png  used on input line 238.
 (pdftex.def)             Requested size: 363.6237pt x 227.26022pt.
 <figures/calcium_chapter/b_i_f_i_perturbed_snr.png, id=1467, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/b_i_f_i_perturbed_snr.png Graphic file (type png)
 <use figures/calcium_chapter/b_i_f_i_perturbed_snr.png>
-Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_snr.png  used on input line 248.
+Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_snr.png  used on input line 244.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
 <figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png, id=1468, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png Graphic file (type png)
 <use figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png  used on input line 253.
+Package pdftex.def Info: figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png  used on input line 249.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
 <figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png, id=1469, 578.16pt x 361.35pt>
 File: figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png Graphic file (type png)
 <use figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png  used on input line 264.
+Package pdftex.def Info: figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png  used on input line 260.
 (pdftex.def)             Requested size: 363.6237pt x 227.26022pt.
 <figures/calcium_chapter/indicator_perturbed_snr.png, id=1470, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/indicator_perturbed_snr.png Graphic file (type png)
 <use figures/calcium_chapter/indicator_perturbed_snr.png>
-Package pdftex.def Info: figures/calcium_chapter/indicator_perturbed_snr.png  used on input line 270.
+Package pdftex.def Info: figures/calcium_chapter/indicator_perturbed_snr.png  used on input line 266.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
 <figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png, id=1471, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png Graphic file (type png)
 <use figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png  used on input line 275.
+Package pdftex.def Info: figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png  used on input line 271.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
  [26] [27 <./figures/calcium_chapter/b_i_f_i_perturbed_fluorescence_18_paper.png> <./figures/calcium_chapter/b_i_f_i_perturbed_snr.png> <./figures/calcium_chapter/b_i_f_i_perturbed_oasis_tp_paper.png>] [28 <./figures/calcium_chapter/indicator_perturbed_fluorescence_18_paper.png> <./figures/calcium_chapter/indicator_perturbed_snr.png> <./figures/calcium_chapter/indictor_perturbed_oasis_first_paper.png>]
 <figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png, id=1505, 578.16pt x 361.35pt>
 File: figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png Graphic file (type png)
 <use figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png  used on input line 290.
+Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png  used on input line 286.
 (pdftex.def)             Requested size: 363.6237pt x 227.26022pt.
 <figures/calcium_chapter/immobile_perturbed_snr.png, id=1506, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/immobile_perturbed_snr.png Graphic file (type png)
 <use figures/calcium_chapter/immobile_perturbed_snr.png>
-Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_snr.png  used on input line 295.
+Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_snr.png  used on input line 291.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
 <figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png, id=1507, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png Graphic file (type png)
 <use figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png  used on input line 299.
+Package pdftex.def Info: figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png  used on input line 295.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
  [29] [30 <./figures/calcium_chapter/immobile_perturbed_fluorescence_18_paper.png> <./figures/calcium_chapter/immobile_perturbed_snr.png> <./figures/calcium_chapter/immobile_perturbed_oasis_first_paper.png>]
 <figures/calcium_chapter/paper_fig_1_Hz_1_3.png, id=1524, 289.08pt x 361.35pt>
 File: figures/calcium_chapter/paper_fig_1_Hz_1_3.png Graphic file (type png)
 <use figures/calcium_chapter/paper_fig_1_Hz_1_3.png>
-Package pdftex.def Info: figures/calcium_chapter/paper_fig_1_Hz_1_3.png  used on input line 312.
+Package pdftex.def Info: figures/calcium_chapter/paper_fig_1_Hz_1_3.png  used on input line 308.
 (pdftex.def)             Requested size: 132.92345pt x 166.15134pt.
 <figures/calcium_chapter/paper_fig_5_Hz_1_2.png, id=1525, 289.08pt x 361.35pt>
 File: figures/calcium_chapter/paper_fig_5_Hz_1_2.png Graphic file (type png)
 <use figures/calcium_chapter/paper_fig_5_Hz_1_2.png>
-Package pdftex.def Info: figures/calcium_chapter/paper_fig_5_Hz_1_2.png  used on input line 313.
+Package pdftex.def Info: figures/calcium_chapter/paper_fig_5_Hz_1_2.png  used on input line 309.
 (pdftex.def)             Requested size: 132.92345pt x 166.15134pt.
 <figures/calcium_chapter/paper_fig_10_Hz_1_1.png, id=1526, 289.08pt x 361.35pt>
 File: figures/calcium_chapter/paper_fig_10_Hz_1_1.png Graphic file (type png)
 <use figures/calcium_chapter/paper_fig_10_Hz_1_1.png>
-Package pdftex.def Info: figures/calcium_chapter/paper_fig_10_Hz_1_1.png  used on input line 314.
+Package pdftex.def Info: figures/calcium_chapter/paper_fig_10_Hz_1_1.png  used on input line 310.
 (pdftex.def)             Requested size: 132.92345pt x 166.15134pt.
 
 
@@ -1604,12 +1605,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/calcium_chapter/simulated_oasis_accuracy_paper.png, id=1527, 361.35pt x 289.08pt>
 File: figures/calcium_chapter/simulated_oasis_accuracy_paper.png Graphic file (type png)
 <use figures/calcium_chapter/simulated_oasis_accuracy_paper.png>
-Package pdftex.def Info: figures/calcium_chapter/simulated_oasis_accuracy_paper.png  used on input line 321.
+Package pdftex.def Info: figures/calcium_chapter/simulated_oasis_accuracy_paper.png  used on input line 317.
 (pdftex.def)             Requested size: 181.81184pt x 145.4483pt.
 <figures/calcium_chapter/mean_fluorescence_comparison.png, id=1528, 289.08pt x 216.81pt>
 File: figures/calcium_chapter/mean_fluorescence_comparison.png Graphic file (type png)
 <use figures/calcium_chapter/mean_fluorescence_comparison.png>
-Package pdftex.def Info: figures/calcium_chapter/mean_fluorescence_comparison.png  used on input line 322.
+Package pdftex.def Info: figures/calcium_chapter/mean_fluorescence_comparison.png  used on input line 318.
 (pdftex.def)             Requested size: 181.81184pt x 136.35612pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1651,424 +1652,433 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 80.
 
 [39] [40] [41]
-Overfull \hbox (7.2482pt too wide) in paragraph at lines 142--143
+Overfull \hbox (7.2482pt too wide) in paragraph at lines 144--145
 \OT1/ptm/m/n/10.95 As a mea-sure of ex-pected cor-re-la-tion, we mea-sured the `event con-di-tional cor-re-la-tion' ([]Maugis,
  []
 
+[42]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 155.
+(hyperref)                removing `math shift' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 155.
+(hyperref)                removing `math shift' on input line 157.
 
-[42] [43]
-<figures/eight_probe/entropy_limit.png, id=1656, 289.08pt x 216.81pt>
+[43]
+<figures/eight_probe/entropy_limit.png, id=1655, 289.08pt x 216.81pt>
 File: figures/eight_probe/entropy_limit.png Graphic file (type png)
 <use figures/eight_probe/entropy_limit.png>
-Package pdftex.def Info: figures/eight_probe/entropy_limit.png  used on input line 188.
+Package pdftex.def Info: figures/eight_probe/entropy_limit.png  used on input line 190.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 195.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 195.
 
 [44 <./figures/eight_probe/entropy_limit.png>] [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 223.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 223.
+(hyperref)                removing `math shift' on input line 225.
 
 [46]
-Overfull \hbox (4.84508pt too wide) in paragraph at lines 252--253
+Overfull \hbox (4.84508pt too wide) in paragraph at lines 254--255
 []\OT1/ptm/m/n/10.95 Finally, we used the ab-so-lute value of the cor-re-la-tions as the weights for the graph/network.
  []
 
 [47] [48] [49] [50] [51] [52] [53]
-<figures/eight_probe/pairs_correlation.png, id=1766, 361.35pt x 289.08pt>
+<figures/eight_probe/pairs_correlation.png, id=1765, 361.35pt x 289.08pt>
 File: figures/eight_probe/pairs_correlation.png Graphic file (type png)
 <use figures/eight_probe/pairs_correlation.png>
-Package pdftex.def Info: figures/eight_probe/pairs_correlation.png  used on input line 389.
+Package pdftex.def Info: figures/eight_probe/pairs_correlation.png  used on input line 391.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/eight_probe/pairs_raster.png, id=1767, 361.35pt x 289.08pt>
+<figures/eight_probe/pairs_raster.png, id=1766, 361.35pt x 289.08pt>
 File: figures/eight_probe/pairs_raster.png Graphic file (type png)
 <use figures/eight_probe/pairs_raster.png>
-Package pdftex.def Info: figures/eight_probe/pairs_raster.png  used on input line 394.
+Package pdftex.def Info: figures/eight_probe/pairs_raster.png  used on input line 396.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 388--398
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 390--400
 []$[]$ $[]$ 
  []
 
-<figures/eight_probe/Krebs_corr_all_pairs.png, id=1771, 361.35pt x 289.08pt>
+[54 <./figures/eight_probe/pairs_correlation.png> <./figures/eight_probe/pairs_raster.png>]
+<figures/eight_probe/Krebs_corr_all_pairs.png, id=1776, 361.35pt x 289.08pt>
 File: figures/eight_probe/Krebs_corr_all_pairs.png Graphic file (type png)
 <use figures/eight_probe/Krebs_corr_all_pairs.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_corr_all_pairs.png  used on input line 406.
+Package pdftex.def Info: figures/eight_probe/Krebs_corr_all_pairs.png  used on input line 408.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/eight_probe/Krebs_corr_pos_pairs.png, id=1772, 361.35pt x 289.08pt>
+<figures/eight_probe/Krebs_corr_pos_pairs.png, id=1777, 361.35pt x 289.08pt>
 File: figures/eight_probe/Krebs_corr_pos_pairs.png Graphic file (type png)
 <use figures/eight_probe/Krebs_corr_pos_pairs.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_corr_pos_pairs.png  used on input line 411.
+Package pdftex.def Info: figures/eight_probe/Krebs_corr_pos_pairs.png  used on input line 413.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/eight_probe/Krebs_corr_neg_pairs.png, id=1773, 361.35pt x 289.08pt>
+<figures/eight_probe/Krebs_corr_neg_pairs.png, id=1778, 361.35pt x 289.08pt>
 File: figures/eight_probe/Krebs_corr_neg_pairs.png Graphic file (type png)
 <use figures/eight_probe/Krebs_corr_neg_pairs.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_corr_neg_pairs.png  used on input line 416.
+Package pdftex.def Info: figures/eight_probe/Krebs_corr_neg_pairs.png  used on input line 418.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/eight_probe/Krebs_stats_by_bin_width.png, id=1774, 361.35pt x 289.08pt>
+<figures/eight_probe/Krebs_stats_by_bin_width.png, id=1779, 361.35pt x 289.08pt>
 File: figures/eight_probe/Krebs_stats_by_bin_width.png Graphic file (type png)
 <use figures/eight_probe/Krebs_stats_by_bin_width.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_stats_by_bin_width.png  used on input line 421.
+Package pdftex.def Info: figures/eight_probe/Krebs_stats_by_bin_width.png  used on input line 423.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 405--425
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 407--427
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 405--425
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 407--427
 []$ $[]$ 
  []
 
-[54 <./figures/eight_probe/pairs_correlation.png> <./figures/eight_probe/pairs_raster.png>] [55 <./figures/eight_probe/Krebs_corr_all_pairs.png> <./figures/eight_probe/Krebs_corr_pos_pairs.png> <./figures/eight_probe/Krebs_corr_neg_pairs.png> <./figures/eight_probe/Krebs_stats_by_bin_width.png>] [56]
-<figures/eight_probe/Krebs_inter_intra_regional_correlations.png, id=1799, 361.35pt x 289.08pt>
+[55] [56 <./figures/eight_probe/Krebs_corr_all_pairs.png> <./figures/eight_probe/Krebs_corr_pos_pairs.png> <./figures/eight_probe/Krebs_corr_neg_pairs.png> <./figures/eight_probe/Krebs_stats_by_bin_width.png>]
+<figures/eight_probe/Krebs_inter_intra_regional_correlations.png, id=1798, 361.35pt x 289.08pt>
 File: figures/eight_probe/Krebs_inter_intra_regional_correlations.png Graphic file (type png)
 <use figures/eight_probe/Krebs_inter_intra_regional_correlations.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_inter_intra_regional_correlations.png  used on input line 452.
+Package pdftex.def Info: figures/eight_probe/Krebs_inter_intra_regional_correlations.png  used on input line 454.
 (pdftex.def)             Requested size: 202.01454pt x 161.6102pt.
-<figures/eight_probe/stringer_2019.png, id=1800, 331.2375pt x 294.09875pt>
+<figures/eight_probe/stringer_2019.png, id=1799, 331.2375pt x 294.09875pt>
 File: figures/eight_probe/stringer_2019.png Graphic file (type png)
 <use figures/eight_probe/stringer_2019.png>
-Package pdftex.def Info: figures/eight_probe/stringer_2019.png  used on input line 453.
+Package pdftex.def Info: figures/eight_probe/stringer_2019.png  used on input line 455.
 (pdftex.def)             Requested size: 202.01454pt x 179.36406pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 452--454
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 454--456
 [][] [] 
  []
 
-<figures/eight_probe/Krebs_0p005_corr_comp.png, id=1809, 505.89pt x 289.08pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/eight_probe/Krebs_0p005_corr_comp.png, id=1808, 505.89pt x 289.08pt>
 File: figures/eight_probe/Krebs_0p005_corr_comp.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_corr_comp.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_corr_comp.png  used on input line 465.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_corr_comp.png  used on input line 467.
 (pdftex.def)             Requested size: 282.81912pt x 161.61461pt.
-<figures/eight_probe/Krebs_1p0_corr_comp.png, id=1810, 505.89pt x 289.08pt>
+<figures/eight_probe/Krebs_1p0_corr_comp.png, id=1809, 505.89pt x 289.08pt>
 File: figures/eight_probe/Krebs_1p0_corr_comp.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_corr_comp.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_corr_comp.png  used on input line 471.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_corr_comp.png  used on input line 473.
 (pdftex.def)             Requested size: 282.81912pt x 161.61461pt.
-[57 <./figures/eight_probe/Krebs_inter_intra_regional_correlations.png> <./figures/eight_probe/stringer_2019.png>] [58 <./figures/eight_probe/Krebs_0p005_corr_comp.png> <./figures/eight_probe/Krebs_1p0_corr_comp.png>]
-Overfull \hbox (9.72237pt too wide) in paragraph at lines 481--482
+[57]
+Overfull \hbox (9.72237pt too wide) in paragraph at lines 483--484
 \OT1/ptm/m/n/10.95 and the lo-cal rep-re-sen-ta-tions of this in-for-ma-tion spread-ing be-tween re-gions at longer timescales. 
  []
 
-<figures/eight_probe/Krebs_0p005_corr_matrix.png, id=1826, 462.528pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_corr_matrix.png, id=1817, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_corr_matrix.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_corr_matrix.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_corr_matrix.png  used on input line 486.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_corr_matrix.png  used on input line 488.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_1p0_corr_matrix.png, id=1827, 462.528pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_corr_matrix.png, id=1818, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_corr_matrix.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_corr_matrix.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_corr_matrix.png  used on input line 492.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_corr_matrix.png  used on input line 494.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 484--496
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 486--498
 []$[]$ $[]$ 
  []
 
-[59 <./figures/eight_probe/Krebs_0p005_corr_matrix.png> <./figures/eight_probe/Krebs_1p0_corr_matrix.png>]
-<figures/eight_probe/Krebs_rectified_total_structure_dims.png, id=1837, 289.08pt x 216.81pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[58 <./figures/eight_probe/Krebs_inter_intra_regional_correlations.png> <./figures/eight_probe/stringer_2019.png>] [59 <./figures/eight_probe/Krebs_0p005_corr_comp.png> <./figures/eight_probe/Krebs_1p0_corr_comp.png>]
+<figures/eight_probe/Krebs_rectified_total_structure_dims.png, id=1834, 289.08pt x 216.81pt>
 File: figures/eight_probe/Krebs_rectified_total_structure_dims.png Graphic file (type png)
 <use figures/eight_probe/Krebs_rectified_total_structure_dims.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_rectified_total_structure_dims.png  used on input line 510.
+Package pdftex.def Info: figures/eight_probe/Krebs_rectified_total_structure_dims.png  used on input line 512.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/Waksman_rectified_total_structure_dims.png, id=1838, 289.08pt x 216.81pt>
+<figures/eight_probe/Waksman_rectified_total_structure_dims.png, id=1835, 289.08pt x 216.81pt>
 File: figures/eight_probe/Waksman_rectified_total_structure_dims.png Graphic file (type png)
 <use figures/eight_probe/Waksman_rectified_total_structure_dims.png>
-Package pdftex.def Info: figures/eight_probe/Waksman_rectified_total_structure_dims.png  used on input line 516.
+Package pdftex.def Info: figures/eight_probe/Waksman_rectified_total_structure_dims.png  used on input line 518.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/Robbins_rectified_total_structure_dims.png, id=1839, 289.08pt x 216.81pt>
+<figures/eight_probe/Robbins_rectified_total_structure_dims.png, id=1836, 289.08pt x 216.81pt>
 File: figures/eight_probe/Robbins_rectified_total_structure_dims.png Graphic file (type png)
 <use figures/eight_probe/Robbins_rectified_total_structure_dims.png>
-Package pdftex.def Info: figures/eight_probe/Robbins_rectified_total_structure_dims.png  used on input line 522.
+Package pdftex.def Info: figures/eight_probe/Robbins_rectified_total_structure_dims.png  used on input line 524.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 508--526
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 510--528
 []$[]$ $[]$
  []
 
-<figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png, id=1847, 462.528pt x 346.896pt>
+[60 <./figures/eight_probe/Krebs_0p005_corr_matrix.png> <./figures/eight_probe/Krebs_1p0_corr_matrix.png>] [61 <./figures/eight_probe/Krebs_rectified_total_structure_dims.png> <./figures/eight_probe/Waksman_rectified_total_structure_dims.png> <./figures/eight_probe/Robbins_rectified_total_structure_dims.png>]
+<figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png, id=1857, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png  used on input line 540.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png  used on input line 542.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png, id=1848, 462.528pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png, id=1858, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png  used on input line 545.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png  used on input line 547.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_0p005_regional_cluster_map.png, id=1849, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_regional_cluster_map.png, id=1859, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_regional_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_regional_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_regional_cluster_map.png  used on input line 550.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_regional_cluster_map.png  used on input line 552.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/Krebs_1p0_regional_cluster_map.png, id=1850, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_regional_cluster_map.png, id=1860, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_regional_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_regional_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_regional_cluster_map.png  used on input line 555.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_regional_cluster_map.png  used on input line 557.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 539--559
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 541--561
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 539--559
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 541--561
 []$ $[]$ 
  []
 
-[60] [61 <./figures/eight_probe/Krebs_rectified_total_structure_dims.png> <./figures/eight_probe/Waksman_rectified_total_structure_dims.png> <./figures/eight_probe/Robbins_rectified_total_structure_dims.png>] [62 <./figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png> <./figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png> <./figures/eight_probe/Krebs_0p005_regional_cluster_map.png> <./figures/eight_probe/Krebs_1p0_regional_cluster_map.png>]
-<figures/eight_probe/variation_of_information_rectified_total.png, id=1880, 289.08pt x 216.81pt>
+<figures/eight_probe/variation_of_information_rectified_total.png, id=1871, 289.08pt x 216.81pt>
 File: figures/eight_probe/variation_of_information_rectified_total.png Graphic file (type png)
 <use figures/eight_probe/variation_of_information_rectified_total.png>
-Package pdftex.def Info: figures/eight_probe/variation_of_information_rectified_total.png  used on input line 580.
+Package pdftex.def Info: figures/eight_probe/variation_of_information_rectified_total.png  used on input line 582.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/adjusted_rand_index_rectified_total.png, id=1881, 289.08pt x 216.81pt>
+<figures/eight_probe/adjusted_rand_index_rectified_total.png, id=1872, 289.08pt x 216.81pt>
 File: figures/eight_probe/adjusted_rand_index_rectified_total.png Graphic file (type png)
 <use figures/eight_probe/adjusted_rand_index_rectified_total.png>
-Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_rectified_total.png  used on input line 585.
+Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_rectified_total.png  used on input line 587.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 579--589
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 581--591
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[63]
-<figures/eight_probe/Krebs_cond_cov_comparison.png, id=1888, 289.08pt x 216.81pt>
+[62] [63 <./figures/eight_probe/Krebs_0p005_rectified_cons_cluster_map.png> <./figures/eight_probe/Krebs_1p0_rectified_cons_cluster_map.png> <./figures/eight_probe/Krebs_0p005_regional_cluster_map.png> <./figures/eight_probe/Krebs_1p0_regional_cluster_map.png>]
+<figures/eight_probe/Krebs_cond_cov_comparison.png, id=1887, 289.08pt x 216.81pt>
 File: figures/eight_probe/Krebs_cond_cov_comparison.png Graphic file (type png)
 <use figures/eight_probe/Krebs_cond_cov_comparison.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_cond_cov_comparison.png  used on input line 600.
+Package pdftex.def Info: figures/eight_probe/Krebs_cond_cov_comparison.png  used on input line 602.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/Waksman_cond_cov_comparison.png, id=1889, 289.08pt x 216.81pt>
+<figures/eight_probe/Waksman_cond_cov_comparison.png, id=1888, 289.08pt x 216.81pt>
 File: figures/eight_probe/Waksman_cond_cov_comparison.png Graphic file (type png)
 <use figures/eight_probe/Waksman_cond_cov_comparison.png>
-Package pdftex.def Info: figures/eight_probe/Waksman_cond_cov_comparison.png  used on input line 604.
+Package pdftex.def Info: figures/eight_probe/Waksman_cond_cov_comparison.png  used on input line 606.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/Robbins_cond_cov_comparison.png, id=1890, 289.08pt x 216.81pt>
+<figures/eight_probe/Robbins_cond_cov_comparison.png, id=1889, 289.08pt x 216.81pt>
 File: figures/eight_probe/Robbins_cond_cov_comparison.png Graphic file (type png)
 <use figures/eight_probe/Robbins_cond_cov_comparison.png>
-Package pdftex.def Info: figures/eight_probe/Robbins_cond_cov_comparison.png  used on input line 608.
+Package pdftex.def Info: figures/eight_probe/Robbins_cond_cov_comparison.png  used on input line 610.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 599--611
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 601--613
 []$[]$ $[]$
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/eight_probe/Krebs_cond_corr_comparison.png, id=1895, 289.08pt x 216.81pt>
+[64 <./figures/eight_probe/variation_of_information_rectified_total.png> <./figures/eight_probe/adjusted_rand_index_rectified_total.png>]
+<figures/eight_probe/Krebs_cond_corr_comparison.png, id=1900, 289.08pt x 216.81pt>
 File: figures/eight_probe/Krebs_cond_corr_comparison.png Graphic file (type png)
 <use figures/eight_probe/Krebs_cond_corr_comparison.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_cond_corr_comparison.png  used on input line 621.
+Package pdftex.def Info: figures/eight_probe/Krebs_cond_corr_comparison.png  used on input line 623.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/Waksman_cond_corr_comparison.png, id=1896, 289.08pt x 216.81pt>
+<figures/eight_probe/Waksman_cond_corr_comparison.png, id=1901, 289.08pt x 216.81pt>
 File: figures/eight_probe/Waksman_cond_corr_comparison.png Graphic file (type png)
 <use figures/eight_probe/Waksman_cond_corr_comparison.png>
-Package pdftex.def Info: figures/eight_probe/Waksman_cond_corr_comparison.png  used on input line 625.
+Package pdftex.def Info: figures/eight_probe/Waksman_cond_corr_comparison.png  used on input line 627.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/Robbins_cond_corr_comparison.png, id=1897, 289.08pt x 216.81pt>
+<figures/eight_probe/Robbins_cond_corr_comparison.png, id=1902, 289.08pt x 216.81pt>
 File: figures/eight_probe/Robbins_cond_corr_comparison.png Graphic file (type png)
 <use figures/eight_probe/Robbins_cond_corr_comparison.png>
-Package pdftex.def Info: figures/eight_probe/Robbins_cond_corr_comparison.png  used on input line 629.
+Package pdftex.def Info: figures/eight_probe/Robbins_cond_corr_comparison.png  used on input line 631.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 620--632
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 622--634
 []$[]$ $[]$
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png, id=1899, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png, id=1904, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png  used on input line 640.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png  used on input line 642.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png, id=1900, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png, id=1905, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png  used on input line 645.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png  used on input line 647.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png, id=1901, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png, id=1906, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png  used on input line 650.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png  used on input line 652.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png, id=1902, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png, id=1907, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png  used on input line 655.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png  used on input line 657.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 639--659
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 641--661
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 639--659
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 641--661
 []$ $[]$ 
  []
 
 
-Overfull \hbox (39.64893pt too wide) in paragraph at lines 663--664
+Overfull \hbox (39.64893pt too wide) in paragraph at lines 665--666
 []\OT1/ptm/m/n/10.95 Using $[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 E\OT1/zplm/m/n/10.95 [\OML/zplm/m/it/10.95 X\OMS/zplm/m/n/10.95 j\OML/zplm/m/it/10.95 Z\OT1/zplm/m/n/10.95 ]\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 E\OT1/zplm/m/n/10.95 [\OML/zplm/m/it/10.95 Y\OMS/zplm/m/n/10.95 j\OML/zplm/m/it/10.95 Z\OT1/zplm/m/n/10.95 ])$ \OT1/ptm/m/n/10.95 we mea-sured the sig-nal cor-re-la-tion, $\OML/zplm/m/it/10.95 ^^Z[]$\OT1/ptm/m/n/10.95 , and us-ing $\OML/zplm/m/it/10.95 E\OT1/zplm/m/n/10.95 [[](\OML/zplm/m/it/10.95 X\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 Y\OMS/zplm/m/n/10.95 j\OML/zplm/m/it/10.95 Z\OT1/zplm/m/n/10.95 )]$
  []
 
-[64 <./figures/eight_probe/variation_of_information_rectified_total.png> <./figures/eight_probe/adjusted_rand_index_rectified_total.png>]
-<figures/eight_probe/variation_of_information_rectified_conditional.png, id=1913, 289.08pt x 216.81pt>
+[65 <./figures/eight_probe/Krebs_cond_cov_comparison.png> <./figures/eight_probe/Waksman_cond_cov_comparison.png> <./figures/eight_probe/Robbins_cond_cov_comparison.png>]
+<figures/eight_probe/variation_of_information_rectified_conditional.png, id=1920, 289.08pt x 216.81pt>
 File: figures/eight_probe/variation_of_information_rectified_conditional.png Graphic file (type png)
 <use figures/eight_probe/variation_of_information_rectified_conditional.png>
-Package pdftex.def Info: figures/eight_probe/variation_of_information_rectified_conditional.png  used on input line 669.
+Package pdftex.def Info: figures/eight_probe/variation_of_information_rectified_conditional.png  used on input line 671.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/adjusted_rand_index_rectified_conditional.png, id=1914, 289.08pt x 216.81pt>
+<figures/eight_probe/adjusted_rand_index_rectified_conditional.png, id=1921, 289.08pt x 216.81pt>
 File: figures/eight_probe/adjusted_rand_index_rectified_conditional.png Graphic file (type png)
 <use figures/eight_probe/adjusted_rand_index_rectified_conditional.png>
-Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_rectified_conditional.png  used on input line 674.
+Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_rectified_conditional.png  used on input line 676.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 668--678
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 670--680
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/eight_probe/variation_of_information_rectified_signal.png, id=1915, 289.08pt x 216.81pt>
+<figures/eight_probe/variation_of_information_rectified_signal.png, id=1922, 289.08pt x 216.81pt>
 File: figures/eight_probe/variation_of_information_rectified_signal.png Graphic file (type png)
 <use figures/eight_probe/variation_of_information_rectified_signal.png>
-Package pdftex.def Info: figures/eight_probe/variation_of_information_rectified_signal.png  used on input line 684.
+Package pdftex.def Info: figures/eight_probe/variation_of_information_rectified_signal.png  used on input line 686.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/adjusted_rand_index_rectified_signal.png, id=1916, 289.08pt x 216.81pt>
+<figures/eight_probe/adjusted_rand_index_rectified_signal.png, id=1923, 289.08pt x 216.81pt>
 File: figures/eight_probe/adjusted_rand_index_rectified_signal.png Graphic file (type png)
 <use figures/eight_probe/adjusted_rand_index_rectified_signal.png>
-Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_rectified_signal.png  used on input line 689.
+Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_rectified_signal.png  used on input line 691.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 683--693
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 685--695
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65 <./figures/eight_probe/Krebs_cond_cov_comparison.png> <./figures/eight_probe/Waksman_cond_cov_comparison.png> <./figures/eight_probe/Robbins_cond_cov_comparison.png>] [66 <./figures/eight_probe/Krebs_cond_corr_comparison.png> <./figures/eight_probe/Waksman_cond_corr_comparison.png> <./figures/eight_probe/Robbins_cond_corr_comparison.png>] [67 <./figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png> <./figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png> <./figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png> <./figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png>]
-<figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png, id=1948, 462.528pt x 346.896pt>
+[66 <./figures/eight_probe/Krebs_cond_corr_comparison.png> <./figures/eight_probe/Waksman_cond_corr_comparison.png> <./figures/eight_probe/Robbins_cond_corr_comparison.png>] [67 <./figures/eight_probe/Krebs_0p005_conditional_rectified_regional_cluster_map.png> <./figures/eight_probe/Krebs_1p0_conditional_rectified_regional_cluster_map.png> <./figures/eight_probe/Krebs_0p005_signal_rectified_regional_cluster_map.png> <./figures/eight_probe/Krebs_1p0_signal_rectified_regional_cluster_map.png>] [68 <./figures/eight_probe/variation_of_information_rectified_conditional.png> <./figures/eight_probe/adjusted_rand_index_rectified_conditional.png>]
+<figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png, id=1953, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png  used on input line 712.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png  used on input line 714.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png, id=1949, 462.528pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png, id=1954, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png  used on input line 717.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png  used on input line 719.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png, id=1950, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png, id=1955, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png  used on input line 722.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png  used on input line 724.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png, id=1951, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png, id=1956, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png  used on input line 727.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png  used on input line 729.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/variation_of_information_absolute_total.png, id=1952, 289.08pt x 216.81pt>
+<figures/eight_probe/variation_of_information_absolute_total.png, id=1957, 289.08pt x 216.81pt>
 File: figures/eight_probe/variation_of_information_absolute_total.png Graphic file (type png)
 <use figures/eight_probe/variation_of_information_absolute_total.png>
-Package pdftex.def Info: figures/eight_probe/variation_of_information_absolute_total.png  used on input line 732.
+Package pdftex.def Info: figures/eight_probe/variation_of_information_absolute_total.png  used on input line 734.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/adjusted_rand_index_absolute_total.png, id=1953, 289.08pt x 216.81pt>
+<figures/eight_probe/adjusted_rand_index_absolute_total.png, id=1958, 289.08pt x 216.81pt>
 File: figures/eight_probe/adjusted_rand_index_absolute_total.png Graphic file (type png)
 <use figures/eight_probe/adjusted_rand_index_absolute_total.png>
-Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_absolute_total.png  used on input line 737.
+Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_absolute_total.png  used on input line 739.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 711--741
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 713--743
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 711--741
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 713--743
 []$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 711--741
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 713--743
 []$ $[]$ 
  []
 
-<figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png, id=1954, 462.528pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png, id=1959, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png  used on input line 747.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png  used on input line 749.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png, id=1955, 462.528pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png, id=1960, 462.528pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png  used on input line 752.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png  used on input line 754.
 (pdftex.def)             Requested size: 202.01454pt x 151.51254pt.
-<figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png, id=1956, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png, id=1961, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png Graphic file (type png)
 <use figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png  used on input line 757.
+Package pdftex.def Info: figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png  used on input line 759.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png, id=1957, 476.982pt x 346.896pt>
+<figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png, id=1962, 476.982pt x 346.896pt>
 File: figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png Graphic file (type png)
 <use figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png>
-Package pdftex.def Info: figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png  used on input line 762.
+Package pdftex.def Info: figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png  used on input line 764.
 (pdftex.def)             Requested size: 202.01454pt x 146.92334pt.
-<figures/eight_probe/variation_of_information_negative_total.png, id=1958, 289.08pt x 216.81pt>
+<figures/eight_probe/variation_of_information_negative_total.png, id=1963, 289.08pt x 216.81pt>
 File: figures/eight_probe/variation_of_information_negative_total.png Graphic file (type png)
 <use figures/eight_probe/variation_of_information_negative_total.png>
-Package pdftex.def Info: figures/eight_probe/variation_of_information_negative_total.png  used on input line 767.
+Package pdftex.def Info: figures/eight_probe/variation_of_information_negative_total.png  used on input line 769.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/eight_probe/adjusted_rand_index_negative_total.png, id=1959, 289.08pt x 216.81pt>
+<figures/eight_probe/adjusted_rand_index_negative_total.png, id=1964, 289.08pt x 216.81pt>
 File: figures/eight_probe/adjusted_rand_index_negative_total.png Graphic file (type png)
 <use figures/eight_probe/adjusted_rand_index_negative_total.png>
-Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_negative_total.png  used on input line 772.
+Package pdftex.def Info: figures/eight_probe/adjusted_rand_index_negative_total.png  used on input line 774.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 746--776
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 748--778
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 746--776
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 748--778
 []$ $[]$
  []
 
 
-Overfull \hbox (2.0805pt too wide) in paragraph at lines 746--776
+Overfull \hbox (2.0805pt too wide) in paragraph at lines 748--778
 []$ $[]$ 
  []
 
-[68 <./figures/eight_probe/variation_of_information_rectified_conditional.png> <./figures/eight_probe/adjusted_rand_index_rectified_conditional.png>] [69 <./figures/eight_probe/variation_of_information_rectified_signal.png> <./figures/eight_probe/adjusted_rand_index_rectified_signal.png>] [70 <./figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png> <./figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png> <./figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png> <./figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png> <./figures/eight_probe/variation_of_information_absolute_total.png> <./figures/eight_probe/adjusted_rand_index_absolute_total.png>] [71 <./figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png> <./figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png> <./figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png> <./figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png> <./figures
-/eight_probe/variation_of_information_negative_total.png> <./figures/eight_probe/adjusted_rand_index_negative_total.png>] [72]) [73] [74]
+[69 <./figures/eight_probe/variation_of_information_rectified_signal.png> <./figures/eight_probe/adjusted_rand_index_rectified_signal.png>] [70 <./figures/eight_probe/Krebs_0p005_absolute_cons_cluster_map.png> <./figures/eight_probe/Krebs_1p0_absolute_cons_cluster_map.png> <./figures/eight_probe/Krebs_0p005_regional_cluster_map_total_absolute.png> <./figures/eight_probe/Krebs_1p0_regional_cluster_map_total_absolute.png> <./figures/eight_probe/variation_of_information_absolute_total.png> <./figures/eight_probe/adjusted_rand_index_absolute_total.png>] [71 <./figures/eight_probe/Krebs_0p005_negative_cons_cluster_map.png> <./figures/eight_probe/Krebs_1p0_negative_cons_cluster_map.png> <./figures/eight_probe/Krebs_0p005_regional_cluster_map_total_negative.png> <./figures/eight_probe/Krebs_1p0_regional_cluster_map_total_negative.png> <./figures/eight_probe/variation_of_information_negative_total.png> <./figures/eight_probe/adjusted_rand_index_negative_total.png>] [72] [73]) [74]
 \openout2 = `Chapters/conway_maxwell_hierarchical_model.aux'.
 
- (./Chapters/conway_maxwell_hierarchical_model.tex
+
+(./Chapters/conway_maxwell_hierarchical_model.tex
 Chapter 4.
 --------------------
  Abstract
@@ -2093,12 +2103,12 @@ Overfull \hbox (0.73859pt too wide) in paragraph at lines 119--120
  []
 
 [81]
-<figures/conway_maxwell/betabinomial_overdispersion.png, id=2083, 289.08pt x 216.81pt>
+<figures/conway_maxwell/betabinomial_overdispersion.png, id=2082, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/betabinomial_overdispersion.png Graphic file (type png)
 <use figures/conway_maxwell/betabinomial_overdispersion.png>
 Package pdftex.def Info: figures/conway_maxwell/betabinomial_overdispersion.png  used on input line 136.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/conway_maxwell/betabinomial_big_overdispersion.png, id=2084, 289.08pt x 216.81pt>
+<figures/conway_maxwell/betabinomial_big_overdispersion.png, id=2083, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/betabinomial_big_overdispersion.png Graphic file (type png)
 <use figures/conway_maxwell/betabinomial_big_overdispersion.png>
 Package pdftex.def Info: figures/conway_maxwell/betabinomial_big_overdispersion.png  used on input line 141.
@@ -2118,22 +2128,22 @@ Overfull \hbox (55.87036pt too wide) in paragraph at lines 189--191
 [][]$\OT1/pcr/m/n/10.95 https : / / github . com / thomasjdelaney / Conway _ Maxwell _ Binomial _ Distribution$[][] 
  []
 
-<figures/conway_maxwell/comb_underdispersion.png, id=2107, 289.08pt x 216.81pt>
+<figures/conway_maxwell/comb_underdispersion.png, id=2106, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/comb_underdispersion.png Graphic file (type png)
 <use figures/conway_maxwell/comb_underdispersion.png>
 Package pdftex.def Info: figures/conway_maxwell/comb_underdispersion.png  used on input line 194.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/conway_maxwell/comb_overrdispersion.png, id=2108, 289.08pt x 216.81pt>
+<figures/conway_maxwell/comb_overrdispersion.png, id=2107, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/comb_overrdispersion.png Graphic file (type png)
 <use figures/conway_maxwell/comb_overrdispersion.png>
 Package pdftex.def Info: figures/conway_maxwell/comb_overrdispersion.png  used on input line 199.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/conway_maxwell/comb_skewed.png, id=2109, 289.08pt x 216.81pt>
+<figures/conway_maxwell/comb_skewed.png, id=2108, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/comb_skewed.png Graphic file (type png)
 <use figures/conway_maxwell/comb_skewed.png>
 Package pdftex.def Info: figures/conway_maxwell/comb_skewed.png  used on input line 204.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/conway_maxwell/comb_bin_dkl.png, id=2110, 289.08pt x 216.81pt>
+<figures/conway_maxwell/comb_bin_dkl.png, id=2109, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/comb_bin_dkl.png Graphic file (type png)
 <use figures/conway_maxwell/comb_bin_dkl.png>
 Package pdftex.def Info: figures/conway_maxwell/comb_bin_dkl.png  used on input line 209.
@@ -2149,58 +2159,58 @@ Overfull \hbox (2.0805pt too wide) in paragraph at lines 193--213
  []
 
 [84] [85 <./figures/conway_maxwell/comb_underdispersion.png> <./figures/conway_maxwell/comb_overrdispersion.png> <./figures/conway_maxwell/comb_skewed.png> <./figures/conway_maxwell/comb_bin_dkl.png>] [86]
-<figures/conway_maxwell/v1_raster_16.png, id=2135, 578.16pt x 216.81pt>
+<figures/conway_maxwell/v1_raster_16.png, id=2134, 578.16pt x 216.81pt>
 File: figures/conway_maxwell/v1_raster_16.png Graphic file (type png)
 <use figures/conway_maxwell/v1_raster_16.png>
 Package pdftex.def Info: figures/conway_maxwell/v1_raster_16.png  used on input line 248.
 (pdftex.def)             Requested size: 404.02908pt x 151.51122pt.
-<figures/conway_maxwell/v1_1ms_moving_avg_all_stimulated_trials.png, id=2136, 578.16pt x 224.037pt>
+<figures/conway_maxwell/v1_1ms_moving_avg_all_stimulated_trials.png, id=2135, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/v1_1ms_moving_avg_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/v1_1ms_moving_avg_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/v1_1ms_moving_avg_all_stimulated_trials.png  used on input line 253.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
-<figures/conway_maxwell/v1_1ms_moving_var_all_stimulated_trials.png, id=2137, 578.16pt x 224.037pt>
+<figures/conway_maxwell/v1_1ms_moving_var_all_stimulated_trials.png, id=2136, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/v1_1ms_moving_var_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/v1_1ms_moving_var_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/v1_1ms_moving_var_all_stimulated_trials.png  used on input line 258.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
-<figures/conway_maxwell/hippocampus_raster_16.png, id=2139, 578.16pt x 216.81pt>
+<figures/conway_maxwell/hippocampus_raster_16.png, id=2138, 578.16pt x 216.81pt>
 File: figures/conway_maxwell/hippocampus_raster_16.png Graphic file (type png)
 <use figures/conway_maxwell/hippocampus_raster_16.png>
 Package pdftex.def Info: figures/conway_maxwell/hippocampus_raster_16.png  used on input line 271.
 (pdftex.def)             Requested size: 404.02908pt x 151.51122pt.
-<figures/conway_maxwell/hippocampus_1ms_moving_avg_all_stimulated_trials.png, id=2140, 578.16pt x 224.037pt>
+<figures/conway_maxwell/hippocampus_1ms_moving_avg_all_stimulated_trials.png, id=2139, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/hippocampus_1ms_moving_avg_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/hippocampus_1ms_moving_avg_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/hippocampus_1ms_moving_avg_all_stimulated_trials.png  used on input line 276.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
-<figures/conway_maxwell/hippocampus_1ms_moving_var_all_stimulated_trials.png, id=2141, 578.16pt x 224.037pt>
+<figures/conway_maxwell/hippocampus_1ms_moving_var_all_stimulated_trials.png, id=2140, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/hippocampus_1ms_moving_var_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/hippocampus_1ms_moving_var_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/hippocampus_1ms_moving_var_all_stimulated_trials.png  used on input line 281.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
-<figures/conway_maxwell/thalamus_raster_16.png, id=2142, 578.16pt x 216.81pt>
+<figures/conway_maxwell/thalamus_raster_16.png, id=2141, 578.16pt x 216.81pt>
 File: figures/conway_maxwell/thalamus_raster_16.png Graphic file (type png)
 <use figures/conway_maxwell/thalamus_raster_16.png>
 Package pdftex.def Info: figures/conway_maxwell/thalamus_raster_16.png  used on input line 294.
 (pdftex.def)             Requested size: 404.02908pt x 151.51122pt.
-<figures/conway_maxwell/thalamus_1ms_moving_avg_all_stimulated_trials.png, id=2143, 578.16pt x 224.037pt>
+<figures/conway_maxwell/thalamus_1ms_moving_avg_all_stimulated_trials.png, id=2142, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/thalamus_1ms_moving_avg_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/thalamus_1ms_moving_avg_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/thalamus_1ms_moving_avg_all_stimulated_trials.png  used on input line 299.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
-<figures/conway_maxwell/thalamus_1ms_moving_var_all_stimulated_trials.png, id=2144, 578.16pt x 224.037pt>
+<figures/conway_maxwell/thalamus_1ms_moving_var_all_stimulated_trials.png, id=2143, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/thalamus_1ms_moving_var_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/thalamus_1ms_moving_var_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/thalamus_1ms_moving_var_all_stimulated_trials.png  used on input line 304.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
  [87] [88 <./figures/conway_maxwell/v1_raster_16.png> <./figures/conway_maxwell/v1_1ms_moving_avg_all_stimulated_trials.png> <./figures/conway_maxwell/v1_1ms_moving_var_all_stimulated_trials.png>] [89 <./figures/conway_maxwell/hippocampus_raster_16.png> <./figures/conway_maxwell/hippocampus_1ms_moving_avg_all_stimulated_trials.png> <./figures/conway_maxwell/hippocampus_1ms_moving_var_all_stimulated_trials.png>] [90 <./figures/conway_maxwell/thalamus_raster_16.png> <./figures/conway_maxwell/thalamus_1ms_moving_avg_all_stimulated_trials.png> <./figures/conway_maxwell/thalamus_1ms_moving_var_all_stimulated_trials.png>]
-<figures/conway_maxwell/fitting_example.png, id=2175, 289.08pt x 216.81pt>
+<figures/conway_maxwell/fitting_example.png, id=2174, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/fitting_example.png Graphic file (type png)
 <use figures/conway_maxwell/fitting_example.png>
 Package pdftex.def Info: figures/conway_maxwell/fitting_example.png  used on input line 321.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/conway_maxwell/best_fit_proportion.png, id=2176, 289.08pt x 216.81pt>
+<figures/conway_maxwell/best_fit_proportion.png, id=2175, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/best_fit_proportion.png Graphic file (type png)
 <use figures/conway_maxwell/best_fit_proportion.png>
 Package pdftex.def Info: figures/conway_maxwell/best_fit_proportion.png  used on input line 326.
@@ -2211,12 +2221,12 @@ Overfull \hbox (2.0805pt too wide) in paragraph at lines 320--330
  []
 
 [91 <./figures/conway_maxwell/fitting_example.png> <./figures/conway_maxwell/best_fit_proportion.png>]
-<figures/conway_maxwell/v1_1ms_comb_nu_all_stimulated_trials.png, id=2186, 578.16pt x 224.037pt>
+<figures/conway_maxwell/v1_1ms_comb_nu_all_stimulated_trials.png, id=2185, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/v1_1ms_comb_nu_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/v1_1ms_comb_nu_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/v1_1ms_comb_nu_all_stimulated_trials.png  used on input line 356.
 (pdftex.def)             Requested size: 404.02908pt x 156.56158pt.
-<figures/conway_maxwell/v1_1ms_corr_avg_all_stimulated_trials.png, id=2187, 578.16pt x 224.037pt>
+<figures/conway_maxwell/v1_1ms_corr_avg_all_stimulated_trials.png, id=2186, 578.16pt x 224.037pt>
 File: figures/conway_maxwell/v1_1ms_corr_avg_all_stimulated_trials.png Graphic file (type png)
 <use figures/conway_maxwell/v1_1ms_corr_avg_all_stimulated_trials.png>
 Package pdftex.def Info: figures/conway_maxwell/v1_1ms_corr_avg_all_stimulated_trials.png  used on input line 361.
@@ -2226,12 +2236,12 @@ Package pdftex.def Info: figures/conway_maxwell/v1_1ms_corr_avg_all_stimulated_t
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [92]
-<figures/conway_maxwell/v1_1ms_fano_factor.png, id=2196, 289.08pt x 216.81pt>
+<figures/conway_maxwell/v1_1ms_fano_factor.png, id=2195, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/v1_1ms_fano_factor.png Graphic file (type png)
 <use figures/conway_maxwell/v1_1ms_fano_factor.png>
 Package pdftex.def Info: figures/conway_maxwell/v1_1ms_fano_factor.png  used on input line 378.
 (pdftex.def)             Requested size: 202.01454pt x 151.51122pt.
-<figures/conway_maxwell/motor_cortex_1ms_fano_factor.png, id=2197, 289.08pt x 216.81pt>
+<figures/conway_maxwell/motor_cortex_1ms_fano_factor.png, id=2196, 289.08pt x 216.81pt>
 File: figures/conway_maxwell/motor_cortex_1ms_fano_factor.png Graphic file (type png)
 <use figures/conway_maxwell/motor_cortex_1ms_fano_factor.png>
 Package pdftex.def Info: figures/conway_maxwell/motor_cortex_1ms_fano_factor.png  used on input line 383.
@@ -2270,53 +2280,57 @@ Chapter 6.
 
 
 ]
-Overfull \hbox (51.04741pt too wide) in paragraph at lines 330--330
+Overfull \hbox (51.04741pt too wide) in paragraph at lines 334--334
 \OT1/ptm/m/n/10.95 mar-ily by re-duc-ing in-terneu-ronal cor-re-la-tions". eng. In: \OT1/ptm/m/it/10.95 Na-ture neu-ro-science \OT1/ptm/m/n/10.95 12.12. 19915566[pmid],
  []
 
 1: section
 [109] [110] [111]
-Overfull \hbox (11.92365pt too wide) in paragraph at lines 330--330
+Overfull \hbox (11.92365pt too wide) in paragraph at lines 334--334
 \OT1/ptm/m/n/10.95 labeled neu-rons deep in in-tact mouse brain". eng. In: \OT1/ptm/m/it/10.95 Na-ture meth-ods \OT1/ptm/m/n/10.95 14.4. 28218900[pmid],
  []
 
 
-Overfull \hbox (0.28746pt too wide) in paragraph at lines 330--330
+Overfull \hbox (0.28746pt too wide) in paragraph at lines 334--334
 [][]\OT1/ptm/m/n/10.95 Pnevmatikakis, E.A. et al. (Jan. 2016). \  Si-mul-ta-ne-ous De-nois-ing, De-con-vo-lu-tion, and Demix-
  []
 
 
-Overfull \hbox (1.79886pt too wide) in paragraph at lines 330--330
+Overfull \hbox (1.79886pt too wide) in paragraph at lines 334--334
 \OT1/ptm/m/n/10.95 work states in a neu-ral pop-u-la-tion". eng. In: \OT1/ptm/m/it/10.95 Na-ture \OT1/ptm/m/n/10.95 440.7087. 16625187[pmid], pp. 1007{
  []
 
 [112]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
  [113]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./phd_thesis.aux (./Chapters/introduction.aux) (./Chapters/calcium_imaging_model_paper.aux) (./Chapters/eight_probe.aux) (./Chapters/conway_maxwell_hierarchical_model.aux) (./Chapters/small_chapter.aux) (./Chapters/discussion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `phd_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E7A35A3E533791E202C7E20C922F34C1;25167.
+(rerunfilecheck)             Checksum: 0AB37A482B1829E95332608A184465A6;25167.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'phd_thesis.run.xml'.
 \openout1 = `phd_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39500 strings out of 492667
- 801899 string characters out of 6134097
- 1205976 words of memory out of 5000000
+ 39499 strings out of 492667
+ 801887 string characters out of 6134097
+ 1203908 words of memory out of 5000000
  42422 multiletter control sequences out of 15000+600000
  638938 words of font info for 262 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  64i,21n,86p,2924b,3094s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on phd_thesis.pdf (139 pages, 4428125 bytes).
+Output written on phd_thesis.pdf (139 pages, 4427928 bytes).
 PDF statistics:
- 2482 PDF objects out of 2487 (max. 8388607)
- 2113 compressed objects within 22 object streams
- 433 named destinations out of 1000 (max. 500000)
+ 2478 PDF objects out of 2487 (max. 8388607)
+ 2109 compressed objects within 22 object streams
+ 432 named destinations out of 1000 (max. 500000)
  1309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

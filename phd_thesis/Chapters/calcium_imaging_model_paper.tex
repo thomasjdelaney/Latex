@@ -28,7 +28,7 @@ The fluorescence traces produced by the simulation were calibrated to reproduce 
 
 \section{Methods}
 \subsection{Calcium dynamics model}
-We wrote a biophysical model of the calcium dynamics within a cell soma. When a neuron fires an action potential, voltage-dependent calcium ion-channels open up that allow a current of calcium ions (Ca$^{2+}$) to flow into the neuron  \parencite{koch}. The increase in the free calcium ion concentration inside of the cell, along with changes in the concentration of potassium and sodium, causes the change in cell membrane potential, which must be depolarised. The depolarising process consists of free calcium ions leaving the cell through open ion channels, or binding to molecules within the cell called buffers, or calcium storage by organelles such as the endoplasmic reticulum. A diagram illustrating the cell, its channels, and its buffers can be seen in figure \ref{fig:spike_finder_example}A. There are several different types of calcium buffer, each with different dynamics and different concentrations within different types of excitable cell. The fluorescent calcium indicator is another calcium buffer, with the useful property that when it is bound to a calcium ion, the bound molecule may become excited by a photon and release a photon in return. This is what creates the fluorescence. After the action potential has taken place, the free calcium concentration within the cell will return to a baseline level  \parencite{maravall}.
+We wrote a biophysical model of the calcium dynamics within a cell soma. When a neuron fires an action potential, voltage-dependent calcium ion-channels open up that allow a current of calcium ions (Ca$^{2+}$) to flow into the neuron  \parencite{koch}. The increase in the free calcium ion concentration inside of the cell, along with changes in the concentration of potassium and sodium, causes the change in cell membrane potential, which must be repolarised. The depolarising process consists of free calcium ions leaving the cell through open ion channels, or binding to molecules within the cell called buffers, or calcium storage by organelles such as the endoplasmic reticulum. A diagram illustrating the cell, its channels, and its buffers can be seen in figure \ref{fig:spike_finder_example}A. There are several different types of calcium buffer, each with different dynamics and different concentrations within different types of excitable cell. The fluorescent calcium indicator is another calcium buffer, with the useful property that when it is bound to a calcium ion, the bound molecule may become excited by a photon and release a photon in return. This is what creates the fluorescence. After the action potential has taken place, the free calcium concentration within the cell will return to a baseline level  \parencite{maravall}.
 
 We modelled the the dynamics of five molecular concentrations,
 \begin{itemize}
@@ -42,9 +42,9 @@ The term ‘buffering’ refers to free calcium ions coming into contact with bu
 \begin{align*}
     [X][Ca^{2+}] \xrightleftharpoons[k_{Xb}]{k_{Xf}} [XCa]
 \end{align*}
-where $[X]$ represents any buffer molecule, and $k_{X_f}$ and $k_{X_b}$ represent the binding (affinity) and unbinding (dissociation) rates in units of per molar concentration per second (M$^{-1}$ s$^{-1}$) and per second (s$^{-1}$) respectively. The speed of this chemical reaction is determined by the binding and unbinding rates.
+where $[X]$ represents any buffer molecule, and $k_{X_f}$ and $k_{X_b}$ represent the binding (association) and unbinding (dissociation) rates in units of per molar concentration per second (M$^{-1}$ s$^{-1}$) and per second (s$^{-1}$) respectively. The speed of this chemical reaction is determined by the binding and unbinding rates.
 
-There are a number different endogenous buffers in any neuron. Which buffers are present, and the buffers’ concentrations vary from cell to cell. In order to capture the effects of mobile and immobile endogenous buffers without introducing several parameters, they were modelled as two buffers. One representing mobile buffers and the other representing immobile buffers. Each with their own binding and unbinding rates.
+There are a number different endogenous buffers in any neuron. Which buffers are present, and the buffers’ concentrations vary from cell to cell. In order to capture the effects of mobile and immobile endogenous buffers without introducing several parameters, they were modelled as two buffers. One representing mobile buffers and the other representing immobile buffers. Each with their own binding and unbinding rates. Note that since the model has no spatial component, the mobile and immobile buffers only differ in their binding and unbinding rates.
 
 The fluorescent calcium indicator behaves similarly to the other calcium buffers. The calcium is buffered by the indicator in the same way. But an indicator bound calcium molecule can become excited by absorbing the energy from a photon. An excited indicator bound calcium molecule can then release a photon to go back to its ‘relaxed’ state.
 \begin{align*}
@@ -52,7 +52,7 @@ The fluorescent calcium indicator behaves similarly to the other calcium buffers
 \end{align*}
 The released photons are captured by a photon collector. This gives us the fluorescence trace.
 
-Ignoring the baseline level of free calcium in a neuron, the system of equations we used to model all of these interactions is as follows:
+The system of equations we used to model all of these interactions is as follows:
 \begin{equation} \label{eq:model_equations}
   \begin{split}
   \diff{[Ca^{2+}]}{t} = & k_{Bb}[BCa] + k_{Eb}[ECa] + k_{Imb}[ImCa] \\
@@ -61,7 +61,7 @@ Ignoring the baseline level of free calcium in a neuron, the system of equations
   \end{split}
 \end{equation}
 \begin{align}
-  \diff{[BCa]}{t} = & k_{Bf}[B][Ca^{2+}] - k_{Bb}[BCa] + r[BCa^{*}] - e[BCa] \\
+  \diff{[BCa]}{t} = & k_{Bf}[B][Ca^{2+}] - k_{Bb}[BCa] + r[BCa^{*}] - \eta [BCa] \\
   \diff{[ECa]}{t} = & k_{Ef}[E][Ca^{2+}] - k_{Eb}[ECa] \\
   \diff{[ImCa]}{t} = & k_{Imf}[Im][Ca^{2+}] - k_{Imb}[ImCa] \\
   \diff{[BCa^{*}]}{t} = & \eta[BCa] - r[BCa^{*}]
@@ -71,8 +71,6 @@ where $[Ca^{2+}_{0}]$ is the baseline calcium concentration within the cell soma
 Note that each of the three pairs of binding and unbinding terms in the first equation has a corresponding pair in one of the subsequent three equations. Binding removes a free calcium molecule and adds a bound calcium molecule, and unbinding does the opposite.
 
 When using this model to simulate a fluorescence trace, the system of equations above are first solved over a period of 25s without action potentials. This lets each of the five tracked chemical concentrations reach their steady state. Then we use the given spike train and the parameters to model the fluorescence trace.
-
-Note that since the model has no spatial component, the mobile and immobile buffers only differ in their binding and unbinding rates.
 
 \subsubsection{Photon release \& capture}
 We used a simple model for the photon release. The number of photons released at each time step was controlled by the number of excited indicator bound calcium molecules in the cell and a parameter called the `release rate'. The release rate is an optimised free parameter of the model.
@@ -100,7 +98,7 @@ To optimise the free parameters given a fluorescence trace, we applied the follo
 \end{enumerate}
 Using the root mean squared difference of the log power spectra as part of the objective function forces the model to match the noise frequency of the actual fluorescence. Using the root mean squared difference of the traces themselves forces the model to match the amplitude of the fluorescence trace more accurately.
 
-In order to minimise the objective function, a suite of meta-heuristic optimisation (aka. black-box optimisation) algorithms were implemented on each of the traces in the dataset. These methods were chosen because they don’t require a gradient for the objective function (gradient-free) and they are particularly useful for minimising stochastic objective functions like the one we used here. The free parameters were optimised for each individual fluorescence trace. The most successful method for each trace was recorded. The method that was most often successful was probabilistic descent, and the second most successful method was generating set search. Both of these methods are examples of pattern search. These two methods were the best optimisers on about $75\%$ of the traces in the dataset.
+In order to minimise the objective function, a suite of meta-heuristic optimisation (aka. black-box optimisation) algorithms were implemented on each of the traces in the dataset. These methods were chosen because they don’t require a gradient for the objective function (gradient-free) and they are particularly useful for minimising stochastic objective functions like the one we used here. The free parameters were optimised for each individual fluorescence trace. The most successful method for each trace was recorded. The method that was most often successful was probabilistic descent, and the second most successful method was generating set search. Both of these methods are examples of pattern search. These two methods were the best optimisers on about $75\%$ of the traces in the dataset. The other methods were differential evolution (with and without radius limited sampling, adaptive and not adaptive), natural evolution strategy, and random search for comparison.
 
 Although this optimisation procedure minimises the value of the optimisation function, the value never reaches zero for a number of reasons. Firstly, the fluorescence traces carry low frequency fluctuations that cannot be captured by the model. Secondly, the model assumes that the process of calcium binding to the fluorescent indicator is linear in time (see equation 1), but there are more complicated dynamics involved here. Fluorescent calcium indicators, the GCaMP series for example, are often built upon the calcium binding protein called `calmodulin'. This protein has four calcium binding sites. These sites are locally split into two pairs. Each pair has a different affinity for calcium, and the affinity of the binding sites is affected by the occupancy of the other binding sites  \parencite{kilhoffer}. So the calcium to calcium indicator binding process is non-linear, but the model does not take this into account.
 
@@ -163,8 +161,6 @@ In order to compare spike inference quality we had to use methods for comparing 
 
 \subsection{Perturbation analysis}
 In order to measure the sensitivity of spike inference to changes in a given model parameter, we perturbed the parameter and compared the quality of spike inference with the perturbed parameters to the quality of spike inference with the experimental or optimised parameters. In order to maximise the possibility of observing a difference due to the perturbation, we perturbed the chosen parameter by a relatively large amount. For example, the experimental value for the molar concentration of the fluorescent indicator within the cell was $10^{-4}$M  \parencite{maravall}. The perturbed values used for this parameter were $10^{-2}$M, $10^{-3}$M, $10^{-5}$M, and $10^{-6}$M. The quality of the inference was compared by measuring the true positive rate for each perturbed value and using a t-test to compare the distributions of the results.
-
-This analysis was performed firstly without any optimisation of the free parameters for use with the perturbed parameters. Then the analysis was performed after the optimised parameters for each perturbed value were calculated.
 
 \subsection{Signal-to-noise ratio}\label{sec:snr}
 To assess the effect of perturbation on the modelled traces, we measured and compared the signal to noise ratio (SNR) on each of the modelled traces. We calculated the SNR as the peak change in fluorescence divided by the standard deviation of the baseline fluctuation of the fluorescence trace  \parencite{tada}. We measured these values by running the model on a spike train consisting a long period of inactivity followed by one action potential. We ran the model on this spike train one hundred times. We then measured the mean change in fluorescence and standard deviation of baseline activity across the one hundred modelled fluorescence traces, and calculated the SNR.
