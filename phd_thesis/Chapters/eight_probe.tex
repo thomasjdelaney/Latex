@@ -67,7 +67,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \rho_{XY} =& \frac{\cov(X,Y)}{\sigma_X \sigma_Y} \\
                   =& \frac{E[(X - \mu_X)(Y - \mu_Y)]}{\sigma_X \sigma_Y}
     \end{align}
-    where $E$ denotes the expected value, $\mu$ denotes the mean, and $\sigma$ denotes the standard deviation. The correlation coefficient is a normalised measure of the covariance. It can take values between $1$ (completely correlated) and $-1$ (completely anti-correlated). Two independent variables will have a correlation coefficient of $0$. But, having $0$ correlation does not imply independence.
+    where $E$ denotes the expected value, $\mu$ denotes the mean, and $\sigma$ denotes the standard deviation. The correlation coefficient is a normalised measure of the covariance. It can take values between $1$ (completely correlated) and $-1$ (completely anti-correlated). Two independent variables will have a correlation coefficient of $0$, but having $0$ correlation does not imply independence.
 
     If we do not know the means and standard deviations required for equation \ref{eq:dist_pearsons_corr}, but we have samples from $X$ and $Y$, Pearson's sample correlation coefficient is defined as:
     \begin{align}
@@ -75,7 +75,7 @@ To find and analyse functional networks while controlling for the subject's beha
     \end{align}
     where $\lbrace (x_i, y_i) \rbrace$ for $i \in \lbrace 1, \dots, n \rbrace$ are the paired samples from $X$ and $Y$, and $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$, and $\bar{y} = \frac{1}{n}\sum_{i=1}^n y_i$ are the sample means.
 
-    In practice we used the python function \texttt{scipy.stats.pearsonr} to calculate the correlation coefficients.
+    In practice we used the Python function \texttt{scipy.stats.pearsonr} to calculate the correlation coefficients.
 
         \subsubsection{Total correlations, $r_{SC}$}\label{sec:spike_count_correlation}
         In this context, we defined the total correlation ($r_{SC}$) of two cells to be the correlation between the spike counts of those cells across the entire period of spontaneous behaviour.
@@ -117,7 +117,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \begin{align}
           \hat{\boldsymbol{\beta}} = \arg \min_{\boldsymbol{\beta}} L(\lambda_1, \lambda_2, \boldsymbol{\beta})
         \end{align}
-        We implemented the model using the \texttt{ElasticNetCV} method of Python's \\ \texttt{sklearn.linear\_models} package. We chose to put equal weighting on the $L1$ and $L2$ regression parts of equation \label{eq:elastic_net}. We used $10$-fold cross validation to set an  optimised value for $\lambda_1 = \lambda_2$.
+        We implemented the model using the \texttt{ElasticNetCV} method of Python's \\ \texttt{sklearn.linear\_models} package. We chose to put equal weighting on the $L1$ and $L2$ regression parts of equation \ref{eq:elastic_net}. We used $10$-fold cross validation to set an  optimised value for $\lambda_1 = \lambda_2$.
 
         As well as using the PCs, we also tried fitting the models using the raw video data reconstructed from the PCs and eigenvectors. These models performed worse than those using the PCs. We expected this because each representation contains the same amount of information, but the raw video representation spreads this information across many more components. This requires more parameter fitting, but given the same information.
 
@@ -165,7 +165,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \begin{align}\label{joint_entropy}
         H(X, Y) = -\sum_{n=1}^N \sum_{m=1}^M P(X=x_n, Y=y_m) \log _2 P(X=x_n, Y=y_m)
         \end{align}
-        If $X$ and $Y$ are independent then $H(X,Y) = H(X) + H(Y)$. Otherwise $H(X,Y) < H(X) + H(Y)$. When $X$ and $Y$ are completely dependent and the mapping from $X$ to $Y$ is on-to-one, $H(X,Y) = H(X) = H(Y)$.
+        If $X$ and $Y$ are independent then $H(X,Y) = H(X) + H(Y)$. Otherwise $H(X,Y) < H(X) + H(Y)$. When $X$ and $Y$ are completely dependent and the mapping from $X$ to $Y$ is one-to-one, $H(X,Y) = H(X) = H(Y)$.
 
         The conditional entropy of $Y$ conditioned on $X$ is defined as
         \begin{align}

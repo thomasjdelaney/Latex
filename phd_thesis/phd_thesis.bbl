@@ -3671,6 +3671,150 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{piatkevich}{article}{}
+    \name{author}{16}{}{%
+      {{hash=PKD}{%
+         family={Piatkevich},
+         familyi={P\bibinitperiod},
+         given={Kiryl\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bensussen},
+         familyi={B\bibinitperiod},
+         given={Seth},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=THa}{%
+         family={Tseng},
+         familyi={T\bibinitperiod},
+         given={Hua-an},
+         giveni={H\bibinithyphendelim a\bibinitperiod},
+      }}%
+      {{hash=SSN}{%
+         family={Shroff},
+         familyi={S\bibinitperiod},
+         given={Sanaya\bibnamedelima N.},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=LHVG}{%
+         family={Lopez-Huerta},
+         familyi={L\bibinithyphendelim H\bibinitperiod},
+         given={Violeta\bibnamedelima Gisselle},
+         giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Demian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=JEE}{%
+         family={Jung},
+         familyi={J\bibinitperiod},
+         given={Erica\bibnamedelima E.},
+         giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SOA}{%
+         family={Shemesh},
+         familyi={S\bibinitperiod},
+         given={Or\bibnamedelima A.},
+         giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Straub},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GHJ}{%
+         family={Gritton},
+         familyi={G\bibinitperiod},
+         given={Howard\bibnamedelima J.},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RMF}{%
+         family={Romano},
+         familyi={R\bibinitperiod},
+         given={Michael\bibnamedelima F.},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Costa},
+         familyi={C\bibinitperiod},
+         given={Emma},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SBL}{%
+         family={Sabatini},
+         familyi={S\bibinitperiod},
+         given={Bernardo\bibnamedelima L.},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=FZ}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Zhanyan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=BES}{%
+         family={Boyden},
+         familyi={B\bibinitperiod},
+         given={Edward\bibnamedelima S.},
+         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HX}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Xue},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PKD+1}
+    \strng{fullhash}{PKDBSTHaSSNLHVGPDJEESOASCGHJRMFCESBLFZBESHX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    A longstanding goal in neuroscience has been to image membrane voltage
+  across a population of individual neurons in an awake, behaving mammal. Here
+  we describe a genetically encoded fluorescent voltage indicator, SomArchon,
+  which exhibits millisecond response times and is compatible with optogenetic
+  control, and which increases the sensitivity, signal-to-noise ratio, and
+  number of neurons observable several-fold over previously published fully
+  genetically encoded reagents1--8. Under conventional one-photon microscopy,
+  SomArchon enables the routine population analysis of around 13 neurons at
+  once, in multiple brain regions (cortex, hippocampus, and striatum) of
+  head-fixed, awake, behaving mice. Using SomArchon, we detected both positive
+  and negative responses of striatal neurons during movement, as previously
+  reported by electrophysiology but not easily detected using modern calcium
+  imaging techniques9--11, highlighting the power of voltage imaging to reveal
+  bidirectional modulation. We also examined how spikes relate to the
+  subthreshold theta oscillations of individual hippocampal neurons, with
+  SomArchon showing that the spikes of individual neurons are more phase-locked
+  to their own subthreshold theta oscillations than to local field potential
+  theta oscillations. Thus, SomArchon reports both spikes and subthreshold
+  voltage dynamics in awake, behaving mice.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41586-019-1641-1
+    \endverb
+    \field{issn}{1476-4687}
+    \field{number}{7778}
+    \field{pages}{413\bibrangedash 417}
+    \field{title}{Population imaging of neural activity in awake behaving mice}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41586-019-1641-1
+    \endverb
+    \field{volume}{574}
+    \field{journaltitle}{Nature}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{pnevmatikakis}{article}{}
     \name{author}{16}{}{%
       {{hash=PE}{%
