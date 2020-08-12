@@ -43,7 +43,7 @@ Two `Phase3' Neuropixels  \parencite{jun} electrode arrays were inserted into th
 
     So for the $1$ms bin width, the activity of a neuron and the number of spikes fired by that neuron in any bin can be modelled as a Bernoulli variable. But for wider time bins, only the activity can be modelled in this way.
 
-    \subsection{Moving windows for measurements}
+    \subsection{Moving windows for measurements}\label{sec:measurements}
 
     When taking measurements (e.g. moving average over the number of active neurons) or fitting distributions (eg. the beta binomial distribution) we slid a window containing a certain number of bins across the data, and made our measurements at each window position. For example, when analysing $1$ms bin data, we used a window containing $100$ bins, and we slid the window across the time interval for each trial moving $10$ bins at a time. So that for $3060$ms of data, we made $296$ measurements.
 
@@ -210,7 +210,7 @@ Two `Phase3' Neuropixels  \parencite{jun} electrode arrays were inserted into th
           \caption{KL-Divergence as a function of $p$ and $\nu$. $n=100$.}
           \label{fig:comb_bin_dkl}
         \end{subfigure}
-        \caption{Figures showing (A) the under-dispersion and (B) over-dispersion permitted by the COMb distribution relative to a binomial distribution. (C) illustrates that the $p$ parameter of the COMb distribution does not correspond to the mean of the distribution, as it does for the binomial and beta-binomial distributions. (D) shows a heatmap for the value of the Kullback-Liebler divergence between the COMb distribution and the standard binomial distribution with same value for $n$, as a function of $p$ and $\nu$. Parameters are shown in the captions.}
+        \caption{Figures showing (A) the under-dispersion and (B) over-dispersion permitted by the COMb distribution relative to a binomial distribution. (C) illustrates that the $p$ parameter of the COMb distribution does not correspond to the mean of the distribution, as it does for the binomial and beta-binomial distributions. (D) shows a heatmap for the value of the Kullback-Liebler divergence between the COMb distribution and the standard binomial distribution with same value for $n$, as a function of $p$ and $\nu$. The point of this figure is to give the reader a sense of how the values of $p$ and $\nu$ influence the difference between the COMb distribution and the binomial distribution. The divergence is smallest when $\nu \approx 1$, or when $p \approx 0.5$. When $\nu = 1$, the PMF for the COMb distribution is the same as the PMF for the binomial distribution. When $p = 0.5$ the mass of the distribution is centred around $n/2$ for both the COMb and the binomial distribution. The difference between the two distributions is controlled by the $\nu$ parameter. The further the $p$ and $\nu$ parameters are from $0.5$ and $1$ respectively, the greater the difference between the COMb distribution and the binomial distribution. Parameters for all figures are shown in the captions.}
       \end{figure}
 
     \subsection{Fitting}
@@ -389,6 +389,28 @@ We defined a neuron as \textit{active} in a time bin if it fires at least one sp
   \end{figure}
 
   Similar to these findings in the Fano factor, we found a reduction in the $\nu$ parameter of the COMB distribution on stimulus onset in V1 (figure \ref{fig:comb_nu_parameter}) and in no other region from which we had data. Specifically, the $\nu$ parameter reduced from around $1$, to between $1$ and $0$. This represents a change from no association between the neurons, to a positive association. It is possible that this positive association may be responsible for the reduction in the Fano factor.
+
+  \subsection{Effects of wider bin sizes}
+  Using a greater bin width ($10$ms) affected the scale and shape of the most of the measurements taken (described in section \ref{sec:measurements}). The average correlation coefficient is the exception to this. The $10$ms bin width is still so small that the average correlation coefficient was also small (similar scale as figure \ref{fig:avg_corr_coef}).
+
+  Using the greater bin width acted as a low pass filter on the other measurements taken and the parameters of the fitted distributions. For example compare figure \ref{fig:comb_nu_parameter} to figure \ref{fig:v1_10ms_comb_nu_parameter}. Note also that the $\nu$ parameter varies between $0.6$ and $0.2$ when using the $10$ms bin width. This indicates some positive association between the neurons at all times, even when not stimulated or when adapted to the stimulus. This may be caused by the wider bin width resulting in more neurons classified as active. The change is association at stimulus onset is still captured by the change in the $\nu$ parameter.
+
+  The mean number of active neurons was about $10$ times greater for a $10$ms bin width compared to a $1$ms bin width. The variance in the number of active neurons was also greater for the wider bin width. This caused a change in the scale of the Fano factor (see figure \ref{fig:v1_10ms_fano_factor} compared to figure  \ref{fig:v1_1ms_fano_factor}). Also, the reduction in the mean Fano factor at stimulus onset is not significant when using the $10$ms bin width (Mann-Whitney U test, $p = 0.07$). This is likely due to greater variance in the Fano factors of the individual cells. Bear in mind that we are using the activity in each bin (either $0$ or $1$) rather than the actual spike counts in each bin. When using a $1$ms bin width, there is no difference between the spike count and the activity but when using a wider bin width, there may be more than one spike per bin.
+
+  \begin{figure}[p]
+    \begin{subfigure}[h]{\linewidth}
+      \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_10ms_comb_nu_all_stimulated_trials.png}
+      \caption{Primary visual cortex $\nu$ parameter, bin width is $10$ms.}
+      \label{fig:v1_10ms_comb_nu_parameter}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_10ms_fano_factor.png}
+      \caption{Primary visual cortex Fano factor, bin width is $10$ms.}
+      \label{fig:v1_10ms_fano_factor}
+    \end{subfigure}
+    \caption{(A) The mean $\nu$ parameter of the COMb distribution fitted to activity in the primary visual cortex. Mean taken across all stimulated trials. A bin width of $10$ms was used to classify cells as active or inactive. The change in association at stimulus onset is still captured. Some high frequency fluctuations are filtered out by using the wider bins (compare to figure \ref{fig:comb_nu_parameter}) (B) The mean Fano factor of the cells in the primary visual cortex. The change in the mean Fano factor at stimulus onset is not significant when using a bin width of $10$ms.}
+    \label{fig:effects_of_wide_bins}
+  \end{figure}
 
 \section{Discussion}
 Our aim in this research was to develop a new statistical method for analysing the activity of a neuronal ensemble at very short timescales. We wanted our method to use information taken from the whole ensemble, but we also wanted the method to be quick and easy to implement. It is likely that analysis methods with these characteristics will become valuable as electrophysiological datasets include readings from more cells over longer time periods. In this case, we used the number of active, or spiking, neurons in a very short time bin ($<10$ms) as a measure of ensemble activity.

@@ -132,7 +132,9 @@ To find and analyse functional networks while controlling for the subject's beha
 
         The second component is analogous to what Cohn et al. (2011) call the \textit{signal correlation} \parencite{cohen2}. In particular, $\cov(E[X|Z], E[Y|Z])$ is the covariance between spike counts in response to different stimuli.
 
-        Using our linear model, we calculated $E[X|Z_1,\dots, Z_{500}]$ for each cell $X$. Then we proceeded to calculate
+        Our linear model gave us $500$ coefficients, one for each of $Z_1, \dots, Z_500$. By summing the linear combination of these coefficients and a set containing one value for each $Z_i$, we obtained our model's estimate for the spike count of the cell represented by $X$. We interpreted our model as a function that takes a set of values $\lbrace Z_1 = z_1,\dots,Z_{500} = z_{500} \rbrace$ as input and returns $E[X|Z_1=z_1,\dots,Z_{500}=z_{500}]$.
+
+        Using our linear model, we calculated $E[X|Z_1,\dots, Z_{500}]$ for each cell $X$ and for all sets of values for $\lbrace Z_1,\dots,Z_{500} \rbrace$ available to us. We used those values to calculate $cov(E[X|Z_1,\dots, Z_{500}], E[Y|Z_1,\dots, Z_{500}])$ for each pair of cells $(X,Y)$. Then we proceeded to calculate
         \begin{equation}
             \begin{split}
                 E[\cov(X,Y|Z_1,\dots, Z_{500})] = & \cov(X,Y) - \\
@@ -154,6 +156,10 @@ To find and analyse functional networks while controlling for the subject's beha
         this is an actual correlation.
 
     \subsection{Information Theory}\label{sec:information_theory}
+    We used an information theory based measure to measure the difference between the communities that we detected in the correlation based functional networks that we constructed and the anatomical division of the cells in our data. We treated these as clusterings, and measured the distance between them. We also were planning on using the mutual information between the spike counts of cells as measure upon which to build functional networks. But our measurements turned out to be heavily biased. So we abandoned that approach.
+
+    As a result, we have here a lot of background on information theory. This information is still useful for understanding our measure of distance between between clusterings. So I think it is worth keeping.
+
         \subsubsection{Entropy $H(X)$}
         The entropy of a random variable $X$, with outcomes $x_1, \dots, x_N$, and corresponding probabilities $p_1, \dots, p_N$ is defined as
         \begin{align}\label{entropy}
@@ -176,6 +182,8 @@ To find and analyse functional networks while controlling for the subject's beha
         These entropy measures are the basis of the mutual information measure.
 
         \subsubsection{Maximum entropy limit}\label{sec:entropy_limit}
+        Originally, we intended to measure the mutual information between the spike counts of cells. We included this section to explain why using larger bin widths resulted in potentially larger spike counts, containing potentially more information, corresponding with higher mutual information values. The idea of measuring the mutual information between spike counts was abandoned. But this section was kept as an illustration of how the number of values a random variable can take affects the information conveyed by that variable.
+
         When spiking data is binned into spike counts there is an upper limit on the entropy of these data. The maximum entropy discrete distribution is the discrete uniform distribution. A random variable with this distribution will take values from some finite set with equal probabilities. Binned spike count data will take values between $0$ and some maximum observed spike count $n_{\max}$. A neuron with responses that maximises entropy will take these values with equal probability, i.e. if $i \in \lbrace 0, \dots, n_{\max} \rbrace$ then $P(X = i) = \frac{1}{n_{\max} + 1}$. The entropy of this neuron will be
         \begin{align*}
           H(X)  &= - \sum_{i=0}^{n_{\max}} P(X = i) \log _2 P(X=i) \\
@@ -319,6 +327,8 @@ To find and analyse functional networks while controlling for the subject's beha
           ARI = \frac{2\left( N_{00}N_{11} - N_{01}N_{10} \right)}{\left( N_{00} + N_{01} \right)\left( N_{01} + N_{11} \right) + \left( N_{00} + N_{10} \right)\left( N_{10} + N_{11} \right)}
       \end{align}
       The adjusted Rand Index is $1$ when the clusterings are identical, and $0$ when the Rand Index is equal to its expected value.
+
+      When the number of clusters in each clustering is different, the concept of a pair of being in the same cluster in both clusterings becomes difficult to define. To address this, two clusterings are drawn randomly with $N_{\mathcal{C}}$ and $N_{\mathcal{C}^{\prime}}$ number of clusters respectively, and a fixed number of elements in each cluster corresponding to the number of elements in each cluster in $\mathcal{C}$ and $\mathcal{C}^{\prime}$. Then the adjusted Rand Index is the normalised difference between the Rand Index of $\mathcal{C}$ and $\mathcal{C}^{\prime}$ and the mean value of the Rand Index measured using many pairs of these `random' clusterings. 
 
       \subsubsection{Clusterings as random variables}
       If we take any random element of $D$, the probability that this element is in cluster $C_k$ of clustering $\mathcal{C}$ is
