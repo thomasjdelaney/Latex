@@ -328,7 +328,7 @@ To find and analyse functional networks while controlling for the subject's beha
       \end{align}
       The adjusted Rand Index is $1$ when the clusterings are identical, and $0$ when the Rand Index is equal to its expected value.
 
-      When the number of clusters in each clustering is different, the concept of a pair of being in the same cluster in both clusterings becomes difficult to define. To address this, two clusterings are drawn randomly with $N_{\mathcal{C}}$ and $N_{\mathcal{C}^{\prime}}$ number of clusters respectively, and a fixed number of elements in each cluster corresponding to the number of elements in each cluster in $\mathcal{C}$ and $\mathcal{C}^{\prime}$. Then the adjusted Rand Index is the normalised difference between the Rand Index of $\mathcal{C}$ and $\mathcal{C}^{\prime}$ and the mean value of the Rand Index measured using many pairs of these `random' clusterings. 
+      When the number of clusters in each clustering is different, the concept of a pair of being in the same cluster in both clusterings becomes difficult to define. To address this, two clusterings are drawn randomly with $N_{\mathcal{C}}$ and $N_{\mathcal{C}^{\prime}}$ number of clusters respectively, and a fixed number of elements in each cluster corresponding to the number of elements in each cluster in $\mathcal{C}$ and $\mathcal{C}^{\prime}$. Then the adjusted Rand Index is the normalised difference between the Rand Index of $\mathcal{C}$ and $\mathcal{C}^{\prime}$ and the mean value of the Rand Index measured using many pairs of these `random' clusterings.
 
       \subsubsection{Clusterings as random variables}
       If we take any random element of $D$, the probability that this element is in cluster $C_k$ of clustering $\mathcal{C}$ is
@@ -514,7 +514,7 @@ The nine different brain regions from which we had data were the caudate putamen
   \subsection{Connected and divided structure in correlation based networks reduces in dimension with increasing bin width}\label{sec:dims_result}
   We used the correlation measurements to create weighted undirected graphs/networks where each node represents a neuron, and the weight of each edge is the pairwise correlation between those neurons represented by the nodes at either end of that edge. We aimed to find communities of neurons within these networks, and compare the structure of these communities to the anatomical division of those neurons. The first step of this process involved applying the `spectral rejection' technique developed by Humphries et al (2019) \parencite{humphries}. This technique compares our data network to a chosen null network model, and finds any additional structure in the data network beyond that which is captured in the null network model (if there is any such structure).
 
-  By comparing the eigenspectrum of the data network to the eigenspectrum of many samples from the null network model, this technique allows us to estimate the dimensionality of the additional structure in the data network, and gives us a basis for that vector space. It also divides the additional structure into connected structure, and $k$-partite (or divided) structure. For example, if our algorithm found two dimensions of additional connected structure, and one dimension of additional divided structure. We might expect to find three communities, that is groups more strongly connected within group that without, and we might expect to find bi-partite structure, that is two sets that are more strongly connected between groups than within groups.
+  By comparing the eigenspectrum of the data network to the eigenspectrum of many samples from the null network model, this technique allows us to estimate the dimensionality of the additional structure in the data network, and gives us a basis for that vector space. It also divides the additional structure into connected structure, and $k$-partite (or divided) structure. For example, if our algorithm found two dimensions of additional connected structure, and one dimension of additional divided structure. We might expect to find three communities, that is groups more strongly connected within group than without, and we might expect to find bi-partite structure, that is two sets that are more strongly connected between groups than within groups.
 
   \begin{figure}[p]
     \begin{subfigure}[h]{0.5\linewidth}
@@ -539,11 +539,15 @@ The nine different brain regions from which we had data were the caudate putamen
     \label{fig:structure_dims}
   \end{figure}
 
-  The technique also finds which nodes contribute to this additional structure, and divides our data network into signal and noise networks. The details of spectral rejection and node rejection can be found in sections \ref{sec:spectral_rejection} and \ref{sec:node_rejection} respectively, and a full overview can be found in  \parencite{humphries}.
+  The technique also finds which nodes contribute to this additional structure, and divides our data network into signal and noise networks. The details of spectral rejection and node rejection can be found in sections \ref{sec:spectral_rejection} and \ref{sec:node_rejection} respectively, and a full overview can be found in \parencite{humphries}.
 
   We chose the sparse weighted configuration model (see section \ref{sec:sparse_weighted_configuration_model}) as our null network model. This model matches the sparsity and the total weight of the original network but distributes the weight at random across the sparse network.
 
   We applied the spectral rejection method to our networks based on total correlations using different values for the time bin width. We observed that for smaller time bin widths, our data networks had both $k$-partite structure, and community structure. As the width of the time bin increased, we found that the $k$-partite structure disappeared from our data networks, and the dimension of the community structure reduced in two of the three mice from which we had data (see figure \ref{fig:structure_dims}).
+
+  The reduction in dimensionality of the connected structure with larger bin widths could indicate information or activity being integrated through the merging of smaller functionaly communities over longer timescales.
+
+  The $k$-partite structure that we found when using small bin widths could be an indication of physical connections between neurons. This is supported by the fact that these $k$-partite communities are not found over longer timescales. The effect of physical connections through axodendritic or dendrodendritic synapses would only be noticeable at short timescales.
 
   \subsection{Detecting communities in correlation based networks}
 
@@ -573,6 +577,8 @@ The nine different brain regions from which we had data were the caudate putamen
   \end{figure}
 
   We applied the community detection procedure described in section \ref{sec:community_detection} to our signal networks for our various time bin widths. We detected a greater number of smaller communities at shorter time bin widths, and a smaller number of larger communities for longer time bin widths (see figure \ref{fig:consensus_clusterings_with_regions}). This was expected after the results found in section \ref{sec:dims_result}. We found more dimensions of additional structure at shorter time bin widths, therefore we found more communities at shorter time bin widths.
+
+  The number of communities that we detected was always greater than the dimensionality of the additional structure that we found by applying spectral rejection.
 
   We also noticed that at short time bin widths the communities detected tended to be dominated by cells from one region. Whereas communities existing in networks created using wider time bin widths tended to contain cells from many different brain regions. More on this in the next section.
 
@@ -709,6 +715,8 @@ The nine different brain regions from which we had data were the caudate putamen
   When we applied the network noise rejection and community detection process to the networks based on the signal correlations $\rho_{\text{signal}}$ we found the number of communities we detected reduced with increasing time bin width. But the number of communities detected was less than that for the total correlations or the spike count correlations. The communities detected always tended to contain cells from multiple regions at both short and long timescales (see figures \ref{fig:short_time_signal_rectified_regional_clusters} and \ref{fig:long_time_signal_rectified_regional_clusters}). The communities detected bore very little relation to the anatomical division of the cells. The adjusted Rand index between the community clustering and the anatomical `clustering' is close to zero for every time bin width (see figure \ref{fig:adjusted_rand_index_rectified_signal}). This indicates that the similarity between the clusterings is close to chance. We did observe a slight downward trend in the variation of information with increasing bin width (see figure \ref{fig:variation_of_information_rectified_signal}), but this is more likely due to a decrease in the number of communities detected rather than any relationship with anatomy.
 
   We also observed that the network noise rejection process rejected some of the cells when applied to the network based on the signal correlations. This means that those cells did not contribute to the additional structure of the network beyond that captured by the sparse weighted configuration model. This is why the matrices in figures \ref{fig:short_time_signal_rectified_regional_clusters} and \ref{fig:long_time_signal_rectified_regional_clusters} are smaller than their analogues in figures \ref{fig:short_time_conditional_rectified_regional_clusters} and \ref{fig:long_time_conditional_rectified_regional_clusters}.
+
+  The communities detected in the signal correlation based networks indicate that there are groups of cells from different brain regions that react similarly to different activity states. These groups also exist at all timescales from milliseconds to seconds. This indicates that there are subsets of cells in each region that respond to activty states regardless of  the timescale of these activties.
 
   % Figure 4: Conditional correlations
   % - Covariance matrices = conditional cov + signal cov

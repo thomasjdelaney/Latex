@@ -750,6 +750,81 @@
     \field{year}{2012}
   \endentry
 
+  \entry{brini}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BM}{%
+         family={Brini},
+         familyi={B\bibinitperiod},
+         given={Marisa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Cal{\`i}},
+         familyi={C\bibinitperiod},
+         given={Tito},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=OD}{%
+         family={Ottolini},
+         familyi={O\bibinitperiod},
+         given={Denis},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Carafoli},
+         familyi={C\bibinitperiod},
+         given={Ernesto},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMCTODCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Calcium (Ca2+) is an universal second messenger that regulates the most
+  important activities of all eukaryotic cells. It is of critical importance to
+  neurons as it participates in the transmission of the depolarizing signal and
+  contributes to synaptic activity. Neurons have thus developed extensive and
+  intricate Ca2+ signaling pathways to couple the Ca2+ signal to their
+  biochemical machinery. Ca2+ influx into neurons occurs through plasma
+  membrane receptors and voltage-dependent ion channels. The release of Ca2+
+  from the intracellular stores, such as the endoplasmic reticulum, by
+  intracellular channels also contributes to the elevation of cytosolic Ca2+.
+  Inside the cell, Ca2+ is controlled by the buffering action of cytosolic
+  Ca2+-binding proteins and by its uptake and release by mitochondria. The
+  uptake of Ca2+ in the mitochondrial matrix stimulates the citric acid cycle,
+  thus enhancing ATP production and the removal of Ca2+ from the cytosol by the
+  ATP-driven pumps in the endoplasmic reticulum and the plasma membrane. A
+  Na+/Ca2+ exchanger in the plasma membrane also participates in the control of
+  neuronal Ca2+. The impaired ability of neurons to maintain an adequate energy
+  level may impact Ca2+ signaling: this occurs during aging and in
+  neurodegenerative disease processes. The focus of this review is on neuronal
+  Ca2+ signaling and its involvement in synaptic signaling processes, neuronal
+  energy metabolism, and neurotransmission. The contribution of altered Ca2+
+  signaling in the most important neurological disorders will then be
+  considered.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00018-013-1550-7
+    \endverb
+    \field{issn}{1420-9071}
+    \field{number}{15}
+    \field{pages}{2787\bibrangedash 2814}
+    \field{title}{Neuronal calcium signaling: function and dysfunction}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00018-013-1550-7
+    \endverb
+    \field{volume}{71}
+    \field{journaltitle}{Cellular and Molecular Life Sciences}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{buccino}{article}{}
     \name{author}{7}{}{%
       {{hash=BAP}{%
