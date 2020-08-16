@@ -98,12 +98,16 @@
 \contentsline {subsubsection}{Hippocampus}{91}{section*.208}% 
 \contentsline {subsubsection}{Thalamus}{91}{section*.210}% 
 \contentsline {subsection}{\numberline {4.4.2}Conway-Maxwell-binomial distribution is usually a better fit than binomial or beta-binomial}{91}{subsection.212}% 
-\contentsline {subsection}{\numberline {4.4.3}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{96}{subsection.215}% 
-\contentsline {subsection}{\numberline {4.4.4}Replicating stimulus related quenching of neural variability}{96}{subsection.217}% 
-\contentsline {subsection}{\numberline {4.4.5}Effects of wider bin sizes}{98}{subsection.219}% 
-\contentsline {section}{\numberline {4.5}Discussion}{99}{section.221}% 
-\contentsline {chapter}{\numberline {5}Studies with practical limitations \& negative results}{103}{chapter.222}% 
-\contentsline {section}{\numberline {5.1}Dynamic state space model of pairwise and higher order neuronal correlations}{104}{section.223}% 
-\contentsline {section}{\numberline {5.2}A multiscale model for hierarchical data applied to \\ neuronal data}{104}{section.224}% 
-\contentsline {chapter}{\numberline {6}Discussion}{107}{chapter.225}% 
-\contentsline {chapter}{Bibliography}{115}{chapter*.226}% 
+\contentsline {subsection}{\numberline {4.4.3}Relative goodness-of-fit for binomial, beta-binomial, and COMb distributions}{96}{subsection.215}% 
+\contentsline {subsubsection}{Log likelihoods of distributions fitted to stimulated and unstimulated responses}{96}{section*.216}% 
+\contentsline {subsubsection}{Distribution of fitted parameters for stimulated and unstimulated responses}{98}{section*.218}% 
+\contentsline {subsubsection}{Examples of empirical distributions and fitted distributions}{100}{section*.220}% 
+\contentsline {subsection}{\numberline {4.4.4}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{100}{subsection.222}% 
+\contentsline {subsection}{\numberline {4.4.5}Replicating stimulus related quenching of neural variability}{100}{subsection.224}% 
+\contentsline {subsection}{\numberline {4.4.6}Effects of wider bin sizes}{103}{subsection.226}% 
+\contentsline {section}{\numberline {4.5}Discussion}{104}{section.228}% 
+\contentsline {chapter}{\numberline {5}Studies with practical limitations \& negative results}{107}{chapter.229}% 
+\contentsline {section}{\numberline {5.1}Dynamic state space model of pairwise and higher order neuronal correlations}{108}{section.230}% 
+\contentsline {section}{\numberline {5.2}A multiscale model for hierarchical data applied to \\ neuronal data}{108}{section.231}% 
+\contentsline {chapter}{\numberline {6}Discussion}{111}{chapter.232}% 
+\contentsline {chapter}{Bibliography}{119}{chapter*.233}% 

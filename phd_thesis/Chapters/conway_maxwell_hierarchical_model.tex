@@ -113,7 +113,7 @@ Two `Phase3' Neuropixels  \parencite{jun} electrode arrays were inserted into th
 
       As a model for the activity of a neuronal ensemble, the main problem with the binomial distribution is that it treats each neuron, represented as a Bernoulli trial, as independent. It is well know that neurons are not independent, and that correlated behaviour between neurons is vital for representing sensory information \parencite{cohen1}. The binomial distribution falls short in this regard, but it is useful as performance benchmark when assessing the performance of other models.
 
-      \subsubsection{Beta-binomial distribution}
+      \subsubsection{Beta-binomial distribution}\label{sec:betabinomial_distn}
       The beta distribution is the conjugate distribution of the binomial distribution. The beta-binomial distribution is the combination of the beta distribution and the binomial distribution, in that the probability of success for the binomial distribution is sampled from the beta distribution. This allows the beta-binomial distribution to capture some over dispersion relative to the binomial distribution.
 
       The beta-binomial distribution is a three parameter distribution, $n$ the number of Bernoulli trials, and $\alpha \in \mathbb{R}_{>0}$ and $\beta \in \mathbb{R}_{>0}$ the shape parameters of the beta distribution. The probability mass function for the beta-binomial distribution is
@@ -346,6 +346,131 @@ We defined a neuron as \textit{active} in a time bin if it fires at least one sp
 
   \newpage
 
+  \subsection{Relative goodness-of-fit for binomial, beta-binomial, and COMb distributions}
+  In the previous section we showed that the COMb distribution was usually a better option than the binomial or beta-binomial distributions when attempting to fit a distribution to a sample of the number of a active neurons. In this section, we aim to illustrate typically how much better the COMb distribution is.
+
+    \subsubsection{Log likelihoods of distributions fitted to stimulated and unstimulated responses}\label{sec:log_likelihood_histograms}
+    We fitted binomial, beta-binomial, and COMb distributions to two windows in each of the $160$ trials with a visual stimulus. One of the windows was the last full window before stimulus onset. The other window was the first full window after stimulus onset. We measured the log likelihood for each fitted distribution. For the histograms of these log likelihood values for data from the primary visual cortex using $1$ms bin width, see figure \ref{fig:log_likelihood_histograms}.
+
+    Comparing unstimulated to stimulated windows, we observed that the log likelihood values were greater for the unstimulated windows for all three distributions. This shows that the distributions were fitting better to the number of active neurons in the unstimulated windows. This might be due to a greater diversity in the distributions of number of active neurons in the stimulated windows (see figure \ref{fig:v1_moving_avg_and_var}). We saw similar results for the primary visual cortex when using $5$ms and $10$ms bin widths. For other regions, the histograms for unstimulated and stimulated windows were more similar, covering similar ranges of log likelihoods.
+
+    We observed a marginal increase in the log likelihoods from binomial to beta-binomial to COMb distributions for both unstimulated and stimulated windows. But, the distribution of the log likelihoods looked quite similar for all three distributions. So, the COMb distribution only fits a little bit better than the other two distributions. We observed similar results when using different time bin widths, and data from different brain regions.
+
+    \begin{figure}[p]
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_binom_1ms_unstimulated_log_likelihood_hist.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_binom_1ms_unstimulated_log_likelihood_hist}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_binom_1ms_stimulated_log_likelihood_hist.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_binom_1ms_stimulated_log_likelihood_hist}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_beta_binom_1ms_unstimulated_log_likelihood_hist.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_betabinom_1ms_unstimulated_log_likelihood_hist}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_beta_binom_1ms_stimulated_log_likelihood_hist.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_betabinom_1ms_stimulated_log_likelihood_hist}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_comb_1ms_unstimulated_log_likelihood_hist.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_comb_1ms_unstimulated_log_likelihood_hist}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_comb_1ms_stimulated_log_likelihood_hist.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_comb_1ms_stimulated_log_likelihood_hist}
+      \end{subfigure}
+      \caption{Number of active neurons data from the primary visual cortex, $1$ms bin widths. (Left column) Histograms of log likelihoods for the binomial, beta-binomial, and COMb distributions fitted to windows where no visual stimulus was present. $160$ trials. (Right column) Similar histograms for windows where a visual stimulus was present. $160$ trials. In both cases, there are marginal increases in the log likelihoods from binomial to beta-binomial to COMb. The log likelihoods are larger for the unstimulated windows.}
+      \label{fig:log_likelihood_histograms}
+    \end{figure}
+
+    \subsubsection{Distribution of fitted parameters for stimulated and unstimulated responses}
+    We recorded the fitted parameters of each of the three distributions fitted to both the unstimulated and stimulated windows mentioned in section \ref{sec:log_likelihood_histograms}. We noticed an increase in the binomial distribution's parameter for the stimulated windows (figure \ref{fig:fitted_parameter_hists} top row). When we used wider bin widths, we noticed the same relative increase from unstimulated to stimulated windows, and the values over which the parameter was distributed increased. The relative increase from unstimulated to stimulated windows was also visible in data from the hippocampus, but not in other regions.
+
+    For the beta-binomial distribution, we converted the fitted $\alpha$ and $\beta$ parameters to $\pi$ and $\rho$ parameters (see Methods section \ref{sec:betabinomial_distn}) before examining their histograms. In this form, the $0 \leq \pi \leq 1$ parameter is a location parameter, and the $\rho > 0$ parameter is a shape parameter than encodes over-dispersion in the distribution relative to a binomial distribution. Comparing distribution of parameters fitted to the unstimulated windows to the distribution of those fitted to the stimulated windows, we observed slight increases in both the $\pi$ and $\rho$ paramters (figure \ref{fig:fitted_parameter_hists} middle row). When we used a wider bin width, the paramter values were distributed across larger absolute values. The results comparing unstimulated to stimulated distributions were similar to the $1$ms case. For the other regions, we observed similar results in the hippocampus. All the other regions show little difference between unstimulated and stimulated histograms in a given bin width. As we increased the size of the bin width used the absolute values across which the parameters were distributed increased.
+
+    For the COMb distribution, the $\nu$ paramter was distributed around $1$ for the unstimulated windows. For the stimulated windows $\nu$ was more tightly distributed and centred around $0.75$. This reflects a positive association between the neurons present immediately after stimulus onset. We also observed that the $p$ parameter was distributed over slightly greater values for the stimulated windows as compared to the unstimulated (figure \ref{fig:fitted_parameter_hists} bottom row). For increased bin widths, we observed that the $\nu$ parameter was distributed lower than for the $1$ms bin width case. The reduction in $\nu$ at for the stimulated windows was still present. We observed this drop in the $\nu$ parameter in the hippocampal data also, albeit to a lesser extent than in the primary visual cortex. We didn't observe differences in the the data from the other regions.
+
+    \begin{figure}[p]
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_binom_p_unstim.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_binom_p_unstim}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_binom_p_stim.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_binom_p_stim}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_beta_binom_unstim.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_beta_binom_unstim}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_beta_binom_stim.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_beta_binom_stim}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_comb_unstim.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_comb_unstim}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_comb_stim.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_comb_stim}
+      \end{subfigure}
+      \caption{Histograms of fitted parameters for binomial, beta-binomial, and COMb distributions. Distributions fitted to data from the primary visual cortex, using $1$ms bin widths. (Left column) The distributions were fitted a window before the onset of the visual stimulus. (Right column) The distributions were fitted to a window immediately after the onset of the visual stimulus.}
+      \label{fig:fitted_parameter_hists}
+    \end{figure}
+
+    \subsubsection{Examples of empirical distributions and fitted distributions}
+    In figure \ref{fig:fitted_examples_bar} there are some examples of fitted binomial, beta-binomial, and COMb distributions alongside the empirical distributions to which they are fitted. We can see that these fitted distributions over distributed their probability mass to $P(0)$ (or $P(0)$ and $P(1)$ for the thalamus) and underdistributed their probability mass elsewhere. Also, each of the three fitted distributions look similar in each example. This is in agreement with our observations in section \ref{sec:log_likelihood_histograms}.
+
+    \begin{figure}[p]
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_trial_12_example.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_trial_12_example}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/v1_1ms_trial_113_example.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:v1_1ms_trial_113_example}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/thalamus_1ms_trial_62_example.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:thalamus_1ms_trial_62_example}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/striatum_1ms_trial_149_example.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:striatum_1ms_trial_149_example}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/motor_cortex_1ms_trial_52_example.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:motor_cortex_1ms_trial_52_example}
+      \end{subfigure}
+      \begin{subfigure}[h]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{figures/conway_maxwell/hippocampus_1ms_trial_49_example.png}
+        % \caption{Example of fitted distributions.}
+        \label{fig:hippocampus_1ms_trial_49_example}
+      \end{subfigure}
+      \caption{Examples of empirical and fitted distributions. At least one example from each of the $5$ brain regions from which we had data.}
+      \label{fig:fitted_examples_bar}
+    \end{figure}
+
   \subsection{Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}
   We fit a Conway-Maxwell-binomial (COMb) distribution to the number of active neurons in the $1$ms time bins in a $100$ms sliding window. We also measured the correlation coefficient between the spike counts of all possible pairs of neurons, and took the average of these coefficients. We did this for all the trials with a visual stimulus. We observed a reduction in the COMb distribution's $\nu$ parameter at stimulus onset from around $1$ to between $0$ and $1$ (see figure \ref{fig:comb_nu_parameter}). A value of $\nu$ less than $1$ indicates positive association between the neurons (see section \ref{sec:conway_maxwell_binomial_distribution}). We might expect to see this positive association reflected in the correlation coefficients, but this is not the case. We see no change in the time series of average correlation measures at stimulus onset.
 
@@ -390,7 +515,7 @@ We defined a neuron as \textit{active} in a time bin if it fires at least one sp
 
   Similar to these findings in the Fano factor, we found a reduction in the $\nu$ parameter of the COMB distribution on stimulus onset in V1 (figure \ref{fig:comb_nu_parameter}) and in no other region from which we had data. Specifically, the $\nu$ parameter reduced from around $1$, to between $1$ and $0$. This represents a change from no association between the neurons, to a positive association. It is possible that this positive association may be responsible for the reduction in the Fano factor.
 
-  \subsection{Effects of wider bin sizes}
+  \subsection{Effects of greater bin widths}
   Using a greater bin width ($10$ms) affected the scale and shape of the most of the measurements taken (described in section \ref{sec:measurements}). The average correlation coefficient is the exception to this. The $10$ms bin width is still so small that the average correlation coefficient was also small (similar scale as figure \ref{fig:avg_corr_coef}).
 
   Using the greater bin width acted as a low pass filter on the other measurements taken and the parameters of the fitted distributions. For example compare figure \ref{fig:comb_nu_parameter} to figure \ref{fig:v1_10ms_comb_nu_parameter}. Note also that the $\nu$ parameter varies between $0.6$ and $0.2$ when using the $10$ms bin width. This indicates some positive association between the neurons at all times, even when not stimulated or when adapted to the stimulus. This may be caused by the wider bin width resulting in more neurons classified as active. The change is association at stimulus onset is still captured by the change in the $\nu$ parameter.
