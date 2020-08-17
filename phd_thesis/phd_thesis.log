@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  16 AUG 2020 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.5.17)  17 AUG 2020 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2452,7 +2452,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `phd_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B118A96844D102F996FD38F50B8721E8;27162.
+(rerunfilecheck)             Checksum: 950AF4E8E66985F5158E65A2B8CC0999;27177.
 Package logreq Info: Writing requests to 'phd_thesis.run.xml'.
 \openout1 = `phd_thesis.run.xml'.
 
@@ -2460,14 +2460,14 @@ Package logreq Info: Writing requests to 'phd_thesis.run.xml'.
 Here is how much of TeX's memory you used:
  39688 strings out of 492667
  809918 string characters out of 6134097
- 1229341 words of memory out of 5000000
+ 1229344 words of memory out of 5000000
  42565 multiletter control sequences out of 15000+600000
  638938 words of font info for 262 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  64i,21n,84p,2924b,3094s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on phd_thesis.pdf (154 pages, 4796224 bytes).
+Output written on phd_thesis.pdf (154 pages, 4796247 bytes).
 PDF statistics:
  2729 PDF objects out of 2984 (max. 8388607)
  2300 compressed objects within 23 object streams

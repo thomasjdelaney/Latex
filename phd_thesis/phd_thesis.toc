@@ -104,7 +104,7 @@
 \contentsline {subsubsection}{Examples of empirical distributions and fitted distributions}{100}{section*.220}% 
 \contentsline {subsection}{\numberline {4.4.4}Conway-Maxwell-binomial distribution captures changes in association at stimulus onset}{100}{subsection.222}% 
 \contentsline {subsection}{\numberline {4.4.5}Replicating stimulus related quenching of neural variability}{100}{subsection.224}% 
-\contentsline {subsection}{\numberline {4.4.6}Effects of wider bin sizes}{103}{subsection.226}% 
+\contentsline {subsection}{\numberline {4.4.6}Effects of greater bin widths}{103}{subsection.226}% 
 \contentsline {section}{\numberline {4.5}Discussion}{104}{section.228}% 
 \contentsline {chapter}{\numberline {5}Studies with practical limitations \& negative results}{107}{chapter.229}% 
 \contentsline {section}{\numberline {5.1}Dynamic state space model of pairwise and higher order neuronal correlations}{108}{section.230}% 
