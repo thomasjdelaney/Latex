@@ -17,17 +17,17 @@
 \contentsline {subsubsection}{Fixed parameters}{17}{section*.36}% 
 \contentsline {subsection}{\numberline {2.2.3}Julia}{17}{subsection.38}% 
 \contentsline {subsection}{\numberline {2.2.4}Spike inference}{18}{subsection.39}% 
-\contentsline {subsubsection}{Comparing spike inference quality}{20}{section*.40}% 
-\contentsline {subsection}{\numberline {2.2.5}Perturbation analysis}{20}{subsection.41}% 
-\contentsline {subsection}{\numberline {2.2.6}Signal-to-noise ratio}{21}{subsection.42}% 
-\contentsline {subsection}{\numberline {2.2.7}Data sources}{21}{subsection.43}% 
-\contentsline {section}{\numberline {2.3}Results}{21}{section.44}% 
-\contentsline {subsection}{\numberline {2.3.1}A biophysical computational model can generate accurate fluorescence traces from spike trains}{21}{subsection.45}% 
-\contentsline {subsection}{\numberline {2.3.2}Spike inference algorithms perform similarly on real data compared with time series simulated from the model}{23}{subsection.46}% 
-\contentsline {subsection}{\numberline {2.3.3}Relative effects of various buffers to the fluorescence signal}{23}{subsection.48}% 
-\contentsline {subsection}{\numberline {2.3.4}Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{26}{subsection.50}% 
-\contentsline {subsection}{\numberline {2.3.5}Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}{30}{subsection.54}% 
-\contentsline {section}{\numberline {2.4}Discussion}{32}{section.57}% 
+\contentsline {subsubsection}{Comparing spike inference quality}{21}{section*.40}% 
+\contentsline {subsection}{\numberline {2.2.5}Perturbation analysis}{22}{subsection.41}% 
+\contentsline {subsection}{\numberline {2.2.6}Signal-to-noise ratio}{22}{subsection.42}% 
+\contentsline {subsection}{\numberline {2.2.7}Data sources}{22}{subsection.43}% 
+\contentsline {section}{\numberline {2.3}Results}{23}{section.44}% 
+\contentsline {subsection}{\numberline {2.3.1}A biophysical computational model can generate accurate fluorescence traces from spike trains}{23}{subsection.45}% 
+\contentsline {subsection}{\numberline {2.3.2}Spike inference algorithms perform similarly on real data compared with time series simulated from the model}{24}{subsection.46}% 
+\contentsline {subsection}{\numberline {2.3.3}Relative effects of various buffers to the fluorescence signal}{25}{subsection.48}% 
+\contentsline {subsection}{\numberline {2.3.4}Spike inference accuracy is sensitive to indicator properties, and likely varies within and between cells}{27}{subsection.50}% 
+\contentsline {subsection}{\numberline {2.3.5}Single spike inference accuracy drops for high firing rates, but firing rate itself can be estimated from mean fluorescence amplitude}{31}{subsection.54}% 
+\contentsline {section}{\numberline {2.4}Discussion}{34}{section.57}% 
 \contentsline {chapter}{\numberline {3}Functional networks expand across anatomical boundaries as correlation time-scale increases}{37}{chapter.58}% 
 \contentsline {section}{\numberline {3.1}Introduction}{38}{section.59}% 
 \contentsline {section}{\numberline {3.2}Data}{39}{section.60}% 
