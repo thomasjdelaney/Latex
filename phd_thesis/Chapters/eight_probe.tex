@@ -108,7 +108,7 @@ To find and analyse functional networks while controlling for the subject's beha
         \begin{align}\label{eq:elastic_net}
             L(\lambda_1, \lambda_2, \boldsymbol{\beta}) = | \mathbf{x} - \mathbf{Z} \boldsymbol{\beta} |^2 + \lambda_2 |\boldsymbol{\beta}|_2 + \lambda_1 |\boldsymbol{\beta}|_1
         \end{align}
-        where
+        where $\boldsymbol{\beta}$ is the vector of linear coefficients and 
         \begin{align}
           |\boldsymbol{\beta}|_2 &= \sum_{j=1}^m \beta_j^2 \\
           |\boldsymbol{\beta}|_1 &= \sum_{j=1}^m |\beta_j|
@@ -134,7 +134,7 @@ To find and analyse functional networks while controlling for the subject's beha
 
         Our linear model gave us $500$ coefficients, one for each of $Z_1, \dots, Z_500$. By summing the linear combination of these coefficients and a set containing one value for each $Z_i$, we obtained our model's estimate for the spike count of the cell represented by $X$. We interpreted our model as a function that takes a set of values $\lbrace Z_1 = z_1,\dots,Z_{500} = z_{500} \rbrace$ as input and returns $E[X|Z_1=z_1,\dots,Z_{500}=z_{500}]$.
 
-        Using our linear model, we calculated $E[X|Z_1,\dots, Z_{500}]$ for each cell $X$ and for all sets of values for $\lbrace Z_1,\dots,Z_{500} \rbrace$ available to us. We used those values to calculate $cov(E[X|Z_1,\dots, Z_{500}], E[Y|Z_1,\dots, Z_{500}])$ for each pair of cells $(X,Y)$. Then we proceeded to calculate
+        Using our linear model, we calculated $E[X|Z_1,\dots, Z_{500}]$ for each cell $X$ and for all sets of values for $\lbrace Z_1,\dots,Z_{500} \rbrace$ available to us. We used those values to calculate \\ $cov(E[X|Z_1,\dots, Z_{500}], E[Y|Z_1,\dots, Z_{500}])$ for each pair of cells $(X,Y)$. Then we proceeded to calculate
         \begin{equation}
             \begin{split}
                 E[\cov(X,Y|Z_1,\dots, Z_{500})] = & \cov(X,Y) - \\

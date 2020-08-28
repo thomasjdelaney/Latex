@@ -43,7 +43,7 @@
 \contentsline {subsubsection}{Linear regression}{44}{section*.79}% 
 \contentsline {subsubsection}{Elastic net regularisation}{45}{section*.80}% 
 \contentsline {subsubsection}{Conditional covariance}{46}{section*.85}% 
-\contentsline {subsubsection}{Measures of conditional correlation}{46}{section*.88}% 
+\contentsline {subsubsection}{Measures of conditional correlation}{47}{section*.88}% 
 \contentsline {subsection}{\numberline {3.3.4}Information Theory}{47}{subsection.91}% 
 \contentsline {subsubsection}{Entropy $H(X)$}{47}{section*.92}% 
 \contentsline {subsubsection}{Maximum entropy limit}{48}{section*.96}% 
