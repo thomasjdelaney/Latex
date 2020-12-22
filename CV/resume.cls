@@ -41,18 +41,19 @@
 \let \@addressone \relax
 \let \@addresstwo \relax
 \let \@addressthree \relax
+\let \@addressfour \relax
 
 % \address command can be used to set the first, second, and third address (last 2 optional)
-\def \address #1{
-  \@ifundefined{@addresstwo}{
+\def \address #1{\@ifundefined{@addressfour}{
+    \def \@addressfour {#1}
+  }{\@ifundefined{@addresstwo}{
     \def \@addresstwo {#1}
+  }{\@ifundefined{@addressthree}{
+    \def \@addressthree {#1}
   }{
-  \@ifundefined{@addressthree}{
-  \def \@addressthree {#1}
-  }{
-     \def \@addressone {#1}
+    \def \@addressone {#1}
   }}
-}
+}}
 
 % \printaddress is used to style an address line (given as input)
 \def \printaddress #1{
@@ -84,8 +85,10 @@
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
     \printaddress{\@addresstwo}}
-     \@ifundefined{@addressthree}{}{ % Print the third address if specified
+  \@ifundefined{@addressthree}{}{ % Print the third address if specified
     \printaddress{\@addressthree}}
+  \@ifundefined{@addressfour}{}{ % Print the fourth address if specified
+    \printaddress{\@addressfour}}
 }
 
 %----------------------------------------------------------------------------------------

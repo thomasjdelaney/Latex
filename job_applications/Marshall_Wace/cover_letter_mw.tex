@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Formal Letter
+% LaTeX Template
+% Version 2.0 (7/2/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% Originally based on an example on WikiBooks
+% (http://en.wikibooks.org/wiki/LaTeX/Letters) but rewritten as of v2.0
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % 10pt font size default, 11pt and 12pt are also possible
+
+\usepackage{geometry} % Required for adjusting page dimensions
+
+%\longindentation=0pt % Un-commenting this line will push the closing "Sincerely," to the left of the page
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=3cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2.5cm, % Left margin
+  right=2.5cm, % Right margin
+  %showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+
+\usepackage{stix} % Use the Stix font by default
+
+\usepackage{microtype} % Improve justification
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%----------------------------------------------------------------------------------------
+% YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\signature{Thomas J. Delaney} % Your name for the signature at the bottom
+
+\address{\textbf{Thomas J. Delaney,} \\
+  Ballyboggan Lower, \\
+  Castlebridge, \\
+  Co. Wexford, \\
+  Ireland, Y35 A4A3 \\
+  thomas.delaney@posteo.net \\
+  (+353) 086 127 5282} % Your address and phone number
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{Marshall Wace LLP, \\
+  George House, \\
+  131 Sloane Street, \\
+  London, SW1X 9AT, \\
+  United Kingdom} % Name/title of the addressee
+
+%----------------------------------------------------------------------------------------
+% LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+  \opening{\textbf{Dear Ms. Thorne,}}
+
+  %%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%
+  I am writing to you to apply for a suitable position in Marshall Wace LLP, most likely in quantitative research, quantitative trading or something related.
+
+  I worked in the Marshall Wace London and Hong Kong offices before in 2013/2014, as a kdb+ engineer. I enjoyed the working atmosphere, and I was interested in the work done by the QR and QT teams but I was not qualified enough for that work at that time.
+
+  In the meantime, I have done an MSc in Informatics and I have worked as a data engineer in Edinburgh airport. I have completed a PhD in Computer Science. I have presented my research at number of international conferences. I have done an internship in CheckRisk, a risk analysis company. I have also worked as a teaching assistant and an exam supervisor. Lastly, I have developed and matured personally.
+
+  During the MSc and PhD, I learned and implemented the skills that I was lacking in 2014. So I am a good candidate for Marshall Wace now. Thank you for your consideration. I'll look forward to your response.
+
+  \vspace{2\parskip} % Extra whitespace for aesthetics
+  \closing{Sincerely,}
+  \vspace{2\parskip} % Extra whitespace for aesthetics
+
+%  \ps{P.S. You can find additional information attached to this letter.} % Postscript text, comment this line to remove it
+
+%  \encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+  %----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
