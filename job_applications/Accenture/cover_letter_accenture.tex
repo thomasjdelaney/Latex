@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Formal Letter
+% LaTeX Template
+% Version 2.0 (7/2/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@LaTeXTemplates.com)
+%
+% Originally based on an example on WikiBooks
+% (http://en.wikibooks.org/wiki/LaTeX/Letters) but rewritten as of v2.0
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % 10pt font size default, 11pt and 12pt are also possible
+
+\usepackage{geometry} % Required for adjusting page dimensions
+
+%\longindentation=0pt % Un-commenting this line will push the closing "Sincerely," to the left of the page
+
+\geometry{
+  paper=a4paper, % Change to letterpaper for US letter
+  top=3cm, % Top margin
+  bottom=1.5cm, % Bottom margin
+  left=2.5cm, % Left margin
+  right=2.5cm, % Right margin
+  %showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+
+\usepackage{stix} % Use the Stix font by default
+
+\usepackage{microtype} % Improve justification
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%----------------------------------------------------------------------------------------
+% YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\signature{Thomas J. Delaney} % Your name for the signature at the bottom
+
+\address{\textbf{Thomas J. Delaney,} \\
+  Ballyboggan Lower, \\
+  Castlebridge, \\
+  Co. Wexford, \\
+  Ireland, Y35 A4A3 \\
+  thomas.delaney@posteo.net \\
+  (+353) 086 127 5282} % Your address and phone number
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{3 Grand Canal Plaza, \\
+  Dublin, \\
+  Ireland, \\
+  D04 EE70} % Name/title of the addressee
+
+%----------------------------------------------------------------------------------------
+% LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+  \opening{\textbf{Dear Sir/Madame,}}
+
+  %%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%
+  I am writing to you to apply for the `The Dock - AI \& Data Scientist' position in Accenture's Dublin offices as advertised on the company website. I have uploaded my CV to your application process for consideration.
+
+  %%%%%%%%%%%%%%% Why am I suitable? %%%%%%%%%%%%%
+  As you can see on my CV, I have previous experience in data collection, data analysis and artificial intelligence in both professional and academic contexts. So, not only do I have a deep understanding of the challenges and solutions in data science and AI, but I also understand how this knowledge is applied professionally.
+
+  %%%%%%%%%%%%%%% What can I do for the company? %%%%%%%%%%%%%%%%%%%
+  If I am chosen for this position, not only will my technical expertise be useful for `The Dock', but my short and long term career goals will fall in line with Accenture's plans. Accenture will get an asset dedicated to adding value to Accenture and to myself over course of at least five years or longer.
+
+  %%%%%%%%%%%%%% Reiterate suitability %%%%%%%%%%%%%%%%
+  I am confident that I am an ideal candidate for this role. I have the required technical expertise to add value to this role. I also have the enthusiasm to make the most of the opportunity. I would be an excellent choice for Accenture in this case.
+
+  \vspace{2\parskip} % Extra whitespace for aesthetics
+  \closing{yours faithfully,}
+  \vspace{2\parskip} % Extra whitespace for aesthetics
+
+%  \ps{P.S. You can find additional information attached to this letter.} % Postscript text, comment this line to remove it
+
+%  \encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+  %----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
